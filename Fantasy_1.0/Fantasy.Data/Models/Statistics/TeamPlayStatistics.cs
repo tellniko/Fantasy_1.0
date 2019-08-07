@@ -5,17 +5,17 @@ namespace Fantasy.Data.Models.Statistics
 {
     public class TeamPlayStatistics 
     {
-        public ushort Assists { get; set; }
+        public short Assists { get; set; }
 
-        public ushort Passes { get; set; }
+        public short Passes { get; set; }
 
-        public ushort BigChancesCreated { get; set; }
+        public short BigChancesCreated { get; set; }
 
-        public ushort Crosses { get; set; }
+        public short Crosses { get; set; }
 
-        public ushort ThroughBalls { get; set; }
+        public short ThroughBalls { get; set; }
 
-        public ushort AccurateLongBalls { get; set; }
+        public short AccurateLongBalls { get; set; }
 
         public int PlayerId { get; set; }
         public Player Player { get; set; }

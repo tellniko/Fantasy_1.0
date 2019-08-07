@@ -175,7 +175,7 @@ namespace Fantasy.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Number = table.Column<int>(nullable: false),
+                    Number = table.Column<byte>(nullable: false),
                     Finished = table.Column<bool>(nullable: false),
                     Start = table.Column<DateTime>(nullable: false),
                     SeasonId = table.Column<int>(nullable: false)
@@ -360,13 +360,13 @@ namespace Fantasy.Data.Migrations
                 {
                     PlayerId = table.Column<int>(nullable: false),
                     FixtureId = table.Column<int>(nullable: false),
-                    Goals = table.Column<int>(nullable: false),
-                    PenaltiesScored = table.Column<int>(nullable: false),
-                    FreeKicksScored = table.Column<int>(nullable: false),
-                    Shots = table.Column<int>(nullable: false),
-                    ShotsOnTarget = table.Column<int>(nullable: false),
-                    HitWoodwork = table.Column<int>(nullable: false),
-                    BigChancesMissed = table.Column<int>(nullable: false)
+                    Goals = table.Column<short>(nullable: false),
+                    PenaltiesScored = table.Column<short>(nullable: false),
+                    FreeKicksScored = table.Column<short>(nullable: false),
+                    Shots = table.Column<short>(nullable: false),
+                    ShotsOnTarget = table.Column<short>(nullable: false),
+                    HitWoodwork = table.Column<short>(nullable: false),
+                    BigChancesMissed = table.Column<short>(nullable: false)
                 },
                 constraints: table =>
                 {

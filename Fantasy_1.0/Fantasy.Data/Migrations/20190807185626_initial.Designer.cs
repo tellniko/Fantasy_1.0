@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Fantasy.Data.Migrations
 {
     [DbContext(typeof(FantasyDbContext))]
-    [Migration("20190807125851_initial")]
+    [Migration("20190807185626_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -171,7 +171,7 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<bool>("Finished");
 
-                    b.Property<int>("Number");
+                    b.Property<byte>("Number");
 
                     b.Property<int>("SeasonId");
 
@@ -198,7 +198,7 @@ namespace Fantasy.Data.Migrations
                     b.ToTable("Seasons");
                 });
 
-            modelBuilder.Entity("Fantasy.Data.Models.Player", b =>
+            modelBuilder.Entity("Fantasy.Data.Models.Players.Player", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -225,7 +225,7 @@ namespace Fantasy.Data.Migrations
                     b.ToTable("Players");
                 });
 
-            modelBuilder.Entity("Fantasy.Data.Models.PlayerPersonalInfo", b =>
+            modelBuilder.Entity("Fantasy.Data.Models.Players.PlayerPersonalInfo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -294,19 +294,19 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<int>("FixtureId");
 
-                    b.Property<int>("BigChancesMissed");
+                    b.Property<short>("BigChancesMissed");
 
-                    b.Property<int>("FreeKicksScored");
+                    b.Property<short>("FreeKicksScored");
 
-                    b.Property<int>("Goals");
+                    b.Property<short>("Goals");
 
-                    b.Property<int>("HitWoodwork");
+                    b.Property<short>("HitWoodwork");
 
-                    b.Property<int>("PenaltiesScored");
+                    b.Property<short>("PenaltiesScored");
 
-                    b.Property<int>("Shots");
+                    b.Property<short>("Shots");
 
-                    b.Property<int>("ShotsOnTarget");
+                    b.Property<short>("ShotsOnTarget");
 
                     b.HasKey("PlayerId", "FixtureId");
 
@@ -596,7 +596,7 @@ namespace Fantasy.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("Fantasy.Data.Models.Player", b =>
+            modelBuilder.Entity("Fantasy.Data.Models.Players.Player", b =>
                 {
                     b.HasOne("Fantasy.Data.Models.Common.FootballClub", "FootballClub")
                         .WithMany("Squad")
@@ -609,7 +609,7 @@ namespace Fantasy.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("Fantasy.Data.Models.PlayerPersonalInfo", b =>
+            modelBuilder.Entity("Fantasy.Data.Models.Players.PlayerPersonalInfo", b =>
                 {
                     b.HasOne("Fantasy.Data.Models.Common.Country")
                         .WithMany("BirthCountries")
@@ -619,9 +619,9 @@ namespace Fantasy.Data.Migrations
                         .WithMany("Countries")
                         .HasForeignKey("CountryId1");
 
-                    b.HasOne("Fantasy.Data.Models.Player", "Player")
+                    b.HasOne("Fantasy.Data.Models.Players.Player", "Player")
                         .WithOne("PlayerPersonalInfo")
-                        .HasForeignKey("Fantasy.Data.Models.PlayerPersonalInfo", "PlayerId")
+                        .HasForeignKey("Fantasy.Data.Models.Players.PlayerPersonalInfo", "PlayerId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
@@ -632,7 +632,7 @@ namespace Fantasy.Data.Migrations
                         .HasForeignKey("FixtureId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Fantasy.Data.Models.Player", "Player")
+                    b.HasOne("Fantasy.Data.Models.Players.Player", "Player")
                         .WithMany("AttackStatistics")
                         .HasForeignKey("PlayerId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -645,7 +645,7 @@ namespace Fantasy.Data.Migrations
                         .HasForeignKey("FixtureId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Fantasy.Data.Models.Player", "Player")
+                    b.HasOne("Fantasy.Data.Models.Players.Player", "Player")
                         .WithMany("BaseStatistics")
                         .HasForeignKey("PlayerId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -658,7 +658,7 @@ namespace Fantasy.Data.Migrations
                         .HasForeignKey("FixtureId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Fantasy.Data.Models.Player", "Player")
+                    b.HasOne("Fantasy.Data.Models.Players.Player", "Player")
                         .WithMany("DefenceStatistics")
                         .HasForeignKey("PlayerId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -671,7 +671,7 @@ namespace Fantasy.Data.Migrations
                         .HasForeignKey("FixtureId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Fantasy.Data.Models.Player", "Player")
+                    b.HasOne("Fantasy.Data.Models.Players.Player", "Player")
                         .WithMany("DisciplineStatistics")
                         .HasForeignKey("PlayerId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -684,7 +684,7 @@ namespace Fantasy.Data.Migrations
                         .HasForeignKey("FixtureId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Fantasy.Data.Models.Player", "Player")
+                    b.HasOne("Fantasy.Data.Models.Players.Player", "Player")
                         .WithMany("GoalkeepingStatistics")
                         .HasForeignKey("PlayerId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -697,7 +697,7 @@ namespace Fantasy.Data.Migrations
                         .HasForeignKey("FixtureId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Fantasy.Data.Models.Player", "Player")
+                    b.HasOne("Fantasy.Data.Models.Players.Player", "Player")
                         .WithMany("TeamPlayStatistics")
                         .HasForeignKey("PlayerId")
                         .OnDelete(DeleteBehavior.Cascade);

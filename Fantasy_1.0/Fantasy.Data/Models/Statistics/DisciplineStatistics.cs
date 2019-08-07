@@ -5,13 +5,13 @@ namespace Fantasy.Data.Models.Statistics
 {
     public class DisciplineStatistics 
     {
-        public ushort YellowCards { get; set; }
+        public short YellowCards { get; set; }
 
-        public ushort RedCards { get; set; }
+        public short RedCards { get; set; }
 
-        public ushort Fouls { get; set; }
+        public short Fouls { get; set; }
 
-        public ushort Offsides { get; set; }
+        public short Offsides { get; set; }
 
         public int PlayerId { get; set; }
         public Player Player { get; set; }

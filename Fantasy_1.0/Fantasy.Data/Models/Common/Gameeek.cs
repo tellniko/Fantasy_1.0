@@ -5,7 +5,8 @@ namespace Fantasy.Data.Models.Common
 {
     public class Gameweek : BaseModel<int>
     {
-        public int Number { get; set; }
+        //todo bit
+        public byte Number { get; set; }
 
         public bool Finished { get; set; } = false;
 

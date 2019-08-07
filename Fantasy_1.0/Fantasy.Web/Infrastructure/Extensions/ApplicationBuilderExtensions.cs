@@ -105,7 +105,7 @@ namespace Fantasy.Web.Infrastructure.Extensions
                     var gameweeks = new List<Gameweek>();
                     if (context.GameWeeks.ToList().Count == 0)
                     {
-                        for (var i = 0; i < 39; i++)
+                        for (byte i = 0; i < 39; i++)
                         {
                             var gameweek = new Gameweek
                             {

@@ -5,19 +5,19 @@ namespace Fantasy.Data.Models.Statistics
 {
     public class GoalkeepingStatistics 
     {
-        public ushort Saves { get; set; }
+        public short Saves { get; set; }
 
-        public ushort PenaltiesSaved { get; set; }
+        public short PenaltiesSaved { get; set; }
 
-        public ushort Punches { get; set; }
+        public short Punches { get; set; }
 
-        public ushort HighClaims { get; set; }
+        public short HighClaims { get; set; }
 
-        public ushort Catches { get; set; }
+        public short Catches { get; set; }
 
-        public ushort SweeperClearances { get; set; }
+        public short SweeperClearances { get; set; }
 
-        public ushort GoalKicks { get; set; }
+        public short GoalKicks { get; set; }
 
         public int? PlayerId { get; set; }
         public Player Player { get; set; }

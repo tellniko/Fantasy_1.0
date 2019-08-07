@@ -5,11 +5,11 @@ namespace Fantasy.Data.Models.Statistics
 {
     public class BaseStatistics 
     {
-        public ushort Appearances { get; set; }
+        public short Appearances { get; set; }
 
-        public ushort Wins { get; set; }
+        public short Wins { get; set; }
 
-        public ushort Losses { get; set; }
+        public short Losses { get; set; }
 
         public int PlayerId { get; set; }
         public Player Player { get; set; }
