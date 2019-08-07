@@ -1,0 +1,13 @@
+﻿@model Fantasy.Web.Areas.Administrator.Models.GameWeekViewModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+    <form method="post" asp-controller="Gameweeks" asp-action="Edit">
+        <input asp-for="Id" />
+        <input asp-for="Name" />
+        <input asp-for="Start"/>
+        <input asp-for="Finished"/>
+        <input type="submit"/>
+    </form>
+

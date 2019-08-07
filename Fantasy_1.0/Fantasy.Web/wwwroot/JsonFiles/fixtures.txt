@@ -1,0 +1,113 @@
+Gameweek 1 - Fri 9 Aug 18:00
+Liverpool
+Norwich
+West Ham
+Man City
+Bournemouth
+Sheffield Utd
+Burnley
+Southampton
+Crystal Palace
+Everton
+Watford
+Brighton
+Spurs
+Aston Villa
+Leicester
+Wolves
+Newcastle
+Arsenal
+Man Utd
+Chelsea
+
+
+Gameweek 2 - Sat 17 Aug 10:30
+Arsenal
+Burnley
+Aston Villa
+Bournemouth
+Brighton
+West Ham
+Everton
+Watford
+Norwich
+Newcastle
+Southampton
+Liverpool
+Man City
+Spurs
+Sheffield Utd
+Crystal Palace
+Chelsea
+Leicester
+Wolves
+Man Utd
+
+
+Gameweek 3 - Fri 23 Aug 18:00
+Aston Villa
+Everton
+Norwich
+Chelsea
+Brighton
+Southampton
+Man Utd
+Crystal Palace
+Sheffield Utd
+Leicester
+Watford
+West Ham
+Wolves
+Burnley
+Liverpool
+Arsenal
+Bournemouth
+Man City
+Spurs
+Newcastle
+
+
+Gameweek 4 - Sat 31 Aug 10:30
+Southampton
+Man Utd
+Chelsea
+Sheffield Utd
+Crystal Palace
+Aston Villa
+Leicester
+Bournemouth
+Man City
+Brighton
+Newcastle
+Watford
+West Ham
+Norwich
+Burnley
+Liverpool
+Everton
+Wolves
+Arsenal
+Spurs
+
+
+Gameweek 5 - Sat 14 Sep 10:30
+Liverpool
+Newcastle
+Brighton
+Burnley
+Man Utd
+Leicester
+Sheffield Utd
+Southampton
+Spurs
+Crystal Palace
+Wolves
+Chelsea
+Norwich
+Man City
+Bournemouth
+Everton
+Watford
+Arsenal
+Aston Villa
+West Ham

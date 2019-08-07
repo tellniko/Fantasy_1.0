@@ -1,0 +1,30 @@
+﻿@model Fantasy.Web.Areas.Administrator.Models.FixtureFormModel
+@{
+    ViewData["Title"] = "Create Fixture";
+}
+
+<form asp-controller="Fixtures" asp-action="Create" method="post">
+        <div class="col-md-8">
+            <label asp-for="HomeTeamId" ></label>
+            <select name="HomeTeamId" asp-items="Model.FootballClubs" class="form-control"></select>
+        </div>
+        <div class="col-md-8">
+            <label asp-for="AwayTeamId" ></label>
+            <select name="AwayTeamId" asp-items="Model.FootballClubs" class="form-control"></select>
+        </div>
+        <div class="col-md-8">
+            <label asp-for="GameweekId" ></label>
+            <select name="GameweekId" asp-items="Model.Gameweeks" class="form-control"></select>
+        </div>
+        <div class="col-md-8">
+            <label asp-for="DateTimeStart" ></label>
+            <input asp-for="@Model.DateTimeStart" class="form-control"/>
+        </div>
+        <div class="col-md-8">
+            <label asp-for="Finished" ></label>
+            <input asp-for="@Model.Finished"/>
+        </div>
+        <div class="col-md-4">
+            <input class="btn btn-primary" type="submit" value="Create Fixture" />
+        </div>
+</form>
