@@ -11,6 +11,9 @@ namespace Fantasy.Data.Models.Common
 
         public DateTime Start { get; set; }
 
+        public int SeasonId { get; set; }
+        public Season Season { get; set; }
+
         public IEnumerable<Fixture> Fixtures { get; set; } = new List<Fixture>();
     }
 }

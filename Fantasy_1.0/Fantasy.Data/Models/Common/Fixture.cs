@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Fantasy.Data.Models.Statistics;
 
 namespace Fantasy.Data.Models.Common
@@ -18,6 +19,8 @@ namespace Fantasy.Data.Models.Common
 
         public int GameWeekId { get; set; }
         public Gameweek Gameweek { get; set; }
+
+        public string Tag => "#" + HomeTeam.Tag + AwayTeam.Tag;
 
         public IEnumerable<BaseStatistics> BaseStatistics { get; set; } = new List<BaseStatistics>();
 

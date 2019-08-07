@@ -1,20 +1,17 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Fantasy.Data.Models.Common;
 
-namespace Fantasy.Data.Models
+namespace Fantasy.Data.Models.Players
 {
-    using static DataConstants;
-
     public class PlayerPersonalInfo : BaseModel<int>
     {
         [Required]
-        [MinLength(CommonNameMinLength)]
-        [MaxLength(CommonNameMaxLength)]
+        [MinLength(DataConstants.CommonNameMinLength)]
+        [MaxLength(DataConstants.CommonNameMaxLength)]
         public string Name { get; set; }
 
         [Required]
-        public string FootballPlayerImageUrl { get; set; } = FootballPlayerDefaultImgUrl;
+        public string FootballPlayerImageUrl { get; set; } = DataConstants.FootballPlayerDefaultImgUrl;
 
         public byte ShirtNum { get; set; }
 
@@ -26,8 +23,8 @@ namespace Fantasy.Data.Models
 
         public DateTime? BirthDate { get; set; }
 
-        [MinLength(CommonNameMinLength)]
-        [MaxLength(CommonNameMaxLength)]
+        [MinLength(DataConstants.CommonNameMinLength)]
+        [MaxLength(DataConstants.CommonNameMaxLength)]
         public string BirthPlace { get; set; }
 
         //public int CountryId { get; set; }

@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Fantasy.Common.Mapping;
+﻿using Fantasy.Common.Mapping;
 using Fantasy.Services.Administrator;
 using Fantasy.Services.Administrator.Models;
 using Fantasy.Web.Areas.Administrator.Models;
 using Fantasy.Web.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
@@ -56,7 +55,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             this.TempData.AddSuccessMessage("Fixture added!");
 
-            return RedirectToAction(nameof(AdministratorController.Index));
+            return RedirectToAction(nameof(Index));
         }
 
         private IEnumerable<SelectListItem> GetGameweeks()
@@ -65,7 +64,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
                 .GetAll()
                 .Select(gw => new SelectListItem
                 {
-                    Text = gw.Name,
+                    Text = "Gameweek " + gw.Number,
                     Value = gw.Id.ToString()
                 })
                 .ToList();

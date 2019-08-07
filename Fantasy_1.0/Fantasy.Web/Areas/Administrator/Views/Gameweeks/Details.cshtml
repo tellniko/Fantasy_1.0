@@ -1,0 +1,58 @@
+﻿@model Fantasy.Web.Areas.Administrator.Models.GameWeekDetailsViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="@Model.Gameweek.Name"></label>
+                <input disabled asp-for="@Model.Gameweek.Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Gameweek.Start"></label>
+                <input asp-for="@Model.Gameweek.Start" class="form-control" />
+                <span asp-validation-for="@Model.Gameweek.Start" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Gameweek.Finished"></label>
+                <input asp-for="@Model.Gameweek.Finished" />
+                <span asp-validation-for="@Model.Gameweek.Finished" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Edit</button>
+        </form>
+    </div>
+</div>
+<br/>
+<table class="table table-dark table-hover">
+    <thead>
+        <tr>
+            <th>
+                Home Team
+            </th>
+            <th>
+                Start 
+            </th>
+            <th>
+                Away Team
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var fixture in Model.Fixtures.OrderBy(gw => gw.DateTimeStart))
+        {
+            <tr>
+                <td><input asp-for="@fixture.HomeTeamName" disabled class="form-control"/></td>
+                <td><input asp-for="@fixture.DateTimeStart" disabled class="form-control"/></td>
+                <td><input asp-for="@fixture.AwayTeamName" disabled class="form-control"/></td>
+                @*<td>
+                    <input type="hidden" name="GameweekId" value="@gw.Id" />
+                    <a asp-area="Administrator" asp-controller="Gameweeks" asp-action="Details" asp-route-id="@gw.Id" class="btn btn-info text-white">Details</a>
+                </td>*@
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Fantasy.Common.Mapping;
 using Fantasy.Data;
 using Fantasy.Data.Models.Common;
@@ -31,6 +32,14 @@ namespace Fantasy.Services.Administrator.Implementations
             this.db.SaveChanges();
 
             return null;
+        }
+
+        public IEnumerable<FixtureServiceModel> GetByGameweek(int id)
+        {
+            return this.db.Fixtures
+                .Where(f => f.GameWeekId == id)
+                .To<FixtureServiceModel>()
+                .ToList();
         }
     }
 }

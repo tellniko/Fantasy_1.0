@@ -27,6 +27,9 @@ namespace Fantasy.Data
         public DbSet<AttackStatistics> AttackStatistics { get; set; }
         public DbSet<DisciplineStatistics> DisciplineStatistics { get; set; }
         public DbSet<Country> Countries { get; set; }
+        public DbSet<Season> Seasons { get; set; }
+
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

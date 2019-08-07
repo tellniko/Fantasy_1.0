@@ -4,21 +4,23 @@ using Fantasy.Services.Administrator.Models;
 using Fantasy.Web.Areas.Administrator.Models;
 using Fantasy.Web.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
     public class GameweeksController : AdministratorController
     {
         private readonly IGameweekService gameweeks;
+        private readonly IFixtureService fixtures;
 
 
-        public GameweeksController(IGameweekService gameweeks)
+        public GameweeksController(IGameweekService gameweeks, IFixtureService fixtures)
         {
             this.gameweeks = gameweeks;
-
+            this.fixtures = fixtures;
         }
 
-        public IActionResult ViewGameweeks()
+        public IActionResult All()
         {
             var gameweeks = new GameweekListingViewModel
             {
@@ -29,19 +31,19 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         }
 
 
-        //public IActionResult EditGameweek(int id)
-        //{
-        //    var gameweek = this.adminService
-        //        .Get(id)
-        //        .To<GameWeekViewModel>();
+        public IActionResult Edit(int id)
+        {
+            var gameweek = this.gameweeks
+                .Get(id)
+                .To<GameWeekViewModel>();
 
-        //    if (gameweek == null)
-        //    {
-        //        return BadRequest();
-        //    }
+            if (gameweek == null)
+            {
+                return BadRequest();
+            }
 
-        //    return View(gameweek);
-        //}
+            return View(gameweek);
+        }
 
         [HttpPost]
         public IActionResult Edit(GameWeekViewModel model)
@@ -62,9 +64,48 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             this.TempData.AddSuccessMessage($"{model.Name} has been edited successfully.");
 
-            return RedirectToAction(nameof(ViewGameweeks));
+            return RedirectToAction(nameof(All));
         }
 
-        
+        public IActionResult Details(int id)
+        {
+            var gameweek = this.gameweeks.Get(id);
+            var fixtures = this.fixtures.GetByGameweek(id);
+
+            if (gameweek == null)
+            {
+                return BadRequest();
+            }
+
+            var model = new GameWeekDetailsViewModel
+            {
+                Gameweek = gameweek,
+                Fixtures = fixtures,
+            };
+
+            return View(model);
+        }
+
+
+        public IActionResult AjaxTest()
+        {
+            var gameweeks = new GameweekListingViewModel
+            {
+                Gameweeks = this.gameweeks.GetAll().To<GameWeekViewModel>()
+            };
+
+            return View(gameweeks);
+        }
+
+        public IActionResult GetPartial()
+        {
+            List<string> countries = new List<string>();
+            countries.Add("USA");
+            countries.Add("UK");
+            countries.Add("India");
+
+            return PartialView("_CountriesPartial", countries);
+        }
+
     }
 }

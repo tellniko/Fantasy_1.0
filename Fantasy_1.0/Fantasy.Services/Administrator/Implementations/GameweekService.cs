@@ -1,9 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using AutoMapper.QueryableExtensions;
 using Fantasy.Common.Mapping;
 using Fantasy.Data;
 using Fantasy.Data.Models.Common;
 using Fantasy.Services.Administrator.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Fantasy.Services.Administrator.Implementations
 {
@@ -11,12 +14,10 @@ namespace Fantasy.Services.Administrator.Implementations
     {
         private readonly FantasyDbContext db;
 
-
         public GameweekService(FantasyDbContext db)
         {
             this.db = db;
         }
-
 
         public IEnumerable<GameweekServiceModel> GetAll()
         {
@@ -37,9 +38,46 @@ namespace Fantasy.Services.Administrator.Implementations
                 .FirstOrDefault();
         }
 
+        //public GameweekDetailsServiceModel GetDetails(int id)
+        //{
+        //    return this.db.GameWeeks
+        //        .Where(gw => gw.Id == id)
+        //        .Select(gw => new GameweekDetailsServiceModel
+        //        {
+        //            Gameweek = new GameweekServiceModel
+        //            {
+        //                Id = gw.Id,
+        //                Number = gw.Number,
+        //                Finished = gw.Finished,
+        //                Start = gw.Start
+        //            },
+        //            Fixtures = gw.Fixtures
+        //            .Select(f => new FixtureServiceModel
+        //            {
+        //                AwayTeamId = f.AwayTeamId,
+        //                HomeTeamId = f.HomeTeamId,
+        //                DateTimeStart = f.DateTimeStart,
+        //                Finished = f.Finished,
+        //                GameweekId = id,
+        //            })
+        //           .ToList()
+        //        })
+        //        .FirstOrDefault();
+        //}
+
         public bool Edit(GameweekServiceModel model)
         {
-            db.Update(model.To<Gameweek>());
+            var gw = this.db.GameWeeks.Find(model.Id);
+
+            if (gw == null)
+            {
+                return false;
+            }
+
+            gw.Finished = model.Finished;
+            gw.Start = model.Start;
+
+            db.Update(gw);
 
             return  db.SaveChanges() == 1;
         }

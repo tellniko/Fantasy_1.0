@@ -1,10 +1,9 @@
-﻿using Fantasy.Data.Models.Statistics;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Fantasy.Data.Models.Common;
-using Fantasy.Data.Models.Players;
+using Fantasy.Data.Models.Statistics;
 
-namespace Fantasy.Data.Models
+namespace Fantasy.Data.Models.Players
 {
     public class Player : BaseModel<int>
     {

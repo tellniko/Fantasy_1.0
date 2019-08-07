@@ -29,26 +29,26 @@ namespace Fantasy.Web.Infrastructure.Extensions
                     {
                         context.FootballClubs.AddRange(new List<FootballClub>
                         {
-                            new FootballClub("AFC Bournemouth", "Bournemouth"),
-                            new FootballClub("Arsenal", "Arsenal"),
-                            new FootballClub("Aston Villa", "Aston Villa"),
-                            new FootballClub("Brighton and Hove Albion", "Brighton"),
-                            new FootballClub("Burnley", "Burnley"),
-                            new FootballClub("Chelsea", "Chelsea"),
-                            new FootballClub("Crystal Palace", "Crystal Palace"),
-                            new FootballClub("Everton", "Everton"),
-                            new FootballClub("Leicester City", "Leicester"),
-                            new FootballClub("Liverpool", "Liverpool"),
-                            new FootballClub("Manchester City", "Man City"),
-                            new FootballClub("Manchester United", "Man Utd"),
-                            new FootballClub("Newcastle United", "Newcastle"),
-                            new FootballClub("Norwich City", "Norwich"),
-                            new FootballClub("Sheffield United", "Sheffield Utd"),
-                            new FootballClub("Southampton", "Southampton"),
-                            new FootballClub("Tottenham Hotspur", "Spurs"),
-                            new FootballClub("Watford", "Watford"),
-                            new FootballClub("West Ham United", "West Ham"),
-                            new FootballClub("Wolverhampton Wanderers", "Wolves"),
+                            new FootballClub("AFC Bournemouth", "Bournemouth", "BOU"),
+                            new FootballClub("Arsenal", "Arsenal", "ARS"),
+                            new FootballClub("Aston Villa", "Aston Villa","AVL"),
+                            new FootballClub("Brighton and Hove Albion", "Brighton","BRI"),
+                            new FootballClub("Burnley", "Burnley","Bur"),
+                            new FootballClub("Chelsea", "Chelsea","Che"),
+                            new FootballClub("Crystal Palace", "Crystal Palace","CPA"),
+                            new FootballClub("Everton", "Everton","EVE"),
+                            new FootballClub("Leicester City", "Leicester","LEI"),
+                            new FootballClub("Liverpool", "Liverpool","LIV"),
+                            new FootballClub("Manchester City", "Man City","MAC"),
+                            new FootballClub("Manchester United", "Man Utd","MAU"),
+                            new FootballClub("Newcastle United", "Newcastle","NEW"),
+                            new FootballClub("Norwich City", "Norwich","NOR"),
+                            new FootballClub("Sheffield United", "Sheffield Utd","SHE"),
+                            new FootballClub("Southampton", "Southampton","SOU"),
+                            new FootballClub("Tottenham Hotspur", "Spurs","TOT"),
+                            new FootballClub("Watford", "Watford","WAT"),
+                            new FootballClub("West Ham United", "West Ham","WHU"),
+                            new FootballClub("Wolverhampton Wanderers", "Wolves","WOL"),
                         });
                         context.SaveChanges();
                     }
@@ -95,6 +95,12 @@ namespace Fantasy.Web.Infrastructure.Extensions
                     //.Wait
                     #endregion
 
+                    #region Seed Seasons
+                    var season = new Season{Name = "2019-2020"};
+                    context.Add(season);
+                    context.SaveChanges();
+                    #endregion
+
                     #region Seed Gameweeks
                     var gameweeks = new List<Gameweek>();
                     if (context.GameWeeks.ToList().Count == 0)
@@ -104,7 +110,8 @@ namespace Fantasy.Web.Infrastructure.Extensions
                             var gameweek = new Gameweek
                             {
                                 Number = i,
-                                Start = DateTime.UtcNow.AddDays(30),
+                                
+                                SeasonId = 1,
                             };
                             gameweeks.Add(gameweek);
                         }

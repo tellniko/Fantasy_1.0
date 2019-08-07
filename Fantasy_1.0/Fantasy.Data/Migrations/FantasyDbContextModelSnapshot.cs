@@ -152,6 +152,10 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<string>("StadiumImgUrl");
 
+                    b.Property<string>("Tag")
+                        .IsRequired()
+                        .HasMaxLength(3);
+
                     b.HasKey("Id");
 
                     b.ToTable("FootballClubs");
@@ -167,11 +171,29 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<int>("Number");
 
+                    b.Property<int>("SeasonId");
+
                     b.Property<DateTime>("Start");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("SeasonId");
+
                     b.ToTable("GameWeeks");
+                });
+
+            modelBuilder.Entity("Fantasy.Data.Models.Common.Season", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Seasons");
                 });
 
             modelBuilder.Entity("Fantasy.Data.Models.Player", b =>
@@ -562,6 +584,14 @@ namespace Fantasy.Data.Migrations
                         .WithMany("HomeGames")
                         .HasForeignKey("HomeTeamId")
                         .OnDelete(DeleteBehavior.Restrict);
+                });
+
+            modelBuilder.Entity("Fantasy.Data.Models.Common.Gameweek", b =>
+                {
+                    b.HasOne("Fantasy.Data.Models.Common.Season", "Season")
+                        .WithMany("Gameweeks")
+                        .HasForeignKey("SeasonId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Fantasy.Data.Models.Player", b =>

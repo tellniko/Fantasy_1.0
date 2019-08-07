@@ -1,4 +1,5 @@
 ﻿using Fantasy.Data.Models.Common;
+using Fantasy.Data.Models.Players;
 
 namespace Fantasy.Data.Models.Statistics
 {

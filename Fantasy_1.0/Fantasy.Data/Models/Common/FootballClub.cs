@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Fantasy.Data.Models.Players;
 
 namespace Fantasy.Data.Models.Common
 {
@@ -7,10 +8,11 @@ namespace Fantasy.Data.Models.Common
 
     public class FootballClub : BaseModel<int>
     {
-        public FootballClub(string name, string shortName)
+        public FootballClub(string name, string shortName, string tag)
         {
             this.Name = name;
             this.ShortName = shortName;
+            this.Tag = tag;
         }
 
         [Required]
@@ -22,6 +24,10 @@ namespace Fantasy.Data.Models.Common
         [MinLength(CommonNameMinLength)]
         [MaxLength(CommonNameMaxLength)]
         public string ShortName { get; set; }
+
+        [Required]
+        [StringLength(3, MinimumLength = 3)]
+        public string Tag { get; set; }
 
         public byte Rating { get; set; }    
 

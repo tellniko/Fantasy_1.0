@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Fantasy.Data.Models.Players;
 
 namespace Fantasy.Data.Models.Common
 {

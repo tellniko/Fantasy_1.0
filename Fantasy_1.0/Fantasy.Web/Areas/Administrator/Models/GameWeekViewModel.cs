@@ -1,9 +1,8 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using AutoMapper;
-using Fantasy.Common.Mapping;
+﻿using Fantasy.Common.Mapping;
 using Fantasy.Data.Models.Common;
 using Fantasy.Services.Administrator.Models;
+using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Fantasy.Web.Areas.Administrator.Models
 {
@@ -15,9 +14,11 @@ namespace Fantasy.Web.Areas.Administrator.Models
 
         public bool Finished { get; set; } = false;
 
-        [DataType(DataType.Date)]
+        [DataType(DataType.DateTime)]
         public DateTime Start { get; set; }
 
-        public string Name => $"{nameof(Gameweek)} {this.Number}";
+        //public int SeasonId { get; set; }
+
+        public string Name { get; set; }
     }
 }

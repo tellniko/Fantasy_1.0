@@ -6,7 +6,7 @@ using Fantasy.Data.Models.Common;
 
 namespace Fantasy.Services.Administrator.Models
 {
-    public class GameweekServiceModel : IMapFrom<Gameweek>, IMapTo<Gameweek>
+    public class GameweekServiceModel : IMapFrom<Gameweek>, IMapTo<Gameweek>, IHaveCustomMappings
     {
         public int Id { get; set; }
 
@@ -16,6 +16,13 @@ namespace Fantasy.Services.Administrator.Models
 
         public DateTime Start { get; set; }
 
-        public string Name => $"{nameof(Gameweek)} {this.Number}";
+        public string Name { get; set; }
+
+        public void CreateMappings(IProfileExpression configuration)
+        {
+            configuration
+                .CreateMap<Gameweek, GameweekServiceModel>()
+                .ForMember(gw => gw.Name, cfg => cfg.MapFrom(gw => $"{nameof(Gameweek)} {gw.Number}"));
+        }
     }
 }
