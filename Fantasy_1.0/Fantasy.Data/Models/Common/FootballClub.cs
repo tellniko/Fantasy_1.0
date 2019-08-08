@@ -29,28 +29,14 @@ namespace Fantasy.Data.Models.Common
         [StringLength(3, MinimumLength = 3)]
         public string Tag { get; set; }
 
-        public byte Rating { get; set; }    
+        public byte Rating { get; set; }
 
-        //[Required]
-        public string StadiumImgUrl { get; set; }
+        public FootballClubInfo FootballClubInfo { get; set; }
 
-        public bool Playable { get; set; } = true;
+        public IEnumerable<FootballPlayer> Squad { get; set; } = new List<FootballPlayer>();
 
-        //[Required]
-        //[MinLength(CommonNameMinLength)]
-        //[MaxLength(CommonNameMaxLength)]
-        public string ManagerName { get; set; }
+        public IEnumerable<Fixture> HomeGames { get; set; } = new List<Fixture>();
 
-        public string Ground { get; set; }
-
-        public string PrimaryKitColor { get; set; }
-
-        public string SecondaryKitColor { get; set; }
-
-        public IEnumerable<Player> Squad { get; set; } = new List<Player>();
-
-        public ICollection<Fixture> HomeGames { get; set; } = new List<Fixture>();
-
-        public ICollection<Fixture> AwayGames { get; set; } = new List<Fixture>();
+        public IEnumerable<Fixture> AwayGames { get; set; } = new List<Fixture>();
     }
 }

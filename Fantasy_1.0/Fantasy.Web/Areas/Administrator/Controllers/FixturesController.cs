@@ -42,7 +42,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             {
                 model.FootballClubs = this.GetFootballClubs();
                 model.Gameweeks = this.GetGameweeks();
-
+                this.TempData.AddErrorMessage("Error");
                 return View(model);
             }
 

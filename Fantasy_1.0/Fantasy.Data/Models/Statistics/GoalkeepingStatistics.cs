@@ -1,9 +1,6 @@
-﻿using Fantasy.Data.Models.Common;
-using Fantasy.Data.Models.Players;
-
-namespace Fantasy.Data.Models.Statistics
+﻿namespace Fantasy.Data.Models.Statistics
 {
-    public class GoalkeepingStatistics 
+    public class GoalkeepingStatistics : BaseStatistics
     {
         public short Saves { get; set; }
 
@@ -18,11 +15,5 @@ namespace Fantasy.Data.Models.Statistics
         public short SweeperClearances { get; set; }
 
         public short GoalKicks { get; set; }
-
-        public int? PlayerId { get; set; }
-        public Player Player { get; set; }
-
-        public int FixtureId { get; set; }
-        public Fixture Fixture { get; set; }
     }
 }

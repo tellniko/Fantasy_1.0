@@ -4,7 +4,7 @@ using Fantasy.Data.Models.Players;
 
 namespace Fantasy.Services.Administrator.Models.Db
 {
-    public class FootballPlayerJsonModel : IMapTo<Player>, IMapFrom<Player>
+    public class FootballPlayerJsonModel : IMapTo<FootballPlayer>, IMapFrom<FootballPlayer>
     {
         public int Id { get; set; }
 

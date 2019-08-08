@@ -10,7 +10,7 @@ namespace Fantasy.Services.Administrator.Models
     {
         public int Id { get; set; }
 
-        public int Number { get; set; }
+        public byte Number { get; set; }
 
         public bool Finished { get; set; } = false;
 

@@ -1,9 +1,6 @@
-﻿using Fantasy.Data.Models.Common;
-using Fantasy.Data.Models.Players;
-
-namespace Fantasy.Data.Models.Statistics
+﻿namespace Fantasy.Data.Models.Statistics
 {
-    public class DefenceStatistics
+    public class DefenceStatistics : BaseStatistics
     {
         public short Tackles { get; set; }
 
@@ -36,11 +33,5 @@ namespace Fantasy.Data.Models.Statistics
         public short OwnGoals { get; set; }
 
         public short ErrorsLeadingToGoal { get; set; }
-
-        public int PlayerId { get; set; }
-        public Player Player { get; set; }
-
-        public int FixtureId { get; set; }
-        public Fixture Fixture { get; set; }
     }
 }

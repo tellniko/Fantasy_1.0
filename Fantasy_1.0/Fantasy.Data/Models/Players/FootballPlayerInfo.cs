@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Fantasy.Data.Models.Players
 {
-    public class PlayerPersonalInfo : BaseModel<int>
+    public class FootballPlayerInfo : BaseModel<int>
     {
         [Required]
         [MinLength(DataConstants.CommonNameMinLength)]
@@ -32,6 +32,6 @@ namespace Fantasy.Data.Models.Players
         public string Country { get; set; }
 
         public int PlayerId { get; set; }
-        public Player Player { get; set; }
+        public FootballPlayer FootballPlayer { get; set; }
     }
 }

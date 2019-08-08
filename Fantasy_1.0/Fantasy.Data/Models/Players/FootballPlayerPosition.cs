@@ -3,13 +3,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Fantasy.Data.Models.Players
 {
-    public class PlayerPosition : BaseModel<int>
+    public class FootballPlayerPosition : BaseModel<int>
     {
         [Required]
         [MinLength(DataConstants.CommonNameMinLength)]
         [MaxLength(DataConstants.CommonNameMaxLength)]
         public string Name { get; set; }
 
-        public ICollection<Player> Players { get; set; } = new List<Player>();
+        public ICollection<FootballPlayer> Players { get; set; } = new List<FootballPlayer>();
     }
 }

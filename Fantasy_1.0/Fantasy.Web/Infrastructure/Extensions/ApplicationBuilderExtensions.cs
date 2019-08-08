@@ -43,7 +43,7 @@ namespace Fantasy.Web.Infrastructure.Extensions
                         context.FootballClubs.Add(new FootballClub("Newcastle United", "Newcastle", "NEW")); context.SaveChanges();
                         context.FootballClubs.Add(new FootballClub("Norwich City", "Norwich","NOR")); context.SaveChanges();
                         context.FootballClubs.Add(new FootballClub("Sheffield United", "Sheffield Utd", "SHE")); context.SaveChanges();
-                        context.FootballClubs.Add(new FootballClub("Southampton", "Southampton", "SOU")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Southampton", "Southampton", "SHU")); context.SaveChanges();
                         context.FootballClubs.Add(new FootballClub("Tottenham Hotspur", "Spurs", "TOT")); context.SaveChanges();
                         context.FootballClubs.Add(new FootballClub("Watford", "Watford", "WAT")); context.SaveChanges();
                         context.FootballClubs.Add(new FootballClub("West Ham United", "West Ham", "WHU")); context.SaveChanges();
@@ -100,9 +100,13 @@ namespace Fantasy.Web.Infrastructure.Extensions
 
                     #region Seed Gameweeks
                     var gameweeks = new List<Gameweek>();
-                    if (context.GameWeeks.ToList().Count == 0)
+                    
+                    if (!context.GameWeeks.Any())
                     {
-                        for (byte i = 0; i < 39; i++)
+                        context.Add(new Gameweek { Number = 0, SeasonId = 1 });
+                        context.SaveChanges();
+
+                        for (byte i = 1; i <= 38; i++)
                         {
                             var gameweek = new Gameweek
                             {
@@ -118,10 +122,10 @@ namespace Fantasy.Web.Infrastructure.Extensions
                     #endregion
 
                     #region Seed Positions
-                    context.Add(new PlayerPosition { Name = "Goalkeeper" });context.SaveChanges();
-                    context.Add(new PlayerPosition { Name = "Defender" }); context.SaveChanges();
-                    context.Add(new PlayerPosition { Name = "Midfielder" }); context.SaveChanges();
-                    context.Add(new PlayerPosition { Name = "Forward" }); context.SaveChanges();
+                    context.Add(new FootballPlayerPosition { Name = "Goalkeeper" }); context.SaveChanges();
+                    context.Add(new FootballPlayerPosition { Name = "Defender" }); context.SaveChanges();
+                    context.Add(new FootballPlayerPosition { Name = "Midfielder" }); context.SaveChanges();
+                    context.Add(new FootballPlayerPosition { Name = "Forward" }); context.SaveChanges();
                     #endregion
                 }
             }

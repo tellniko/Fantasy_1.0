@@ -8,7 +8,7 @@ using Fantasy.Data.Models.Players;
 
 namespace Fantasy.Services.Administrator.Models.Db
 {
-    public class FootballPlayerJsonInfo : IMapTo<PlayerPersonalInfo>
+    public class FootballPlayerJsonInfo : IMapTo<FootballPlayerInfo>
     {
         public string Name { get; set; }
 

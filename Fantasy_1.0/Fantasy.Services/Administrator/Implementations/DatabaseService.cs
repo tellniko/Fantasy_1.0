@@ -5,6 +5,7 @@ using Fantasy.Services.Administrator.Models.Db;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace Fantasy.Services.Administrator.Implementations
@@ -25,9 +26,9 @@ namespace Fantasy.Services.Administrator.Implementations
 
             var players = JsonConvert.DeserializeObject<List<FootballPlayerJsonModel>>(fileContentPlayer);
 
-            if (!this.db.Players.Any())
+            if (!this.db.FootballPlayers.Any())
             {
-                var allPlayers = players.To<Player>().ToList();
+                var allPlayers = players.To<FootballPlayer>().ToList();
                 var result = 0;
 
                 db.AddRange(allPlayers);
@@ -35,9 +36,9 @@ namespace Fantasy.Services.Administrator.Implementations
 
                 try
                 {
-                    db.Database.ExecuteSqlCommand("SET IDENTITY_INSERT dbo.Players ON");
+                    db.Database.ExecuteSqlCommand("SET IDENTITY_INSERT dbo.FootballPlayers ON");
                     result += db.SaveChanges();
-                    db.Database.ExecuteSqlCommand("SET IDENTITY_INSERT dbo.Players OFF");
+                    db.Database.ExecuteSqlCommand("SET IDENTITY_INSERT dbo.FootballPlayers OFF");
                 }
                 finally
                 {
@@ -45,15 +46,42 @@ namespace Fantasy.Services.Administrator.Implementations
                 }
 
                 var playersInfo = JsonConvert.DeserializeObject<List<FootballPlayerJsonInfo>>(fileContentPlayerInfo);
-                var infos = playersInfo.To<PlayerPersonalInfo>().ToList();
+                var infos = playersInfo.To<FootballPlayerInfo>().ToList();
 
                 this.db.AddRange(infos);
                 this.db.SaveChanges();
 
-                return $"{result} players had been seeded!";
+                return $"{result} players have been seeded!";
             }
 
-            return "The players had been seeded already!";
+
+            //var fixtures = this.db.Fixtures.To<FixtureJsonModel>().ToList();
+            //File.WriteAllText("wwwroot/JsonFiles/fixturesGameweek1.json",
+            //    JsonConvert.SerializeObject(fixtures));
+
+            //var gameweek = this.db.GameWeeks
+            //    .Include(gw => gw.Fixtures)
+            //    .ThenInclude(f => f.HomeTeam )
+            //    .Include(gw => gw.Fixtures)
+            //    .ThenInclude(f => f.AwayTeam)
+            //    .FirstOrDefault(gw => gw.Number == 1);
+
+            //if (gameweek != null)
+            //{
+            //    foreach (var fixture in gameweek.Fixtures)
+            //    {
+            //        var homeTeam = fixture.HomeTeam;
+            //        var awayTeam = fixture.AwayTeam;
+
+            //        var playersHomeTeam = homeTeam.Squad;
+            //        var playersAwayTeam = awayTeam.Squad;
+            //    }
+            //}
+
+            
+
+
+            return "The players have been seeded already!";
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Fantasy.Data.Models.Statistics;
 
 namespace Fantasy.Data.Models.Common
 {
@@ -16,5 +17,17 @@ namespace Fantasy.Data.Models.Common
         public Season Season { get; set; }
 
         public IEnumerable<Fixture> Fixtures { get; set; } = new List<Fixture>();
+
+        public IEnumerable<MatchStatistics> BaseStatistics { get; set; } = new List<MatchStatistics>();
+
+        public IEnumerable<GoalkeepingStatistics> GoalkeepingStatistics { get; set; } = new List<GoalkeepingStatistics>();
+
+        public IEnumerable<DefenceStatistics> DefenceStatistics { get; set; } = new List<DefenceStatistics>();
+
+        public IEnumerable<TeamPlayStatistics> TeamPlayStatistics { get; set; } = new List<TeamPlayStatistics>();
+
+        public IEnumerable<AttackStatistics> AttackStatistics { get; set; } = new List<AttackStatistics>();
+
+        public IEnumerable<DisciplineStatistics> DisciplineStatistics { get; set; } = new List<DisciplineStatistics>();
     }
 }
