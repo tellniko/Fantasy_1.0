@@ -7,8 +7,8 @@ namespace Fantasy.Data.Models.Players
 {
     public class Player : BaseModel<int>
     {
-        [Required]
-        public int LeagueId { get; set; }
+        //[Required]
+        //public int LeagueId { get; set; }
 
         public int PositionId { get; set; }
         public PlayerPosition Position { get; set; }
@@ -18,6 +18,8 @@ namespace Fantasy.Data.Models.Players
         public bool IsInjured { get; set; } = false;
 
         public bool IsPlayable { get; set; } = true;
+
+        public decimal Price { get; set; }
 
         public PlayerPersonalInfo PlayerPersonalInfo { get; set; }
 

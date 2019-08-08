@@ -27,11 +27,9 @@ namespace Fantasy.Data.Models.Players
         [MaxLength(DataConstants.CommonNameMaxLength)]
         public string BirthPlace { get; set; }
 
-        //public int CountryId { get; set; }
+        [MinLength(DataConstants.CommonNameMinLength)]
+        [MaxLength(DataConstants.CommonNameMaxLength)]
         public string Country { get; set; }
-
-        //public int BirthCountryId { get; set; }
-        public string BirthCountry { get; set; }
 
         public int PlayerId { get; set; }
         public Player Player { get; set; }

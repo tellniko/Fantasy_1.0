@@ -9,9 +9,9 @@ namespace Fantasy.Data.Models.Common
 
         public string FlagUrl { get; set; }
 
-        public IEnumerable<PlayerPersonalInfo> Countries { get; set; } = new List<PlayerPersonalInfo>();
+        //public IEnumerable<PlayerPersonalInfo> Countries { get; set; } = new List<PlayerPersonalInfo>();
 
-        public IEnumerable<PlayerPersonalInfo> BirthCountries { get; set; } = new List<PlayerPersonalInfo>();
+        //public IEnumerable<PlayerPersonalInfo> BirthCountries { get; set; } = new List<PlayerPersonalInfo>();
 
     }
 }

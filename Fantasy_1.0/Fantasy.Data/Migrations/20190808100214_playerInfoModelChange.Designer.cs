@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Fantasy.Data.Migrations
 {
     [DbContext(typeof(FantasyDbContext))]
-    [Migration("20190807185839_changeEntitites")]
-    partial class changeEntitites
+    [Migration("20190808100214_playerInfoModelChange")]
+    partial class playerInfoModelChange
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -212,9 +212,9 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<bool>("IsPlayable");
 
-                    b.Property<int>("LeagueId");
-
                     b.Property<int>("PositionId");
+
+                    b.Property<decimal>("Price");
 
                     b.HasKey("Id");
 
@@ -231,18 +231,13 @@ namespace Fantasy.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("BirthCountry");
-
                     b.Property<DateTime?>("BirthDate");
 
                     b.Property<string>("BirthPlace")
                         .HasMaxLength(50);
 
-                    b.Property<string>("Country");
-
-                    b.Property<int?>("CountryId");
-
-                    b.Property<int?>("CountryId1");
+                    b.Property<string>("Country")
+                        .HasMaxLength(50);
 
                     b.Property<string>("FootballPlayerImageUrl")
                         .IsRequired();
@@ -262,10 +257,6 @@ namespace Fantasy.Data.Migrations
                     b.Property<byte>("Weight");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CountryId");
-
-                    b.HasIndex("CountryId1");
 
                     b.HasIndex("PlayerId")
                         .IsUnique();
@@ -611,14 +602,6 @@ namespace Fantasy.Data.Migrations
 
             modelBuilder.Entity("Fantasy.Data.Models.Players.PlayerPersonalInfo", b =>
                 {
-                    b.HasOne("Fantasy.Data.Models.Common.Country")
-                        .WithMany("BirthCountries")
-                        .HasForeignKey("CountryId");
-
-                    b.HasOne("Fantasy.Data.Models.Common.Country")
-                        .WithMany("Countries")
-                        .HasForeignKey("CountryId1");
-
                     b.HasOne("Fantasy.Data.Models.Players.Player", "Player")
                         .WithOne("PlayerPersonalInfo")
                         .HasForeignKey("Fantasy.Data.Models.Players.PlayerPersonalInfo", "PlayerId")

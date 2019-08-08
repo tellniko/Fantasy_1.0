@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Fantasy.Data.Models.Players;
 
 namespace Fantasy.Web.Infrastructure.Extensions
 {
@@ -27,30 +28,26 @@ namespace Fantasy.Web.Infrastructure.Extensions
                     #region Seed Clubs
                     if (context.FootballClubs.FirstOrDefault(fc => fc.Name == "Arsenal") == null)
                     {
-                        context.FootballClubs.AddRange(new List<FootballClub>
-                        {
-                            new FootballClub("AFC Bournemouth", "Bournemouth", "BOU"),
-                            new FootballClub("Arsenal", "Arsenal", "ARS"),
-                            new FootballClub("Aston Villa", "Aston Villa","AVL"),
-                            new FootballClub("Brighton and Hove Albion", "Brighton","BRI"),
-                            new FootballClub("Burnley", "Burnley","Bur"),
-                            new FootballClub("Chelsea", "Chelsea","Che"),
-                            new FootballClub("Crystal Palace", "Crystal Palace","CPA"),
-                            new FootballClub("Everton", "Everton","EVE"),
-                            new FootballClub("Leicester City", "Leicester","LEI"),
-                            new FootballClub("Liverpool", "Liverpool","LIV"),
-                            new FootballClub("Manchester City", "Man City","MAC"),
-                            new FootballClub("Manchester United", "Man Utd","MAU"),
-                            new FootballClub("Newcastle United", "Newcastle","NEW"),
-                            new FootballClub("Norwich City", "Norwich","NOR"),
-                            new FootballClub("Sheffield United", "Sheffield Utd","SHE"),
-                            new FootballClub("Southampton", "Southampton","SOU"),
-                            new FootballClub("Tottenham Hotspur", "Spurs","TOT"),
-                            new FootballClub("Watford", "Watford","WAT"),
-                            new FootballClub("West Ham United", "West Ham","WHU"),
-                            new FootballClub("Wolverhampton Wanderers", "Wolves","WOL"),
-                        });
-                        context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("AFC Bournemouth", "Bournemouth", "BOU")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Arsenal", "Arsenal", "ARS")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Aston Villa", "Aston Villa", "AVL")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Brighton and Hove Albion", "Brighton", "BRI")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Burnley", "Burnley", "BUR")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Chelsea", "Chelsea", "CHE")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Crystal Palace", "Crystal Palace", "CPA")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Everton", "Everton", "EVE")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Leicester City", "Leicester", "LEI")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Liverpool", "Liverpool", "LIV")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Manchester City", "Man City", "MAC")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Manchester United", "Man Utd", "MAU")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Newcastle United", "Newcastle", "NEW")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Norwich City", "Norwich","NOR")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Sheffield United", "Sheffield Utd", "SHE")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Southampton", "Southampton", "SOU")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Tottenham Hotspur", "Spurs", "TOT")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Watford", "Watford", "WAT")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("West Ham United", "West Ham", "WHU")); context.SaveChanges();
+                        context.FootballClubs.Add(new FootballClub("Wolverhampton Wanderers", "Wolves", "WOL")); context.SaveChanges();
                     }
                     #endregion
 
@@ -110,7 +107,6 @@ namespace Fantasy.Web.Infrastructure.Extensions
                             var gameweek = new Gameweek
                             {
                                 Number = i,
-                                
                                 SeasonId = 1,
                             };
                             gameweeks.Add(gameweek);
@@ -121,7 +117,12 @@ namespace Fantasy.Web.Infrastructure.Extensions
                     }
                     #endregion
 
-
+                    #region Seed Positions
+                    context.Add(new PlayerPosition { Name = "Goalkeeper" });context.SaveChanges();
+                    context.Add(new PlayerPosition { Name = "Defender" }); context.SaveChanges();
+                    context.Add(new PlayerPosition { Name = "Midfielder" }); context.SaveChanges();
+                    context.Add(new PlayerPosition { Name = "Forward" }); context.SaveChanges();
+                    #endregion
                 }
             }
 

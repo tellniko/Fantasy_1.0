@@ -12,6 +12,7 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
 
@@ -19,11 +20,6 @@
     <ProjectReference Include="..\Fantasy.Common\Fantasy.Common.csproj" />
     <ProjectReference Include="..\Fantasy.Data\Fantasy.Data.csproj" />
     <ProjectReference Include="..\Fantasy.Services\Fantasy.Services.csproj" />
-  </ItemGroup>
-
-
-  <ItemGroup>
-    <Folder Include="wwwroot\JsonFiles\" />
   </ItemGroup>
 
 </Project>

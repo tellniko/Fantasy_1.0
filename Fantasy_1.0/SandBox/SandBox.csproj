@@ -10,7 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Fantasy.Common\Fantasy.Common.csproj" />
     <ProjectReference Include="..\Fantasy.Data\Fantasy.Data.csproj" />
+    <ProjectReference Include="..\Fantasy.Services\Fantasy.Services.csproj" />
     <ProjectReference Include="..\Fantasy.Web\Fantasy.Web.csproj" />
   </ItemGroup>
 

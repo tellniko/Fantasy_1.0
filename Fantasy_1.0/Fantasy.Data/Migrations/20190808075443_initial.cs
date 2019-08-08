@@ -145,11 +145,11 @@ namespace Fantasy.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    LeagueId = table.Column<int>(nullable: false),
                     PositionId = table.Column<int>(nullable: false),
                     IsFirstTeam = table.Column<bool>(nullable: false),
                     IsInjured = table.Column<bool>(nullable: false),
                     IsPlayable = table.Column<bool>(nullable: false),
+                    Price = table.Column<decimal>(nullable: false),
                     FootballClubId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -290,27 +290,13 @@ namespace Fantasy.Data.Migrations
                     JoinDate = table.Column<DateTime>(nullable: true),
                     BirthDate = table.Column<DateTime>(nullable: true),
                     BirthPlace = table.Column<string>(maxLength: 50, nullable: true),
-                    Country = table.Column<string>(nullable: true),
-                    BirthCountry = table.Column<string>(nullable: true),
-                    PlayerId = table.Column<int>(nullable: false),
-                    CountryId = table.Column<int>(nullable: true),
-                    CountryId1 = table.Column<int>(nullable: true)
+                    Country = table.Column<string>(maxLength: 50, nullable: true),
+                    BirthCountry = table.Column<string>(maxLength: 50, nullable: true),
+                    PlayerId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_PlayerPersonalInfos", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_PlayerPersonalInfos_Countries_CountryId",
-                        column: x => x.CountryId,
-                        principalTable: "Countries",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_PlayerPersonalInfos_Countries_CountryId1",
-                        column: x => x.CountryId1,
-                        principalTable: "Countries",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_PlayerPersonalInfos_Players_PlayerId",
                         column: x => x.PlayerId,
@@ -391,9 +377,9 @@ namespace Fantasy.Data.Migrations
                 {
                     PlayerId = table.Column<int>(nullable: false),
                     FixtureId = table.Column<int>(nullable: false),
-                    Appearances = table.Column<int>(nullable: false),
-                    Wins = table.Column<int>(nullable: false),
-                    Losses = table.Column<int>(nullable: false)
+                    Appearances = table.Column<short>(nullable: false),
+                    Wins = table.Column<short>(nullable: false),
+                    Losses = table.Column<short>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -418,22 +404,22 @@ namespace Fantasy.Data.Migrations
                 {
                     PlayerId = table.Column<int>(nullable: false),
                     FixtureId = table.Column<int>(nullable: false),
-                    Tackles = table.Column<int>(nullable: false),
-                    BlockedShots = table.Column<int>(nullable: false),
-                    Interceptions = table.Column<int>(nullable: false),
-                    Clearances = table.Column<int>(nullable: false),
-                    HeadedClearance = table.Column<int>(nullable: false),
-                    Recoveries = table.Column<int>(nullable: false),
-                    DuelsWon = table.Column<int>(nullable: false),
-                    DuelsLost = table.Column<int>(nullable: false),
-                    SuccessfulFiftyFifties = table.Column<int>(nullable: false),
-                    AerialBattlesWon = table.Column<int>(nullable: false),
-                    AerialBattlesLost = table.Column<int>(nullable: false),
-                    CleanSheets = table.Column<int>(nullable: false),
-                    GoalsConceded = table.Column<int>(nullable: false),
-                    LastManTackles = table.Column<int>(nullable: false),
-                    OwnGoals = table.Column<int>(nullable: false),
-                    ErrorsLeadingToGoal = table.Column<int>(nullable: false)
+                    Tackles = table.Column<short>(nullable: false),
+                    BlockedShots = table.Column<short>(nullable: false),
+                    Interceptions = table.Column<short>(nullable: false),
+                    Clearances = table.Column<short>(nullable: false),
+                    HeadedClearance = table.Column<short>(nullable: false),
+                    Recoveries = table.Column<short>(nullable: false),
+                    DuelsWon = table.Column<short>(nullable: false),
+                    DuelsLost = table.Column<short>(nullable: false),
+                    SuccessfulFiftyFifties = table.Column<short>(nullable: false),
+                    AerialBattlesWon = table.Column<short>(nullable: false),
+                    AerialBattlesLost = table.Column<short>(nullable: false),
+                    CleanSheets = table.Column<short>(nullable: false),
+                    GoalsConceded = table.Column<short>(nullable: false),
+                    LastManTackles = table.Column<short>(nullable: false),
+                    OwnGoals = table.Column<short>(nullable: false),
+                    ErrorsLeadingToGoal = table.Column<short>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -458,10 +444,10 @@ namespace Fantasy.Data.Migrations
                 {
                     PlayerId = table.Column<int>(nullable: false),
                     FixtureId = table.Column<int>(nullable: false),
-                    YellowCards = table.Column<int>(nullable: false),
-                    RedCards = table.Column<int>(nullable: false),
-                    Fouls = table.Column<int>(nullable: false),
-                    Offsides = table.Column<int>(nullable: false)
+                    YellowCards = table.Column<short>(nullable: false),
+                    RedCards = table.Column<short>(nullable: false),
+                    Fouls = table.Column<short>(nullable: false),
+                    Offsides = table.Column<short>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -486,13 +472,13 @@ namespace Fantasy.Data.Migrations
                 {
                     PlayerId = table.Column<int>(nullable: false),
                     FixtureId = table.Column<int>(nullable: false),
-                    Saves = table.Column<int>(nullable: false),
-                    PenaltiesSaved = table.Column<int>(nullable: false),
-                    Punches = table.Column<int>(nullable: false),
-                    HighClaims = table.Column<int>(nullable: false),
-                    Catches = table.Column<int>(nullable: false),
-                    SweeperClearances = table.Column<int>(nullable: false),
-                    GoalKicks = table.Column<int>(nullable: false)
+                    Saves = table.Column<short>(nullable: false),
+                    PenaltiesSaved = table.Column<short>(nullable: false),
+                    Punches = table.Column<short>(nullable: false),
+                    HighClaims = table.Column<short>(nullable: false),
+                    Catches = table.Column<short>(nullable: false),
+                    SweeperClearances = table.Column<short>(nullable: false),
+                    GoalKicks = table.Column<short>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -517,12 +503,12 @@ namespace Fantasy.Data.Migrations
                 {
                     PlayerId = table.Column<int>(nullable: false),
                     FixtureId = table.Column<int>(nullable: false),
-                    Assists = table.Column<int>(nullable: false),
-                    Passes = table.Column<int>(nullable: false),
-                    BigChancesCreated = table.Column<int>(nullable: false),
-                    Crosses = table.Column<int>(nullable: false),
-                    ThroughBalls = table.Column<int>(nullable: false),
-                    AccurateLongBalls = table.Column<int>(nullable: false)
+                    Assists = table.Column<short>(nullable: false),
+                    Passes = table.Column<short>(nullable: false),
+                    BigChancesCreated = table.Column<short>(nullable: false),
+                    Crosses = table.Column<short>(nullable: false),
+                    ThroughBalls = table.Column<short>(nullable: false),
+                    AccurateLongBalls = table.Column<short>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -631,16 +617,6 @@ namespace Fantasy.Data.Migrations
                 column: "FixtureId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PlayerPersonalInfos_CountryId",
-                table: "PlayerPersonalInfos",
-                column: "CountryId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_PlayerPersonalInfos_CountryId1",
-                table: "PlayerPersonalInfos",
-                column: "CountryId1");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_PlayerPersonalInfos_PlayerId",
                 table: "PlayerPersonalInfos",
                 column: "PlayerId",
@@ -686,6 +662,9 @@ namespace Fantasy.Data.Migrations
                 name: "BaseStatistics");
 
             migrationBuilder.DropTable(
+                name: "Countries");
+
+            migrationBuilder.DropTable(
                 name: "DefenceStatistics");
 
             migrationBuilder.DropTable(
@@ -705,9 +684,6 @@ namespace Fantasy.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
-
-            migrationBuilder.DropTable(
-                name: "Countries");
 
             migrationBuilder.DropTable(
                 name: "Fixtures");

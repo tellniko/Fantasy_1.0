@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Fantasy.Data.Migrations
 {
     [DbContext(typeof(FantasyDbContext))]
-    [Migration("20190807185626_initial")]
-    partial class initial
+    [Migration("20190808100031_removeBirthCountry")]
+    partial class removeBirthCountry
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -212,9 +212,9 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<bool>("IsPlayable");
 
-                    b.Property<int>("LeagueId");
-
                     b.Property<int>("PositionId");
+
+                    b.Property<decimal>("Price");
 
                     b.HasKey("Id");
 
@@ -231,18 +231,13 @@ namespace Fantasy.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("BirthCountry");
-
                     b.Property<DateTime?>("BirthDate");
 
                     b.Property<string>("BirthPlace")
                         .HasMaxLength(50);
 
-                    b.Property<string>("Country");
-
-                    b.Property<int?>("CountryId");
-
-                    b.Property<int?>("CountryId1");
+                    b.Property<string>("Country")
+                        .HasMaxLength(50);
 
                     b.Property<string>("FootballPlayerImageUrl")
                         .IsRequired();
@@ -262,10 +257,6 @@ namespace Fantasy.Data.Migrations
                     b.Property<byte>("Weight");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CountryId");
-
-                    b.HasIndex("CountryId1");
 
                     b.HasIndex("PlayerId")
                         .IsUnique();
@@ -321,11 +312,11 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<int>("FixtureId");
 
-                    b.Property<int>("Appearances");
+                    b.Property<short>("Appearances");
 
-                    b.Property<int>("Losses");
+                    b.Property<short>("Losses");
 
-                    b.Property<int>("Wins");
+                    b.Property<short>("Wins");
 
                     b.HasKey("PlayerId", "FixtureId");
 
@@ -340,37 +331,37 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<int>("FixtureId");
 
-                    b.Property<int>("AerialBattlesLost");
+                    b.Property<short>("AerialBattlesLost");
 
-                    b.Property<int>("AerialBattlesWon");
+                    b.Property<short>("AerialBattlesWon");
 
-                    b.Property<int>("BlockedShots");
+                    b.Property<short>("BlockedShots");
 
-                    b.Property<int>("CleanSheets");
+                    b.Property<short>("CleanSheets");
 
-                    b.Property<int>("Clearances");
+                    b.Property<short>("Clearances");
 
-                    b.Property<int>("DuelsLost");
+                    b.Property<short>("DuelsLost");
 
-                    b.Property<int>("DuelsWon");
+                    b.Property<short>("DuelsWon");
 
-                    b.Property<int>("ErrorsLeadingToGoal");
+                    b.Property<short>("ErrorsLeadingToGoal");
 
-                    b.Property<int>("GoalsConceded");
+                    b.Property<short>("GoalsConceded");
 
-                    b.Property<int>("HeadedClearance");
+                    b.Property<short>("HeadedClearance");
 
-                    b.Property<int>("Interceptions");
+                    b.Property<short>("Interceptions");
 
-                    b.Property<int>("LastManTackles");
+                    b.Property<short>("LastManTackles");
 
-                    b.Property<int>("OwnGoals");
+                    b.Property<short>("OwnGoals");
 
-                    b.Property<int>("Recoveries");
+                    b.Property<short>("Recoveries");
 
-                    b.Property<int>("SuccessfulFiftyFifties");
+                    b.Property<short>("SuccessfulFiftyFifties");
 
-                    b.Property<int>("Tackles");
+                    b.Property<short>("Tackles");
 
                     b.HasKey("PlayerId", "FixtureId");
 
@@ -385,13 +376,13 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<int>("FixtureId");
 
-                    b.Property<int>("Fouls");
+                    b.Property<short>("Fouls");
 
-                    b.Property<int>("Offsides");
+                    b.Property<short>("Offsides");
 
-                    b.Property<int>("RedCards");
+                    b.Property<short>("RedCards");
 
-                    b.Property<int>("YellowCards");
+                    b.Property<short>("YellowCards");
 
                     b.HasKey("PlayerId", "FixtureId");
 
@@ -406,19 +397,19 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<int>("FixtureId");
 
-                    b.Property<int>("Catches");
+                    b.Property<short>("Catches");
 
-                    b.Property<int>("GoalKicks");
+                    b.Property<short>("GoalKicks");
 
-                    b.Property<int>("HighClaims");
+                    b.Property<short>("HighClaims");
 
-                    b.Property<int>("PenaltiesSaved");
+                    b.Property<short>("PenaltiesSaved");
 
-                    b.Property<int>("Punches");
+                    b.Property<short>("Punches");
 
-                    b.Property<int>("Saves");
+                    b.Property<short>("Saves");
 
-                    b.Property<int>("SweeperClearances");
+                    b.Property<short>("SweeperClearances");
 
                     b.HasKey("PlayerId", "FixtureId");
 
@@ -433,17 +424,17 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<int>("FixtureId");
 
-                    b.Property<int>("AccurateLongBalls");
+                    b.Property<short>("AccurateLongBalls");
 
-                    b.Property<int>("Assists");
+                    b.Property<short>("Assists");
 
-                    b.Property<int>("BigChancesCreated");
+                    b.Property<short>("BigChancesCreated");
 
-                    b.Property<int>("Crosses");
+                    b.Property<short>("Crosses");
 
-                    b.Property<int>("Passes");
+                    b.Property<short>("Passes");
 
-                    b.Property<int>("ThroughBalls");
+                    b.Property<short>("ThroughBalls");
 
                     b.HasKey("PlayerId", "FixtureId");
 
@@ -611,14 +602,6 @@ namespace Fantasy.Data.Migrations
 
             modelBuilder.Entity("Fantasy.Data.Models.Players.PlayerPersonalInfo", b =>
                 {
-                    b.HasOne("Fantasy.Data.Models.Common.Country")
-                        .WithMany("BirthCountries")
-                        .HasForeignKey("CountryId");
-
-                    b.HasOne("Fantasy.Data.Models.Common.Country")
-                        .WithMany("Countries")
-                        .HasForeignKey("CountryId1");
-
                     b.HasOne("Fantasy.Data.Models.Players.Player", "Player")
                         .WithOne("PlayerPersonalInfo")
                         .HasForeignKey("Fantasy.Data.Models.Players.PlayerPersonalInfo", "PlayerId")
