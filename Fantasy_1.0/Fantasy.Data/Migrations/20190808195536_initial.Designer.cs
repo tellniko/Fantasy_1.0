@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Fantasy.Data.Migrations
 {
     [DbContext(typeof(FantasyDbContext))]
-    [Migration("20190808160940_initial")]
+    [Migration("20190808195536_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -270,7 +270,7 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<int>("PlayerId");
 
-                    b.Property<byte>("ShirtNum");
+                    b.Property<byte>("ShirtNumber");
 
                     b.Property<byte>("Weight");
 

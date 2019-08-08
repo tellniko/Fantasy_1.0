@@ -13,7 +13,7 @@ namespace Fantasy.Data.Models.Players
         [Required]
         public string FootballPlayerImageUrl { get; set; } = DataConstants.FootballPlayerDefaultImgUrl;
 
-        public byte ShirtNum { get; set; }
+        public byte ShirtNumber { get; set; }
 
         public byte Height { get; set; }
 

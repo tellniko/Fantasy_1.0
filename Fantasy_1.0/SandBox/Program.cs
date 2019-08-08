@@ -19,12 +19,11 @@ namespace SandBox
     {
         static void Main(string[] args)
         {
+            var regex = new Regex("<span class=\"stat\">([A-Za-z\\ ]+)   <span.+\\s+([0-9\\.\\,]+)"); 
 
-            var regex =new Regex("<span class=\"stat\">([A-Za-z\\ ]+)   <span.+\\s+([0-9\\.\\,]+)"); 
-
-            var dict = new Dictionary<string,string>();
+            var properties = new Dictionary<string,string>();
             var id = 5140;
-            var fixtureId = 1;
+            var gameweekId = 1;
 
             var responseFromServer = string.Empty;
             var url = $"https://www.premierleague.com/players/{id}/player/stats";
@@ -37,68 +36,42 @@ namespace SandBox
                 var reader = new StreamReader(dataStream);
                 responseFromServer = reader.ReadToEnd();
 
-                var matches = regex.Matches(responseFromServer);
-                foreach (Match match in matches)
+                foreach (Match match in regex.Matches(responseFromServer))
                 {
                     var key = match.Groups[1].ToString().Replace(" ","");
                     var value = match.Groups[2].ToString().Replace(",","");
-                    if (!dict.ContainsKey(key))
+
+                    if (!properties.ContainsKey(key))
                     {
-                        dict.Add(key, value);
+                        properties.Add(key, value);
                     }
                 }
 
-                var attackStat = new AttackStatistics();
-                var baseStat = new MatchStatistics();
-                var defenceStat = new DefenceStatistics();
-                var teamPlayStat = new TeamPlayStatistics();
-                var disciplineStat = new DisciplineStatistics();
-                var goalkeeperStat = new GoalkeepingStatistics();
-
-                foreach (var kvp in dict)
+                var statistics = new List<BaseStatistics>
                 {
-                  
-                    baseStat
-                        .GetType()
-                        .GetProperty(kvp.Key, 
-                            BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance)
-                        ?.SetValue(baseStat, short.Parse(kvp.Value));
+                    new AttackStatistics(),
+                    new MatchStatistics(),
+                    new DefenceStatistics(),
+                    new TeamPlayStatistics(),
+                    new DisciplineStatistics(),
+                    new GoalkeepingStatistics(),
+                };
 
-                    goalkeeperStat
-                        .GetType()
-                        .GetProperty(kvp.Key,
-                            BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance)
-                        ?.SetValue(goalkeeperStat, short.Parse(kvp.Value));
-
-                    defenceStat
-                        .GetType()
-                        .GetProperty(kvp.Key,
-                            BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance)
-                        ?.SetValue(defenceStat, short.Parse(kvp.Value));
-
-                    attackStat
-                        .GetType()
-                        .GetProperty(kvp.Key,
-                            BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance)
-                        ?.SetValue(attackStat, short.Parse(kvp.Value));
-
-                    teamPlayStat
-                        .GetType()
-                        .GetProperty(kvp.Key,
-                            BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance)
-                        ?.SetValue(teamPlayStat, short.Parse(kvp.Value));
-                }
-
-
-
-
-                foreach (var kvp in dict)
+                foreach (var stat in statistics)
                 {
-                    Console.WriteLine(kvp.Key + "  -  " + kvp.Value);
+                    stat.GameweekId = gameweekId;
+                    stat.PlayerId = id;
+
+                    foreach (var kvp in properties)
+                    {
+                        stat
+                            .GetType()
+                            .GetProperty(kvp.Key,
+                                BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance)
+                            ?.SetValue(stat, short.Parse(kvp.Value));
+                    }
                 }
             }
-
-            Console.WriteLine();
         }
     }
 }

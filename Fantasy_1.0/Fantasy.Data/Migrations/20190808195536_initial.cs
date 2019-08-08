@@ -304,7 +304,7 @@ namespace Fantasy.Data.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(maxLength: 50, nullable: false),
                     FootballPlayerImageUrl = table.Column<string>(nullable: false),
-                    ShirtNum = table.Column<byte>(nullable: false),
+                    ShirtNumber = table.Column<byte>(nullable: false),
                     Height = table.Column<byte>(nullable: false),
                     Weight = table.Column<byte>(nullable: false),
                     JoinDate = table.Column<DateTime>(nullable: true),

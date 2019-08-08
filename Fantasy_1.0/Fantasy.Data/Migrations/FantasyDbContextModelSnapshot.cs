@@ -268,7 +268,7 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<int>("PlayerId");
 
-                    b.Property<byte>("ShirtNum");
+                    b.Property<byte>("ShirtNumber");
 
                     b.Property<byte>("Weight");
 

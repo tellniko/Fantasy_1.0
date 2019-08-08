@@ -3,5 +3,7 @@
     public interface IDatabaseService
     {
         string SeedPlayers();
+
+        string SeedStatistics();
     }
 }

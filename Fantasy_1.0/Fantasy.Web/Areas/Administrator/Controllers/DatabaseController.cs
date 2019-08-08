@@ -15,7 +15,16 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
         public IActionResult SeedPlayers()
         {
-            var result =  this.database.SeedPlayers();
+            var result = this.database.SeedPlayers();
+
+            this.TempData.AddSuccessMessage(result);
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult SeedStatistics()
+        {
+            var result = this.database.SeedStatistics();
 
             this.TempData.AddSuccessMessage(result);
 
