@@ -2,9 +2,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 1870,
+    "FootballPlayerId": 1870,
     "ShirtNumber": 13,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 193,
     "Weight": 83,
@@ -19,9 +19,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2100,
+    "FootballPlayerId": 2100,
     "ShirtNumber": 7,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 175,
     "Weight": 70,
@@ -36,9 +36,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2214,
+    "FootballPlayerId": 2214,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Ireland",
     "Height": 190,
     "Weight": 94,
@@ -53,9 +53,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2270,
+    "FootballPlayerId": 2270,
     "ShirtNumber": 25,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 165,
     "Weight": 63,
@@ -70,9 +70,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2338,
+    "FootballPlayerId": 2338,
     "ShirtNumber": 6,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 178,
     "Weight": 73,
@@ -87,9 +87,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2340,
+    "FootballPlayerId": 2340,
     "ShirtNumber": 17,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Ireland",
     "Height": 183,
     "Weight": 74,
@@ -104,9 +104,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2485,
+    "FootballPlayerId": 2485,
     "ShirtNumber": 19,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 190,
     "Weight": 74,
@@ -121,9 +121,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2508,
+    "FootballPlayerId": 2508,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Denmark",
     "Height": 189,
     "Weight": 89,
@@ -138,9 +138,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2517,
+    "FootballPlayerId": 2517,
     "ShirtNumber": 26,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Scotland",
     "Height": 180,
     "Weight": 74,
@@ -155,9 +155,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2537,
+    "FootballPlayerId": 2537,
     "ShirtNumber": 27,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Bosnia And Herzegovina",
     "Height": 199,
     "Weight": 101,
@@ -172,9 +172,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2569,
+    "FootballPlayerId": 2569,
     "ShirtNumber": 13,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Wales",
     "Height": 198,
     "Weight": 90,
@@ -189,9 +189,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2593,
+    "FootballPlayerId": 2593,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 188,
     "Weight": 95,
@@ -206,9 +206,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2839,
+    "FootballPlayerId": 2839,
     "ShirtNumber": 11,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 176,
     "Weight": 68,
@@ -223,9 +223,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2852,
+    "FootballPlayerId": 2852,
     "ShirtNumber": 30,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 190,
     "Weight": 78,
@@ -240,9 +240,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2886,
+    "FootballPlayerId": 2886,
     "ShirtNumber": 21,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 179,
     "Weight": 85,
@@ -257,9 +257,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2889,
+    "FootballPlayerId": 2889,
     "ShirtNumber": 4,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 183,
     "Weight": 70,
@@ -274,9 +274,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2896,
+    "FootballPlayerId": 2896,
     "ShirtNumber": 21,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 193,
     "Weight": 97,
@@ -291,9 +291,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2912,
+    "FootballPlayerId": 2912,
     "ShirtNumber": 0,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 185,
     "Weight": 85,
@@ -308,9 +308,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2932,
+    "FootballPlayerId": 2932,
     "ShirtNumber": 26,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 193,
     "Weight": 79,
@@ -325,9 +325,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2933,
+    "FootballPlayerId": 2933,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 188,
     "Weight": 85,
@@ -342,9 +342,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 2936,
+    "FootballPlayerId": 2936,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Wales",
     "Height": 177,
     "Weight": 75,
@@ -359,9 +359,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3014,
+    "FootballPlayerId": 3014,
     "ShirtNumber": 16,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 180,
     "Weight": 70,
@@ -376,9 +376,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3030,
+    "FootballPlayerId": 3030,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 170,
     "Weight": 74,
@@ -393,9 +393,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3049,
+    "FootballPlayerId": 3049,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 183,
     "Weight": 78,
@@ -410,9 +410,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3058,
+    "FootballPlayerId": 3058,
     "ShirtNumber": 0,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Ireland",
     "Height": 188,
     "Weight": 87,
@@ -427,9 +427,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3062,
+    "FootballPlayerId": 3062,
     "ShirtNumber": 18,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 175,
     "Weight": 65,
@@ -444,9 +444,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3143,
+    "FootballPlayerId": 3143,
     "ShirtNumber": 20,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 196,
     "Weight": 91,
@@ -461,9 +461,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3156,
+    "FootballPlayerId": 3156,
     "ShirtNumber": 6,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Northern Ireland",
     "Height": 188,
     "Weight": 77,
@@ -478,9 +478,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3160,
+    "FootballPlayerId": 3160,
     "ShirtNumber": 15,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Northern Ireland",
     "Height": 188,
     "Weight": 73,
@@ -495,9 +495,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3169,
+    "FootballPlayerId": 3169,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Netherlands",
     "Height": 188,
     "Weight": 84,
@@ -512,9 +512,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3170,
+    "FootballPlayerId": 3170,
     "ShirtNumber": 44,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 201,
     "Weight": 93,
@@ -529,9 +529,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3206,
+    "FootballPlayerId": 3206,
     "ShirtNumber": 7,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Ireland",
     "Height": 178,
     "Weight": 81,
@@ -546,9 +546,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3222,
+    "FootballPlayerId": 3222,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 180,
     "Weight": 87,
@@ -563,9 +563,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3242,
+    "FootballPlayerId": 3242,
     "ShirtNumber": 11,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 178,
     "Weight": 75,
@@ -580,9 +580,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3251,
+    "FootballPlayerId": 3251,
     "ShirtNumber": 6,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Jamaica",
     "Height": 180,
     "Weight": 78,
@@ -597,9 +597,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3309,
+    "FootballPlayerId": 3309,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Poland",
     "Height": 190,
     "Weight": 83,
@@ -614,9 +614,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3320,
+    "FootballPlayerId": 3320,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 175,
     "Weight": 65,
@@ -631,9 +631,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3362,
+    "FootballPlayerId": 3362,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Netherlands",
     "Height": 176,
     "Weight": 74,
@@ -648,9 +648,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3390,
+    "FootballPlayerId": 3390,
     "ShirtNumber": 4,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 183,
     "Weight": 79,
@@ -665,9 +665,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3441,
+    "FootballPlayerId": 3441,
     "ShirtNumber": 32,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Wales",
     "Height": 183,
     "Weight": 76,
@@ -682,9 +682,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3448,
+    "FootballPlayerId": 3448,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 175,
     "Weight": 67,
@@ -699,9 +699,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3457,
+    "FootballPlayerId": 3457,
     "ShirtNumber": 23,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 188,
     "Weight": 79,
@@ -716,9 +716,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3505,
+    "FootballPlayerId": 3505,
     "ShirtNumber": 27,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 191,
     "Weight": 87,
@@ -733,9 +733,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3507,
+    "FootballPlayerId": 3507,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 173,
     "Weight": 72,
@@ -750,9 +750,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3512,
+    "FootballPlayerId": 3512,
     "ShirtNumber": 15,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 180,
     "Weight": 78,
@@ -767,9 +767,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3517,
+    "FootballPlayerId": 3517,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 192,
     "Weight": 74,
@@ -784,9 +784,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3547,
+    "FootballPlayerId": 3547,
     "ShirtNumber": 19,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 172,
     "Weight": 68,
@@ -801,9 +801,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3562,
+    "FootballPlayerId": 3562,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Ireland",
     "Height": 185,
     "Weight": 88,
@@ -818,9 +818,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3564,
+    "FootballPlayerId": 3564,
     "ShirtNumber": 11,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 175,
     "Weight": 74,
@@ -835,9 +835,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3581,
+    "FootballPlayerId": 3581,
     "ShirtNumber": 6,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 192,
     "Weight": 77,
@@ -852,9 +852,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3600,
+    "FootballPlayerId": 3600,
     "ShirtNumber": 23,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Ireland",
     "Height": 177,
     "Weight": 67,
@@ -869,9 +869,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3601,
+    "FootballPlayerId": 3601,
     "ShirtNumber": 4,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Ireland",
     "Height": 193,
     "Weight": 76,
@@ -886,9 +886,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3613,
+    "FootballPlayerId": 3613,
     "ShirtNumber": 12,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 194,
     "Weight": 81,
@@ -903,9 +903,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3644,
+    "FootballPlayerId": 3644,
     "ShirtNumber": 34,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 191,
     "Weight": 77,
@@ -920,9 +920,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3654,
+    "FootballPlayerId": 3654,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Argentina",
     "Height": 176,
     "Weight": 74,
@@ -937,9 +937,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3669,
+    "FootballPlayerId": 3669,
     "ShirtNumber": 22,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 181,
     "Weight": 86,
@@ -954,9 +954,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3670,
+    "FootballPlayerId": 3670,
     "ShirtNumber": 6,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 178,
     "Weight": 79,
@@ -971,9 +971,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3712,
+    "FootballPlayerId": 3712,
     "ShirtNumber": 14,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 182,
     "Weight": 67,
@@ -988,9 +988,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3713,
+    "FootballPlayerId": 3713,
     "ShirtNumber": 4,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 177,
     "Weight": 77,
@@ -1005,9 +1005,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3724,
+    "FootballPlayerId": 3724,
     "ShirtNumber": 10,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 181,
     "Weight": 77,
@@ -1022,9 +1022,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3756,
+    "FootballPlayerId": 3756,
     "ShirtNumber": 11,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "New Zealand",
     "Height": 191,
     "Weight": 81,
@@ -1039,9 +1039,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3766,
+    "FootballPlayerId": 3766,
     "ShirtNumber": 19,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 183,
     "Weight": 76,
@@ -1056,9 +1056,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3799,
+    "FootballPlayerId": 3799,
     "ShirtNumber": 18,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 174,
     "Weight": 60,
@@ -1073,9 +1073,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3807,
+    "FootballPlayerId": 3807,
     "ShirtNumber": 6,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 188,
     "Weight": 76,
@@ -1090,9 +1090,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3811,
+    "FootballPlayerId": 3811,
     "ShirtNumber": 22,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 173,
     "Weight": 69,
@@ -1107,9 +1107,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3819,
+    "FootballPlayerId": 3819,
     "ShirtNumber": 31,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Scotland",
     "Height": 187,
     "Weight": 81,
@@ -1124,9 +1124,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3820,
+    "FootballPlayerId": 3820,
     "ShirtNumber": 4,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 180,
     "Weight": 71,
@@ -1141,9 +1141,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3837,
+    "FootballPlayerId": 3837,
     "ShirtNumber": 28,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Ireland",
     "Height": 188,
     "Weight": 83,
@@ -1158,9 +1158,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3851,
+    "FootballPlayerId": 3851,
     "ShirtNumber": 19,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 185,
     "Weight": 84,
@@ -1175,9 +1175,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3861,
+    "FootballPlayerId": 3861,
     "ShirtNumber": 31,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Serbia",
     "Height": 194,
     "Weight": 85,
@@ -1192,9 +1192,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3868,
+    "FootballPlayerId": 3868,
     "ShirtNumber": 36,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 179,
     "Weight": 73,
@@ -1209,9 +1209,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3869,
+    "FootballPlayerId": 3869,
     "ShirtNumber": 20,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Germany",
     "Height": 184,
     "Weight": 82,
@@ -1226,9 +1226,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3889,
+    "FootballPlayerId": 3889,
     "ShirtNumber": 33,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Italy",
     "Height": 186,
     "Weight": 82,
@@ -1243,9 +1243,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3905,
+    "FootballPlayerId": 3905,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 178,
     "Weight": 71,
@@ -1260,9 +1260,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3909,
+    "FootballPlayerId": 3909,
     "ShirtNumber": 6,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 180,
     "Weight": 74,
@@ -1277,9 +1277,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3920,
+    "FootballPlayerId": 3920,
     "ShirtNumber": 6,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "France",
     "Height": 191,
     "Weight": 84,
@@ -1294,9 +1294,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3924,
+    "FootballPlayerId": 3924,
     "ShirtNumber": 16,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Northern Ireland",
     "Height": 180,
     "Weight": 75,
@@ -1311,9 +1311,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3926,
+    "FootballPlayerId": 3926,
     "ShirtNumber": 17,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Norway",
     "Height": 180,
     "Weight": 74,
@@ -1328,9 +1328,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3929,
+    "FootballPlayerId": 3929,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 188,
     "Weight": 83,
@@ -1345,9 +1345,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3934,
+    "FootballPlayerId": 3934,
     "ShirtNumber": 11,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Scotland",
     "Height": 172,
     "Weight": 76,
@@ -1362,9 +1362,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3945,
+    "FootballPlayerId": 3945,
     "ShirtNumber": 7,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 183,
     "Weight": 73,
@@ -1379,9 +1379,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3955,
+    "FootballPlayerId": 3955,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 178,
     "Weight": 70,
@@ -1396,9 +1396,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3958,
+    "FootballPlayerId": 3958,
     "ShirtNumber": 24,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 181,
     "Weight": 74,
@@ -1413,9 +1413,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3960,
+    "FootballPlayerId": 3960,
     "ShirtNumber": 10,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 188,
     "Weight": 86,
@@ -1430,9 +1430,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 3979,
+    "FootballPlayerId": 3979,
     "ShirtNumber": 16,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ireland",
     "Height": 180,
     "Weight": 72,
@@ -1447,9 +1447,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4030,
+    "FootballPlayerId": 4030,
     "ShirtNumber": 6,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "France",
     "Height": 186,
     "Weight": 75,
@@ -1464,9 +1464,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4093,
+    "FootballPlayerId": 4093,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Spain",
     "Height": 188,
     "Weight": 84,
@@ -1481,9 +1481,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4100,
+    "FootballPlayerId": 4100,
     "ShirtNumber": 30,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Brazil",
     "Height": 189,
     "Weight": 84,
@@ -1498,9 +1498,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4105,
+    "FootballPlayerId": 4105,
     "ShirtNumber": 14,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 187,
     "Weight": 80,
@@ -1515,9 +1515,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4112,
+    "FootballPlayerId": 4112,
     "ShirtNumber": 15,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 188,
     "Weight": 88,
@@ -1532,9 +1532,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4115,
+    "FootballPlayerId": 4115,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 189,
     "Weight": 76,
@@ -1549,9 +1549,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4135,
+    "FootballPlayerId": 4135,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 184,
     "Weight": 80,
@@ -1566,9 +1566,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4136,
+    "FootballPlayerId": 4136,
     "ShirtNumber": 16,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 185,
     "Weight": 73,
@@ -1583,9 +1583,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4145,
+    "FootballPlayerId": 4145,
     "ShirtNumber": 21,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Spain",
     "Height": 173,
     "Weight": 67,
@@ -1600,9 +1600,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4158,
+    "FootballPlayerId": 4158,
     "ShirtNumber": 12,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ireland",
     "Height": 176,
     "Weight": 71,
@@ -1617,9 +1617,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4161,
+    "FootballPlayerId": 4161,
     "ShirtNumber": 17,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Mexico",
     "Height": 175,
     "Weight": 73,
@@ -1634,9 +1634,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4179,
+    "FootballPlayerId": 4179,
     "ShirtNumber": 22,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Belgium",
     "Height": 193,
     "Weight": 87,
@@ -1651,9 +1651,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4183,
+    "FootballPlayerId": 4183,
     "ShirtNumber": 27,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Egypt",
     "Height": 183,
     "Weight": 75,
@@ -1668,9 +1668,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4198,
+    "FootballPlayerId": 4198,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 189,
     "Weight": 85,
@@ -1685,9 +1685,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4209,
+    "FootballPlayerId": 4209,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "New Zealand",
     "Height": 190,
     "Weight": 87,
@@ -1702,9 +1702,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4224,
+    "FootballPlayerId": 4224,
     "ShirtNumber": 18,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Scotland",
     "Height": 178,
     "Weight": 75,
@@ -1719,9 +1719,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4229,
+    "FootballPlayerId": 4229,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Ireland",
     "Height": 182,
     "Weight": 80,
@@ -1736,9 +1736,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4245,
+    "FootballPlayerId": 4245,
     "ShirtNumber": 0,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Argentina",
     "Height": 195,
     "Weight": 88,
@@ -1753,9 +1753,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4248,
+    "FootballPlayerId": 4248,
     "ShirtNumber": 25,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 185,
     "Weight": 77,
@@ -1770,9 +1770,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4252,
+    "FootballPlayerId": 4252,
     "ShirtNumber": 21,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 180,
     "Weight": 70,
@@ -1787,9 +1787,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4258,
+    "FootballPlayerId": 4258,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Ireland",
     "Height": 182,
     "Weight": 83,
@@ -1804,9 +1804,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4259,
+    "FootballPlayerId": 4259,
     "ShirtNumber": 44,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ireland",
     "Height": 173,
     "Weight": 70,
@@ -1821,9 +1821,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4260,
+    "FootballPlayerId": 4260,
     "ShirtNumber": 10,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 175,
     "Weight": 68,
@@ -1838,9 +1838,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4286,
+    "FootballPlayerId": 4286,
     "ShirtNumber": 14,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Spain",
     "Height": 183,
     "Weight": 83,
@@ -1855,9 +1855,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4287,
+    "FootballPlayerId": 4287,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Spain",
     "Height": 170,
     "Weight": 63,
@@ -1872,9 +1872,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4288,
+    "FootballPlayerId": 4288,
     "ShirtNumber": 17,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Belgium",
     "Height": 181,
     "Weight": 68,
@@ -1889,9 +1889,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4289,
+    "FootballPlayerId": 4289,
     "ShirtNumber": 34,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Brazil",
     "Height": 182,
     "Weight": 73,
@@ -1906,9 +1906,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4290,
+    "FootballPlayerId": 4290,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Belgium",
     "Height": 190,
     "Weight": 93,
@@ -1923,9 +1923,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4316,
+    "FootballPlayerId": 4316,
     "ShirtNumber": 7,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 170,
     "Weight": 69,
@@ -1940,9 +1940,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4328,
+    "FootballPlayerId": 4328,
     "ShirtNumber": 10,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Argentina",
     "Height": 173,
     "Weight": 70,
@@ -1957,9 +1957,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4330,
+    "FootballPlayerId": 4330,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Spain",
     "Height": 192,
     "Weight": 76,
@@ -1974,9 +1974,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4333,
+    "FootballPlayerId": 4333,
     "ShirtNumber": 4,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 191,
     "Weight": 82,
@@ -1991,9 +1991,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4337,
+    "FootballPlayerId": 4337,
     "ShirtNumber": 14,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 175,
     "Weight": 62,
@@ -2008,9 +2008,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4340,
+    "FootballPlayerId": 4340,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Wales",
     "Height": 183,
     "Weight": 82,
@@ -2025,9 +2025,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4348,
+    "FootballPlayerId": 4348,
     "ShirtNumber": 12,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 182,
     "Weight": 80,
@@ -2042,9 +2042,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4351,
+    "FootballPlayerId": 4351,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 188,
     "Weight": 70,
@@ -2059,9 +2059,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4394,
+    "FootballPlayerId": 4394,
     "ShirtNumber": 12,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Ireland",
     "Height": 185,
     "Weight": 75,
@@ -2076,9 +2076,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4396,
+    "FootballPlayerId": 4396,
     "ShirtNumber": 21,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 191,
     "Weight": 90,
@@ -2093,9 +2093,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4402,
+    "FootballPlayerId": 4402,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Wales",
     "Height": 175,
     "Weight": 64,
@@ -2110,9 +2110,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4408,
+    "FootballPlayerId": 4408,
     "ShirtNumber": 33,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Wales",
     "Height": 181,
     "Weight": 76,
@@ -2127,9 +2127,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4421,
+    "FootballPlayerId": 4421,
     "ShirtNumber": 10,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Iceland",
     "Height": 186,
     "Weight": 79,
@@ -2144,9 +2144,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4472,
+    "FootballPlayerId": 4472,
     "ShirtNumber": 18,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Spain",
     "Height": 179,
     "Weight": 72,
@@ -2161,9 +2161,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4474,
+    "FootballPlayerId": 4474,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Spain",
     "Height": 178,
     "Weight": 74,
@@ -2178,9 +2178,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4481,
+    "FootballPlayerId": 4481,
     "ShirtNumber": 18,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "France",
     "Height": 192,
     "Weight": 93,
@@ -2195,9 +2195,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4487,
+    "FootballPlayerId": 4487,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 180,
     "Weight": 78,
@@ -2212,9 +2212,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4489,
+    "FootballPlayerId": 4489,
     "ShirtNumber": 18,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 175,
     "Weight": 80,
@@ -2229,9 +2229,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4492,
+    "FootballPlayerId": 4492,
     "ShirtNumber": 17,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Belgium",
     "Height": 190,
     "Weight": 83,
@@ -2246,9 +2246,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4495,
+    "FootballPlayerId": 4495,
     "ShirtNumber": 27,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Denmark",
     "Height": 188,
     "Weight": 78,
@@ -2263,9 +2263,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4496,
+    "FootballPlayerId": 4496,
     "ShirtNumber": 28,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Spain",
     "Height": 178,
     "Weight": 76,
@@ -2280,9 +2280,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4499,
+    "FootballPlayerId": 4499,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Netherlands",
     "Height": 180,
     "Weight": 75,
@@ -2297,9 +2297,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4505,
+    "FootballPlayerId": 4505,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 188,
     "Weight": 70,
@@ -2314,9 +2314,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4507,
+    "FootballPlayerId": 4507,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Belgium",
     "Height": 182,
     "Weight": 72,
@@ -2331,9 +2331,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4509,
+    "FootballPlayerId": 4509,
     "ShirtNumber": 7,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 185,
     "Weight": 80,
@@ -2348,9 +2348,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4522,
+    "FootballPlayerId": 4522,
     "ShirtNumber": 12,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Wales",
     "Height": 191,
     "Weight": 88,
@@ -2365,9 +2365,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4527,
+    "FootballPlayerId": 4527,
     "ShirtNumber": 10,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 176,
     "Weight": 81,
@@ -2382,9 +2382,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4539,
+    "FootballPlayerId": 4539,
     "ShirtNumber": 11,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Cote D'Ivoire",
     "Height": 180,
     "Weight": 66,
@@ -2399,9 +2399,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4549,
+    "FootballPlayerId": 4549,
     "ShirtNumber": 17,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "France",
     "Height": 187,
     "Weight": 83,
@@ -2416,9 +2416,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4558,
+    "FootballPlayerId": 4558,
     "ShirtNumber": 11,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Scotland",
     "Height": 182,
     "Weight": 82,
@@ -2433,9 +2433,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4560,
+    "FootballPlayerId": 4560,
     "ShirtNumber": 27,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Norway",
     "Height": 180,
     "Weight": 68,
@@ -2450,9 +2450,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4573,
+    "FootballPlayerId": 4573,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 193,
     "Weight": 79,
@@ -2467,9 +2467,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4582,
+    "FootballPlayerId": 4582,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Jamaica",
     "Height": 193,
     "Weight": 82,
@@ -2484,9 +2484,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4600,
+    "FootballPlayerId": 4600,
     "ShirtNumber": 22,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Argentina",
     "Height": 196,
     "Weight": 90,
@@ -2501,9 +2501,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4601,
+    "FootballPlayerId": 4601,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Poland",
     "Height": 193,
     "Weight": 87,
@@ -2518,9 +2518,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4604,
+    "FootballPlayerId": 4604,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 175,
     "Weight": 67,
@@ -2535,9 +2535,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4605,
+    "FootballPlayerId": 4605,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Japan",
     "Height": 189,
     "Weight": 78,
@@ -2552,9 +2552,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4608,
+    "FootballPlayerId": 4608,
     "ShirtNumber": 23,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 185,
     "Weight": 75,
@@ -2569,9 +2569,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4612,
+    "FootballPlayerId": 4612,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 185,
     "Weight": 75,
@@ -2586,9 +2586,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4615,
+    "FootballPlayerId": 4615,
     "ShirtNumber": 18,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "France",
     "Height": 181,
     "Weight": 75,
@@ -2603,9 +2603,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4617,
+    "FootballPlayerId": 4617,
     "ShirtNumber": 16,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 173,
     "Weight": 66,
@@ -2620,9 +2620,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4618,
+    "FootballPlayerId": 4618,
     "ShirtNumber": 20,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 172,
     "Weight": 73,
@@ -2637,9 +2637,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4620,
+    "FootballPlayerId": 4620,
     "ShirtNumber": 21,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 182,
     "Weight": 66,
@@ -2654,9 +2654,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4626,
+    "FootballPlayerId": 4626,
     "ShirtNumber": 10,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 178,
     "Weight": 79,
@@ -2671,9 +2671,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4640,
+    "FootballPlayerId": 4640,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 185,
     "Weight": 77,
@@ -2688,9 +2688,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4656,
+    "FootballPlayerId": 4656,
     "ShirtNumber": 4,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "South Korea",
     "Height": 189,
     "Weight": 75,
@@ -2705,9 +2705,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4664,
+    "FootballPlayerId": 4664,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "France",
     "Height": 188,
     "Weight": 82,
@@ -2722,9 +2722,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4666,
+    "FootballPlayerId": 4666,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Belgium",
     "Height": 189,
     "Weight": 87,
@@ -2739,9 +2739,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4674,
+    "FootballPlayerId": 4674,
     "ShirtNumber": 37,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 182,
     "Weight": 70,
@@ -2756,9 +2756,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4713,
+    "FootballPlayerId": 4713,
     "ShirtNumber": 14,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 185,
     "Weight": 79,
@@ -2773,9 +2773,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4714,
+    "FootballPlayerId": 4714,
     "ShirtNumber": 10,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Germany",
     "Height": 180,
     "Weight": 76,
@@ -2790,9 +2790,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4717,
+    "FootballPlayerId": 4717,
     "ShirtNumber": 17,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Nigeria",
     "Height": 180,
     "Weight": 75,
@@ -2807,9 +2807,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4727,
+    "FootballPlayerId": 4727,
     "ShirtNumber": 25,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 192,
     "Weight": 86,
@@ -2824,9 +2824,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4748,
+    "FootballPlayerId": 4748,
     "ShirtNumber": 22,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Brazil",
     "Height": 175,
     "Weight": 77,
@@ -2841,9 +2841,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4749,
+    "FootballPlayerId": 4749,
     "ShirtNumber": 34,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 182,
     "Weight": 72,
@@ -2858,9 +2858,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4772,
+    "FootballPlayerId": 4772,
     "ShirtNumber": 17,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 183,
     "Weight": 80,
@@ -2875,9 +2875,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4777,
+    "FootballPlayerId": 4777,
     "ShirtNumber": 7,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Spain",
     "Height": 177,
     "Weight": 73,
@@ -2892,9 +2892,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4779,
+    "FootballPlayerId": 4779,
     "ShirtNumber": 22,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Netherlands",
     "Height": 197,
     "Weight": 92,
@@ -2909,9 +2909,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4786,
+    "FootballPlayerId": 4786,
     "ShirtNumber": 17,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Switzerland",
     "Height": 191,
     "Weight": 85,
@@ -2926,9 +2926,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4796,
+    "FootballPlayerId": 4796,
     "ShirtNumber": 12,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "France",
     "Height": 187,
     "Weight": 83,
@@ -2943,9 +2943,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4804,
+    "FootballPlayerId": 4804,
     "ShirtNumber": 25,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Brazil",
     "Height": 179,
     "Weight": 67,
@@ -2960,9 +2960,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4813,
+    "FootballPlayerId": 4813,
     "ShirtNumber": 6,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Croatia",
     "Height": 188,
     "Weight": 84,
@@ -2977,9 +2977,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4815,
+    "FootballPlayerId": 4815,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 183,
     "Weight": 70,
@@ -2994,9 +2994,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4816,
+    "FootballPlayerId": 4816,
     "ShirtNumber": 12,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Kenya",
     "Height": 188,
     "Weight": 80,
@@ -3011,9 +3011,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4818,
+    "FootballPlayerId": 4818,
     "ShirtNumber": 25,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 181,
     "Weight": 72,
@@ -3028,9 +3028,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4821,
+    "FootballPlayerId": 4821,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Netherlands",
     "Height": 183,
     "Weight": 84,
@@ -3045,9 +3045,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4842,
+    "FootballPlayerId": 4842,
     "ShirtNumber": 11,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Argentina",
     "Height": 181,
     "Weight": 79,
@@ -3062,9 +3062,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4843,
+    "FootballPlayerId": 4843,
     "ShirtNumber": 29,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "France",
     "Height": 189,
     "Weight": 80,
@@ -3079,9 +3079,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4845,
+    "FootballPlayerId": 4845,
     "ShirtNumber": 23,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Denmark",
     "Height": 182,
     "Weight": 76,
@@ -3096,9 +3096,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4851,
+    "FootballPlayerId": 4851,
     "ShirtNumber": 27,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Czech Republic",
     "Height": 180,
     "Weight": 71,
@@ -3113,9 +3113,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4859,
+    "FootballPlayerId": 4859,
     "ShirtNumber": 30,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ghana",
     "Height": 165,
     "Weight": 65,
@@ -3130,9 +3130,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4878,
+    "FootballPlayerId": 4878,
     "ShirtNumber": 44,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Netherlands",
     "Height": 182,
     "Weight": 79,
@@ -3147,9 +3147,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4909,
+    "FootballPlayerId": 4909,
     "ShirtNumber": 0,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Spain",
     "Height": 192,
     "Weight": 94,
@@ -3164,9 +3164,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4916,
+    "FootballPlayerId": 4916,
     "ShirtNumber": 4,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Belgium",
     "Height": 187,
     "Weight": 90,
@@ -3181,9 +3181,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4918,
+    "FootballPlayerId": 4918,
     "ShirtNumber": 19,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Spain",
     "Height": 178,
     "Weight": 76,
@@ -3198,9 +3198,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4955,
+    "FootballPlayerId": 4955,
     "ShirtNumber": 22,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Spain",
     "Height": 175,
     "Weight": 73,
@@ -3215,9 +3215,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4972,
+    "FootballPlayerId": 4972,
     "ShirtNumber": 11,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Spain",
     "Height": 169,
     "Weight": 65,
@@ -3232,9 +3232,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4973,
+    "FootballPlayerId": 4973,
     "ShirtNumber": 7,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Chile",
     "Height": 169,
     "Weight": 62,
@@ -3249,9 +3249,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4979,
+    "FootballPlayerId": 4979,
     "ShirtNumber": 37,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Spain",
     "Height": 178,
     "Weight": 72,
@@ -3266,9 +3266,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4985,
+    "FootballPlayerId": 4985,
     "ShirtNumber": 19,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Germany",
     "Height": 190,
     "Weight": 83,
@@ -3283,9 +3283,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 4999,
+    "FootballPlayerId": 4999,
     "ShirtNumber": 7,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "South Korea",
     "Height": 183,
     "Weight": 78,
@@ -3300,9 +3300,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5044,
+    "FootballPlayerId": 5044,
     "ShirtNumber": 25,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Portugal",
     "Height": 191,
     "Weight": 85,
@@ -3317,9 +3317,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5061,
+    "FootballPlayerId": 5061,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Portugal",
     "Height": 188,
     "Weight": 84,
@@ -3334,9 +3334,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5066,
+    "FootballPlayerId": 5066,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Sweden",
     "Height": 187,
     "Weight": 80,
@@ -3351,9 +3351,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5067,
+    "FootballPlayerId": 5067,
     "ShirtNumber": 20,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Portugal",
     "Height": 173,
     "Weight": 64,
@@ -3368,9 +3368,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5074,
+    "FootballPlayerId": 5074,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Portugal",
     "Height": 186,
     "Weight": 82,
@@ -3385,9 +3385,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5079,
+    "FootballPlayerId": 5079,
     "ShirtNumber": 7,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Portugal",
     "Height": 175,
     "Weight": 73,
@@ -3402,9 +3402,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5093,
+    "FootballPlayerId": 5093,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Greece",
     "Height": 186,
     "Weight": 85,
@@ -3419,9 +3419,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5101,
+    "FootballPlayerId": 5101,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Germany",
     "Height": 180,
     "Weight": 79,
@@ -3436,9 +3436,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5102,
+    "FootballPlayerId": 5102,
     "ShirtNumber": 7,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Armenia",
     "Height": 177,
     "Weight": 75,
@@ -3453,9 +3453,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5110,
+    "FootballPlayerId": 5110,
     "ShirtNumber": 14,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Gabon",
     "Height": 187,
     "Weight": 80,
@@ -3470,9 +3470,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5140,
+    "FootballPlayerId": 5140,
     "ShirtNumber": 4,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Netherlands",
     "Height": 193,
     "Weight": 92,
@@ -3487,9 +3487,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5156,
+    "FootballPlayerId": 5156,
     "ShirtNumber": 7,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Israel",
     "Height": 178,
     "Weight": 74,
@@ -3504,9 +3504,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5169,
+    "FootballPlayerId": 5169,
     "ShirtNumber": 22,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Finland",
     "Height": 180,
     "Weight": 80,
@@ -3521,9 +3521,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5178,
+    "FootballPlayerId": 5178,
     "ShirtNumber": 11,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Egypt",
     "Height": 175,
     "Weight": 71,
@@ -3538,9 +3538,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5179,
+    "FootballPlayerId": 5179,
     "ShirtNumber": 12,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 191,
     "Weight": 88,
@@ -3555,9 +3555,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5220,
+    "FootballPlayerId": 5220,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Switzerland",
     "Height": 188,
     "Weight": 84,
@@ -3572,9 +3572,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5239,
+    "FootballPlayerId": 5239,
     "ShirtNumber": 4,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Egypt",
     "Height": 180,
     "Weight": 73,
@@ -3589,9 +3589,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5267,
+    "FootballPlayerId": 5267,
     "ShirtNumber": 23,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Switzerland",
     "Height": 169,
     "Weight": 72,
@@ -3606,9 +3606,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5272,
+    "FootballPlayerId": 5272,
     "ShirtNumber": 23,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Denmark",
     "Height": 185,
     "Weight": 84,
@@ -3623,9 +3623,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5328,
+    "FootballPlayerId": 5328,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Brazil",
     "Height": 184,
     "Weight": 78,
@@ -3640,9 +3640,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5334,
+    "FootballPlayerId": 5334,
     "ShirtNumber": 15,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "France",
     "Height": 188,
     "Weight": 84,
@@ -3657,9 +3657,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5343,
+    "FootballPlayerId": 5343,
     "ShirtNumber": 14,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Portugal",
     "Height": 175,
     "Weight": 70,
@@ -3674,9 +3674,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5345,
+    "FootballPlayerId": 5345,
     "ShirtNumber": 16,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Belgium",
     "Height": 173,
     "Weight": 65,
@@ -3691,9 +3691,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5361,
+    "FootballPlayerId": 5361,
     "ShirtNumber": 0,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Germany",
     "Height": 197,
     "Weight": 98,
@@ -3708,9 +3708,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5368,
+    "FootballPlayerId": 5368,
     "ShirtNumber": 31,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Bosnia And Herzegovina",
     "Height": 183,
     "Weight": 85,
@@ -3725,9 +3725,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5371,
+    "FootballPlayerId": 5371,
     "ShirtNumber": 28,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Austria",
     "Height": 187,
     "Weight": 89,
@@ -3742,9 +3742,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5375,
+    "FootballPlayerId": 5375,
     "ShirtNumber": 32,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Cameroon",
     "Height": 195,
     "Weight": 90,
@@ -3759,9 +3759,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5377,
+    "FootballPlayerId": 5377,
     "ShirtNumber": 7,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Germany",
     "Height": 173,
     "Weight": 67,
@@ -3776,9 +3776,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5384,
+    "FootballPlayerId": 5384,
     "ShirtNumber": 19,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Germany",
     "Height": 183,
     "Weight": 75,
@@ -3793,9 +3793,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5428,
+    "FootballPlayerId": 5428,
     "ShirtNumber": 29,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Austria",
     "Height": 179,
     "Weight": 73,
@@ -3810,9 +3810,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5514,
+    "FootballPlayerId": 5514,
     "ShirtNumber": 21,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Italy",
     "Height": 191,
     "Weight": 86,
@@ -3827,9 +3827,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5575,
+    "FootballPlayerId": 5575,
     "ShirtNumber": 22,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "France",
     "Height": 185,
     "Weight": 85,
@@ -3844,9 +3844,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5583,
+    "FootballPlayerId": 5583,
     "ShirtNumber": 18,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Gabon",
     "Height": 184,
     "Weight": 85,
@@ -3861,9 +3861,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5672,
+    "FootballPlayerId": 5672,
     "ShirtNumber": 18,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Argentina",
     "Height": 190,
     "Weight": 83,
@@ -3878,9 +3878,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5682,
+    "FootballPlayerId": 5682,
     "ShirtNumber": 5,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Italy",
     "Height": 180,
     "Weight": 65,
@@ -3895,9 +3895,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5713,
+    "FootballPlayerId": 5713,
     "ShirtNumber": 25,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Greece",
     "Height": 184,
     "Weight": 77,
@@ -3912,9 +3912,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5721,
+    "FootballPlayerId": 5721,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Cameroon",
     "Height": 187,
     "Weight": 74,
@@ -3929,9 +3929,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5758,
+    "FootballPlayerId": 5758,
     "ShirtNumber": 12,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "France",
     "Height": 178,
     "Weight": 74,
@@ -3946,9 +3946,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5762,
+    "FootballPlayerId": 5762,
     "ShirtNumber": 27,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Brazil",
     "Height": 172,
     "Weight": 72,
@@ -3963,9 +3963,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5810,
+    "FootballPlayerId": 5810,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Chile",
     "Height": 184,
     "Weight": 80,
@@ -3980,9 +3980,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5859,
+    "FootballPlayerId": 5859,
     "ShirtNumber": 4,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Serbia",
     "Height": 186,
     "Weight": 80,
@@ -3997,9 +3997,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5861,
+    "FootballPlayerId": 5861,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Senegal",
     "Height": 189,
     "Weight": 83,
@@ -4014,9 +4014,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5865,
+    "FootballPlayerId": 5865,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Belgium",
     "Height": 176,
     "Weight": 72,
@@ -4031,9 +4031,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5866,
+    "FootballPlayerId": 5866,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Belgium",
     "Height": 188,
     "Weight": 76,
@@ -4048,9 +4048,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5906,
+    "FootballPlayerId": 5906,
     "ShirtNumber": 17,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Brazil",
     "Height": 169,
     "Weight": 64,
@@ -4065,9 +4065,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 5907,
+    "FootballPlayerId": 5907,
     "ShirtNumber": 20,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Brazil",
     "Height": 166,
     "Weight": 57,
@@ -4082,9 +4082,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 6058,
+    "FootballPlayerId": 6058,
     "ShirtNumber": 30,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Argentina",
     "Height": 183,
     "Weight": 81,
@@ -4099,9 +4099,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 6194,
+    "FootballPlayerId": 6194,
     "ShirtNumber": 6,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Netherlands",
     "Height": 188,
     "Weight": 77,
@@ -4116,9 +4116,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 6210,
+    "FootballPlayerId": 6210,
     "ShirtNumber": 7,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Iceland",
     "Height": 186,
     "Weight": 78,
@@ -4133,9 +4133,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 6251,
+    "FootballPlayerId": 6251,
     "ShirtNumber": 24,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Senegal",
     "Height": 174,
     "Weight": 76,
@@ -4150,9 +4150,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 6389,
+    "FootballPlayerId": 6389,
     "ShirtNumber": 20,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Ukraine",
     "Height": 189,
     "Weight": 81,
@@ -4167,9 +4167,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 6425,
+    "FootballPlayerId": 6425,
     "ShirtNumber": 21,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Spain",
     "Height": 192,
     "Weight": 80,
@@ -4184,9 +4184,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 6451,
+    "FootballPlayerId": 6451,
     "ShirtNumber": 12,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Slovakia",
     "Height": 190,
     "Weight": 80,
@@ -4201,9 +4201,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 6519,
+    "FootballPlayerId": 6519,
     "ShirtNumber": 10,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Senegal",
     "Height": 175,
     "Weight": 69,
@@ -4218,9 +4218,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 6784,
+    "FootballPlayerId": 6784,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Brazil",
     "Height": 175,
     "Weight": 70,
@@ -4235,9 +4235,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 6889,
+    "FootballPlayerId": 6889,
     "ShirtNumber": 31,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Algeria",
     "Height": 182,
     "Weight": 70,
@@ -4252,9 +4252,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 6899,
+    "FootballPlayerId": 6899,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "France",
     "Height": 175,
     "Weight": 73,
@@ -4269,9 +4269,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 7114,
+    "FootballPlayerId": 7114,
     "ShirtNumber": 5,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Netherlands",
     "Height": 175,
     "Weight": 69,
@@ -4286,9 +4286,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 7124,
+    "FootballPlayerId": 7124,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Netherlands",
     "Height": 185,
     "Weight": 87,
@@ -4303,9 +4303,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 7450,
+    "FootballPlayerId": 7450,
     "ShirtNumber": 23,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Belgium",
     "Height": 184,
     "Weight": 74,
@@ -4320,9 +4320,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 7488,
+    "FootballPlayerId": 7488,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 178,
     "Weight": 65,
@@ -4337,9 +4337,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 7490,
+    "FootballPlayerId": 7490,
     "ShirtNumber": 25,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 185,
     "Weight": 70,
@@ -4354,9 +4354,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 7548,
+    "FootballPlayerId": 7548,
     "ShirtNumber": 31,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Spain",
     "Height": 190,
     "Weight": 81,
@@ -4371,9 +4371,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 7946,
+    "FootballPlayerId": 7946,
     "ShirtNumber": 7,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 180,
     "Weight": 74,
@@ -4388,9 +4388,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8044,
+    "FootballPlayerId": 8044,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 183,
     "Weight": 90,
@@ -4405,9 +4405,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8045,
+    "FootballPlayerId": 8045,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 185,
     "Weight": 82,
@@ -4422,9 +4422,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8050,
+    "FootballPlayerId": 8050,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ireland",
     "Height": 176,
     "Weight": 70,
@@ -4439,9 +4439,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8052,
+    "FootballPlayerId": 8052,
     "ShirtNumber": 24,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Scotland",
     "Height": 163,
     "Weight": 70,
@@ -4456,9 +4456,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8143,
+    "FootballPlayerId": 8143,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 185,
     "Weight": 81,
@@ -4473,9 +4473,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8163,
+    "FootballPlayerId": 8163,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 192,
     "Weight": 88,
@@ -4490,9 +4490,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8168,
+    "FootballPlayerId": 8168,
     "ShirtNumber": 6,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 169,
     "Weight": 71,
@@ -4507,9 +4507,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8171,
+    "FootballPlayerId": 8171,
     "ShirtNumber": 20,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 180,
     "Weight": 88,
@@ -4524,9 +4524,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8245,
+    "FootballPlayerId": 8245,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 178,
     "Weight": 73,
@@ -4541,9 +4541,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8246,
+    "FootballPlayerId": 8246,
     "ShirtNumber": 10,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Austria",
     "Height": 186,
     "Weight": 77,
@@ -4558,9 +4558,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8293,
+    "FootballPlayerId": 8293,
     "ShirtNumber": 31,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 195,
     "Weight": 74,
@@ -4575,9 +4575,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8444,
+    "FootballPlayerId": 8444,
     "ShirtNumber": 4,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Scotland",
     "Height": 172,
     "Weight": 75,
@@ -4592,9 +4592,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8451,
+    "FootballPlayerId": 8451,
     "ShirtNumber": 30,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Wales",
     "Height": 173,
     "Weight": 76,
@@ -4609,9 +4609,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8454,
+    "FootballPlayerId": 8454,
     "ShirtNumber": 13,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 180,
     "Weight": 66,
@@ -4626,9 +4626,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8456,
+    "FootballPlayerId": 8456,
     "ShirtNumber": 10,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 175,
     "Weight": 73,
@@ -4643,9 +4643,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8586,
+    "FootballPlayerId": 8586,
     "ShirtNumber": 13,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ireland",
     "Height": 185,
     "Weight": 79,
@@ -4660,9 +4660,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8589,
+    "FootballPlayerId": 8589,
     "ShirtNumber": 19,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 185,
     "Weight": 74,
@@ -4677,9 +4677,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8598,
+    "FootballPlayerId": 8598,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 179,
     "Weight": 65,
@@ -4694,9 +4694,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8605,
+    "FootballPlayerId": 8605,
     "ShirtNumber": 21,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 175,
     "Weight": 74,
@@ -4711,9 +4711,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8691,
+    "FootballPlayerId": 8691,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 176,
     "Weight": 70,
@@ -4728,9 +4728,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8707,
+    "FootballPlayerId": 8707,
     "ShirtNumber": 33,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 198,
     "Weight": 87,
@@ -4745,9 +4745,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8710,
+    "FootballPlayerId": 8710,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 168,
     "Weight": 58,
@@ -4762,9 +4762,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8889,
+    "FootballPlayerId": 8889,
     "ShirtNumber": 21,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Bermuda",
     "Height": 170,
     "Weight": 69,
@@ -4779,9 +4779,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8897,
+    "FootballPlayerId": 8897,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 170,
     "Weight": 66,
@@ -4796,9 +4796,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8900,
+    "FootballPlayerId": 8900,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 191,
     "Weight": 77,
@@ -4813,9 +4813,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8913,
+    "FootballPlayerId": 8913,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 185,
     "Weight": 83,
@@ -4830,9 +4830,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8956,
+    "FootballPlayerId": 8956,
     "ShirtNumber": 44,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Scotland",
     "Height": 175,
     "Weight": 74,
@@ -4847,9 +4847,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8966,
+    "FootballPlayerId": 8966,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Jamaica",
     "Height": 186,
     "Weight": 101,
@@ -4864,9 +4864,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8976,
+    "FootballPlayerId": 8976,
     "ShirtNumber": 37,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Wales",
     "Height": 184,
     "Weight": 79,
@@ -4881,9 +4881,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8979,
+    "FootballPlayerId": 8979,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 179,
     "Weight": 74,
@@ -4898,9 +4898,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8980,
+    "FootballPlayerId": 8980,
     "ShirtNumber": 15,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Ghana",
     "Height": 178,
     "Weight": 72,
@@ -4915,9 +4915,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8982,
+    "FootballPlayerId": 8982,
     "ShirtNumber": 11,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "France",
     "Height": 172,
     "Weight": 69,
@@ -4932,9 +4932,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 8983,
+    "FootballPlayerId": 8983,
     "ShirtNumber": 26,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Algeria",
     "Height": 179,
     "Weight": 67,
@@ -4949,9 +4949,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9030,
+    "FootballPlayerId": 9030,
     "ShirtNumber": 14,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Australia",
     "Height": 178,
     "Weight": 70,
@@ -4966,9 +4966,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9060,
+    "FootballPlayerId": 9060,
     "ShirtNumber": 18,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 178,
     "Weight": 83,
@@ -4983,9 +4983,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9117,
+    "FootballPlayerId": 9117,
     "ShirtNumber": 14,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 185,
     "Weight": 78,
@@ -5000,9 +5000,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9167,
+    "FootballPlayerId": 9167,
     "ShirtNumber": 20,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 188,
     "Weight": 76,
@@ -5017,9 +5017,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9169,
+    "FootballPlayerId": 9169,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 178,
     "Weight": 76,
@@ -5034,9 +5034,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9251,
+    "FootballPlayerId": 9251,
     "ShirtNumber": 26,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 190,
     "Weight": 88,
@@ -5051,9 +5051,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9257,
+    "FootballPlayerId": 9257,
     "ShirtNumber": 6,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 188,
     "Weight": 89,
@@ -5068,9 +5068,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9322,
+    "FootballPlayerId": 9322,
     "ShirtNumber": 13,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 186,
     "Weight": 83,
@@ -5085,9 +5085,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9377,
+    "FootballPlayerId": 9377,
     "ShirtNumber": 14,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ireland",
     "Height": 181,
     "Weight": 62,
@@ -5102,9 +5102,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9417,
+    "FootballPlayerId": 9417,
     "ShirtNumber": 12,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 183,
     "Weight": 64,
@@ -5119,9 +5119,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9431,
+    "FootballPlayerId": 9431,
     "ShirtNumber": 26,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 173,
     "Weight": 73,
@@ -5136,9 +5136,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9468,
+    "FootballPlayerId": 9468,
     "ShirtNumber": 10,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 188,
     "Weight": 84,
@@ -5153,9 +5153,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9491,
+    "FootballPlayerId": 9491,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 187,
     "Weight": 91,
@@ -5170,9 +5170,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9496,
+    "FootballPlayerId": 9496,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Ireland",
     "Height": 180,
     "Weight": 64,
@@ -5187,9 +5187,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9566,
+    "FootballPlayerId": 9566,
     "ShirtNumber": 15,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 194,
     "Weight": 100,
@@ -5204,9 +5204,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9567,
+    "FootballPlayerId": 9567,
     "ShirtNumber": 18,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Wales",
     "Height": 178,
     "Weight": 81,
@@ -5221,9 +5221,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9576,
+    "FootballPlayerId": 9576,
     "ShirtNumber": 29,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 176,
     "Weight": 71,
@@ -5238,9 +5238,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9595,
+    "FootballPlayerId": 9595,
     "ShirtNumber": 30,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 180,
     "Weight": 82,
@@ -5255,9 +5255,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9649,
+    "FootballPlayerId": 9649,
     "ShirtNumber": 38,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 180,
     "Weight": 70,
@@ -5272,9 +5272,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9650,
+    "FootballPlayerId": 9650,
     "ShirtNumber": 15,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 194,
     "Weight": 75,
@@ -5289,9 +5289,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9662,
+    "FootballPlayerId": 9662,
     "ShirtNumber": 7,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 179,
     "Weight": 74,
@@ -5306,9 +5306,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9762,
+    "FootballPlayerId": 9762,
     "ShirtNumber": 35,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Austria",
     "Height": 191,
     "Weight": 81,
@@ -5323,9 +5323,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9826,
+    "FootballPlayerId": 9826,
     "ShirtNumber": 34,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Wales",
     "Height": 180,
     "Weight": 75,
@@ -5340,9 +5340,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9895,
+    "FootballPlayerId": 9895,
     "ShirtNumber": 38,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 185,
     "Weight": 77,
@@ -5357,9 +5357,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 9947,
+    "FootballPlayerId": 9947,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 183,
     "Weight": 90,
@@ -5374,9 +5374,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10000,
+    "FootballPlayerId": 10000,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 189,
     "Weight": 77,
@@ -5391,9 +5391,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10079,
+    "FootballPlayerId": 10079,
     "ShirtNumber": 29,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 191,
     "Weight": 76,
@@ -5408,9 +5408,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10123,
+    "FootballPlayerId": 10123,
     "ShirtNumber": 22,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Netherlands",
     "Height": 186,
     "Weight": 84,
@@ -5425,9 +5425,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10428,
+    "FootballPlayerId": 10428,
     "ShirtNumber": 15,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 177,
     "Weight": 71,
@@ -5442,9 +5442,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10430,
+    "FootballPlayerId": 10430,
     "ShirtNumber": 15,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Colombia",
     "Height": 182,
     "Weight": 80,
@@ -5459,9 +5459,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10432,
+    "FootballPlayerId": 10432,
     "ShirtNumber": 29,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 173,
     "Weight": 59,
@@ -5476,9 +5476,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10433,
+    "FootballPlayerId": 10433,
     "ShirtNumber": 19,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 180,
     "Weight": 71,
@@ -5493,9 +5493,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10443,
+    "FootballPlayerId": 10443,
     "ShirtNumber": 29,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 187,
     "Weight": 80,
@@ -5510,9 +5510,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10451,
+    "FootballPlayerId": 10451,
     "ShirtNumber": 21,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Bosnia And Herzegovina",
     "Height": 180,
     "Weight": 80,
@@ -5527,9 +5527,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10454,
+    "FootballPlayerId": 10454,
     "ShirtNumber": 32,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 185,
     "Weight": 80,
@@ -5544,9 +5544,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10455,
+    "FootballPlayerId": 10455,
     "ShirtNumber": 28,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 175,
     "Weight": 70,
@@ -5561,9 +5561,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10458,
+    "FootballPlayerId": 10458,
     "ShirtNumber": 26,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Scotland",
     "Height": 178,
     "Weight": 64,
@@ -5578,9 +5578,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10465,
+    "FootballPlayerId": 10465,
     "ShirtNumber": 27,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Belgium",
     "Height": 185,
     "Weight": 75,
@@ -5595,9 +5595,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10466,
+    "FootballPlayerId": 10466,
     "ShirtNumber": 13,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Argentina",
     "Height": 186,
     "Weight": 81,
@@ -5612,9 +5612,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10467,
+    "FootballPlayerId": 10467,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Spain",
     "Height": 175,
     "Weight": 69,
@@ -5629,9 +5629,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10472,
+    "FootballPlayerId": 10472,
     "ShirtNumber": 16,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Argentina",
     "Height": 187,
     "Weight": 85,
@@ -5646,9 +5646,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10476,
+    "FootballPlayerId": 10476,
     "ShirtNumber": 15,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Brazil",
     "Height": 178,
     "Weight": 71,
@@ -5663,9 +5663,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10479,
+    "FootballPlayerId": 10479,
     "ShirtNumber": 41,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 188,
     "Weight": 83,
@@ -5680,9 +5680,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10480,
+    "FootballPlayerId": 10480,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Netherlands",
     "Height": 185,
     "Weight": 80,
@@ -5697,9 +5697,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10483,
+    "FootballPlayerId": 10483,
     "ShirtNumber": 16,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 178,
     "Weight": 76,
@@ -5714,9 +5714,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10487,
+    "FootballPlayerId": 10487,
     "ShirtNumber": 0,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Spain",
     "Height": 178,
     "Weight": 72,
@@ -5731,9 +5731,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10522,
+    "FootballPlayerId": 10522,
     "ShirtNumber": 22,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "United States",
     "Height": 172,
     "Weight": 75,
@@ -5748,9 +5748,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10535,
+    "FootballPlayerId": 10535,
     "ShirtNumber": 35,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 191,
     "Weight": 78,
@@ -5765,9 +5765,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10539,
+    "FootballPlayerId": 10539,
     "ShirtNumber": 33,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ireland",
     "Height": 175,
     "Weight": 70,
@@ -5782,9 +5782,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10542,
+    "FootballPlayerId": 10542,
     "ShirtNumber": 50,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": null,
     "Height": 195,
     "Weight": 87,
@@ -5799,9 +5799,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10559,
+    "FootballPlayerId": 10559,
     "ShirtNumber": 32,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 183,
     "Weight": 77,
@@ -5816,9 +5816,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10564,
+    "FootballPlayerId": 10564,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 184,
     "Weight": 63,
@@ -5833,9 +5833,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10565,
+    "FootballPlayerId": 10565,
     "ShirtNumber": 16,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 178,
     "Weight": 74,
@@ -5850,9 +5850,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10604,
+    "FootballPlayerId": 10604,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Spain",
     "Height": 180,
     "Weight": 70,
@@ -5867,9 +5867,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10651,
+    "FootballPlayerId": 10651,
     "ShirtNumber": 12,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 188,
     "Weight": 77,
@@ -5884,9 +5884,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10766,
+    "FootballPlayerId": 10766,
     "ShirtNumber": 16,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 175,
     "Weight": 71,
@@ -5901,9 +5901,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10855,
+    "FootballPlayerId": 10855,
     "ShirtNumber": 0,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 180,
     "Weight": 65,
@@ -5918,9 +5918,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10881,
+    "FootballPlayerId": 10881,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 180,
     "Weight": 62,
@@ -5935,9 +5935,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10905,
+    "FootballPlayerId": 10905,
     "ShirtNumber": 0,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 175,
     "Weight": 70,
@@ -5952,9 +5952,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 10968,
+    "FootballPlayerId": 10968,
     "ShirtNumber": 35,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 183,
     "Weight": 0,
@@ -5969,9 +5969,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11033,
+    "FootballPlayerId": 11033,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Netherlands",
     "Height": 189,
     "Weight": 90,
@@ -5986,9 +5986,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11044,
+    "FootballPlayerId": 11044,
     "ShirtNumber": 14,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "France",
     "Height": 191,
     "Weight": 86,
@@ -6003,9 +6003,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11071,
+    "FootballPlayerId": 11071,
     "ShirtNumber": 0,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Mexico",
     "Height": 190,
     "Weight": 76,
@@ -6020,9 +6020,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11111,
+    "FootballPlayerId": 11111,
     "ShirtNumber": 0,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Switzerland",
     "Height": 183,
     "Weight": 81,
@@ -6037,9 +6037,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11180,
+    "FootballPlayerId": 11180,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Portugal",
     "Height": 180,
     "Weight": 72,
@@ -6054,9 +6054,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11213,
+    "FootballPlayerId": 11213,
     "ShirtNumber": 37,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Argentina",
     "Height": 182,
     "Weight": 77,
@@ -6071,9 +6071,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11247,
+    "FootballPlayerId": 11247,
     "ShirtNumber": 3,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Brazil",
     "Height": 188,
     "Weight": 78,
@@ -6088,9 +6088,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11259,
+    "FootballPlayerId": 11259,
     "ShirtNumber": 28,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Portugal",
     "Height": 170,
     "Weight": 61,
@@ -6105,9 +6105,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11260,
+    "FootballPlayerId": 11260,
     "ShirtNumber": 14,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "France",
     "Height": 185,
     "Weight": 77,
@@ -6122,9 +6122,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11272,
+    "FootballPlayerId": 11272,
     "ShirtNumber": 11,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "France",
     "Height": 181,
     "Weight": 76,
@@ -6139,9 +6139,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11284,
+    "FootballPlayerId": 11284,
     "ShirtNumber": 26,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "The Democratic Republic Of Congo",
     "Height": 179,
     "Weight": 70,
@@ -6156,9 +6156,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11293,
+    "FootballPlayerId": 11293,
     "ShirtNumber": 24,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Cote D'Ivoire",
     "Height": 176,
     "Weight": 76,
@@ -6173,9 +6173,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11341,
+    "FootballPlayerId": 11341,
     "ShirtNumber": 11,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Portugal",
     "Height": 190,
     "Weight": 84,
@@ -6190,9 +6190,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11347,
+    "FootballPlayerId": 11347,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Portugal",
     "Height": 172,
     "Weight": 67,
@@ -6207,9 +6207,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11357,
+    "FootballPlayerId": 11357,
     "ShirtNumber": 23,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Portugal",
     "Height": 175,
     "Weight": 69,
@@ -6224,9 +6224,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11364,
+    "FootballPlayerId": 11364,
     "ShirtNumber": 19,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Algeria",
     "Height": 188,
     "Weight": 83,
@@ -6241,9 +6241,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11373,
+    "FootballPlayerId": 11373,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Spain",
     "Height": 189,
     "Weight": 84,
@@ -6258,9 +6258,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11575,
+    "FootballPlayerId": 11575,
     "ShirtNumber": 16,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 189,
     "Weight": 75,
@@ -6275,9 +6275,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11579,
+    "FootballPlayerId": 11579,
     "ShirtNumber": 23,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 191,
     "Weight": 79,
@@ -6292,9 +6292,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 11965,
+    "FootballPlayerId": 11965,
     "ShirtNumber": 36,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 178,
     "Weight": 83,
@@ -6309,9 +6309,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12114,
+    "FootballPlayerId": 12114,
     "ShirtNumber": 14,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Turkey",
     "Height": 183,
     "Weight": 78,
@@ -6326,9 +6326,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12136,
+    "FootballPlayerId": 12136,
     "ShirtNumber": 34,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Switzerland",
     "Height": 185,
     "Weight": 82,
@@ -6343,9 +6343,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12186,
+    "FootballPlayerId": 12186,
     "ShirtNumber": 17,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Scotland",
     "Height": 183,
     "Weight": 75,
@@ -6360,9 +6360,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12192,
+    "FootballPlayerId": 12192,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Australia",
     "Height": 184,
     "Weight": 82,
@@ -6377,9 +6377,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12212,
+    "FootballPlayerId": 12212,
     "ShirtNumber": 19,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Colombia",
     "Height": 171,
     "Weight": 73,
@@ -6394,9 +6394,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12299,
+    "FootballPlayerId": 12299,
     "ShirtNumber": 33,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Brazil",
     "Height": 185,
     "Weight": 80,
@@ -6411,9 +6411,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12306,
+    "FootballPlayerId": 12306,
     "ShirtNumber": 18,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ghana",
     "Height": 186,
     "Weight": 79,
@@ -6428,9 +6428,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12316,
+    "FootballPlayerId": 12316,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Guinea",
     "Height": 172,
     "Weight": 64,
@@ -6445,9 +6445,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12365,
+    "FootballPlayerId": 12365,
     "ShirtNumber": 4,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Netherlands",
     "Height": 169,
     "Weight": 66,
@@ -6462,9 +6462,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12444,
+    "FootballPlayerId": 12444,
     "ShirtNumber": 0,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Denmark",
     "Height": 195,
     "Weight": 89,
@@ -6479,9 +6479,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12520,
+    "FootballPlayerId": 12520,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Croatia",
     "Height": 178,
     "Weight": 78,
@@ -6496,9 +6496,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12582,
+    "FootballPlayerId": 12582,
     "ShirtNumber": 17,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Senegal",
     "Height": 174,
     "Weight": 66,
@@ -6513,9 +6513,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12584,
+    "FootballPlayerId": 12584,
     "ShirtNumber": 19,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Morocco",
     "Height": 170,
     "Weight": 60,
@@ -6530,9 +6530,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12707,
+    "FootballPlayerId": 12707,
     "ShirtNumber": 31,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Brazil",
     "Height": 188,
     "Weight": 86,
@@ -6547,9 +6547,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12854,
+    "FootballPlayerId": 12854,
     "ShirtNumber": 36,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Italy",
     "Height": 182,
     "Weight": 70,
@@ -6564,9 +6564,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12891,
+    "FootballPlayerId": 12891,
     "ShirtNumber": 15,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Switzerland",
     "Height": 193,
     "Weight": 87,
@@ -6581,9 +6581,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 12937,
+    "FootballPlayerId": 12937,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Cote D'Ivoire",
     "Height": 187,
     "Weight": 77,
@@ -6598,9 +6598,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13130,
+    "FootballPlayerId": 13130,
     "ShirtNumber": 17,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 178,
     "Weight": 68,
@@ -6615,9 +6615,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13193,
+    "FootballPlayerId": 13193,
     "ShirtNumber": 25,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 178,
     "Weight": 83,
@@ -6632,9 +6632,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13195,
+    "FootballPlayerId": 13195,
     "ShirtNumber": 44,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 191,
     "Weight": 77,
@@ -6649,9 +6649,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13234,
+    "FootballPlayerId": 13234,
     "ShirtNumber": 25,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Israel",
     "Height": 186,
     "Weight": 80,
@@ -6666,9 +6666,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13240,
+    "FootballPlayerId": 13240,
     "ShirtNumber": 22,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Cote D'Ivoire",
     "Height": 189,
     "Weight": 77,
@@ -6683,9 +6683,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13248,
+    "FootballPlayerId": 13248,
     "ShirtNumber": 38,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 178,
     "Weight": 64,
@@ -6700,9 +6700,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13278,
+    "FootballPlayerId": 13278,
     "ShirtNumber": 31,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 174,
     "Weight": 78,
@@ -6717,9 +6717,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13279,
+    "FootballPlayerId": 13279,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Ghana",
     "Height": 180,
     "Weight": 72,
@@ -6734,9 +6734,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13280,
+    "FootballPlayerId": 13280,
     "ShirtNumber": 20,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "United States",
     "Height": 191,
     "Weight": 84,
@@ -6751,9 +6751,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13283,
+    "FootballPlayerId": 13283,
     "ShirtNumber": 38,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 175,
     "Weight": 70,
@@ -6768,9 +6768,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13285,
+    "FootballPlayerId": 13285,
     "ShirtNumber": 16,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Brazil",
     "Height": 182,
     "Weight": 77,
@@ -6785,9 +6785,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13286,
+    "FootballPlayerId": 13286,
     "ShirtNumber": 19,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 190,
     "Weight": 80,
@@ -6802,9 +6802,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13340,
+    "FootballPlayerId": 13340,
     "ShirtNumber": 28,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 184,
     "Weight": 76,
@@ -6819,9 +6819,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13389,
+    "FootballPlayerId": 13389,
     "ShirtNumber": 26,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 180,
     "Weight": 70,
@@ -6836,9 +6836,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13390,
+    "FootballPlayerId": 13390,
     "ShirtNumber": 19,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Senegal",
     "Height": 182,
     "Weight": 75,
@@ -6853,9 +6853,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13491,
+    "FootballPlayerId": 13491,
     "ShirtNumber": 3,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 178,
     "Weight": 77,
@@ -6870,9 +6870,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13492,
+    "FootballPlayerId": 13492,
     "ShirtNumber": 7,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "France",
     "Height": 168,
     "Weight": 68,
@@ -6887,9 +6887,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13511,
+    "FootballPlayerId": 13511,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Brazil",
     "Height": 181,
     "Weight": 76,
@@ -6904,9 +6904,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13515,
+    "FootballPlayerId": 13515,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 183,
     "Weight": 80,
@@ -6921,9 +6921,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13522,
+    "FootballPlayerId": 13522,
     "ShirtNumber": 49,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -6938,9 +6938,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13549,
+    "FootballPlayerId": 13549,
     "ShirtNumber": 53,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 196,
     "Weight": 80,
@@ -6955,9 +6955,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13554,
+    "FootballPlayerId": 13554,
     "ShirtNumber": 8,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Nigeria",
     "Height": 185,
     "Weight": 82,
@@ -6972,9 +6972,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13555,
+    "FootballPlayerId": 13555,
     "ShirtNumber": 22,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Argentina",
     "Height": 192,
     "Weight": 87,
@@ -6989,9 +6989,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13559,
+    "FootballPlayerId": 13559,
     "ShirtNumber": 38,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 182,
     "Weight": 75,
@@ -7006,9 +7006,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13561,
+    "FootballPlayerId": 13561,
     "ShirtNumber": 24,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Netherlands",
     "Height": 190,
     "Weight": 78,
@@ -7023,9 +7023,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13565,
+    "FootballPlayerId": 13565,
     "ShirtNumber": 10,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 180,
     "Weight": 70,
@@ -7040,9 +7040,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13703,
+    "FootballPlayerId": 13703,
     "ShirtNumber": 12,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 188,
     "Weight": 77,
@@ -7057,9 +7057,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13706,
+    "FootballPlayerId": 13706,
     "ShirtNumber": 20,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Wales",
     "Height": 173,
     "Weight": 62,
@@ -7074,9 +7074,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13716,
+    "FootballPlayerId": 13716,
     "ShirtNumber": 15,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Curacao",
     "Height": 185,
     "Weight": 77,
@@ -7091,9 +7091,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13797,
+    "FootballPlayerId": 13797,
     "ShirtNumber": 21,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Wales",
     "Height": 170,
     "Weight": 76,
@@ -7108,9 +7108,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13815,
+    "FootballPlayerId": 13815,
     "ShirtNumber": 16,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 173,
     "Weight": 62,
@@ -7125,9 +7125,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13822,
+    "FootballPlayerId": 13822,
     "ShirtNumber": 5,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Austria",
     "Height": 194,
     "Weight": 92,
@@ -7142,9 +7142,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13823,
+    "FootballPlayerId": 13823,
     "ShirtNumber": 16,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "France",
     "Height": 184,
     "Weight": 75,
@@ -7159,9 +7159,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13825,
+    "FootballPlayerId": 13825,
     "ShirtNumber": 17,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Venezuela",
     "Height": 185,
     "Weight": 83,
@@ -7176,9 +7176,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13871,
+    "FootballPlayerId": 13871,
     "ShirtNumber": 14,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Equatorial Guinea",
     "Height": 185,
     "Weight": 75,
@@ -7193,9 +7193,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13872,
+    "FootballPlayerId": 13872,
     "ShirtNumber": 10,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Argentina",
     "Height": 167,
     "Weight": 59,
@@ -7210,9 +7210,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13903,
+    "FootballPlayerId": 13903,
     "ShirtNumber": 14,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 178,
     "Weight": 79,
@@ -7227,9 +7227,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13961,
+    "FootballPlayerId": 13961,
     "ShirtNumber": 59,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Wales",
     "Height": 173,
     "Weight": 70,
@@ -7244,9 +7244,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 13984,
+    "FootballPlayerId": 13984,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Brazil",
     "Height": 172,
     "Weight": 70,
@@ -7261,9 +7261,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14063,
+    "FootballPlayerId": 14063,
     "ShirtNumber": 33,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Wales",
     "Height": 191,
     "Weight": 84,
@@ -7278,9 +7278,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14149,
+    "FootballPlayerId": 14149,
     "ShirtNumber": 35,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7295,9 +7295,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14164,
+    "FootballPlayerId": 14164,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 183,
     "Weight": 72,
@@ -7312,9 +7312,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14267,
+    "FootballPlayerId": 14267,
     "ShirtNumber": 27,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7329,9 +7329,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14428,
+    "FootballPlayerId": 14428,
     "ShirtNumber": 33,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Portugal",
     "Height": 191,
     "Weight": 83,
@@ -7346,9 +7346,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14441,
+    "FootballPlayerId": 14441,
     "ShirtNumber": 46,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7363,9 +7363,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14445,
+    "FootballPlayerId": 14445,
     "ShirtNumber": 55,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 182,
     "Weight": 79,
@@ -7380,9 +7380,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14446,
+    "FootballPlayerId": 14446,
     "ShirtNumber": 59,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 179,
     "Weight": 71,
@@ -7397,9 +7397,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14451,
+    "FootballPlayerId": 14451,
     "ShirtNumber": 49,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 175,
     "Weight": 72,
@@ -7414,9 +7414,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14473,
+    "FootballPlayerId": 14473,
     "ShirtNumber": 35,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Wales",
     "Height": 0,
     "Weight": 0,
@@ -7431,9 +7431,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14477,
+    "FootballPlayerId": 14477,
     "ShirtNumber": 39,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7448,9 +7448,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14487,
+    "FootballPlayerId": 14487,
     "ShirtNumber": 34,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ireland",
     "Height": 0,
     "Weight": 0,
@@ -7465,9 +7465,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14490,
+    "FootballPlayerId": 14490,
     "ShirtNumber": 38,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7482,9 +7482,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14538,
+    "FootballPlayerId": 14538,
     "ShirtNumber": 31,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Spain",
     "Height": 197,
     "Weight": 0,
@@ -7499,9 +7499,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14554,
+    "FootballPlayerId": 14554,
     "ShirtNumber": 41,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7516,9 +7516,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14565,
+    "FootballPlayerId": 14565,
     "ShirtNumber": 52,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7533,9 +7533,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14569,
+    "FootballPlayerId": 14569,
     "ShirtNumber": 53,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 182,
     "Weight": 0,
@@ -7550,9 +7550,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14571,
+    "FootballPlayerId": 14571,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7567,9 +7567,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14572,
+    "FootballPlayerId": 14572,
     "ShirtNumber": 66,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 186,
     "Weight": 81,
@@ -7584,9 +7584,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14575,
+    "FootballPlayerId": 14575,
     "ShirtNumber": 50,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 190,
     "Weight": 0,
@@ -7601,9 +7601,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14587,
+    "FootballPlayerId": 14587,
     "ShirtNumber": 55,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 172,
     "Weight": 0,
@@ -7618,9 +7618,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14589,
+    "FootballPlayerId": 14589,
     "ShirtNumber": 57,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7635,9 +7635,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14593,
+    "FootballPlayerId": 14593,
     "ShirtNumber": 0,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 185,
     "Weight": 0,
@@ -7652,9 +7652,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14623,
+    "FootballPlayerId": 14623,
     "ShirtNumber": 34,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "The Democratic Republic Of Congo",
     "Height": 178,
     "Weight": 70,
@@ -7669,9 +7669,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14637,
+    "FootballPlayerId": 14637,
     "ShirtNumber": 37,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 178,
     "Weight": 70,
@@ -7686,9 +7686,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14693,
+    "FootballPlayerId": 14693,
     "ShirtNumber": 34,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 185,
     "Weight": 78,
@@ -7703,9 +7703,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14716,
+    "FootballPlayerId": 14716,
     "ShirtNumber": 19,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 174,
     "Weight": 66,
@@ -7720,9 +7720,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14723,
+    "FootballPlayerId": 14723,
     "ShirtNumber": 62,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Ireland",
     "Height": 0,
     "Weight": 0,
@@ -7737,9 +7737,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14732,
+    "FootballPlayerId": 14732,
     "ShirtNumber": 66,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 175,
     "Weight": 69,
@@ -7754,9 +7754,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14742,
+    "FootballPlayerId": 14742,
     "ShirtNumber": 24,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 180,
     "Weight": 75,
@@ -7771,9 +7771,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14758,
+    "FootballPlayerId": 14758,
     "ShirtNumber": 58,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Wales",
     "Height": 174,
     "Weight": 72,
@@ -7788,9 +7788,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14766,
+    "FootballPlayerId": 14766,
     "ShirtNumber": 32,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 185,
     "Weight": 77,
@@ -7805,9 +7805,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14779,
+    "FootballPlayerId": 14779,
     "ShirtNumber": 20,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7822,9 +7822,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14793,
+    "FootballPlayerId": 14793,
     "ShirtNumber": 74,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7839,9 +7839,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14805,
+    "FootballPlayerId": 14805,
     "ShirtNumber": 47,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 171,
     "Weight": 70,
@@ -7856,9 +7856,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14807,
+    "FootballPlayerId": 14807,
     "ShirtNumber": 43,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Germany",
     "Height": 185,
     "Weight": 80,
@@ -7873,9 +7873,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14824,
+    "FootballPlayerId": 14824,
     "ShirtNumber": 39,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Scotland",
     "Height": 193,
     "Weight": 88,
@@ -7890,9 +7890,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14830,
+    "FootballPlayerId": 14830,
     "ShirtNumber": 47,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 161,
     "Weight": 61,
@@ -7907,9 +7907,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14835,
+    "FootballPlayerId": 14835,
     "ShirtNumber": 48,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Scotland",
     "Height": 187,
     "Weight": 0,
@@ -7924,9 +7924,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14875,
+    "FootballPlayerId": 14875,
     "ShirtNumber": 29,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7941,9 +7941,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14897,
+    "FootballPlayerId": 14897,
     "ShirtNumber": 36,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 180,
     "Weight": 65,
@@ -7958,9 +7958,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14909,
+    "FootballPlayerId": 14909,
     "ShirtNumber": 38,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7975,9 +7975,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14916,
+    "FootballPlayerId": 14916,
     "ShirtNumber": 41,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -7992,9 +7992,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14924,
+    "FootballPlayerId": 14924,
     "ShirtNumber": 40,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -8009,9 +8009,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14938,
+    "FootballPlayerId": 14938,
     "ShirtNumber": 12,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Northern Ireland",
     "Height": 177,
     "Weight": 70,
@@ -8026,9 +8026,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14944,
+    "FootballPlayerId": 14944,
     "ShirtNumber": 36,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -8043,9 +8043,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14949,
+    "FootballPlayerId": 14949,
     "ShirtNumber": 41,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -8060,9 +8060,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 14982,
+    "FootballPlayerId": 14982,
     "ShirtNumber": 41,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 191,
     "Weight": 77,
@@ -8077,9 +8077,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15002,
+    "FootballPlayerId": 15002,
     "ShirtNumber": 55,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -8094,9 +8094,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15011,
+    "FootballPlayerId": 15011,
     "ShirtNumber": 43,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "France",
     "Height": 180,
     "Weight": 85,
@@ -8111,9 +8111,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15017,
+    "FootballPlayerId": 15017,
     "ShirtNumber": 51,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -8128,9 +8128,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15111,
+    "FootballPlayerId": 15111,
     "ShirtNumber": 41,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 189,
     "Weight": 84,
@@ -8145,9 +8145,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15123,
+    "FootballPlayerId": 15123,
     "ShirtNumber": 53,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 180,
     "Weight": 0,
@@ -8162,9 +8162,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15134,
+    "FootballPlayerId": 15134,
     "ShirtNumber": 39,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 174,
     "Weight": 0,
@@ -8179,9 +8179,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15136,
+    "FootballPlayerId": 15136,
     "ShirtNumber": 47,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -8196,9 +8196,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15137,
+    "FootballPlayerId": 15137,
     "ShirtNumber": 50,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 175,
     "Weight": 71,
@@ -8213,9 +8213,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15199,
+    "FootballPlayerId": 15199,
     "ShirtNumber": 45,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 180,
     "Weight": 73,
@@ -8230,9 +8230,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15200,
+    "FootballPlayerId": 15200,
     "ShirtNumber": 50,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -8247,9 +8247,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15202,
+    "FootballPlayerId": 15202,
     "ShirtNumber": 41,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 185,
     "Weight": 76,
@@ -8264,9 +8264,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15211,
+    "FootballPlayerId": 15211,
     "ShirtNumber": 54,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ireland",
     "Height": 0,
     "Weight": 0,
@@ -8281,9 +8281,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15212,
+    "FootballPlayerId": 15212,
     "ShirtNumber": 53,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 175,
     "Weight": 67,
@@ -8298,9 +8298,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15226,
+    "FootballPlayerId": 15226,
     "ShirtNumber": 47,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -8315,9 +8315,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15258,
+    "FootballPlayerId": 15258,
     "ShirtNumber": 45,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 180,
     "Weight": 76,
@@ -8332,9 +8332,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15259,
+    "FootballPlayerId": 15259,
     "ShirtNumber": 17,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 171,
     "Weight": 0,
@@ -8349,9 +8349,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15269,
+    "FootballPlayerId": 15269,
     "ShirtNumber": 28,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "England",
     "Height": 196,
     "Weight": 77,
@@ -8366,9 +8366,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15293,
+    "FootballPlayerId": 15293,
     "ShirtNumber": 49,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ireland",
     "Height": 0,
     "Weight": 0,
@@ -8383,9 +8383,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15322,
+    "FootballPlayerId": 15322,
     "ShirtNumber": 0,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Switzerland",
     "Height": 176,
     "Weight": 76,
@@ -8400,9 +8400,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15374,
+    "FootballPlayerId": 15374,
     "ShirtNumber": 39,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 174,
     "Weight": 67,
@@ -8417,9 +8417,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15375,
+    "FootballPlayerId": 15375,
     "ShirtNumber": 65,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 185,
     "Weight": 72,
@@ -8434,9 +8434,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15480,
+    "FootballPlayerId": 15480,
     "ShirtNumber": 16,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Iran",
     "Height": 180,
     "Weight": 76,
@@ -8451,9 +8451,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15481,
+    "FootballPlayerId": 15481,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Netherlands",
     "Height": 180,
     "Weight": 79,
@@ -8468,9 +8468,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15549,
+    "FootballPlayerId": 15549,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "France",
     "Height": 178,
     "Weight": 70,
@@ -8485,9 +8485,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15558,
+    "FootballPlayerId": 15558,
     "ShirtNumber": 10,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Germany",
     "Height": 174,
     "Weight": 69,
@@ -8502,9 +8502,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15559,
+    "FootballPlayerId": 15559,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "United States",
     "Height": 172,
     "Weight": 69,
@@ -8519,9 +8519,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15580,
+    "FootballPlayerId": 15580,
     "ShirtNumber": 0,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Brazil",
     "Height": 191,
     "Weight": 93,
@@ -8536,9 +8536,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15661,
+    "FootballPlayerId": 15661,
     "ShirtNumber": 20,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Iceland",
     "Height": 182,
     "Weight": 75,
@@ -8553,9 +8553,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15685,
+    "FootballPlayerId": 15685,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Norway",
     "Height": 193,
     "Weight": 90,
@@ -8570,9 +8570,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15938,
+    "FootballPlayerId": 15938,
     "ShirtNumber": 14,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "France",
     "Height": 174,
     "Weight": 68,
@@ -8587,9 +8587,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15967,
+    "FootballPlayerId": 15967,
     "ShirtNumber": 11,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Norway",
     "Height": 178,
     "Weight": 70,
@@ -8604,9 +8604,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 15989,
+    "FootballPlayerId": 15989,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Argentina",
     "Height": 191,
     "Weight": 87,
@@ -8621,9 +8621,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 16088,
+    "FootballPlayerId": 16088,
     "ShirtNumber": 20,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Belgium",
     "Height": 187,
     "Weight": 77,
@@ -8638,9 +8638,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 16204,
+    "FootballPlayerId": 16204,
     "ShirtNumber": 15,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "France",
     "Height": 195,
     "Weight": 92,
@@ -8655,9 +8655,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 16234,
+    "FootballPlayerId": 16234,
     "ShirtNumber": 21,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Italy",
     "Height": 187,
     "Weight": 77,
@@ -8672,9 +8672,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 16270,
+    "FootballPlayerId": 16270,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Spain",
     "Height": 191,
     "Weight": 86,
@@ -8689,9 +8689,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 16286,
+    "FootballPlayerId": 16286,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Spain",
     "Height": 191,
     "Weight": 82,
@@ -8706,9 +8706,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 16467,
+    "FootballPlayerId": 16467,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "United States",
     "Height": 186,
     "Weight": 79,
@@ -8723,9 +8723,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 16607,
+    "FootballPlayerId": 16607,
     "ShirtNumber": 20,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "France",
     "Height": 189,
     "Weight": 89,
@@ -8740,9 +8740,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 16671,
+    "FootballPlayerId": 16671,
     "ShirtNumber": 16,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Croatia",
     "Height": 194,
     "Weight": 80,
@@ -8757,9 +8757,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 16790,
+    "FootballPlayerId": 16790,
     "ShirtNumber": 24,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Netherlands",
     "Height": 185,
     "Weight": 79,
@@ -8774,9 +8774,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 16801,
+    "FootballPlayerId": 16801,
     "ShirtNumber": 2,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Germany",
     "Height": 190,
     "Weight": 85,
@@ -8791,9 +8791,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 16803,
+    "FootballPlayerId": 16803,
     "ShirtNumber": 33,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Italy",
     "Height": 176,
     "Weight": 63,
@@ -8808,9 +8808,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19589,
+    "FootballPlayerId": 19589,
     "ShirtNumber": 35,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Poland",
     "Height": 189,
     "Weight": 77,
@@ -8825,9 +8825,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19603,
+    "FootballPlayerId": 19603,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "France",
     "Height": 184,
     "Weight": 80,
@@ -8842,9 +8842,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19605,
+    "FootballPlayerId": 19605,
     "ShirtNumber": 27,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Belgium",
     "Height": 188,
     "Weight": 86,
@@ -8859,9 +8859,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19617,
+    "FootballPlayerId": 19617,
     "ShirtNumber": 24,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "France",
     "Height": 167,
     "Weight": 73,
@@ -8876,9 +8876,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19618,
+    "FootballPlayerId": 19618,
     "ShirtNumber": 10,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Nigeria",
     "Height": 186,
     "Weight": 86,
@@ -8893,9 +8893,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19620,
+    "FootballPlayerId": 19620,
     "ShirtNumber": 11,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ukraine",
     "Height": 175,
     "Weight": 64,
@@ -8910,9 +8910,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19675,
+    "FootballPlayerId": 19675,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Northern Ireland",
     "Height": 191,
     "Weight": 89,
@@ -8927,9 +8927,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19678,
+    "FootballPlayerId": 19678,
     "ShirtNumber": 20,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Portugal",
     "Height": 179,
     "Weight": 72,
@@ -8944,9 +8944,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19679,
+    "FootballPlayerId": 19679,
     "ShirtNumber": 33,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Poland",
     "Height": 179,
     "Weight": 62,
@@ -8961,9 +8961,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19680,
+    "FootballPlayerId": 19680,
     "ShirtNumber": 9,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Brazil",
     "Height": 175,
     "Weight": 73,
@@ -8978,9 +8978,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19731,
+    "FootballPlayerId": 19731,
     "ShirtNumber": 44,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Wales",
     "Height": 183,
     "Weight": 78,
@@ -8995,9 +8995,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19758,
+    "FootballPlayerId": 19758,
     "ShirtNumber": 18,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Portugal",
     "Height": 178,
     "Weight": 70,
@@ -9012,9 +9012,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19880,
+    "FootballPlayerId": 19880,
     "ShirtNumber": 72,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 183,
     "Weight": 0,
@@ -9029,9 +9029,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19888,
+    "FootballPlayerId": 19888,
     "ShirtNumber": 41,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9046,9 +9046,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19922,
+    "FootballPlayerId": 19922,
     "ShirtNumber": 61,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9063,9 +9063,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19928,
+    "FootballPlayerId": 19928,
     "ShirtNumber": 89,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9080,9 +9080,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19929,
+    "FootballPlayerId": 19929,
     "ShirtNumber": 61,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9097,9 +9097,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19951,
+    "FootballPlayerId": 19951,
     "ShirtNumber": 49,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9114,9 +9114,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19967,
+    "FootballPlayerId": 19967,
     "ShirtNumber": 53,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9131,9 +9131,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 19970,
+    "FootballPlayerId": 19970,
     "ShirtNumber": 37,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9148,9 +9148,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 20109,
+    "FootballPlayerId": 20109,
     "ShirtNumber": 4,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Denmark",
     "Height": 199,
     "Weight": 96,
@@ -9165,9 +9165,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 20171,
+    "FootballPlayerId": 20171,
     "ShirtNumber": 29,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Portugal",
     "Height": 174,
     "Weight": 64,
@@ -9182,9 +9182,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 20183,
+    "FootballPlayerId": 20183,
     "ShirtNumber": 14,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Nigeria",
     "Height": 190,
     "Weight": 88,
@@ -9199,9 +9199,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 20196,
+    "FootballPlayerId": 20196,
     "ShirtNumber": 13,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Japan",
     "Height": 178,
     "Weight": 72,
@@ -9216,9 +9216,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 20224,
+    "FootballPlayerId": 20224,
     "ShirtNumber": 6,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Colombia",
     "Height": 187,
     "Weight": 81,
@@ -9233,9 +9233,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 20277,
+    "FootballPlayerId": 20277,
     "ShirtNumber": 19,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Spain",
     "Height": 175,
     "Weight": 70,
@@ -9250,9 +9250,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 20479,
+    "FootballPlayerId": 20479,
     "ShirtNumber": 25,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Nigeria",
     "Height": 183,
     "Weight": 74,
@@ -9267,9 +9267,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 20486,
+    "FootballPlayerId": 20486,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Belgium",
     "Height": 172,
     "Weight": 61,
@@ -9284,9 +9284,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 20559,
+    "FootballPlayerId": 20559,
     "ShirtNumber": 13,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Brazil",
     "Height": 191,
     "Weight": 91,
@@ -9301,9 +9301,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 20745,
+    "FootballPlayerId": 20745,
     "ShirtNumber": 27,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Morocco",
     "Height": 190,
     "Weight": 80,
@@ -9318,9 +9318,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 20858,
+    "FootballPlayerId": 20858,
     "ShirtNumber": 44,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Netherlands",
     "Height": 185,
     "Weight": 75,
@@ -9335,9 +9335,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 20929,
+    "FootballPlayerId": 20929,
     "ShirtNumber": 24,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 188,
     "Weight": 80,
@@ -9352,9 +9352,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 21413,
+    "FootballPlayerId": 21413,
     "ShirtNumber": 52,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9369,9 +9369,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 21532,
+    "FootballPlayerId": 21532,
     "ShirtNumber": 61,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Ireland",
     "Height": 169,
     "Weight": 71,
@@ -9386,9 +9386,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 21585,
+    "FootballPlayerId": 21585,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 178,
     "Weight": 0,
@@ -9403,9 +9403,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 21611,
+    "FootballPlayerId": 21611,
     "ShirtNumber": 28,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Croatia",
     "Height": 201,
     "Weight": 96,
@@ -9420,9 +9420,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 21653,
+    "FootballPlayerId": 21653,
     "ShirtNumber": 44,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Ireland",
     "Height": 0,
     "Weight": 0,
@@ -9437,9 +9437,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 21702,
+    "FootballPlayerId": 21702,
     "ShirtNumber": 25,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Scotland",
     "Height": 0,
     "Weight": 0,
@@ -9454,9 +9454,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 21774,
+    "FootballPlayerId": 21774,
     "ShirtNumber": 0,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Slovenia",
     "Height": 183,
     "Weight": 78,
@@ -9471,9 +9471,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 21887,
+    "FootballPlayerId": 21887,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 182,
     "Weight": 0,
@@ -9488,9 +9488,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 21958,
+    "FootballPlayerId": 21958,
     "ShirtNumber": 47,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 195,
     "Weight": 0,
@@ -9505,9 +9505,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 22040,
+    "FootballPlayerId": 22040,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Bosnia And Herzegovina",
     "Height": 187,
     "Weight": 78,
@@ -9522,9 +9522,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 22047,
+    "FootballPlayerId": 22047,
     "ShirtNumber": 6,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Germany",
     "Height": 194,
     "Weight": 92,
@@ -9539,9 +9539,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 22542,
+    "FootballPlayerId": 22542,
     "ShirtNumber": 13,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Germany",
     "Height": 181,
     "Weight": 78,
@@ -9556,9 +9556,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 22546,
+    "FootballPlayerId": 22546,
     "ShirtNumber": 21,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Spain",
     "Height": 176,
     "Weight": 61,
@@ -9573,9 +9573,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 22651,
+    "FootballPlayerId": 22651,
     "ShirtNumber": 23,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Spain",
     "Height": 188,
     "Weight": 79,
@@ -9590,9 +9590,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 23033,
+    "FootballPlayerId": 23033,
     "ShirtNumber": 11,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Uruguay",
     "Height": 168,
     "Weight": 64,
@@ -9607,9 +9607,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 23199,
+    "FootballPlayerId": 23199,
     "ShirtNumber": 18,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Germany",
     "Height": 190,
     "Weight": 86,
@@ -9624,9 +9624,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 23591,
+    "FootballPlayerId": 23591,
     "ShirtNumber": 30,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Brazil",
     "Height": 186,
     "Weight": 76,
@@ -9641,9 +9641,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 23615,
+    "FootballPlayerId": 23615,
     "ShirtNumber": 0,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Nigeria",
     "Height": 175,
     "Weight": 70,
@@ -9658,9 +9658,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 23702,
+    "FootballPlayerId": 23702,
     "ShirtNumber": 20,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 182,
     "Weight": 76,
@@ -9675,9 +9675,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 23784,
+    "FootballPlayerId": 23784,
     "ShirtNumber": 59,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "South Africa",
     "Height": 175,
     "Weight": 72,
@@ -9692,9 +9692,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 23810,
+    "FootballPlayerId": 23810,
     "ShirtNumber": 45,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9709,9 +9709,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 23815,
+    "FootballPlayerId": 23815,
     "ShirtNumber": 48,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9726,9 +9726,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 23841,
+    "FootballPlayerId": 23841,
     "ShirtNumber": 37,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9743,9 +9743,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 24000,
+    "FootballPlayerId": 24000,
     "ShirtNumber": 32,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9760,9 +9760,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 24001,
+    "FootballPlayerId": 24001,
     "ShirtNumber": 66,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9777,9 +9777,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 24151,
+    "FootballPlayerId": 24151,
     "ShirtNumber": 32,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Portugal",
     "Height": 177,
     "Weight": 69,
@@ -9794,9 +9794,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 24214,
+    "FootballPlayerId": 24214,
     "ShirtNumber": 28,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9811,9 +9811,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 24252,
+    "FootballPlayerId": 24252,
     "ShirtNumber": 20,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Portugal",
     "Height": 183,
     "Weight": 76,
@@ -9828,9 +9828,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 24342,
+    "FootballPlayerId": 24342,
     "ShirtNumber": 30,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9845,9 +9845,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 24412,
+    "FootballPlayerId": 24412,
     "ShirtNumber": 4,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Germany",
     "Height": 181,
     "Weight": 72,
@@ -9862,9 +9862,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 24630,
+    "FootballPlayerId": 24630,
     "ShirtNumber": 30,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Brazil",
     "Height": 179,
     "Weight": 71,
@@ -9879,9 +9879,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 24635,
+    "FootballPlayerId": 24635,
     "ShirtNumber": 50,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Spain",
     "Height": 182,
     "Weight": 0,
@@ -9896,9 +9896,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 24797,
+    "FootballPlayerId": 24797,
     "ShirtNumber": 31,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9913,9 +9913,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 25089,
+    "FootballPlayerId": 25089,
     "ShirtNumber": 12,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Sweden",
     "Height": 180,
     "Weight": 69,
@@ -9930,9 +9930,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 25246,
+    "FootballPlayerId": 25246,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Spain",
     "Height": 178,
     "Weight": 67,
@@ -9947,9 +9947,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 25266,
+    "FootballPlayerId": 25266,
     "ShirtNumber": 54,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -9964,9 +9964,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 25292,
+    "FootballPlayerId": 25292,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Guadeloupe",
     "Height": 183,
     "Weight": 72,
@@ -9981,9 +9981,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 25309,
+    "FootballPlayerId": 25309,
     "ShirtNumber": 21,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Argentina",
     "Height": 179,
     "Weight": 69,
@@ -9998,9 +9998,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 25313,
+    "FootballPlayerId": 25313,
     "ShirtNumber": 21,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Italy",
     "Height": 185,
     "Weight": 70,
@@ -10015,9 +10015,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 25329,
+    "FootballPlayerId": 25329,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "France",
     "Height": 181,
     "Weight": 76,
@@ -10032,9 +10032,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 26076,
+    "FootballPlayerId": 26076,
     "ShirtNumber": 21,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Spain",
     "Height": 183,
     "Weight": 76,
@@ -10049,9 +10049,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 26216,
+    "FootballPlayerId": 26216,
     "ShirtNumber": 4,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Turkey",
     "Height": 185,
     "Weight": 82,
@@ -10066,9 +10066,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 26408,
+    "FootballPlayerId": 26408,
     "ShirtNumber": 17,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Argentina",
     "Height": 172,
     "Weight": 72,
@@ -10083,9 +10083,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 26556,
+    "FootballPlayerId": 26556,
     "ShirtNumber": 54,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Romania",
     "Height": 0,
     "Weight": 0,
@@ -10100,9 +10100,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 32435,
+    "FootballPlayerId": 32435,
     "ShirtNumber": 4,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Paraguay",
     "Height": 188,
     "Weight": 82,
@@ -10117,9 +10117,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 32638,
+    "FootballPlayerId": 32638,
     "ShirtNumber": 27,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Greece",
     "Height": 194,
     "Weight": 88,
@@ -10134,9 +10134,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 32728,
+    "FootballPlayerId": 32728,
     "ShirtNumber": 42,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Sweden",
     "Height": 187,
     "Weight": 86,
@@ -10151,9 +10151,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 32923,
+    "FootballPlayerId": 32923,
     "ShirtNumber": 13,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Colombia",
     "Height": 195,
     "Weight": 94,
@@ -10168,9 +10168,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 32936,
+    "FootballPlayerId": 32936,
     "ShirtNumber": 27,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Mali",
     "Height": 175,
     "Weight": 60,
@@ -10185,9 +10185,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 33061,
+    "FootballPlayerId": 33061,
     "ShirtNumber": 23,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Scotland",
     "Height": 183,
     "Weight": 70,
@@ -10202,9 +10202,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 33066,
+    "FootballPlayerId": 33066,
     "ShirtNumber": 25,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Cuba",
     "Height": 172,
     "Weight": 76,
@@ -10219,9 +10219,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 33067,
+    "FootballPlayerId": 33067,
     "ShirtNumber": 32,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Germany",
     "Height": 190,
     "Weight": 83,
@@ -10236,9 +10236,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 33158,
+    "FootballPlayerId": 33158,
     "ShirtNumber": 30,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Sweden",
     "Height": 194,
     "Weight": 84,
@@ -10253,9 +10253,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 33238,
+    "FootballPlayerId": 33238,
     "ShirtNumber": 34,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Netherlands",
     "Height": 188,
     "Weight": 76,
@@ -10270,9 +10270,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 35733,
+    "FootballPlayerId": 35733,
     "ShirtNumber": 51,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Czech Republic",
     "Height": 0,
     "Weight": 0,
@@ -10287,9 +10287,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 37587,
+    "FootballPlayerId": 37587,
     "ShirtNumber": 10,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "Romania",
     "Height": 180,
     "Weight": 78,
@@ -10304,9 +10304,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 37776,
+    "FootballPlayerId": 37776,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Colombia",
     "Height": 179,
     "Weight": 70,
@@ -10321,9 +10321,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 40320,
+    "FootballPlayerId": 40320,
     "ShirtNumber": 26,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "South Africa",
     "Height": 175,
     "Weight": 70,
@@ -10338,9 +10338,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 47259,
+    "FootballPlayerId": 47259,
     "ShirtNumber": 28,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Germany",
     "Height": 184,
     "Weight": 78,
@@ -10355,9 +10355,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 49481,
+    "FootballPlayerId": 49481,
     "ShirtNumber": 87,
-    "PositionId": 4,
+    "FootballPositionId": 4,
     "Country": "England",
     "Height": 178,
     "Weight": 0,
@@ -10372,9 +10372,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 49884,
+    "FootballPlayerId": 49884,
     "ShirtNumber": 23,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "France",
     "Height": 194,
     "Weight": 92,
@@ -10389,9 +10389,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 49992,
+    "FootballPlayerId": 49992,
     "ShirtNumber": 11,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Italy",
     "Height": 189,
     "Weight": 78,
@@ -10406,9 +10406,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 50245,
+    "FootballPlayerId": 50245,
     "ShirtNumber": 8,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Mali",
     "Height": 182,
     "Weight": 80,
@@ -10423,9 +10423,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 50453,
+    "FootballPlayerId": 50453,
     "ShirtNumber": 42,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Ireland",
     "Height": 0,
     "Weight": 0,
@@ -10440,9 +10440,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 50463,
+    "FootballPlayerId": 50463,
     "ShirtNumber": 59,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Nigeria",
     "Height": 175,
     "Weight": 0,
@@ -10457,9 +10457,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 50512,
+    "FootballPlayerId": 50512,
     "ShirtNumber": 29,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "France",
     "Height": 185,
     "Weight": 64,
@@ -10474,9 +10474,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 50975,
+    "FootballPlayerId": 50975,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Spain",
     "Height": 0,
     "Weight": 0,
@@ -10491,9 +10491,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 50989,
+    "FootballPlayerId": 50989,
     "ShirtNumber": 81,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "France",
     "Height": 164,
     "Weight": 0,
@@ -10508,9 +10508,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 51416,
+    "FootballPlayerId": 51416,
     "ShirtNumber": 1,
-    "PositionId": 1,
+    "FootballPositionId": 1,
     "Country": "Norway",
     "Height": 192,
     "Weight": 90,
@@ -10525,9 +10525,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 51423,
+    "FootballPlayerId": 51423,
     "ShirtNumber": 7,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Scotland",
     "Height": 173,
     "Weight": 68,
@@ -10542,9 +10542,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 51436,
+    "FootballPlayerId": 51436,
     "ShirtNumber": 57,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Norway",
     "Height": 174,
     "Weight": 80,
@@ -10559,9 +10559,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 51667,
+    "FootballPlayerId": 51667,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Ecuador",
     "Height": 178,
     "Weight": 66,
@@ -10576,9 +10576,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 52153,
+    "FootballPlayerId": 52153,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Mali",
     "Height": 177,
     "Weight": 65,
@@ -10593,9 +10593,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 52951,
+    "FootballPlayerId": 52951,
     "ShirtNumber": 51,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Netherlands",
     "Height": 0,
     "Weight": 0,
@@ -10610,9 +10610,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 54312,
+    "FootballPlayerId": 54312,
     "ShirtNumber": 24,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Paraguay",
     "Height": 174,
     "Weight": 70,
@@ -10627,9 +10627,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 55603,
+    "FootballPlayerId": 55603,
     "ShirtNumber": 42,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -10644,9 +10644,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 63633,
+    "FootballPlayerId": 63633,
     "ShirtNumber": 0,
-    "PositionId": 3,
+    "FootballPositionId": 3,
     "Country": "Argentina",
     "Height": 174,
     "Weight": 72,
@@ -10661,9 +10661,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 63655,
+    "FootballPlayerId": 63655,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Romania",
     "Height": 191,
     "Weight": 0,
@@ -10678,9 +10678,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 65981,
+    "FootballPlayerId": 65981,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "England",
     "Height": 0,
     "Weight": 0,
@@ -10695,9 +10695,9 @@
   {
     "Statistics": [
     ],
-    "PlayerId": 65987,
+    "FootballPlayerId": 65987,
     "ShirtNumber": 0,
-    "PositionId": 2,
+    "FootballPositionId": 2,
     "Country": "Netherlands",
     "Height": 189,
     "Weight": 0,

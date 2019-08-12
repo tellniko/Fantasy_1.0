@@ -1,6 +1,7 @@
 ﻿using Fantasy.Data.Models;
 using Fantasy.Data.Models.Common;
-using Fantasy.Data.Models.Players;
+using Fantasy.Data.Models.FootballPlayers;
+using Fantasy.Data.Models.Game;
 using Fantasy.Data.Models.Statistics;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -28,24 +29,24 @@ namespace Fantasy.Data
         public DbSet<AttackStatistics> AttackStatistics { get; set; }
         public DbSet<DisciplineStatistics> DisciplineStatistics { get; set; }
         public DbSet<MatchStatistics> MatchStatistics { get; set; }
-        public DbSet<Country> Countries { get; set; }
         public DbSet<Season> Seasons { get; set; }
+        public DbSet<FantasyUserPlayer> FantasyUserPlayers { get; set; }
         
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder
                 .Entity<FootballPlayer>()
-                .HasOne(fp => fp.FootballPlayerInfo)
+                .HasOne(fp => fp.Info)
                 .WithOne(fpi => fpi.FootballPlayer)
-                .HasForeignKey<FootballPlayerInfo>(fpi => fpi.PlayerId)
+                .HasForeignKey<FootballPlayerInfo>(fpi => fpi.FootballPlayerId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             builder
                 .Entity<FootballClub>()
-                .HasOne(fc => fc.FootballClubInfo)
+                .HasOne(fc => fc.Info)
                 .WithOne(fci => fci.FootballClub)
-                .HasForeignKey<FootballClubInfo>(fc => fc.ClubId)
+                .HasForeignKey<FootballClubInfo>(fc => fc.FootballClubId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             builder

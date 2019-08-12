@@ -1,7 +1,10 @@
-﻿namespace Fantasy.Data.Models.Statistics
+﻿using Fantasy.Common.Attributes;
+
+namespace Fantasy.Data.Models.Statistics
 {
     public class AttackStatistics : BaseStatistics
     {
+        [Goalkeeper][Defender][Midfielder][Forward]
         public short Goals { get; set; }
 
         public short PenaltiesScored { get; set; }

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Fantasy.Common.Mapping;
-using Fantasy.Data.Models.Players;
+using Fantasy.Data.Models.FootballPlayers;
 
 namespace Fantasy.Services.Administrator.Models.Db
 {
@@ -10,6 +10,6 @@ namespace Fantasy.Services.Administrator.Models.Db
 
         public int FootballClubId { get; set; }
 
-        public int PositionId { get; set; }
+        public int FootballPlayerPositionId { get; set; }
     }
 }

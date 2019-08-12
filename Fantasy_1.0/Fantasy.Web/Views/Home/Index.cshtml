@@ -1,8 +1,59 @@
-﻿@{
+﻿@*@model Fantasy.Web.Models.Players.HomeViewModel*@
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-7">
+        <div class="row"></div>
+            <div class="col-md-4">
+                @await Component.InvokeAsync("FootballClubs")
+            </div>
+            <br/>
+            <div class="col-md-4">
+                @await Component.InvokeAsync("FootballPlayerPositions")
+            </div>
+             <br />
+        <div class="col-6" id="pitch">
+            <img src="/images/pitch1.jpg" alt="stadium" width="130%" />
+        </div>
+        <br />
+    </div>
+    <div class="col-3" id="players"></div>
 </div>
+<br>
+
+<script>
+    $(document).ready(function () {
+        $('#players').load('/Players/GetPartial');
+
+        let position = $('#position');
+        let club = $('#club');
+
+        club.change(filter);
+        position.change(filter);
+
+        function filter() {
+            $('#listedPlayersContainer').remove();
+            $('#players').load(`/Players/GetPartial?clubId=${club.val()}&positionId=${position.val()}`);
+        }
+    });
+
+    @*const jsFrame = new JSFrame();
+    const frame = jsFrame.create({
+        title: '@Model.Clubs',
+        left: 20, top: 20, width: 320, height: 220,
+        movable: true,//Enable to be moved by mouse
+        resizable: true,//Enable to be resized by mouse
+        html: '<div id="my_element" style="padding:10px;font-size:12px;color:darkgray;">Contents of window</div> '
+    });
+    //Show the window
+    frame.show();
+    frame.$('#my_element').innerHTML = '<span style="color:red">Hello world</span>';*@
+
+
+</script>
+

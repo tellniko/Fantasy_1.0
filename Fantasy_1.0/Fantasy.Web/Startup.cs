@@ -62,6 +62,8 @@ namespace Fantasy.Web
             services
                 .AddDomainServices();
 
+            
+
             services
                 .AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -88,6 +90,7 @@ namespace Fantasy.Web
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            
 
             app.UseAuthentication();
 

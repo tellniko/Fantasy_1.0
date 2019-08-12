@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Fantasy.Data.Models.Players;
+using Fantasy.Data.Models.FootballPlayers;
 
 namespace Fantasy.Web.Infrastructure.Extensions
 {
@@ -26,7 +26,7 @@ namespace Fantasy.Web.Infrastructure.Extensions
                     //serviceScope.ServiceProvider.GetService<FantasyDbContext>().Database.Migrate();
                     
                     #region Seed Clubs
-                    if (context.FootballClubs.FirstOrDefault(fc => fc.Name == "Arsenal") == null)
+                    if (!context.FootballClubs.Any())
                     {
                         context.FootballClubs.Add(new FootballClub("AFC Bournemouth", "Bournemouth", "BOU")); context.SaveChanges();
                         context.FootballClubs.Add(new FootballClub("Arsenal", "Arsenal", "ARS")); context.SaveChanges();
@@ -122,10 +122,14 @@ namespace Fantasy.Web.Infrastructure.Extensions
                     #endregion
 
                     #region Seed Positions
-                    context.Add(new FootballPlayerPosition { Name = "Goalkeeper" }); context.SaveChanges();
-                    context.Add(new FootballPlayerPosition { Name = "Defender" }); context.SaveChanges();
-                    context.Add(new FootballPlayerPosition { Name = "Midfielder" }); context.SaveChanges();
-                    context.Add(new FootballPlayerPosition { Name = "Forward" }); context.SaveChanges();
+
+                    if (!context.FootballPlayerPositions.Any())
+                    {
+                        context.Add(new FootballPlayerPosition { Name = "Goalkeeper" }); context.SaveChanges();
+                        context.Add(new FootballPlayerPosition { Name = "Defender" }); context.SaveChanges();
+                        context.Add(new FootballPlayerPosition { Name = "Midfielder" }); context.SaveChanges();
+                        context.Add(new FootballPlayerPosition { Name = "Forward" }); context.SaveChanges();
+                    }
                     #endregion
                 }
             }

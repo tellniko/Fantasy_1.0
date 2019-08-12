@@ -1,0 +1,213 @@
+﻿@using System.Globalization
+@using Fantasy.Data
+@model Fantasy.Services.Models.PlayerDetailsServiceModel
+@{
+    ViewData["Title"] = @Model.InfoName;
+}
+
+
+<br/>
+<div class="row">
+<div class="col-2"></div>
+<div class="col-8">
+    <div class="row">
+        <div class="col-5" style="background-color: #ffffff">
+            <div class="row">
+                <div class="col-8 text-center animated bounceInDown delay-1s" >
+                    <img src="@Model.InfoBigImgUrl" onerror="if (this.src != 'error.jpg') this.src='@DataConstants.FootballPlayerDefaultImgUrl';" class="player"/>
+                </div>
+                <div class="col-4">
+                    <div class="playerInfoName animated bounceInLeft">@Model.InfoName</div>
+                    <br />
+                    <div class="playerInfoPosition text-center animated bounceInLeft" style="background-color: #38003c">@Model.FootballPlayerPositionName</div>
+                    <br/>
+                    <div class="playerInfoNumber animated bounceInLeft">$ @Model.Price</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 text-center">
+            <img src="@Model.FootballClubInfoBadgeUrl" width="80%"/>
+        </div>
+        <div class="col-5"  style="background-color: #38003c">
+            <div class="row">
+                <table class="table custom">
+                    <tbody>
+                        <tr>
+                            <td>Shirt Number</td>
+                            <td>@(Model.InfoShirtNumber == 0 ? "" : Model.InfoShirtNumber.ToString())</td>
+                        </tr>
+                        <tr>
+                            <td>Country</td>
+                            <td>@Model.InfoCountry</td>
+                        </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td>@(Model.InfoWeight  == 0 ? "" : Model.InfoWeight.ToString() + " kg")</td>
+                    </tr>
+                    <tr>
+                        <td>Height</td>
+                        <td>@(Model.InfoHeight == 0 ? "" : Model.InfoHeight.ToString() + " cm")</td>
+                    </tr>
+                    <tr>
+                        <td>Birth Date</td>
+                        <td>@Model.InfoBirthDate?.ToString("dd/MM/yyyy", null)</td>
+                    </tr>
+                    <tr>
+                        <td>Join Date</td>
+                        <td>@Model.InfoJoinDate?.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-2"></div>
+</div>
+
+<br/><br/><br/><br/>
+<br/><br/><br/><br/>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-2 text-center" style="background-color: #e90052">
+        <img src="@Model.InfoBigImgUrl" width="60%"/>
+    </div>
+    <div class="col-2 text-center" style="background-color: #e90052">
+    </div>
+    <div class="col-2 text-center" style="background-color: #e90052">
+    </div>
+    <div class="col-2 text-center" style="background-color: #e90052">
+    </div>
+    <div class="col-2 text-center" style="background-color: #e90052">
+        <img src="@Model.FootballClubInfoBadgeUrl" width="60%"/>
+    </div>
+    <div class="col-1"></div>
+</div>
+<br/><br/><br/><br/>
+<br/><br/><br/><br/>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-2 text-center" style="background-color: #ffffff">
+        <img src="@Model.InfoBigImgUrl" width="60%"/>
+    </div>
+    <div class="col-2 text-center" style="background-color: #ffffff">
+    </div>
+    <div class="col-2 text-center" style="background-color: #ffffff">
+    </div>
+    <div class="col-2 text-center" style="background-color: #ffffff">
+    </div>
+    <div class="col-2 text-center" style="background-color: #ffffff">
+        <img src="@Model.FootballClubInfoBadgeUrl" width="60%"/>
+    </div>
+    <div class="col-1"></div>
+</div>
+<br/><br/><br/><br/>
+<br/><br/><br/><br/>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-2 text-center" style="background-color: #00ff85">
+        <img src="@Model.InfoBigImgUrl" width="60%"/>
+    </div>
+    <div class="col-2 text-center" style="background-color: #00ff85">
+    </div>
+    <div class="col-2 text-center" style="background-color: #00ff85">
+    </div>
+    <div class="col-2 text-center" style="background-color: #00ff85">
+    </div>
+    <div class="col-2 text-center" style="background-color: #00ff85">
+        <img src="@Model.FootballClubInfoBadgeUrl" width="60%"/>
+    </div>
+    <div class="col-1"></div>
+</div>
+<br/><br/><br/><br/>
+<br/><br/><br/><br/>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-2 text-center" style="background-color: #38003c">
+        <img src="@Model.InfoBigImgUrl" width="60%"/>
+    </div>
+    <div class="col-2 text-center" style="background-color: #38003c">
+    </div>
+    <div class="col-2 text-center" style="background-color: #38003c">
+    </div>
+    <div class="col-2 text-center" style="background-color: #38003c">
+    </div>
+    <div class="col-2 text-center" style="background-color: #38003c">
+        <img src="@Model.FootballClubInfoBadgeUrl" width="60%"/>
+    </div>
+    <div class="col-1"></div>
+</div>
+<br/><br/><br/><br/>
+<br/><br/><br/><br/>
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-2 text-center" style="background-color: #38003c">
+        <img src="@Model.InfoBigImgUrl" width="60%"/>
+    </div>
+    <div class="col-2 text-center" style="background-color: #38003c">
+    </div>
+    <div class="col-2 text-center" style="background-color: #38003c">
+    </div>
+    <div class="col-2 text-center" style="background-color: #38003c">
+    </div>
+    <div class="col-2 text-center" style="background-color: #38003c">
+        <img src="@Model.FootballClubInfoBadgeUrl" width="60%"/>
+    </div>
+    <div class="col-1"></div>
+</div>
+<br/><br/><br/><br/>
+<br/><br/><br/><br/>
+
+
+
+
+
+<style rel="stylesheet">
+    body { 
+        background: url(/images/stadiums/liverpool.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .player {
+        width: 105%;
+    }
+
+    .playerInfoName {
+        font-size: 1.5vw;
+        color: #38003c;
+        font-family:fantasy;
+    }
+
+    .playerInfoNumber {
+        font-size: 2vw;
+        color: #e90052;
+        font-family:fantasy;
+    }
+
+    .playerInfoPosition {
+        font-size: 1vw;
+        font-style: italic;
+        color: #ffffff;
+        font-family:fantasy;
+    }
+    .custom {
+        color: #ffffff
+    }
+    table {
+        margin-top: 5px;
+    }
+
+</style>
+
+
+@*
+    #04f5ff	(4,245,255)
+#04f5ff	(233,0,82)
+#ffffff	(255,255,255)
+#00ff85	(0,255,133)
+#38003c	(56,0,60)
+    *@

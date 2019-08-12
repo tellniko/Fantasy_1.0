@@ -17,7 +17,7 @@
         public string SecondaryKitColor { get; set; }
 
 
-        public int ClubId { get; set; }
+        public int FootballClubId { get; set; }
         public FootballClub FootballClub { get; set; }
     }
 }

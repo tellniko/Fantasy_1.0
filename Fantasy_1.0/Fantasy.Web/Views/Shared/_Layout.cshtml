@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="~/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/fontawesome.min.css" />
     <link rel="stylesheet" href="~/css/style.css" />
-    <link rel="stylesheet" href="~/css/jquery.datetimepicker.css" />
+    <link rel="stylesheet" href="~/css/animate.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/animate.css" />
     <script src="~/js/jquery-3.4.1.min.js"></script>
     <script src="~/js/popper.min.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
     <script src="~/js/jquery.datetimepicker.full.min.js"></script>
     <script src="~/js/fontawesome.min.js"></script>
+    <script src="https://riversun.github.io/jsframe/jsframe.js"></script>
 
 
     <link rel="stylesheet" href="~/css/site.css" />
@@ -25,7 +27,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
+            <div class="container-fluid">
                 
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial" />
@@ -39,7 +41,7 @@
                                 @*<a class=" btn btn-dark nav-link text-white" asp-area="Administrator" asp-controller="Players" asp-action="All">Players</a>*@
                             </li>
                             <li>
-                                <a class="nav-link text-dark" asp-area="Administrator" asp-controller="Gameweeks" asp-action="Index">Admin Panel</a>
+                                <a class="nav-link text-dark" asp-area="Administrator" asp-controller="Gameweeks" asp-action="Index" target="_blank">Admin Panel</a>
                             </li>
                         }
                     </ul>
@@ -47,30 +49,27 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container-fluid">
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
             @if (this.TempData.ContainsKey(GlobalConstants.TempDataSuccessMessageKey))
             {
-                <div class="alert alert-success">
+                <h1 class="text-success animated 1 bounce text-center">
                     @this.TempData[GlobalConstants.TempDataSuccessMessageKey]
-                </div>
+                </h1>
             }
             @if (this.TempData.ContainsKey(GlobalConstants.TempDataErrorMessageKey))
             {
-                <div class="alert alert-danger">
+                <h1 class="text-danger animated 1 bounce text-center">
                     @this.TempData[GlobalConstants.TempDataErrorMessageKey]
-                </div>
+                </h1>
             }
-            @RenderBody()
+
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2019 - Fantasy.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
     </footer>
 
     <script src="~/js/site.js" asp-append-version="true"></script>

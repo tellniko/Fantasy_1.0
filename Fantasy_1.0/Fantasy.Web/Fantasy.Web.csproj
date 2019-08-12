@@ -22,4 +22,10 @@
     <ProjectReference Include="..\Fantasy.Services\Fantasy.Services.csproj" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="Models\Clubs\" />
+    <Folder Include="wwwroot\images\stadiums\" />
+  </ItemGroup>
+
 </Project>

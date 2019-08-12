@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Fantasy.Data.Models.Players;
+using Fantasy.Data.Models.FootballPlayers;
 
 namespace Fantasy.Data.Models.Common
 {
@@ -31,7 +31,7 @@ namespace Fantasy.Data.Models.Common
 
         public byte Rating { get; set; }
 
-        public FootballClubInfo FootballClubInfo { get; set; }
+        public FootballClubInfo Info { get; set; }
 
         public IEnumerable<FootballPlayer> Squad { get; set; } = new List<FootballPlayer>();
 

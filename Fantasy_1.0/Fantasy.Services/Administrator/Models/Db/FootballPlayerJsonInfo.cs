@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
-using Fantasy.Common.Mapping;
-using Fantasy.Data;
-using Fantasy.Data.Models.Players;
+﻿using Fantasy.Common.Mapping;
+using Fantasy.Data.Models.FootballPlayers;
+using System;
 
 namespace Fantasy.Services.Administrator.Models.Db
 {
@@ -28,6 +24,6 @@ namespace Fantasy.Services.Administrator.Models.Db
 
         public string Country { get; set; }
 
-        public int PlayerId { get; set; }
+        public int FootballPlayerId { get; set; }
     }
 }
