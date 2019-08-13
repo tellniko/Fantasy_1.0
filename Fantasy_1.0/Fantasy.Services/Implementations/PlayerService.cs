@@ -5,9 +5,11 @@ using Fantasy.Services.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using Fantasy.Data.Models.Statistics;
 
 namespace Fantasy.Services.Implementations
 {
@@ -42,5 +44,29 @@ namespace Fantasy.Services.Implementations
                 .To<PlayerDetailsServiceModel>()
                 .FirstOrDefaultAsync();
         }
+
+        public async Task<TModel> GetStatisticsAsync<TModel>(int playerId, int gameweekId)
+        {
+            var goalkeeping = await this.db.FindAsync<GoalkeepingStatistics>(playerId, gameweekId);
+            var defence = await this.db.FindAsync<DefenceStatistics>(playerId, gameweekId);
+            var teamPlay = await this.db.FindAsync<TeamPlayStatistics>(playerId, gameweekId);
+            var attack = await this.db.FindAsync<AttackStatistics>(playerId, gameweekId);
+            var discipline = await this.db.FindAsync<DisciplineStatistics>(playerId, gameweekId);
+            var match = await this.db.FindAsync<MatchStatistics>(playerId, gameweekId);
+            
+            var stat = new StatisticsServiceModel
+            {
+                Goalkeeping = goalkeeping,
+                Defence = defence,
+                TeamPlay = teamPlay,
+                Attack = attack,
+                Discipline = discipline,
+                Match = match,
+            };
+
+            return stat.To<TModel>();
+        }
     }
 }
+
+

@@ -8,156 +8,71 @@
 
 <br/>
 <div class="row">
-<div class="col-2"></div>
-<div class="col-8">
-    <div class="row">
-        <div class="col-5" style="background-color: #ffffff">
-            <div class="row">
-                <div class="col-8 text-center animated bounceInDown delay-1s" >
-                    <img src="@Model.InfoBigImgUrl" onerror="if (this.src != 'error.jpg') this.src='@DataConstants.FootballPlayerDefaultImgUrl';" class="player"/>
-                </div>
-                <div class="col-4">
-                    <div class="playerInfoName animated bounceInLeft">@Model.InfoName</div>
-                    <br />
-                    <div class="playerInfoPosition text-center animated bounceInLeft" style="background-color: #38003c">@Model.FootballPlayerPositionName</div>
-                    <br/>
-                    <div class="playerInfoNumber animated bounceInLeft">$ @Model.Price</div>
+    <div class="col-2"></div>
+    <div class="col-8">
+        <div class="row">
+            <div class="col-5 animated bounceInLeft" style="background-color: #ffffff;">
+                <div style="border-radius: 100%; color: #e90052">
+                <div class="row">
+                    <div class="col-8 text-center animated bounceInLeft delay-1s">
+                        <img src="@Model.InfoBigImgUrl" onerror="if (this.src != 'error.jpg') this.src = '@DataConstants.FootballPlayerDefaultImgUrl';" class="player"/>
+                    </div>
+                    <div class="col-4">
+                        <div class="playerInfoName animated bounceInLeft  delay-1s">@Model.InfoName</div>
+                        <br/>
+                        <div class="playerInfoPosition text-center animated bounceInLeft  delay-1s" style="background-color: #38003c">@Model.FootballPlayerPositionName</div>
+                        <br/>
+                        <div class="playerInfoNumber animated bounceInLeft  delay-1s">$ @Model.Price</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-2 text-center">
-            <img src="@Model.FootballClubInfoBadgeUrl" width="80%"/>
-        </div>
-        <div class="col-5"  style="background-color: #38003c">
-            <div class="row">
-                <table class="table custom">
-                    <tbody>
+            <div class="col-2 text-center">
+                <img src="@Model.FootballClubInfoBadgeUrl" width="80%"/>
+            </div>
+            <div class="col-5 animated bounceInRight"  style="background-color: #ffffff">
+                <div class="row">
+                    <table class="table custom">
+                        <tbody>
                         <tr>
-                            <td>Shirt Number</td>
-                            <td>@(Model.InfoShirtNumber == 0 ? "" : Model.InfoShirtNumber.ToString())</td>
+                            <td class="animated bounceInRight  delay-1s">Shirt Number</td>
+                            <td class="animated bounceInRight text-right delay-1s">@(Model.InfoShirtNumber == 0 ? "" : Model.InfoShirtNumber.ToString())</td>
                         </tr>
                         <tr>
-                            <td>Country</td>
-                            <td>@Model.InfoCountry</td>
+                            <td class="animated bounceInRight  delay-1s">Country</td>
+                            <td class="animated bounceInRight  text-right  delay-1s">@Model.InfoCountry</td>
                         </tr>
-                    <tr>
-                        <td>Weight</td>
-                        <td>@(Model.InfoWeight  == 0 ? "" : Model.InfoWeight.ToString() + " kg")</td>
-                    </tr>
-                    <tr>
-                        <td>Height</td>
-                        <td>@(Model.InfoHeight == 0 ? "" : Model.InfoHeight.ToString() + " cm")</td>
-                    </tr>
-                    <tr>
-                        <td>Birth Date</td>
-                        <td>@Model.InfoBirthDate?.ToString("dd/MM/yyyy", null)</td>
-                    </tr>
-                    <tr>
-                        <td>Join Date</td>
-                        <td>@Model.InfoJoinDate?.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)</td>
-                    </tr>
-                    </tbody>
-                </table>
+                        <tr>
+                            <td class="animated bounceInRight  delay-1s">Weight</td>
+                            <td class="animated bounceInRight text-right  delay-1s">@(Model.InfoWeight  == 0 ? "" : Model.InfoWeight + " kg")</td>
+                        </tr>
+                        <tr>
+                            <td class="animated bounceInRight  delay-1s">Height</td>
+                            <td class="animated bounceInRight  text-right  delay-1s">@(Model.InfoHeight == 0 ? "" : Model.InfoHeight + " cm")</td>
+                        </tr>
+                        <tr>
+                            <td class="animated bounceInRight  delay-1s">Birth Date</td>
+                            <td class="animated bounceInRight  text-right  delay-1s">@Model.InfoBirthDate?.ToString("dd/MM/yyyy", null)</td>
+                        </tr>
+                        <tr>
+                            <td class="animated bounceInRight  delay-1s">Join Date</td>
+                            <td class="animated bounceInRight  text-right delay-1s">@Model.InfoJoinDate?.ToString("dd/MM/yyyy", null)</td>
+                        </tr>
+                        @*<tr>
+                            <td class="animated bounceInUp  delay-1s"></td>
+                            <td class="animated bounceInDown  text-right delay-1s"></td>
+                        </tr>*@
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="col-2"></div>
+    <div class="col-2"></div>
 </div>
 
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<div class="row">
-    <div class="col-1"></div>
-    <div class="col-2 text-center" style="background-color: #e90052">
-        <img src="@Model.InfoBigImgUrl" width="60%"/>
-    </div>
-    <div class="col-2 text-center" style="background-color: #e90052">
-    </div>
-    <div class="col-2 text-center" style="background-color: #e90052">
-    </div>
-    <div class="col-2 text-center" style="background-color: #e90052">
-    </div>
-    <div class="col-2 text-center" style="background-color: #e90052">
-        <img src="@Model.FootballClubInfoBadgeUrl" width="60%"/>
-    </div>
-    <div class="col-1"></div>
-</div>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<div class="row">
-    <div class="col-1"></div>
-    <div class="col-2 text-center" style="background-color: #ffffff">
-        <img src="@Model.InfoBigImgUrl" width="60%"/>
-    </div>
-    <div class="col-2 text-center" style="background-color: #ffffff">
-    </div>
-    <div class="col-2 text-center" style="background-color: #ffffff">
-    </div>
-    <div class="col-2 text-center" style="background-color: #ffffff">
-    </div>
-    <div class="col-2 text-center" style="background-color: #ffffff">
-        <img src="@Model.FootballClubInfoBadgeUrl" width="60%"/>
-    </div>
-    <div class="col-1"></div>
-</div>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<div class="row">
-    <div class="col-1"></div>
-    <div class="col-2 text-center" style="background-color: #00ff85">
-        <img src="@Model.InfoBigImgUrl" width="60%"/>
-    </div>
-    <div class="col-2 text-center" style="background-color: #00ff85">
-    </div>
-    <div class="col-2 text-center" style="background-color: #00ff85">
-    </div>
-    <div class="col-2 text-center" style="background-color: #00ff85">
-    </div>
-    <div class="col-2 text-center" style="background-color: #00ff85">
-        <img src="@Model.FootballClubInfoBadgeUrl" width="60%"/>
-    </div>
-    <div class="col-1"></div>
-</div>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<div class="row">
-    <div class="col-1"></div>
-    <div class="col-2 text-center" style="background-color: #38003c">
-        <img src="@Model.InfoBigImgUrl" width="60%"/>
-    </div>
-    <div class="col-2 text-center" style="background-color: #38003c">
-    </div>
-    <div class="col-2 text-center" style="background-color: #38003c">
-    </div>
-    <div class="col-2 text-center" style="background-color: #38003c">
-    </div>
-    <div class="col-2 text-center" style="background-color: #38003c">
-        <img src="@Model.FootballClubInfoBadgeUrl" width="60%"/>
-    </div>
-    <div class="col-1"></div>
-</div>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-
-<div class="row">
-    <div class="col-1"></div>
-    <div class="col-2 text-center" style="background-color: #38003c">
-        <img src="@Model.InfoBigImgUrl" width="60%"/>
-    </div>
-    <div class="col-2 text-center" style="background-color: #38003c">
-    </div>
-    <div class="col-2 text-center" style="background-color: #38003c">
-    </div>
-    <div class="col-2 text-center" style="background-color: #38003c">
-    </div>
-    <div class="col-2 text-center" style="background-color: #38003c">
-        <img src="@Model.FootballClubInfoBadgeUrl" width="60%"/>
-    </div>
-    <div class="col-1"></div>
-</div>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
+<br/><br/>
+<br/><br/>
 
 
 
@@ -165,7 +80,7 @@
 
 <style rel="stylesheet">
     body { 
-        background: url(/images/stadiums/liverpool.jpg) no-repeat center center fixed; 
+        background: url(/images/stadiums/city.jpg) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -173,7 +88,7 @@
     }
 
     .player {
-        width: 105%;
+        width: 100%;
     }
 
     .playerInfoName {
@@ -191,14 +106,17 @@
     .playerInfoPosition {
         font-size: 1vw;
         font-style: italic;
-        color: #ffffff;
+        color: #04f5ff;
         font-family:fantasy;
     }
     .custom {
-        color: #ffffff
+        color: #38003c;
+        font-size:  14px;
+        font-weight: bold
     }
     table {
         margin-top: 5px;
+
     }
 
 </style>

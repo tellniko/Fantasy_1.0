@@ -9,5 +9,7 @@ namespace Fantasy.Services
         Task<IEnumerable<PlayerServiceModel>> GetAllAsync(string club, string position);
 
         Task<PlayerDetailsServiceModel> GetByIdAsync(int id);
+
+        Task<TModel> GetStatisticsAsync<TModel>(int playerId, int gameweekId);
     }
 }

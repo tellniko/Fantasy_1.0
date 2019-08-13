@@ -1,6 +1,4 @@
-﻿@*@model Fantasy.Web.Models.Players.HomeViewModel*@
-
-@{
+﻿@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -28,7 +26,7 @@
 
 <script>
     $(document).ready(function () {
-        $('#players').load('/Players/GetPartial');
+        $('#players').load('/Players/GetPartialPlayers');
 
         let position = $('#position');
         let club = $('#club');
@@ -38,7 +36,7 @@
 
         function filter() {
             $('#listedPlayersContainer').remove();
-            $('#players').load(`/Players/GetPartial?clubId=${club.val()}&positionId=${position.val()}`);
+            $('#players').load(`/Players/GetPartialPlayers?clubId=${club.val()}&positionId=${position.val()}`);
         }
     });
 
