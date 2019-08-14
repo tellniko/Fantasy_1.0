@@ -1,8 +1,6 @@
-﻿using Fantasy.Data.Models.Statistics.Contracts;
-
-namespace Fantasy.Data.Models.Statistics
+﻿namespace Fantasy.Data.Models.Statistics
 {
-    public class GoalkeepingStatistics : BaseStatistics, IGoalkeepingStatistics
+    public class GoalkeepingStatistics : BaseStatistics
     {
 
         public short Saves { get; set; }

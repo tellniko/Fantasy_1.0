@@ -100,15 +100,15 @@ namespace Fantasy.Services.Administrator.Implementations
 
             stat.AddRange(JsonConvert.DeserializeObject<List<AttackStatistics>>
                 (File.ReadAllText("wwwroot/JsonFiles/attackStat.json"))); 
-            stat.AddRange(JsonConvert.DeserializeObject <List<MatchStatistics>> 
+            stat.AddRange(JsonConvert.DeserializeObject<List<MatchStatistics>> 
                 (File.ReadAllText("wwwroot/JsonFiles/matchStat.json")));
-            stat.AddRange(JsonConvert.DeserializeObject <List<DefenceStatistics>> 
+            stat.AddRange(JsonConvert.DeserializeObject<List<DefenceStatistics>> 
                 (File.ReadAllText("wwwroot/JsonFiles/defenceStat.json")));
-            stat.AddRange(JsonConvert.DeserializeObject  <List<TeamPlayStatistics>> 
+            stat.AddRange(JsonConvert.DeserializeObject<List<TeamPlayStatistics>> 
                 (File.ReadAllText("wwwroot/JsonFiles/teamStat.json")));
-            stat.AddRange(JsonConvert.DeserializeObject <List<DisciplineStatistics>> 
+            stat.AddRange(JsonConvert.DeserializeObject<List<DisciplineStatistics>> 
                 (File.ReadAllText("wwwroot/JsonFiles/disciplineStat.json")));
-            stat.AddRange(JsonConvert.DeserializeObject <List<GoalkeepingStatistics>> 
+            stat.AddRange(JsonConvert.DeserializeObject<List<GoalkeepingStatistics>> 
                 (File.ReadAllText("wwwroot/JsonFiles/goalkeepingStat.json")));
 
             this.db.AddRange(stat);

@@ -1,6 +1,7 @@
 ﻿using Fantasy.Common.Mapping;
 using Fantasy.Data;
 using Fantasy.Data.Models.FootballPlayers;
+using Fantasy.Data.Models.Statistics;
 using Fantasy.Services.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,7 +10,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Fantasy.Data.Models.Statistics;
+using Remotion.Linq.Clauses;
 
 namespace Fantasy.Services.Implementations
 {
@@ -25,14 +26,13 @@ namespace Fantasy.Services.Implementations
         public async Task<IEnumerable<PlayerServiceModel>> GetAllAsync(string club, string position)
         {
             Expression<Func<FootballPlayer, bool>> filterCriteria =
-                fp => fp.FootballClub.Tag.Contains(club ?? string.Empty) 
+                fp => fp.FootballClub.Tag.Contains(club ?? string.Empty)
                       && fp.FootballPlayerPosition.Name.Contains(position ?? string.Empty);
 
             return await this.db.FootballPlayers
                 .Where(filterCriteria)
-                .OrderBy(fp => fp.FootballPlayerPositionId)
-                .ThenBy(fp => fp.Info.Name)
-               // .Take(25)
+                .OrderBy(fp => fp.Info.Name)
+                .Take(100)
                 .To<PlayerServiceModel>()
                 .ToListAsync();
         }
@@ -47,26 +47,32 @@ namespace Fantasy.Services.Implementations
 
         public async Task<TModel> GetStatisticsAsync<TModel>(int playerId, int gameweekId)
         {
-            var goalkeeping = await this.db.FindAsync<GoalkeepingStatistics>(playerId, gameweekId);
-            var defence = await this.db.FindAsync<DefenceStatistics>(playerId, gameweekId);
-            var teamPlay = await this.db.FindAsync<TeamPlayStatistics>(playerId, gameweekId);
-            var attack = await this.db.FindAsync<AttackStatistics>(playerId, gameweekId);
-            var discipline = await this.db.FindAsync<DisciplineStatistics>(playerId, gameweekId);
-            var match = await this.db.FindAsync<MatchStatistics>(playerId, gameweekId);
-            
-            var stat = new StatisticsServiceModel
-            {
-                Goalkeeping = goalkeeping,
-                Defence = defence,
-                TeamPlay = teamPlay,
-                Attack = attack,
-                Discipline = discipline,
-                Match = match,
-            };
-
-            return stat.To<TModel>();
+            return new StatisticsServiceModel
+                {
+                    Goalkeeping = await this.db.FindAsync<GoalkeepingStatistics>(playerId, gameweekId),
+                    Discipline = await this.db.FindAsync<DisciplineStatistics>(playerId, gameweekId),
+                    TeamPlay = await this.db.FindAsync<TeamPlayStatistics>(playerId, gameweekId),
+                    Defence = await this.db.FindAsync<DefenceStatistics>(playerId, gameweekId),
+                    Attack = await this.db.FindAsync<AttackStatistics>(playerId, gameweekId),
+                    Match = await this.db.FindAsync<MatchStatistics>(playerId, gameweekId),
+                }
+                .To<TModel>();
         }
     }
+
+    public class Test
+    {
+        public string name { get; set; }
+
+        public DefenceStatistics DefenceStatistics { get; set; }
+
+        public DisciplineStatistics DisciplineStatistics { get; set; }
+
+        public AttackStatistics AttackStatistics { get; set; }
+
+
+        public TeamPlayStatistics TeamPlayStatistics { get; set; }
+
+        public GoalkeepingStatistics GoalkeepingStatistics { get; set; }
+    }
 }
-
-

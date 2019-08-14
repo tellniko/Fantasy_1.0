@@ -1,9 +1,6 @@
-﻿
-using Fantasy.Data.Models.Statistics.Contracts;
-
-namespace Fantasy.Data.Models.Statistics
+﻿namespace Fantasy.Data.Models.Statistics
 {
-    public class MatchStatistics : BaseStatistics, IMatchStatistics
+    public class MatchStatistics : BaseStatistics
     {
         public short Appearances { get; set; }
 

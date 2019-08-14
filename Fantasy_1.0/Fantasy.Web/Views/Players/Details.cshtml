@@ -3,6 +3,7 @@
 @model Fantasy.Services.Models.PlayerDetailsServiceModel
 @{
     ViewData["Title"] = @Model.InfoName;
+    var pos = Model.FootballPlayerPositionName;
 }
 
 
@@ -11,59 +12,44 @@
     <div class="col-2"></div>
     <div class="col-8">
         <div class="row">
-            <div class="col-5 animated bounceInLeft" style="background-color: #ffffff;">
-                <div style="border-radius: 100%; color: #e90052">
+            <div class="col-5" style="background-color: #ffffff;">
                 <div class="row">
-                    <div class="col-8 text-center animated bounceInLeft delay-1s">
-                        <img src="@Model.InfoBigImgUrl" onerror="if (this.src != 'error.jpg') this.src = '@DataConstants.FootballPlayerDefaultImgUrl';" class="player"/>
+                    <div class="col-8 text-center animated fadeIn delay-1s">
+                        <img id="img" src="@Model.InfoBigImgUrl" onerror="if (this.src != 'error.jpg') this.src = '@DataConstants.FootballPlayerDefaultImgUrl';" class="player"/>
                     </div>
                     <div class="col-4">
-                        <div class="playerInfoName animated bounceInLeft  delay-1s">@Model.InfoName</div>
-                        <br/>
-                        <div class="playerInfoPosition text-center animated bounceInLeft  delay-1s" style="background-color: #38003c">@Model.FootballPlayerPositionName</div>
-                        <br/>
-                        <div class="playerInfoNumber animated bounceInLeft  delay-1s">$ @Model.Price</div>
+                        <div class="playerInfoName animated bounceInLeft row ">@Model.InfoName</div>
+                        <div class="animated bounceInLeft row text-center playerInfoPosition" style="background-color: #38003c">
+                            <div class="col" id="pos">@Model.FootballPlayerPositionName</div> 
+                        </div>
+                        <div class="playerInfoNumber animated bounceInLeft  row">$ @Model.Price</div>
                     </div>
-                </div>
             </div>
         </div>
             <div class="col-2 text-center">
-                <img src="@Model.FootballClubInfoBadgeUrl" width="80%"/>
+                <img src="@Model.FootballClubInfoBadgeUrl" class="animated bounceInDown" width="80%"/>
             </div>
-            <div class="col-5 animated bounceInRight"  style="background-color: #ffffff">
-                <div class="row">
-                    <table class="table custom">
-                        <tbody>
-                        <tr>
-                            <td class="animated bounceInRight  delay-1s">Shirt Number</td>
-                            <td class="animated bounceInRight text-right delay-1s">@(Model.InfoShirtNumber == 0 ? "" : Model.InfoShirtNumber.ToString())</td>
-                        </tr>
-                        <tr>
-                            <td class="animated bounceInRight  delay-1s">Country</td>
-                            <td class="animated bounceInRight  text-right  delay-1s">@Model.InfoCountry</td>
-                        </tr>
-                        <tr>
-                            <td class="animated bounceInRight  delay-1s">Weight</td>
-                            <td class="animated bounceInRight text-right  delay-1s">@(Model.InfoWeight  == 0 ? "" : Model.InfoWeight + " kg")</td>
-                        </tr>
-                        <tr>
-                            <td class="animated bounceInRight  delay-1s">Height</td>
-                            <td class="animated bounceInRight  text-right  delay-1s">@(Model.InfoHeight == 0 ? "" : Model.InfoHeight + " cm")</td>
-                        </tr>
-                        <tr>
-                            <td class="animated bounceInRight  delay-1s">Birth Date</td>
-                            <td class="animated bounceInRight  text-right  delay-1s">@Model.InfoBirthDate?.ToString("dd/MM/yyyy", null)</td>
-                        </tr>
-                        <tr>
-                            <td class="animated bounceInRight  delay-1s">Join Date</td>
-                            <td class="animated bounceInRight  text-right delay-1s">@Model.InfoJoinDate?.ToString("dd/MM/yyyy", null)</td>
-                        </tr>
-                        @*<tr>
-                            <td class="animated bounceInUp  delay-1s"></td>
-                            <td class="animated bounceInDown  text-right delay-1s"></td>
-                        </tr>*@
-                        </tbody>
-                    </table>
+            <div class="col-5 " style="background-color: #ffffff">
+                <div class="row infoRow">
+                    <div class="col-6 text-left animated bounceInRight"><strong>Country</strong></div>
+                    <div class="col-6 text-right animated bounceInRight"><strong>@Model.InfoCountry</strong></div>
+                </div>
+                <div class="row infoRow">
+                    <div class="col-6 text-left animated bounceInRight"><strong>Height</strong></div>
+                    <div class="col-6 text-right animated bounceInRight"><strong>@(Model.InfoHeight == 0 ? "" : Model.InfoHeight + " cm")</strong></div>
+                </div>
+                <div class="row infoRow">
+                    <div class="col-6 text-left animated bounceInRight"><strong>Weight</strong></div>
+                    <div class="col-6 text-right animated bounceInRight"><strong>@(Model.InfoWeight == 0 ? "" : Model.InfoWeight + " kg")</strong></div>
+                </div>
+
+                <div class="row infoRow">
+                    <div class="col-6 text-left animated bounceInRight"><strong>Birth Date</strong></div>
+                    <div class="col-6 text-right animated bounceInRight"><strong>@Model.InfoBirthDate?.ToString("dd/MM/yyyy", null)</strong></div>
+                </div>
+                <div class="row infoRow">
+                    <div class="col-6 text-left animated bounceInRight"><strong>Join Date</strong></div>
+                    <div class="col-6 text-right animated bounceInRight"><strong>@Model.InfoJoinDate?.ToString("dd/MM/yyyy", null)</strong></div>
                 </div>
             </div>
         </div>
@@ -74,21 +60,56 @@
 <br/><br/>
 <br/><br/>
 
+     <div class="row">
+         <div class="col-2"></div>
+         <div class="col-8" id="stat"></div>
+         <div class="col-2"></div>
+
+     </div>
+
+
+<script>
+    $(document).ready(function() {
+        $('#stat').load(`/Players/GetPartialStatistics?playerId=${@Model.Id}&position=${$('#pos').text()}&gameweekId=1`);
+
+        //let position = $('#position');
+        //let club = $('#club');
+
+        //club.change(filter);
+        //position.change(filter);
+
+        //function filter() {
+        //    $('#listedPlayersContainer').remove();
+        //    $('#players').load(`/Players/GetPartialPlayers?clubId=${club.val()}&positionId=${position.val()}`);
+        //}
+    });
+</script>
+
 
 
 
 
 <style rel="stylesheet">
     body { 
-        background: url(/images/stadiums/city.jpg) no-repeat center center fixed; 
+        background: url(/images/stadiums/manunited.jpg) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
+    .infoRow {
+        border-bottom: #38003c 1px solid;
+        margin-top: 10px;
+    }
+    .infoColLeft {
+
+    }
+    .infoColright {
+
+    }
 
     .player {
-        width: 100%;
+        width: 90%;
     }
 
     .playerInfoName {
@@ -122,10 +143,31 @@
 </style>
 
 
-@*
-    #04f5ff	(4,245,255)
-#04f5ff	(233,0,82)
-#ffffff	(255,255,255)
-#00ff85	(0,255,133)
-#38003c	(56,0,60)
-    *@
+@*<table class="table custom">
+    <tbody>
+    <tr>
+        <td class="animated bounceInRight  ">Shirt Number</td>
+        <td class="animated bounceInRight text-right ">@(Model.InfoShirtNumber == 0 ? "" : Model.InfoShirtNumber.ToString())</td>
+    </tr>
+    <tr>
+        <td class="animated bounceInRight ">Country</td>
+        <td class="animated bounceInRight  text-right  ">@Model.InfoCountry</td>
+    </tr>
+    <tr>
+        <td class="animated bounceInRight  ">Weight</td>
+        <td class="animated bounceInRight text-right  ">@(Model.InfoWeight  == 0 ? "" : Model.InfoWeight + " kg")</td>
+    </tr>
+    <tr>
+        <td class="animated bounceInRight ">Height</td>
+        <td class="animated bounceInRight  text-right  ">@(Model.InfoHeight == 0 ? "" : Model.InfoHeight + " cm")</td>
+    </tr>
+    <tr>
+        <td class="animated bounceInRight  ">Birth Date</td>
+        <td class="animated bounceInRight  text-right ">@Model.InfoBirthDate?.ToString("dd/MM/yyyy", null)</td>
+    </tr>
+    <tr>
+        <td class="animated bounceInRight ">Join Date</td>
+        <td class="animated bounceInRight  text-right">@Model.InfoJoinDate?.ToString("dd/MM/yyyy", null)</td>
+    </tr>
+    </tbody>
+</table>*@

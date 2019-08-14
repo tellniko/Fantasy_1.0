@@ -1,9 +1,6 @@
-﻿using Fantasy.Common.Attributes;
-using Fantasy.Data.Models.Statistics.Contracts;
-
-namespace Fantasy.Data.Models.Statistics
+﻿namespace Fantasy.Data.Models.Statistics
 {
-    public class AttackStatistics : BaseStatistics, IAttackStatistics
+    public class AttackStatistics : BaseStatistics
     {
         public short Goals { get; set; }
 

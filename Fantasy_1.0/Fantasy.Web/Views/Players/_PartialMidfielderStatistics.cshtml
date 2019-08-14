@@ -1,7 +1,12 @@
-﻿
+﻿@model Fantasy.Services.Models.IHaveStatistics
 @{
-    ViewData["Title"] = "_PartialMidfielderStatistics";
+    ViewData["Title"] = "mid";
 }
-
-<h1>_PartialMidfielderStatistics</h1>
-
+    <div style="background-color: #ffffff">
+        @{
+            @foreach (var property in Model.GetType().GetProperties().ToList())
+            {
+                <h3>@property.Name.ToSentenceCase()---- @property.GetValue(Model)</h3>
+            }
+        }
+    </div>

@@ -21,20 +21,20 @@ namespace Fantasy.Data.Models.FootballPlayers
         public int FootballClubId { get; set; }
         public FootballClub FootballClub { get; set; }
 
-        public IEnumerable<MatchStatistics> BaseStatistics { get; set; } = new List<MatchStatistics>();
+        public List<MatchStatistics> BaseStatistics { get; set; } = new List<MatchStatistics>();
 
-        public IEnumerable<GoalkeepingStatistics> GoalkeepingStatistics { get; set; } = new List<GoalkeepingStatistics>();
+        public List<GoalkeepingStatistics> GoalkeepingStatistics { get; set; } = new List<GoalkeepingStatistics>();
 
-        public IEnumerable<DefenceStatistics> DefenceStatistics { get; set; } = new List<DefenceStatistics>();
+        public List<DefenceStatistics> DefenceStatistics { get; set; } = new List<DefenceStatistics>();
 
-        public IEnumerable<TeamPlayStatistics> TeamPlayStatistics { get; set; } = new List<TeamPlayStatistics>();
+        public List<TeamPlayStatistics> TeamPlayStatistics { get; set; } = new List<TeamPlayStatistics>();
 
-        public IEnumerable<AttackStatistics> AttackStatistics { get; set; } = new List<AttackStatistics>();
+        public List<AttackStatistics> AttackStatistics { get; set; } = new List<AttackStatistics>();
 
-        public IEnumerable<DisciplineStatistics> DisciplineStatistics { get; set; } = new List<DisciplineStatistics>();
+        public List<DisciplineStatistics> DisciplineStatistics { get; set; } = new List<DisciplineStatistics>();
 
-        public IEnumerable<MatchStatistics> MatchStatistics { get; set; } = new List<MatchStatistics>();
+        public List<MatchStatistics> MatchStatistics { get; set; } = new List<MatchStatistics>();
 
-        public IEnumerable<FantasyUserPlayer> FantasyUserPlayers { get; set; } = new List<FantasyUserPlayer>();
+        public List<FantasyUserPlayer> FantasyUserPlayers { get; set; } = new List<FantasyUserPlayer>();
     }
 }

@@ -1,8 +1,6 @@
-﻿using Fantasy.Data.Models.Statistics.Contracts;
-
-namespace Fantasy.Data.Models.Statistics
+﻿namespace Fantasy.Data.Models.Statistics
 {
-    public class DefenceStatistics : BaseStatistics, IDefenceStatistics
+    public class DefenceStatistics : BaseStatistics
     {
         public short Tackles { get; set; }
 

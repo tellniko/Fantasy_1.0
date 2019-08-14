@@ -1,11 +1,14 @@
 ﻿using Fantasy.Data;
 using Fantasy.Services;
 using Fantasy.Services.Models;
+using Fantasy.Web.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace Fantasy.Web.Controllers
 {
+    using static GlobalConstants;
+
     public class PlayersController : Controller
     {
         private readonly IPlayerService players;
@@ -29,18 +32,18 @@ namespace Fantasy.Web.Controllers
         {
             switch (position)
             {
-                case "Goalkeeper":
-                    return PartialView($"_Partial{position}Statistics",
+                case Goalkeeper:
+                    return PartialView("_PartialStatistics", 
                         await this.players.GetStatisticsAsync<GoalkeeperStatisticsServiceModel>(playerId, gameweekId));
-                case "Defender":
-                    return PartialView($"_Partial{position}Statistics",
-                        await this.players.GetStatisticsAsync<GoalkeeperStatisticsServiceModel>(playerId, gameweekId));
-                case "Midfielder":
-                    return PartialView($"_Partial{position}Statistics",
-                        await this.players.GetStatisticsAsync<GoalkeeperStatisticsServiceModel>(playerId, gameweekId));
-                case "Forward":
-                    return PartialView($"_Partial{position}Statistics",
-                        await this.players.GetStatisticsAsync<GoalkeeperStatisticsServiceModel>(playerId, gameweekId));
+                case Defender:
+                    return PartialView("_PartialStatistics",
+                        await this.players.GetStatisticsAsync<DefenderStatisticsServiceModel>(playerId, gameweekId));
+                case Midfielder:
+                    return PartialView("_PartialStatistics", 
+                        await this.players.GetStatisticsAsync<MidfielderStatisticsServiceModel>(playerId, gameweekId));
+                case Forward:
+                    return PartialView("_PartialStatistics", 
+                        await this.players.GetStatisticsAsync<ForwardStatisticsServiceModel>(playerId, gameweekId));
                 default:
                     return BadRequest();
             }

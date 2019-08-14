@@ -1,11 +1,12 @@
-﻿@model Fantasy.Services.Models.GoalkeeperStatisticsServiceModel
+﻿@model Fantasy.Services.Models.IHaveStatistics
 @{
-    ViewData["Title"] = "_PartialGoalkeeperStatistics";
+    ViewData["Title"] = "mid";
 }
-
-<h1>_PartialGoalkeeperStatistics</h1>
-
-@{
-    var model = Model;
-    var a = Model.MatchWins;
-}
+<div style="background-color: #ffffff">
+    @{
+        @foreach (var property in Model.GetType().GetProperties().ToList())
+         {
+             <h3>@property.Name.ToSentenceCase() ---- @property.GetValue(Model)</h3>
+         }
+    }
+</div>
