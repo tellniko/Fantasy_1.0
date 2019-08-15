@@ -15,6 +15,5 @@ namespace Fantasy.Services.Models
         public DisciplineStatistics Discipline { get; set; }
 
         public MatchStatistics Match { get; set; }
-
     }
 }

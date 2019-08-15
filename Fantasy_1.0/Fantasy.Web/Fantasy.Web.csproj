@@ -25,7 +25,6 @@
 
   <ItemGroup>
     <Folder Include="Models\Clubs\" />
-    <Folder Include="wwwroot\images\stadiums\" />
   </ItemGroup>
 
 </Project>

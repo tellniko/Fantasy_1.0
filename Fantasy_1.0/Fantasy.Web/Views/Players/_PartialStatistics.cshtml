@@ -1,54 +1,52 @@
-﻿@model Fantasy.Services.Models.IHaveStatistics
+﻿@model IHaveStatistics
 @{
-    var Goalkeeping = Model.GetType().GetProperties().Where(p => p.Name.StartsWith("Goalkeeping")).ToList();
-    var Defence = Model.GetType().GetProperties().Where(p => p.Name.StartsWith("Defence")).ToList();
-    var Attack = Model.GetType().GetProperties().Where(p => p.Name.StartsWith("Attack")).ToList();
-    var TeamPlay = Model.GetType().GetProperties().Where(p => p.Name.StartsWith("TeamPlay")).ToList();
-    var Discipline = Model.GetType().GetProperties().Where(p => p.Name.StartsWith("Discipline")).ToList();
-    var Match = Model.GetType().GetProperties().Where(p => p.Name.StartsWith("Match")).ToList();
+    var goalkeeping = Model.GetProperties(Goalkeeping);
+    var defence = Model.GetProperties(Defence);
+    var attack = Model.GetProperties(Attack);
+    var teamPlay = Model.GetProperties(TeamPlay);
+    var discipline = Model.GetProperties(Discipline);
+    var match = Model.GetProperties(Match);
 }
 <div>
     <div class="row">
         <div class="col-5" style="background-color: #ffffff">
-       
-                @if(Goalkeeping.Count != 0)
-                {
-                        <div class="row" style="background-color: #38003c; color: #ffffff"><strong> &nbsp; Goalkeeping</strong></div>
-                    @foreach (var property in Goalkeeping)
-                    {
-                        <div class="row  infoRow">
-                            <div class="col-8 text-left animated bounceInUp">
-                                @property.Name.Replace(nameof(Goalkeeping), string.Empty).ToSentenceCase()
-                            </div>
-                            <div class="col-4 text-right animated bounceInUp">
-                                @property.GetValue(Model)
-                            </div>
-                        </div>
-                    }
-                    <br />
-                }
-                @if (Goalkeeping.Count == 0)
-                {
-                    <div class="row" style="background-color: #38003c; color: #ffffff"><strong> &nbsp; Attack</strong></div>
-                }
-                @foreach (var property in Attack)
-                {
-                    <div class="row  infoRow" >
-                        <div class="col-8 text-left animated bounceInUp">
-                            @property.Name.Replace(nameof(Attack), string.Empty).ToSentenceCase()
-                        </div>
-                        <div class="col-4 text-right animated bounceInUp">
-                            @property.GetValue(Model)
-                        </div>
-                    </div>
-                }
-             <br/>
-            <div class="row" style="background-color: #04f5ff; color: #38003c"><strong> &nbsp; Defence</strong></div>
-            @foreach (var property in Defence)
+            @if(goalkeeping.Count != 0)
             {
-                <div class="row   infoRow">
+                <div class="row" style="background-color: #38003c; color: #ffffff"><strong>&nbsp; Goalkeeping</strong></div>
+                @foreach (var property in goalkeeping)
+                 {
+                     <div class="row  infoRow">
+                         <div class="col-8 text-left animated bounceInUp">
+                             @property.Name.Replace(Goalkeeping, string.Empty).ToSentenceCase()
+                         </div>
+                         <div class="col-4 text-right animated bounceInUp">
+                             @property.GetValue(Model)
+                         </div>
+                     </div>
+                 }
+            }
+            @if (goalkeeping.Count == 0)
+            {
+                <div class="row" style="background-color: #38003c; color: #ffffff"><strong>&nbsp; Attack</strong></div>
+            }
+            @foreach (var property in attack)   
+            {
+                <div class="row  infoRow" >
                     <div class="col-8 text-left animated bounceInUp">
-                        @property.Name.Replace(nameof(Defence), string.Empty).ToSentenceCase()
+                        @property.Name.Replace(Attack, string.Empty).ToSentenceCase()
+                    </div>
+                    <div class="col-4 text-right animated bounceInUp">
+                        @property.GetValue(Model)
+                    </div>
+                </div>
+            }
+            <br/>
+            <div class="row" style="background-color: #04f5ff; color: #38003c"><strong>&nbsp; Defence</strong></div>
+            @foreach (var property in defence)
+            {
+                <div class="row infoRow">
+                    <div class="col-8 text-left animated bounceInUp">
+                        @property.Name.Replace(Defence, string.Empty).ToSentenceCase()
                     </div>
                     <div class="col-4 text-right animated bounceInUp">
                         @property.GetValue(Model)
@@ -56,39 +54,65 @@
                 </div>
             }
             <br />
-            
         </div>
-        <div class="col-2"></div>
+        <div class="col-2">
+            @*<div class="row">
+                @await Component.InvokeAsync("Gameweeks")
+            </div>*@
+        </div>
         <div class="col-5" style="background-color: #ffffff">
-            <div class="row" style="background-color: #00ff85; color: #38003c"> <strong> &nbsp; Team Play</strong></div>
-            @foreach (var property in TeamPlay)
+            <div class="row" style="background-color: #00ff85; color: #38003c"> <strong>&nbsp; Team Play</strong></div>
+            @foreach (var property in teamPlay)
             {
                 <div class="row animated  infoRow">
-                    <div class="col-8 text-left  animated bounceInUp">
-                        @property.Name.Replace(nameof(TeamPlay), string.Empty).ToSentenceCase()
-                    </div>
-                    <div class="col-4 text-right  animated bounceInUp">
-                        @property.GetValue(Model)
-                    </div>
-                </div>
-            }
-            <br/>
-            <div class="row"  style="background-color: #e90052; color: 	#ffffff"><strong> &nbsp; Discipline</strong></div>
-            @foreach (var property in Discipline)
-            {
-                <div class="row  infoRow">
                     <div class="col-8 text-left animated bounceInUp">
-                        @property.Name.Replace(nameof(Discipline), string.Empty).ToSentenceCase()
+                        @property.Name.Replace(TeamPlay, string.Empty).ToSentenceCase()
                     </div>
                     <div class="col-4 text-right animated bounceInUp">
                         @property.GetValue(Model)
                     </div>
                 </div>
             }
-
+            <br />
+            <div class="row" style="background-color: #e90052; color: #ffffff"><strong>&nbsp; Discipline</strong></div>
+            @foreach (var property in discipline)
+            {
+                <div class="row infoRow">
+                    <div class="col-8 text-left animated bounceInUp">
+                        @property.Name.Replace(Discipline, string.Empty).ToSentenceCase()
+                    </div>
+                    <div class="col-4 text-right animated bounceInUp">
+                        @property.GetValue(Model)
+                    </div>
+                </div>
+            }
+            <br />
+            <div class="row" style="background-color: #ffff00; color: #38003c"><strong>&nbsp; Overall</strong></div>
+            @foreach (var property in match)
+            {
+                <div class="row infoRow">
+                    <div class="col-8 text-left animated bounceInUp">
+                        <strong>@property.Name.Replace(Match, string.Empty).ToSentenceCase()</strong>
+                    </div>
+                    <div class="col-4 text-right animated bounceInUp">
+                        <strong>@property.GetValue(Model)</strong>
+                    </div>
+                </div>
+            }
         </div>
     </div>
 </div>
+
+@*<script>
+    $(document).ready(function() {
+            let gameweek = $('#gameweek');
+            console.log(gameweek);
+            gameweek.change(function() {
+                $('#stat').load(`/Players/GetPartialStatistics?playerId=${4618}&position=${$('#pos').text()}&gameweekId=${$('#gameweek').val()}`);
+            });
+    });
+</script>*@
+
 <style rel="stylesheet">
     .infoRow {
         border-bottom: #38003c 1px solid;

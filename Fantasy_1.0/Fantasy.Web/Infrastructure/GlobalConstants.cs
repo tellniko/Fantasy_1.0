@@ -12,5 +12,11 @@
         public const string Midfielder = "Midfielder";
         public const string Forward = "Forward";
 
+        public const string Goalkeeping = "Goalkeeping";
+        public const string Defence = "Defence";
+        public const string Attack = "Attack";
+        public const string TeamPlay = "TeamPlay";
+        public const string Discipline = "Discipline";
+        public const string Match = "Match";
     }
 }

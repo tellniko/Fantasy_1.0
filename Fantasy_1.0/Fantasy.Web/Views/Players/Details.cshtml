@@ -7,7 +7,7 @@
 }
 
 
-<br/>
+<br />
 <div class="row">
     <div class="col-2"></div>
     <div class="col-8">
@@ -15,21 +15,31 @@
             <div class="col-5" style="background-color: #ffffff;">
                 <div class="row">
                     <div class="col-8 text-center animated fadeIn delay-1s">
-                        <img id="img" src="@Model.InfoBigImgUrl" onerror="if (this.src != 'error.jpg') this.src = '@DataConstants.FootballPlayerDefaultImgUrl';" class="player"/>
+                        <img id="img" src="@Model.InfoBigImgUrl" onerror="if (this.src != 'error.jpg') this.src = '@DataConstants.FootballPlayerDefaultImgUrl';" class="player" />
                     </div>
                     <div class="col-4">
                         <div class="playerInfoName animated bounceInLeft row ">@Model.InfoName</div>
                         <div class="animated bounceInLeft row text-center playerInfoPosition" style="background-color: #38003c">
-                            <div class="col" id="pos">@Model.FootballPlayerPositionName</div> 
+                            <div class="col" id="pos">@Model.FootballPlayerPositionName</div>
                         </div>
                         <div class="playerInfoNumber animated bounceInLeft  row">$ @Model.Price</div>
                     </div>
+                </div>
             </div>
-        </div>
             <div class="col-2 text-center">
-                <img src="@Model.FootballClubInfoBadgeUrl" class="animated bounceInDown" width="80%"/>
+                <div class="row text-center">
+                    <div class="col text-center">
+                        <img src="@Model.FootballClubInfoBadgeUrl" class="animated bounceInDown" width="80%" />
+                    </div>
+                </div>
+
             </div>
+
             <div class="col-5 " style="background-color: #ffffff">
+                <div class="row infoRow">
+                    <div class="col-6 text-left animated bounceInRight"><strong>Shirt Number</strong></div>
+                    <div class="col-6 text-right animated bounceInRight"><strong>@(Model.InfoShirtNumber == 0 ? string.Empty : Model.InfoShirtNumber.ToString()) </strong></div>
+                </div>
                 <div class="row infoRow">
                     <div class="col-6 text-left animated bounceInRight"><strong>Country</strong></div>
                     <div class="col-6 text-right animated bounceInRight"><strong>@Model.InfoCountry</strong></div>
@@ -42,7 +52,6 @@
                     <div class="col-6 text-left animated bounceInRight"><strong>Weight</strong></div>
                     <div class="col-6 text-right animated bounceInRight"><strong>@(Model.InfoWeight == 0 ? "" : Model.InfoWeight + " kg")</strong></div>
                 </div>
-
                 <div class="row infoRow">
                     <div class="col-6 text-left animated bounceInRight"><strong>Birth Date</strong></div>
                     <div class="col-6 text-right animated bounceInRight"><strong>@Model.InfoBirthDate?.ToString("dd/MM/yyyy", null)</strong></div>
@@ -57,31 +66,40 @@
     <div class="col-2"></div>
 </div>
 
-<br/><br/>
-<br/><br/>
+<br /><br />
 
-     <div class="row">
-         <div class="col-2"></div>
-         <div class="col-8" id="stat"></div>
-         <div class="col-2"></div>
 
-     </div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <div class="row">
+        <div class="col-5" style="background-color: #ffffff"></div>
+        <div class="col-2">
+            @await Component.InvokeAsync("Gameweeks")
+        </div>
+            <div class="col-5" style="background-color: #ffffff"></div>
+        </div>
+    </div>
+    <div class="col-2"></div>
+</div>
+
+<br /><br />
+
+
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8" id="stat"></div>
+    <div class="col-2"></div>
+</div>
 
 
 <script>
     $(document).ready(function() {
         $('#stat').load(`/Players/GetPartialStatistics?playerId=${@Model.Id}&position=${$('#pos').text()}&gameweekId=1`);
 
-        //let position = $('#position');
-        //let club = $('#club');
-
-        //club.change(filter);
-        //position.change(filter);
-
-        //function filter() {
-        //    $('#listedPlayersContainer').remove();
-        //    $('#players').load(`/Players/GetPartialPlayers?clubId=${club.val()}&positionId=${position.val()}`);
-        //}
+        $('#gameweek').change(function() {
+            $('#stat').load(`/Players/GetPartialStatistics?playerId=${@Model.Id}&position=${$('#pos').text()}&gameweekId=${$('#gameweek').val()}`);
+        });
     });
 </script>
 
@@ -90,84 +108,50 @@
 
 
 <style rel="stylesheet">
-    body { 
-        background: url(/images/stadiums/manunited.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
+    body {
+        background: url(/images/stadiums/everton.jpg) no-repeat center center fixed;
+        /*-webkit-background-size: cover;
         -moz-background-size: cover;
-        -o-background-size: cover;
+        -o-background-size: cover;*/
         background-size: cover;
     }
+
     .infoRow {
         border-bottom: #38003c 1px solid;
         margin-top: 10px;
     }
-    .infoColLeft {
-
-    }
-    .infoColright {
-
-    }
 
     .player {
-        width: 90%;
+        width: 80%;
     }
 
     .playerInfoName {
         font-size: 1.5vw;
         color: #38003c;
-        font-family:fantasy;
+        font-family: fantasy;
     }
 
     .playerInfoNumber {
         font-size: 2vw;
         color: #e90052;
-        font-family:fantasy;
+        font-family: fantasy;
     }
 
     .playerInfoPosition {
         font-size: 1vw;
         font-style: italic;
         color: #04f5ff;
-        font-family:fantasy;
+        font-family: fantasy;
     }
+
     .custom {
         color: #38003c;
-        font-size:  14px;
+        font-size: 14px;
         font-weight: bold
     }
+
     table {
         margin-top: 5px;
-
     }
-
 </style>
 
-
-@*<table class="table custom">
-    <tbody>
-    <tr>
-        <td class="animated bounceInRight  ">Shirt Number</td>
-        <td class="animated bounceInRight text-right ">@(Model.InfoShirtNumber == 0 ? "" : Model.InfoShirtNumber.ToString())</td>
-    </tr>
-    <tr>
-        <td class="animated bounceInRight ">Country</td>
-        <td class="animated bounceInRight  text-right  ">@Model.InfoCountry</td>
-    </tr>
-    <tr>
-        <td class="animated bounceInRight  ">Weight</td>
-        <td class="animated bounceInRight text-right  ">@(Model.InfoWeight  == 0 ? "" : Model.InfoWeight + " kg")</td>
-    </tr>
-    <tr>
-        <td class="animated bounceInRight ">Height</td>
-        <td class="animated bounceInRight  text-right  ">@(Model.InfoHeight == 0 ? "" : Model.InfoHeight + " cm")</td>
-    </tr>
-    <tr>
-        <td class="animated bounceInRight  ">Birth Date</td>
-        <td class="animated bounceInRight  text-right ">@Model.InfoBirthDate?.ToString("dd/MM/yyyy", null)</td>
-    </tr>
-    <tr>
-        <td class="animated bounceInRight ">Join Date</td>
-        <td class="animated bounceInRight  text-right">@Model.InfoJoinDate?.ToString("dd/MM/yyyy", null)</td>
-    </tr>
-    </tbody>
-</table>*@

@@ -7,7 +7,5 @@
         short DisciplineRedCards { get; set; }
 
         short DisciplineFouls { get; set; }
-
-        short DisciplineOffsides { get; set; }
     }
 }
