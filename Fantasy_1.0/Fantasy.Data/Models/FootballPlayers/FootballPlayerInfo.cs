@@ -13,13 +13,16 @@ namespace Fantasy.Data.Models.FootballPlayers
         [Required]
         public string BigImgUrl { get; set; } = DataConstants.FootballPlayerDefaultImgUrl;
 
+        [Required]
         public string SmallImgUrl { get; set; } = DataConstants.FootballPlayerDefaultImgUrl;
 
-
+        [Range(byte.MinValue, byte.MaxValue)]
         public byte ShirtNumber { get; set; }
 
+        [Range(byte.MinValue, byte.MaxValue)]
         public byte Height { get; set; }
 
+        [Range(byte.MinValue, byte.MaxValue)]
         public byte Weight { get; set; }
 
         public DateTime? JoinDate { get; set; }

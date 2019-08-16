@@ -32,8 +32,7 @@ namespace Fantasy.Services.Administrator.Implementations
 
             var players = JsonConvert.DeserializeObject<List<FootballPlayerJsonModel>>(fileContentPlayer);
 
-        
-
+  
 
             #region Set Random Prices
             //var random = new Random();
@@ -50,7 +49,7 @@ namespace Fantasy.Services.Administrator.Implementations
             //}
             //this.db.SaveChanges();
             #endregion
-            
+
             if (!this.db.FootballPlayers.Any())
             {
                 var allPlayers = players.To<FootballPlayer>().ToList();

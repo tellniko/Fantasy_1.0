@@ -1,81 +1,93 @@
-﻿@using Fantasy.Web.Infrastructure
-@model PlayersListingViewModel
+﻿@model PlayersListingViewModel
 @{
     ViewData["Title"] = "_PartialPlayers2";
     var currentPage = Model.CurrentPage;
 }
-
-<table class="table table-hover" id="listedPlayersContainer">
-    <thead>
-    </thead>
-    <tbody>
-    @foreach (var player in Model.Players)
-    {
-        <tr>
-            <td>
-                <div class="row" id="@player.Id">
-                    <div class="col-2">
-                        <img id="@player.Id" src="@player.InfoSmallImgUrl"
-                             onerror="if (this.src != 'error.jpg') this.src='@DefaultPlayerImageUrl';"
-                             width="45px" class="animated bounceInDown" />
-                    </div>
-                    <div class="col-6">
-                        <div class="animated bounceInUp">
-                            <a asp-controller="Players" asp-action="Details" asp-route-playerId="@player.Id" asp-route-position="@player.FootballPlayerPositionName" target="_blank">
-                                <div class="row">
-                                    <span style="font-size: 15px">@(player.InfoName)</span>
-                                </div>
-                                <div class="row">
-                                    <span style="font-size: 12px; font-style: italic; color: black">@(player.FootballPlayerPositionName)</span>
-                                </div>
-                            </a>
+<div class="row">
+    <table class="table table-hover" id="listedPlayersContainer">
+        <thead>
+        </thead>
+        <tbody>
+        @foreach (var player in Model.Players)
+        {
+            <tr>
+                <td>
+                    <div class="row" id="@player.Id">
+                        <div class="col-2">
+                            <img id="@player.Id" src="@player.InfoSmallImgUrl"
+                                 onerror="src='@DefaultPlayerImageUrl';"
+                                 width="45px" class="animated bounceInDown" />
+                        </div>
+                        <div class="col-6">
+                            <div class="animated bounceInUp">
+                                <a asp-controller="Players" asp-action="Details" asp-route-playerId="@player.Id" 
+                                   asp-route-position="@player.FootballPlayerPositionName" target="_blank">
+                                    <div class="row">
+                                        <span style="font-size: 15px">@(player.InfoName)</span>
+                                    </div>
+                                    <div class="row">
+                                        <span style="font-size: 12px; font-style: italic; color: black">@(player.FootballPlayerPositionName)</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <img src="@player.FootballClubInfoBadgeUrl" width="40px" class="animated bounceInDown" />
+                        </div>
+                        <div class="col-2">
+                            <p class="animated bounceInUp"><strong>@player.Price.ToPrice()</strong></p>
+                            @if (User.IsInRole(AdministratorRole))
+                            {
+                                <a class="btn btn-sm btn-primary"  asp-area="Administrator" asp-controller="Players"
+                                   asp-action="Edit" asp-route-id="@player.Id">Edit</a>
+                            }
                         </div>
                     </div>
-                    <div class="col-2">
-                        <img src="@player.FootballClubInfoBadgeUrl" width="40px" class="animated bounceInDown" />
-                    </div>
-                    <div class="col-2">
-                        <p class="animated bounceInUp"><strong>@player.Price.ToPrice()</strong></p>
-                    </div>
-                </div>
-            </td>
-        </tr>
-    }
-    </tbody>
-</table>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
 
-<ul class="pagination">
-    <li class="page-item">
-        <div id="previous" class="page-link"  aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-        </div>
-    </li>
-    <li class="page-item">
-        <div id="next" class="page-link" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-        </div>
-    </li>
-</ul>
+<div class="row">
+    <div class="col-5"></div>
+    <div class="col-2 text-center">
+        <ul class="pagination">
+            <li class="page-item">
+                <div id="previous" class="page-link" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </div>
+            </li>
+            <li class="page-item">
+                <div id="next" class="page-link" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col-5"></div>
+
+</div>
+
 
 <script>
     $(document).ready(function() {
-        let previous = $('#previous');
-        let next = $('#next');
-        
         $('#previous').click(function () {
             if (@currentPage !== 1) {
                 $('#players')
-                    .load(`/Players/GetPartialPlayers?clubId=${$('#club').val()}&positionId=${$('#position').val()}&playerName=${$('#player').val()}&order=${$('#order').val()}&page=${@currentPage - 1}`);
+                    .load(`/Players/GetPartialPlayers?clubId=${$('#club').val()}&positionId=${$('#position').val()
+                        }&playerName=${$('#player').val()}&order=${$('#order').val()}&page=${@currentPage - 1}`);
             }
         });
-        $('#next').click(function () {
-            console.log(@Model.Players.Count());
-            if(@Model.Players.Count() >= @PlayersListingPageSize)
-            $('#players')
-                .load(`/Players/GetPartialPlayers?clubId=${$('#club').val()}&positionId=${$('#position').val()}&playerName=${$('#player').val()}&order=${$('#order').val()}&page=${@currentPage + 1}`);
-            
+        $('#next').click(function() {
+            if (@Model.Players.Count() >= @PlayersListingPageSize) {
+                $('#players')
+                    .load(`/Players/GetPartialPlayers?clubId=${$('#club').val()}&positionId=${$('#position').val()
+                        }&playerName=${$('#player').val()}&order=${$('#order').val()}&page=${@currentPage + 1}`);
+            }
         });
     });
 </script>

@@ -1,7 +1,8 @@
 ﻿using Fantasy.Data.Models.Common;
+using Fantasy.Data.Models.Game;
 using Fantasy.Data.Models.Statistics;
 using System.Collections.Generic;
-using Fantasy.Data.Models.Game;
+using System.ComponentModel.DataAnnotations;
 
 namespace Fantasy.Data.Models.FootballPlayers
 {
@@ -11,6 +12,7 @@ namespace Fantasy.Data.Models.FootballPlayers
 
         public bool IsPlayable { get; set; } = true;
 
+        [Range(0, double.MaxValue)]
         public decimal Price { get; set; }
 
         public FootballPlayerInfo Info { get; set; }

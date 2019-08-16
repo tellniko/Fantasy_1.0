@@ -29,7 +29,7 @@ namespace Fantasy.Web.Controllers
         {
             var model = new PlayersListingViewModel
             {
-                Players = await this.players.GetAllAsync2<PlayerServiceModel>(clubId, positionId, playerName, order, page, PlayersListingPageSize),
+                Players = await this.players.GetAllWithPaginationAsync<PlayerServiceModel>(clubId, positionId, playerName, order, page, PlayersListingPageSize),
                 CurrentPage = page,
             };
 

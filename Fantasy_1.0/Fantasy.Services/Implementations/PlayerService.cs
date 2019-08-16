@@ -2,15 +2,14 @@
 using Fantasy.Data;
 using Fantasy.Data.Models.FootballPlayers;
 using Fantasy.Data.Models.Statistics;
+using Fantasy.Services.Administrator.Models;
 using Fantasy.Services.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Remotion.Linq.Clauses;
 
 namespace Fantasy.Services.Implementations
 {
@@ -58,7 +57,13 @@ namespace Fantasy.Services.Implementations
                 .ToListAsync();
         }
 
-        public async Task<IEnumerable<TModel>> GetAllAsync2<TModel>(string club, string position, string playerName, string order, int page = 1, int pageSize = 10)
+        public async Task<IEnumerable<TModel>> GetAllWithPaginationAsync<TModel>(
+            string club, 
+            string position, 
+            string playerName, 
+            string order, 
+            int page = 1, int 
+                pageSize = 10)
         {
             Expression<Func<FootballPlayer, bool>> filterCriteria =
                 fp =>
@@ -116,25 +121,47 @@ namespace Fantasy.Services.Implementations
                 .To<TModel>();
         }
 
-        public async Task<int> TotalPlayers()
+        public async Task<bool> Edit(FootballPlayerServiceModel model)
         {
-            return await this.db.FootballPlayers.CountAsync();
+            var pl = await this.db.FootballPlayers.FindAsync(model.Id);
+
+            var player = await this.db.FootballPlayers
+                .Where(fp => fp.Id == model.Id)
+                .Include(fp => fp.Info)
+                .Include(fp => fp.FootballClub)
+                .FirstOrDefaultAsync();
+
+           if (player == null)
+           {
+               return false;
+           }
+
+           var test = model.To<FootballPlayer>();
+
+
+           player.FootballClubId = model.FootballClubId;
+           player.Info.BigImgUrl = model.InfoBigImgUrl;
+           player.Info.SmallImgUrl = model.InfoSmallImgUrl;
+           player.Info.ShirtNumber = model.InfoShirtNumber;
+           player.Info.Country = model.InfoCountry;
+           player.Info.BirthDate = model.InfoBirthDate;
+           player.Info.JoinDate = model.InfoJoinDate;
+           player.Info.Name = model.InfoName;
+           player.Info.BirthPlace = model.InfoBirthPlace;
+           player.Info.Weight = model.InfoWeight;
+           player.Info.Height = model.InfoHeight;
+           player.IsPlayable = model.IsPlayable;
+           player.IsInjured = model.IsInjured;
+
+          var result = await this.db.SaveChangesAsync();
+
+          if (result != 1)
+          {
+              return false;
+              //todo tempData
+          }
+
+           return true;
         }
-    }
-
-    public class Test
-    {
-        public string name { get; set; }
-
-        public DefenceStatistics DefenceStatistics { get; set; }
-
-        public DisciplineStatistics DisciplineStatistics { get; set; }
-
-        public AttackStatistics AttackStatistics { get; set; }
-
-
-        public TeamPlayStatistics TeamPlayStatistics { get; set; }
-
-        public GoalkeepingStatistics GoalkeepingStatistics { get; set; }
     }
 }
