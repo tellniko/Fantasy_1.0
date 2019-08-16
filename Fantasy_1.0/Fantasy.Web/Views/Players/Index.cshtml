@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Players";
+}
+
+<br/><br/>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="col" style="margin-top: -15px">
+                <div class="row" style="margin-top: 5px">
+                    <div class="row" style="background-color: #38003c">
+                        <div class="row" style="color: #ffffff">
+                            &nbsp; Club
+                        </div>
+                    </div>
+                    <br/><br/>
+                    @await Component.InvokeAsync("FootballClubs")
+                </div>
+                <div class="row" style="margin-top: 5px">
+                    <div class="row" style="background-color: #38003c">
+                        <div class="row" style="color: #ffffff">
+                           &nbsp; Position
+                        </div>
+                    </div>
+                    <br/><br/>
+
+                    @await Component.InvokeAsync("FootballPlayerPositions")
+                </div>
+                <div class="row" style="margin-top: 5px">
+                    <div class="row" style="background-color: #38003c">
+                        <div class="row" style="color: #ffffff">
+                            &nbsp; Name
+                        </div>
+                    </div>
+                    <br/><br/>
+
+                    <input class="form-control" id="player"/>
+                </div>
+                <div class="row" style="margin-top: 5px">
+                    <div class="row" style="background-color: #38003c">
+                        <div class="row" style="color: #ffffff">
+                            &nbsp; Order By
+                        </div>
+                    </div>
+                    <br/><br/>
+
+                    <select class="form-control" id="order">
+                        <option value="Name" Text="Name">Name</option>
+                        <option value="priceAscending">Price Ascending</option>
+                        <option value="priceDescending">Price Descending</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-8" id="players">
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        
+        $('#players').load('/Players/GetPartialPlayers');
+
+        let position = $('#position');
+        let player = $('#player');
+        let club = $('#club');
+        let order = $('#order');
+
+        player.on('keyup', filter);
+        position.on('change', filter);
+        club.on('change', filter);
+        order.on('change', filter);
+
+
+        function filter() {
+            //$('#listedPlayersContainer').remove();
+            $('#players')
+                .load(`/Players/GetPartialPlayers?clubId=${club.val()}&positionId=${position.val()}&playerName=${player.val()}&order=${order.val()}`);
+        }
+    });
+</script>

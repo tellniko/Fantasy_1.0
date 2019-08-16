@@ -2,6 +2,9 @@
 {
     public static class GlobalConstants
     {
+        public const string DefaultPlayerImageUrl =
+            "//premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/Photo-Missing.png";
+
         public const string AdministratorRole = "Administrator";
 
         public const string TempDataSuccessMessageKey = "SuccessMessage";

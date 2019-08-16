@@ -1,9 +1,12 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using AutoMapper;
+using Fantasy.Common.Mapping;
+using Fantasy.Data.Models.FootballPlayers;
 
 namespace Fantasy.Services.Models
 {
-    public class PlayerDetailsServiceModel : PlayerServiceModel
+    public class PlayerDetailsServiceModel : PlayerServiceModel, IHaveCustomMappings
     {
         public bool IsInjured { get; set; }
 
@@ -21,6 +24,13 @@ namespace Fantasy.Services.Models
 
         public string InfoCountry { get; set; }
 
-        public string FootballClubName { get; set; }
+        public string FootballClubGroundImg { get; set; }
+
+        public void CreateMappings(IProfileExpression configuration)
+        {
+            configuration
+                .CreateMap<FootballPlayer, PlayerDetailsServiceModel>()
+                .ForMember(p => p.FootballClubGroundImg, cfg => cfg.MapFrom(p => p.FootballClub.Info.StadiumImgUrl));
+        }
     }
 }

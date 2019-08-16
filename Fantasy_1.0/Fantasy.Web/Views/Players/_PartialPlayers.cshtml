@@ -1,4 +1,5 @@
-﻿@using Fantasy.Data
+﻿
+@using Fantasy.Web.Infrastructure
 @model IEnumerable<Fantasy.Services.Models.PlayerServiceModel>
 @{
     ViewData["Title"] = "_PartialPlayers";
@@ -16,7 +17,7 @@
                 <div class="row" id="@player.Id">
                     <div class="col-2">
                         <img id="@player.Id" src="@player.InfoSmallImgUrl"
-                             onerror="if (this.src != 'error.jpg') this.src='@DataConstants.FootballPlayerDefaultImgUrl';"
+                             onerror="if (this.src != 'error.jpg') this.src='@DefaultPlayerImageUrl';"
                              width="45px" class="animated bounceInDown" />
                     </div>
                     <div class="col-6">
@@ -35,7 +36,7 @@
                         <img src="@player.FootballClubInfoBadgeUrl" width="40px" class="animated bounceInDown" />
                     </div>
                     <div class="col-2">
-                        <p class="animated bounceInUp">42</p>
+                        <p class="animated bounceInUp"><strong>@player.Price.ToPrice()</strong></p>
                     </div>
                 </div>
             </td>

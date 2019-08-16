@@ -18,14 +18,19 @@ namespace Fantasy.Web.Controllers
             this.players = players;
         }
 
-        public async Task<IActionResult> GetPartialPlayers(string clubId, string positionId)
+        public IActionResult Index()
         {
-            return PartialView("_PartialPlayers", await this.players.GetAllAsync(clubId, positionId));
+            return View();
+        }
+
+        public async Task<IActionResult> GetPartialPlayers(string clubId, string positionId, string playerName, string order)
+        {
+            return PartialView("_PartialPlayers", await this.players.GetAllAsync<PlayerServiceModel>(clubId, positionId, playerName, order));
         }
 
         public async Task<IActionResult> Details(int playerId)
         {
-            return View(await this.players.GetByIdAsync(playerId));
+            return View(await this.players.GetByIdAsync<PlayerDetailsServiceModel>(playerId));
         }
 
         public async Task<IActionResult> GetPartialStatistics(int playerId, string position, int gameweekId = 1)

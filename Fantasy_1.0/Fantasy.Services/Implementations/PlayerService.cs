@@ -23,25 +23,46 @@ namespace Fantasy.Services.Implementations
             this.db = db;
         }
 
-        public async Task<IEnumerable<PlayerServiceModel>> GetAllAsync(string club, string position)
+        public async Task<IEnumerable<TModel>> GetAllAsync<TModel>(string club, string position, string playerName, string order)
         {
             Expression<Func<FootballPlayer, bool>> filterCriteria =
-                fp => fp.FootballClub.Tag.Contains(club ?? string.Empty)
-                      && fp.FootballPlayerPosition.Name.Contains(position ?? string.Empty);
+                fp =>
+                    fp.FootballClub.Tag.Contains(club ?? string.Empty)
+                    && fp.FootballPlayerPosition.Name.Contains(position ?? string.Empty)
+                    && fp.Info.Name.Contains(playerName ?? string.Empty);
 
-            return await this.db.FootballPlayers
-                .Where(filterCriteria)
-                .OrderBy(fp => fp.Info.Name)
+            //TODO: Generic
+            Expression<Func<FootballPlayer, string>> name = fp => fp.Info.Name;
+            Expression<Func<FootballPlayer, decimal>> priceAscending = fp => fp.Price;
+            Expression<Func<FootballPlayer, decimal>> priceDescending = fp => -fp.Price;
+
+            var result = this.db.FootballPlayers
+                .Where(filterCriteria);
+
+            switch (order)
+            {
+                case "priceAscending":
+                    result = result.OrderBy(priceAscending);
+                    break;
+                case "priceDescending":
+                    result = result.OrderBy(priceDescending);
+                    break;
+                default:
+                    result = result.OrderBy(name);
+                    break;
+            }
+
+            return await result
                 .Take(100)
-                .To<PlayerServiceModel>()
+                .To<TModel>()
                 .ToListAsync();
         }
 
-        public async Task<PlayerDetailsServiceModel> GetByIdAsync(int id)
+        public async Task<TModel> GetByIdAsync<TModel>(int id)
         {
             return await this.db.FootballPlayers
                 .Where(p => p.Id == id)
-                .To<PlayerDetailsServiceModel>()
+                .To<TModel>()
                 .FirstOrDefaultAsync();
         }
 

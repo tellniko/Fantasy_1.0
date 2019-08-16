@@ -3,40 +3,39 @@
 @{
     ViewData["Title"] = "Gameweeks";
 }
-
-<h2>@ViewData["Title"]</h2>
-
-<table class="table table-dark table-hover">
-    <thead>
-    <tr>
-        <th>
-            Gamewwek
-        </th>
-        <th>
-            Start Date
-        </th>
-        <th>
-            Finished
-        </th>
-        <th></th>
-    </tr>
-    </thead>
-    <tbody>
-    @foreach (var gw in Model.Gameweeks.OrderBy(gw => gw.Number))
-    {
-        <tr>
-            <td><input asp-for="@gw.Name" disabled class="form-control"/></td>
-            <td><input asp-for="@gw.Start" disabled class="form-control"/></td>
-            <td><input class="form-control" value="@(gw.Finished ? "Yes" : "No")"disabled/></td>
-            <td>
-                <input type="hidden" name="GameweekId" value="@gw.Id" />
-                <a asp-area="Administrator" asp-controller="Gameweeks" asp-action="Details" asp-route-id="@gw.Id" class="btn btn-info text-white">Details</a>
-            </td>
-        </tr>
-    }
-    </tbody>
-</table>
-
+<br/>
+    <div class="container">
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        Gamewwek
+                    </th>
+                    <th>
+                        Start Date
+                    </th>
+                    <th>
+                        Finished
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var gw in Model.Gameweeks.OrderBy(gw => gw.Number))
+                {
+                    <tr>
+                        <td><input asp-for="@gw.Name" disabled class="form-control" /></td>
+                        <td><input asp-for="@gw.Start" disabled class="form-control" /></td>
+                        <td><input class="form-control" value="@(gw.Finished ? "Yes" : "No")" disabled /></td>
+                        <td>
+                            <input type="hidden" name="GameweekId" value="@gw.Id" />
+                            <a asp-area="Administrator" asp-controller="Gameweeks" asp-action="Details" asp-route-id="@gw.Id" class="btn btn-info text-white">Details</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 
 @*@foreach (var gw in Model.Gameweeks)
 {
