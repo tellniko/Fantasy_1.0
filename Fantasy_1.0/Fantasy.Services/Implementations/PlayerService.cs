@@ -58,6 +58,42 @@ namespace Fantasy.Services.Implementations
                 .ToListAsync();
         }
 
+        public async Task<IEnumerable<TModel>> GetAllAsync2<TModel>(string club, string position, string playerName, string order, int page = 1, int pageSize = 10)
+        {
+            Expression<Func<FootballPlayer, bool>> filterCriteria =
+                fp =>
+                    fp.FootballClub.Tag.Contains(club ?? string.Empty)
+                    && fp.FootballPlayerPosition.Name.Contains(position ?? string.Empty)
+                    && fp.Info.Name.Contains(playerName ?? string.Empty);
+
+            //TODO: Generic
+            Expression<Func<FootballPlayer, string>> name = fp => fp.Info.Name;
+            Expression<Func<FootballPlayer, decimal>> priceAscending = fp => fp.Price;
+            Expression<Func<FootballPlayer, decimal>> priceDescending = fp => -fp.Price;
+
+            var result = this.db.FootballPlayers
+                .Where(filterCriteria);
+
+            switch (order)
+            {
+                case "priceAscending":
+                    result = result.OrderBy(priceAscending);
+                    break;
+                case "priceDescending":
+                    result = result.OrderBy(priceDescending);
+                    break;
+                default:
+                    result = result.OrderBy(name);
+                    break;
+            }
+
+            return await result
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .To<TModel>()
+                .ToListAsync();
+        }
+
         public async Task<TModel> GetByIdAsync<TModel>(int id)
         {
             return await this.db.FootballPlayers
@@ -78,6 +114,11 @@ namespace Fantasy.Services.Implementations
                     Match = await this.db.FindAsync<MatchStatistics>(playerId, gameweekId),
                 }
                 .To<TModel>();
+        }
+
+        public async Task<int> TotalPlayers()
+        {
+            return await this.db.FootballPlayers.CountAsync();
         }
     }
 

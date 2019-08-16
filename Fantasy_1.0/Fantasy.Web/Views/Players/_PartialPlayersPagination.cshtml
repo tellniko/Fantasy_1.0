@@ -1,15 +1,15 @@
-﻿
-@model IEnumerable<Fantasy.Services.Models.PlayerServiceModel>
+﻿@using Fantasy.Web.Infrastructure
+@model PlayersListingViewModel
 @{
-    ViewData["Title"] = "_PartialPlayers";
+    ViewData["Title"] = "_PartialPlayers2";
+    var currentPage = Model.CurrentPage;
 }
-
 
 <table class="table table-hover" id="listedPlayersContainer">
     <thead>
     </thead>
     <tbody>
-    @foreach (var player in Model)
+    @foreach (var player in Model.Players)
     {
         <tr>
             <td>
@@ -44,18 +44,40 @@
     </tbody>
 </table>
 
+<ul class="pagination">
+    <li class="page-item">
+        <div id="previous" class="page-link"  aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+        </div>
+    </li>
+    <li class="page-item">
+        <div id="next" class="page-link" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+        </div>
+    </li>
+</ul>
 
 <script>
-    @*const jsFrame = new JSFrame();
-    const frame = jsFrame.create({
-        title: '@Model.Clubs',
-        left: 20, top: 20, width: 320, height: 220,
-        movable: true,//Enable to be moved by mouse
-        resizable: true,//Enable to be resized by mouse
-        html: '<div id="my_element" style="padding:10px;font-size:12px;color:darkgray;">Contents of window</div> '
+    $(document).ready(function() {
+        let previous = $('#previous');
+        let next = $('#next');
+        
+        $('#previous').click(function () {
+            if (@currentPage !== 1) {
+                $('#players')
+                    .load(`/Players/GetPartialPlayers?clubId=${$('#club').val()}&positionId=${$('#position').val()}&playerName=${$('#player').val()}&order=${$('#order').val()}&page=${@currentPage - 1}`);
+            }
+        });
+        $('#next').click(function () {
+            console.log(@Model.Players.Count());
+            if(@Model.Players.Count() >= @PlayersListingPageSize)
+            $('#players')
+                .load(`/Players/GetPartialPlayers?clubId=${$('#club').val()}&positionId=${$('#position').val()}&playerName=${$('#player').val()}&order=${$('#order').val()}&page=${@currentPage + 1}`);
+            
+        });
     });
-//Show the window
-    frame.show();
-    frame.$('#my_element').innerHTML = '<span style="color:red">Hello world</span>';*@
 </script>
+
 

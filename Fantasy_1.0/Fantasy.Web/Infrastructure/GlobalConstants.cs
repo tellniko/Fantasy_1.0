@@ -21,5 +21,7 @@
         public const string TeamPlay = "TeamPlay";
         public const string Discipline = "Discipline";
         public const string Match = "Match";
+
+        public const int PlayersListingPageSize = 35;
     }
 }

@@ -1,4 +1,5 @@
-﻿using Fantasy.Data;
+﻿using System.Collections.Generic;
+using Fantasy.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -16,7 +17,7 @@ namespace Fantasy.Web.ViewComponents
             this.db = db;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync(string page2)
         {
             var clubs = await this.db.FootballClubs
                 .OrderBy(fc => fc.Name)
@@ -32,4 +33,5 @@ namespace Fantasy.Web.ViewComponents
             return this.View(clubs);
         }
     }
+   
 }

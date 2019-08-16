@@ -1,9 +1,11 @@
-﻿using Fantasy.Data;
+﻿using System;
+using Fantasy.Data;
 using Fantasy.Services;
 using Fantasy.Services.Models;
 using Fantasy.Web.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using Fantasy.Web.Models;
 
 namespace Fantasy.Web.Controllers
 {
@@ -23,9 +25,17 @@ namespace Fantasy.Web.Controllers
             return View();
         }
 
-        public async Task<IActionResult> GetPartialPlayers(string clubId, string positionId, string playerName, string order)
+        public async Task<IActionResult> GetPartialPlayers(string clubId, string positionId, string playerName, string order, int page = 1)
         {
-            return PartialView("_PartialPlayers", await this.players.GetAllAsync<PlayerServiceModel>(clubId, positionId, playerName, order));
+            var model = new PlayersListingViewModel
+            {
+                Players = await this.players.GetAllAsync2<PlayerServiceModel>(clubId, positionId, playerName, order, page, PlayersListingPageSize),
+                CurrentPage = page,
+            };
+
+            return PartialView("_PartialPlayersPagination", model);
+
+            //return PartialView("_PartialPlayers", await this.players.GetAllAsync<PlayerServiceModel>(clubId, positionId, playerName, order));
         }
 
         public async Task<IActionResult> Details(int playerId)
