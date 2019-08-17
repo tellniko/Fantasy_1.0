@@ -10,10 +10,8 @@ namespace Fantasy.Data.Models.FootballPlayers
         [MaxLength(DataConstants.CommonNameMaxLength)]
         public string Name { get; set; }
 
-        [Required]
         public string BigImgUrl { get; set; } = DataConstants.FootballPlayerDefaultImgUrl;
 
-        [Required]
         public string SmallImgUrl { get; set; } = DataConstants.FootballPlayerDefaultImgUrl;
 
         [Range(byte.MinValue, byte.MaxValue)]

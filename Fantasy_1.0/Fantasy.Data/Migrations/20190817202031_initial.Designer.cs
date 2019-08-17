@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Fantasy.Data.Migrations
 {
     [DbContext(typeof(FantasyDbContext))]
-    [Migration("20190816195800_shortByteAgain")]
-    partial class shortByteAgain
+    [Migration("20190817202031_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -234,8 +234,7 @@ namespace Fantasy.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("BigImgUrl")
-                        .IsRequired();
+                    b.Property<string>("BigImgUrl");
 
                     b.Property<DateTime?>("BirthDate");
 
@@ -247,7 +246,7 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<int>("FootballPlayerId");
 
-                    b.Property<byte>("Height");
+                    b.Property<byte?>("Height");
 
                     b.Property<DateTime?>("JoinDate");
 
@@ -255,11 +254,11 @@ namespace Fantasy.Data.Migrations
                         .IsRequired()
                         .HasMaxLength(50);
 
-                    b.Property<byte>("ShirtNumber");
+                    b.Property<byte?>("ShirtNumber");
 
                     b.Property<string>("SmallImgUrl");
 
-                    b.Property<byte>("Weight");
+                    b.Property<byte?>("Weight");
 
                     b.HasKey("Id");
 

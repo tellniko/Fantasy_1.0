@@ -1,12 +1,12 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using Fantasy.Common.Mapping;
+﻿using Fantasy.Common.Mapping;
 using Fantasy.Data;
 using Fantasy.Data.Models.FootballPlayers;
+using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Fantasy.Services.Administrator.Models
 {
-    public class FootballPlayerAddServiceModel : IMapFrom<FootballPlayer>, IMapTo<FootballPlayer>
+    public class FootballPlayerServiceModel : IMapFrom<FootballPlayer>, IMapTo<FootballPlayer>
     {
         public int Id { get; set; }
 
@@ -19,7 +19,7 @@ namespace Fantasy.Services.Administrator.Models
 
         public int FootballPlayerPositionId { get; set; }
 
-        public int FootballClubId { get; set; }
+        public int FootballClubId{ get; set; }
 
         public string InfoName { get; set; }
 
@@ -40,7 +40,7 @@ namespace Fantasy.Services.Administrator.Models
 
         [DataType(DataType.Date)] //todo validation
         public DateTime? InfoJoinDate { get; set; }
-
+       
         [DataType(DataType.Date)] //todo validation
         public DateTime? InfoBirthDate { get; set; }
 

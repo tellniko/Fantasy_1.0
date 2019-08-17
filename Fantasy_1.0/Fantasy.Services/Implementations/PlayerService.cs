@@ -122,7 +122,7 @@ namespace Fantasy.Services.Implementations
         }
 
         //todo refactor
-        public async Task<bool> Edit(FootballPlayerEditServiceModel model)
+        public async Task<bool> Edit(FootballPlayerServiceModel model)
         {
             var player = await this.db.FootballPlayers
                 .Where(fp => fp.Id == model.Id)
@@ -143,10 +143,11 @@ namespace Fantasy.Services.Implementations
            player.Info.Height = model.InfoHeight;
            player.IsPlayable = model.IsPlayable;
            player.IsInjured = model.IsInjured;
+           player.FootballPlayerPositionId = model.FootballPlayerPositionId;
 
           var result = await this.db.SaveChangesAsync();
 
-          if (result != 1)
+          if (result == 0)
           {
               return false;
               //todo tempData
@@ -156,12 +157,13 @@ namespace Fantasy.Services.Implementations
         }
 
         //todo refactor
-        public bool Add(FootballPlayerAddServiceModel model)
+        public bool Add(FootballPlayerServiceModel model)
         {
             var result = 0;
 
             var player = model.To<FootballPlayer>();
             var info = new FootballPlayerInfo();
+            
             player.Info = info;
             info.Name = model.InfoName;
             info.BigImgUrl = model.InfoBigImgUrl;

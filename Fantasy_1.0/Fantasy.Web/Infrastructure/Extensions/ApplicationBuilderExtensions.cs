@@ -105,6 +105,8 @@ namespace Fantasy.Web.Infrastructure.Extensions
                     {
                         context.Add(new Gameweek { Number = 0, SeasonId = 1 });
                         context.SaveChanges();
+                        context.Add(new Gameweek { Number = 39, SeasonId = 1 });
+                        context.SaveChanges();
 
                         for (byte i = 1; i <= 38; i++)
                         {

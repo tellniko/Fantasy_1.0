@@ -1,81 +1,83 @@
-﻿@using Fantasy.Web.Infrastructure.Extensions
-@model Fantasy.Services.Administrator.Models.FootballPlayerAddServiceModel
+﻿@model Fantasy.Web.Areas.Administrator.Models.FootballPlayerViewModel
 @{
     ViewData["Title"] = "Add";
 }
 
-<br />
+
 <form method="post">
     <div asp-validation-summary="All" class="text-danger"></div>
-
     <div class="row">
         <div class="col-6">
             <div class="form-group">
-                <label>@nameof(Model.Id).ToSentenceCase()</label>
-                <input asp-for="@Model.Id" class="form-control" />
+                <label>Id</label>
+                <input  asp-for="@Model.Player.Id" class="form-control" />
             </div>
             <div class="form-group">
-                <label>@nameof(Model.FootballPlayerPositionId).ToSentenceCase()</label>
-                <input asp-for="@Model.FootballPlayerPositionId" class="form-control" />
+                <label>Name</label>
+                <input asp-for="@Model.Player.InfoName" class="form-control" />
             </div>
             <div class="form-group">
-                <label>@nameof(Model.FootballClubId).ToSentenceCase()</label>
-                <input asp-for="@Model.FootballClubId" class="form-control" />
+                <label>Club</label>
+                <select asp-for="@Model.Player.FootballClubId" asp-items="Model.Clubs" class="form-control"> </select>
             </div>
             <div class="form-group">
-                <label>@nameof(Model.InfoBigImgUrl).ToSentenceCase()</label>
-                <input asp-for="@Model.InfoBigImgUrl" class="form-control" />
+                <label>Position</label>
+                <select asp-for="@Model.Player.FootballPlayerPositionId" asp-items="Model.Positions" class="form-control"> </select>
             </div>
             <div class="form-group">
-                <label>@nameof(Model.InfoSmallImgUrl).ToSentenceCase()</label>
-                <input asp-for="@Model.InfoSmallImgUrl" class="form-control" />
+                <label>Big Img Url</label>
+                <input asp-for="@Model.Player.InfoBigImgUrl" class="form-control" />
             </div>
             <div class="form-group">
-                <label>@nameof(Model.InfoBirthDate).ToSentenceCase()</label>
-                <input asp-for="@Model.InfoBirthDate" class="form-control" />
+                <label>Small Img Url</label>
+                <input asp-for="@Model.Player.InfoSmallImgUrl" class="form-control" />
             </div>
             <div class="form-group">
-                <label>@nameof(Model.InfoJoinDate).ToSentenceCase()</label>
-                <input asp-for="@Model.InfoJoinDate" class="form-control" />
+                <label>Price</label>
+                <input asp-for="@Model.Player.Price" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label>Is Injured</label>
+                <input asp-for="@Model.Player.IsInjured" />
+                <label>Is Playable</label>
+                <input asp-for="@Model.Player.IsPlayable" />
             </div>
         </div>
         <div class="col-6">
             <div class="form-group">
-                <label>@nameof(Model.InfoCountry).ToSentenceCase()</label>
-                <input asp-for="@Model.InfoCountry" class="form-control" />
+                <label>Shirt Number</label>
+                <input asp-for="@Model.Player.InfoShirtNumber" class="form-control" />
             </div>
             <div class="form-group">
-                <label>@nameof(Model.InfoBirthPlace).ToSentenceCase()</label>
-                <input asp-for="@Model.InfoBirthPlace" class="form-control" />
+                <label>Country</label>
+                <input asp-for="@Model.Player.InfoCountry" class="form-control" />
             </div>
             <div class="form-group">
-                <label>@nameof(Model.InfoWeight).ToSentenceCase()</label>
-                <input asp-for="@Model.InfoWeight" class="form-control" />
+                <label>Birth Place</label>
+                <input asp-for="@Model.Player.InfoBirthPlace" class="form-control" />
             </div>
             <div class="form-group">
-                <label>@nameof(Model.InfoHeight).ToSentenceCase()</label>
-                <input asp-for="@Model.InfoHeight" class="form-control" />
+                <label>Birth Date</label>
+                <input asp-for="@Model.Player.InfoBirthDate" class="form-control" />
             </div>
             <div class="form-group">
-                <label>@nameof(Model.Price).ToSentenceCase()</label>
-                <input asp-for="@Model.Price" class="form-control" />
-            </div> <div class="form-group">
-                <label>@nameof(Model.InfoShirtNumber).ToSentenceCase()</label>
-                <input asp-for="@Model.InfoShirtNumber" class="form-control" />
+                <label>Join Date</label>
+                <input asp-for="@Model.Player.InfoJoinDate" class="form-control" />
             </div>
             <div class="form-group">
-                <label>@nameof(Model.InfoName).ToSentenceCase()</label>
-                <input asp-for="@Model.InfoName" class="form-control" />
+                <label>Height</label>
+                <input asp-for="@Model.Player.InfoHeight" class="form-control" />
             </div>
             <div class="form-group">
-                <label>@nameof(Model.IsInjured).ToSentenceCase()</label>
-                <input asp-for="@Model.IsInjured" />
-            </div>
-            <div class="form-group">
-                <label>@nameof(Model.IsPlayable).ToSentenceCase()</label>
-                <input asp-for="@Model.IsPlayable" />
+                <label>Weight</label>
+                <input asp-for="@Model.Player.InfoWeight" class="form-control" />
             </div>
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Edit</button>
 </form>
+
+
+@*todo validation script*@
+

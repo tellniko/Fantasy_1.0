@@ -1,10 +1,10 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
 }
 <div class="container">
     <br/>
     <div>
+
         <a asp-area="Administrator" asp-controller="Gameweeks" asp-action="All" class="btn btn-info">View Gameweeks</a>
         <br /><br />
 
@@ -17,7 +17,20 @@
         <a asp-area="Administrator" asp-controller="Database" asp-action="SeedStatistics" class="btn btn-info">Seed Statistics</a>
         <br /><br />
 
+        
         <a asp-area="Administrator" asp-controller="Players" asp-action="Add" class="btn btn-info">Add New Player</a>
+        <br /><br />
+
+        <a asp-area="Administrator" asp-controller="Database" asp-action="ExportPlayersJson" class="btn btn-info">Export Players Json</a>
+        <br /><br />
+
+        <a asp-area="Administrator" asp-controller="Database" asp-action="ExportPlayerInfosJson" class="btn btn-info">Export PlayerInfos Json</a>
+        <br /><br />
+
+        <a asp-area="Administrator" asp-controller="Database" asp-action="ExportStatisticsJson" class="btn btn-info">Export Statistics Json</a>
+        <br /><br />
+
+        <a asp-area="Administrator" asp-controller="Database" asp-action="ExportStatisticsJson" class="btn btn-info">Export Statistics Json</a>
         <br /><br />
 
     </div>

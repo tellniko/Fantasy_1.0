@@ -4,11 +4,13 @@ using System;
 
 namespace Fantasy.Services.Administrator.Models.Db
 {
-    public class FootballPlayerJsonInfo : IMapTo<FootballPlayerInfo>
+    public class FootballPlayerInfoJsonModel : IMapFrom<FootballPlayerInfo>, IMapTo<FootballPlayerInfo>
     {
         public string Name { get; set; }
 
-        public string FootballPlayerImageUrl { get; set; } 
+        public string BigImgUrl { get; set; } 
+
+        public string SmallImgUrl { get; set; } 
 
         public byte? ShirtNumber { get; set; }
 

@@ -232,8 +232,7 @@ namespace Fantasy.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("BigImgUrl")
-                        .IsRequired();
+                    b.Property<string>("BigImgUrl");
 
                     b.Property<DateTime?>("BirthDate");
 
@@ -255,8 +254,7 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<byte?>("ShirtNumber");
 
-                    b.Property<string>("SmallImgUrl")
-                        .IsRequired();
+                    b.Property<string>("SmallImgUrl");
 
                     b.Property<byte?>("Weight");
 

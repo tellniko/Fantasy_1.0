@@ -289,10 +289,11 @@ namespace Fantasy.Data.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(maxLength: 50, nullable: false),
-                    FootballPlayerImageUrl = table.Column<string>(nullable: false),
-                    ShirtNumber = table.Column<byte>(nullable: false),
-                    Height = table.Column<byte>(nullable: false),
-                    Weight = table.Column<byte>(nullable: false),
+                    BigImgUrl = table.Column<string>(nullable: true),
+                    SmallImgUrl = table.Column<string>(nullable: true),
+                    ShirtNumber = table.Column<byte>(nullable: true),
+                    Height = table.Column<byte>(nullable: true),
+                    Weight = table.Column<byte>(nullable: true),
                     JoinDate = table.Column<DateTime>(nullable: true),
                     BirthDate = table.Column<DateTime>(nullable: true),
                     BirthPlace = table.Column<string>(maxLength: 50, nullable: true),
@@ -510,11 +511,18 @@ namespace Fantasy.Data.Migrations
                     GameweekId = table.Column<int>(nullable: false),
                     Appearances = table.Column<short>(nullable: false),
                     Wins = table.Column<short>(nullable: false),
-                    Losses = table.Column<short>(nullable: false)
+                    Losses = table.Column<short>(nullable: false),
+                    FootballPlayerId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_MatchStatistics", x => new { x.PlayerId, x.GameweekId });
+                    table.ForeignKey(
+                        name: "FK_MatchStatistics_FootballPlayers_FootballPlayerId",
+                        column: x => x.FootballPlayerId,
+                        principalTable: "FootballPlayers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_MatchStatistics_GameWeeks_GameweekId",
                         column: x => x.GameweekId,
@@ -711,6 +719,11 @@ namespace Fantasy.Data.Migrations
                 name: "IX_GoalkeepingStatistics_GameweekId",
                 table: "GoalkeepingStatistics",
                 column: "GameweekId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MatchStatistics_FootballPlayerId",
+                table: "MatchStatistics",
+                column: "FootballPlayerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_MatchStatistics_GameweekId",

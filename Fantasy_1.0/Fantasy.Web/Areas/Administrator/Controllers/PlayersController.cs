@@ -1,55 +1,68 @@
-﻿using System;
+﻿using Fantasy.Data;
 using Fantasy.Services;
-using Fantasy.Services.Administrator.Models.Db;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-using Fantasy.Common.Mapping;
-using Fantasy.Data;
-using Fantasy.Data.Models.FootballPlayers;
 using Fantasy.Services.Administrator.Models;
+using Fantasy.Web.Areas.Administrator.Models;
 using Fantasy.Web.Infrastructure.Extensions;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
     public class PlayersController : AdministratorController
     {
         private readonly IPlayerService players;
-      
+        private readonly FantasyDbContext db;
 
         public PlayersController(IPlayerService players, FantasyDbContext db)
         {
             this.players = players;
+            this.db = db;
         }
 
         public async Task<IActionResult> Edit(int id)
         {
-            Console.WriteLine();
+            var player = await this.players.GetByIdAsync<FootballPlayerServiceModel>(id);
 
+            if (player == null)
+            {
+                return BadRequest();
+            }
 
-            var player = await this.players.GetByIdAsync<FootballPlayerEditServiceModel>(id);
+            var model = new FootballPlayerViewModel
+            {
+                Clubs = this.GetClubs(),
+                Positions = this.GetPositions(),
+                Player = player
+            };
 
-            return View(player);
+            return View(model);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(FootballPlayerEditServiceModel model)
+        public async Task<IActionResult> Edit(FootballPlayerViewModel model)
         {
             if (!ModelState.IsValid)
             {
+                model.Clubs = this.GetClubs();
+                model.Positions = this.GetPositions();
+
                 return View(model);
             }
 
-            if (!await this.players.Exists(model.Id))
+            if (!await this.players.Exists(model.Player.Id))
             {
                 this.TempData.AddErrorMessage("Player does not exists");
                 return RedirectToAction(nameof(Index));
             }
 
-            var successfulResult = await this.players.Edit(model);
+            var successfulResult = await this.players.Edit(model.Player);
 
             if (!successfulResult)
             {
-                this.TempData.AddErrorMessage("Something went wrong bro!");
+                this.TempData.AddErrorMessage("Something went wrong or you did not make any changes!");
                 return RedirectToAction(nameof(Edit), new { model });
             }
 
@@ -58,25 +71,39 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
         public IActionResult Add()
         {
-            return View();
+            var model = new FootballPlayerViewModel
+            {
+                Clubs = this.GetClubs(),
+                Positions = this.GetPositions(),
+            };
+
+            return View(model);
         }
 
+
+        //todo refactor
         [HttpPost]
-        public async Task<IActionResult> Add(FootballPlayerAddServiceModel model)
+        public async Task<IActionResult> Add(FootballPlayerViewModel model)
         {
             if (!ModelState.IsValid)
             {
+                model.Clubs = this.GetClubs();
+                model.Positions = this.GetPositions();
+
                 return View(model);
             }
 
-            if (await this.players.Exists(model.Id))
+            if (await this.players.Exists(model.Player.Id))
             {
                 this.TempData.AddErrorMessage("A player with the given id exists! Try with id in range [1-1500]!");
+                model.Clubs = this.GetClubs();
+                model.Positions = this.GetPositions();
+
                 return View(model);
             }
 
             //todo refactor
-            var result = this.players.Add(model);
+            var result = this.players.Add(model.Player);
 
             if (!result)
             {
@@ -86,6 +113,28 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             this.TempData.AddSuccessMessage("Success");
 
             return RedirectToAction(nameof(Index));
+        }
+
+        private List<SelectListItem> GetClubs()
+        {
+            return this.db.FootballClubs
+                .Select(fc => new SelectListItem
+                {
+                    Text = fc.Name,
+                    Value = fc.Id.ToString()
+                })
+                .ToList();
+        }
+
+        private List<SelectListItem> GetPositions()
+        {
+            return this.db.FootballPlayerPositions
+                .Select(p => new SelectListItem
+                {
+                    Text = p.Name,
+                    Value = p.Id.ToString()
+                })
+                .ToList();
         }
     }
 }
