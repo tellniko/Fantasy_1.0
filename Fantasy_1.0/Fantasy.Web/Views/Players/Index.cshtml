@@ -72,7 +72,6 @@
         club.on('change', filter);
         order.on('change', filter);
 
-
         function filter() {
             $('#players')
                 .load(`/Players/GetPartialPlayers?clubId=${club.val()}&positionId=${position.val()}&playerName=${player.val()}&order=${order.val()}`);

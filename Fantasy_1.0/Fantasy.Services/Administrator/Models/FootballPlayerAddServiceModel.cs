@@ -1,12 +1,12 @@
-﻿using Fantasy.Common.Mapping;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using Fantasy.Common.Mapping;
 using Fantasy.Data;
 using Fantasy.Data.Models.FootballPlayers;
-using System;
-using System.ComponentModel.DataAnnotations;
 
 namespace Fantasy.Services.Administrator.Models
 {
-    public class FootballPlayerServiceModel : IMapFrom<FootballPlayer>, IMapTo<FootballPlayer>
+    public class FootballPlayerAddServiceModel : IMapFrom<FootballPlayer>, IMapTo<FootballPlayer>
     {
         public int Id { get; set; }
 
@@ -17,9 +17,7 @@ namespace Fantasy.Services.Administrator.Models
         [Range(0, double.MaxValue)]
         public decimal Price { get; set; }
 
-        public string FootballPlayerPositionName { get; set; }
-
-        public string FootballClubName { get; set; }
+        public int FootballPlayerPositionId { get; set; }
 
         public int FootballClubId { get; set; }
 
@@ -32,17 +30,17 @@ namespace Fantasy.Services.Administrator.Models
         public string InfoSmallImgUrl { get; set; }
 
         [Range(byte.MinValue, byte.MaxValue)]
-        public byte InfoShirtNumber { get; set; }
+        public byte? InfoShirtNumber { get; set; }
 
         [Range(byte.MinValue, byte.MaxValue)]
-        public byte InfoHeight { get; set; }
+        public byte? InfoHeight { get; set; }
 
         [Range(byte.MinValue, byte.MaxValue)]
-        public byte InfoWeight { get; set; }
+        public byte? InfoWeight { get; set; }
 
         [DataType(DataType.Date)] //todo validation
         public DateTime? InfoJoinDate { get; set; }
-       
+
         [DataType(DataType.Date)] //todo validation
         public DateTime? InfoBirthDate { get; set; }
 

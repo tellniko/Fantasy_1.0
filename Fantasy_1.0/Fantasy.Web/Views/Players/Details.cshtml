@@ -35,7 +35,7 @@
             <div class="col-5 " style="background-color: #ffffff">
                 <div class="row infoRow">
                     <div class="col-6 text-left animated bounceInRight"><strong>Shirt Number</strong></div>
-                    <div class="col-6 text-right animated bounceInRight"><strong>@(Model.InfoShirtNumber == 0 ? string.Empty : Model.InfoShirtNumber.ToString())</strong></div>
+                    <div class="col-6 text-right animated bounceInRight"><strong>@(Model.InfoShirtNumber == null ? "" : Model.InfoShirtNumber.ToString())</strong></div>
                 </div>
                 <div class="row infoRow">
                     <div class="col-6 text-left animated bounceInRight"><strong>Country</strong></div>
@@ -43,11 +43,11 @@
                 </div>
                 <div class="row infoRow">
                     <div class="col-6 text-left animated bounceInRight"><strong>Height</strong></div>
-                    <div class="col-6 text-right animated bounceInRight"><strong>@(Model.InfoHeight == 0 ? "" : Model.InfoHeight + " cm")</strong></div>
+                    <div class="col-6 text-right animated bounceInRight"><strong>@(Model.InfoHeight == null ? "" : Model.InfoHeight + " cm")</strong></div>
                 </div>
                 <div class="row infoRow">
                     <div class="col-6 text-left animated bounceInRight"><strong>Weight</strong></div>
-                    <div class="col-6 text-right animated bounceInRight"><strong>@(Model.InfoWeight == 0 ? "" : Model.InfoWeight + " kg")</strong></div>
+                    <div class="col-6 text-right animated bounceInRight"><strong>@(Model.InfoWeight == null ? "" : Model.InfoWeight + " kg")</strong></div>
                 </div>
                 <div class="row infoRow">
                     <div class="col-6 text-left animated bounceInRight"><strong>Birth Date</strong></div>

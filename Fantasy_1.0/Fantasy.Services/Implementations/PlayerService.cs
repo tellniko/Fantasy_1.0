@@ -62,8 +62,8 @@ namespace Fantasy.Services.Implementations
             string position, 
             string playerName, 
             string order, 
-            int page = 1, int 
-                pageSize = 10)
+            int page = 1, 
+            int pageSize = 10)
         {
             Expression<Func<FootballPlayer, bool>> filterCriteria =
                 fp =>
@@ -121,23 +121,14 @@ namespace Fantasy.Services.Implementations
                 .To<TModel>();
         }
 
-        public async Task<bool> Edit(FootballPlayerServiceModel model)
+        //todo refactor
+        public async Task<bool> Edit(FootballPlayerEditServiceModel model)
         {
-            var pl = await this.db.FootballPlayers.FindAsync(model.Id);
-
             var player = await this.db.FootballPlayers
                 .Where(fp => fp.Id == model.Id)
                 .Include(fp => fp.Info)
                 .Include(fp => fp.FootballClub)
                 .FirstOrDefaultAsync();
-
-           if (player == null)
-           {
-               return false;
-           }
-
-           var test = model.To<FootballPlayer>();
-
 
            player.FootballClubId = model.FootballClubId;
            player.Info.BigImgUrl = model.InfoBigImgUrl;
@@ -162,6 +153,54 @@ namespace Fantasy.Services.Implementations
           }
 
            return true;
+        }
+
+        //todo refactor
+        public bool Add(FootballPlayerAddServiceModel model)
+        {
+            var result = 0;
+
+            var player = model.To<FootballPlayer>();
+            var info = new FootballPlayerInfo();
+            player.Info = info;
+            info.Name = model.InfoName;
+            info.BigImgUrl = model.InfoBigImgUrl;
+            info.SmallImgUrl = model.InfoSmallImgUrl;
+            info.Country = model.InfoCountry;
+            info.FootballPlayer = player;
+            info.Height = model.InfoHeight;
+            info.Weight = model.InfoWeight;
+            info.ShirtNumber = model.InfoShirtNumber;
+            info.BirthDate = model.InfoBirthDate;
+            info.JoinDate = model.InfoJoinDate;
+            info.BirthPlace = model.InfoBirthPlace;
+
+            db.Add(player);
+            db.Add(info);
+
+            db.Database.OpenConnection();
+            try
+            {
+                db.Database.ExecuteSqlCommand("SET IDENTITY_INSERT dbo.FootballPlayers ON");
+                result = db.SaveChanges();
+                db.Database.ExecuteSqlCommand("SET IDENTITY_INSERT dbo.FootballPlayers OFF");
+            }
+            finally
+            {
+                db.Database.CloseConnection();
+            }
+
+            if (result == 0)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        public async Task<bool> Exists(int id)
+        {
+            return await this.db.FootballPlayers.FindAsync(id) != null;
         }
     }
 }
