@@ -30,8 +30,10 @@ namespace Fantasy.Data.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(maxLength: 50, nullable: false),
                     ShortName = table.Column<string>(maxLength: 50, nullable: false),
-                    Tag = table.Column<string>(maxLength: 3, nullable: false),
-                    Rating = table.Column<byte>(nullable: false)
+                    Tag = table.Column<string>(nullable: false),
+                    Playable = table.Column<bool>(nullable: false),
+                    Rating = table.Column<byte>(nullable: false),
+                    BadgeImgUrl = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -114,32 +116,6 @@ namespace Fantasy.Data.Migrations
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
                     table.ForeignKey(
                         name: "FK_AspNetUsers_FootballClubs_FootballClubId",
-                        column: x => x.FootballClubId,
-                        principalTable: "FootballClubs",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "FootballClubInfos",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    StadiumImgUrl = table.Column<string>(nullable: true),
-                    Playable = table.Column<bool>(nullable: false),
-                    ManagerName = table.Column<string>(nullable: true),
-                    Ground = table.Column<string>(nullable: true),
-                    BadgeUrl = table.Column<string>(nullable: true),
-                    PrimaryKitColor = table.Column<string>(nullable: true),
-                    SecondaryKitColor = table.Column<string>(nullable: true),
-                    FootballClubId = table.Column<int>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_FootballClubInfos", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_FootballClubInfos_FootballClubs_FootballClubId",
                         column: x => x.FootballClubId,
                         principalTable: "FootballClubs",
                         principalColumn: "Id",
@@ -511,18 +487,11 @@ namespace Fantasy.Data.Migrations
                     GameweekId = table.Column<int>(nullable: false),
                     Appearances = table.Column<short>(nullable: false),
                     Wins = table.Column<short>(nullable: false),
-                    Losses = table.Column<short>(nullable: false),
-                    FootballPlayerId = table.Column<int>(nullable: true)
+                    Losses = table.Column<short>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_MatchStatistics", x => new { x.PlayerId, x.GameweekId });
-                    table.ForeignKey(
-                        name: "FK_MatchStatistics_FootballPlayers_FootballPlayerId",
-                        column: x => x.FootballPlayerId,
-                        principalTable: "FootballPlayers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_MatchStatistics_GameWeeks_GameweekId",
                         column: x => x.GameweekId,
@@ -689,12 +658,6 @@ namespace Fantasy.Data.Migrations
                 column: "HomeTeamId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_FootballClubInfos_FootballClubId",
-                table: "FootballClubInfos",
-                column: "FootballClubId",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
                 name: "IX_FootballPlayerInfos_FootballPlayerId",
                 table: "FootballPlayerInfos",
                 column: "FootballPlayerId",
@@ -719,11 +682,6 @@ namespace Fantasy.Data.Migrations
                 name: "IX_GoalkeepingStatistics_GameweekId",
                 table: "GoalkeepingStatistics",
                 column: "GameweekId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_MatchStatistics_FootballPlayerId",
-                table: "MatchStatistics",
-                column: "FootballPlayerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_MatchStatistics_GameweekId",
@@ -767,9 +725,6 @@ namespace Fantasy.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Fixtures");
-
-            migrationBuilder.DropTable(
-                name: "FootballClubInfos");
 
             migrationBuilder.DropTable(
                 name: "FootballPlayerInfos");

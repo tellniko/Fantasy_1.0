@@ -24,13 +24,14 @@ namespace Fantasy.Services.Models
 
         public string InfoCountry { get; set; }
 
-        public string FootballClubGroundImg { get; set; }
+        public string Ground { get; set; }
+
 
         public void CreateMappings(IProfileExpression configuration)
         {
             configuration
                 .CreateMap<FootballPlayer, PlayerDetailsServiceModel>()
-                .ForMember(p => p.FootballClubGroundImg, cfg => cfg.MapFrom(p => p.FootballClub.Info.StadiumImgUrl));
+                .ForMember(p => p.Ground, cfg => cfg.MapFrom(p => p.FootballClub.Tag.ToLower() + ".jpg"));
         }
     }
 }

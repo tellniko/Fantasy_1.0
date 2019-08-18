@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Fantasy.Data.Migrations
 {
     [DbContext(typeof(FantasyDbContext))]
-    [Migration("20190817202031_initial")]
+    [Migration("20190818150735_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -119,9 +119,13 @@ namespace Fantasy.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("BadgeImgUrl");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50);
+
+                    b.Property<bool>("Playable");
 
                     b.Property<byte>("Rating");
 
@@ -130,42 +134,11 @@ namespace Fantasy.Data.Migrations
                         .HasMaxLength(50);
 
                     b.Property<string>("Tag")
-                        .IsRequired()
-                        .HasMaxLength(3);
+                        .IsRequired();
 
                     b.HasKey("Id");
 
                     b.ToTable("FootballClubs");
-                });
-
-            modelBuilder.Entity("Fantasy.Data.Models.Common.FootballClubInfo", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("BadgeUrl");
-
-                    b.Property<int>("FootballClubId");
-
-                    b.Property<string>("Ground");
-
-                    b.Property<string>("ManagerName");
-
-                    b.Property<bool>("Playable");
-
-                    b.Property<string>("PrimaryKitColor");
-
-                    b.Property<string>("SecondaryKitColor");
-
-                    b.Property<string>("StadiumImgUrl");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("FootballClubId")
-                        .IsUnique();
-
-                    b.ToTable("FootballClubInfos");
                 });
 
             modelBuilder.Entity("Fantasy.Data.Models.Common.Gameweek", b =>
@@ -453,15 +426,11 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<short>("Appearances");
 
-                    b.Property<int?>("FootballPlayerId");
-
                     b.Property<short>("Losses");
 
                     b.Property<short>("Wins");
 
                     b.HasKey("PlayerId", "GameweekId");
-
-                    b.HasIndex("FootballPlayerId");
 
                     b.HasIndex("GameweekId");
 
@@ -629,14 +598,6 @@ namespace Fantasy.Data.Migrations
                         .OnDelete(DeleteBehavior.Restrict);
                 });
 
-            modelBuilder.Entity("Fantasy.Data.Models.Common.FootballClubInfo", b =>
-                {
-                    b.HasOne("Fantasy.Data.Models.Common.FootballClub", "FootballClub")
-                        .WithOne("Info")
-                        .HasForeignKey("Fantasy.Data.Models.Common.FootballClubInfo", "FootballClubId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
             modelBuilder.Entity("Fantasy.Data.Models.Common.Gameweek", b =>
                 {
                     b.HasOne("Fantasy.Data.Models.Common.Season", "Season")
@@ -744,17 +705,13 @@ namespace Fantasy.Data.Migrations
 
             modelBuilder.Entity("Fantasy.Data.Models.Statistics.MatchStatistics", b =>
                 {
-                    b.HasOne("Fantasy.Data.Models.FootballPlayers.FootballPlayer")
-                        .WithMany("MatchStatistics")
-                        .HasForeignKey("FootballPlayerId");
-
                     b.HasOne("Fantasy.Data.Models.Common.Gameweek", "Gameweek")
-                        .WithMany("BaseStatistics")
+                        .WithMany("MatchStatistics")
                         .HasForeignKey("GameweekId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("Fantasy.Data.Models.FootballPlayers.FootballPlayer", "FootballPlayer")
-                        .WithMany("BaseStatistics")
+                        .WithMany("MatchStatistics")
                         .HasForeignKey("PlayerId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

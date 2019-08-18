@@ -1,5 +1,4 @@
-﻿using Fantasy.Data.Models;
-using Fantasy.Data.Models.Common;
+﻿using Fantasy.Data.Models.Common;
 using Fantasy.Data.Models.FootballPlayers;
 using Fantasy.Data.Models.Game;
 using Fantasy.Data.Models.Statistics;
@@ -19,7 +18,6 @@ namespace Fantasy.Data
         public DbSet<FootballPlayer> FootballPlayers { get; set; }
         public DbSet<FootballPlayerInfo> FootballPlayerInfos { get; set; }
         public DbSet<FootballPlayerPosition> FootballPlayerPositions { get; set; }
-        public DbSet<FootballClubInfo> FootballClubInfos { get; set; }
         public DbSet<FootballClub> FootballClubs { get; set; }
         public DbSet<Fixture> Fixtures { get; set; }
         public DbSet<Gameweek> GameWeeks { get; set; }
@@ -43,24 +41,17 @@ namespace Fantasy.Data
                 .OnDelete(DeleteBehavior.Cascade);
 
             builder
-                .Entity<FootballClub>()
-                .HasOne(fc => fc.Info)
-                .WithOne(fci => fci.FootballClub)
-                .HasForeignKey<FootballClubInfo>(fc => fc.FootballClubId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-            builder
                 .Entity<MatchStatistics>(entity =>
                 {
                     entity
                         .HasKey(e => new { e.PlayerId, e.GameweekId });
                     entity
                         .HasOne(e => e.FootballPlayer)
-                        .WithMany(e => e.BaseStatistics)
+                        .WithMany(e => e.MatchStatistics)
                         .HasForeignKey(e => e.PlayerId);
                     entity
                         .HasOne(e => e.Gameweek)
-                        .WithMany(e => e.BaseStatistics)
+                        .WithMany(e => e.MatchStatistics)
                         .HasForeignKey(e => e.GameweekId);
                 });
 
@@ -154,24 +145,6 @@ namespace Fantasy.Data
                         .HasForeignKey(e => e.AwayTeamId)
                         .OnDelete(DeleteBehavior.Restrict);
                 });
-
-            //builder
-            //    .Entity<PlayerPersonalInfo>(entity =>
-            //    {
-            //        entity
-            //            .HasOne(pi => pi.Country)
-            //            .WithMany(c => c.Countries)
-            //            .HasForeignKey(pi => pi.CountryId)
-            //            .OnDelete(DeleteBehavior.Restrict);
-            //        entity
-            //            .HasOne(pi => pi.BirthCountry)
-            //            .WithMany(c => c.BirthCountries)
-            //            .HasForeignKey(pi => pi.BirthCountryId)
-            //            .OnDelete(DeleteBehavior.Restrict);
-            //    });
-
-               
-
 
             base.OnModelCreating(builder);
         }

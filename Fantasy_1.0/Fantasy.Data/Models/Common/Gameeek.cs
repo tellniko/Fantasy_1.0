@@ -18,7 +18,7 @@ namespace Fantasy.Data.Models.Common
 
         public IEnumerable<Fixture> Fixtures { get; set; } = new List<Fixture>();
 
-        public IEnumerable<MatchStatistics> BaseStatistics { get; set; } = new List<MatchStatistics>();
+        public IEnumerable<MatchStatistics> MatchStatistics { get; set; } = new List<MatchStatistics>();
 
         public IEnumerable<GoalkeepingStatistics> GoalkeepingStatistics { get; set; } = new List<GoalkeepingStatistics>();
 

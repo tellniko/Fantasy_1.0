@@ -77,6 +77,7 @@ namespace Fantasy.Services.Implementations
             Expression<Func<FootballPlayer, decimal>> priceDescending = fp => -fp.Price;
 
             var result = this.db.FootballPlayers
+                .Include(fp => fp.FootballClub)
                 .Where(filterCriteria);
 
             switch (order)
@@ -91,6 +92,12 @@ namespace Fantasy.Services.Implementations
                     result = result.OrderBy(name);
                     break;
             }
+
+            var a = await result
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .To<TModel>()
+                .ToListAsync();
 
             return await result
                 .Skip((page - 1) * pageSize)

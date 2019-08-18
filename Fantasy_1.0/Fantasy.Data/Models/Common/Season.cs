@@ -10,6 +10,6 @@ namespace Fantasy.Data.Models.Common
         [RegularExpression("^\\d{4}\\-\\d{4}$")]
         public string Name { get; set; }
 
-        public IEnumerable<Gameweek> Gameweeks { get; set; } = new List<Gameweek>();
+        public List<Gameweek> Gameweeks { get; set; } = new List<Gameweek>();
     }
 }

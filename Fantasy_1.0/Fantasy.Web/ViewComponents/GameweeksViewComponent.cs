@@ -20,7 +20,7 @@ namespace Fantasy.Web.ViewComponents
         {
             var gameweeks = await this.db.GameWeeks
                 .OrderBy(gw => gw.Id)
-                .Skip(1)
+                .Skip(2)
                 .OrderBy(gw => gw.Number)
                 .Select(gw => new SelectListItem
                 {
@@ -29,7 +29,7 @@ namespace Fantasy.Web.ViewComponents
                 })
                 .ToListAsync();
 
-            gameweeks.Insert(0, new SelectListItem("All Time", "1"));
+            gameweeks.Insert(0, new SelectListItem("All Time", "2"));
 
             return this.View(gameweeks);
         }

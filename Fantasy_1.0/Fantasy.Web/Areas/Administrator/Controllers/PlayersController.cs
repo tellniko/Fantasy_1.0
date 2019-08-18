@@ -55,6 +55,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             if (!await this.players.Exists(model.Player.Id))
             {
                 this.TempData.AddErrorMessage("Player does not exists");
+
                 return RedirectToAction(nameof(Index));
             }
 
@@ -63,6 +64,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             if (!successfulResult)
             {
                 this.TempData.AddErrorMessage("Something went wrong or you did not make any changes!");
+
                 return RedirectToAction(nameof(Edit), new { model });
             }
 
@@ -133,6 +135,17 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
                 {
                     Text = p.Name,
                     Value = p.Id.ToString()
+                })
+                .ToList();
+        }
+
+        private List<SelectListItem> GetGameweeks()
+        {
+            return this.db.GameWeeks
+                .Select(gw => new SelectListItem
+                {
+                    Text = "Gameeek " + gw.Number,
+                    Value = gw.Number.ToString()
                 })
                 .ToList();
         }

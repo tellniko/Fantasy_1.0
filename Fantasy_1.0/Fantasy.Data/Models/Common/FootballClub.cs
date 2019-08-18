@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using Fantasy.Data.Models.FootballPlayers;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Fantasy.Data.Models.FootballPlayers;
 
 namespace Fantasy.Data.Models.Common
 {
@@ -8,13 +8,6 @@ namespace Fantasy.Data.Models.Common
 
     public class FootballClub : BaseModel<int>
     {
-        public FootballClub(string name, string shortName, string tag)
-        {
-            this.Name = name;
-            this.ShortName = shortName;
-            this.Tag = tag;
-        }
-
         [Required]
         [MinLength(CommonNameMinLength)]
         [MaxLength(CommonNameMaxLength)]
@@ -26,17 +19,20 @@ namespace Fantasy.Data.Models.Common
         public string ShortName { get; set; }
 
         [Required]
-        [StringLength(3, MinimumLength = 3)]
+        [RegularExpression("^[A-Z]{3}$")]
         public string Tag { get; set; }
 
-        public byte Rating { get; set; }
+        public bool Playable { get; set; } = true;
 
-        public FootballClubInfo Info { get; set; }
+        [Range(1, 5)]
+        public byte Rating { get; set; } 
 
-        public IEnumerable<FootballPlayer> Squad { get; set; } = new List<FootballPlayer>();
+        public string BadgeImgUrl { get; set; }
 
-        public IEnumerable<Fixture> HomeGames { get; set; } = new List<Fixture>();
+        public List<FootballPlayer> Squad { get; set; } = new List<FootballPlayer>();
 
-        public IEnumerable<Fixture> AwayGames { get; set; } = new List<Fixture>();
+        public List<Fixture> HomeGames { get; set; } = new List<Fixture>();
+
+        public List<Fixture> AwayGames { get; set; } = new List<Fixture>();
     }
 }

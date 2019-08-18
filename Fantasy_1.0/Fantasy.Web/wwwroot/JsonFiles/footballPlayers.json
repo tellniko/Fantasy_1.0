@@ -1,1 +1,5050 @@
-[{"Id":1870,"FootballClubId":12,"FootballPlayerPositionId":1,"Price":11.00,"IsPlayable":true,"IsInjured":false},{"Id":2100,"FootballClubId":10,"FootballPlayerPositionId":3,"Price":5.11,"IsPlayable":true,"IsInjured":false},{"Id":2214,"FootballClubId":13,"FootballPlayerPositionId":1,"Price":6.03,"IsPlayable":true,"IsInjured":false},{"Id":2270,"FootballClubId":5,"FootballPlayerPositionId":3,"Price":9.70,"IsPlayable":true,"IsInjured":false},{"Id":2338,"FootballClubId":1,"FootballPlayerPositionId":3,"Price":5.09,"IsPlayable":true,"IsInjured":false},{"Id":2340,"FootballClubId":15,"FootballPlayerPositionId":4,"Price":4.52,"IsPlayable":true,"IsInjured":false},{"Id":2485,"FootballClubId":15,"FootballPlayerPositionId":2,"Price":9.71,"IsPlayable":true,"IsInjured":false},{"Id":2508,"FootballClubId":9,"FootballPlayerPositionId":1,"Price":11.56,"IsPlayable":true,"IsInjured":false},{"Id":2517,"FootballClubId":5,"FootballPlayerPositionId":2,"Price":10.53,"IsPlayable":true,"IsInjured":false},{"Id":2537,"FootballClubId":1,"FootballPlayerPositionId":1,"Price":5.90,"IsPlayable":true,"IsInjured":false},{"Id":2569,"FootballClubId":7,"FootballPlayerPositionId":1,"Price":9.51,"IsPlayable":true,"IsInjured":false},{"Id":2593,"FootballClubId":15,"FootballPlayerPositionId":4,"Price":10.18,"IsPlayable":true,"IsInjured":false},{"Id":2839,"FootballClubId":8,"FootballPlayerPositionId":4,"Price":9.46,"IsPlayable":true,"IsInjured":false},{"Id":2852,"FootballClubId":5,"FootballPlayerPositionId":1,"Price":7.49,"IsPlayable":true,"IsInjured":false},{"Id":2886,"FootballClubId":16,"FootballPlayerPositionId":2,"Price":11.19,"IsPlayable":true,"IsInjured":false},{"Id":2889,"FootballClubId":5,"FootballPlayerPositionId":3,"Price":11.95,"IsPlayable":true,"IsInjured":false},{"Id":2896,"FootballClubId":20,"FootballPlayerPositionId":1,"Price":4.04,"IsPlayable":true,"IsInjured":false},{"Id":2912,"FootballClubId":19,"FootballPlayerPositionId":1,"Price":7.10,"IsPlayable":true,"IsInjured":false},{"Id":2932,"FootballClubId":18,"FootballPlayerPositionId":1,"Price":4.27,"IsPlayable":true,"IsInjured":false},{"Id":2933,"FootballClubId":5,"FootballPlayerPositionId":1,"Price":7.92,"IsPlayable":true,"IsInjured":false},{"Id":2936,"FootballClubId":3,"FootballPlayerPositionId":2,"Price":9.29,"IsPlayable":true,"IsInjured":false},{"Id":3014,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":10.35,"IsPlayable":true,"IsInjured":false},{"Id":3030,"FootballClubId":8,"FootballPlayerPositionId":2,"Price":11.59,"IsPlayable":true,"IsInjured":false},{"Id":3049,"FootballClubId":3,"FootballPlayerPositionId":3,"Price":10.25,"IsPlayable":true,"IsInjured":false},{"Id":3058,"FootballClubId":7,"FootballPlayerPositionId":1,"Price":4.71,"IsPlayable":true,"IsInjured":false},{"Id":3062,"FootballClubId":12,"FootballPlayerPositionId":2,"Price":4.92,"IsPlayable":true,"IsInjured":false},{"Id":3143,"FootballClubId":5,"FootballPlayerPositionId":1,"Price":10.27,"IsPlayable":true,"IsInjured":false},{"Id":3156,"FootballClubId":9,"FootballPlayerPositionId":2,"Price":6.30,"IsPlayable":true,"IsInjured":false},{"Id":3160,"FootballClubId":18,"FootballPlayerPositionId":2,"Price":6.69,"IsPlayable":true,"IsInjured":false},{"Id":3169,"FootballClubId":14,"FootballPlayerPositionId":1,"Price":6.70,"IsPlayable":true,"IsInjured":false},{"Id":3170,"FootballClubId":16,"FootballPlayerPositionId":1,"Price":6.88,"IsPlayable":true,"IsInjured":false},{"Id":3206,"FootballClubId":16,"FootballPlayerPositionId":4,"Price":5.53,"IsPlayable":true,"IsInjured":false},{"Id":3222,"FootballClubId":15,"FootballPlayerPositionId":2,"Price":8.26,"IsPlayable":true,"IsInjured":false},{"Id":3242,"FootballClubId":1,"FootballPlayerPositionId":2,"Price":8.07,"IsPlayable":true,"IsInjured":false},{"Id":3251,"FootballClubId":18,"FootballPlayerPositionId":2,"Price":5.60,"IsPlayable":true,"IsInjured":false},{"Id":3309,"FootballClubId":19,"FootballPlayerPositionId":1,"Price":7.63,"IsPlayable":true,"IsInjured":false},{"Id":3320,"FootballClubId":15,"FootballPlayerPositionId":3,"Price":7.92,"IsPlayable":true,"IsInjured":false},{"Id":3362,"FootballClubId":7,"FootballPlayerPositionId":2,"Price":10.87,"IsPlayable":true,"IsInjured":false},{"Id":3390,"FootballClubId":1,"FootballPlayerPositionId":3,"Price":7.38,"IsPlayable":true,"IsInjured":false},{"Id":3441,"FootballClubId":15,"FootballPlayerPositionId":4,"Price":8.16,"IsPlayable":true,"IsInjured":false},{"Id":3448,"FootballClubId":18,"FootballPlayerPositionId":3,"Price":8.43,"IsPlayable":true,"IsInjured":false},{"Id":3457,"FootballClubId":4,"FootballPlayerPositionId":1,"Price":4.72,"IsPlayable":true,"IsInjured":false},{"Id":3505,"FootballClubId":4,"FootballPlayerPositionId":1,"Price":11.97,"IsPlayable":true,"IsInjured":false},{"Id":3507,"FootballClubId":17,"FootballPlayerPositionId":2,"Price":5.67,"IsPlayable":true,"IsInjured":false},{"Id":3512,"FootballClubId":1,"FootballPlayerPositionId":2,"Price":10.81,"IsPlayable":true,"IsInjured":false},{"Id":3517,"FootballClubId":7,"FootballPlayerPositionId":2,"Price":11.72,"IsPlayable":true,"IsInjured":false},{"Id":3547,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":8.42,"IsPlayable":true,"IsInjured":false},{"Id":3562,"FootballClubId":13,"FootballPlayerPositionId":2,"Price":4.61,"IsPlayable":true,"IsInjured":false},{"Id":3564,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":5.18,"IsPlayable":true,"IsInjured":false},{"Id":3581,"FootballClubId":15,"FootballPlayerPositionId":2,"Price":4.50,"IsPlayable":true,"IsInjured":false},{"Id":3600,"FootballClubId":8,"FootballPlayerPositionId":2,"Price":9.83,"IsPlayable":true,"IsInjured":false},{"Id":3601,"FootballClubId":4,"FootballPlayerPositionId":2,"Price":8.26,"IsPlayable":true,"IsInjured":false},{"Id":3613,"FootballClubId":12,"FootballPlayerPositionId":2,"Price":7.44,"IsPlayable":true,"IsInjured":false},{"Id":3644,"FootballClubId":7,"FootballPlayerPositionId":2,"Price":10.11,"IsPlayable":true,"IsInjured":false},{"Id":3654,"FootballClubId":19,"FootballPlayerPositionId":2,"Price":7.97,"IsPlayable":true,"IsInjured":false},{"Id":3669,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":6.89,"IsPlayable":true,"IsInjured":false},{"Id":3670,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":5.19,"IsPlayable":true,"IsInjured":false},{"Id":3712,"FootballClubId":10,"FootballPlayerPositionId":3,"Price":6.92,"IsPlayable":true,"IsInjured":false},{"Id":3713,"FootballClubId":13,"FootballPlayerPositionId":3,"Price":7.56,"IsPlayable":true,"IsInjured":false},{"Id":3724,"FootballClubId":7,"FootballPlayerPositionId":3,"Price":6.23,"IsPlayable":true,"IsInjured":false},{"Id":3756,"FootballClubId":5,"FootballPlayerPositionId":4,"Price":10.92,"IsPlayable":true,"IsInjured":false},{"Id":3766,"FootballClubId":1,"FootballPlayerPositionId":3,"Price":10.79,"IsPlayable":true,"IsInjured":false},{"Id":3799,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":9.43,"IsPlayable":true,"IsInjured":false},{"Id":3807,"FootballClubId":7,"FootballPlayerPositionId":2,"Price":7.00,"IsPlayable":true,"IsInjured":false},{"Id":3811,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":10.80,"IsPlayable":true,"IsInjured":false},{"Id":3819,"FootballClubId":14,"FootballPlayerPositionId":2,"Price":5.63,"IsPlayable":true,"IsInjured":false},{"Id":3820,"FootballClubId":12,"FootballPlayerPositionId":2,"Price":5.91,"IsPlayable":true,"IsInjured":false},{"Id":3837,"FootballClubId":5,"FootballPlayerPositionId":2,"Price":10.74,"IsPlayable":true,"IsInjured":false},{"Id":3851,"FootballClubId":5,"FootballPlayerPositionId":4,"Price":5.36,"IsPlayable":true,"IsInjured":false},{"Id":3861,"FootballClubId":12,"FootballPlayerPositionId":3,"Price":7.68,"IsPlayable":true,"IsInjured":false},{"Id":3868,"FootballClubId":8,"FootballPlayerPositionId":2,"Price":10.81,"IsPlayable":true,"IsInjured":false},{"Id":3869,"FootballClubId":2,"FootballPlayerPositionId":2,"Price":6.23,"IsPlayable":true,"IsInjured":false},{"Id":3889,"FootballClubId":18,"FootballPlayerPositionId":4,"Price":7.95,"IsPlayable":true,"IsInjured":false},{"Id":3905,"FootballClubId":17,"FootballPlayerPositionId":2,"Price":6.73,"IsPlayable":true,"IsInjured":false},{"Id":3909,"FootballClubId":5,"FootballPlayerPositionId":2,"Price":6.65,"IsPlayable":true,"IsInjured":false},{"Id":3920,"FootballClubId":12,"FootballPlayerPositionId":3,"Price":10.45,"IsPlayable":true,"IsInjured":false},{"Id":3924,"FootballClubId":15,"FootballPlayerPositionId":3,"Price":5.92,"IsPlayable":true,"IsInjured":false},{"Id":3926,"FootballClubId":1,"FootballPlayerPositionId":4,"Price":11.09,"IsPlayable":true,"IsInjured":false},{"Id":3929,"FootballClubId":7,"FootballPlayerPositionId":2,"Price":8.86,"IsPlayable":true,"IsInjured":false},{"Id":3934,"FootballClubId":13,"FootballPlayerPositionId":3,"Price":9.13,"IsPlayable":true,"IsInjured":false},{"Id":3945,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":10.50,"IsPlayable":true,"IsInjured":false},{"Id":3955,"FootballClubId":11,"FootballPlayerPositionId":2,"Price":4.06,"IsPlayable":true,"IsInjured":false},{"Id":3958,"FootballClubId":19,"FootballPlayerPositionId":2,"Price":9.87,"IsPlayable":true,"IsInjured":false},{"Id":3960,"FootballClubId":17,"FootballPlayerPositionId":4,"Price":4.36,"IsPlayable":true,"IsInjured":false},{"Id":3979,"FootballClubId":8,"FootballPlayerPositionId":3,"Price":5.39,"IsPlayable":true,"IsInjured":false},{"Id":4030,"FootballClubId":2,"FootballPlayerPositionId":2,"Price":7.90,"IsPlayable":true,"IsInjured":false},{"Id":4093,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":10.73,"IsPlayable":true,"IsInjured":false},{"Id":4100,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":4.53,"IsPlayable":true,"IsInjured":false},{"Id":4105,"FootballClubId":18,"FootballPlayerPositionId":3,"Price":7.63,"IsPlayable":true,"IsInjured":false},{"Id":4112,"FootballClubId":17,"FootballPlayerPositionId":3,"Price":11.81,"IsPlayable":true,"IsInjured":false},{"Id":4115,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":9.98,"IsPlayable":true,"IsInjured":false},{"Id":4135,"FootballClubId":13,"FootballPlayerPositionId":3,"Price":7.71,"IsPlayable":true,"IsInjured":false},{"Id":4136,"FootballClubId":20,"FootballPlayerPositionId":2,"Price":10.41,"IsPlayable":true,"IsInjured":false},{"Id":4145,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":10.31,"IsPlayable":true,"IsInjured":false},{"Id":4158,"FootballClubId":5,"FootballPlayerPositionId":3,"Price":10.07,"IsPlayable":true,"IsInjured":false},{"Id":4161,"FootballClubId":19,"FootballPlayerPositionId":4,"Price":10.92,"IsPlayable":true,"IsInjured":false},{"Id":4179,"FootballClubId":10,"FootballPlayerPositionId":1,"Price":11.03,"IsPlayable":true,"IsInjured":false},{"Id":4183,"FootballClubId":3,"FootballPlayerPositionId":2,"Price":4.98,"IsPlayable":true,"IsInjured":false},{"Id":4198,"FootballClubId":18,"FootballPlayerPositionId":2,"Price":4.75,"IsPlayable":true,"IsInjured":false},{"Id":4209,"FootballClubId":19,"FootballPlayerPositionId":2,"Price":6.44,"IsPlayable":true,"IsInjured":false},{"Id":4224,"FootballClubId":7,"FootballPlayerPositionId":3,"Price":9.08,"IsPlayable":true,"IsInjured":false},{"Id":4229,"FootballClubId":20,"FootballPlayerPositionId":2,"Price":8.89,"IsPlayable":true,"IsInjured":false},{"Id":4245,"FootballClubId":2,"FootballPlayerPositionId":1,"Price":4.45,"IsPlayable":true,"IsInjured":false},{"Id":4248,"FootballClubId":2,"FootballPlayerPositionId":2,"Price":5.04,"IsPlayable":true,"IsInjured":false},{"Id":4252,"FootballClubId":10,"FootballPlayerPositionId":3,"Price":11.63,"IsPlayable":true,"IsInjured":false},{"Id":4258,"FootballClubId":15,"FootballPlayerPositionId":2,"Price":7.33,"IsPlayable":true,"IsInjured":false},{"Id":4259,"FootballClubId":15,"FootballPlayerPositionId":3,"Price":5.70,"IsPlayable":true,"IsInjured":false},{"Id":4260,"FootballClubId":3,"FootballPlayerPositionId":3,"Price":10.76,"IsPlayable":true,"IsInjured":false},{"Id":4286,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":8.05,"IsPlayable":true,"IsInjured":false},{"Id":4287,"FootballClubId":12,"FootballPlayerPositionId":3,"Price":4.70,"IsPlayable":true,"IsInjured":false},{"Id":4288,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":8.34,"IsPlayable":true,"IsInjured":false},{"Id":4289,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":8.96,"IsPlayable":true,"IsInjured":false},{"Id":4290,"FootballClubId":12,"FootballPlayerPositionId":4,"Price":4.22,"IsPlayable":true,"IsInjured":false},{"Id":4316,"FootballClubId":11,"FootballPlayerPositionId":4,"Price":10.37,"IsPlayable":true,"IsInjured":false},{"Id":4328,"FootballClubId":11,"FootballPlayerPositionId":4,"Price":7.78,"IsPlayable":true,"IsInjured":false},{"Id":4330,"FootballClubId":12,"FootballPlayerPositionId":1,"Price":8.36,"IsPlayable":true,"IsInjured":false},{"Id":4333,"FootballClubId":8,"FootballPlayerPositionId":2,"Price":8.03,"IsPlayable":true,"IsInjured":false},{"Id":4337,"FootballClubId":12,"FootballPlayerPositionId":3,"Price":6.90,"IsPlayable":true,"IsInjured":false},{"Id":4340,"FootballClubId":13,"FootballPlayerPositionId":2,"Price":5.82,"IsPlayable":true,"IsInjured":false},{"Id":4348,"FootballClubId":3,"FootballPlayerPositionId":1,"Price":6.01,"IsPlayable":true,"IsInjured":false},{"Id":4351,"FootballClubId":20,"FootballPlayerPositionId":2,"Price":5.82,"IsPlayable":true,"IsInjured":false},{"Id":4394,"FootballClubId":15,"FootballPlayerPositionId":2,"Price":4.12,"IsPlayable":true,"IsInjured":false},{"Id":4396,"FootballClubId":7,"FootballPlayerPositionId":4,"Price":8.45,"IsPlayable":true,"IsInjured":false},{"Id":4402,"FootballClubId":3,"FootballPlayerPositionId":2,"Price":11.16,"IsPlayable":true,"IsInjured":false},{"Id":4408,"FootballClubId":17,"FootballPlayerPositionId":2,"Price":5.18,"IsPlayable":true,"IsInjured":false},{"Id":4421,"FootballClubId":8,"FootballPlayerPositionId":3,"Price":5.01,"IsPlayable":true,"IsInjured":false},{"Id":4472,"FootballClubId":2,"FootballPlayerPositionId":2,"Price":7.42,"IsPlayable":true,"IsInjured":false},{"Id":4474,"FootballClubId":2,"FootballPlayerPositionId":2,"Price":7.95,"IsPlayable":true,"IsInjured":false},{"Id":4481,"FootballClubId":6,"FootballPlayerPositionId":4,"Price":6.74,"IsPlayable":true,"IsInjured":false},{"Id":4487,"FootballClubId":5,"FootballPlayerPositionId":2,"Price":7.30,"IsPlayable":true,"IsInjured":false},{"Id":4489,"FootballClubId":5,"FootballPlayerPositionId":3,"Price":5.67,"IsPlayable":true,"IsInjured":false},{"Id":4492,"FootballClubId":7,"FootballPlayerPositionId":4,"Price":5.39,"IsPlayable":true,"IsInjured":false},{"Id":4495,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":10.61,"IsPlayable":true,"IsInjured":false},{"Id":4496,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":5.36,"IsPlayable":true,"IsInjured":false},{"Id":4499,"FootballClubId":1,"FootballPlayerPositionId":2,"Price":7.24,"IsPlayable":true,"IsInjured":false},{"Id":4505,"FootballClubId":11,"FootballPlayerPositionId":2,"Price":10.97,"IsPlayable":true,"IsInjured":false},{"Id":4507,"FootballClubId":8,"FootballPlayerPositionId":3,"Price":6.60,"IsPlayable":true,"IsInjured":false},{"Id":4509,"FootballClubId":15,"FootballPlayerPositionId":2,"Price":5.19,"IsPlayable":true,"IsInjured":false},{"Id":4522,"FootballClubId":9,"FootballPlayerPositionId":1,"Price":10.49,"IsPlayable":true,"IsInjured":false},{"Id":4527,"FootballClubId":1,"FootballPlayerPositionId":3,"Price":9.17,"IsPlayable":true,"IsInjured":false},{"Id":4539,"FootballClubId":7,"FootballPlayerPositionId":4,"Price":7.89,"IsPlayable":true,"IsInjured":false},{"Id":4549,"FootballClubId":17,"FootballPlayerPositionId":3,"Price":8.60,"IsPlayable":true,"IsInjured":false},{"Id":4558,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":5.47,"IsPlayable":true,"IsInjured":false},{"Id":4560,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":8.09,"IsPlayable":true,"IsInjured":false},{"Id":4573,"FootballClubId":16,"FootballPlayerPositionId":1,"Price":7.56,"IsPlayable":true,"IsInjured":false},{"Id":4582,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":8.54,"IsPlayable":true,"IsInjured":false},{"Id":4600,"FootballClubId":17,"FootballPlayerPositionId":1,"Price":8.89,"IsPlayable":true,"IsInjured":false},{"Id":4601,"FootballClubId":1,"FootballPlayerPositionId":1,"Price":8.70,"IsPlayable":true,"IsInjured":false},{"Id":4604,"FootballClubId":10,"FootballPlayerPositionId":2,"Price":11.76,"IsPlayable":true,"IsInjured":false},{"Id":4605,"FootballClubId":16,"FootballPlayerPositionId":2,"Price":8.48,"IsPlayable":true,"IsInjured":false},{"Id":4608,"FootballClubId":12,"FootballPlayerPositionId":2,"Price":11.17,"IsPlayable":true,"IsInjured":false},{"Id":4612,"FootballClubId":16,"FootballPlayerPositionId":2,"Price":9.64,"IsPlayable":true,"IsInjured":false},{"Id":4615,"FootballClubId":8,"FootballPlayerPositionId":3,"Price":5.22,"IsPlayable":true,"IsInjured":false},{"Id":4617,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":4.55,"IsPlayable":true,"IsInjured":false},{"Id":4618,"FootballClubId":10,"FootballPlayerPositionId":3,"Price":10.25,"IsPlayable":true,"IsInjured":false},{"Id":4620,"FootballClubId":2,"FootballPlayerPositionId":2,"Price":10.99,"IsPlayable":true,"IsInjured":false},{"Id":4626,"FootballClubId":15,"FootballPlayerPositionId":4,"Price":8.11,"IsPlayable":true,"IsInjured":false},{"Id":4640,"FootballClubId":8,"FootballPlayerPositionId":1,"Price":5.51,"IsPlayable":true,"IsInjured":false},{"Id":4656,"FootballClubId":13,"FootballPlayerPositionId":3,"Price":10.65,"IsPlayable":true,"IsInjured":false},{"Id":4664,"FootballClubId":17,"FootballPlayerPositionId":1,"Price":7.69,"IsPlayable":true,"IsInjured":false},{"Id":4666,"FootballClubId":17,"FootballPlayerPositionId":2,"Price":10.74,"IsPlayable":true,"IsInjured":false},{"Id":4674,"FootballClubId":6,"FootballPlayerPositionId":4,"Price":10.63,"IsPlayable":true,"IsInjured":false},{"Id":4713,"FootballClubId":13,"FootballPlayerPositionId":3,"Price":7.95,"IsPlayable":true,"IsInjured":false},{"Id":4714,"FootballClubId":2,"FootballPlayerPositionId":3,"Price":11.96,"IsPlayable":true,"IsInjured":false},{"Id":4717,"FootballClubId":2,"FootballPlayerPositionId":3,"Price":8.63,"IsPlayable":true,"IsInjured":false},{"Id":4727,"FootballClubId":15,"FootballPlayerPositionId":1,"Price":8.44,"IsPlayable":true,"IsInjured":false},{"Id":4748,"FootballClubId":6,"FootballPlayerPositionId":4,"Price":8.39,"IsPlayable":true,"IsInjured":false},{"Id":4749,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":11.51,"IsPlayable":true,"IsInjured":false},{"Id":4772,"FootballClubId":4,"FootballPlayerPositionId":4,"Price":11.84,"IsPlayable":true,"IsInjured":false},{"Id":4777,"FootballClubId":18,"FootballPlayerPositionId":4,"Price":6.37,"IsPlayable":true,"IsInjured":false},{"Id":4779,"FootballClubId":8,"FootballPlayerPositionId":1,"Price":11.67,"IsPlayable":true,"IsInjured":false},{"Id":4786,"FootballClubId":9,"FootballPlayerPositionId":1,"Price":10.35,"IsPlayable":true,"IsInjured":false},{"Id":4796,"FootballClubId":7,"FootballPlayerPositionId":2,"Price":9.44,"IsPlayable":true,"IsInjured":false},{"Id":4804,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":6.43,"IsPlayable":true,"IsInjured":false},{"Id":4813,"FootballClubId":10,"FootballPlayerPositionId":2,"Price":8.11,"IsPlayable":true,"IsInjured":false},{"Id":4815,"FootballClubId":3,"FootballPlayerPositionId":2,"Price":11.93,"IsPlayable":true,"IsInjured":false},{"Id":4816,"FootballClubId":17,"FootballPlayerPositionId":3,"Price":4.28,"IsPlayable":true,"IsInjured":false},{"Id":4818,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":7.89,"IsPlayable":true,"IsInjured":false},{"Id":4821,"FootballClubId":5,"FootballPlayerPositionId":2,"Price":10.35,"IsPlayable":true,"IsInjured":false},{"Id":4842,"FootballClubId":17,"FootballPlayerPositionId":3,"Price":10.75,"IsPlayable":true,"IsInjured":false},{"Id":4843,"FootballClubId":18,"FootballPlayerPositionId":3,"Price":8.19,"IsPlayable":true,"IsInjured":false},{"Id":4845,"FootballClubId":17,"FootballPlayerPositionId":3,"Price":9.47,"IsPlayable":true,"IsInjured":false},{"Id":4851,"FootballClubId":5,"FootballPlayerPositionId":4,"Price":7.32,"IsPlayable":true,"IsInjured":false},{"Id":4852,"FootballClubId":10,"FootballPlayerPositionId":1,"Price":4.00,"IsPlayable":true,"IsInjured":true},{"Id":4859,"FootballClubId":13,"FootballPlayerPositionId":3,"Price":8.48,"IsPlayable":true,"IsInjured":false},{"Id":4878,"FootballClubId":7,"FootballPlayerPositionId":2,"Price":8.10,"IsPlayable":true,"IsInjured":false},{"Id":4909,"FootballClubId":19,"FootballPlayerPositionId":1,"Price":9.34,"IsPlayable":true,"IsInjured":false},{"Id":4916,"FootballClubId":17,"FootballPlayerPositionId":2,"Price":6.43,"IsPlayable":true,"IsInjured":false},{"Id":4918,"FootballClubId":13,"FootballPlayerPositionId":2,"Price":9.72,"IsPlayable":true,"IsInjured":false},{"Id":4955,"FootballClubId":4,"FootballPlayerPositionId":2,"Price":10.42,"IsPlayable":true,"IsInjured":false},{"Id":4972,"FootballClubId":6,"FootballPlayerPositionId":4,"Price":6.37,"IsPlayable":true,"IsInjured":false},{"Id":4973,"FootballClubId":12,"FootballPlayerPositionId":4,"Price":10.00,"IsPlayable":true,"IsInjured":false},{"Id":4979,"FootballClubId":20,"FootballPlayerPositionId":4,"Price":4.88,"IsPlayable":true,"IsInjured":false},{"Id":4985,"FootballClubId":2,"FootballPlayerPositionId":1,"Price":7.69,"IsPlayable":true,"IsInjured":false},{"Id":4999,"FootballClubId":17,"FootballPlayerPositionId":4,"Price":6.23,"IsPlayable":true,"IsInjured":false},{"Id":5044,"FootballClubId":20,"FootballPlayerPositionId":2,"Price":4.66,"IsPlayable":true,"IsInjured":false},{"Id":5061,"FootballClubId":8,"FootballPlayerPositionId":3,"Price":4.57,"IsPlayable":true,"IsInjured":false},{"Id":5066,"FootballClubId":12,"FootballPlayerPositionId":2,"Price":8.15,"IsPlayable":true,"IsInjured":false},{"Id":5067,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":4.13,"IsPlayable":true,"IsInjured":false},{"Id":5074,"FootballClubId":14,"FootballPlayerPositionId":4,"Price":9.52,"IsPlayable":true,"IsInjured":false},{"Id":5079,"FootballClubId":20,"FootballPlayerPositionId":4,"Price":11.49,"IsPlayable":true,"IsInjured":false},{"Id":5093,"FootballClubId":2,"FootballPlayerPositionId":2,"Price":10.19,"IsPlayable":true,"IsInjured":false},{"Id":5101,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":8.18,"IsPlayable":true,"IsInjured":false},{"Id":5102,"FootballClubId":2,"FootballPlayerPositionId":3,"Price":5.18,"IsPlayable":true,"IsInjured":false},{"Id":5110,"FootballClubId":2,"FootballPlayerPositionId":4,"Price":11.53,"IsPlayable":true,"IsInjured":false},{"Id":5140,"FootballClubId":10,"FootballPlayerPositionId":2,"Price":5.37,"IsPlayable":true,"IsInjured":false},{"Id":5156,"FootballClubId":4,"FootballPlayerPositionId":3,"Price":8.99,"IsPlayable":true,"IsInjured":false},{"Id":5169,"FootballClubId":14,"FootballPlayerPositionId":4,"Price":7.46,"IsPlayable":true,"IsInjured":false},{"Id":5178,"FootballClubId":10,"FootballPlayerPositionId":4,"Price":8.80,"IsPlayable":true,"IsInjured":false},{"Id":5179,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":6.68,"IsPlayable":true,"IsInjured":false},{"Id":5220,"FootballClubId":13,"FootballPlayerPositionId":2,"Price":10.94,"IsPlayable":true,"IsInjured":false},{"Id":5239,"FootballClubId":2,"FootballPlayerPositionId":3,"Price":5.24,"IsPlayable":true,"IsInjured":false},{"Id":5267,"FootballClubId":10,"FootballPlayerPositionId":4,"Price":11.90,"IsPlayable":true,"IsInjured":false},{"Id":5272,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":6.02,"IsPlayable":true,"IsInjured":false},{"Id":5328,"FootballClubId":11,"FootballPlayerPositionId":2,"Price":10.59,"IsPlayable":true,"IsInjured":false},{"Id":5334,"FootballClubId":11,"FootballPlayerPositionId":2,"Price":8.24,"IsPlayable":true,"IsInjured":false},{"Id":5343,"FootballClubId":9,"FootballPlayerPositionId":2,"Price":9.22,"IsPlayable":true,"IsInjured":false},{"Id":5345,"FootballClubId":5,"FootballPlayerPositionId":3,"Price":7.34,"IsPlayable":true,"IsInjured":false},{"Id":5361,"FootballClubId":14,"FootballPlayerPositionId":1,"Price":5.09,"IsPlayable":true,"IsInjured":false},{"Id":5368,"FootballClubId":2,"FootballPlayerPositionId":2,"Price":6.50,"IsPlayable":true,"IsInjured":false},{"Id":5371,"FootballClubId":9,"FootballPlayerPositionId":2,"Price":8.94,"IsPlayable":true,"IsInjured":false},{"Id":5375,"FootballClubId":10,"FootballPlayerPositionId":2,"Price":6.95,"IsPlayable":true,"IsInjured":false},{"Id":5377,"FootballClubId":7,"FootballPlayerPositionId":3,"Price":8.92,"IsPlayable":true,"IsInjured":false},{"Id":5384,"FootballClubId":11,"FootballPlayerPositionId":4,"Price":4.12,"IsPlayable":true,"IsInjured":false},{"Id":5428,"FootballClubId":4,"FootballPlayerPositionId":2,"Price":9.56,"IsPlayable":true,"IsInjured":false},{"Id":5514,"FootballClubId":19,"FootballPlayerPositionId":2,"Price":8.77,"IsPlayable":true,"IsInjured":false},{"Id":5575,"FootballClubId":11,"FootballPlayerPositionId":2,"Price":5.42,"IsPlayable":true,"IsInjured":false},{"Id":5583,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":9.77,"IsPlayable":true,"IsInjured":false},{"Id":5672,"FootballClubId":13,"FootballPlayerPositionId":2,"Price":11.73,"IsPlayable":true,"IsInjured":false},{"Id":5682,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":5.97,"IsPlayable":true,"IsInjured":false},{"Id":5713,"FootballClubId":18,"FootballPlayerPositionId":2,"Price":10.50,"IsPlayable":true,"IsInjured":false},{"Id":5721,"FootballClubId":4,"FootballPlayerPositionId":2,"Price":9.59,"IsPlayable":true,"IsInjured":false},{"Id":5758,"FootballClubId":8,"FootballPlayerPositionId":2,"Price":10.67,"IsPlayable":true,"IsInjured":false},{"Id":5762,"FootballClubId":17,"FootballPlayerPositionId":3,"Price":6.92,"IsPlayable":true,"IsInjured":false},{"Id":5810,"FootballClubId":11,"FootballPlayerPositionId":1,"Price":4.19,"IsPlayable":true,"IsInjured":false},{"Id":5859,"FootballClubId":7,"FootballPlayerPositionId":3,"Price":9.38,"IsPlayable":true,"IsInjured":false},{"Id":5861,"FootballClubId":7,"FootballPlayerPositionId":3,"Price":6.00,"IsPlayable":true,"IsInjured":false},{"Id":5865,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":7.42,"IsPlayable":true,"IsInjured":false},{"Id":5866,"FootballClubId":20,"FootballPlayerPositionId":3,"Price":11.89,"IsPlayable":true,"IsInjured":false},{"Id":5906,"FootballClubId":12,"FootballPlayerPositionId":3,"Price":7.26,"IsPlayable":true,"IsInjured":false},{"Id":5907,"FootballClubId":8,"FootballPlayerPositionId":3,"Price":11.87,"IsPlayable":true,"IsInjured":false},{"Id":6058,"FootballClubId":11,"FootballPlayerPositionId":2,"Price":11.76,"IsPlayable":true,"IsInjured":false},{"Id":6194,"FootballClubId":16,"FootballPlayerPositionId":2,"Price":8.09,"IsPlayable":true,"IsInjured":false},{"Id":6210,"FootballClubId":5,"FootballPlayerPositionId":3,"Price":4.19,"IsPlayable":true,"IsInjured":false},{"Id":6251,"FootballClubId":13,"FootballPlayerPositionId":3,"Price":9.93,"IsPlayable":true,"IsInjured":false},{"Id":6389,"FootballClubId":19,"FootballPlayerPositionId":4,"Price":4.67,"IsPlayable":true,"IsInjured":false},{"Id":6425,"FootballClubId":13,"FootballPlayerPositionId":4,"Price":6.16,"IsPlayable":true,"IsInjured":false},{"Id":6451,"FootballClubId":13,"FootballPlayerPositionId":1,"Price":4.87,"IsPlayable":true,"IsInjured":false},{"Id":6519,"FootballClubId":10,"FootballPlayerPositionId":4,"Price":6.91,"IsPlayable":true,"IsInjured":false},{"Id":6784,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":5.64,"IsPlayable":true,"IsInjured":false},{"Id":6889,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":10.60,"IsPlayable":true,"IsInjured":false},{"Id":6899,"FootballClubId":2,"FootballPlayerPositionId":4,"Price":8.86,"IsPlayable":true,"IsInjured":false},{"Id":7114,"FootballClubId":10,"FootballPlayerPositionId":3,"Price":4.29,"IsPlayable":true,"IsInjured":false},{"Id":7124,"FootballClubId":4,"FootballPlayerPositionId":4,"Price":4.62,"IsPlayable":true,"IsInjured":false},{"Id":7450,"FootballClubId":6,"FootballPlayerPositionId":4,"Price":6.75,"IsPlayable":true,"IsInjured":false},{"Id":7488,"FootballClubId":17,"FootballPlayerPositionId":3,"Price":10.76,"IsPlayable":true,"IsInjured":false},{"Id":7490,"FootballClubId":17,"FootballPlayerPositionId":3,"Price":8.74,"IsPlayable":true,"IsInjured":false},{"Id":7548,"FootballClubId":7,"FootballPlayerPositionId":1,"Price":8.32,"IsPlayable":true,"IsInjured":false},{"Id":7946,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":9.09,"IsPlayable":true,"IsInjured":false},{"Id":8044,"FootballClubId":1,"FootballPlayerPositionId":2,"Price":4.58,"IsPlayable":true,"IsInjured":false},{"Id":8045,"FootballClubId":1,"FootballPlayerPositionId":2,"Price":10.56,"IsPlayable":true,"IsInjured":false},{"Id":8050,"FootballClubId":1,"FootballPlayerPositionId":3,"Price":8.36,"IsPlayable":true,"IsInjured":false},{"Id":8052,"FootballClubId":1,"FootballPlayerPositionId":3,"Price":6.38,"IsPlayable":true,"IsInjured":false},{"Id":8143,"FootballClubId":5,"FootballPlayerPositionId":2,"Price":9.52,"IsPlayable":true,"IsInjured":false},{"Id":8163,"FootballClubId":4,"FootballPlayerPositionId":2,"Price":6.45,"IsPlayable":true,"IsInjured":false},{"Id":8168,"FootballClubId":4,"FootballPlayerPositionId":3,"Price":8.52,"IsPlayable":true,"IsInjured":false},{"Id":8171,"FootballClubId":4,"FootballPlayerPositionId":3,"Price":4.28,"IsPlayable":true,"IsInjured":false},{"Id":8245,"FootballClubId":16,"FootballPlayerPositionId":4,"Price":4.79,"IsPlayable":true,"IsInjured":false},{"Id":8246,"FootballClubId":5,"FootballPlayerPositionId":4,"Price":6.12,"IsPlayable":true,"IsInjured":false},{"Id":8293,"FootballClubId":20,"FootballPlayerPositionId":1,"Price":11.62,"IsPlayable":true,"IsInjured":false},{"Id":8444,"FootballClubId":15,"FootballPlayerPositionId":3,"Price":4.99,"IsPlayable":true,"IsInjured":false},{"Id":8451,"FootballClubId":9,"FootballPlayerPositionId":4,"Price":8.29,"IsPlayable":true,"IsInjured":false},{"Id":8454,"FootballClubId":1,"FootballPlayerPositionId":4,"Price":10.93,"IsPlayable":true,"IsInjured":false},{"Id":8456,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":8.36,"IsPlayable":true,"IsInjured":false},{"Id":8586,"FootballClubId":5,"FootballPlayerPositionId":3,"Price":7.00,"IsPlayable":true,"IsInjured":false},{"Id":8589,"FootballClubId":18,"FootballPlayerPositionId":3,"Price":5.99,"IsPlayable":true,"IsInjured":false},{"Id":8598,"FootballClubId":14,"FootballPlayerPositionId":2,"Price":8.70,"IsPlayable":true,"IsInjured":false},{"Id":8605,"FootballClubId":15,"FootballPlayerPositionId":3,"Price":9.60,"IsPlayable":true,"IsInjured":false},{"Id":8691,"FootballClubId":5,"FootballPlayerPositionId":2,"Price":6.47,"IsPlayable":true,"IsInjured":false},{"Id":8707,"FootballClubId":4,"FootballPlayerPositionId":2,"Price":4.13,"IsPlayable":true,"IsInjured":false},{"Id":8710,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":11.58,"IsPlayable":true,"IsInjured":false},{"Id":8889,"FootballClubId":5,"FootballPlayerPositionId":4,"Price":7.65,"IsPlayable":true,"IsInjured":false},{"Id":8897,"FootballClubId":19,"FootballPlayerPositionId":2,"Price":5.81,"IsPlayable":true,"IsInjured":false},{"Id":8900,"FootballClubId":3,"FootballPlayerPositionId":2,"Price":9.52,"IsPlayable":true,"IsInjured":false},{"Id":8913,"FootballClubId":4,"FootballPlayerPositionId":2,"Price":6.80,"IsPlayable":true,"IsInjured":false},{"Id":8956,"FootballClubId":3,"FootballPlayerPositionId":4,"Price":10.40,"IsPlayable":true,"IsInjured":false},{"Id":8966,"FootballClubId":9,"FootballPlayerPositionId":2,"Price":8.05,"IsPlayable":true,"IsInjured":false},{"Id":8976,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":7.06,"IsPlayable":true,"IsInjured":false},{"Id":8979,"FootballClubId":9,"FootballPlayerPositionId":4,"Price":10.58,"IsPlayable":true,"IsInjured":false},{"Id":8980,"FootballClubId":7,"FootballPlayerPositionId":2,"Price":8.57,"IsPlayable":true,"IsInjured":false},{"Id":8982,"FootballClubId":4,"FootballPlayerPositionId":3,"Price":11.93,"IsPlayable":true,"IsInjured":false},{"Id":8983,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":4.69,"IsPlayable":true,"IsInjured":false},{"Id":9030,"FootballClubId":1,"FootballPlayerPositionId":2,"Price":6.34,"IsPlayable":true,"IsInjured":false},{"Id":9060,"FootballClubId":18,"FootballPlayerPositionId":4,"Price":9.91,"IsPlayable":true,"IsInjured":false},{"Id":9117,"FootballClubId":5,"FootballPlayerPositionId":2,"Price":4.50,"IsPlayable":true,"IsInjured":false},{"Id":9167,"FootballClubId":17,"FootballPlayerPositionId":3,"Price":10.57,"IsPlayable":true,"IsInjured":false},{"Id":9169,"FootballClubId":15,"FootballPlayerPositionId":2,"Price":8.13,"IsPlayable":true,"IsInjured":false},{"Id":9251,"FootballClubId":13,"FootballPlayerPositionId":1,"Price":4.41,"IsPlayable":true,"IsInjured":false},{"Id":9257,"FootballClubId":13,"FootballPlayerPositionId":2,"Price":10.45,"IsPlayable":true,"IsInjured":false},{"Id":9322,"FootballClubId":15,"FootballPlayerPositionId":2,"Price":10.79,"IsPlayable":true,"IsInjured":false},{"Id":9377,"FootballClubId":3,"FootballPlayerPositionId":3,"Price":9.35,"IsPlayable":true,"IsInjured":false},{"Id":9417,"FootballClubId":19,"FootballPlayerPositionId":4,"Price":9.77,"IsPlayable":true,"IsInjured":false},{"Id":9431,"FootballClubId":15,"FootballPlayerPositionId":3,"Price":5.94,"IsPlayable":true,"IsInjured":false},{"Id":9468,"FootballClubId":16,"FootballPlayerPositionId":4,"Price":4.19,"IsPlayable":true,"IsInjured":false},{"Id":9491,"FootballClubId":15,"FootballPlayerPositionId":2,"Price":5.52,"IsPlayable":true,"IsInjured":false},{"Id":9496,"FootballClubId":3,"FootballPlayerPositionId":4,"Price":9.14,"IsPlayable":true,"IsInjured":false},{"Id":9566,"FootballClubId":9,"FootballPlayerPositionId":2,"Price":8.78,"IsPlayable":true,"IsInjured":false},{"Id":9567,"FootballClubId":15,"FootballPlayerPositionId":2,"Price":9.08,"IsPlayable":true,"IsInjured":false},{"Id":9576,"FootballClubId":8,"FootballPlayerPositionId":4,"Price":8.24,"IsPlayable":true,"IsInjured":false},{"Id":9595,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":8.08,"IsPlayable":true,"IsInjured":false},{"Id":9649,"FootballClubId":16,"FootballPlayerPositionId":2,"Price":10.24,"IsPlayable":true,"IsInjured":false},{"Id":9650,"FootballClubId":16,"FootballPlayerPositionId":4,"Price":9.14,"IsPlayable":true,"IsInjured":false},{"Id":9662,"FootballClubId":13,"FootballPlayerPositionId":3,"Price":9.70,"IsPlayable":true,"IsInjured":false},{"Id":9762,"FootballClubId":18,"FootballPlayerPositionId":1,"Price":7.70,"IsPlayable":true,"IsInjured":false},{"Id":9826,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":4.17,"IsPlayable":true,"IsInjured":false},{"Id":9895,"FootballClubId":8,"FootballPlayerPositionId":2,"Price":9.02,"IsPlayable":true,"IsInjured":false},{"Id":9947,"FootballClubId":18,"FootballPlayerPositionId":4,"Price":10.98,"IsPlayable":true,"IsInjured":false},{"Id":10000,"FootballClubId":3,"FootballPlayerPositionId":2,"Price":5.15,"IsPlayable":true,"IsInjured":false},{"Id":10079,"FootballClubId":5,"FootballPlayerPositionId":1,"Price":11.18,"IsPlayable":true,"IsInjured":false},{"Id":10123,"FootballClubId":18,"FootballPlayerPositionId":2,"Price":5.17,"IsPlayable":true,"IsInjured":false},{"Id":10428,"FootballClubId":2,"FootballPlayerPositionId":3,"Price":10.09,"IsPlayable":true,"IsInjured":false},{"Id":10430,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":6.18,"IsPlayable":true,"IsInjured":false},{"Id":10432,"FootballClubId":3,"FootballPlayerPositionId":4,"Price":10.92,"IsPlayable":true,"IsInjured":false},{"Id":10433,"FootballClubId":3,"FootballPlayerPositionId":3,"Price":8.98,"IsPlayable":true,"IsInjured":false},{"Id":10443,"FootballClubId":1,"FootballPlayerPositionId":4,"Price":10.53,"IsPlayable":true,"IsInjured":false},{"Id":10451,"FootballClubId":8,"FootballPlayerPositionId":3,"Price":11.82,"IsPlayable":true,"IsInjured":false},{"Id":10454,"FootballClubId":8,"FootballPlayerPositionId":3,"Price":6.79,"IsPlayable":true,"IsInjured":false},{"Id":10455,"FootballClubId":8,"FootballPlayerPositionId":3,"Price":8.54,"IsPlayable":true,"IsInjured":false},{"Id":10458,"FootballClubId":10,"FootballPlayerPositionId":2,"Price":4.58,"IsPlayable":true,"IsInjured":false},{"Id":10465,"FootballClubId":10,"FootballPlayerPositionId":4,"Price":6.02,"IsPlayable":true,"IsInjured":false},{"Id":10466,"FootballClubId":6,"FootballPlayerPositionId":1,"Price":10.46,"IsPlayable":true,"IsInjured":false},{"Id":10467,"FootballClubId":11,"FootballPlayerPositionId":2,"Price":8.94,"IsPlayable":true,"IsInjured":false},{"Id":10472,"FootballClubId":12,"FootballPlayerPositionId":2,"Price":7.11,"IsPlayable":true,"IsInjured":false},{"Id":10476,"FootballClubId":12,"FootballPlayerPositionId":3,"Price":11.73,"IsPlayable":true,"IsInjured":false},{"Id":10479,"FootballClubId":13,"FootballPlayerPositionId":1,"Price":11.46,"IsPlayable":true,"IsInjured":false},{"Id":10480,"FootballClubId":18,"FootballPlayerPositionId":2,"Price":6.45,"IsPlayable":true,"IsInjured":false},{"Id":10483,"FootballClubId":13,"FootballPlayerPositionId":3,"Price":11.37,"IsPlayable":true,"IsInjured":false},{"Id":10487,"FootballClubId":9,"FootballPlayerPositionId":4,"Price":7.44,"IsPlayable":true,"IsInjured":false},{"Id":10522,"FootballClubId":13,"FootballPlayerPositionId":2,"Price":10.63,"IsPlayable":true,"IsInjured":false},{"Id":10535,"FootballClubId":19,"FootballPlayerPositionId":2,"Price":10.81,"IsPlayable":true,"IsInjured":false},{"Id":10539,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":5.66,"IsPlayable":true,"IsInjured":false},{"Id":10542,"FootballClubId":2,"FootballPlayerPositionId":1,"Price":7.90,"IsPlayable":true,"IsInjured":false},{"Id":10559,"FootballClubId":5,"FootballPlayerPositionId":4,"Price":4.18,"IsPlayable":true,"IsInjured":false},{"Id":10564,"FootballClubId":8,"FootballPlayerPositionId":2,"Price":9.92,"IsPlayable":true,"IsInjured":false},{"Id":10565,"FootballClubId":3,"FootballPlayerPositionId":2,"Price":8.25,"IsPlayable":true,"IsInjured":false},{"Id":10604,"FootballClubId":3,"FootballPlayerPositionId":3,"Price":5.62,"IsPlayable":true,"IsInjured":false},{"Id":10651,"FootballClubId":10,"FootballPlayerPositionId":2,"Price":10.95,"IsPlayable":true,"IsInjured":false},{"Id":10766,"FootballClubId":1,"FootballPlayerPositionId":3,"Price":6.72,"IsPlayable":true,"IsInjured":false},{"Id":10855,"FootballClubId":7,"FootballPlayerPositionId":1,"Price":9.86,"IsPlayable":true,"IsInjured":false},{"Id":10881,"FootballClubId":1,"FootballPlayerPositionId":2,"Price":7.26,"IsPlayable":true,"IsInjured":false},{"Id":10905,"FootballClubId":16,"FootballPlayerPositionId":4,"Price":11.14,"IsPlayable":true,"IsInjured":false},{"Id":10968,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":9.05,"IsPlayable":true,"IsInjured":false},{"Id":11033,"FootballClubId":3,"FootballPlayerPositionId":3,"Price":8.33,"IsPlayable":true,"IsInjured":false},{"Id":11044,"FootballClubId":11,"FootballPlayerPositionId":2,"Price":11.54,"IsPlayable":true,"IsInjured":false},{"Id":11071,"FootballClubId":20,"FootballPlayerPositionId":4,"Price":4.82,"IsPlayable":true,"IsInjured":false},{"Id":11111,"FootballClubId":14,"FootballPlayerPositionId":4,"Price":10.90,"IsPlayable":true,"IsInjured":false},{"Id":11180,"FootballClubId":20,"FootballPlayerPositionId":3,"Price":5.22,"IsPlayable":true,"IsInjured":false},{"Id":11213,"FootballClubId":18,"FootballPlayerPositionId":3,"Price":6.64,"IsPlayable":true,"IsInjured":false},{"Id":11247,"FootballClubId":10,"FootballPlayerPositionId":3,"Price":8.86,"IsPlayable":true,"IsInjured":false},{"Id":11259,"FootballClubId":20,"FootballPlayerPositionId":3,"Price":4.33,"IsPlayable":true,"IsInjured":false},{"Id":11260,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":4.52,"IsPlayable":true,"IsInjured":false},{"Id":11272,"FootballClubId":12,"FootballPlayerPositionId":4,"Price":10.74,"IsPlayable":true,"IsInjured":false},{"Id":11284,"FootballClubId":19,"FootballPlayerPositionId":2,"Price":6.26,"IsPlayable":true,"IsInjured":false},{"Id":11293,"FootballClubId":17,"FootballPlayerPositionId":2,"Price":8.32,"IsPlayable":true,"IsInjured":false},{"Id":11341,"FootballClubId":20,"FootballPlayerPositionId":1,"Price":4.19,"IsPlayable":true,"IsInjured":false},{"Id":11347,"FootballClubId":16,"FootballPlayerPositionId":2,"Price":11.57,"IsPlayable":true,"IsInjured":false},{"Id":11357,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":6.52,"IsPlayable":true,"IsInjured":false},{"Id":11364,"FootballClubId":9,"FootballPlayerPositionId":4,"Price":9.69,"IsPlayable":true,"IsInjured":false},{"Id":11373,"FootballClubId":6,"FootballPlayerPositionId":1,"Price":5.14,"IsPlayable":true,"IsInjured":false},{"Id":11575,"FootballClubId":2,"FootballPlayerPositionId":2,"Price":9.05,"IsPlayable":true,"IsInjured":false},{"Id":11579,"FootballClubId":15,"FootballPlayerPositionId":2,"Price":4.57,"IsPlayable":true,"IsInjured":false},{"Id":11965,"FootballClubId":1,"FootballPlayerPositionId":3,"Price":5.90,"IsPlayable":true,"IsInjured":false},{"Id":12114,"FootballClubId":8,"FootballPlayerPositionId":4,"Price":10.71,"IsPlayable":true,"IsInjured":false},{"Id":12136,"FootballClubId":2,"FootballPlayerPositionId":3,"Price":10.92,"IsPlayable":true,"IsInjured":false},{"Id":12186,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":7.22,"IsPlayable":true,"IsInjured":false},{"Id":12192,"FootballClubId":4,"FootballPlayerPositionId":1,"Price":6.47,"IsPlayable":true,"IsInjured":false},{"Id":12212,"FootballClubId":4,"FootballPlayerPositionId":4,"Price":6.33,"IsPlayable":true,"IsInjured":false},{"Id":12299,"FootballClubId":20,"FootballPlayerPositionId":4,"Price":5.96,"IsPlayable":true,"IsInjured":false},{"Id":12306,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":5.25,"IsPlayable":true,"IsInjured":false},{"Id":12316,"FootballClubId":10,"FootballPlayerPositionId":3,"Price":4.40,"IsPlayable":true,"IsInjured":false},{"Id":12365,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":4.23,"IsPlayable":true,"IsInjured":false},{"Id":12444,"FootballClubId":8,"FootballPlayerPositionId":1,"Price":9.69,"IsPlayable":true,"IsInjured":false},{"Id":12520,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":11.53,"IsPlayable":true,"IsInjured":false},{"Id":12582,"FootballClubId":8,"FootballPlayerPositionId":3,"Price":11.29,"IsPlayable":true,"IsInjured":false},{"Id":12584,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":11.50,"IsPlayable":true,"IsInjured":false},{"Id":12707,"FootballClubId":11,"FootballPlayerPositionId":1,"Price":8.13,"IsPlayable":true,"IsInjured":false},{"Id":12854,"FootballClubId":12,"FootballPlayerPositionId":2,"Price":9.50,"IsPlayable":true,"IsInjured":false},{"Id":12891,"FootballClubId":14,"FootballPlayerPositionId":2,"Price":7.43,"IsPlayable":true,"IsInjured":false},{"Id":12937,"FootballClubId":12,"FootballPlayerPositionId":2,"Price":8.12,"IsPlayable":true,"IsInjured":false},{"Id":13130,"FootballClubId":3,"FootballPlayerPositionId":3,"Price":7.13,"IsPlayable":true,"IsInjured":false},{"Id":13193,"FootballClubId":1,"FootballPlayerPositionId":2,"Price":8.39,"IsPlayable":true,"IsInjured":false},{"Id":13195,"FootballClubId":1,"FootballPlayerPositionId":4,"Price":9.29,"IsPlayable":true,"IsInjured":false},{"Id":13234,"FootballClubId":4,"FootballPlayerPositionId":4,"Price":6.64,"IsPlayable":true,"IsInjured":false},{"Id":13240,"FootballClubId":3,"FootballPlayerPositionId":4,"Price":6.63,"IsPlayable":true,"IsInjured":false},{"Id":13248,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":8.37,"IsPlayable":true,"IsInjured":false},{"Id":13278,"FootballClubId":8,"FootballPlayerPositionId":4,"Price":11.41,"IsPlayable":true,"IsInjured":false},{"Id":13279,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":4.85,"IsPlayable":true,"IsInjured":false},{"Id":13280,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":8.40,"IsPlayable":true,"IsInjured":false},{"Id":13283,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":5.34,"IsPlayable":true,"IsInjured":false},{"Id":13285,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":10.62,"IsPlayable":true,"IsInjured":false},{"Id":13286,"FootballClubId":6,"FootballPlayerPositionId":4,"Price":4.52,"IsPlayable":true,"IsInjured":false},{"Id":13340,"FootballClubId":7,"FootballPlayerPositionId":3,"Price":5.25,"IsPlayable":true,"IsInjured":false},{"Id":13389,"FootballClubId":8,"FootballPlayerPositionId":3,"Price":10.32,"IsPlayable":true,"IsInjured":false},{"Id":13390,"FootballClubId":8,"FootballPlayerPositionId":4,"Price":9.82,"IsPlayable":true,"IsInjured":false},{"Id":13491,"FootballClubId":9,"FootballPlayerPositionId":2,"Price":7.82,"IsPlayable":true,"IsInjured":false},{"Id":13492,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":9.01,"IsPlayable":true,"IsInjured":false},{"Id":13511,"FootballClubId":10,"FootballPlayerPositionId":4,"Price":11.07,"IsPlayable":true,"IsInjured":false},{"Id":13515,"FootballClubId":9,"FootballPlayerPositionId":2,"Price":9.63,"IsPlayable":true,"IsInjured":false},{"Id":13522,"FootballClubId":20,"FootballPlayerPositionId":2,"Price":11.74,"IsPlayable":true,"IsInjured":false},{"Id":13549,"FootballClubId":11,"FootballPlayerPositionId":2,"Price":6.07,"IsPlayable":true,"IsInjured":false},{"Id":13554,"FootballClubId":9,"FootballPlayerPositionId":4,"Price":4.30,"IsPlayable":true,"IsInjured":false},{"Id":13555,"FootballClubId":12,"FootballPlayerPositionId":1,"Price":11.52,"IsPlayable":true,"IsInjured":false},{"Id":13559,"FootballClubId":12,"FootballPlayerPositionId":2,"Price":5.56,"IsPlayable":true,"IsInjured":false},{"Id":13561,"FootballClubId":12,"FootballPlayerPositionId":2,"Price":7.77,"IsPlayable":true,"IsInjured":false},{"Id":13565,"FootballClubId":12,"FootballPlayerPositionId":4,"Price":11.30,"IsPlayable":true,"IsInjured":false},{"Id":13703,"FootballClubId":1,"FootballPlayerPositionId":1,"Price":11.14,"IsPlayable":true,"IsInjured":false},{"Id":13706,"FootballClubId":1,"FootballPlayerPositionId":3,"Price":6.97,"IsPlayable":true,"IsInjured":false},{"Id":13716,"FootballClubId":8,"FootballPlayerPositionId":2,"Price":6.92,"IsPlayable":true,"IsInjured":false},{"Id":13797,"FootballClubId":12,"FootballPlayerPositionId":3,"Price":4.32,"IsPlayable":true,"IsInjured":false},{"Id":13815,"FootballClubId":17,"FootballPlayerPositionId":2,"Price":10.42,"IsPlayable":true,"IsInjured":false},{"Id":13822,"FootballClubId":18,"FootballPlayerPositionId":2,"Price":4.44,"IsPlayable":true,"IsInjured":false},{"Id":13823,"FootballClubId":18,"FootballPlayerPositionId":3,"Price":11.44,"IsPlayable":true,"IsInjured":false},{"Id":13825,"FootballClubId":18,"FootballPlayerPositionId":4,"Price":9.56,"IsPlayable":true,"IsInjured":false},{"Id":13871,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":11.88,"IsPlayable":true,"IsInjured":false},{"Id":13872,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":9.40,"IsPlayable":true,"IsInjured":false},{"Id":13903,"FootballClubId":20,"FootballPlayerPositionId":4,"Price":7.80,"IsPlayable":true,"IsInjured":false},{"Id":13961,"FootballClubId":10,"FootballPlayerPositionId":3,"Price":6.12,"IsPlayable":true,"IsInjured":false},{"Id":13984,"FootballClubId":10,"FootballPlayerPositionId":3,"Price":7.47,"IsPlayable":true,"IsInjured":false},{"Id":14063,"FootballClubId":1,"FootballPlayerPositionId":2,"Price":6.50,"IsPlayable":true,"IsInjured":false},{"Id":14149,"FootballClubId":7,"FootballPlayerPositionId":2,"Price":5.68,"IsPlayable":true,"IsInjured":false},{"Id":14164,"FootballClubId":12,"FootballPlayerPositionId":2,"Price":6.08,"IsPlayable":true,"IsInjured":false},{"Id":14267,"FootballClubId":15,"FootballPlayerPositionId":4,"Price":11.33,"IsPlayable":true,"IsInjured":false},{"Id":14428,"FootballClubId":8,"FootballPlayerPositionId":1,"Price":4.33,"IsPlayable":true,"IsInjured":false},{"Id":14441,"FootballClubId":5,"FootballPlayerPositionId":3,"Price":9.70,"IsPlayable":true,"IsInjured":false},{"Id":14445,"FootballClubId":2,"FootballPlayerPositionId":3,"Price":6.04,"IsPlayable":true,"IsInjured":false},{"Id":14446,"FootballClubId":2,"FootballPlayerPositionId":3,"Price":9.35,"IsPlayable":true,"IsInjured":false},{"Id":14451,"FootballClubId":2,"FootballPlayerPositionId":4,"Price":6.53,"IsPlayable":true,"IsInjured":false},{"Id":14473,"FootballClubId":3,"FootballPlayerPositionId":2,"Price":6.83,"IsPlayable":true,"IsInjured":false},{"Id":14477,"FootballClubId":3,"FootballPlayerPositionId":2,"Price":9.59,"IsPlayable":true,"IsInjured":false},{"Id":14487,"FootballClubId":3,"FootballPlayerPositionId":3,"Price":10.37,"IsPlayable":true,"IsInjured":false},{"Id":14490,"FootballClubId":3,"FootballPlayerPositionId":3,"Price":11.31,"IsPlayable":true,"IsInjured":false},{"Id":14538,"FootballClubId":4,"FootballPlayerPositionId":1,"Price":8.07,"IsPlayable":true,"IsInjured":false},{"Id":14554,"FootballClubId":4,"FootballPlayerPositionId":3,"Price":10.10,"IsPlayable":true,"IsInjured":false},{"Id":14565,"FootballClubId":6,"FootballPlayerPositionId":1,"Price":9.81,"IsPlayable":true,"IsInjured":false},{"Id":14569,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":7.88,"IsPlayable":true,"IsInjured":false},{"Id":14571,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":11.87,"IsPlayable":true,"IsInjured":false},{"Id":14572,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":6.37,"IsPlayable":true,"IsInjured":false},{"Id":14575,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":4.71,"IsPlayable":true,"IsInjured":false},{"Id":14587,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":8.68,"IsPlayable":true,"IsInjured":false},{"Id":14589,"FootballClubId":10,"FootballPlayerPositionId":3,"Price":7.56,"IsPlayable":true,"IsInjured":false},{"Id":14593,"FootballClubId":6,"FootballPlayerPositionId":4,"Price":5.05,"IsPlayable":true,"IsInjured":false},{"Id":14623,"FootballClubId":8,"FootballPlayerPositionId":3,"Price":5.86,"IsPlayable":true,"IsInjured":false},{"Id":14637,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":4.39,"IsPlayable":true,"IsInjured":false},{"Id":14693,"FootballClubId":9,"FootballPlayerPositionId":2,"Price":10.86,"IsPlayable":true,"IsInjured":false},{"Id":14716,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":5.52,"IsPlayable":true,"IsInjured":false},{"Id":14723,"FootballClubId":10,"FootballPlayerPositionId":1,"Price":10.90,"IsPlayable":true,"IsInjured":false},{"Id":14732,"FootballClubId":10,"FootballPlayerPositionId":2,"Price":10.95,"IsPlayable":true,"IsInjured":false},{"Id":14742,"FootballClubId":10,"FootballPlayerPositionId":4,"Price":5.83,"IsPlayable":true,"IsInjured":false},{"Id":14758,"FootballClubId":10,"FootballPlayerPositionId":4,"Price":10.28,"IsPlayable":true,"IsInjured":false},{"Id":14766,"FootballClubId":11,"FootballPlayerPositionId":1,"Price":8.82,"IsPlayable":true,"IsInjured":false},{"Id":14779,"FootballClubId":15,"FootballPlayerPositionId":2,"Price":4.27,"IsPlayable":true,"IsInjured":false},{"Id":14793,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":8.83,"IsPlayable":true,"IsInjured":false},{"Id":14805,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":6.39,"IsPlayable":true,"IsInjured":false},{"Id":14807,"FootballClubId":11,"FootballPlayerPositionId":4,"Price":6.31,"IsPlayable":true,"IsInjured":false},{"Id":14824,"FootballClubId":12,"FootballPlayerPositionId":3,"Price":9.56,"IsPlayable":true,"IsInjured":false},{"Id":14830,"FootballClubId":12,"FootballPlayerPositionId":3,"Price":4.62,"IsPlayable":true,"IsInjured":false},{"Id":14835,"FootballClubId":12,"FootballPlayerPositionId":3,"Price":11.06,"IsPlayable":true,"IsInjured":false},{"Id":14875,"FootballClubId":13,"FootballPlayerPositionId":1,"Price":5.76,"IsPlayable":true,"IsInjured":false},{"Id":14897,"FootballClubId":13,"FootballPlayerPositionId":3,"Price":11.02,"IsPlayable":true,"IsInjured":false},{"Id":14909,"FootballClubId":14,"FootballPlayerPositionId":1,"Price":11.17,"IsPlayable":true,"IsInjured":false},{"Id":14916,"FootballClubId":14,"FootballPlayerPositionId":2,"Price":11.90,"IsPlayable":true,"IsInjured":false},{"Id":14924,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":9.11,"IsPlayable":true,"IsInjured":false},{"Id":14938,"FootballClubId":14,"FootballPlayerPositionId":2,"Price":11.53,"IsPlayable":true,"IsInjured":false},{"Id":14944,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":8.05,"IsPlayable":true,"IsInjured":false},{"Id":14949,"FootballClubId":7,"FootballPlayerPositionId":1,"Price":8.45,"IsPlayable":true,"IsInjured":false},{"Id":14982,"FootballClubId":16,"FootballPlayerPositionId":1,"Price":11.82,"IsPlayable":true,"IsInjured":false},{"Id":15002,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":11.69,"IsPlayable":true,"IsInjured":false},{"Id":15011,"FootballClubId":16,"FootballPlayerPositionId":2,"Price":11.21,"IsPlayable":true,"IsInjured":false},{"Id":15017,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":5.34,"IsPlayable":true,"IsInjured":false},{"Id":15111,"FootballClubId":17,"FootballPlayerPositionId":1,"Price":4.74,"IsPlayable":true,"IsInjured":false},{"Id":15123,"FootballClubId":17,"FootballPlayerPositionId":2,"Price":8.80,"IsPlayable":true,"IsInjured":false},{"Id":15134,"FootballClubId":7,"FootballPlayerPositionId":3,"Price":10.28,"IsPlayable":true,"IsInjured":false},{"Id":15136,"FootballClubId":17,"FootballPlayerPositionId":3,"Price":10.55,"IsPlayable":true,"IsInjured":false},{"Id":15137,"FootballClubId":17,"FootballPlayerPositionId":4,"Price":4.81,"IsPlayable":true,"IsInjured":false},{"Id":15199,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":9.10,"IsPlayable":true,"IsInjured":false},{"Id":15200,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":6.19,"IsPlayable":true,"IsInjured":false},{"Id":15202,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":10.59,"IsPlayable":true,"IsInjured":false},{"Id":15211,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":6.68,"IsPlayable":true,"IsInjured":false},{"Id":15212,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":4.95,"IsPlayable":true,"IsInjured":false},{"Id":15226,"FootballClubId":20,"FootballPlayerPositionId":2,"Price":7.08,"IsPlayable":true,"IsInjured":false},{"Id":15258,"FootballClubId":20,"FootballPlayerPositionId":4,"Price":10.30,"IsPlayable":true,"IsInjured":false},{"Id":15259,"FootballClubId":20,"FootballPlayerPositionId":3,"Price":4.80,"IsPlayable":true,"IsInjured":false},{"Id":15269,"FootballClubId":16,"FootballPlayerPositionId":1,"Price":9.91,"IsPlayable":true,"IsInjured":false},{"Id":15293,"FootballClubId":4,"FootballPlayerPositionId":3,"Price":4.39,"IsPlayable":true,"IsInjured":false},{"Id":15322,"FootballClubId":8,"FootballPlayerPositionId":4,"Price":10.68,"IsPlayable":true,"IsInjured":false},{"Id":15374,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":10.81,"IsPlayable":true,"IsInjured":false},{"Id":15375,"FootballClubId":16,"FootballPlayerPositionId":4,"Price":5.20,"IsPlayable":true,"IsInjured":false},{"Id":15480,"FootballClubId":4,"FootballPlayerPositionId":4,"Price":6.19,"IsPlayable":true,"IsInjured":false},{"Id":15481,"FootballClubId":17,"FootballPlayerPositionId":4,"Price":6.68,"IsPlayable":true,"IsInjured":false},{"Id":15549,"FootballClubId":3,"FootballPlayerPositionId":2,"Price":9.15,"IsPlayable":true,"IsInjured":false},{"Id":15558,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":11.19,"IsPlayable":true,"IsInjured":false},{"Id":15559,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":10.41,"IsPlayable":true,"IsInjured":false},{"Id":15580,"FootballClubId":3,"FootballPlayerPositionId":4,"Price":7.32,"IsPlayable":true,"IsInjured":false},{"Id":15661,"FootballClubId":3,"FootballPlayerPositionId":3,"Price":10.33,"IsPlayable":true,"IsInjured":false},{"Id":15685,"FootballClubId":7,"FootballPlayerPositionId":4,"Price":11.31,"IsPlayable":true,"IsInjured":false},{"Id":15938,"FootballClubId":17,"FootballPlayerPositionId":3,"Price":5.03,"IsPlayable":true,"IsInjured":false},{"Id":15967,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":6.17,"IsPlayable":true,"IsInjured":false},{"Id":15989,"FootballClubId":16,"FootballPlayerPositionId":4,"Price":11.74,"IsPlayable":true,"IsInjured":false},{"Id":16088,"FootballClubId":18,"FootballPlayerPositionId":3,"Price":5.80,"IsPlayable":true,"IsInjured":false},{"Id":16204,"FootballClubId":20,"FootballPlayerPositionId":2,"Price":10.87,"IsPlayable":true,"IsInjured":false},{"Id":16234,"FootballClubId":4,"FootballPlayerPositionId":2,"Price":9.43,"IsPlayable":true,"IsInjured":false},{"Id":16270,"FootballClubId":20,"FootballPlayerPositionId":4,"Price":6.37,"IsPlayable":true,"IsInjured":false},{"Id":16286,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":7.88,"IsPlayable":true,"IsInjured":false},{"Id":16467,"FootballClubId":11,"FootballPlayerPositionId":2,"Price":7.13,"IsPlayable":true,"IsInjured":false},{"Id":16607,"FootballClubId":13,"FootballPlayerPositionId":2,"Price":7.65,"IsPlayable":true,"IsInjured":false},{"Id":16671,"FootballClubId":9,"FootballPlayerPositionId":2,"Price":9.62,"IsPlayable":true,"IsInjured":false},{"Id":16790,"FootballClubId":4,"FootballPlayerPositionId":3,"Price":6.97,"IsPlayable":true,"IsInjured":false},{"Id":16801,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":6.21,"IsPlayable":true,"IsInjured":false},{"Id":16803,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":4.40,"IsPlayable":true,"IsInjured":false},{"Id":19589,"FootballClubId":16,"FootballPlayerPositionId":2,"Price":7.74,"IsPlayable":true,"IsInjured":false},{"Id":19603,"FootballClubId":1,"FootballPlayerPositionId":4,"Price":8.37,"IsPlayable":true,"IsInjured":false},{"Id":19605,"FootballClubId":18,"FootballPlayerPositionId":2,"Price":10.77,"IsPlayable":true,"IsInjured":false},{"Id":19617,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":8.75,"IsPlayable":true,"IsInjured":false},{"Id":19618,"FootballClubId":18,"FootballPlayerPositionId":4,"Price":10.60,"IsPlayable":true,"IsInjured":false},{"Id":19620,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":5.40,"IsPlayable":true,"IsInjured":false},{"Id":19675,"FootballClubId":14,"FootballPlayerPositionId":1,"Price":7.49,"IsPlayable":true,"IsInjured":false},{"Id":19678,"FootballClubId":18,"FootballPlayerPositionId":3,"Price":6.46,"IsPlayable":true,"IsInjured":false},{"Id":19679,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":7.29,"IsPlayable":true,"IsInjured":false},{"Id":19680,"FootballClubId":11,"FootballPlayerPositionId":4,"Price":4.63,"IsPlayable":true,"IsInjured":false},{"Id":19731,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":11.88,"IsPlayable":true,"IsInjured":false},{"Id":19758,"FootballClubId":20,"FootballPlayerPositionId":3,"Price":11.35,"IsPlayable":true,"IsInjured":false},{"Id":19880,"FootballClubId":2,"FootballPlayerPositionId":4,"Price":11.21,"IsPlayable":true,"IsInjured":false},{"Id":19888,"FootballClubId":3,"FootballPlayerPositionId":3,"Price":7.29,"IsPlayable":true,"IsInjured":false},{"Id":19922,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":10.24,"IsPlayable":true,"IsInjured":false},{"Id":19928,"FootballClubId":11,"FootballPlayerPositionId":4,"Price":7.12,"IsPlayable":true,"IsInjured":false},{"Id":19929,"FootballClubId":11,"FootballPlayerPositionId":4,"Price":10.60,"IsPlayable":true,"IsInjured":false},{"Id":19951,"FootballClubId":13,"FootballPlayerPositionId":2,"Price":7.48,"IsPlayable":true,"IsInjured":false},{"Id":19967,"FootballClubId":13,"FootballPlayerPositionId":3,"Price":11.48,"IsPlayable":true,"IsInjured":false},{"Id":19970,"FootballClubId":14,"FootballPlayerPositionId":2,"Price":8.97,"IsPlayable":true,"IsInjured":false},{"Id":20109,"FootballClubId":16,"FootballPlayerPositionId":2,"Price":6.58,"IsPlayable":true,"IsInjured":false},{"Id":20171,"FootballClubId":20,"FootballPlayerPositionId":2,"Price":6.81,"IsPlayable":true,"IsInjured":false},{"Id":20183,"FootballClubId":4,"FootballPlayerPositionId":2,"Price":7.05,"IsPlayable":true,"IsInjured":false},{"Id":20196,"FootballClubId":13,"FootballPlayerPositionId":4,"Price":5.90,"IsPlayable":true,"IsInjured":false},{"Id":20224,"FootballClubId":17,"FootballPlayerPositionId":2,"Price":9.17,"IsPlayable":true,"IsInjured":false},{"Id":20277,"FootballClubId":20,"FootballPlayerPositionId":2,"Price":10.07,"IsPlayable":true,"IsInjured":false},{"Id":20479,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":6.67,"IsPlayable":true,"IsInjured":false},{"Id":20486,"FootballClubId":4,"FootballPlayerPositionId":3,"Price":10.17,"IsPlayable":true,"IsInjured":false},{"Id":20559,"FootballClubId":10,"FootballPlayerPositionId":1,"Price":7.08,"IsPlayable":true,"IsInjured":false},{"Id":20745,"FootballClubId":20,"FootballPlayerPositionId":3,"Price":10.33,"IsPlayable":true,"IsInjured":false},{"Id":20858,"FootballClubId":12,"FootballPlayerPositionId":3,"Price":6.47,"IsPlayable":true,"IsInjured":false},{"Id":20929,"FootballClubId":18,"FootballPlayerPositionId":2,"Price":10.35,"IsPlayable":true,"IsInjured":false},{"Id":21413,"FootballClubId":17,"FootballPlayerPositionId":3,"Price":11.74,"IsPlayable":true,"IsInjured":false},{"Id":21532,"FootballClubId":16,"FootballPlayerPositionId":4,"Price":9.59,"IsPlayable":true,"IsInjured":false},{"Id":21585,"FootballClubId":1,"FootballPlayerPositionId":2,"Price":4.98,"IsPlayable":true,"IsInjured":false},{"Id":21611,"FootballClubId":3,"FootballPlayerPositionId":1,"Price":7.82,"IsPlayable":true,"IsInjured":false},{"Id":21653,"FootballClubId":4,"FootballPlayerPositionId":4,"Price":4.48,"IsPlayable":true,"IsInjured":true},{"Id":21702,"FootballClubId":20,"FootballPlayerPositionId":3,"Price":8.51,"IsPlayable":true,"IsInjured":false},{"Id":21774,"FootballClubId":4,"FootballPlayerPositionId":4,"Price":4.09,"IsPlayable":true,"IsInjured":false},{"Id":21887,"FootballClubId":6,"FootballPlayerPositionId":3,"Price":10.83,"IsPlayable":true,"IsInjured":false},{"Id":21958,"FootballClubId":2,"FootballPlayerPositionId":2,"Price":5.01,"IsPlayable":true,"IsInjured":false},{"Id":22040,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":8.23,"IsPlayable":true,"IsInjured":false},{"Id":22047,"FootballClubId":14,"FootballPlayerPositionId":2,"Price":6.74,"IsPlayable":true,"IsInjured":false},{"Id":22542,"FootballClubId":4,"FootballPlayerPositionId":3,"Price":6.76,"IsPlayable":true,"IsInjured":false},{"Id":22546,"FootballClubId":18,"FootballPlayerPositionId":2,"Price":9.59,"IsPlayable":true,"IsInjured":false},{"Id":22651,"FootballClubId":18,"FootballPlayerPositionId":2,"Price":11.37,"IsPlayable":true,"IsInjured":false},{"Id":23033,"FootballClubId":2,"FootballPlayerPositionId":3,"Price":4.56,"IsPlayable":true,"IsInjured":false},{"Id":23199,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":5.13,"IsPlayable":true,"IsInjured":false},{"Id":23591,"FootballClubId":4,"FootballPlayerPositionId":2,"Price":4.93,"IsPlayable":true,"IsInjured":false},{"Id":23615,"FootballClubId":8,"FootballPlayerPositionId":4,"Price":4.53,"IsPlayable":true,"IsInjured":false},{"Id":23702,"FootballClubId":6,"FootballPlayerPositionId":4,"Price":5.86,"IsPlayable":true,"IsInjured":false},{"Id":23784,"FootballClubId":9,"FootballPlayerPositionId":3,"Price":5.18,"IsPlayable":true,"IsInjured":false},{"Id":23810,"FootballClubId":5,"FootballPlayerPositionId":2,"Price":9.85,"IsPlayable":true,"IsInjured":false},{"Id":23815,"FootballClubId":10,"FootballPlayerPositionId":3,"Price":9.28,"IsPlayable":true,"IsInjured":false},{"Id":23841,"FootballClubId":12,"FootballPlayerPositionId":3,"Price":8.81,"IsPlayable":true,"IsInjured":false},{"Id":24000,"FootballClubId":7,"FootballPlayerPositionId":2,"Price":4.75,"IsPlayable":true,"IsInjured":false},{"Id":24001,"FootballClubId":16,"FootballPlayerPositionId":2,"Price":8.66,"IsPlayable":true,"IsInjured":false},{"Id":24151,"FootballClubId":19,"FootballPlayerPositionId":4,"Price":6.85,"IsPlayable":true,"IsInjured":false},{"Id":24214,"FootballClubId":1,"FootballPlayerPositionId":3,"Price":10.12,"IsPlayable":true,"IsInjured":false},{"Id":24252,"FootballClubId":12,"FootballPlayerPositionId":2,"Price":7.06,"IsPlayable":true,"IsInjured":false},{"Id":24342,"FootballClubId":7,"FootballPlayerPositionId":3,"Price":6.20,"IsPlayable":true,"IsInjured":false},{"Id":24412,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":6.14,"IsPlayable":true,"IsInjured":false},{"Id":24630,"FootballClubId":8,"FootballPlayerPositionId":4,"Price":10.65,"IsPlayable":true,"IsInjured":false},{"Id":24635,"FootballClubId":11,"FootballPlayerPositionId":2,"Price":6.84,"IsPlayable":true,"IsInjured":false},{"Id":24797,"FootballClubId":5,"FootballPlayerPositionId":4,"Price":6.90,"IsPlayable":true,"IsInjured":false},{"Id":25089,"FootballClubId":18,"FootballPlayerPositionId":3,"Price":4.65,"IsPlayable":true,"IsInjured":false},{"Id":25246,"FootballClubId":19,"FootballPlayerPositionId":3,"Price":9.54,"IsPlayable":true,"IsInjured":false},{"Id":25266,"FootballClubId":12,"FootballPlayerPositionId":4,"Price":10.90,"IsPlayable":true,"IsInjured":false},{"Id":25292,"FootballClubId":18,"FootballPlayerPositionId":2,"Price":4.96,"IsPlayable":true,"IsInjured":false},{"Id":25309,"FootballClubId":17,"FootballPlayerPositionId":2,"Price":4.72,"IsPlayable":true,"IsInjured":false},{"Id":25313,"FootballClubId":6,"FootballPlayerPositionId":2,"Price":4.08,"IsPlayable":true,"IsInjured":false},{"Id":25329,"FootballClubId":17,"FootballPlayerPositionId":3,"Price":4.47,"IsPlayable":true,"IsInjured":false},{"Id":26076,"FootballClubId":1,"FootballPlayerPositionId":2,"Price":6.89,"IsPlayable":true,"IsInjured":false},{"Id":26216,"FootballClubId":9,"FootballPlayerPositionId":2,"Price":11.32,"IsPlayable":true,"IsInjured":false},{"Id":26408,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":10.27,"IsPlayable":true,"IsInjured":false},{"Id":26556,"FootballClubId":1,"FootballPlayerPositionId":3,"Price":5.11,"IsPlayable":true,"IsInjured":false},{"Id":32435,"FootballClubId":19,"FootballPlayerPositionId":2,"Price":5.97,"IsPlayable":true,"IsInjured":false},{"Id":32638,"FootballClubId":2,"FootballPlayerPositionId":2,"Price":8.89,"IsPlayable":true,"IsInjured":false},{"Id":32728,"FootballClubId":4,"FootballPlayerPositionId":4,"Price":10.04,"IsPlayable":true,"IsInjured":false},{"Id":32923,"FootballClubId":8,"FootballPlayerPositionId":2,"Price":4.51,"IsPlayable":true,"IsInjured":false},{"Id":32936,"FootballClubId":9,"FootballPlayerPositionId":4,"Price":11.84,"IsPlayable":true,"IsInjured":false},{"Id":33061,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":8.74,"IsPlayable":true,"IsInjured":false},{"Id":33066,"FootballClubId":14,"FootballPlayerPositionId":3,"Price":9.93,"IsPlayable":true,"IsInjured":false},{"Id":33067,"FootballClubId":14,"FootballPlayerPositionId":4,"Price":11.46,"IsPlayable":true,"IsInjured":false},{"Id":33158,"FootballClubId":18,"FootballPlayerPositionId":1,"Price":4.68,"IsPlayable":true,"IsInjured":false},{"Id":33238,"FootballClubId":11,"FootballPlayerPositionId":2,"Price":4.38,"IsPlayable":true,"IsInjured":false},{"Id":35733,"FootballClubId":12,"FootballPlayerPositionId":1,"Price":11.07,"IsPlayable":true,"IsInjured":false},{"Id":37587,"FootballClubId":4,"FootballPlayerPositionId":4,"Price":4.30,"IsPlayable":true,"IsInjured":false},{"Id":37776,"FootballClubId":1,"FootballPlayerPositionId":3,"Price":4.85,"IsPlayable":true,"IsInjured":false},{"Id":40320,"FootballClubId":4,"FootballPlayerPositionId":4,"Price":6.45,"IsPlayable":true,"IsInjured":false},{"Id":47259,"FootballClubId":14,"FootballPlayerPositionId":2,"Price":10.52,"IsPlayable":true,"IsInjured":false},{"Id":49481,"FootballClubId":2,"FootballPlayerPositionId":4,"Price":4.11,"IsPlayable":true,"IsInjured":false},{"Id":49884,"FootballClubId":19,"FootballPlayerPositionId":2,"Price":8.16,"IsPlayable":true,"IsInjured":false},{"Id":49992,"FootballClubId":18,"FootballPlayerPositionId":2,"Price":7.11,"IsPlayable":true,"IsInjured":false},{"Id":50245,"FootballClubId":4,"FootballPlayerPositionId":3,"Price":6.85,"IsPlayable":true,"IsInjured":false},{"Id":50453,"FootballClubId":1,"FootballPlayerPositionId":1,"Price":4.79,"IsPlayable":true,"IsInjured":false},{"Id":50463,"FootballClubId":1,"FootballPlayerPositionId":3,"Price":9.56,"IsPlayable":true,"IsInjured":false},{"Id":50512,"FootballClubId":2,"FootballPlayerPositionId":3,"Price":5.22,"IsPlayable":true,"IsInjured":false},{"Id":50975,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":11.38,"IsPlayable":true,"IsInjured":false},{"Id":50989,"FootballClubId":11,"FootballPlayerPositionId":3,"Price":5.09,"IsPlayable":true,"IsInjured":false},{"Id":51416,"FootballClubId":3,"FootballPlayerPositionId":1,"Price":7.90,"IsPlayable":true,"IsInjured":false},{"Id":51423,"FootballClubId":3,"FootballPlayerPositionId":3,"Price":6.31,"IsPlayable":true,"IsInjured":false},{"Id":51436,"FootballClubId":4,"FootballPlayerPositionId":2,"Price":4.41,"IsPlayable":true,"IsInjured":false},{"Id":51667,"FootballClubId":4,"FootballPlayerPositionId":3,"Price":11.08,"IsPlayable":true,"IsInjured":false},{"Id":52153,"FootballClubId":16,"FootballPlayerPositionId":3,"Price":10.86,"IsPlayable":true,"IsInjured":false},{"Id":52951,"FootballClubId":10,"FootballPlayerPositionId":2,"Price":11.70,"IsPlayable":true,"IsInjured":false},{"Id":54312,"FootballClubId":13,"FootballPlayerPositionId":3,"Price":5.39,"IsPlayable":true,"IsInjured":false},{"Id":55603,"FootballClubId":5,"FootballPlayerPositionId":2,"Price":11.49,"IsPlayable":true,"IsInjured":false},{"Id":63633,"FootballClubId":4,"FootballPlayerPositionId":3,"Price":9.80,"IsPlayable":true,"IsInjured":false},{"Id":63655,"FootballClubId":4,"FootballPlayerPositionId":2,"Price":7.37,"IsPlayable":true,"IsInjured":false},{"Id":65981,"FootballClubId":5,"FootballPlayerPositionId":2,"Price":4.57,"IsPlayable":true,"IsInjured":false},{"Id":65987,"FootballClubId":10,"FootballPlayerPositionId":2,"Price":6.08,"IsPlayable":true,"IsInjured":false}]
+[
+  {
+    "Id": 1870,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 1,
+    "Price": 11.00,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2100,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.11,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2214,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 1,
+    "Price": 6.03,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2270,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.70,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2338,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.09,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2340,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.52,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2485,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.71,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2508,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 1,
+    "Price": 11.56,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2517,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.53,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2537,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 1,
+    "Price": 5.90,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2569,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 1,
+    "Price": 9.51,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2593,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.18,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2839,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 4,
+    "Price": 9.46,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2852,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 1,
+    "Price": 7.49,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2886,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.19,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2889,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.95,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2896,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.04,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2912,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 1,
+    "Price": 7.10,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2932,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.27,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2933,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 1,
+    "Price": 7.92,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 2936,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.29,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3014,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.35,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3030,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.59,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3049,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.25,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3058,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.71,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3062,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.92,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3143,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 1,
+    "Price": 10.27,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3156,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.30,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3160,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.69,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3169,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 1,
+    "Price": 6.70,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3170,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 1,
+    "Price": 6.88,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3206,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 4,
+    "Price": 5.53,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3222,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.26,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3242,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.07,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3251,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.60,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3309,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 1,
+    "Price": 7.63,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3320,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.92,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3362,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.87,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3390,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.38,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3441,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 4,
+    "Price": 8.16,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3448,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.43,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3457,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.72,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3505,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 1,
+    "Price": 11.97,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3507,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.67,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3512,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.81,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3517,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.72,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3547,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.42,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3562,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.61,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3564,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.18,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3581,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.50,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3600,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.83,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3601,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.26,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3613,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.44,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3644,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.11,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3654,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.97,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3669,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.89,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3670,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.19,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3712,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.92,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3713,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.56,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3724,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.23,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3756,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.92,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3766,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.79,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3799,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.43,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3807,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.00,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3811,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.80,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3819,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.63,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3820,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.91,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3837,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.74,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3851,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 4,
+    "Price": 5.36,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3861,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.68,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3868,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.81,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3869,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.23,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3889,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 4,
+    "Price": 7.95,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3905,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.73,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3909,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.65,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3920,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.45,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3924,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.92,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3926,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.09,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3929,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.86,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3934,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.13,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3945,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.50,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3955,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.06,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3958,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.87,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3960,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.36,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 3979,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.39,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4030,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.90,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4093,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.73,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4100,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.53,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4105,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.63,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4112,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.81,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4115,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.98,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4135,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.71,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4136,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.41,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4145,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.31,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4158,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.07,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4161,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.92,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4179,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 1,
+    "Price": 11.03,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4183,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.98,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4198,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.75,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4209,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.44,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4224,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.08,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4229,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.89,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4245,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.45,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4248,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.04,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4252,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.63,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4258,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.33,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4259,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.70,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4260,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.76,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4286,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.05,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4287,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.70,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4288,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.34,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4289,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.96,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4290,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.22,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4316,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.37,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4328,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 4,
+    "Price": 7.78,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4330,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 1,
+    "Price": 8.36,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4333,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.03,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4337,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.90,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4340,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.82,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4348,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 1,
+    "Price": 6.01,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4351,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.82,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4394,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.12,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4396,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 4,
+    "Price": 8.45,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4402,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.16,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4408,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.18,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4421,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.01,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4472,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.42,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4474,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.95,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4481,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.74,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4487,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.30,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4489,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.67,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4492,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 4,
+    "Price": 5.39,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4495,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.61,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4496,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.36,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4499,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.24,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4505,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.97,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4507,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.60,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4509,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.19,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4522,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 1,
+    "Price": 10.49,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4527,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.17,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4539,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 4,
+    "Price": 7.89,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4549,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.60,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4558,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.47,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4560,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.09,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4573,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 1,
+    "Price": 7.56,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4582,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.54,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4600,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 1,
+    "Price": 8.89,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4601,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 1,
+    "Price": 8.70,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4604,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.76,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4605,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.48,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4608,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.17,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4612,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.64,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4615,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.22,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4617,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.55,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4618,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.25,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4620,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.99,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4626,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 4,
+    "Price": 8.11,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4640,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 1,
+    "Price": 5.51,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4656,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.65,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4664,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 1,
+    "Price": 7.69,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4666,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.74,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4674,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.63,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4713,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.95,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4714,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.96,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4717,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.63,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4727,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 1,
+    "Price": 8.44,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4748,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 4,
+    "Price": 8.39,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4749,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.51,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4772,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.84,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4777,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.37,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4779,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 1,
+    "Price": 11.67,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4786,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 1,
+    "Price": 10.35,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4796,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.44,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4804,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.43,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4813,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.11,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4815,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.93,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4816,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.28,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4818,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.89,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4821,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.35,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4842,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.75,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4843,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.19,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4845,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.47,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4851,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 4,
+    "Price": 7.32,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4852,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.00,
+    "IsPlayable": true,
+    "IsInjured": true
+  },
+  {
+    "Id": 4859,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.48,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4878,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.10,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4909,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 1,
+    "Price": 9.34,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4916,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.43,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4918,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.72,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4955,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.42,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4972,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.37,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4973,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.00,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4979,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.88,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4985,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 1,
+    "Price": 7.69,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 4999,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.23,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5044,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.66,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5061,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.57,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5066,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.15,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5067,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.13,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5074,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 4,
+    "Price": 9.52,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5079,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.49,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5093,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.19,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5101,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.18,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5102,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.18,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5110,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.53,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5140,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.37,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5156,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.99,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5169,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 4,
+    "Price": 7.46,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5178,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 4,
+    "Price": 8.80,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5179,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.68,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5220,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.94,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5239,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.24,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5267,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.90,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5272,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.02,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5328,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.59,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5334,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.24,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5343,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.22,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5345,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.34,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5361,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 1,
+    "Price": 5.09,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5368,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.50,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5371,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.94,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5375,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.95,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5377,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.92,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5384,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.12,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5428,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.56,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5514,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.77,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5575,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.42,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5583,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.77,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5672,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.73,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5682,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.97,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5713,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.50,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5721,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.59,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5758,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.67,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5762,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.92,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5810,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.19,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5859,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.38,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5861,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.00,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5865,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.42,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5866,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.89,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5906,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.26,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 5907,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.87,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 6058,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.76,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 6194,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.09,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 6210,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.19,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 6251,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.93,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 6389,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.67,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 6425,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.16,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 6451,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.87,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 6519,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.91,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 6784,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.64,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 6889,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.60,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 6899,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 4,
+    "Price": 8.86,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 7114,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.29,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 7124,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.62,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 7450,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.75,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 7488,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.76,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 7490,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.74,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 7548,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 1,
+    "Price": 8.32,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 7946,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.09,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8044,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.58,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8045,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.56,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8050,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.36,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8052,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.38,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8143,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.52,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8163,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.45,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8168,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.52,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8171,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.28,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8245,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.79,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8246,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.12,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8293,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 1,
+    "Price": 11.62,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8444,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.99,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8451,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 4,
+    "Price": 8.29,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8454,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.93,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8456,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.36,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8586,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.00,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8589,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.99,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8598,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.70,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8605,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.60,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8691,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.47,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8707,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.13,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8710,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.58,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8889,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 4,
+    "Price": 7.65,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8897,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.81,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8900,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.52,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8913,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.80,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8956,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.40,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8966,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.05,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8976,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.06,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8979,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.58,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8980,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.57,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8982,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.93,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 8983,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.69,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9030,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.34,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9060,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 4,
+    "Price": 9.91,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9117,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.50,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9167,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.57,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9169,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.13,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9251,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.41,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9257,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.45,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9322,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.79,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9377,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.35,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9417,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 4,
+    "Price": 9.77,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9431,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.94,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9468,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.19,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9491,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.52,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9496,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 4,
+    "Price": 9.14,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9566,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.78,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9567,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.08,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9576,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 4,
+    "Price": 8.24,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9595,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.08,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9649,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.24,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9650,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 4,
+    "Price": 9.14,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9662,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.70,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9762,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 1,
+    "Price": 7.70,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9826,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.17,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9895,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.02,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 9947,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.98,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10000,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.15,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10079,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 1,
+    "Price": 11.18,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10123,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.17,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10428,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.09,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10430,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.18,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10432,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.92,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10433,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.98,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10443,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.53,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10451,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.82,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10454,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.79,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10455,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.54,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10458,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.58,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10465,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.02,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10466,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 1,
+    "Price": 10.46,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10467,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.94,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10472,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.11,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10476,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.73,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10479,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 1,
+    "Price": 11.46,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10480,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.45,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10483,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.37,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10487,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 4,
+    "Price": 7.44,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10522,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.63,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10535,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.81,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10539,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.66,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10542,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 1,
+    "Price": 7.90,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10559,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.18,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10564,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.92,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10565,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.25,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10604,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.62,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10651,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.95,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10766,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.72,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10855,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 1,
+    "Price": 9.86,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10881,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.26,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10905,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.14,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 10968,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.05,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11033,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.33,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11044,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.54,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11071,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.82,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11111,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.90,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11180,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.22,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11213,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.64,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11247,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.86,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11259,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.33,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11260,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.52,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11272,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.74,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11284,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.26,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11293,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.32,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11341,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.19,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11347,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.57,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11357,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.52,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11364,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 4,
+    "Price": 9.69,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11373,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 1,
+    "Price": 5.14,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11575,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.05,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11579,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.57,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 11965,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.90,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12114,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.71,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12136,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.92,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12186,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.22,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12192,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 1,
+    "Price": 6.47,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12212,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.33,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12299,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 4,
+    "Price": 5.96,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12306,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.25,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12316,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.40,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12365,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.23,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12444,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 1,
+    "Price": 9.69,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12520,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.53,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12582,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.29,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12584,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.50,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12707,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 1,
+    "Price": 8.13,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12854,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.50,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12891,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.43,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 12937,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.12,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13130,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.13,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13193,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.39,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13195,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 4,
+    "Price": 9.29,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13234,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.64,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13240,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.63,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13248,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.37,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13278,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.41,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13279,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.85,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13280,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.40,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13283,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.34,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13285,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.62,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13286,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.52,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13340,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.25,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13389,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.32,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13390,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 4,
+    "Price": 9.82,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13491,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.82,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13492,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.01,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13511,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.07,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13515,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.63,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13522,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.74,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13549,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.07,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13554,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.30,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13555,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 1,
+    "Price": 11.52,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13559,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.56,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13561,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.77,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13565,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.30,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13703,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 1,
+    "Price": 11.14,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13706,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.97,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13716,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.92,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13797,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.32,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13815,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.42,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13822,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.44,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13823,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.44,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13825,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 4,
+    "Price": 9.56,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13871,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.88,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13872,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.40,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13903,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 4,
+    "Price": 7.80,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13961,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.12,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 13984,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.47,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14063,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.50,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14149,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.68,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14164,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.08,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14267,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.33,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14428,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.33,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14441,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.70,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14445,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.04,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14446,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.35,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14451,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.53,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14473,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.83,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14477,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.59,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14487,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.37,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14490,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.31,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14538,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 1,
+    "Price": 8.07,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14554,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.10,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14565,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 1,
+    "Price": 9.81,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14569,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.88,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14571,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.87,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14572,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.37,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14575,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.71,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14587,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.68,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14589,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.56,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14593,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 4,
+    "Price": 5.05,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14623,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.86,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14637,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.39,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14693,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.86,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14716,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.52,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14723,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 1,
+    "Price": 10.90,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14732,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.95,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14742,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 4,
+    "Price": 5.83,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14758,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.28,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14766,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 1,
+    "Price": 8.82,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14779,
+    "FootballClubId": 15,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.27,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14793,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.83,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14805,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.39,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14807,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.31,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14824,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.56,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14830,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.62,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14835,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.06,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14875,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 1,
+    "Price": 5.76,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14897,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.02,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14909,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 1,
+    "Price": 11.17,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14916,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.90,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14924,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.11,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14938,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.53,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14944,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.05,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14949,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 1,
+    "Price": 8.45,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 14982,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 1,
+    "Price": 11.82,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15002,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.69,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15011,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.21,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15017,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.34,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15111,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.74,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15123,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.80,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15134,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.28,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15136,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.55,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15137,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.81,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15199,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.10,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15200,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.19,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15202,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.59,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15211,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.68,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15212,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.95,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15226,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.08,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15258,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.30,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15259,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.80,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15269,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 1,
+    "Price": 9.91,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15293,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.39,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15322,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.68,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15374,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.81,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15375,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 4,
+    "Price": 5.20,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15480,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.19,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15481,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.68,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15549,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.15,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15558,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.19,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15559,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.41,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15580,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 4,
+    "Price": 7.32,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15661,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.33,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15685,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.31,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15938,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.03,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15967,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.17,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 15989,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.74,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 16088,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.80,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 16204,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.87,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 16234,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.43,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 16270,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.37,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 16286,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.88,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 16467,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.13,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 16607,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.65,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 16671,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.62,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 16790,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.97,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 16801,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.21,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 16803,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.40,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19589,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.74,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19603,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 4,
+    "Price": 8.37,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19605,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.77,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19617,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.75,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19618,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.60,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19620,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.40,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19675,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 1,
+    "Price": 7.49,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19678,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.46,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19679,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.29,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19680,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.63,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19731,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.88,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19758,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.35,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19880,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.21,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19888,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 3,
+    "Price": 7.29,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19922,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.24,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19928,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 4,
+    "Price": 7.12,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19929,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.60,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19951,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.48,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19967,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.48,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 19970,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.97,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 20109,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.58,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 20171,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.81,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 20183,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.05,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 20196,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 4,
+    "Price": 5.90,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 20224,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.17,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 20277,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.07,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 20479,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.67,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 20486,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.17,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 20559,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 1,
+    "Price": 7.08,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 20745,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.33,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 20858,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.47,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 20929,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.35,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 21413,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.74,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 21532,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 4,
+    "Price": 9.59,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 21585,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.98,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 21611,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 1,
+    "Price": 7.82,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 21653,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.48,
+    "IsPlayable": true,
+    "IsInjured": true
+  },
+  {
+    "Id": 21702,
+    "FootballClubId": 20,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.51,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 21774,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.09,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 21887,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.83,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 21958,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.01,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 22040,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.23,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 22047,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.74,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 22542,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.76,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 22546,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.59,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 22651,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.37,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 23033,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.56,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 23199,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.13,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 23591,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.93,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 23615,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.53,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 23702,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 4,
+    "Price": 5.86,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 23784,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.18,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 23810,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 2,
+    "Price": 9.85,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 23815,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.28,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 23841,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.81,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 24000,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.75,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 24001,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.66,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 24151,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.85,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 24214,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.12,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 24252,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.06,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 24342,
+    "FootballClubId": 7,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.20,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 24412,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.14,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 24630,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.65,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 24635,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.84,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 24797,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.90,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 25089,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.65,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 25246,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.54,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 25266,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.90,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 25292,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.96,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 25309,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.72,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 25313,
+    "FootballClubId": 6,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.08,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 25329,
+    "FootballClubId": 17,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.47,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 26076,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.89,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 26216,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.32,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 26408,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.27,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 26556,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.11,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 32435,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 2,
+    "Price": 5.97,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 32638,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.89,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 32728,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 4,
+    "Price": 10.04,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 32923,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.51,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 32936,
+    "FootballClubId": 9,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.84,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 33061,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 8.74,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 33066,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.93,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 33067,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 4,
+    "Price": 11.46,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 33158,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.68,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 33238,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.38,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 35733,
+    "FootballClubId": 12,
+    "FootballPlayerPositionId": 1,
+    "Price": 11.07,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 37587,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.30,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 37776,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 3,
+    "Price": 4.85,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 40320,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 4,
+    "Price": 6.45,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 47259,
+    "FootballClubId": 14,
+    "FootballPlayerPositionId": 2,
+    "Price": 10.52,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 49481,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 4,
+    "Price": 4.11,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 49884,
+    "FootballClubId": 19,
+    "FootballPlayerPositionId": 2,
+    "Price": 8.16,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 49992,
+    "FootballClubId": 18,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.11,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 50245,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.85,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 50453,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 1,
+    "Price": 4.79,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 50463,
+    "FootballClubId": 1,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.56,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 50512,
+    "FootballClubId": 2,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.22,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 50975,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.38,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 50989,
+    "FootballClubId": 11,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.09,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 51416,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 1,
+    "Price": 7.90,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 51423,
+    "FootballClubId": 3,
+    "FootballPlayerPositionId": 3,
+    "Price": 6.31,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 51436,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.41,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 51667,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 3,
+    "Price": 11.08,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 52153,
+    "FootballClubId": 16,
+    "FootballPlayerPositionId": 3,
+    "Price": 10.86,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 52951,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.70,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 54312,
+    "FootballClubId": 13,
+    "FootballPlayerPositionId": 3,
+    "Price": 5.39,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 55603,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 2,
+    "Price": 11.49,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 63633,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 3,
+    "Price": 9.80,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 63655,
+    "FootballClubId": 4,
+    "FootballPlayerPositionId": 2,
+    "Price": 7.37,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 65981,
+    "FootballClubId": 5,
+    "FootballPlayerPositionId": 2,
+    "Price": 4.57,
+    "IsPlayable": true,
+    "IsInjured": false
+  },
+  {
+    "Id": 65987,
+    "FootballClubId": 10,
+    "FootballPlayerPositionId": 2,
+    "Price": 6.08,
+    "IsPlayable": true,
+    "IsInjured": false
+  }
+]

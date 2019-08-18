@@ -6,14 +6,14 @@ namespace Fantasy.Services.Administrator
     {
         string SeedPlayers();
 
-        string SeedStatistics();
+        string SeedStatistics(int gameweekId);
 
-        void CreateJsonFilePlayers();
+        void ExportFootballPlayers();
 
-        void CreateJsonFilePlayerInfos();
+        void ExportFootballPlayerInfos();
 
-        void CreateJsonFilesStatistics(Gameweek gameweek);
+        void ExportStatistics(Gameweek gameweek);
 
-        string SeedStatisticsFromJsonFiles(int gameweekNumber);
+        string ImportStatistics(int gameweekNumber);
     }
 }

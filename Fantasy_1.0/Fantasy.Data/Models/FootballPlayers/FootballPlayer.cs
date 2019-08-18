@@ -23,8 +23,6 @@ namespace Fantasy.Data.Models.FootballPlayers
         public int FootballClubId { get; set; }
         public FootballClub FootballClub { get; set; }
 
-        public List<MatchStatistics> BaseStatistics { get; set; } = new List<MatchStatistics>();
-
         public List<GoalkeepingStatistics> GoalkeepingStatistics { get; set; } = new List<GoalkeepingStatistics>();
 
         public List<DefenceStatistics> DefenceStatistics { get; set; } = new List<DefenceStatistics>();

@@ -16,7 +16,7 @@
                         <div class="col-2">
                             <img id="@player.Id" src="@player.InfoSmallImgUrl"
                                  onerror="src='@DefaultPlayerImageUrl';"
-                                 width="45px" class="animated bounceInDown" />
+                                 height="45px" class="animated bounceInDown" />
                         </div>
                         <div class="col-6">
                             <div class="animated bounceInUp">
@@ -31,8 +31,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-2">
-                            <img src="@player.FootballClubInfoBadgeUrl" width="40px" class="animated bounceInDown" />
+                        <div class="col-2 text-center">
+                            <img src="@player.FootballClubBadgeImgUrl" height="40px" class="animated bounceInDown"/>
                         </div>
                         <div class="col-2">
                             <p class="animated bounceInUp"><strong>@player.Price.ToPrice()</strong></p>
