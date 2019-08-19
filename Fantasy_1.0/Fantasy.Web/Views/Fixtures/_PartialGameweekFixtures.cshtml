@@ -1,0 +1,54 @@
+﻿@model List<FixtureServiceModel>
+
+<div class="row" style="border-bottom: #38003c 1px solid; padding-bottom: 5px; padding-top: 5px;"></div>
+
+@foreach (var fixture in Model.OrderBy(f => f.DateTimeStart))
+{
+    <div class="row" style="border-bottom: #38003c 1px solid; padding-bottom: 5px; padding-top: 5px;">
+
+        <div class="col-4 text-center">
+            <div class="row" >
+                <div class="col-6 animated bounceInDown" >
+                    <div style="margin-top: 8px"><strong> @fixture.HomeTeamShortName</strong></div>
+                </div>
+                <div class="col-2">
+                </div>
+                <div class="col-4">
+                    <img src="@fixture.HomeTeamBadgeImgUrl" height="40px" class="animated bounceInDown"/>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-1">
+            @fixture.Home
+
+        </div>
+        <div class="col-2 text-center animated fadeIn">
+            <div style="border: #38003c 1px solid; margin-top: 8px; background-color: #38003c; color: #ffffff">
+                @DateTime.Now
+            </div>
+        </div>
+        <div class="col-1">
+            @fixture.Away
+        </div>
+
+        <div class="col-4 text-center">
+            <div class="row">
+                <div class="col-4">
+                    <img src="@fixture.AwayTeamBadgeImgUrl" height="40px" class="animated bounceInUp"/>
+                </div>
+                <div class="col-2">
+                </div>
+                <div class="col-6 animated bounceInUp">
+                    <div style="margin-top: 8px; color: "><strong> @fixture.AwayTeamShortName</strong></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+}
+
+

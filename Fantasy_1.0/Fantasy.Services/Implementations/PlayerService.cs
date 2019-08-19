@@ -71,7 +71,7 @@ namespace Fantasy.Services.Implementations
                     && fp.FootballPlayerPosition.Name.Contains(position ?? string.Empty)
                     && fp.Info.Name.Contains(playerName ?? string.Empty);
 
-            //TODO: Generic
+            //TODO: refactor
             Expression<Func<FootballPlayer, string>> name = fp => fp.Info.Name;
             Expression<Func<FootballPlayer, decimal>> priceAscending = fp => fp.Price;
             Expression<Func<FootballPlayer, decimal>> priceDescending = fp => -fp.Price;
@@ -92,12 +92,6 @@ namespace Fantasy.Services.Implementations
                     result = result.OrderBy(name);
                     break;
             }
-
-            var a = await result
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .To<TModel>()
-                .ToListAsync();
 
             return await result
                 .Skip((page - 1) * pageSize)

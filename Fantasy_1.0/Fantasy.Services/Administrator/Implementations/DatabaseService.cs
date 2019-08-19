@@ -46,12 +46,12 @@ namespace Fantasy.Services.Administrator.Implementations
             File.WriteAllText("wwwroot/JsonFiles/footballPlayerInfos.json", JsonConvert.SerializeObject(infos));
         }
 
-        public string ExportStatistics(int gameweekId)
+        public int ExportStatistics(int gameweekId)
         {
             var gameweek = this.db.GameWeeks.Find(gameweekId);
             if (gameweek == null)
             {
-                return null;
+                return 0;
             }
 
             try
@@ -78,10 +78,10 @@ namespace Fantasy.Services.Administrator.Implementations
             }
             catch (Exception)
             {
-                return "Files were not been exported!";
+                return -1;
             }
 
-            return "Files were been exported successfully!";
+            return 1;
         }
 
         public int ImportPlayers()

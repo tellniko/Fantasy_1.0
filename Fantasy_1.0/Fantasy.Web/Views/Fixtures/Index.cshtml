@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Fixtures";
+}
+
+<br/><br/>
+     <div class="container">
+         <div class="row">
+             <div class="col-4"></div>
+             <div class="col-4">
+                 @await Component.InvokeAsync("Gameweeks", false)
+             </div>
+             <div class="col-4"></div>
+         </div>
+         <div class="row" id="fixtures">
+
+         </div>
+     </div>
+
+<script>
+    $(document).ready(function () {
+        $('#fixtures').load('/Fixtures/GetPartialFixtures?gameweekId=1');
+
+        $('#gameweek').on('change', function () {
+             $('#fixtures').load(`/Fixtures/GetPartialFixtures?gameweekId=${$('#gameweek').val()}`);
+        });
+    });
+</script>
+    

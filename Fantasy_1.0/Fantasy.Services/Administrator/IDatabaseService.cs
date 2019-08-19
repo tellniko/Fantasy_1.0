@@ -12,7 +12,7 @@ namespace Fantasy.Services.Administrator
 
         void ExportFootballPlayerInfos();
 
-        string ExportStatistics(int gameweekId);
+        int ExportStatistics(int gameweekId);
 
         string ImportStatistics(int gameweekId);
     }

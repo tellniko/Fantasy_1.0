@@ -206,7 +206,7 @@ namespace Fantasy.Web.Infrastructure.Extensions
                             {
                                 Id = 18,
                                 Name = "Watford",
-                                ShortName = "Spurs",
+                                ShortName = "Watford",
                                 Tag = "WAT",
                                 Rating = 3,
                                 BadgeImgUrl =

@@ -20,7 +20,7 @@ namespace Fantasy.Web.ViewComponents
             this.db = db;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync(bool all)
         {
             var gameweeks = await this.db.GameWeeks
                 .Where(gw => gw.Id  != PreSeasonStatisticsGameweekId && gw.Id != AllTimeStatisticsGameweekId)
@@ -32,7 +32,11 @@ namespace Fantasy.Web.ViewComponents
                 })
                 .ToListAsync();
 
-            gameweeks.Insert(0, new SelectListItem("All Time", AllTimeStatisticsGameweekId.ToString()));
+            if (all)
+            {
+                gameweeks.Insert(0, new SelectListItem("All Time", AllTimeStatisticsGameweekId.ToString()));
+
+            }
 
             return this.View(gameweeks);
         }

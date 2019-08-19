@@ -29,7 +29,7 @@
                         <td><input class="form-control" value="@(gw.Finished ? "Yes" : "No")" disabled /></td>
                         <td>
                             <input type="hidden" name="GameweekId" value="@gw.Id" />
-                            <a asp-area="Administrator" asp-controller="Gameweeks" asp-action="Details" asp-route-id="@gw.Id" class="btn btn-info text-white">Details</a>
+                            <a asp-area="Administrator" asp-controller="Fixtures" asp-action="Details" asp-route-id="@gw.Id" class="btn btn-info text-white">Details</a>
                         </td>
                     </tr>
                 }

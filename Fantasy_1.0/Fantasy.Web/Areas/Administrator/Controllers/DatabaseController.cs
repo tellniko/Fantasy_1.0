@@ -145,12 +145,19 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             var result =  this.databaseServices.ExportStatistics(gameweekId);
 
-            if (result == null)
+            if (result == 0)
             {
                 return BadRequest();
             }
 
-            this.TempData.AddSuccessMessage(result);
+            if (result == -1)
+            {
+                this.TempData.AddErrorMessage("Files were not been exported!");
+            }
+            else
+            {
+                this.TempData.AddSuccessMessage("Files were been exported successfully!");
+            }
 
             return RedirectToAction(nameof(Index));
         }

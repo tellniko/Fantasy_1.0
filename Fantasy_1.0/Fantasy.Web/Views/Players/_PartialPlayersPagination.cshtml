@@ -20,15 +20,24 @@
                         </div>
                         <div class="col-6">
                             <div class="animated bounceInUp">
-                                <a asp-controller="Players" asp-action="Details" asp-route-playerId="@player.Id" 
-                                   asp-route-position="@player.FootballPlayerPositionName" target="_blank">
-                                    <div class="row">
-                                        <span style="font-size: 15px">@(player.InfoName)</span>
-                                    </div>
+                                
+                                <div class="row">
+                                    <a asp-controller="Players" asp-action="Details" asp-route-playerId="@player.Id"
+                                       asp-route-position="@player.FootballPlayerPositionName" target="_blank">
+                                    <span style="font-size: 15px">@(player.InfoName)</span>
+                                    </a>
+                                        @if (User.IsInRole(AdministratorRole))
+                                        {
+                                            
+                                            <a class="btn btn-sm btn-primary" asp-area="Administrator" asp-controller="Players"
+                                               asp-action="Edit" asp-route-id="@player.Id" style="margin-left: 10px">Edit</a>
+                                        }
+                                </div>
                                     <div class="row">
                                         <span style="font-size: 12px; font-style: italic; color: black">@(player.FootballPlayerPositionName)</span>
-                                    </div>
-                                </a>
+                                    </div> 
+                                    
+                               
                             </div>
                         </div>
                         <div class="col-2 text-center">
@@ -36,11 +45,6 @@
                         </div>
                         <div class="col-2">
                             <p class="animated bounceInUp"><strong>@player.Price.ToPrice()</strong></p>
-                            @if (User.IsInRole(AdministratorRole))
-                            {
-                                <a class="btn btn-sm btn-primary"  asp-area="Administrator" asp-controller="Players"
-                                   asp-action="Edit" asp-route-id="@player.Id">Edit</a>
-                            }
                         </div>
                     </div>
                 </td>
