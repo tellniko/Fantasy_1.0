@@ -3,6 +3,7 @@ using Fantasy.Data;
 using Fantasy.Data.Models.FootballPlayers;
 using System;
 using System.ComponentModel.DataAnnotations;
+using Fantasy.Common;
 
 namespace Fantasy.Services.Administrator.Models
 {

@@ -5,7 +5,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 1870,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 61,
@@ -13,15 +13,7 @@
     "Fouls": 427,
     "Offsides": 44,
     "PlayerId": 2100,
-    "GameweekId": 39
-  },
-  {
-    "YellowCards": 9,
-    "RedCards": 2,
-    "Fouls": 5,
-    "Offsides": 0,
-    "PlayerId": 4852,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -29,7 +21,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 2214,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 15,
@@ -37,7 +29,7 @@
     "Fouls": 148,
     "Offsides": 40,
     "PlayerId": 2270,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 10,
@@ -45,15 +37,15 @@
     "Fouls": 80,
     "Offsides": 1,
     "PlayerId": 2338,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 3,
     "Offsides": 0,
     "PlayerId": 2340,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 18,
@@ -61,7 +53,7 @@
     "Fouls": 75,
     "Offsides": 4,
     "PlayerId": 2485,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
@@ -69,7 +61,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 2508,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 71,
@@ -77,7 +69,7 @@
     "Fouls": 290,
     "Offsides": 5,
     "PlayerId": 2517,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
@@ -85,7 +77,7 @@
     "Fouls": 5,
     "Offsides": 0,
     "PlayerId": 2537,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
@@ -93,7 +85,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 2569,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -101,7 +93,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 2593,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
@@ -109,7 +101,7 @@
     "Fouls": 92,
     "Offsides": 153,
     "PlayerId": 2839,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -117,23 +109,23 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 2852,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 27,
     "RedCards": 1,
-    "Fouls": 182,
+    "Fouls": 183,
     "Offsides": 9,
     "PlayerId": 2886,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 31,
     "RedCards": 0,
-    "Fouls": 178,
+    "Fouls": 179,
     "Offsides": 12,
     "PlayerId": 2889,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -141,7 +133,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 2896,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -149,7 +141,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 2912,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
@@ -157,7 +149,7 @@
     "Fouls": 12,
     "Offsides": 0,
     "PlayerId": 2932,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -165,7 +157,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 2933,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 10,
@@ -173,7 +165,7 @@
     "Fouls": 50,
     "Offsides": 0,
     "PlayerId": 2936,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 76,
@@ -181,7 +173,7 @@
     "Fouls": 350,
     "Offsides": 26,
     "PlayerId": 3014,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 46,
@@ -189,7 +181,7 @@
     "Fouls": 278,
     "Offsides": 40,
     "PlayerId": 3030,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -197,7 +189,7 @@
     "Fouls": 1,
     "Offsides": 1,
     "PlayerId": 3049,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -205,7 +197,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 3058,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 65,
@@ -213,7 +205,7 @@
     "Fouls": 383,
     "Offsides": 101,
     "PlayerId": 3062,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -221,7 +213,7 @@
     "Fouls": 6,
     "Offsides": 0,
     "PlayerId": 3143,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 36,
@@ -229,15 +221,15 @@
     "Fouls": 204,
     "Offsides": 1,
     "PlayerId": 3156,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 10,
     "RedCards": 0,
-    "Fouls": 50,
+    "Fouls": 51,
     "Offsides": 0,
     "PlayerId": 3160,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -245,7 +237,7 @@
     "Fouls": 2,
     "Offsides": 0,
     "PlayerId": 3169,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
@@ -253,7 +245,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 3170,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 28,
@@ -261,7 +253,7 @@
     "Fouls": 362,
     "Offsides": 174,
     "PlayerId": 3206,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 23,
@@ -269,7 +261,7 @@
     "Fouls": 158,
     "Offsides": 3,
     "PlayerId": 3222,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -277,7 +269,7 @@
     "Fouls": 36,
     "Offsides": 2,
     "PlayerId": 3242,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 23,
@@ -285,7 +277,7 @@
     "Fouls": 117,
     "Offsides": 8,
     "PlayerId": 3251,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -293,7 +285,7 @@
     "Fouls": 5,
     "Offsides": 0,
     "PlayerId": 3309,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -301,7 +293,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 3320,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 19,
@@ -309,7 +301,7 @@
     "Fouls": 85,
     "Offsides": 25,
     "PlayerId": 3362,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 32,
@@ -317,7 +309,7 @@
     "Fouls": 143,
     "Offsides": 7,
     "PlayerId": 3390,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -325,7 +317,7 @@
     "Fouls": 10,
     "Offsides": 4,
     "PlayerId": 3441,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 20,
@@ -333,7 +325,7 @@
     "Fouls": 152,
     "Offsides": 3,
     "PlayerId": 3448,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -341,7 +333,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 3457,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -349,23 +341,23 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 3505,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 42,
     "RedCards": 2,
-    "Fouls": 220,
+    "Fouls": 223,
     "Offsides": 9,
     "PlayerId": 3507,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 22,
+    "YellowCards": 23,
     "RedCards": 1,
-    "Fouls": 119,
+    "Fouls": 120,
     "Offsides": 6,
     "PlayerId": 3512,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 41,
@@ -373,7 +365,7 @@
     "Fouls": 153,
     "Offsides": 6,
     "PlayerId": 3517,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 36,
@@ -381,7 +373,7 @@
     "Fouls": 168,
     "Offsides": 10,
     "PlayerId": 3547,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 44,
@@ -389,7 +381,7 @@
     "Fouls": 162,
     "Offsides": 2,
     "PlayerId": 3562,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 30,
@@ -397,31 +389,31 @@
     "Fouls": 160,
     "Offsides": 16,
     "PlayerId": 3564,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
     "RedCards": 0,
-    "Fouls": 10,
+    "Fouls": 11,
     "Offsides": 0,
     "PlayerId": 3581,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 26,
     "RedCards": 1,
-    "Fouls": 174,
+    "Fouls": 175,
     "Offsides": 28,
     "PlayerId": 3600,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
     "RedCards": 1,
-    "Fouls": 55,
+    "Fouls": 57,
     "Offsides": 11,
     "PlayerId": 3601,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 18,
@@ -429,7 +421,7 @@
     "Fouls": 192,
     "Offsides": 14,
     "PlayerId": 3613,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 14,
@@ -437,7 +429,7 @@
     "Fouls": 109,
     "Offsides": 1,
     "PlayerId": 3644,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 66,
@@ -445,7 +437,7 @@
     "Fouls": 343,
     "Offsides": 19,
     "PlayerId": 3654,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
@@ -453,7 +445,7 @@
     "Fouls": 34,
     "Offsides": 0,
     "PlayerId": 3669,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 10,
@@ -461,15 +453,15 @@
     "Fouls": 142,
     "Offsides": 1,
     "PlayerId": 3670,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 32,
     "RedCards": 2,
-    "Fouls": 267,
+    "Fouls": 269,
     "Offsides": 29,
     "PlayerId": 3712,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 37,
@@ -477,23 +469,23 @@
     "Fouls": 218,
     "Offsides": 3,
     "PlayerId": 3713,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 14,
     "RedCards": 0,
-    "Fouls": 66,
+    "Fouls": 67,
     "Offsides": 20,
     "PlayerId": 3724,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
     "RedCards": 0,
-    "Fouls": 49,
-    "Offsides": 82,
+    "Fouls": 50,
+    "Offsides": 85,
     "PlayerId": 3756,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -501,7 +493,7 @@
     "Fouls": 50,
     "Offsides": 21,
     "PlayerId": 3766,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 26,
@@ -509,7 +501,7 @@
     "Fouls": 122,
     "Offsides": 1,
     "PlayerId": 3799,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 34,
@@ -517,23 +509,23 @@
     "Fouls": 140,
     "Offsides": 10,
     "PlayerId": 3807,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 10,
     "RedCards": 1,
-    "Fouls": 130,
+    "Fouls": 132,
     "Offsides": 43,
     "PlayerId": 3811,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
     "RedCards": 0,
-    "Fouls": 38,
+    "Fouls": 39,
     "Offsides": 0,
     "PlayerId": 3819,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 27,
@@ -541,7 +533,7 @@
     "Fouls": 152,
     "Offsides": 3,
     "PlayerId": 3820,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -549,7 +541,7 @@
     "Fouls": 19,
     "Offsides": 1,
     "PlayerId": 3837,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
@@ -557,7 +549,7 @@
     "Fouls": 128,
     "Offsides": 76,
     "PlayerId": 3851,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 33,
@@ -565,7 +557,7 @@
     "Fouls": 207,
     "Offsides": 14,
     "PlayerId": 3861,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -573,7 +565,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 3868,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 26,
@@ -581,7 +573,7 @@
     "Fouls": 103,
     "Offsides": 7,
     "PlayerId": 3869,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
@@ -589,7 +581,7 @@
     "Fouls": 72,
     "Offsides": 19,
     "PlayerId": 3889,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -597,39 +589,39 @@
     "Fouls": 66,
     "Offsides": 12,
     "PlayerId": 3905,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 29,
     "RedCards": 0,
-    "Fouls": 93,
+    "Fouls": 94,
     "Offsides": 3,
     "PlayerId": 3909,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 18,
     "RedCards": 1,
-    "Fouls": 161,
+    "Fouls": 163,
     "Offsides": 11,
     "PlayerId": 3920,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 2,
     "Offsides": 0,
     "PlayerId": 3924,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 8,
     "RedCards": 0,
-    "Fouls": 193,
+    "Fouls": 194,
     "Offsides": 32,
     "PlayerId": 3926,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 23,
@@ -637,15 +629,15 @@
     "Fouls": 176,
     "Offsides": 4,
     "PlayerId": 3929,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 20,
     "RedCards": 0,
-    "Fouls": 133,
+    "Fouls": 134,
     "Offsides": 8,
     "PlayerId": 3934,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -653,31 +645,31 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 3945,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 40,
+    "YellowCards": 41,
     "RedCards": 1,
-    "Fouls": 212,
+    "Fouls": 213,
     "Offsides": 19,
     "PlayerId": 3955,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
     "RedCards": 0,
-    "Fouls": 9,
+    "Fouls": 10,
     "Offsides": 1,
     "PlayerId": 3958,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 22,
     "RedCards": 0,
-    "Fouls": 170,
-    "Offsides": 139,
+    "Fouls": 173,
+    "Offsides": 140,
     "PlayerId": 3960,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 38,
@@ -685,7 +677,7 @@
     "Fouls": 274,
     "Offsides": 2,
     "PlayerId": 3979,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 32,
@@ -693,7 +685,7 @@
     "Fouls": 201,
     "Offsides": 9,
     "PlayerId": 4030,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 21,
@@ -701,7 +693,7 @@
     "Fouls": 108,
     "Offsides": 14,
     "PlayerId": 4093,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 35,
@@ -709,7 +701,7 @@
     "Fouls": 182,
     "Offsides": 4,
     "PlayerId": 4100,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 6,
@@ -717,7 +709,7 @@
     "Fouls": 14,
     "Offsides": 1,
     "PlayerId": 4105,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 28,
@@ -725,7 +717,7 @@
     "Fouls": 144,
     "Offsides": 5,
     "PlayerId": 4112,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 18,
@@ -733,7 +725,7 @@
     "Fouls": 144,
     "Offsides": 18,
     "PlayerId": 4115,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 29,
@@ -741,23 +733,23 @@
     "Fouls": 158,
     "Offsides": 11,
     "PlayerId": 4135,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
     "RedCards": 0,
-    "Fouls": 10,
+    "Fouls": 11,
     "Offsides": 0,
     "PlayerId": 4136,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 32,
     "RedCards": 0,
-    "Fouls": 232,
-    "Offsides": 34,
+    "Fouls": 233,
+    "Offsides": 35,
     "PlayerId": 4145,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 14,
@@ -765,7 +757,7 @@
     "Fouls": 107,
     "Offsides": 12,
     "PlayerId": 4158,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 13,
@@ -773,7 +765,7 @@
     "Fouls": 83,
     "Offsides": 121,
     "PlayerId": 4161,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -781,7 +773,7 @@
     "Fouls": 4,
     "Offsides": 0,
     "PlayerId": 4179,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 11,
@@ -789,15 +781,15 @@
     "Fouls": 139,
     "Offsides": 11,
     "PlayerId": 4183,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 26,
     "RedCards": 0,
-    "Fouls": 153,
+    "Fouls": 154,
     "Offsides": 11,
     "PlayerId": 4198,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 38,
@@ -805,23 +797,23 @@
     "Fouls": 170,
     "Offsides": 4,
     "PlayerId": 4209,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 39,
     "RedCards": 0,
-    "Fouls": 311,
+    "Fouls": 315,
     "Offsides": 9,
     "PlayerId": 4224,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
     "RedCards": 0,
-    "Fouls": 30,
+    "Fouls": 34,
     "Offsides": 3,
     "PlayerId": 4229,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -829,7 +821,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 4245,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 6,
@@ -837,7 +829,7 @@
     "Fouls": 57,
     "Offsides": 1,
     "PlayerId": 4248,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
@@ -845,15 +837,15 @@
     "Fouls": 87,
     "Offsides": 11,
     "PlayerId": 4252,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
     "RedCards": 0,
-    "Fouls": 6,
+    "Fouls": 10,
     "Offsides": 0,
     "PlayerId": 4258,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -861,23 +853,23 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 4259,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
     "RedCards": 0,
-    "Fouls": 11,
+    "Fouls": 12,
     "Offsides": 2,
     "PlayerId": 4260,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 43,
     "RedCards": 0,
-    "Fouls": 211,
+    "Fouls": 213,
     "Offsides": 4,
     "PlayerId": 4286,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 18,
@@ -885,15 +877,15 @@
     "Fouls": 127,
     "Offsides": 98,
     "PlayerId": 4287,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 11,
     "RedCards": 0,
-    "Fouls": 94,
+    "Fouls": 95,
     "Offsides": 13,
     "PlayerId": 4288,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -901,7 +893,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 4289,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 19,
@@ -909,15 +901,15 @@
     "Fouls": 190,
     "Offsides": 192,
     "PlayerId": 4290,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 23,
+    "YellowCards": 24,
     "RedCards": 1,
-    "Fouls": 267,
-    "Offsides": 83,
+    "Fouls": 270,
+    "Offsides": 85,
     "PlayerId": 4316,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 22,
@@ -925,7 +917,7 @@
     "Fouls": 158,
     "Offsides": 188,
     "PlayerId": 4328,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
@@ -933,23 +925,23 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 4330,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 10,
     "RedCards": 0,
-    "Fouls": 62,
+    "Fouls": 63,
     "Offsides": 5,
     "PlayerId": 4333,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 12,
+    "YellowCards": 13,
     "RedCards": 0,
-    "Fouls": 112,
+    "Fouls": 116,
     "Offsides": 20,
     "PlayerId": 4337,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 10,
@@ -957,7 +949,7 @@
     "Fouls": 54,
     "Offsides": 1,
     "PlayerId": 4340,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -965,7 +957,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 4348,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 29,
@@ -973,23 +965,23 @@
     "Fouls": 78,
     "Offsides": 2,
     "PlayerId": 4351,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 4394,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 11,
     "RedCards": 0,
-    "Fouls": 143,
-    "Offsides": 25,
+    "Fouls": 144,
+    "Offsides": 26,
     "PlayerId": 4396,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 19,
@@ -997,7 +989,7 @@
     "Fouls": 113,
     "Offsides": 3,
     "PlayerId": 4402,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 20,
@@ -1005,23 +997,23 @@
     "Fouls": 130,
     "Offsides": 3,
     "PlayerId": 4408,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 17,
     "RedCards": 0,
-    "Fouls": 158,
+    "Fouls": 159,
     "Offsides": 14,
     "PlayerId": 4421,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 21,
     "RedCards": 0,
-    "Fouls": 138,
+    "Fouls": 139,
     "Offsides": 16,
     "PlayerId": 4472,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 20,
@@ -1029,39 +1021,39 @@
     "Fouls": 107,
     "Offsides": 7,
     "PlayerId": 4474,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 17,
     "RedCards": 2,
-    "Fouls": 206,
+    "Fouls": 207,
     "Offsides": 111,
     "PlayerId": 4481,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 33,
     "RedCards": 0,
-    "Fouls": 130,
+    "Fouls": 131,
     "Offsides": 1,
     "PlayerId": 4487,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 29,
     "RedCards": 0,
-    "Fouls": 161,
+    "Fouls": 162,
     "Offsides": 1,
     "PlayerId": 4489,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 31,
     "RedCards": 2,
-    "Fouls": 332,
-    "Offsides": 191,
+    "Fouls": 334,
+    "Offsides": 193,
     "PlayerId": 4492,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -1069,23 +1061,23 @@
     "Fouls": 17,
     "Offsides": 1,
     "PlayerId": 4495,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 22,
     "RedCards": 1,
-    "Fouls": 200,
+    "Fouls": 203,
     "Offsides": 7,
     "PlayerId": 4496,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 13,
     "RedCards": 1,
-    "Fouls": 88,
+    "Fouls": 89,
     "Offsides": 4,
     "PlayerId": 4499,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -1093,7 +1085,7 @@
     "Fouls": 40,
     "Offsides": 2,
     "PlayerId": 4505,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 15,
@@ -1101,7 +1093,7 @@
     "Fouls": 118,
     "Offsides": 59,
     "PlayerId": 4507,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1109,7 +1101,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 4509,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1117,7 +1109,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 4522,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -1125,31 +1117,31 @@
     "Fouls": 40,
     "Offsides": 5,
     "PlayerId": 4527,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 28,
     "RedCards": 1,
     "Fouls": 235,
-    "Offsides": 60,
+    "Offsides": 61,
     "PlayerId": 4539,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 28,
     "RedCards": 2,
-    "Fouls": 230,
+    "Fouls": 233,
     "Offsides": 22,
     "PlayerId": 4549,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 26,
     "RedCards": 0,
-    "Fouls": 179,
+    "Fouls": 180,
     "Offsides": 23,
     "PlayerId": 4558,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 21,
@@ -1157,7 +1149,7 @@
     "Fouls": 87,
     "Offsides": 0,
     "PlayerId": 4560,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -1165,7 +1157,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 4573,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1173,7 +1165,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 4582,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1181,7 +1173,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 4600,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -1189,7 +1181,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 4601,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 18,
@@ -1197,7 +1189,7 @@
     "Fouls": 101,
     "Offsides": 2,
     "PlayerId": 4604,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
@@ -1205,15 +1197,15 @@
     "Fouls": 88,
     "Offsides": 3,
     "PlayerId": 4605,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 22,
     "RedCards": 1,
-    "Fouls": 115,
+    "Fouls": 116,
     "Offsides": 3,
     "PlayerId": 4608,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 11,
@@ -1221,15 +1213,15 @@
     "Fouls": 39,
     "Offsides": 3,
     "PlayerId": 4612,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 34,
-    "RedCards": 2,
-    "Fouls": 297,
+    "RedCards": 3,
+    "Fouls": 301,
     "Offsides": 5,
     "PlayerId": 4615,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 19,
@@ -1237,7 +1229,7 @@
     "Fouls": 134,
     "Offsides": 5,
     "PlayerId": 4617,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 16,
@@ -1245,7 +1237,7 @@
     "Fouls": 135,
     "Offsides": 56,
     "PlayerId": 4618,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 23,
@@ -1253,15 +1245,15 @@
     "Fouls": 119,
     "Offsides": 2,
     "PlayerId": 4620,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 4626,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -1269,7 +1261,7 @@
     "Fouls": 2,
     "Offsides": 0,
     "PlayerId": 4640,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 21,
@@ -1277,7 +1269,7 @@
     "Fouls": 128,
     "Offsides": 10,
     "PlayerId": 4656,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -1285,7 +1277,7 @@
     "Fouls": 3,
     "Offsides": 0,
     "PlayerId": 4664,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 34,
@@ -1293,7 +1285,7 @@
     "Fouls": 123,
     "Offsides": 7,
     "PlayerId": 4666,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -1301,15 +1293,15 @@
     "Fouls": 4,
     "Offsides": 1,
     "PlayerId": 4674,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 10,
     "RedCards": 1,
-    "Fouls": 62,
+    "Fouls": 63,
     "Offsides": 0,
     "PlayerId": 4713,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
@@ -1317,7 +1309,7 @@
     "Fouls": 81,
     "Offsides": 77,
     "PlayerId": 4714,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -1325,7 +1317,7 @@
     "Fouls": 29,
     "Offsides": 6,
     "PlayerId": 4717,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1333,7 +1325,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 4727,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 17,
@@ -1341,7 +1333,7 @@
     "Fouls": 113,
     "Offsides": 29,
     "PlayerId": 4748,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1349,23 +1341,23 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 4749,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 20,
     "RedCards": 1,
-    "Fouls": 210,
-    "Offsides": 107,
+    "Fouls": 212,
+    "Offsides": 110,
     "PlayerId": 4772,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
     "RedCards": 0,
-    "Fouls": 29,
+    "Fouls": 30,
     "Offsides": 50,
     "PlayerId": 4777,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -1373,7 +1365,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 4779,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1381,7 +1373,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 4786,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -1389,7 +1381,7 @@
     "Fouls": 36,
     "Offsides": 1,
     "PlayerId": 4796,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 39,
@@ -1397,7 +1389,7 @@
     "Fouls": 297,
     "Offsides": 3,
     "PlayerId": 4804,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 24,
@@ -1405,7 +1397,7 @@
     "Fouls": 110,
     "Offsides": 3,
     "PlayerId": 4813,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -1413,7 +1405,7 @@
     "Fouls": 13,
     "Offsides": 2,
     "PlayerId": 4815,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 35,
@@ -1421,7 +1413,7 @@
     "Fouls": 254,
     "Offsides": 1,
     "PlayerId": 4816,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1429,7 +1421,7 @@
     "Fouls": 8,
     "Offsides": 0,
     "PlayerId": 4818,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 32,
@@ -1437,23 +1429,23 @@
     "Fouls": 278,
     "Offsides": 5,
     "PlayerId": 4821,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 23,
+    "YellowCards": 24,
     "RedCards": 0,
     "Fouls": 181,
     "Offsides": 27,
     "PlayerId": 4842,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 32,
     "RedCards": 1,
-    "Fouls": 210,
+    "Fouls": 211,
     "Offsides": 4,
     "PlayerId": 4843,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
@@ -1461,7 +1453,7 @@
     "Fouls": 90,
     "Offsides": 5,
     "PlayerId": 4845,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -1469,7 +1461,15 @@
     "Fouls": 8,
     "Offsides": 7,
     "PlayerId": 4851,
-    "GameweekId": 39
+    "GameweekId": 40
+  },
+  {
+    "YellowCards": 9,
+    "RedCards": 2,
+    "Fouls": 5,
+    "Offsides": 0,
+    "PlayerId": 4852,
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -1477,7 +1477,7 @@
     "Fouls": 23,
     "Offsides": 10,
     "PlayerId": 4859,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1485,7 +1485,7 @@
     "Fouls": 3,
     "Offsides": 0,
     "PlayerId": 4878,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1493,23 +1493,23 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 4909,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 13,
     "RedCards": 0,
-    "Fouls": 48,
+    "Fouls": 49,
     "Offsides": 2,
     "PlayerId": 4916,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
     "RedCards": 0,
-    "Fouls": 53,
+    "Fouls": 55,
     "Offsides": 10,
     "PlayerId": 4918,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
@@ -1517,7 +1517,7 @@
     "Fouls": 29,
     "Offsides": 0,
     "PlayerId": 4955,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
@@ -1525,7 +1525,7 @@
     "Fouls": 82,
     "Offsides": 36,
     "PlayerId": 4972,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 19,
@@ -1533,7 +1533,7 @@
     "Fouls": 170,
     "Offsides": 82,
     "PlayerId": 4973,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -1541,7 +1541,7 @@
     "Fouls": 39,
     "Offsides": 7,
     "PlayerId": 4979,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1549,7 +1549,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 4985,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
@@ -1557,7 +1557,7 @@
     "Fouls": 48,
     "Offsides": 78,
     "PlayerId": 4999,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1565,7 +1565,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 5044,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -1573,15 +1573,15 @@
     "Fouls": 49,
     "Offsides": 0,
     "PlayerId": 5061,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 2,
+    "YellowCards": 3,
     "RedCards": 0,
     "Fouls": 29,
     "Offsides": 0,
     "PlayerId": 5066,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -1589,7 +1589,7 @@
     "Fouls": 40,
     "Offsides": 2,
     "PlayerId": 5067,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1597,7 +1597,7 @@
     "Fouls": 5,
     "Offsides": 2,
     "PlayerId": 5074,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -1605,7 +1605,7 @@
     "Fouls": 13,
     "Offsides": 6,
     "PlayerId": 5079,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
@@ -1613,7 +1613,7 @@
     "Fouls": 37,
     "Offsides": 0,
     "PlayerId": 5093,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 6,
@@ -1621,23 +1621,23 @@
     "Fouls": 29,
     "Offsides": 0,
     "PlayerId": 5101,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 4,
+    "YellowCards": 5,
     "RedCards": 0,
-    "Fouls": 69,
+    "Fouls": 70,
     "Offsides": 15,
     "PlayerId": 5102,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
     "Fouls": 14,
-    "Offsides": 33,
+    "Offsides": 36,
     "PlayerId": 5110,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -1645,7 +1645,7 @@
     "Fouls": 72,
     "Offsides": 3,
     "PlayerId": 5140,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 6,
@@ -1653,23 +1653,23 @@
     "Fouls": 33,
     "Offsides": 1,
     "PlayerId": 5156,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
     "Fouls": 0,
-    "Offsides": 0,
+    "Offsides": 1,
     "PlayerId": 5169,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
     "RedCards": 0,
-    "Fouls": 45,
+    "Fouls": 46,
     "Offsides": 45,
     "PlayerId": 5178,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -1677,15 +1677,15 @@
     "Fouls": 36,
     "Offsides": 6,
     "PlayerId": 5179,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
     "RedCards": 0,
-    "Fouls": 28,
+    "Fouls": 31,
     "Offsides": 1,
     "PlayerId": 5220,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -1693,7 +1693,7 @@
     "Fouls": 24,
     "Offsides": 2,
     "PlayerId": 5239,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
@@ -1701,7 +1701,7 @@
     "Fouls": 78,
     "Offsides": 29,
     "PlayerId": 5267,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 15,
@@ -1709,7 +1709,7 @@
     "Fouls": 98,
     "Offsides": 1,
     "PlayerId": 5272,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -1717,7 +1717,7 @@
     "Fouls": 22,
     "Offsides": 0,
     "PlayerId": 5328,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 11,
@@ -1725,7 +1725,7 @@
     "Fouls": 60,
     "Offsides": 0,
     "PlayerId": 5334,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -1733,7 +1733,7 @@
     "Fouls": 41,
     "Offsides": 2,
     "PlayerId": 5343,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -1741,7 +1741,7 @@
     "Fouls": 28,
     "Offsides": 2,
     "PlayerId": 5345,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1749,7 +1749,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 5361,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 8,
@@ -1757,7 +1757,7 @@
     "Fouls": 53,
     "Offsides": 11,
     "PlayerId": 5368,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 15,
@@ -1765,7 +1765,7 @@
     "Fouls": 77,
     "Offsides": 1,
     "PlayerId": 5371,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
@@ -1773,15 +1773,15 @@
     "Fouls": 44,
     "Offsides": 1,
     "PlayerId": 5375,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 3,
+    "YellowCards": 4,
     "RedCards": 0,
-    "Fouls": 10,
+    "Fouls": 11,
     "Offsides": 1,
     "PlayerId": 5377,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
@@ -1789,7 +1789,7 @@
     "Fouls": 47,
     "Offsides": 37,
     "PlayerId": 5384,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1797,7 +1797,7 @@
     "Fouls": 5,
     "Offsides": 0,
     "PlayerId": 5428,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
@@ -1805,7 +1805,7 @@
     "Fouls": 64,
     "Offsides": 0,
     "PlayerId": 5514,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -1813,7 +1813,7 @@
     "Fouls": 18,
     "Offsides": 0,
     "PlayerId": 5575,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -1821,7 +1821,7 @@
     "Fouls": 59,
     "Offsides": 3,
     "PlayerId": 5583,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 17,
@@ -1829,23 +1829,23 @@
     "Fouls": 116,
     "Offsides": 6,
     "PlayerId": 5672,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 8,
+    "YellowCards": 9,
     "RedCards": 0,
-    "Fouls": 33,
+    "Fouls": 34,
     "Offsides": 0,
     "PlayerId": 5682,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 35,
     "RedCards": 1,
-    "Fouls": 122,
+    "Fouls": 126,
     "Offsides": 4,
     "PlayerId": 5713,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -1853,15 +1853,15 @@
     "Fouls": 27,
     "Offsides": 0,
     "PlayerId": 5721,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
     "RedCards": 1,
-    "Fouls": 39,
+    "Fouls": 40,
     "Offsides": 2,
     "PlayerId": 5758,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -1869,7 +1869,7 @@
     "Fouls": 29,
     "Offsides": 14,
     "PlayerId": 5762,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1877,15 +1877,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 5810,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 22,
+    "YellowCards": 23,
     "RedCards": 0,
-    "Fouls": 156,
+    "Fouls": 163,
     "Offsides": 1,
     "PlayerId": 5859,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 21,
@@ -1893,7 +1893,7 @@
     "Fouls": 207,
     "Offsides": 14,
     "PlayerId": 5861,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -1901,7 +1901,7 @@
     "Fouls": 10,
     "Offsides": 0,
     "PlayerId": 5865,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -1909,7 +1909,7 @@
     "Fouls": 11,
     "Offsides": 1,
     "PlayerId": 5866,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -1917,15 +1917,15 @@
     "Fouls": 25,
     "Offsides": 1,
     "PlayerId": 5906,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 5,
+    "YellowCards": 6,
     "RedCards": 0,
-    "Fouls": 17,
+    "Fouls": 19,
     "Offsides": 2,
     "PlayerId": 5907,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 28,
@@ -1933,7 +1933,7 @@
     "Fouls": 97,
     "Offsides": 1,
     "PlayerId": 6058,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
@@ -1941,15 +1941,15 @@
     "Fouls": 37,
     "Offsides": 0,
     "PlayerId": 6194,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
     "RedCards": 0,
-    "Fouls": 32,
+    "Fouls": 33,
     "Offsides": 5,
     "PlayerId": 6210,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -1957,7 +1957,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 6251,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -1965,7 +1965,7 @@
     "Fouls": 8,
     "Offsides": 1,
     "PlayerId": 6389,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -1973,7 +1973,7 @@
     "Fouls": 54,
     "Offsides": 15,
     "PlayerId": 6425,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -1981,7 +1981,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 6451,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 18,
@@ -1989,15 +1989,15 @@
     "Fouls": 168,
     "Offsides": 101,
     "PlayerId": 6519,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 3,
+    "YellowCards": 4,
     "RedCards": 0,
-    "Fouls": 27,
+    "Fouls": 28,
     "Offsides": 5,
     "PlayerId": 6784,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -2005,7 +2005,7 @@
     "Fouls": 13,
     "Offsides": 0,
     "PlayerId": 6889,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -2013,15 +2013,15 @@
     "Fouls": 79,
     "Offsides": 47,
     "PlayerId": 6899,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
     "RedCards": 0,
-    "Fouls": 69,
+    "Fouls": 71,
     "Offsides": 14,
     "PlayerId": 7114,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -2029,7 +2029,7 @@
     "Fouls": 24,
     "Offsides": 13,
     "PlayerId": 7124,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2037,7 +2037,7 @@
     "Fouls": 20,
     "Offsides": 22,
     "PlayerId": 7450,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -2045,7 +2045,7 @@
     "Fouls": 34,
     "Offsides": 2,
     "PlayerId": 7488,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2053,7 +2053,7 @@
     "Fouls": 1,
     "Offsides": 1,
     "PlayerId": 7490,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -2061,7 +2061,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 7548,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 6,
@@ -2069,7 +2069,7 @@
     "Fouls": 34,
     "Offsides": 9,
     "PlayerId": 7946,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 18,
@@ -2077,7 +2077,7 @@
     "Fouls": 97,
     "Offsides": 6,
     "PlayerId": 8044,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 18,
@@ -2085,7 +2085,7 @@
     "Fouls": 72,
     "Offsides": 4,
     "PlayerId": 8045,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 32,
@@ -2093,39 +2093,39 @@
     "Fouls": 91,
     "Offsides": 2,
     "PlayerId": 8050,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 5,
+    "YellowCards": 6,
     "RedCards": 0,
-    "Fouls": 30,
+    "Fouls": 31,
     "Offsides": 13,
     "PlayerId": 8052,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 14,
     "RedCards": 0,
-    "Fouls": 70,
+    "Fouls": 71,
     "Offsides": 9,
     "PlayerId": 8143,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 12,
+    "YellowCards": 13,
     "RedCards": 1,
-    "Fouls": 58,
+    "Fouls": 60,
     "Offsides": 0,
     "PlayerId": 8163,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
     "RedCards": 1,
-    "Fouls": 94,
+    "Fouls": 97,
     "Offsides": 0,
     "PlayerId": 8168,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
@@ -2133,7 +2133,7 @@
     "Fouls": 58,
     "Offsides": 13,
     "PlayerId": 8171,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 8,
@@ -2141,15 +2141,15 @@
     "Fouls": 52,
     "Offsides": 30,
     "PlayerId": 8245,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 28,
     "RedCards": 2,
-    "Fouls": 234,
-    "Offsides": 79,
+    "Fouls": 235,
+    "Offsides": 82,
     "PlayerId": 8246,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2157,15 +2157,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 8293,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 0,
+    "YellowCards": 1,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 2,
     "Offsides": 0,
     "PlayerId": 8444,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2173,23 +2173,23 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 8451,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
     "RedCards": 0,
-    "Fouls": 120,
-    "Offsides": 61,
+    "Fouls": 122,
+    "Offsides": 62,
     "PlayerId": 8454,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
     "RedCards": 1,
-    "Fouls": 25,
+    "Fouls": 27,
     "Offsides": 2,
     "PlayerId": 8456,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 11,
@@ -2197,15 +2197,15 @@
     "Fouls": 79,
     "Offsides": 29,
     "PlayerId": 8586,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
     "RedCards": 0,
-    "Fouls": 73,
+    "Fouls": 76,
     "Offsides": 1,
     "PlayerId": 8589,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2213,7 +2213,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 8598,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2221,7 +2221,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 8605,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -2229,15 +2229,15 @@
     "Fouls": 22,
     "Offsides": 1,
     "PlayerId": 8691,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 6,
+    "Fouls": 7,
     "Offsides": 0,
     "PlayerId": 8707,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -2245,7 +2245,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 8710,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2253,7 +2253,7 @@
     "Fouls": 4,
     "Offsides": 0,
     "PlayerId": 8889,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 16,
@@ -2261,7 +2261,7 @@
     "Fouls": 72,
     "Offsides": 16,
     "PlayerId": 8897,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -2269,7 +2269,7 @@
     "Fouls": 9,
     "Offsides": 0,
     "PlayerId": 8900,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2277,7 +2277,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 8913,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2285,7 +2285,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 8956,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
@@ -2293,7 +2293,7 @@
     "Fouls": 125,
     "Offsides": 5,
     "PlayerId": 8966,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
@@ -2301,7 +2301,7 @@
     "Fouls": 41,
     "Offsides": 3,
     "PlayerId": 8976,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 18,
@@ -2309,7 +2309,7 @@
     "Fouls": 156,
     "Offsides": 164,
     "PlayerId": 8979,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
@@ -2317,7 +2317,7 @@
     "Fouls": 90,
     "Offsides": 2,
     "PlayerId": 8980,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 8,
@@ -2325,15 +2325,15 @@
     "Fouls": 49,
     "Offsides": 11,
     "PlayerId": 8982,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
     "RedCards": 0,
-    "Fouls": 104,
-    "Offsides": 32,
+    "Fouls": 105,
+    "Offsides": 33,
     "PlayerId": 8983,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -2341,15 +2341,15 @@
     "Fouls": 12,
     "Offsides": 0,
     "PlayerId": 9030,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
     "RedCards": 0,
-    "Fouls": 40,
+    "Fouls": 41,
     "Offsides": 62,
     "PlayerId": 9060,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -2357,7 +2357,7 @@
     "Fouls": 21,
     "Offsides": 1,
     "PlayerId": 9117,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 22,
@@ -2365,15 +2365,15 @@
     "Fouls": 166,
     "Offsides": 25,
     "PlayerId": 9167,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
-    "Offsides": 0,
+    "Fouls": 1,
+    "Offsides": 1,
     "PlayerId": 9169,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2381,15 +2381,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 9251,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 10,
     "RedCards": 1,
-    "Fouls": 43,
+    "Fouls": 45,
     "Offsides": 1,
     "PlayerId": 9257,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2397,7 +2397,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 9322,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2405,7 +2405,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 9377,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2413,7 +2413,7 @@
     "Fouls": 3,
     "Offsides": 0,
     "PlayerId": 9417,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2421,7 +2421,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 9431,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 8,
@@ -2429,7 +2429,7 @@
     "Fouls": 83,
     "Offsides": 68,
     "PlayerId": 9468,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2437,7 +2437,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 9491,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2445,7 +2445,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 9496,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 19,
@@ -2453,7 +2453,7 @@
     "Fouls": 82,
     "Offsides": 11,
     "PlayerId": 9566,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2461,7 +2461,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 9567,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 8,
@@ -2469,7 +2469,7 @@
     "Fouls": 81,
     "Offsides": 22,
     "PlayerId": 9576,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 11,
@@ -2477,7 +2477,7 @@
     "Fouls": 109,
     "Offsides": 48,
     "PlayerId": 9595,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2485,7 +2485,7 @@
     "Fouls": 3,
     "Offsides": 1,
     "PlayerId": 9649,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2493,7 +2493,7 @@
     "Fouls": 11,
     "Offsides": 2,
     "PlayerId": 9650,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2501,7 +2501,7 @@
     "Fouls": 12,
     "Offsides": 1,
     "PlayerId": 9662,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2509,7 +2509,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 9762,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2517,7 +2517,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 9826,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -2525,15 +2525,15 @@
     "Fouls": 3,
     "Offsides": 0,
     "PlayerId": 9895,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 18,
     "RedCards": 2,
-    "Fouls": 159,
+    "Fouls": 161,
     "Offsides": 66,
     "PlayerId": 9947,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2541,7 +2541,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 10000,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -2549,7 +2549,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 10079,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
@@ -2557,15 +2557,15 @@
     "Fouls": 17,
     "Offsides": 0,
     "PlayerId": 10123,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
     "RedCards": 1,
-    "Fouls": 18,
+    "Fouls": 19,
     "Offsides": 1,
     "PlayerId": 10428,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
@@ -2573,7 +2573,7 @@
     "Fouls": 74,
     "Offsides": 0,
     "PlayerId": 10430,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2581,7 +2581,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 10432,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2589,7 +2589,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 10433,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2597,7 +2597,7 @@
     "Fouls": 15,
     "Offsides": 2,
     "PlayerId": 10443,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
@@ -2605,7 +2605,7 @@
     "Fouls": 36,
     "Offsides": 0,
     "PlayerId": 10451,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2613,7 +2613,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 10454,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2621,7 +2621,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 10455,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 18,
@@ -2629,7 +2629,7 @@
     "Fouls": 62,
     "Offsides": 8,
     "PlayerId": 10458,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2637,7 +2637,7 @@
     "Fouls": 35,
     "Offsides": 26,
     "PlayerId": 10465,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2645,7 +2645,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 10466,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2653,7 +2653,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 10467,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 22,
@@ -2661,15 +2661,15 @@
     "Fouls": 79,
     "Offsides": 2,
     "PlayerId": 10472,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
     "RedCards": 0,
-    "Fouls": 15,
+    "Fouls": 16,
     "Offsides": 1,
     "PlayerId": 10476,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2677,7 +2677,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 10479,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 19,
@@ -2685,7 +2685,7 @@
     "Fouls": 107,
     "Offsides": 14,
     "PlayerId": 10480,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -2693,7 +2693,7 @@
     "Fouls": 11,
     "Offsides": 1,
     "PlayerId": 10483,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
@@ -2701,7 +2701,7 @@
     "Fouls": 149,
     "Offsides": 40,
     "PlayerId": 10487,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 13,
@@ -2709,7 +2709,7 @@
     "Fouls": 94,
     "Offsides": 13,
     "PlayerId": 10522,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2717,7 +2717,7 @@
     "Fouls": 2,
     "Offsides": 0,
     "PlayerId": 10535,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2725,7 +2725,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 10539,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2733,7 +2733,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 10542,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2741,7 +2741,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 10559,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 6,
@@ -2749,7 +2749,7 @@
     "Fouls": 26,
     "Offsides": 2,
     "PlayerId": 10564,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2757,23 +2757,23 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 10565,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 10604,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 8,
     "RedCards": 0,
-    "Fouls": 36,
+    "Fouls": 38,
     "Offsides": 1,
     "PlayerId": 10651,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 8,
@@ -2781,7 +2781,7 @@
     "Fouls": 47,
     "Offsides": 1,
     "PlayerId": 10766,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2789,7 +2789,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 10855,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2797,31 +2797,31 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 10881,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 4,
     "Offsides": 0,
     "PlayerId": 10905,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 10968,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 3,
     "Offsides": 0,
     "PlayerId": 11033,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
@@ -2829,15 +2829,15 @@
     "Fouls": 31,
     "Offsides": 2,
     "PlayerId": 11044,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
     "RedCards": 0,
-    "Fouls": 42,
+    "Fouls": 43,
     "Offsides": 33,
     "PlayerId": 11071,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2845,15 +2845,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 11111,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 8,
+    "YellowCards": 9,
     "RedCards": 0,
     "Fouls": 37,
     "Offsides": 0,
     "PlayerId": 11180,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 8,
@@ -2861,23 +2861,23 @@
     "Fouls": 53,
     "Offsides": 7,
     "PlayerId": 11213,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 6,
     "RedCards": 0,
-    "Fouls": 29,
+    "Fouls": 30,
     "Offsides": 0,
     "PlayerId": 11247,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
     "RedCards": 0,
-    "Fouls": 53,
+    "Fouls": 54,
     "Offsides": 0,
     "PlayerId": 11259,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -2885,15 +2885,15 @@
     "Fouls": 50,
     "Offsides": 2,
     "PlayerId": 11260,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 7,
+    "YellowCards": 8,
     "RedCards": 0,
-    "Fouls": 97,
-    "Offsides": 37,
+    "Fouls": 100,
+    "Offsides": 38,
     "PlayerId": 11272,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 8,
@@ -2901,7 +2901,7 @@
     "Fouls": 62,
     "Offsides": 2,
     "PlayerId": 11284,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -2909,7 +2909,7 @@
     "Fouls": 38,
     "Offsides": 3,
     "PlayerId": 11293,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2917,7 +2917,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 11341,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 17,
@@ -2925,7 +2925,7 @@
     "Fouls": 65,
     "Offsides": 8,
     "PlayerId": 11347,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -2933,7 +2933,7 @@
     "Fouls": 9,
     "Offsides": 0,
     "PlayerId": 11357,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -2941,7 +2941,7 @@
     "Fouls": 30,
     "Offsides": 15,
     "PlayerId": 11364,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -2949,7 +2949,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 11373,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -2957,7 +2957,7 @@
     "Fouls": 25,
     "Offsides": 0,
     "PlayerId": 11575,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2965,7 +2965,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 11579,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -2973,7 +2973,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 11965,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -2981,15 +2981,15 @@
     "Fouls": 42,
     "Offsides": 17,
     "PlayerId": 12114,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 25,
+    "YellowCards": 26,
     "RedCards": 2,
-    "Fouls": 139,
+    "Fouls": 140,
     "Offsides": 2,
     "PlayerId": 12136,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -2997,7 +2997,7 @@
     "Fouls": 20,
     "Offsides": 3,
     "PlayerId": 12186,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -3005,7 +3005,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 12192,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -3013,7 +3013,7 @@
     "Fouls": 26,
     "Offsides": 18,
     "PlayerId": 12212,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3021,7 +3021,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 12299,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -3029,7 +3029,7 @@
     "Fouls": 41,
     "Offsides": 1,
     "PlayerId": 12306,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3037,7 +3037,7 @@
     "Fouls": 25,
     "Offsides": 0,
     "PlayerId": 12316,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 8,
@@ -3045,7 +3045,7 @@
     "Fouls": 32,
     "Offsides": 0,
     "PlayerId": 12365,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -3053,7 +3053,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 12444,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -3061,7 +3061,7 @@
     "Fouls": 19,
     "Offsides": 0,
     "PlayerId": 12520,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 33,
@@ -3069,7 +3069,7 @@
     "Fouls": 223,
     "Offsides": 2,
     "PlayerId": 12582,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 6,
@@ -3077,7 +3077,7 @@
     "Fouls": 52,
     "Offsides": 3,
     "PlayerId": 12584,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -3085,7 +3085,7 @@
     "Fouls": 2,
     "Offsides": 0,
     "PlayerId": 12707,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 11,
@@ -3093,7 +3093,7 @@
     "Fouls": 54,
     "Offsides": 6,
     "PlayerId": 12854,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -3101,7 +3101,7 @@
     "Fouls": 6,
     "Offsides": 0,
     "PlayerId": 12891,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 6,
@@ -3109,7 +3109,7 @@
     "Fouls": 43,
     "Offsides": 0,
     "PlayerId": 12937,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3117,7 +3117,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13130,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3125,7 +3125,7 @@
     "Fouls": 3,
     "Offsides": 0,
     "PlayerId": 13193,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3133,7 +3133,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13195,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3141,7 +3141,7 @@
     "Fouls": 10,
     "Offsides": 7,
     "PlayerId": 13234,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3149,7 +3149,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13240,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -3157,7 +3157,7 @@
     "Fouls": 12,
     "Offsides": 0,
     "PlayerId": 13248,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3165,7 +3165,7 @@
     "Fouls": 17,
     "Offsides": 4,
     "PlayerId": 13278,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -3173,7 +3173,7 @@
     "Fouls": 14,
     "Offsides": 2,
     "PlayerId": 13279,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -3181,7 +3181,7 @@
     "Fouls": 1,
     "Offsides": 1,
     "PlayerId": 13280,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -3189,7 +3189,7 @@
     "Fouls": 4,
     "Offsides": 0,
     "PlayerId": 13283,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -3197,15 +3197,15 @@
     "Fouls": 42,
     "Offsides": 7,
     "PlayerId": 13285,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 0,
+    "YellowCards": 1,
     "RedCards": 0,
-    "Fouls": 17,
+    "Fouls": 20,
     "Offsides": 12,
     "PlayerId": 13286,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3213,15 +3213,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13340,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 14,
     "RedCards": 0,
-    "Fouls": 86,
+    "Fouls": 87,
     "Offsides": 8,
     "PlayerId": 13389,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -3229,7 +3229,7 @@
     "Fouls": 61,
     "Offsides": 41,
     "PlayerId": 13390,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -3237,15 +3237,15 @@
     "Fouls": 52,
     "Offsides": 7,
     "PlayerId": 13491,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 18,
+    "YellowCards": 19,
     "RedCards": 0,
-    "Fouls": 172,
+    "Fouls": 173,
     "Offsides": 7,
     "PlayerId": 13492,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -3253,7 +3253,7 @@
     "Fouls": 175,
     "Offsides": 54,
     "PlayerId": 13511,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3261,7 +3261,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13515,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3269,7 +3269,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13522,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3277,7 +3277,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13549,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -3285,7 +3285,7 @@
     "Fouls": 56,
     "Offsides": 21,
     "PlayerId": 13554,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3293,7 +3293,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13555,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3301,7 +3301,7 @@
     "Fouls": 6,
     "Offsides": 0,
     "PlayerId": 13559,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 6,
@@ -3309,15 +3309,15 @@
     "Fouls": 30,
     "Offsides": 0,
     "PlayerId": 13561,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
     "RedCards": 1,
-    "Fouls": 68,
-    "Offsides": 39,
+    "Fouls": 69,
+    "Offsides": 40,
     "PlayerId": 13565,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3325,7 +3325,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13703,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -3333,7 +3333,7 @@
     "Fouls": 15,
     "Offsides": 2,
     "PlayerId": 13706,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -3341,7 +3341,7 @@
     "Fouls": 45,
     "Offsides": 5,
     "PlayerId": 13716,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3349,15 +3349,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13797,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
     "RedCards": 0,
-    "Fouls": 5,
+    "Fouls": 6,
     "Offsides": 1,
     "PlayerId": 13815,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 20,
@@ -3365,15 +3365,15 @@
     "Fouls": 89,
     "Offsides": 2,
     "PlayerId": 13822,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 21,
     "RedCards": 0,
-    "Fouls": 92,
+    "Fouls": 93,
     "Offsides": 4,
     "PlayerId": 13823,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3381,7 +3381,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13825,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
@@ -3389,7 +3389,7 @@
     "Fouls": 87,
     "Offsides": 2,
     "PlayerId": 13871,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 18,
@@ -3397,7 +3397,7 @@
     "Fouls": 44,
     "Offsides": 16,
     "PlayerId": 13872,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3405,7 +3405,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13903,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3413,7 +3413,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13961,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3421,15 +3421,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 13984,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
     "RedCards": 0,
-    "Fouls": 7,
+    "Fouls": 9,
     "Offsides": 0,
     "PlayerId": 14063,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3437,7 +3437,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14149,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -3445,7 +3445,7 @@
     "Fouls": 25,
     "Offsides": 2,
     "PlayerId": 14164,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3453,7 +3453,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14267,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3461,7 +3461,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14428,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3469,7 +3469,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14441,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3477,7 +3477,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14445,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3485,7 +3485,7 @@
     "Fouls": 3,
     "Offsides": 0,
     "PlayerId": 14446,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3493,7 +3493,7 @@
     "Fouls": 2,
     "Offsides": 2,
     "PlayerId": 14451,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3501,7 +3501,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14473,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3509,7 +3509,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14477,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3517,7 +3517,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14487,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3525,7 +3525,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14490,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3533,7 +3533,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14538,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3541,7 +3541,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14554,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3549,7 +3549,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14565,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3557,7 +3557,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14569,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3565,7 +3565,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14571,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3573,7 +3573,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14572,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3581,7 +3581,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14575,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3589,7 +3589,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14587,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3597,7 +3597,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14589,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3605,7 +3605,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14593,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -3613,7 +3613,7 @@
     "Fouls": 4,
     "Offsides": 0,
     "PlayerId": 14623,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3621,7 +3621,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14637,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3629,7 +3629,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14693,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3637,7 +3637,7 @@
     "Fouls": 8,
     "Offsides": 2,
     "PlayerId": 14716,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3645,15 +3645,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14723,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 6,
     "RedCards": 0,
-    "Fouls": 27,
+    "Fouls": 28,
     "Offsides": 7,
     "PlayerId": 14732,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3661,7 +3661,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14742,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3669,7 +3669,7 @@
     "Fouls": 2,
     "Offsides": 0,
     "PlayerId": 14758,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3677,7 +3677,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14766,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3685,7 +3685,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14779,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3693,7 +3693,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14793,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3701,7 +3701,7 @@
     "Fouls": 5,
     "Offsides": 0,
     "PlayerId": 14805,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3709,15 +3709,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14807,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
     "RedCards": 0,
-    "Fouls": 20,
+    "Fouls": 23,
     "Offsides": 1,
     "PlayerId": 14824,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3725,7 +3725,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14830,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3733,7 +3733,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14835,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3741,15 +3741,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14875,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
     "RedCards": 0,
-    "Fouls": 7,
+    "Fouls": 8,
     "Offsides": 0,
     "PlayerId": 14897,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3757,7 +3757,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14909,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3765,7 +3765,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14916,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3773,7 +3773,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14924,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3781,15 +3781,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14938,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
     "Fouls": 0,
-    "Offsides": 0,
+    "Offsides": 1,
     "PlayerId": 14944,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3797,7 +3797,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14949,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3805,7 +3805,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 14982,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3813,15 +3813,15 @@
     "Fouls": 4,
     "Offsides": 0,
     "PlayerId": 15002,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
     "RedCards": 1,
-    "Fouls": 27,
-    "Offsides": 2,
+    "Fouls": 28,
+    "Offsides": 3,
     "PlayerId": 15011,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3829,7 +3829,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15017,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3837,7 +3837,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15111,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3845,7 +3845,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15123,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3853,7 +3853,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15134,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3861,7 +3861,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15136,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3869,7 +3869,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15137,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3877,7 +3877,7 @@
     "Fouls": 4,
     "Offsides": 1,
     "PlayerId": 15199,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3885,7 +3885,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15200,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -3893,7 +3893,7 @@
     "Fouls": 22,
     "Offsides": 1,
     "PlayerId": 15202,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3901,7 +3901,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15211,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3909,7 +3909,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15212,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3917,7 +3917,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15226,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3925,7 +3925,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15258,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -3933,7 +3933,7 @@
     "Fouls": 8,
     "Offsides": 2,
     "PlayerId": 15259,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3941,7 +3941,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15269,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3949,7 +3949,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15293,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3957,7 +3957,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15322,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3965,7 +3965,7 @@
     "Fouls": 4,
     "Offsides": 3,
     "PlayerId": 15374,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3973,7 +3973,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15375,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -3981,7 +3981,7 @@
     "Fouls": 19,
     "Offsides": 6,
     "PlayerId": 15480,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3989,7 +3989,7 @@
     "Fouls": 34,
     "Offsides": 9,
     "PlayerId": 15481,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -3997,15 +3997,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15549,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 0,
+    "YellowCards": 1,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 15558,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4013,15 +4013,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15559,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 15580,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4029,7 +4029,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 15661,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4037,7 +4037,7 @@
     "Fouls": 10,
     "Offsides": 3,
     "PlayerId": 15685,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -4045,7 +4045,7 @@
     "Fouls": 6,
     "Offsides": 0,
     "PlayerId": 15938,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4053,7 +4053,7 @@
     "Fouls": 10,
     "Offsides": 2,
     "PlayerId": 15967,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4061,7 +4061,7 @@
     "Fouls": 7,
     "Offsides": 1,
     "PlayerId": 15989,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4069,15 +4069,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 16088,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
     "RedCards": 1,
-    "Fouls": 29,
+    "Fouls": 31,
     "Offsides": 3,
     "PlayerId": 16204,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -4085,7 +4085,7 @@
     "Fouls": 8,
     "Offsides": 0,
     "PlayerId": 16234,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4093,15 +4093,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 16270,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 3,
     "Offsides": 0,
     "PlayerId": 16286,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4109,7 +4109,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 16467,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -4117,7 +4117,7 @@
     "Fouls": 28,
     "Offsides": 2,
     "PlayerId": 16607,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4125,7 +4125,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 16671,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
@@ -4133,7 +4133,7 @@
     "Fouls": 74,
     "Offsides": 3,
     "PlayerId": 16790,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 11,
@@ -4141,23 +4141,23 @@
     "Fouls": 54,
     "Offsides": 3,
     "PlayerId": 16801,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 11,
+    "Fouls": 12,
     "Offsides": 0,
     "PlayerId": 16803,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 8,
     "RedCards": 0,
-    "Fouls": 25,
+    "Fouls": 26,
     "Offsides": 0,
     "PlayerId": 19589,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -4165,7 +4165,7 @@
     "Fouls": 24,
     "Offsides": 5,
     "PlayerId": 19603,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 8,
@@ -4173,7 +4173,7 @@
     "Fouls": 66,
     "Offsides": 0,
     "PlayerId": 19605,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 6,
@@ -4181,7 +4181,7 @@
     "Fouls": 26,
     "Offsides": 0,
     "PlayerId": 19617,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 6,
@@ -4189,7 +4189,7 @@
     "Fouls": 36,
     "Offsides": 13,
     "PlayerId": 19618,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -4197,7 +4197,7 @@
     "Fouls": 22,
     "Offsides": 3,
     "PlayerId": 19620,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4205,7 +4205,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 19675,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4213,7 +4213,7 @@
     "Fouls": 7,
     "Offsides": 0,
     "PlayerId": 19678,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4221,15 +4221,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 19679,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
     "RedCards": 0,
-    "Fouls": 51,
+    "Fouls": 54,
     "Offsides": 37,
     "PlayerId": 19680,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4237,15 +4237,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 19731,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 11,
     "RedCards": 0,
-    "Fouls": 42,
+    "Fouls": 44,
     "Offsides": 6,
     "PlayerId": 19758,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4253,7 +4253,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 19880,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4261,7 +4261,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 19888,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4269,7 +4269,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 19922,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4277,7 +4277,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 19928,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4285,7 +4285,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 19929,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4293,7 +4293,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 19951,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4301,15 +4301,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 19967,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 19970,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -4317,7 +4317,7 @@
     "Fouls": 17,
     "Offsides": 1,
     "PlayerId": 20109,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -4325,7 +4325,7 @@
     "Fouls": 12,
     "Offsides": 1,
     "PlayerId": 20171,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
@@ -4333,7 +4333,7 @@
     "Fouls": 5,
     "Offsides": 1,
     "PlayerId": 20183,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -4341,7 +4341,7 @@
     "Fouls": 13,
     "Offsides": 2,
     "PlayerId": 20196,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -4349,23 +4349,23 @@
     "Fouls": 45,
     "Offsides": 0,
     "PlayerId": 20224,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 6,
+    "YellowCards": 7,
     "RedCards": 0,
-    "Fouls": 23,
+    "Fouls": 24,
     "Offsides": 5,
     "PlayerId": 20277,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 14,
     "RedCards": 2,
-    "Fouls": 133,
+    "Fouls": 134,
     "Offsides": 4,
     "PlayerId": 20479,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4373,7 +4373,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 20486,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -4381,7 +4381,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 20559,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -4389,7 +4389,7 @@
     "Fouls": 27,
     "Offsides": 0,
     "PlayerId": 20745,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4397,7 +4397,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 20858,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4405,7 +4405,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 20929,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4413,15 +4413,15 @@
     "Fouls": 4,
     "Offsides": 0,
     "PlayerId": 21413,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
     "RedCards": 0,
-    "Fouls": 2,
+    "Fouls": 3,
     "Offsides": 1,
     "PlayerId": 21532,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4429,7 +4429,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 21585,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4437,7 +4437,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 21611,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4445,7 +4445,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 21653,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4453,7 +4453,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 21702,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4461,7 +4461,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 21774,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4469,7 +4469,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 21887,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4477,7 +4477,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 21958,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4485,7 +4485,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 22040,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4493,15 +4493,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 22047,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
     "RedCards": 0,
-    "Fouls": 44,
+    "Fouls": 45,
     "Offsides": 14,
     "PlayerId": 22542,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -4509,7 +4509,7 @@
     "Fouls": 19,
     "Offsides": 5,
     "PlayerId": 22546,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4517,7 +4517,7 @@
     "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 22651,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 7,
@@ -4525,7 +4525,7 @@
     "Fouls": 38,
     "Offsides": 0,
     "PlayerId": 23033,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4533,7 +4533,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 23199,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
@@ -4541,7 +4541,7 @@
     "Fouls": 17,
     "Offsides": 2,
     "PlayerId": 23591,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4549,7 +4549,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 23615,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4557,7 +4557,7 @@
     "Fouls": 1,
     "Offsides": 3,
     "PlayerId": 23702,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4565,7 +4565,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 23784,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4573,7 +4573,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 23810,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4581,7 +4581,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 23815,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4589,7 +4589,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 23841,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4597,7 +4597,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 24000,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4605,7 +4605,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 24001,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4613,7 +4613,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 24151,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4621,7 +4621,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 24214,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -4629,7 +4629,7 @@
     "Fouls": 12,
     "Offsides": 2,
     "PlayerId": 24252,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4637,23 +4637,23 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 24342,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
-    "Offsides": 0,
+    "Fouls": 3,
+    "Offsides": 1,
     "PlayerId": 24412,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
     "RedCards": 1,
-    "Fouls": 69,
+    "Fouls": 71,
     "Offsides": 38,
     "PlayerId": 24630,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4661,15 +4661,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 24635,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 2,
     "RedCards": 0,
-    "Fouls": 15,
+    "Fouls": 16,
     "Offsides": 1,
     "PlayerId": 24797,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -4677,7 +4677,7 @@
     "Fouls": 13,
     "Offsides": 1,
     "PlayerId": 25089,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4685,7 +4685,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 25246,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4693,7 +4693,7 @@
     "Fouls": 0,
     "Offsides": 2,
     "PlayerId": 25266,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4701,7 +4701,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 25292,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
@@ -4709,7 +4709,7 @@
     "Fouls": 16,
     "Offsides": 0,
     "PlayerId": 25309,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4717,15 +4717,15 @@
     "Fouls": 9,
     "Offsides": 5,
     "PlayerId": 25313,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 2,
     "Offsides": 0,
     "PlayerId": 25329,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -4733,7 +4733,7 @@
     "Fouls": 10,
     "Offsides": 0,
     "PlayerId": 26076,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -4741,15 +4741,15 @@
     "Fouls": 9,
     "Offsides": 0,
     "PlayerId": 26216,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 0,
+    "YellowCards": 1,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 26408,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4757,15 +4757,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 26556,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 2,
+    "YellowCards": 3,
     "RedCards": 0,
-    "Fouls": 19,
+    "Fouls": 21,
     "Offsides": 0,
     "PlayerId": 32435,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -4773,7 +4773,7 @@
     "Fouls": 4,
     "Offsides": 0,
     "PlayerId": 32638,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4781,15 +4781,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 32728,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 3,
     "RedCards": 0,
-    "Fouls": 13,
+    "Fouls": 14,
     "Offsides": 1,
     "PlayerId": 32923,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 1,
@@ -4797,23 +4797,23 @@
     "Fouls": 1,
     "Offsides": 2,
     "PlayerId": 32936,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 1,
     "Offsides": 0,
     "PlayerId": 33061,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
     "Fouls": 0,
-    "Offsides": 0,
+    "Offsides": 2,
     "PlayerId": 33066,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4821,7 +4821,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 33067,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4829,7 +4829,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 33158,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4837,7 +4837,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 33238,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4845,7 +4845,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 35733,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -4853,7 +4853,7 @@
     "Fouls": 28,
     "Offsides": 4,
     "PlayerId": 37587,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 12,
@@ -4861,7 +4861,7 @@
     "Fouls": 43,
     "Offsides": 3,
     "PlayerId": 37776,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4869,7 +4869,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 40320,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4877,7 +4877,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 47259,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4885,15 +4885,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 49481,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 4,
     "RedCards": 0,
-    "Fouls": 18,
+    "Fouls": 19,
     "Offsides": 3,
     "PlayerId": 49884,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -4901,7 +4901,7 @@
     "Fouls": 17,
     "Offsides": 1,
     "PlayerId": 49992,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 5,
@@ -4909,7 +4909,7 @@
     "Fouls": 40,
     "Offsides": 2,
     "PlayerId": 50245,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4917,7 +4917,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 50453,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4925,15 +4925,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 50463,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 9,
     "RedCards": 0,
-    "Fouls": 24,
+    "Fouls": 25,
     "Offsides": 0,
     "PlayerId": 50512,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4941,7 +4941,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 50975,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4949,7 +4949,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 50989,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4957,15 +4957,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 51416,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
     "RedCards": 0,
-    "Fouls": 0,
+    "Fouls": 2,
     "Offsides": 0,
     "PlayerId": 51423,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4973,7 +4973,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 51436,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4981,7 +4981,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 51667,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4989,7 +4989,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 52153,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -4997,15 +4997,15 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 52951,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
-    "YellowCards": 0,
+    "YellowCards": 1,
     "RedCards": 0,
-    "Fouls": 6,
-    "Offsides": 4,
+    "Fouls": 7,
+    "Offsides": 5,
     "PlayerId": 54312,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -5013,7 +5013,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 55603,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -5021,7 +5021,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 63633,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -5029,7 +5029,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 63655,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -5037,7 +5037,7 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 65981,
-    "GameweekId": 39
+    "GameweekId": 40
   },
   {
     "YellowCards": 0,
@@ -5045,6 +5045,6 @@
     "Fouls": 0,
     "Offsides": 0,
     "PlayerId": 65987,
-    "GameweekId": 39
+    "GameweekId": 40
   }
 ]

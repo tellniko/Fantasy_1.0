@@ -4,7 +4,7 @@ namespace Fantasy.Services.Administrator
 {
     public interface IDatabaseService
     {
-        string SeedPlayers();
+        int ImportPlayers();
 
         string SeedStatistics(int gameweekId);
 
@@ -12,8 +12,8 @@ namespace Fantasy.Services.Administrator
 
         void ExportFootballPlayerInfos();
 
-        void ExportStatistics(Gameweek gameweek);
+        string ExportStatistics(int gameweekId);
 
-        string ImportStatistics(int gameweekNumber);
+        string ImportStatistics(int gameweekId);
     }
 }

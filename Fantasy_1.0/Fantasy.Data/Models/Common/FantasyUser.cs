@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Fantasy.Common;
 using Fantasy.Data.Models.Game;
 using Microsoft.AspNetCore.Identity;
 
 namespace Fantasy.Data.Models.Common
 {
+    
     public class FantasyUser : IdentityUser<string>
     {
         [Required]

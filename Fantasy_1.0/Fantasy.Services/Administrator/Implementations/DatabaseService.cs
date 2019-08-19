@@ -12,15 +12,18 @@ using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading;
+using Fantasy.Common;
 using Fantasy.Data.Models.Common;
 using Fantasy.Data.Models.FootballPlayers;
 using Fantasy.Data.Models.Statistics;
 
 namespace Fantasy.Services.Administrator.Implementations
 {
+    using static DataConstants;
+
     public class DatabaseService : IDatabaseService
     {
-        private const int AllTimeGameweekId = 2;
+        //todo add to global constants
 
         private readonly FantasyDbContext db;
 
@@ -43,74 +46,93 @@ namespace Fantasy.Services.Administrator.Implementations
             File.WriteAllText("wwwroot/JsonFiles/footballPlayerInfos.json", JsonConvert.SerializeObject(infos));
         }
 
-        public void ExportStatistics(Gameweek gameweek)
+        public string ExportStatistics(int gameweekId)
         {
-            return;
-
-            var attackStatistics = this.db.AttackStatistics.Where(s => s.GameweekId == gameweek.Id).ToList();
-            var matchStatistics = this.db.MatchStatistics.Where(s => s.GameweekId == gameweek.Id).ToList();
-            var defenceStatistics = this.db.DefenceStatistics.Where(s => s.GameweekId == gameweek.Id).ToList();
-            var teamPlayStatistics = this.db.TeamPlayStatistics.Where(s => s.GameweekId == gameweek.Id).ToList();
-            var disciplineStatistics = this.db.DisciplineStatistics.Where(s => s.GameweekId == gameweek.Id).ToList();
-            var goalkeepingStatistics = this.db.GoalkeepingStatistics.Where(s => s.GameweekId == gameweek.Id).ToList();
-
-            File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Number}/attackStatGW{gameweek.Number}.json",
-                JsonConvert.SerializeObject(attackStatistics));
-            File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Number}/matchStatGW{gameweek.Number}.json",
-                JsonConvert.SerializeObject(matchStatistics));
-            File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Number}/defenceStatGW{gameweek.Number}.json",
-                JsonConvert.SerializeObject(defenceStatistics));
-            File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Number}/teamPlayStatGW{gameweek.Number}.json",
-                JsonConvert.SerializeObject(teamPlayStatistics));
-            File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Number}/disciplineStatGW{gameweek.Number}.json",
-                JsonConvert.SerializeObject(disciplineStatistics));
-            File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Number}/goalkeepingStatGW{gameweek.Number}.json",
-                JsonConvert.SerializeObject(goalkeepingStatistics));
-        }
-
-        public string SeedPlayers()
-        {
-            var playersJson = File.ReadAllText("wwwroot/JsonFiles/footballPlayers.json");
-            var playerInfosJson = File.ReadAllText("wwwroot/JsonFiles/footballPlayerInfos.json");
-
-            var players = JsonConvert.DeserializeObject<List<FootballPlayerJsonModel>>(playersJson);
-
-            if (this.db.FootballPlayers.Any())
+            var gameweek = this.db.GameWeeks.Find(gameweekId);
+            if (gameweek == null)
             {
-                return "The players have been seeded already!";
+                return null;
             }
-
-            var allPlayers = players.To<FootballPlayer>().ToList();
-            var result = 0;
-
-            db.AddRange(allPlayers);
-            db.Database.OpenConnection();
 
             try
             {
+                var attackStatistics = this.db.AttackStatistics.Where(s => s.Gameweek == gameweek).ToList();
+                var matchStatistics = this.db.MatchStatistics.Where(s => s.Gameweek == gameweek).ToList();
+                var defenceStatistics = this.db.DefenceStatistics.Where(s => s.Gameweek == gameweek).ToList();
+                var teamPlayStatistics = this.db.TeamPlayStatistics.Where(s => s.Gameweek == gameweek).ToList();
+                var disciplineStatistics = this.db.DisciplineStatistics.Where(s => s.Gameweek == gameweek).ToList();
+                var goalkeepingStatistics = this.db.GoalkeepingStatistics.Where(s => s.Gameweek == gameweek).ToList();
+
+                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/attackStatGW{gameweek.Id}.json",
+                    JsonConvert.SerializeObject(attackStatistics));
+                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/matchStatGW{gameweek.Id}.json",
+                    JsonConvert.SerializeObject(matchStatistics));
+                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/defenceStatGW{gameweek.Id}.json",
+                    JsonConvert.SerializeObject(defenceStatistics));
+                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/teamPlayStatGW{gameweek.Id}.json",
+                    JsonConvert.SerializeObject(teamPlayStatistics));
+                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/disciplineStatGW{gameweek.Id}.json",
+                    JsonConvert.SerializeObject(disciplineStatistics));
+                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/goalkeepingStatGW{gameweek.Id}.json",
+                    JsonConvert.SerializeObject(goalkeepingStatistics));
+            }
+            catch (Exception)
+            {
+                return "Files were not been exported!";
+            }
+
+            return "Files were been exported successfully!";
+        }
+
+        public int ImportPlayers()
+        {
+
+            //todo constants
+
+            var players = JsonConvert.DeserializeObject<List<FootballPlayer>>(
+                    File.ReadAllText("wwwroot/JsonFiles/footballPlayers.json"))
+                .ToList();
+
+            var infos = JsonConvert.DeserializeObject<List<FootballPlayerInfo>>(
+                    File.ReadAllText("wwwroot/JsonFiles/footballPlayerInfos.json"))
+                .ToList();
+
+            if (this.db.FootballPlayers.Any())
+            {
+                return -1;
+            }
+
+            var result = 0;
+
+            db.AddRange(players);
+
+            db.Database.OpenConnection();
+            try
+            {
                 db.Database.ExecuteSqlCommand("SET IDENTITY_INSERT dbo.FootballPlayers ON");
-                result += db.SaveChanges();
+                this.db.AddRange(infos);
+
+                result += db.SaveChanges() / 2;
+
                 db.Database.ExecuteSqlCommand("SET IDENTITY_INSERT dbo.FootballPlayers OFF");
+            }
+            catch (Exception)
+            {
+                return 0;
             }
             finally
             {
                 db.Database.CloseConnection();
             }
 
-            var playersInfo = JsonConvert.DeserializeObject<List<FootballPlayerInfoJsonModel>>(playerInfosJson);
-            var infos = playersInfo.To<FootballPlayerInfo>().ToList();
-
-            this.db.AddRange(infos);
-            this.db.SaveChanges();
-
-            return $"{result} players have been seeded!";
+            return result;
         }
         
-        public string ImportStatistics(int gameweekNumber)
+        public string ImportStatistics(int gameweekId)
         {
             //return null;
 
-            if (this.db.MatchStatistics.Any(x => x.Gameweek.Number == gameweekNumber))
+            if (this.db.MatchStatistics.Any(x => x.Gameweek.Id == gameweekId))
             {
                 return "Statistics already seeded!";
             }
@@ -120,21 +142,21 @@ namespace Fantasy.Services.Administrator.Implementations
             try
             {
                 statistics.AddRange(JsonConvert.DeserializeObject<List<AttackStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekNumber}/attackStatGW{gameweekNumber}.json")));
+                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/attackStatGW{gameweekId}.json")));
                 statistics.AddRange(JsonConvert.DeserializeObject<List<MatchStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekNumber}/matchStatGW{gameweekNumber}.json")));
+                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/matchStatGW{gameweekId}.json")));
                 statistics.AddRange(JsonConvert.DeserializeObject<List<DefenceStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekNumber}/defenceStatGW{gameweekNumber}.json")));
+                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/defenceStatGW{gameweekId}.json")));
                 statistics.AddRange(JsonConvert.DeserializeObject<List<TeamPlayStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekNumber}/teamPlayStatGW{gameweekNumber}.json")));
+                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/teamPlayStatGW{gameweekId}.json")));
                 statistics.AddRange(JsonConvert.DeserializeObject<List<DisciplineStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekNumber}/disciplineStatGW{gameweekNumber}.json")));
+                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/disciplineStatGW{gameweekId}.json")));
                 statistics.AddRange(JsonConvert.DeserializeObject<List<GoalkeepingStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekNumber}/goalkeepingStatGW{gameweekNumber}.json")));
+                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/goalkeepingStatGW{gameweekId}.json")));
             }
             catch (Exception)
             {
-                return "No Json files found!";
+                return "There is a problem with the Json files!";
             }
 
 
@@ -150,7 +172,6 @@ namespace Fantasy.Services.Administrator.Implementations
             return result.ToString();
         }
              
-
         //todo refactor
         public string SeedStatistics(int gameweekId)
         {
@@ -161,38 +182,45 @@ namespace Fantasy.Services.Administrator.Implementations
 
             //todo
             //export first!!!
+            var result = string.Empty;
+            var statisticsCollection = new List<BaseStatistics>();
 
-
-            this.db.RemoveRange(db.DefenceStatistics.Where(x => x.GameweekId == AllTimeGameweekId));
-            this.db.RemoveRange(db.TeamPlayStatistics.Where(x => x.GameweekId == AllTimeGameweekId));
-            this.db.RemoveRange(db.GoalkeepingStatistics.Where(x => x.GameweekId == AllTimeGameweekId));
-            this.db.RemoveRange(db.MatchStatistics.Where(x => x.GameweekId == AllTimeGameweekId));
-            this.db.RemoveRange(db.DisciplineStatistics.Where(x => x.GameweekId == AllTimeGameweekId));
-            this.db.RemoveRange(db.AttackStatistics.Where(x => x.GameweekId == AllTimeGameweekId));
-
-            var result = "Records removed: " +  this.db.SaveChanges();
-
-
-            //todo opravi si bataka
+            //todo update group of players only !!!
             var dbFootballPlayerIds = this.db.FootballPlayers
-                .Where(x => x.FootballClub.Id == 8)
+               // .Where(x => x.FootballClub.Id == 10)
                 .Select(p => p.Id)
                 .ToList();
 
-            result += " / New all time records added: " + GetNewAllTimePlayersStatistics(dbFootballPlayerIds);
 
-            result += " / New gameweek records added: " + CreateNewGameweekStatistics(dbFootballPlayerIds, gameweekId);
+            if (gameweekId != 1)
+            {
+                this.db.RemoveRange(db.DefenceStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
+                this.db.RemoveRange(db.TeamPlayStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
+                this.db.RemoveRange(db.GoalkeepingStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
+                this.db.RemoveRange(db.MatchStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
+                this.db.RemoveRange(db.DisciplineStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
+                this.db.RemoveRange(db.AttackStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
+
+                result = "Records removed: " + this.db.SaveChanges();
+                statisticsCollection = GetNewAllTimeStatisticsCollection(dbFootballPlayerIds);
+                this.db.AddRange(statisticsCollection);
+                result += " / New all time records added: " + this.db.SaveChanges();
+            }
+            
+
+            statisticsCollection = CreateNewGameweekStatistics(dbFootballPlayerIds, gameweekId);
+            this.db.AddRange(statisticsCollection);
+            result += " / New gameweek records added: " + this.db.SaveChanges();
 
             return result;
         }
         
-
-        private int GetNewAllTimePlayersStatistics(List<int> dbFootballPlayerIds)
+        private List<BaseStatistics> GetNewAllTimeStatisticsCollection(List<int> dbFootballPlayerIds)
         {
             var statisticsPropertyRegex = new Regex("<span class=\"stat\">([A-Za-z\\ ]+)   <span.+\\s+([0-9\\.\\,]+)");
             var customStatisticsPropertyRegex = new Regex("<span class=\"stat\">(Successful 50/50s)   <span.+\\s+([0-9\\.\\,]+)");
 
-            var newGameweekStatisticsCollection = new List<BaseStatistics>();
+            var statisticsCollection = new List<BaseStatistics>();
 
             foreach (var playerId in dbFootballPlayerIds)
             {
@@ -246,7 +274,7 @@ namespace Fantasy.Services.Administrator.Implementations
 
                     foreach (var playerStatistics in playerStatisticsCollection)
                     {
-                        playerStatistics.GameweekId = AllTimeGameweekId;
+                        playerStatistics.GameweekId = AllTimeStatisticsGameweekId;
                         playerStatistics.PlayerId = playerId;
 
                         foreach (var kvp in properties)
@@ -258,41 +286,39 @@ namespace Fantasy.Services.Administrator.Implementations
                         }
                     }
 
-                    newGameweekStatisticsCollection.AddRange(playerStatisticsCollection);
+                    statisticsCollection.AddRange(playerStatisticsCollection);
                 }
 
                 response.Close();
             }
 
-            this.db.AddRange(newGameweekStatisticsCollection);
-            return this.db.SaveChanges();
+            return statisticsCollection;
         }
 
-
         //todo refactor
-        private int CreateNewGameweekStatistics(List<int> dbFootballPlayerIds, int gameweekId)
+        private List<BaseStatistics> CreateNewGameweekStatistics(List<int> dbFootballPlayerIds, int gameweekId)
         {
             var statisticsCollection = new List<BaseStatistics>();
 
             foreach (var playerId in dbFootballPlayerIds)
             {
-                var defenceAllTime = this.db.DefenceStatistics.First(x => x.GameweekId == 2 && x.PlayerId == playerId);
-                var defenceSum = this.db.DefenceStatistics.Where(x => x.GameweekId != 2 && x.PlayerId == playerId).ToList();
+                var defenceAllTime = this.db.DefenceStatistics.First(x => x.GameweekId == AllTimeStatisticsGameweekId && x.PlayerId == playerId);
+                var defenceSum = this.db.DefenceStatistics.Where(x => x.GameweekId != AllTimeStatisticsGameweekId && x.PlayerId == playerId).ToList();
 
-                var matchAllTime = this.db.MatchStatistics.First(x => x.GameweekId == 2 && x.PlayerId == playerId);
-                var matchSum = this.db.MatchStatistics.Where(x => x.GameweekId != 2 && x.PlayerId == playerId).ToList();
+                var matchAllTime = this.db.MatchStatistics.First(x => x.GameweekId == AllTimeStatisticsGameweekId && x.PlayerId == playerId);
+                var matchSum = this.db.MatchStatistics.Where(x => x.GameweekId != AllTimeStatisticsGameweekId && x.PlayerId == playerId).ToList();
 
-                var teamPlayAllTime = this.db.TeamPlayStatistics.First(x => x.GameweekId == 2 && x.PlayerId == playerId);
-                var teamPlaySum = this.db.TeamPlayStatistics.Where(x => x.GameweekId != 2 && x.PlayerId == playerId).ToList();
+                var teamPlayAllTime = this.db.TeamPlayStatistics.First(x => x.GameweekId == AllTimeStatisticsGameweekId && x.PlayerId == playerId);
+                var teamPlaySum = this.db.TeamPlayStatistics.Where(x => x.GameweekId != AllTimeStatisticsGameweekId && x.PlayerId == playerId).ToList();
 
-                var attackAllTime = this.db.AttackStatistics.First(x => x.GameweekId == 2 && x.PlayerId == playerId);
-                var attackSum = this.db.AttackStatistics.Where(x => x.GameweekId != 2 && x.PlayerId == playerId).ToList();
+                var attackAllTime = this.db.AttackStatistics.First(x => x.GameweekId == AllTimeStatisticsGameweekId && x.PlayerId == playerId);
+                var attackSum = this.db.AttackStatistics.Where(x => x.GameweekId != AllTimeStatisticsGameweekId && x.PlayerId == playerId).ToList();
 
-                var disciplineAllTime = this.db.DisciplineStatistics.First(x => x.GameweekId == 2 && x.PlayerId == playerId);
-                var disciplineSum = this.db.DisciplineStatistics.Where(x => x.GameweekId != 2 && x.PlayerId == playerId).ToList();
+                var disciplineAllTime = this.db.DisciplineStatistics.First(x => x.GameweekId == AllTimeStatisticsGameweekId && x.PlayerId == playerId);
+                var disciplineSum = this.db.DisciplineStatistics.Where(x => x.GameweekId != AllTimeStatisticsGameweekId && x.PlayerId == playerId).ToList();
 
-                var goalkeepingAllTime = this.db.GoalkeepingStatistics.First(x => x.GameweekId == 2 && x.PlayerId == playerId);
-                var goalkeepingSum = this.db.GoalkeepingStatistics.Where(x => x.GameweekId != 2 && x.PlayerId == playerId).ToList();
+                var goalkeepingAllTime = this.db.GoalkeepingStatistics.First(x => x.GameweekId == AllTimeStatisticsGameweekId && x.PlayerId == playerId);
+                var goalkeepingSum = this.db.GoalkeepingStatistics.Where(x => x.GameweekId != AllTimeStatisticsGameweekId && x.PlayerId == playerId).ToList();
 
                 var defenceStatistics = new DefenceStatistics
                 {
@@ -381,9 +407,7 @@ namespace Fantasy.Services.Administrator.Implementations
                 statisticsCollection.Add(goalkeepingStatistics);
             }
 
-            this.db.AddRange(statisticsCollection);
-
-            return this.db.SaveChanges();
+            return statisticsCollection;
         }
     }
 }

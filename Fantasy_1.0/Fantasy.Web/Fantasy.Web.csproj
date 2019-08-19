@@ -25,8 +25,9 @@
 
   <ItemGroup>
     <Folder Include="Models\Clubs\" />
-    <Folder Include="wwwroot\JsonFiles\GW0\" />
     <Folder Include="wwwroot\JsonFiles\GW1\" />
+    <Folder Include="wwwroot\JsonFiles\GW2\" />
+    <Folder Include="wwwroot\JsonFiles\GW3\" />
   </ItemGroup>
 
 </Project>

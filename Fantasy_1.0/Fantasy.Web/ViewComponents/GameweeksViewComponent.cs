@@ -4,9 +4,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
+using Fantasy.Common;
+using Fantasy.Web.Infrastructure;
 
 namespace Fantasy.Web.ViewComponents
 {
+    using static DataConstants;
+
     public class GameweeksViewComponent : ViewComponent
     {
         private readonly FantasyDbContext db;
@@ -19,17 +23,16 @@ namespace Fantasy.Web.ViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var gameweeks = await this.db.GameWeeks
+                .Where(gw => gw.Id  != PreSeasonStatisticsGameweekId && gw.Id != AllTimeStatisticsGameweekId)
                 .OrderBy(gw => gw.Id)
-                .Skip(2)
-                .OrderBy(gw => gw.Number)
                 .Select(gw => new SelectListItem
                 {
-                    Text = "Gameweek " + gw.Number,
+                    Text = gw.Name,
                     Value = gw.Id.ToString()
                 })
                 .ToListAsync();
 
-            gameweeks.Insert(0, new SelectListItem("All Time", "2"));
+            gameweeks.Insert(0, new SelectListItem("All Time", AllTimeStatisticsGameweekId.ToString()));
 
             return this.View(gameweeks);
         }

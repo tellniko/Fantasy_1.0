@@ -1,4 +1,6 @@
-﻿@model PlayerDetailsServiceModel
+﻿
+
+@model PlayerDetailsServiceModel
 @{
     ViewData["Title"] = @Model.InfoName;
 }
@@ -93,7 +95,7 @@
 
 <script>
     $(document).ready(function() {
-        $('#stat').load(`/Players/GetPartialStatistics?playerId=${@Model.Id}&position=${$('#pos').text()}&gameweekId=1`);
+        $('#stat').load(`/Players/GetPartialStatistics?playerId=${@Model.Id}&position=${$('#pos').text()}&gameweekId=@DataConstants.AllTimeStatisticsGameweekId`);
 
         $('#gameweek').change(function() {
             $('#stat').load(`/Players/GetPartialStatistics?playerId=${@Model.Id}&position=${$('#pos').text()}&gameweekId=${$('#gameweek').val()}`);

@@ -23,8 +23,8 @@ namespace Fantasy.Services.Administrator.Implementations
         {
             return this.db
                 .GameWeeks
-                .Where(gw => gw.Number != 0)
-                .OrderBy(gw => gw.Number)
+                .Where(gw => gw.Id != 0)
+                .OrderBy(gw => gw.Id)
                 .To<GameweekServiceModel>()
                 .ToList();
         }

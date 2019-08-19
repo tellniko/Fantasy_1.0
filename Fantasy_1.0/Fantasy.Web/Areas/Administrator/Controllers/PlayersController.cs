@@ -144,8 +144,8 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             return this.db.GameWeeks
                 .Select(gw => new SelectListItem
                 {
-                    Text = "Gameeek " + gw.Number,
-                    Value = gw.Number.ToString()
+                    Text = gw.Name,
+                    Value = gw.Id.ToString(),
                 })
                 .ToList();
         }

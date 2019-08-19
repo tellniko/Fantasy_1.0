@@ -27,7 +27,6 @@ namespace Fantasy.Data
         public DbSet<AttackStatistics> AttackStatistics { get; set; }
         public DbSet<DisciplineStatistics> DisciplineStatistics { get; set; }
         public DbSet<MatchStatistics> MatchStatistics { get; set; }
-        public DbSet<Season> Seasons { get; set; }
         public DbSet<FantasyUserPlayer> FantasyUserPlayers { get; set; }
         
 

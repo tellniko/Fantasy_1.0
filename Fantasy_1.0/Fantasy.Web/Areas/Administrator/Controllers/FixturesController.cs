@@ -64,7 +64,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
                 .GetAll()
                 .Select(gw => new SelectListItem
                 {
-                    Text = "Gameweek " + gw.Number,
+                    Text = gw.Name,
                     Value = gw.Id.ToString()
                 })
                 .ToList();

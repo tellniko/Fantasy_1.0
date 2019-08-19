@@ -90,6 +90,8 @@ namespace Fantasy.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<byte>("Away");
+
                     b.Property<int>("AwayTeamId");
 
                     b.Property<DateTime?>("DateTimeStart");
@@ -97,6 +99,8 @@ namespace Fantasy.Data.Migrations
                     b.Property<bool>("Finished");
 
                     b.Property<int>("GameWeekId");
+
+                    b.Property<byte>("Home");
 
                     b.Property<int>("HomeTeamId");
 
@@ -147,31 +151,13 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<bool>("Finished");
 
-                    b.Property<byte>("Number");
+                    b.Property<string>("Name");
 
-                    b.Property<int>("SeasonId");
-
-                    b.Property<DateTime>("Start");
+                    b.Property<DateTime?>("Start");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("SeasonId");
 
                     b.ToTable("GameWeeks");
-                });
-
-            modelBuilder.Entity("Fantasy.Data.Models.Common.Season", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Name")
-                        .IsRequired();
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Seasons");
                 });
 
             modelBuilder.Entity("Fantasy.Data.Models.FootballPlayers.FootballPlayer", b =>
@@ -594,14 +580,6 @@ namespace Fantasy.Data.Migrations
                         .WithMany("HomeGames")
                         .HasForeignKey("HomeTeamId")
                         .OnDelete(DeleteBehavior.Restrict);
-                });
-
-            modelBuilder.Entity("Fantasy.Data.Models.Common.Gameweek", b =>
-                {
-                    b.HasOne("Fantasy.Data.Models.Common.Season", "Season")
-                        .WithMany("Gameweeks")
-                        .HasForeignKey("SeasonId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Fantasy.Data.Models.FootballPlayers.FootballPlayer", b =>

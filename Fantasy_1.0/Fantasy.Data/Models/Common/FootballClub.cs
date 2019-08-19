@@ -1,6 +1,7 @@
 ﻿using Fantasy.Data.Models.FootballPlayers;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Fantasy.Common;
 
 namespace Fantasy.Data.Models.Common
 {

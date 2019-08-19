@@ -1,6 +1,6 @@
 ﻿@model List<SelectListItem>
 @{
-    ViewData["Title"] = "Seed Statistics From Json";
+    ViewData["Title"] = "Import Statistics";
 }
 
 <br /><br />
@@ -13,7 +13,7 @@
             <form method="post">
                 <div class="form-group">
                     <label>Gamweek</label>
-                    <select name="gameweekNumber" asp-items="Model" class="form-control"> </select>
+                    <select name="gameweekId" asp-items="Model" class="form-control"> </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Import</button>
             </form>

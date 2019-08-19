@@ -85,27 +85,5 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             return View(model);
         }
-
-
-        public IActionResult AjaxTest()
-        {
-            var gameweeks = new GameweekListingViewModel
-            {
-                Gameweeks = this.gameweeks.GetAll().To<GameWeekViewModel>()
-            };
-
-            return View(gameweeks);
-        }
-
-        public IActionResult GetPartial()
-        {
-            List<string> countries = new List<string>();
-            countries.Add("USA");
-            countries.Add("UK");
-            countries.Add("India");
-
-            return PartialView("_CountriesPartial", countries);
-        }
-
     }
 }

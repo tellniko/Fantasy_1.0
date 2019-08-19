@@ -1,9 +1,16 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Fantasy.Data.Models.Common
 {
     public class Fixture : BaseModel<int>
     {
+        [Range(0, byte.MaxValue)]
+        public byte Home { get; set; }
+
+        [Range(0, byte.MaxValue)]
+        public byte Away { get; set; }
+
         public DateTime? DateTimeStart { get; set; }
 
         public bool Finished { get; set; }

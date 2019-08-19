@@ -26,9 +26,22 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             this.db = db;
         }
 
-        public IActionResult SeedPlayers()
+        public IActionResult ImportPlayers()
         {
-            this.TempData.AddSuccessMessage(this.databaseServices.SeedPlayers());
+            var result = this.databaseServices.ImportPlayers();
+
+            if (result == -1)
+            {
+                this.TempData.AddErrorMessage("The players have been seeded already!");
+            }
+            else if(result == 0)
+            {
+                this.TempData.AddSuccessMessage($"There is a problem with the Json file or database IDENTITY_INSERT!");
+            }
+            else
+            {
+                this.TempData.AddSuccessMessage($"{result} players have been seeded!");
+            }
 
             return RedirectToAction(nameof(Index));
         }
@@ -42,9 +55,10 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
 
         [HttpPost]
-        public IActionResult SeedStatistics(int gameweekNumber)
+        public IActionResult SeedStatistics(int gameweekId)
         {
-            var gameweek = this.db.GameWeeks.FirstOrDefault(gw => gw.Number == gameweekNumber);
+            var gameweek = this.db.GameWeeks.FirstOrDefault(gw => gw.Id == gameweekId);
+
             if (gameweek == null)
             {
                 return BadRequest();
@@ -65,7 +79,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public IActionResult SeedStatisticsFromJson()
+        public IActionResult ImportStatistics()
         {
             var model = this.GetGameweeks();
 
@@ -73,9 +87,11 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         }
 
         [HttpPost]
-        public IActionResult SeedStatisticsFromJson(int gameweekNumber)
+        public IActionResult ImportStatistics(int gameweekId)
         {
-            var result = this.databaseServices.ImportStatistics(gameweekNumber);
+            Console.WriteLine();
+
+            var result = this.databaseServices.ImportStatistics(gameweekId);
 
             if (result == null)
             {
@@ -114,33 +130,39 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public IActionResult ExportStatisticsJson(int gameweekNumber = 1)
+
+        public IActionResult ExportStatisticsJson()
         {
-            this.TempData.AddErrorMessage("Disabled!");
-            return RedirectToAction(nameof(Index));
+            var model = this.GetGameweeks();
+            return View(model);
+        }
 
+        [HttpPost]
+        public IActionResult ExportStatisticsJson(int gameweekId)
+        {
+            //this.TempData.AddErrorMessage("Disabled!");
+            //return RedirectToAction(nameof(Index));
 
-            var gameweek = this.db.GameWeeks.FirstOrDefault(gw => gw.Number == gameweekNumber);
+            var result =  this.databaseServices.ExportStatistics(gameweekId);
 
-            if (gameweek == null)
+            if (result == null)
             {
                 return BadRequest();
             }
 
-            this.databaseServices.ExportStatistics(gameweek);
+            this.TempData.AddSuccessMessage(result);
 
-            this.TempData.AddSuccessMessage("Files created!");
             return RedirectToAction(nameof(Index));
         }
 
         private List<SelectListItem> GetGameweeks()
         {
             return this.db.GameWeeks
-                .OrderBy(x => x.Number)
+                .OrderBy(x => x.Id)
                 .Select(gw => new SelectListItem
                 {
-                    Text = "Gameeek " + gw.Number,
-                    Value = gw.Number.ToString()
+                    Text = gw.Name,
+                    Value = gw.Id.ToString()
                 })
                 .ToList();
         }
