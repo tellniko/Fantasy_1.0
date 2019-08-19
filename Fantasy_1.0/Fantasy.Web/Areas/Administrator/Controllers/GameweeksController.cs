@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
-    public class GameweeksController : AdministratorController
+    public class GameweeksController : HomeController
     {
         private readonly IGameweekService gameweeks;
         private readonly IFixtureService fixtures;

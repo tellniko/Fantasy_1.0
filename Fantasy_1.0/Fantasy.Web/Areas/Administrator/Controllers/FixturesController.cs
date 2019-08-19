@@ -10,7 +10,7 @@ using System.Linq;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
-    public class FixturesController : AdministratorController
+    public class FixturesController : HomeController
     {
         private readonly IGameweekService gameweeks;
         private readonly IFootballClubService footballClubs;

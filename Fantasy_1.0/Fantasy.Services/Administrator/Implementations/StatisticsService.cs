@@ -1,179 +1,32 @@
-﻿using System;
-using Fantasy.Common.Mapping;
+﻿using Fantasy.Common;
 using Fantasy.Data;
-using Fantasy.Services.Administrator.Models.Db;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
+using Fantasy.Data.Models.Statistics;
+using Fantasy.Services.Administrator.Models;
+using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
-using System.Threading;
-using Fantasy.Common;
-using Fantasy.Data.Models.Common;
-using Fantasy.Data.Models.FootballPlayers;
-using Fantasy.Data.Models.Statistics;
 
 namespace Fantasy.Services.Administrator.Implementations
 {
     using static DataConstants;
 
-    public class DatabaseService : IDatabaseService
+    public class StatisticsService : IStatisticsService 
     {
         //todo add to global constants
 
         private readonly FantasyDbContext db;
 
-        public DatabaseService(FantasyDbContext db)
+        public StatisticsService(FantasyDbContext db)
         {
             this.db = db;
         }
-
-        public void ExportFootballPlayers()
-        {
-            return;
-            var players = this.db.FootballPlayers.To<FootballPlayerJsonModel>().ToList();
-            File.WriteAllText("wwwroot/JsonFiles/footballPlayers.json", JsonConvert.SerializeObject(players));
-        }
-
-        public void ExportFootballPlayerInfos()
-        {
-            return;
-            var infos = this.db.FootballPlayerInfos.To<FootballPlayerInfoJsonModel>().ToList();
-            File.WriteAllText("wwwroot/JsonFiles/footballPlayerInfos.json", JsonConvert.SerializeObject(infos));
-        }
-
-        public int ExportStatistics(int gameweekId)
-        {
-            var gameweek = this.db.GameWeeks.Find(gameweekId);
-            if (gameweek == null)
-            {
-                return 0;
-            }
-
-            try
-            {
-                var attackStatistics = this.db.AttackStatistics.Where(s => s.Gameweek == gameweek).ToList();
-                var matchStatistics = this.db.MatchStatistics.Where(s => s.Gameweek == gameweek).ToList();
-                var defenceStatistics = this.db.DefenceStatistics.Where(s => s.Gameweek == gameweek).ToList();
-                var teamPlayStatistics = this.db.TeamPlayStatistics.Where(s => s.Gameweek == gameweek).ToList();
-                var disciplineStatistics = this.db.DisciplineStatistics.Where(s => s.Gameweek == gameweek).ToList();
-                var goalkeepingStatistics = this.db.GoalkeepingStatistics.Where(s => s.Gameweek == gameweek).ToList();
-
-                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/attackStatGW{gameweek.Id}.json",
-                    JsonConvert.SerializeObject(attackStatistics));
-                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/matchStatGW{gameweek.Id}.json",
-                    JsonConvert.SerializeObject(matchStatistics));
-                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/defenceStatGW{gameweek.Id}.json",
-                    JsonConvert.SerializeObject(defenceStatistics));
-                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/teamPlayStatGW{gameweek.Id}.json",
-                    JsonConvert.SerializeObject(teamPlayStatistics));
-                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/disciplineStatGW{gameweek.Id}.json",
-                    JsonConvert.SerializeObject(disciplineStatistics));
-                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/goalkeepingStatGW{gameweek.Id}.json",
-                    JsonConvert.SerializeObject(goalkeepingStatistics));
-            }
-            catch (Exception)
-            {
-                return -1;
-            }
-
-            return 1;
-        }
-
-        public int ImportPlayers()
-        {
-
-            //todo constants
-
-            var players = JsonConvert.DeserializeObject<List<FootballPlayer>>(
-                    File.ReadAllText("wwwroot/JsonFiles/footballPlayers.json"))
-                .ToList();
-
-            var infos = JsonConvert.DeserializeObject<List<FootballPlayerInfo>>(
-                    File.ReadAllText("wwwroot/JsonFiles/footballPlayerInfos.json"))
-                .ToList();
-
-            if (this.db.FootballPlayers.Any())
-            {
-                return -1;
-            }
-
-            var result = 0;
-
-            db.AddRange(players);
-
-            db.Database.OpenConnection();
-            try
-            {
-                db.Database.ExecuteSqlCommand("SET IDENTITY_INSERT dbo.FootballPlayers ON");
-                this.db.AddRange(infos);
-
-                result += db.SaveChanges() / 2;
-
-                db.Database.ExecuteSqlCommand("SET IDENTITY_INSERT dbo.FootballPlayers OFF");
-            }
-            catch (Exception)
-            {
-                return 0;
-            }
-            finally
-            {
-                db.Database.CloseConnection();
-            }
-
-            return result;
-        }
-        
-        public string ImportStatistics(int gameweekId)
-        {
-            //return null;
-
-            if (this.db.MatchStatistics.Any(x => x.Gameweek.Id == gameweekId))
-            {
-                return "Statistics already seeded!";
-            }
-
-            var statistics = new List<BaseStatistics>();
-
-            try
-            {
-                statistics.AddRange(JsonConvert.DeserializeObject<List<AttackStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/attackStatGW{gameweekId}.json")));
-                statistics.AddRange(JsonConvert.DeserializeObject<List<MatchStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/matchStatGW{gameweekId}.json")));
-                statistics.AddRange(JsonConvert.DeserializeObject<List<DefenceStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/defenceStatGW{gameweekId}.json")));
-                statistics.AddRange(JsonConvert.DeserializeObject<List<TeamPlayStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/teamPlayStatGW{gameweekId}.json")));
-                statistics.AddRange(JsonConvert.DeserializeObject<List<DisciplineStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/disciplineStatGW{gameweekId}.json")));
-                statistics.AddRange(JsonConvert.DeserializeObject<List<GoalkeepingStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/goalkeepingStatGW{gameweekId}.json")));
-            }
-            catch (Exception)
-            {
-                return "There is a problem with the Json files!";
-            }
-
-
-
-            this.db.AddRange(statistics);
-            var result = this.db.SaveChanges();
-
-            if (result == 0)
-            {
-                return null;
-            }
-
-            return result.ToString();
-        }
              
         //todo refactor
-        public string SeedStatistics(int gameweekId)
+        public string Seed(int gameweekId)
         {
             if (this.db.MatchStatistics.Any(ms => ms.GameweekId == gameweekId))
             {
@@ -191,7 +44,6 @@ namespace Fantasy.Services.Administrator.Implementations
                 .Select(p => p.Id)
                 .ToList();
 
-
             if (gameweekId != 1)
             {
                 this.db.RemoveRange(db.DefenceStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
@@ -207,7 +59,6 @@ namespace Fantasy.Services.Administrator.Implementations
                 result += " / New all time records added: " + this.db.SaveChanges();
             }
             
-
             statisticsCollection = CreateNewGameweekStatistics(dbFootballPlayerIds, gameweekId);
             this.db.AddRange(statisticsCollection);
             result += " / New gameweek records added: " + this.db.SaveChanges();

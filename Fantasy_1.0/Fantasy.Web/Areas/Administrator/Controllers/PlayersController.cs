@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
-    public class PlayersController : AdministratorController
+    public class PlayersController : HomeController
     {
         private readonly IPlayerService players;
         private readonly FantasyDbContext db;

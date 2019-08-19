@@ -7,7 +7,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
     [Area("Administrator")]
     [Authorize(Roles = GlobalConstants.AdministratorRole)]
-    public class AdministratorController : Controller
+    public class HomeController : Controller
     {
         public IActionResult Index()
         {
