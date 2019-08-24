@@ -19,16 +19,13 @@ namespace Fantasy.Web.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<FantasyUser> signInManager;
         private readonly UserManager<FantasyUser> userManager;
-        //private readonly IEmailSender _emailSender;
 
         public RegisterModel(
             UserManager<FantasyUser> userManager,
-            SignInManager<FantasyUser> signInManager
-            /*IEmailSender emailSender*/)
+            SignInManager<FantasyUser> signInManager)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
-            //_emailSender = emailSender;
         }
 
         [BindProperty]

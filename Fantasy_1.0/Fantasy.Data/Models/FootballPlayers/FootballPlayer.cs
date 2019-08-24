@@ -35,6 +35,6 @@ namespace Fantasy.Data.Models.FootballPlayers
 
         public List<MatchStatistics> MatchStatistics { get; set; } = new List<MatchStatistics>();
 
-        public List<FantasyUserPlayer> FantasyUserPlayers { get; set; } = new List<FantasyUserPlayer>();
+        public List<FantasyPlayer> FantasyUserPlayers { get; set; } = new List<FantasyPlayer>();
     }
 }

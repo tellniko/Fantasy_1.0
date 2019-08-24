@@ -26,8 +26,6 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<int>("AccessFailedCount");
 
-                    b.Property<decimal>("Budget");
-
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken();
 
@@ -35,8 +33,6 @@ namespace Fantasy.Data.Migrations
                         .HasMaxLength(256);
 
                     b.Property<bool>("EmailConfirmed");
-
-                    b.Property<int>("FootballClubId");
 
                     b.Property<string>("FullName")
                         .IsRequired()
@@ -61,7 +57,6 @@ namespace Fantasy.Data.Migrations
                     b.Property<string>("SecurityStamp");
 
                     b.Property<string>("SquadName")
-                        .IsRequired()
                         .HasMaxLength(50);
 
                     b.Property<bool>("TwoFactorEnabled");
@@ -70,8 +65,6 @@ namespace Fantasy.Data.Migrations
                         .HasMaxLength(256);
 
                     b.HasKey("Id");
-
-                    b.HasIndex("FootballClubId");
 
                     b.HasIndex("NormalizedEmail")
                         .HasName("EmailIndex");
@@ -151,13 +144,14 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<bool>("Finished");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .HasMaxLength(50);
 
                     b.Property<DateTime?>("Start");
 
                     b.HasKey("Id");
 
-                    b.ToTable("GameWeeks");
+                    b.ToTable("Gameweeks");
                 });
 
             modelBuilder.Entity("Fantasy.Data.Models.FootballPlayers.FootballPlayer", b =>
@@ -240,46 +234,40 @@ namespace Fantasy.Data.Migrations
                     b.ToTable("FootballPlayerPositions");
                 });
 
-            modelBuilder.Entity("Fantasy.Data.Models.Game.FantasyUserPlayer", b =>
+            modelBuilder.Entity("Fantasy.Data.Models.Game.FantasyPlayer", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("FantasyUserSquadId");
+                    b.Property<string>("FantasyUserId");
 
                     b.Property<int>("FootballPlayerId");
 
-                    b.Property<bool>("IsFirstTeam");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("FantasyUserSquadId");
+                    b.HasIndex("FantasyUserId");
 
                     b.HasIndex("FootballPlayerId");
 
-                    b.ToTable("FantasyUserPlayers");
+                    b.ToTable("FantasyPlayers");
                 });
 
-            modelBuilder.Entity("Fantasy.Data.Models.Game.FantasyUserSquad", b =>
+            modelBuilder.Entity("Fantasy.Data.Models.Game.GameweekStatus", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("FantasyPlayerId");
 
                     b.Property<int>("GameweekId");
 
-                    b.Property<short>("Transfers");
+                    b.Property<bool>("IsBenched");
 
-                    b.Property<string>("UserId");
+                    b.Property<bool>("IsCaptain");
 
-                    b.HasKey("Id");
+                    b.HasKey("FantasyPlayerId", "GameweekId");
 
                     b.HasIndex("GameweekId");
 
-                    b.HasIndex("UserId");
-
-                    b.ToTable("FantasyUserSquad");
+                    b.ToTable("GameweeksStatuses");
                 });
 
             modelBuilder.Entity("Fantasy.Data.Models.Statistics.AttackStatistics", b =>
@@ -556,14 +544,6 @@ namespace Fantasy.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("Fantasy.Data.Models.Common.FantasyUser", b =>
-                {
-                    b.HasOne("Fantasy.Data.Models.Common.FootballClub", "FootballClub")
-                        .WithMany()
-                        .HasForeignKey("FootballClubId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
             modelBuilder.Entity("Fantasy.Data.Models.Common.Fixture", b =>
                 {
                     b.HasOne("Fantasy.Data.Models.Common.FootballClub", "AwayTeam")
@@ -603,11 +583,11 @@ namespace Fantasy.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("Fantasy.Data.Models.Game.FantasyUserPlayer", b =>
+            modelBuilder.Entity("Fantasy.Data.Models.Game.FantasyPlayer", b =>
                 {
-                    b.HasOne("Fantasy.Data.Models.Game.FantasyUserSquad")
+                    b.HasOne("Fantasy.Data.Models.Common.FantasyUser", "FantasyUser")
                         .WithMany("Squad")
-                        .HasForeignKey("FantasyUserSquadId");
+                        .HasForeignKey("FantasyUserId");
 
                     b.HasOne("Fantasy.Data.Models.FootballPlayers.FootballPlayer", "FootballPlayer")
                         .WithMany("FantasyUserPlayers")
@@ -615,16 +595,17 @@ namespace Fantasy.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("Fantasy.Data.Models.Game.FantasyUserSquad", b =>
+            modelBuilder.Entity("Fantasy.Data.Models.Game.GameweekStatus", b =>
                 {
-                    b.HasOne("Fantasy.Data.Models.Common.Gameweek", "Gameweek")
-                        .WithMany()
-                        .HasForeignKey("GameweekId")
+                    b.HasOne("Fantasy.Data.Models.Game.FantasyPlayer", "FantasyPlayer")
+                        .WithMany("GameweekStatuses")
+                        .HasForeignKey("FantasyPlayerId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Fantasy.Data.Models.Common.FantasyUser", "User")
-                        .WithMany("Squads")
-                        .HasForeignKey("UserId");
+                    b.HasOne("Fantasy.Data.Models.Common.Gameweek", "Gameweek")
+                        .WithMany("GameweekStatuses")
+                        .HasForeignKey("GameweekId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Fantasy.Data.Models.Statistics.AttackStatistics", b =>

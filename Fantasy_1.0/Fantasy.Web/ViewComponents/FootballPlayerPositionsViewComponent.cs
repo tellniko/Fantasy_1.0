@@ -4,9 +4,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
+using Fantasy.Web.Infrastructure;
+using Fantasy.Web.Infrastructure.Extensions;
 
 namespace Fantasy.Web.ViewComponents
 {
+
+    using static SortingExtension;
     public class FootballPlayerPositionsViewComponent : ViewComponent
     {
         private readonly FantasyDbContext db;
@@ -16,10 +20,10 @@ namespace Fantasy.Web.ViewComponents
             this.db = db;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync(bool includeAll)
         {
             var positions = await this.db.FootballPlayerPositions
-                .OrderBy(fc => fc.Name)
+                .OrderBy(fc => SortByPosition(fc.Name))
                 .Select(fc => new SelectListItem
                 {
                     Text = fc.Name,
@@ -27,7 +31,10 @@ namespace Fantasy.Web.ViewComponents
                 })
                 .ToListAsync();
 
-            positions.Insert(0, new SelectListItem("All", string.Empty));
+            if (includeAll)
+            {
+                positions.Insert(0, new SelectListItem("All", string.Empty));
+            }
 
             return this.View(positions);
         }

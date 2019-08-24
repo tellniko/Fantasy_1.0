@@ -28,6 +28,8 @@
     <Folder Include="wwwroot\JsonFiles\GW1\" />
     <Folder Include="wwwroot\JsonFiles\GW2\" />
     <Folder Include="wwwroot\JsonFiles\GW3\" />
+    <Folder Include="wwwroot\JsonFiles\GW4\" />
+    <Folder Include="wwwroot\JsonFiles\GW5\" />
   </ItemGroup>
 
 </Project>

@@ -15,8 +15,8 @@
                     <div class="row" id="@player.Id">
                         <div class="col-2">
                             <img id="@player.Id" src="@player.InfoSmallImgUrl"
-                                 onerror="src='@DefaultPlayerImageUrl';"
-                                 height="45px" class="animated bounceInDown" />
+                                 onerror="src='@DefaultPlayerBigImageUrl';"
+                                 height="45px" class="animated bounceInDown" style="filter: drop-shadow(0px 5px 8px #38003c)"/>
                         </div>
                         <div class="col-6">
                             <div class="animated bounceInUp">
@@ -36,12 +36,10 @@
                                     <div class="row">
                                         <span style="font-size: 12px; font-style: italic; color: black">@(player.FootballPlayerPositionName)</span>
                                     </div> 
-                                    
-                               
                             </div>
                         </div>
                         <div class="col-2 text-center">
-                            <img src="@player.FootballClubBadgeImgUrl" height="40px" class="animated bounceInDown"/>
+                            <img src="@player.FootballClubBadgeImgUrl"  style="filter: drop-shadow(0px 5px 8px #38003c); height:40px;" class="animated bounceInDown"/>
                         </div>
                         <div class="col-2">
                             <p class="animated bounceInUp"><strong>@player.Price.ToPrice()</strong></p>
@@ -59,13 +57,13 @@
     <div class="col-2 text-center">
         <ul class="pagination">
             <li class="page-item">
-                <div id="previous" class="page-link" aria-label="Previous">
+                <div id="previous" class="page-link" aria-label="Previous"  style="cursor: pointer">
                     <span aria-hidden="true">&laquo;</span>
                     <span class="sr-only">Previous</span>
                 </div>
             </li>
             <li class="page-item">
-                <div id="next" class="page-link" aria-label="Next">
+                <div id="next" class="page-link" aria-label="Next" style="cursor: pointer">
                     <span aria-hidden="true">&raquo;</span>
                     <span class="sr-only">Next</span>
                 </div>
@@ -79,18 +77,26 @@
 
 <script>
     $(document).ready(function() {
-        $('#previous').click(function () {
+        $('#previous').click(function() {
             if (@currentPage !== 1) {
                 $('#players')
-                    .load(`/Players/GetPartialPlayers?clubId=${$('#club').val()}&positionId=${$('#position').val()
-                        }&playerName=${$('#player').val()}&order=${$('#order').val()}&page=${@currentPage - 1}`);
+                    .load('/@ViewBag.Controller/@ViewBag.Action' +
+                        '?clubId=' + $('#club').val() +
+                        '&positionId=' + $('#position').val() +
+                        '&playerName=' + $('#player').val() +
+                        '&order=' + $('#order').val() +
+                        '&page=' + (@currentPage - 1));
             }
         });
         $('#next').click(function() {
             if (@Model.Players.Count() >= @PlayersListingPageSize) {
                 $('#players')
-                    .load(`/Players/GetPartialPlayers?clubId=${$('#club').val()}&positionId=${$('#position').val()
-                        }&playerName=${$('#player').val()}&order=${$('#order').val()}&page=${@currentPage + 1}`);
+                    .load('/@ViewBag.Controller/@ViewBag.Action' +
+                        '?clubId=' + $('#club').val() +
+                        '&positionId=' + $('#position').val() +
+                        '&playerName=' + $('#player').val() +
+                        '&order=' + $('#order').val() +
+                        '&page=' + (@currentPage + 1));
             }
         });
     });

@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
-    public class ExportsController : HomeController
+    public class ExportsController : AdminController
     {
         private readonly IExportServices exportServices;
         private readonly FantasyDbContext db;
@@ -21,6 +21,9 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
         public IActionResult ExportPlayersJson()
         {
+            this.TempData.AddErrorMessage("Temporary Disabled!");
+            return RedirectToAction(nameof(Index));
+
             this.exportServices.ExportFootballPlayers();
 
             this.TempData.AddSuccessMessage("File created!");
@@ -30,12 +33,12 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
         public IActionResult ExportPlayerInfosJson()
         {
+            this.TempData.AddErrorMessage("Temporary Disabled!");
+            return RedirectToAction(nameof(Index));
+
             this.exportServices.ExportFootballPlayerInfos();
 
             this.TempData.AddSuccessMessage("File created!");
-
-            this.TempData.AddErrorMessage("Disabled!");
-
 
             return RedirectToAction(nameof(Index));
         }
@@ -50,8 +53,8 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         [HttpPost]
         public IActionResult ExportStatisticsJson(int gameweekId)
         {
-            //this.TempData.AddErrorMessage("Disabled!");
-            //return RedirectToAction(nameof(Index));
+            this.TempData.AddErrorMessage("Temporary Disabled!");
+            return RedirectToAction(nameof(Index));
 
             var result = this.exportServices.ExportStatistics(gameweekId);
 
@@ -62,11 +65,11 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             if (result == -1)
             {
-                this.TempData.AddErrorMessage("Files were not been exported!");
+                this.TempData.AddErrorMessage("Files have not been exported!");
             }
             else
             {
-                this.TempData.AddSuccessMessage("Files were been exported successfully!");
+                this.TempData.AddSuccessMessage("Files have been exported successfully!");
             }
 
             return RedirectToAction(nameof(Index));
@@ -74,7 +77,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
         private List<SelectListItem> GetGameweeks()
         {
-            return this.db.GameWeeks
+            return this.db.Gameweeks
                 .OrderBy(x => x.Id)
                 .Select(gw => new SelectListItem
                 {

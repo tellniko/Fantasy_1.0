@@ -1,0 +1,72 @@
+﻿@model string
+@{
+    ViewData["Title"] = "ManageSquad";
+}
+<br />
+<div class="row">
+    <div class="col-1" style="background-color: #38003c"></div>
+    <div class="col-10">
+
+        <div class="row">
+            <div class="col-8" id="pitch">
+
+            </div>
+            <div class="col-4" style="background-color: #ffffff">
+
+                <div class="row">
+                    <div class="col-10">
+                        <select class="form-control" id="system" style="margin-left: -15px;">
+                            <option value="">Chose your system</option>
+                            <option value="541">5 - 4 - 1</option>
+                            <option value="532">5 - 3 - 2</option>
+                            <option value="523">5 - 2 - 3</option>
+                            <option value="451">4 - 5 - 1</option>
+                            <option value="442">4 - 4 - 2</option>
+                            <option value="433">4 - 3 - 3</option>
+                            <option value="352">3 - 5 - 2</option>
+                            <option value="343">3 - 4 - 3</option>
+                        </select>
+                    </div>
+                    <div class="col-2">
+                        <div class="row">
+                            <form method="post">
+                                <input hidden id="ids" name="ids" />
+                                <button type="submit" class="btn btn-primary"
+                                        style=" margin-top: 2%; margin-bottom: 2%" id="ready" @*disabled*@>
+                                    Save
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="bench">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-1" style="background-color: #38003c"></div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#bench').load('/@ViewBag.Controller/@ViewBag.ActionGetBench');
+
+        $('#system').change(function() {
+            $('#bench').load('/@ViewBag.Controller/@ViewBag.ActionGetBench');
+            $('#pitch')
+                .load('/@ViewBag.Controller/@ViewBag.ActionGetSystem/?system=' + $(this).val());
+        });
+    });
+</script>
+
+
+<style type="text/css">
+    #pitch {
+        background: url("/images/pitch1.jpg") no-repeat center center;
+    }
+</style>

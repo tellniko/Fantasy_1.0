@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
-    public class ImportsController : HomeController
+    public class ImportsController : AdminController
     {
         private readonly IImportService importService;
         private readonly FantasyDbContext db;
@@ -72,7 +72,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
         private List<SelectListItem> GetGameweeks()
         {
-            return this.db.GameWeeks
+            return this.db.Gameweeks
                 .OrderBy(x => x.Id)
                 .Select(gw => new SelectListItem
                 {

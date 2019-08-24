@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Fantasy.Common.Mapping;
+﻿using Fantasy.Common.Mapping;
 using Fantasy.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Fantasy.Services.Implementations
 {
@@ -16,15 +16,12 @@ namespace Fantasy.Services.Implementations
             this.db = db;
         }
 
-
-        public async Task<IEnumerable<TModel>> GetByIdAsync<TModel>(int gameweekId)
+        public async Task<List<TModel>> GetByIdAsync<TModel>(int gameweekId)
         {
-            var result = await this.db.Fixtures
+            return  await this.db.Fixtures
                 .Where(f => f.GameWeekId == gameweekId)
                 .To<TModel>()
                 .ToListAsync();
-
-            return result;
         }
     }
 }

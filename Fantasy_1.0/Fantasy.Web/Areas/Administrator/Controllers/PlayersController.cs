@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
-    public class PlayersController : HomeController
+    public class PlayersController : AdminController
     {
         private readonly IPlayerService players;
         private readonly FantasyDbContext db;
@@ -68,6 +68,9 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
                 return RedirectToAction(nameof(Edit), new { model });
             }
 
+            this.TempData.AddErrorMessage($"Successfully edited player {model.Player.InfoName} with id {model.Player.Id}.");
+
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -97,7 +100,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             if (await this.players.Exists(model.Player.Id))
             {
-                this.TempData.AddErrorMessage("A player with the given id exists! Try with id in range [1-1500]!");
+                this.TempData.AddErrorMessage("A player with the given id exists already! Try with id in range [1-1500]!");
                 model.Clubs = this.GetClubs();
                 model.Positions = this.GetPositions();
 
@@ -141,7 +144,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
         private List<SelectListItem> GetGameweeks()
         {
-            return this.db.GameWeeks
+            return this.db.Gameweeks
                 .Select(gw => new SelectListItem
                 {
                     Text = gw.Name,

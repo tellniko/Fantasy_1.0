@@ -1,5 +1,33 @@
-﻿@model Fantasy.Web.Areas.Administrator.Models.GameWeekViewModel
+﻿@model GameweekServiceModel
 @{
     ViewData["Title"] = "Edit";
 }
+<br/>
+<br/>
 
+<div class="container">
+    <form method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="row">
+            <div class="col-1">
+                <input readonly asp-for="@Model.Id" class="form-control" />
+            </div>
+            <div class="col-3">
+                <input readonly asp-for="@Model.Name" class="form-control" />
+            </div>
+            <div class="col-5">
+                <div class="row">
+                    <div class="col-8">
+                        <input asp-for="@Model.Start" class="form-control" />
+                    </div>
+                    <div class="col-4">
+                        Finished <input asp-for="Finished" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <button type="submit" class="btn btn-primary">Edit</button>
+            </div>
+        </div>
+    </form>
+</div>

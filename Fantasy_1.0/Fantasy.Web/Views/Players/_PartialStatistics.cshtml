@@ -1,25 +1,25 @@
 ﻿@model IHaveStatistics
 @{
-    var goalkeeping = Model.GetProperties(Goalkeeping);
-    var defence = Model.GetProperties(Defence);
-    var attack = Model.GetProperties(Attack);
-    var teamPlay = Model.GetProperties(TeamPlay);
-    var discipline = Model.GetProperties(Discipline);
-    var match = Model.GetProperties(Match);
+    var goalkeeping = Model.GetShortProperties(nameof(IHaveStatistics.Goalkeeping));
+    var defence = Model.GetShortProperties(nameof(IHaveStatistics.Defence));
+    var attack = Model.GetShortProperties(nameof(IHaveStatistics.Attack));
+    var teamPlay = Model.GetShortProperties(nameof(IHaveStatistics.TeamPlay));
+    var discipline = Model.GetShortProperties(nameof(IHaveStatistics.Discipline));
+    var match = Model.GetShortProperties(nameof(IHaveStatistics.Match));
 }
 <div>
     <div class="row">
-        <div class="col-5" style="background-color: #ffffff">
+        <div class="col-5" style="background-color: #ffffff;filter: drop-shadow(10px 10px 12px #38003c)">
             @if(goalkeeping.Count != 0)
             {
-                <div class="row" style="background-color: #38003c; color: #ffffff"><strong>&nbsp; Goalkeeping</strong></div>
+                <div class="row" style="background-color: #38003c; color: #ffffff; font-size: 1vw;"><strong>&nbsp; Goalkeeping</strong></div>
                 @foreach (var property in goalkeeping)
                  {
                      <div class="row  infoRow">
-                         <div class="col-8 text-left animated bounceInUp">
-                             @property.Name.Replace(Goalkeeping, string.Empty).ToSentenceCase()
+                         <div class="col-8 text-left animated bounceInUp" style="font-size: 1vw;">
+                             @property.Name.ToNoFirstWord().ToSentenceCase()
                          </div>
-                         <div class="col-4 text-right animated bounceInUp">
+                         <div class="col-4 text-right animated bounceInUp" style="font-size: 1vw;">
                              @property.GetValue(Model)
                          </div>
                      </div>
@@ -27,28 +27,28 @@
             }
             @if (goalkeeping.Count == 0)
             {
-                <div class="row" style="background-color: #38003c; color: #ffffff"><strong>&nbsp; Attack</strong></div>
+                <div class="row" style="background-color: #38003c; color: #ffffff;font-size: 1vw;"><strong>&nbsp; Attack</strong></div>
             }
             @foreach (var property in attack)   
             {
                 <div class="row  infoRow" >
-                    <div class="col-8 text-left animated bounceInUp">
-                        @property.Name.Replace(Attack, string.Empty).ToSentenceCase()
+                    <div class="col-8 text-left animated bounceInUp" style="font-size: 1vw;">
+                        @property.Name.ToNoFirstWord().ToSentenceCase()
                     </div>
-                    <div class="col-4 text-right animated bounceInUp">
+                    <div class="col-4 text-right animated bounceInUp" style="font-size: 1vw;">
                         @property.GetValue(Model)
                     </div>
                 </div>
             }
             <br/>
-            <div class="row" style="background-color: #04f5ff; color: #38003c"><strong>&nbsp; Defence</strong></div>
+            <div class="row" style="background-color: #04f5ff; color: #38003c; font-size: 1vw;"><strong>&nbsp; Defence</strong></div>
             @foreach (var property in defence)
             {
                 <div class="row infoRow">
-                    <div class="col-8 text-left animated bounceInUp">
-                        @property.Name.Replace(Defence, string.Empty).ToSentenceCase()
+                    <div class="col-8 text-left animated bounceInUp" style="font-size: 1vw;">
+                        @property.Name.ToNoFirstWord().ToSentenceCase()
                     </div>
-                    <div class="col-4 text-right animated bounceInUp">
+                    <div class="col-4 text-right animated bounceInUp" style="font-size: 1vw;">
                         @property.GetValue(Model)
                     </div>
                 </div>
@@ -60,41 +60,41 @@
                 @await Component.InvokeAsync("Gameweeks")
             </div>*@
         </div>
-        <div class="col-5" style="background-color: #ffffff">
-            <div class="row" style="background-color: #00ff85; color: #38003c"> <strong>&nbsp; Team Play</strong></div>
+        <div class="col-5" style="background-color: #ffffff;filter: drop-shadow(10px 10px 12px #38003c)">
+            <div class="row" style="background-color: #00ff85; color: #38003c;font-size: 1vw;"> <strong>&nbsp; Team Play</strong></div>
             @foreach (var property in teamPlay)
             {
                 <div class="row animated  infoRow">
-                    <div class="col-8 text-left animated bounceInUp">
-                        @property.Name.Replace(TeamPlay, string.Empty).ToSentenceCase()
+                    <div class="col-8 text-left animated bounceInUp" style="font-size: 1vw;">
+                        @property.Name.ToNoFirstWord().ToNoFirstWord().ToSentenceCase()
                     </div>
-                    <div class="col-4 text-right animated bounceInUp">
+                    <div class="col-4 text-right animated bounceInUp" style="font-size: 1vw;">
                         @property.GetValue(Model)
                     </div>
                 </div>
             }
             <br />
-            <div class="row" style="background-color: #e90052; color: #ffffff"><strong>&nbsp; Discipline</strong></div>
+            <div class="row" style="background-color: #e90052; color: #ffffff; font-size: 1vw;"><strong>&nbsp; Discipline</strong></div>
             @foreach (var property in discipline)
             {
                 <div class="row infoRow">
-                    <div class="col-8 text-left animated bounceInUp">
-                        @property.Name.Replace(Discipline, string.Empty).ToSentenceCase()
+                    <div class="col-8 text-left animated bounceInUp" style="font-size: 1vw;">
+                        @property.Name.ToNoFirstWord().ToSentenceCase()
                     </div>
-                    <div class="col-4 text-right animated bounceInUp">
+                    <div class="col-4 text-right animated bounceInUp" style="font-size: 1vw;">
                         @property.GetValue(Model)
                     </div>
                 </div>
             }
             <br />
-            <div class="row" style="background-color: #ffff00; color: #38003c"><strong>&nbsp; Overall</strong></div>
+            <div class="row" style="background-color: #ffff00; color: #38003c;font-size: 1vw;"><strong>&nbsp; Overall</strong></div>
             @foreach (var property in match)
             {
                 <div class="row infoRow">
-                    <div class="col-8 text-left animated bounceInUp">
-                        <strong>@property.Name.Replace(Match, string.Empty).ToSentenceCase()</strong>
+                    <div class="col-8 text-left animated bounceInUp" style="font-size: 1vw;">
+                        <strong>@property.Name.ToNoFirstWord().ToSentenceCase()</strong>
                     </div>
-                    <div class="col-4 text-right animated bounceInUp">
+                    <div class="col-4 text-right animated bounceInUp" style="font-size: 1vw;">
                         <strong>@property.GetValue(Model)</strong>
                     </div>
                 </div>

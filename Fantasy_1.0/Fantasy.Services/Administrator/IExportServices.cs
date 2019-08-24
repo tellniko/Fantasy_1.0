@@ -3,10 +3,10 @@
     public interface IExportServices
     {
         //todo refactor
-        void ExportFootballPlayers();
+        bool ExportFootballPlayers();
 
         //todo refactor
-        void ExportFootballPlayerInfos();
+        bool ExportFootballPlayerInfos();
 
         int ExportStatistics(int gameweekId);
     }

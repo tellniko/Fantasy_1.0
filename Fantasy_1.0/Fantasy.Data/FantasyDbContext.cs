@@ -20,15 +20,16 @@ namespace Fantasy.Data
         public DbSet<FootballPlayerPosition> FootballPlayerPositions { get; set; }
         public DbSet<FootballClub> FootballClubs { get; set; }
         public DbSet<Fixture> Fixtures { get; set; }
-        public DbSet<Gameweek> GameWeeks { get; set; }
+        public DbSet<Gameweek> Gameweeks { get; set; }
         public DbSet<GoalkeepingStatistics> GoalkeepingStatistics { get; set; }
         public DbSet<DefenceStatistics> DefenceStatistics { get; set; }
         public DbSet<TeamPlayStatistics> TeamPlayStatistics { get; set; }
         public DbSet<AttackStatistics> AttackStatistics { get; set; }
         public DbSet<DisciplineStatistics> DisciplineStatistics { get; set; }
         public DbSet<MatchStatistics> MatchStatistics { get; set; }
-        public DbSet<FantasyUserPlayer> FantasyUserPlayers { get; set; }
-        
+        public DbSet<FantasyPlayer> FantasyPlayers { get; set; }
+       // public DbSet<FantasyPlayerStatus> Statuses { get; set; }
+        public DbSet<GameweekStatus> GameweeksStatuses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -38,6 +39,21 @@ namespace Fantasy.Data
                 .WithOne(fpi => fpi.FootballPlayer)
                 .HasForeignKey<FootballPlayerInfo>(fpi => fpi.FootballPlayerId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            builder
+                .Entity<GameweekStatus>(entity =>
+                {
+                    entity
+                        .HasKey(e => new { e.FantasyPlayerId, e.GameweekId });
+                    entity
+                        .HasOne(e => e.Gameweek)
+                        .WithMany(e => e.GameweekStatuses)
+                        .HasForeignKey(e => e.GameweekId);
+                    entity
+                        .HasOne(e => e.FantasyPlayer)
+                        .WithMany(e => e.GameweekStatuses)
+                        .HasForeignKey(e => e.FantasyPlayerId);
+                });
 
             builder
                 .Entity<MatchStatistics>(entity =>

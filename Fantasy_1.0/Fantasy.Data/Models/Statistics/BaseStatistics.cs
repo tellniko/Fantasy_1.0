@@ -14,4 +14,6 @@ namespace Fantasy.Data.Models.Statistics
         [JsonIgnore]
         public Gameweek Gameweek { get; set; }
     }
+
+    
 }

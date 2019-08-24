@@ -1,8 +1,8 @@
-﻿using System.Threading.Tasks;
-using Fantasy.Services;
+﻿using Fantasy.Services;
 using Fantasy.Services.Models;
-using Fantasy.Web.Models;
+using Fantasy.Web.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace Fantasy.Web.Controllers
 {
@@ -17,10 +17,13 @@ namespace Fantasy.Web.Controllers
 
         public IActionResult Index()
         {
+            this.ViewBag.Action = nameof(GetPartialFixturesAsync);
+            this.ViewBag.Controller = nameof(FixturesController).ToFirstWord();
+
             return View();
         }
 
-        public async Task<IActionResult> GetPartialFixtures(int gameweekId)
+        public async Task<IActionResult> GetPartialFixturesAsync(int gameweekId)
         {
             var model = await this.fixtures.GetByIdAsync<FixtureServiceModel>(gameweekId);
 

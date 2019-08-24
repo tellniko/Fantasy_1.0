@@ -15,6 +15,10 @@ namespace Fantasy.Services.Models
 
         public string InfoSmallImgUrl { get; set; }
 
+        public string InfoBigImgUrl { get; set; }
+
         public string FootballClubBadgeImgUrl { get; set; }
+
+        public int FootballClubId { get; set; }
     }
 }

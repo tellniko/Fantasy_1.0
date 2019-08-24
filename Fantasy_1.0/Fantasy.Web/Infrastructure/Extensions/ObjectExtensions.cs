@@ -6,12 +6,12 @@ namespace Fantasy.Web.Infrastructure.Extensions
 {
     public static class ObjectExtensions
     {
-        public static List<PropertyInfo> GetProperties(this object obj, string startsWith)
+        public static List<PropertyInfo> GetShortProperties(this object obj, string startsWith)
         {
             return obj
                 .GetType()
                 .GetProperties()
-                .Where(p => p.Name.StartsWith(startsWith))
+                .Where(p => p.Name.StartsWith(startsWith) && p.PropertyType.Name == typeof(short).Name)
                 .ToList();
         }
     }

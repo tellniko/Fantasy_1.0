@@ -17,12 +17,10 @@
      </div>
 
 <script>
-    $(document).ready(function () {
-        $('#fixtures').load('/Fixtures/GetPartialFixtures?gameweekId=1');
+    $('#fixtures').load('/@ViewBag.Controller/@ViewBag.Action?gameweekId=1');
 
-        $('#gameweek').on('change', function () {
-             $('#fixtures').load(`/Fixtures/GetPartialFixtures?gameweekId=${$('#gameweek').val()}`);
-        });
+    $('#gameweek').on('change', function () {
+        $('#fixtures').load(`/@ViewBag.Controller/@ViewBag.Action?gameweekId=${$('#gameweek').val()}`);
     });
 </script>
     

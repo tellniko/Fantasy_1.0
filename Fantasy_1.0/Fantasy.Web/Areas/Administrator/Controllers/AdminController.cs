@@ -1,13 +1,14 @@
-﻿using Fantasy.Web.Infrastructure;
+﻿using Fantasy.Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
+    using static GlobalConstants;
 
-    [Area("Administrator")]
-    [Authorize(Roles = GlobalConstants.AdministratorRole)]
-    public class HomeController : Controller
+    [Area(AdministratorRole)]
+    [Authorize(Roles = AdministratorRole)]
+    public class AdminController : Controller
     {
         public IActionResult Index()
         {

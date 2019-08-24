@@ -17,7 +17,7 @@ namespace Fantasy.Web.Infrastructure.Extensions
 
     public static class ApplicationBuilderExtensions
     {
-        public static IApplicationBuilder UseDatabaseMigration(this IApplicationBuilder app)
+        public static IApplicationBuilder SeedDatabase(this IApplicationBuilder app)
         {
             using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
@@ -26,6 +26,58 @@ namespace Fantasy.Web.Infrastructure.Extensions
                     //context.Database.Migrate();
                     // 
                     //serviceScope.ServiceProvider.GetService<FantasyDbContext>().Database.Migrate();
+
+                      #region Administrator
+                    var userManager = serviceScope.ServiceProvider.GetService<UserManager<FantasyUser>>();
+                    var roleManager = serviceScope.ServiceProvider.GetService<RoleManager<IdentityRole>>();
+                    // Allows a call of an async code in a sync context
+                    Task.Run(async () =>
+                        {
+                            //todo refactor
+                            var adminName = AdministratorRole;
+                            //var manager = "Manager";
+
+                            var roleExists = await roleManager.RoleExistsAsync(adminName);
+                            if (!roleExists)
+                            {
+                                await roleManager.CreateAsync(new IdentityRole
+                                {
+                                    Name = adminName
+                                });
+                            }
+
+                            //roleExists = await roleManager.RoleExistsAsync(manager);
+                            //if (!roleExists)
+                            //{
+                            //    await roleManager.CreateAsync(new IdentityRole
+                            //    {
+                            //        Name = "Manager"
+                            //    });
+                            //}
+
+                            var adminEmail = "admin@admin.com";
+                            var username = "admin";
+                            var adminUser = await userManager.FindByNameAsync(username);
+
+                            if (adminUser == null)
+                            {
+                                adminUser = new FantasyUser()
+                                {
+                                    Email = adminEmail,
+                                    UserName = username,
+                                    //FullName = username,
+                                    SquadName = username,
+                                    //FootballClubId = 1,
+                                };
+                                await userManager.CreateAsync(adminUser, "123");
+                                await userManager.AddToRoleAsync(adminUser, adminName);
+                            }
+                        })
+                        .GetAwaiter()
+                        .GetResult();
+                    // 
+                    //.Wait
+                    #endregion
                     
                     #region Clubs
                     if (!context.FootballClubs.Any())
@@ -253,7 +305,7 @@ namespace Fantasy.Web.Infrastructure.Extensions
                     #region Gameweeks
                     var gameweeks = new List<Gameweek>();
 
-                    if (!context.GameWeeks.Any())
+                    if (!context.Gameweeks.Any())
                     {
                         for (var i = 1; i <= 38; i++)
                         {
@@ -349,46 +401,7 @@ namespace Fantasy.Web.Infrastructure.Extensions
                     }
                     #endregion
 
-                    #region Administrator
-                    var userManager = serviceScope.ServiceProvider.GetService<UserManager<FantasyUser>>();
-                    var roleManager = serviceScope.ServiceProvider.GetService<RoleManager<IdentityRole>>();
-                    // Allows a call of an async code in a sync context
-                    Task.Run(async () =>
-                        {
-                            var adminName = AdministratorRole;
-                            var roleExists = await roleManager.RoleExistsAsync(adminName);
-
-                            if (!roleExists)
-                            {
-                                await roleManager.CreateAsync(new IdentityRole
-                                {
-                                    Name = adminName
-                                });
-                            }
-
-                            var adminEmail = "admin@admin.com";
-                            var username = "admin";
-                            var adminUser = await userManager.FindByNameAsync(username);
-
-                            if (adminUser == null)
-                            {
-                                adminUser = new FantasyUser()
-                                {
-                                    Email = adminEmail,
-                                    UserName = username,
-                                    FullName = username,
-                                    SquadName = username,
-                                    FootballClubId = 1,
-                                };
-                                await userManager.CreateAsync(adminUser, "123");
-                                await userManager.AddToRoleAsync(adminUser, adminName);
-                            }
-                        })
-                        .GetAwaiter()
-                        .GetResult();
-                    // 
-                    //.Wait
-                    #endregion
+                  
                 }
             }
 

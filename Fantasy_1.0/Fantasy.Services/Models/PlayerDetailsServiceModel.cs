@@ -1,16 +1,13 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using AutoMapper;
+﻿using AutoMapper;
 using Fantasy.Common.Mapping;
 using Fantasy.Data.Models.FootballPlayers;
+using System;
 
 namespace Fantasy.Services.Models
 {
     public class PlayerDetailsServiceModel : PlayerServiceModel, IHaveCustomMappings
     {
         public bool IsInjured { get; set; }
-
-        public string InfoBigImgUrl { get; set; } 
 
         public byte? InfoShirtNumber { get; set; }
 
@@ -25,7 +22,6 @@ namespace Fantasy.Services.Models
         public string InfoCountry { get; set; }
 
         public string Ground { get; set; }
-
 
         public void CreateMappings(IProfileExpression configuration)
         {

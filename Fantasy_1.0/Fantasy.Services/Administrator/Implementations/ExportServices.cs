@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
+﻿using Fantasy.Common.Mapping;
 using Fantasy.Data;
-using Newtonsoft.Json;
-using  System.Linq;
-using Fantasy.Common.Mapping;
 using Fantasy.Services.Administrator.Models.Db;
+using Newtonsoft.Json;
+using System;
+using System.IO;
+using System.Linq;
 
 namespace Fantasy.Services.Administrator.Implementations
 {
@@ -19,23 +17,39 @@ namespace Fantasy.Services.Administrator.Implementations
             this.db = db;
         }
 
-        public void ExportFootballPlayers()
+        public bool ExportFootballPlayers()
         {
-            //return;
-            //var players = this.db.FootballPlayers.To<FootballPlayerJsonModel>().ToList();
-            //File.WriteAllText("wwwroot/JsonFiles/footballPlayers.json", JsonConvert.SerializeObject(players));
+            try
+            {
+                File.WriteAllText("wwwroot/JsonFiles/footballPlayers.json", JsonConvert.SerializeObject(
+                    this.db.FootballPlayers.To<FootballPlayerJsonModel>().ToList()));
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+            return true;
         }
 
-        public void ExportFootballPlayerInfos()
+        public bool ExportFootballPlayerInfos()
         {
-            return;
-            var infos = this.db.FootballPlayerInfos.To<FootballPlayerInfoJsonModel>().ToList();
-            File.WriteAllText("wwwroot/JsonFiles/footballPlayerInfos.json", JsonConvert.SerializeObject(infos));
+            try
+            {
+                File.WriteAllText("wwwroot/JsonFiles/footballPlayerInfos.json", JsonConvert.SerializeObject(
+                    this.db.FootballPlayerInfos.To<FootballPlayerInfoJsonModel>().ToList()));
+            }
+            catch (Exception)
+            {
+                return false;
+            }   
+            
+            return true;
         }
 
         public int ExportStatistics(int gameweekId)
         {
-            var gameweek = this.db.GameWeeks.Find(gameweekId);
+            var gameweek = this.db.Gameweeks.Find(gameweekId);
             if (gameweek == null)
             {
                 return 0;

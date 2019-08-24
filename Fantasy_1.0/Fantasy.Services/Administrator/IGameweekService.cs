@@ -1,14 +1,19 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Fantasy.Data.Models.Common;
 using Fantasy.Services.Administrator.Models;
 
 namespace Fantasy.Services.Administrator
 {
     public interface IGameweekService
     {
-        IEnumerable<GameweekServiceModel> GetAll();
+        List<TModel> GetAll<TModel>();
 
-        GameweekServiceModel Get(int id);
+        TModel GetById<TModel>(int gameweekId);
 
-        bool Edit(GameweekServiceModel model);
+        bool? Edit(GameweekServiceModel model);
+
+        Task<Gameweek> GetByStart(DateTime start);
     }
 }

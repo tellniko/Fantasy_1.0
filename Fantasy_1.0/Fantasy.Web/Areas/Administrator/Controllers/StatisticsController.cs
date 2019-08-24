@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
-    public class StatisticsController : HomeController
+    public class StatisticsController : AdminController
     {
         private readonly IStatisticsService statisticsService;
         private readonly FantasyDbContext db;
@@ -27,11 +27,10 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             return View(model);
         }
 
-
         [HttpPost]
         public IActionResult Seed(int gameweekId)
         {
-            var gameweek = this.db.GameWeeks.FirstOrDefault(gw => gw.Id == gameweekId);
+            var gameweek = this.db.Gameweeks.FirstOrDefault(gw => gw.Id == gameweekId);
 
             if (gameweek == null)
             {
@@ -43,7 +42,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             if (result == null)
             {
-                this.TempData.AddErrorMessage("Statistics for this gameweek is already updated!");
+                this.TempData.AddErrorMessage($"Statistics for {gameweek.Name} has been updated already!");
             }
             else
             {
@@ -55,7 +54,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
         private List<SelectListItem> GetGameweeks()
         {
-            return this.db.GameWeeks
+            return this.db.Gameweeks
                 .OrderBy(x => x.Id)
                 .Select(gw => new SelectListItem
                 {

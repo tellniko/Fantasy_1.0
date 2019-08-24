@@ -1,4 +1,4 @@
-﻿    @{
+﻿@{
     ViewData["Title"] = "Players";
 }
 
@@ -14,7 +14,7 @@
                         </div>
                     </div>
                     <br/><br/>
-                    @await Component.InvokeAsync("FootballClubs")
+                      @await Component.InvokeAsync("FootballClubs", new {includeAll = true, useShortNames = false})
                 </div>
                 <div class="row" style="margin-top: 5px">
                     <div class="row" style="background-color: #38003c">
@@ -24,7 +24,7 @@
                     </div>
                     <br/><br/>
 
-                    @await Component.InvokeAsync("FootballPlayerPositions")
+                    @await Component.InvokeAsync("FootballPlayerPositions", true)
                 </div>
                 <div class="row" style="margin-top: 5px">
                     <div class="row" style="background-color: #38003c">
@@ -34,7 +34,7 @@
                     </div>
                     <br/><br/>
 
-                    <input class="form-control" id="player"/>
+                    <input class="form-control" id="player" style="filter: drop-shadow(0px 5px 8px #38003c)"/>
                 </div>
                 <div class="row" style="margin-top: 5px">
                     <div class="row" style="background-color: #38003c">
@@ -44,7 +44,7 @@
                     </div>
                     <br/><br/>
 
-                    <select class="form-control" id="order">
+                    <select class="form-control" id="order" style="filter: drop-shadow(0px 5px 8px #38003c)">
                         <option value="Name" Text="Name">Name</option>
                         <option value="priceAscending">Price Ascending</option>
                         <option value="priceDescending">Price Descending</option>
@@ -58,9 +58,8 @@
 </div>
 
 <script>
-    $(document).ready(function () {
-        
-        $('#players').load('/Players/GetPartialPlayers');
+    $(document).ready(function() {
+        $('#players').load('/@ViewBag.Controller/@ViewBag.Action');
 
         let position = $('#position');
         let player = $('#player');
@@ -74,7 +73,11 @@
 
         function filter() {
             $('#players')
-                .load(`/Players/GetPartialPlayers?clubId=${club.val()}&positionId=${position.val()}&playerName=${player.val()}&order=${order.val()}`);
+                .load('/@ViewBag.Controller/@ViewBag.Action' 
+                    + '?clubId=' + club.val()
+                    + '&positionId=' + position.val()
+                    + '&playerName=' + player.val()
+                    + '&order=' + order.val());
         }
     });
 </script>

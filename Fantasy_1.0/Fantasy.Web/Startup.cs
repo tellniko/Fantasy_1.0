@@ -1,15 +1,8 @@
-﻿using System;
-using System.Linq;
-using System.Reflection;
-using AutoMapper;
-using Fantasy.Common.Mapping;
+﻿using Fantasy.Common.Mapping;
 using Fantasy.Data;
-using Fantasy.Data.Models;
 using Fantasy.Data.Models.Common;
 using Fantasy.Services;
-using Fantasy.Web.Areas.Administrator.Models;
 using Fantasy.Web.Infrastructure.Extensions;
-using Fantasy.Web.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -18,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace Fantasy.Web
 {
@@ -62,10 +56,13 @@ namespace Fantasy.Web
             services
                 .AddDomainServices();
 
-            
+            services
+                .ConfigureApplicationCookie(options => options.LoginPath = "/Identity/Account/LogIn");
 
             services
-                .AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+                .AddMvc(options =>
+                    options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()))
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -74,7 +71,7 @@ namespace Fantasy.Web
                 typeof(IService).GetTypeInfo().Assembly,
                 Assembly.GetExecutingAssembly());
 
-            app.UseDatabaseMigration();
+            app.SeedDatabase();
 
             if (env.IsDevelopment())
             {

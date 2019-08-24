@@ -41,5 +41,11 @@ namespace Fantasy.Services.Models
         public short AttackShots { get; set; }
         public short AttackShotsOnTarget { get; set; }
         public short AttackBigChancesMissed { get; set; }
+        public string Goalkeeping { get; }
+        public string Defence { get; }
+        public string Attack { get; }
+        public string TeamPlay { get; }
+        public string Discipline { get; }
+        public string Match { get; }
     }
 }

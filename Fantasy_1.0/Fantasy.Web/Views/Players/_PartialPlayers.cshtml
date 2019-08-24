@@ -11,9 +11,9 @@
                 <div class="row" id="@player.Id">
                     <div class="col-2">
                         <img id="@player.Id" src="@player.InfoSmallImgUrl"
-                             onerror="if (this.src != 'error.jpg') this.src='@DefaultPlayerImageUrl';"
-                             width="45px" class="animated bounceInDown" />
-                    </div>
+                             onerror="src='@DefaultPlayerBigImageUrl';"
+                             width="45px" class="animated bounceInDown" style="filter: drop-shadow(0px 16px 13px #38003c)"/>
+                    </div>ssss  
                     <div class="col-6">
                         <div class="animated bounceInUp">
                             <a asp-controller="Players" asp-action="Details" asp-route-playerId="@player.Id" asp-route-position="@player.FootballPlayerPositionName" target="_blank">
@@ -27,16 +27,6 @@
                         </div>
                     </div>
                     <div class="col-2">
-                        @if (@player.FootballClubBadgeImgUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t6.svg")
-                        {
-                            <img src="@player.FootballClubBadgeImgUrl" width="20px" class="animated bounceInDown"/>
-
-                        }
-                        else
-                        {
-                            <img src="@player.FootballClubBadgeImgUrl" width="400%" class="animated bounceInDown"/>
-
-                        }
                     </div>
                     <div class="col-2">
                         <p class="animated bounceInUp"><strong>@player.Price.ToPrice()</strong></p>

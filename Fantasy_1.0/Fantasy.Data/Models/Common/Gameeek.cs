@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Fantasy.Data.Models.Game;
 using Fantasy.Data.Models.Statistics;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Fantasy.Data.Models.Common
 {
+    using static DataConstants;
+
     public class Gameweek : BaseModel<int>
     {
-        //todo bit
+        [MinLength(CommonNameMinLength)]
+        [MaxLength(CommonNameMaxLength)]
         public string Name { get; set; }
 
         public bool Finished { get; set; } = false;
@@ -26,5 +31,7 @@ namespace Fantasy.Data.Models.Common
         public List<AttackStatistics> AttackStatistics { get; set; } = new List<AttackStatistics>();
 
         public List<DisciplineStatistics> DisciplineStatistics { get; set; } = new List<DisciplineStatistics>();
+
+        public List<GameweekStatus> GameweekStatuses { get; set; } = new List<GameweekStatus>();
     }
 }

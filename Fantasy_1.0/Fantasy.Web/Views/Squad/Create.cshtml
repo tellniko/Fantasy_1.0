@@ -1,0 +1,334 @@
+﻿@model UserSquadFormModel
+@{
+    ViewData["Title"] = "Create Squad";
+}
+<div id="message"></div>
+<div class="row" style="margin-top: 60px;" id="main">
+    <div class="col-1" @*style="background-color: #38003c"*@></div>
+    <div class="col-10">
+    <div class="row">
+
+        <div class="col-8">
+            <div class="jumbotron" style="background-color: #38003c; color: #ffffff; padding-bottom: 80px;">
+                <div style="text-align: center; font-size: 1.2vw">
+                    Build your squad. Chose your players wisely
+                    - once you press "Save" button, you will have no chance to make any changes! Good luck!
+                </div>
+            </div>
+
+           
+                <form method="post">
+                    <input hidden asp-for="PlayerId1" id="gg1" class="form" />
+                    <input hidden asp-for="PlayerId2" id="gg2" class="form" />
+                    <input hidden asp-for="PlayerId3" id="gg3" class="form" />
+                    <input hidden asp-for="PlayerId4" id="dd1" class="form" />
+                    <input hidden asp-for="PlayerId5" id="dd2" class="form" />
+                    <input hidden asp-for="PlayerId6" id="dd3" class="form" />
+                    <input hidden asp-for="PlayerId7" id="dd4" class="form" />
+                    <input hidden asp-for="PlayerId8" id="dd5" class="form" />
+                    <input hidden asp-for="PlayerId9" id="dd6" class="form" />
+                    <input hidden asp-for="PlayerId10" id="dd7" class="form" />
+                    <input hidden asp-for="PlayerId11" id="mm1" class="form" />
+                    <input hidden asp-for="PlayerId12" id="mm2" class="form" />
+                    <input hidden asp-for="PlayerId13" id="mm3" class="form" />
+                    <input hidden asp-for="PlayerId14" id="mm4" class="form" />
+                    <input hidden asp-for="PlayerId15" id="mm5" class="form" />
+                    <input hidden asp-for="PlayerId16" id="mm6" class="form" />
+                    <input hidden asp-for="PlayerId17" id="mm7" class="form" />
+                    <input hidden asp-for="PlayerId18" id="ff1" class="form" />
+                    <input hidden asp-for="PlayerId19" id="ff2" class="form" />
+                    <input hidden asp-for="PlayerId20" id="ff3" class="form" />
+                    <input hidden asp-for="PlayerId21" id="ff4" class="form" />
+                    <input hidden asp-for="PlayerId22" id="ff5" class="form" />
+                    <button type="submit" class="btn btn-primary btn-lg btn-block"style="margin-bottom: 5px;" id="ready" disabled>Save your squad</button> @*todo*@
+                </form>
+
+            <div class="row" style="background-color: #38003c; color: #e90052"> &nbsp;<strong>Goalkeepers</strong></div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-4 text-center" >
+                    <div>
+                        <img class="fp" freeslot="yes" footballClubId="0" price="0" src="@DefaultPlayerBigImageUrl"
+                             style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="g1" />
+                        <div style="font-size: 1vw; font-weight: 500">-</div>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div>
+                        <img class="fp" freeslot="yes" footballClubId="0" price="0" src="@DefaultPlayerBigImageUrl"
+                             style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="g2" />
+                        <div style="font-size: 1vw; font-weight: 500">-</div>
+
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div>
+                        <img class="fp" freeslot="yes" footballClubId="0" price="0" src="@DefaultPlayerBigImageUrl"
+                             style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="g3" />
+                        <div style="font-size: 1vw; font-weight: 500">-</div>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div>
+                <div class="row" style="background-color: #38003c; color: #00ff85"> &nbsp;<strong>Defenders</strong></div>
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-3 text-center">
+                        <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                             style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="d1" />
+                        <div style="font-size: 1vw; font-weight: 500">-</div>
+
+                    </div>
+                    <div class="col-3 text-center">
+                        <div>
+                            <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                 style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="d2" />
+                            <div style="font-size: 1vw; font-weight: 500">-</div>
+
+                        </div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <div>
+                            <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                 style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="d3" />
+                            <div style="font-size: 1vw; font-weight: 500">-</div>
+                        </div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <div>
+                            <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                 style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="d4" />
+                            <div style="font-size: 1vw; font-weight: 500">-</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row" >
+                    <div class="col-4 text-center">
+                        <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                             style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="d5" />
+                        <div style="font-size: 1vw; font-weight: 500">-</div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <div>
+                            <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                 style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="d6" />
+                            <div style="font-size: 1vw; font-weight: 500">-</div>
+                        </div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <div>
+                            <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                 style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="d7" />
+                            <div style="font-size: 1vw; font-weight: 500">-</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="row" style="background-color: #38003c; color: #04f5ff"> &nbsp;<strong>Midfielders</strong></div>
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-3 text-center">
+                            <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                 style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="m1" />
+                            <div style="font-size: 1vw; font-weight: 500">-</div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <div>
+                                <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                     style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="m2" />
+                                <div style="font-size: 1vw; font-weight: 500">-</div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <div>
+                                <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                     style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="m3" />
+                                <div style="font-size: 1vw; font-weight: 500">-</div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <div>
+                                <img class="fp" src="@DefaultPlayerBigImageUrl"
+                                     style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="m4" />
+                                <div style="font-size: 1vw; font-weight: 500">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                             style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="m5" />
+                        <div style="font-size: 1vw; font-weight: 500">-</div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <div>
+                            <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                 style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="m6" />
+                            <div style="font-size: 1vw; font-weight: 500">-</div>
+                        </div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <div>
+                            <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                 style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="m7" />
+                            <div style="font-size: 1vw; font-weight: 500">-</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="row" style="background-color: #38003c; color: #ffff00"> &nbsp;<strong>Forwards</strong></div>
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-4 text-center">
+                            <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                 style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="f1" />
+                            <div style="font-size: 1vw; font-weight: 500">-</div>
+                        </div>
+                        <div class="col-4 text-center">
+                            <div>
+                                <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                     style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="f2" />
+                                <div style="font-size: 1vw; font-weight: 500">-</div>
+                            </div>
+                        </div>
+                        <div class="col-4 text-center">
+                            <div>
+                                <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                     style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="f3" />
+                                <div style="font-size: 1vw; font-weight: 500">-</div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-3 text-center">
+                                <div>
+                                    <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                         style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="f4" />
+                                    <div style="font-size: 0.9vw; font-weight: 500">-</div>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <div>
+                                    <img class="fp" freeslot="yes" src="@DefaultPlayerBigImageUrl"
+                                         style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 5px 8px #38003c)" id="f5" />
+                                    <div style="font-size: 1vw; font-weight: 500">-</div>
+                                </div>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @for (var i = 1; i <= 22; i++)
+            {
+                <input type="number" hidden id="@i" />
+            }
+        </div>
+
+        <div class="col-4">
+            <div class="row">
+                <div class="row">
+                    <div class="col-3">
+                        <label style="margin-top: 10px">Position</label>
+                    </div>
+                    <div class="col-9">
+                        @await Component.InvokeAsync("FootballPlayerPositions", true)
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5px">
+                    <div class="col-3">
+                        <label style="margin-top: 20px">Club</label>
+                    </div>
+                    <div class="col-9">
+                        <div class="row" style="margin-top: 10px">
+                            @await Component.InvokeAsync("FootballClubs", new { includeAll = true, useShortnames = true })
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 15px">
+                    <div class="col-3">
+                        <label style="margin-top: 10px">Name</label>
+                    </div>
+                    <div class="col-9">
+                        <input class="form-control" id="player" style="filter: drop-shadow(0px 5px 8px #38003c);" />
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 15px">
+                    <div class="col-3">
+                        <label style="margin-top: 10px">Order By</label>
+                    </div>
+                    <div class="col-9">
+                        <select class="form-control" id="order" style="filter: drop-shadow(0px 5px 8px #38003c)">
+                            <option value="Name" Text="Name">Name</option>
+                            <option value="priceAscending">Price Ascending</option>
+                            <option value="priceDescending">Price Descending</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-right" id="budgetColor" style="color: #00ff85; font-size: 4vw; margin-left: 7vw">
+                <div><text>$</text> <text id="budget">@SquadBudget</text></div>
+            </div>
+
+            <div class="row" id="players" style="margin-top: 1.9vw">
+                
+            </div>
+        </div>
+
+
+    </div>
+        </div>
+<div class="col-1" @*style="background-color: #38003c"*@></div>
+
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#players').load('/@ViewBag.Controller/@ViewBag.Action');
+
+        $('#player').on('keyup', filter);
+        $('#position').on('change', filter);
+        $('#club').on('change', filter);
+        $('#order').on('change', filter);
+
+        function filter() {
+            $('#players')
+                .load('/@ViewBag.Controller/@ViewBag.Action' 
+                    + '?clubId=' + $('#club').val() 
+                    + '&positionId=' + $('#position').val() 
+                    + '&playerName=' + $('#player').val()
+                    + '&order=' + $('#order').val());
+        }
+
+        $('.fp').click(function() {
+            if ($(this).attr('freeSlot') !== "yes") {
+                $(this).attr('id', (this.id).toLowerCase());
+                let playersCount = Number($('#' + $(this).attr('footballClubId')).val()) - 1;
+                $('#' + $(this).attr('footballClubId')).val(playersCount);
+                $(this).attr('footballClubId', 0);
+                $('#budget').text(((Number($('#budget').text())) + Number($(this).attr('price'))).toFixed(2));
+                if (Number($('#budget').text()) > 0) {
+                    $('#budgetColor').css('color', '#00ff85');
+                }
+                $(this).attr('freeSlot', 'yes');
+                $(this).attr('src', '@DefaultPlayerBigImageUrl');
+                $(this).removeClass('animated zoomIn');
+                $($($(this).parent()).children()[1]).text("-");
+                $('#' + this.id[0] + this.id).val('');
+                //todo disable
+               //$('#ready').attr("disabled", true);
+            }
+        });
+    });
+</script>
+
+
+

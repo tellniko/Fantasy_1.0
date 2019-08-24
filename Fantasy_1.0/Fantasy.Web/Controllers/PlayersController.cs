@@ -1,11 +1,12 @@
-﻿using System;
-using Fantasy.Data;
+﻿using Fantasy.Data;
 using Fantasy.Services;
 using Fantasy.Services.Models;
 using Fantasy.Web.Infrastructure;
+using Fantasy.Web.Infrastructure.Extensions;
+using Fantasy.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using Fantasy.Web.Models;
+using Fantasy.Common;
 
 namespace Fantasy.Web.Controllers
 {
@@ -22,28 +23,41 @@ namespace Fantasy.Web.Controllers
 
         public IActionResult Index()
         {
+            this.ViewBag.Action = nameof(GetPartialPlayersAsync);
+            this.ViewBag.Controller = nameof(PlayersController).ToFirstWord();
+
             return View();
         }
 
-        public async Task<IActionResult> GetPartialPlayers(string clubId, string positionId, string playerName, string order, int page = 1)
+        public async Task<IActionResult> GetPartialPlayersAsync(
+            string clubId, 
+            string positionId, 
+            string playerName, 
+            string order, 
+            int page = 1)
         {
             var model = new PlayersListingViewModel
             {
-                Players = await this.players.GetAllWithPaginationAsync<PlayerServiceModel>(clubId, positionId, playerName, order, page, PlayersListingPageSize),
+                Players = await this.players
+                    .GetAllWithPaginationAsync<PlayerServiceModel>(clubId, positionId, playerName, order, page, PlayersListingPageSize),
                 CurrentPage = page,
             };
 
-            return PartialView("_PartialPlayersPagination", model);
+            this.ViewBag.Action = nameof(GetPartialPlayersAsync);
+            this.ViewBag.Controller = nameof(PlayersController).ToFirstWord();
 
-            //return PartialView("_PartialPlayers", await this.players.GetAllAsync<PlayerServiceModel>(clubId, positionId, playerName, order));
+            return PartialView("_PartialPlayersPagination", model);
         }
 
         public async Task<IActionResult> Details(int playerId)
         {
+            this.ViewBag.Action = nameof(GetPartialStatisticsAsync);
+            this.ViewBag.Controller = nameof(PlayersController).ToFirstWord();
+
             return View(await this.players.GetByIdAsync<PlayerDetailsServiceModel>(playerId));
         }
 
-        public async Task<IActionResult> GetPartialStatistics(int playerId, string position, int gameweekId = 1)
+        public async Task<IActionResult> GetPartialStatisticsAsync(int playerId, string position, int gameweekId = 1)
         {
             switch (position)
             {

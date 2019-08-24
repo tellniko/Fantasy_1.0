@@ -38,6 +38,11 @@
                     <input asp-for="Input.ConfirmPassword" class="form-control" />
                     <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                 </div>
+                @*<div class="form-group">
+                    <label>Football Club</label>
+                    @await Component.InvokeAsync("FootballClubs", false)
+                </div>*@
+
                 <button type="submit" class="btn btn-primary">Register</button>
             </form>
         </div>

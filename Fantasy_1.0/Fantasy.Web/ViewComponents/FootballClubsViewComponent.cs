@@ -16,18 +16,21 @@ namespace Fantasy.Web.ViewComponents
             this.db = db;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync(string page2)
+        public async Task<IViewComponentResult> InvokeAsync(bool includeAll, bool useShortNames)
         {
             var clubs = await this.db.FootballClubs
                 .OrderBy(fc => fc.Name)
                 .Select(fc => new SelectListItem
                 {
-                    Text = fc.Name,
+                    Text = useShortNames ? fc.ShortName : fc.Name,
                     Value = fc.Tag
                 })
                 .ToListAsync();
 
-            clubs.Insert(0, new SelectListItem("All", string.Empty));
+            if (includeAll)
+            {
+                clubs.Insert(0, new SelectListItem("All", string.Empty));
+            }
 
             return this.View(clubs);
         }

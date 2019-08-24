@@ -23,6 +23,10 @@ namespace Fantasy.Services.Models
 
         public string HomeTeamBadgeImgUrl { get; set; }
 
+        public string HomeTeamTag { get; set; }
+
+        public string AwayTeamTag { get; set; }
+
         public string AwayTeamShortName { get; set; }
 
         public string AwayTeamBadgeImgUrl { get; set; }

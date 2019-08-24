@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using Fantasy.Common.Mapping;
 using Fantasy.Data;
@@ -19,67 +20,50 @@ namespace Fantasy.Services.Administrator.Implementations
             this.db = db;
         }
 
-        public IEnumerable<GameweekServiceModel> GetAll()
+
+        public List<TModel> GetAll<TModel>()
         {
-            return this.db
-                .GameWeeks
-                .Where(gw => gw.Id != 0)
-                .OrderBy(gw => gw.Id)
-                .To<GameweekServiceModel>()
+            return this.db.Gameweeks
+                .Take(38)
+                .To<TModel>()
                 .ToList();
         }
 
-        public GameweekServiceModel Get(int id)
+        public TModel GetById<TModel>(int gameweekId)
         {
-            return this.db
-                .GameWeeks
-                .Where(gw => gw.Id == id)
-                .To<GameweekServiceModel>()
+            return this.db.Gameweeks
+                .Where(gw => gw.Id == gameweekId)
+                .To<TModel>()
                 .FirstOrDefault();
         }
 
-        //public GameweekDetailsServiceModel GetDetails(int id)
-        //{
-        //    return this.db.GameWeeks
-        //        .Where(gw => gw.Id == id)
-        //        .Select(gw => new GameweekDetailsServiceModel
-        //        {
-        //            Gameweek = new GameweekServiceModel
-        //            {
-        //                Id = gw.Id,
-        //                Number = gw.Number,
-        //                Finished = gw.Finished,
-        //                Start = gw.Start
-        //            },
-        //            Fixtures = gw.Fixtures
-        //            .Select(f => new FixtureServiceModel
-        //            {
-        //                AwayTeamId = f.AwayTeamId,
-        //                HomeTeamId = f.HomeTeamId,
-        //                DateTimeStart = f.DateTimeStart,
-        //                Finished = f.Finished,
-        //                GameweekId = id,
-        //            })
-        //           .ToList()
-        //        })
-        //        .FirstOrDefault();
-        //}
-
-        public bool Edit(GameweekServiceModel model)
+        public bool? Edit(GameweekServiceModel model)
         {
-            var gw = this.db.GameWeeks.Find(model.Id);
+            var gameweek = this.db.Gameweeks.Find(model.Id);
+            if (gameweek == null)
+            {
+                return null;
+            }
 
-            if (gw == null)
+            gameweek.Finished = model.Finished;
+            gameweek.Start = model.Start;
+
+            var result = this.db.SaveChanges();
+            if (result == 0)
             {
                 return false;
             }
 
-            gw.Finished = model.Finished;
-            gw.Start = model.Start;
+            return true;
+        }
 
-            db.Update(gw);
+        public async Task<Gameweek> GetByStart(DateTime start)
+        {
+            var a =  await this.db.Gameweeks
+                .Include(gw => gw.Fixtures)
+                .Include(gw => gw.GameweekStatuses).ToListAsync();
 
-            return  db.SaveChanges() == 1;
+            return null;
         }
     }
 }

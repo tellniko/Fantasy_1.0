@@ -1,0 +1,199 @@
+﻿@model PlayersListingViewModel
+@{
+    ViewData["Title"] = "_PartialPlayers2";
+    var currentPage = Model.CurrentPage;
+}
+
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-5"></div>
+        <div class="col-2 text-center">
+            <ul class="pagination">
+                <li class="page-item">
+                    <div id="previous" class="page-link" style="cursor: pointer" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </div>
+                </li>
+                <li class="page-item">
+                    <div id="next" class="page-link" style="cursor: pointer" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-5"></div>
+    </div>
+<div class="row">
+    @foreach (var player in Model.Players)
+    {
+        <div class="row player" style="border-bottom: #38003c 1px solid; cursor: pointer" 
+             id="@player.Id" 
+             position="@player.FootballPlayerPositionName" 
+             price="@player.Price"
+             imgUrl="@player.InfoBigImgUrl"
+             name="@player.InfoName.ToShortName()"
+             footballClubId="@player.FootballClubId">
+
+            <div class="col-2 animated bounceInUp">
+                <img src="@player.InfoSmallImgUrl" onerror="src='@DefaultPlayerSmallImageUrl'"
+                style="width: 2.5vw; margin-top: 5px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)"/>
+            </div>
+
+            <div class="col-5 animated bounceInDown">
+                <p style="font-size: 0.8vw; margin-top: 0.7vw;">
+                    <strong style="background-color: #38003c; color: #ffffff">&nbsp;@player.FootballPlayerPositionName[0]&nbsp;</strong>
+                    &nbsp;@player.InfoName.ToShortName()
+                </p>
+            </div>
+
+            <div class="col-2 animated bounceInUp">
+                @if (@player.FootballClubBadgeImgUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t6.svg")
+                {
+                    <img src="@player.FootballClubBadgeImgUrl"
+                         style="width: 1.1vw; margin-top: 10px; margin-bottom: 5px;; filter: drop-shadow(0px 5px 8px #38003c)"/>
+                }
+                else
+                {
+                    <img src="@player.FootballClubBadgeImgUrl"
+                         style="width: 1.5vw; margin-top: 15px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)"/>
+                }
+            </div>
+
+            <div class="col-3 animated bounceInDown" style="color: #e90052; text-align: right">
+                <p style="font-size: 0.9vw; margin-top: 0.8vw;"><strong>@player.Price.ToPrice()</strong></p>
+            </div>
+
+        </div>
+    }
+</div>
+
+
+
+<script>
+    $(document).ready(function() {
+        $('#previous').click(function () {
+            if (@currentPage !== 1) {
+                $('#players')
+                    .load('/@ViewBag.Controller/@ViewBag.Action'
+                        + '?clubId=' + $('#club').val() 
+                        + '&positionId=' + $('#position').val()
+                        + '&playerName=' + $('#player').val()
+                        + '&order=' + $('#order').val()
+                        + '&page=' + (@currentPage - 1))
+;            }
+        });
+        $('#next').click(function () {
+            console.log(@Model.Players.Count());
+            console.log(@Model.Players.Count());
+
+            if (@Model.Players.Count() >= @PlayersListingPageSize) {
+                $('#players')
+                    .load('/@ViewBag.Controller/@ViewBag.Action'
+                        + '?clubId=' + $('#club').val() 
+                        + '&positionId=' + $('#position').val()
+                        + '&playerName=' + $('#player').val()
+                        + '&order=' + $('#order').val()
+                        + '&page=' + (@currentPage + 1));
+            }
+        });
+
+        $('div .player').click(function() {
+
+            let price = $(this).attr('price');
+            let position = $(this).attr('position');
+            let id = $(this).attr('id');
+            let imgUrl = $(this).attr('imgUrl');
+            let name = $(this).attr('name');
+            let footballClubId = $(this).attr('footballClubId');
+
+            switch (position) {
+            case "Goalkeeper":
+                switchPlayer(3,'g','G', this);
+                break;
+            case "Defender":
+                switchPlayer(7,'d','D', this);
+                break;
+            case "Midfielder":
+                switchPlayer(7,'m','M', this);
+                break;
+            case "Forward":
+                switchPlayer(5,'f','F', this);
+                break;
+            }
+
+            function switchPlayer(count, idBefore, idAfter, player) {
+                console.log(Number($('#' + $(player).attr('footballClubId')).val()));
+                console.log($(player));
+                if (Number($('#' + $(player).attr('footballClubId')).val()) >= 4) {
+                    $('#message').empty();
+                    $('#main').css('margin-top', '20px');
+                    $('#message').append('<h2 class="text-success animated 1 bounce text-center">You can not have more than 4 players from the same club!</h2>');
+                    setTimeout(() => {$('#message').empty(); $('#main').css('margin-top', '55px');}, 6000);
+                    return;
+                }
+                
+                for (let i = 1; i <= count; i++) {
+                    if ($('#' + idBefore + i).attr('id') == undefined) {
+                        if (i === count) {
+                            $('#message').empty();
+                            $('#main').css('margin-top', '20px');
+                            $('#message').append('<h2 class="text-success animated 1 bounce text-center">Remove one of your players first!</h2>');
+                            setTimeout(() => {$('#message').empty(); $('#main').css('margin-top', '55px');}, 6000);
+
+                        }
+                        continue;
+                    }
+                    for (let j = 1; j <= count; j++) {
+                        if ($('#' + idAfter + j).attr('src') === imgUrl) {
+                            $('#message').empty();
+                            $('#main').css('margin-top', '20px');
+                            $('#message').append('<h2 class="text-success animated 1 bounce text-center">You have this player already!</h2>');
+                            setTimeout(() => {$('#message').empty(); $('#main').css('margin-top', '60px');}, 6000);
+                            return;
+                        }
+                    }
+                    let playersCount = Number($('#' + $(player).attr('footballClubId')).val()) + 1;
+                    $('#' + $(player).attr('footballClubId')).val(playersCount);
+
+                    $($($('#' + idBefore + i).parent()).children()[1]).text(name);
+                    $('#' + idBefore + idBefore + i).val(id);
+                    $('#' + idBefore + i).attr('id', idAfter + i);
+                    $('#' + idAfter + i).addClass('animated zoomIn');
+                    $('#' + idAfter + i).attr('src', imgUrl);
+                    $('#' + idAfter + i).attr('footballClubId', footballClubId);
+                    $('#' + idAfter + i).attr('price', price);
+                    $('#budget').text((Number($('#budget').text()) - price).toFixed(2));
+                    if (Number($('#budget').text()) < 0) {
+                        $('#budgetColor').css('color', '#e90052');
+                    }
+                    $('#' + idAfter + i).attr('freeSlot', 'no');
+                    let form = $('.form');
+                    if (Number($('#budget').text()) >= 0) {
+                        //todo
+                        //$('#ready').attr("disabled", false);
+                    }
+
+                    for (let i = 0; i < form.length; i++) {
+                        if ($(form[i]).val() === '') {
+                            //todo
+                           // $('#ready').attr("disabled", true);
+                            break;
+                        }
+                    }
+                    break;
+                }
+            }
+            //$(`#M${i}`).on('error',function () {
+            //    $(this).unbind("error").attr("src",
+            //        "https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/Photo-Missing.png");
+            //});
+        });
+    });
+</script>
+
+
+
+
+
+

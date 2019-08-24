@@ -31,6 +31,12 @@ namespace Fantasy.Services.Models
         public short TeamPlayAssists { get; set; }
         public short TeamPlayPasses { get; set; }
         public short TeamPlayAccurateLongBalls { get; set; }
+        public string Goalkeeping { get; }
+        public string Defence { get; }
+        public string Attack { get; }
+        public string TeamPlay { get; }
+        public string Discipline { get; }
+        public string Match { get; }
 
         public void CreateMappings(IProfileExpression configuration)
         {

@@ -5,6 +5,6 @@ namespace Fantasy.Services
 {
     public interface IFixtureService
     {
-        Task<IEnumerable<TModel>> GetByIdAsync<TModel>(int gameweekId);
+        Task<List<TModel>> GetByIdAsync<TModel>(int gameweekId);
     }
 }

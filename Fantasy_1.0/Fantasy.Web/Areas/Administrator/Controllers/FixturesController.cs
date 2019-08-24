@@ -10,7 +10,7 @@ using System.Linq;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
-    public class FixturesController : HomeController
+    public class FixturesController : AdminController
     {
         private readonly IGameweekService gameweeks;
         private readonly IFootballClubService footballClubs;
@@ -61,7 +61,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         private IEnumerable<SelectListItem> GetGameweeks()
         {
             return this.gameweeks
-                .GetAll()
+                .GetAll<GameweekServiceModel>()
                 .Select(gw => new SelectListItem
                 {
                     Text = gw.Name,

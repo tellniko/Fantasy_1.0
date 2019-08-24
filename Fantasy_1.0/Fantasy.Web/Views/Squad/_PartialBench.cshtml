@@ -1,0 +1,143 @@
+﻿@model List<Fantasy.Data.Models.Game.FantasyPlayer>
+@{
+    ViewData["Title"] = "_PartialBench";
+}
+
+
+<div class="row" style="background-color: #38003c; color: #ffffff; margin-top: 10px;"> &nbsp;<strong>Goalkeepers</strong></div>
+<div class="row" style="background-color: #e90052;">
+    @foreach (var player in Model
+     .Where(x => x.FootballPlayer.FootballPlayerPosition.Name == Goalkeeper)
+     .OrderBy(x => x.FootballPlayer.Info.Name).ToList())
+    {
+        <div class="col-3 text-center" style="margin-top: 5px;">
+            <img src="@player.FootballPlayer.Info.BigImgUrl" freePos="no" class="g" style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 16px 13px #38003c)" playerId="@player.Id"/>
+            <div style="color: #38003c; margin-top: 10px; margin-bottom: 2px;font-size: 0.7vw"><strong>@player.FootballPlayer.Info.Name.ToLastName()</strong></div>
+        </div>
+    }
+    <div class="col-3"></div>
+</div>
+<div class="row" style="background-color: #38003c; color: #ffffff; margin-top: 5px;"> &nbsp;<strong>Defenders</strong></div>
+<div class="row" style="background-color: #00ff85;">
+    @foreach (var player in Model
+     .Where(x => x.FootballPlayer.FootballPlayerPosition.Name == Defender)
+     .OrderBy(x => x.FootballPlayer.Info.Name).Take(4).ToList())
+    {
+        <div class="col-3 text-center" style="margin-top: 5px;">
+            <img src="@player.FootballPlayer.Info.BigImgUrl" freePos="no" class="d" style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 16px 13px #38003c)" playerId="@player.Id"/>
+            <div style="color: #38003c; margin-top: 10px; margin-bottom: 2px;font-size: 0.7vw"><strong>@player.FootballPlayer.Info.Name.ToLastName()</strong></div>
+        </div>
+    }
+</div>
+<div class="row" style="background-color: #00ff85;">
+    @foreach (var player in Model
+     .Where(x => x.FootballPlayer.FootballPlayerPosition.Name == Defender)
+     .OrderBy(x => x.FootballPlayer.Info.Name).Skip(4).ToList())
+    {
+        <div class="col-3 text-center" style="margin-top: 5px;">
+            <img src="@player.FootballPlayer.Info.BigImgUrl" freePos="no" class="d" style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 16px 13px #38003c)" playerId="@player.Id"/>
+            <div style="color: black; margin-top: 10px; margin-bottom: 2px;font-size: 0.7vw"><strong>@player.FootballPlayer.Info.Name.ToLastName()</strong></div>
+        </div>
+    }
+    <div class="col-3"></div>
+</div>
+<div class="row" style="background-color: #38003c; color: #ffffff; margin-top: 5px;"> &nbsp;<strong>Midfielders</strong></div>
+<div class="row" style="background-color: #04f5ff;">
+    @foreach (var player in Model
+     .Where(x => x.FootballPlayer.FootballPlayerPosition.Name == Midfielder)
+     .OrderBy(x => x.FootballPlayer.Info.Name).Take(4).ToList())
+    {
+    <div class="col-3 text-center" style="margin-top: 5px;">
+        <img src="@player.FootballPlayer.Info.BigImgUrl" freePos="no" class="m" style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 16px 13px #38003c)" playerId="@player.Id" />
+        <div style="color: #38003c; margin-top: 10px; margin-bottom: 2px;font-size: 0.7vw"><strong>@player.FootballPlayer.Info.Name.ToLastName()</strong></div>
+    </div>
+    }
+</div>
+<div class="row" style="background-color: #04f5ff;">
+    @foreach (var player in Model
+     .Where(x => x.FootballPlayer.FootballPlayerPosition.Name == Midfielder)
+     .OrderBy(x => x.FootballPlayer.Info.Name).Skip(4).ToList())
+    {
+        <div class="col-3 text-center" style="margin-top: 5px;">
+            <img src="@player.FootballPlayer.Info.BigImgUrl" freePos="no" class="m" style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 16px 13px #38003c)" playerId="@player.Id" />
+            <div style="color: #38003c; margin-top: 10px; margin-bottom: 2px;font-size: 0.7vw"><strong>@player.FootballPlayer.Info.Name.ToLastName()</strong></div>
+        </div>
+    }
+    <div class="col-3"></div>
+</div>
+<div class="row" style="background-color: #38003c; color: #ffffff; margin-top: 5px;"> &nbsp;<strong>Forwards</strong></div>
+<div class="row"  style="background-color: #ffff00;">
+    @foreach (var player in Model
+     .Where(x => x.FootballPlayer.FootballPlayerPosition.Name == Forward)
+     .OrderBy(x => x.FootballPlayer.Info.Name).Take(4).ToList())
+    {
+    <div class="col-3 text-center" style="margin-top: 5px;">
+        <img src="@player.FootballPlayer.Info.BigImgUrl" freePos="no" class="f" style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 16px 13px #38003c)" playerId="@player.Id" />
+        <div style="color: #38003c; margin-top: 10px; margin-bottom: 2px;font-size: 0.7vw"><strong>@player.FootballPlayer.Info.Name.ToLastName()</strong></div>
+    </div>
+    }
+</div>
+<div class="row"  style="background-color: #ffff00;">
+    @foreach (var player in Model
+    .Where(x => x.FootballPlayer.FootballPlayerPosition.Name == Forward)
+    .OrderBy(x => x.FootballPlayer.Info.Name).Skip(4).Take(4).ToList())
+    {
+    <div class="col-3 text-center" style="margin-top: 5px;">
+        <img src="@player.FootballPlayer.Info.BigImgUrl" freePos="no" class="f" style="width: 4vw; cursor: pointer; filter: drop-shadow(0px 16px 13px #38003c)" playerId="@player.Id" />
+        <div style="color: #38003c; margin-top: 10px; margin-bottom: 2px;font-size: 0.7vw"><strong>@player.FootballPlayer.Info.Name.ToLastName()</strong></div>
+    </div>
+    }
+</div>
+<br />
+
+<script>
+    $(document).ready(function() {
+        $('div.row div.col-3 img ').click(function() {
+            switch ($(this).attr('class')[0]) {
+                case "g": switchPlayers('G', 1, this);
+                    break;
+                case "d": switchPlayers('D', 7, this);
+                    break;
+                case "m": switchPlayers('M', 7, this);
+                    break;
+                case "f": switchPlayers('F', 4, this);
+                    break;
+            }
+        });
+
+        function switchPlayers(position, count, player) {
+            if ($(player).attr('freePos') === 'no') {
+                for (let i = 1; i <= count; i++) {
+                    if ($('#' + position + i).attr('freePos') === "yes") {
+                        $('#' + position + i).attr('title', $($(player).parent().children()[1]).text());
+                        $($(player).parent().children()[1]).text('-');
+                        $(player).attr('freePos', 'yes');
+                        $('#' + position + i).attr('freePos', 'no');
+                        $('#' + position + i).attr('playerId', $(player).attr('playerId'));
+                        $('#' + position + i).removeClass('animated fadeIn');
+                        $(player).addClass('animated fadeIn');
+                        $('#' + position + i).attr('src', $(player).attr('src'));
+                        $(player).attr('src', '@DefaultPlayerBigImageUrl');
+                        $(player).attr('id', 'free' + position + i);
+                        stringifyIds();
+                        break;
+                    }
+                }
+            }
+        }
+
+        function stringifyIds() {
+            let ids = '';
+            let firstTeam = $('.FP')
+
+            for (let i = 0; i < firstTeam.length; i++) {
+                ids += ' ' + $(firstTeam[i]).attr('playerId');
+                if ($(firstTeam[i]).attr('playerId') == 0
+                    || $(firstTeam[i]).attr('playerId') == undefined) {
+                    return;
+                }
+            }
+           $('#ids').val(ids);
+        }
+    });
+</script>

@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<div class="container">
+    <br/>
+    <div>
+        <div class="row">
+            <div class="col-6">
+                <a asp-area="Administrator" asp-controller="Exports" asp-action="ExportPlayersJson" class="btn btn-primary">Export Players Json</a>
+                <br /><br />
+
+                <a asp-area="Administrator" asp-controller="Exports" asp-action="ExportPlayerInfosJson" class="btn btn-primary">Export PlayerInfos Json</a>
+                <br /><br />
+
+                <a asp-area="Administrator" asp-controller="Exports" asp-action="ExportStatisticsJson" class="btn btn-primary">Export Statistics Json</a>
+                <br /><br />
+            </div>
+
+            <div class="col-6">
+                <a asp-area="Administrator" asp-controller="Imports" asp-action="ImportPlayers" class="btn btn-primary">Import Players From Json File</a>
+                <br /><br />
+
+                <a asp-area="Administrator" asp-controller="Statistics" asp-action="Seed" class="btn btn-primary">Seed Statistics</a>
+                <br /><br />
+                
+                <a asp-area="Administrator" asp-controller="Imports" asp-action="ImportStatistics" class="btn btn-primary">Import Statistics From Json File</a>
+                <br /><br />
+            </div>
+        </div>
+        <br/><br/>
+        <div class="row">
+            <div class="col-6">
+                <a asp-area="Administrator" asp-controller="Fixtures" asp-action="Create" class="btn btn-primary">Create Fixture</a>
+                <br /><br />
+
+                <a asp-area="Administrator" asp-controller="Players" asp-action="Add" class="btn btn-primary">Add New Player</a>
+                <br /><br />
+            </div>
+            <div class="col-6">
+                <a asp-area="Administrator" asp-controller="Gameweeks" asp-action="All" class="btn btn-primary">View Gameweeks</a>
+                <br /><br />
+            </div>
+        </div>
+    </div>
+</div>

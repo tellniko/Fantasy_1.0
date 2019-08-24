@@ -4,8 +4,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
-using Fantasy.Common;
-using Fantasy.Web.Infrastructure;
 
 namespace Fantasy.Web.ViewComponents
 {
@@ -22,7 +20,7 @@ namespace Fantasy.Web.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync(bool all)
         {
-            var gameweeks = await this.db.GameWeeks
+            var gameweeks = await this.db.Gameweeks
                 .Where(gw => gw.Id  != PreSeasonStatisticsGameweekId && gw.Id != AllTimeStatisticsGameweekId)
                 .OrderBy(gw => gw.Id)
                 .Select(gw => new SelectListItem
@@ -35,7 +33,6 @@ namespace Fantasy.Web.ViewComponents
             if (all)
             {
                 gameweeks.Insert(0, new SelectListItem("All Time", AllTimeStatisticsGameweekId.ToString()));
-
             }
 
             return this.View(gameweeks);
