@@ -1,16 +1,15 @@
-﻿using System;
-using Fantasy.Common;
+﻿using Fantasy.Common;
 using Fantasy.Data;
 using Fantasy.Data.Models.Common;
 using Fantasy.Data.Models.Game;
+using Fantasy.Services.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Fantasy.Services.Models;
 
 
 namespace Fantasy.Services.Implementations
@@ -31,24 +30,20 @@ namespace Fantasy.Services.Implementations
         }
 
         //todo refactor
-        public async Task<List<FantasyPlayer>> GetSquadAsync(string id)
+        public async Task<List<FantasyPlayerServiceModel>> GetSquadAsync(string id)
         {
             var user = await this.userManager.FindByIdAsync(id);
 
-            var test = user.Squad;
-
-            var squad = this.db.FantasyPlayers
-                .Include(fp => fp.FootballPlayer)
-                .ThenInclude(fp => fp.FootballPlayerPosition)
-                .Include(fp => fp.FootballPlayer)
-                .ThenInclude(fp => fp.Info)
-                .Where(fp => fp.FantasyUser == user )
-                .ToList();
-
-
-            return test;
-
-
+            return await this.db.FantasyPlayers
+                .Where(fp => fp.FantasyUser == user)
+                .Select(fp => new FantasyPlayerServiceModel
+                {
+                    Name = fp.FootballPlayer.Info.Name,
+                    Position = fp.FootballPlayer.FootballPlayerPosition.Name,
+                    BigImgUrl = fp.FootballPlayer.Info.BigImgUrl,
+                    Id = fp.Id
+                })
+                .ToListAsync();
         }
 
         public async Task<bool> ValidateSquadAsync(List<int> playerIds)
@@ -97,7 +92,8 @@ namespace Fantasy.Services.Implementations
             {
                 return null;
             }
-            var fantasyPlayers = new List<FantasyPlayer>();
+            var squad = new List<FantasyPlayer>();
+            var scores = new List<GameweekScore>();
 
             var gameweeks = await this.db.Gameweeks.Take(SeasonGamewwekCount).ToListAsync();
 
@@ -120,10 +116,23 @@ namespace Fantasy.Services.Implementations
                         IsBenched = true,
                     });
                 }
-                fantasyPlayers.Add(fantasyPlayer);
+                squad.Add(fantasyPlayer);
             }
 
-            await this.db.AddRangeAsync(fantasyPlayers);
+            foreach (var gameweek in gameweeks) 
+            {
+                var score = new GameweekScore
+                {
+                    Gameweek = gameweek,
+                    FantasyUser = fantasyUser,
+                    Score = 0
+                };
+                scores.Add(score);
+            }
+
+            await this.db.AddRangeAsync(squad);
+            await this.db.AddRangeAsync(scores);
+
             var result = await this.db.SaveChangesAsync();
 
             if (result == 0)
@@ -182,22 +191,8 @@ namespace Fantasy.Services.Implementations
             return true;
         }
 
-        public async Task<List<FantasyPlayer>> SaveFirstTeam(string ids, string userId)
+        public async Task SaveFirstTeam(string ids, string userId)
         {
-            var gameweeks = await this.db.Gameweeks
-                .OrderBy(gw => gw.Start)
-                .ToListAsync();
-
-            //gameweek to change the squad
-            var nextGameweek = await this.db.Gameweeks
-                .OrderBy(gw => gw.Start)
-                .FirstOrDefaultAsync(gw => gw.Start > DateTime.UtcNow);
-
-            // current gameweek to show
-            var currentGameweek = await this.db.Gameweeks
-                .OrderByDescending(gw => gw.Start)
-                .FirstOrDefaultAsync(gw => gw.Start < DateTime.UtcNow);
-
             var firstTeamIdsList = ids.Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .Distinct()
@@ -205,6 +200,7 @@ namespace Fantasy.Services.Implementations
 
             var squad = this.db.FantasyPlayers
                 .Include(fp => fp.GameweekStatuses)
+                .ThenInclude(gs => gs.Gameweek)
                 .Where(fp => fp.FantasyUserId == userId)
                 .ToList();
 
@@ -219,8 +215,6 @@ namespace Fantasy.Services.Implementations
             }
 
             await this.db.SaveChangesAsync();
-
-            return squad;
         }
 
         public async Task<List<FantasyPlayerServiceModel>> GetCurrentSquad(string userId, int gameweekId)
@@ -243,6 +237,46 @@ namespace Fantasy.Services.Implementations
                 .ToListAsync();
         }
 
+        public async Task<bool> SquadExists(string userId)
+        {
+            return await this.db.FantasyPlayers.Where(fp => fp.FantasyUserId == userId).CountAsync() != 0;
+        }
+
+        public async Task Test(string userId)
+        {
+            var gameweekId = 1;
+
+
+            var gameweek = await this.db.Gameweeks.FirstOrDefaultAsync(gw => gw.Id == gameweekId);
+            var user = await this.userManager.FindByIdAsync(userId);
+
+            Console.WriteLine();
+
+            var test = this.db.FantasyPlayers
+                .Where(p => p.FantasyUser == user)
+                .SelectMany(p => p.FootballPlayer.GameweekPoints.Where(gwp => gwp.Gameweek == gameweek))
+                .Select(x => new
+                {
+                    id = x.FootbalPlayerId,
+                    points = x.Points,
+                    gameweekId = x.GameweekId,
+                    fantasyplayerId = x.FootballPlayer.FantasyUserPlayers.Find(z => z.FootballPlayerId == x.FootbalPlayerId).Id
+
+                })
+                .ToList();
+
+            Console.WriteLine();
+
+            var mySquad = this.db.FantasyPlayers
+                .Where(x => x.FantasyUser == user &&
+                            x.GameweekStatuses.First(y => y.Gameweek == gameweek).IsBenched == false)
+
+                .Sum(z => z.FootballPlayer.GameweekPoints.First(y => y.Gameweek == gameweek).Points);
+               
+
+
+            Console.WriteLine();
+        }
         private bool ValidateSystem(List<int> idsList)
         {
             var firstTeamPositions = this.db.FantasyPlayers
@@ -261,12 +295,10 @@ namespace Fantasy.Services.Implementations
             if (goalkeepers == 1 && defenders == 4 && midfielders == 5 && forwards == 1) return true;
             if (goalkeepers == 1 && defenders == 4 && midfielders == 4 && forwards == 2) return true;
             if (goalkeepers == 1 && defenders == 4 && midfielders == 3 && forwards == 3) return true;
-            if (goalkeepers == 1 && defenders == 3 && midfielders == 4 && forwards == 3) return true;
             if (goalkeepers == 1 && defenders == 3 && midfielders == 5 && forwards == 2) return true;
+            if (goalkeepers == 1 && defenders == 3 && midfielders == 4 && forwards == 3) return true;
 
             return false;
         }
     }
-
-    
 }

@@ -1,0 +1,23 @@
+﻿@model List<SelectListItem>
+@{
+    ViewData["Title"] = "Update Points";
+}
+
+<br /><br />
+<br /><br />
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h3>@ViewData["Title"]</h3>
+            <br />
+            <form method="post">
+                <div class="form-group">
+                    <label>Gamweek</label>
+                    <select name="gameweekId" asp-items="Model" class="form-control"> </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Seed</button>
+            </form>
+        </div>
+    </div>
+
+</div>

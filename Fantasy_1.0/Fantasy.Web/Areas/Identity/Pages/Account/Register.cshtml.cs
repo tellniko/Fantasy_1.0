@@ -42,8 +42,8 @@ namespace Fantasy.Web.Areas.Identity.Pages.Account
 
             [Required]
             [StringLength(50, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
-            [Display(Name = "Full Name")]
-            public string FullName { get; set; }
+            [Display(Name = "Squad Name")]
+            public string SquadName { get; set; }
 
             [Required]
             [EmailAddress]
@@ -76,7 +76,7 @@ namespace Fantasy.Web.Areas.Identity.Pages.Account
                 {
                     UserName = Input.Username,
                     Email = Input.Email,
-                    FullName = Input.FullName,
+                    SquadName = Input.SquadName,
                 };
                 var result = await userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)

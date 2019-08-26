@@ -1,11 +1,11 @@
 ﻿@model IHaveStatistics
 @{
-    var goalkeeping = Model.GetShortProperties(nameof(IHaveStatistics.Goalkeeping));
-    var defence = Model.GetShortProperties(nameof(IHaveStatistics.Defence));
-    var attack = Model.GetShortProperties(nameof(IHaveStatistics.Attack));
-    var teamPlay = Model.GetShortProperties(nameof(IHaveStatistics.TeamPlay));
-    var discipline = Model.GetShortProperties(nameof(IHaveStatistics.Discipline));
-    var match = Model.GetShortProperties(nameof(IHaveStatistics.Match));
+    var goalkeeping = Model.GetTypeOfShortProperties(nameof(IHaveStatistics.Goalkeeping));
+    var defence = Model.GetTypeOfShortProperties(nameof(IHaveStatistics.Defence));
+    var attack = Model.GetTypeOfShortProperties(nameof(IHaveStatistics.Attack));
+    var teamPlay = Model.GetTypeOfShortProperties(nameof(IHaveStatistics.TeamPlay));
+    var discipline = Model.GetTypeOfShortProperties(nameof(IHaveStatistics.Discipline));
+    var match = Model.GetTypeOfShortProperties(nameof(IHaveStatistics.Match));
 }
 <div>
     <div class="row">
@@ -102,17 +102,6 @@
         </div>
     </div>
 </div>
-
-@*<script>
-    $(document).ready(function() {
-            let gameweek = $('#gameweek');
-            console.log(gameweek);
-            gameweek.change(function() {
-                $('#stat').load(`/Players/GetPartialStatistics?playerId=${4618}&position=${$('#pos').text()}&gameweekId=${$('#gameweek').val()}`);
-            });
-    });
-</script>*@
-
 <style rel="stylesheet">
     .infoRow {
         border-bottom: #38003c 1px solid;

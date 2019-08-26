@@ -5,7 +5,7 @@ using System;
 
 namespace Fantasy.Services.Models
 {
-    public class PlayerDetailsServiceModel : PlayerServiceModel, IHaveCustomMappings
+    public class FootballPlayerDetailsServiceModel : FootballPlayerServiceModel, IHaveCustomMappings
     {
         public bool IsInjured { get; set; }
 
@@ -26,7 +26,7 @@ namespace Fantasy.Services.Models
         public void CreateMappings(IProfileExpression configuration)
         {
             configuration
-                .CreateMap<FootballPlayer, PlayerDetailsServiceModel>()
+                .CreateMap<FootballPlayer, FootballPlayerDetailsServiceModel>()
                 .ForMember(p => p.Ground, cfg => cfg.MapFrom(p => p.FootballClub.Tag.ToLower() + ".jpg"));
         }
     }

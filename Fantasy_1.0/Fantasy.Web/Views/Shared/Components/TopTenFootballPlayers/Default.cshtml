@@ -1,0 +1,32 @@
+﻿@model List<TopTenFootballPlayerViewModel>
+@{
+    ViewData["Title"] = "Default";
+}
+    <div>
+        <div style="background-color: #38003c; color: #ffffff; filter: drop-shadow(0px 5px 8px #38003c); margin-bottom: 5px;">&nbsp;TOP 10 @(Model[0].Position)s</div>
+        <div class="row" style="color: #e90052">
+            <div class="col-6" style="font-size: 0.8vw">
+               <strong>Name</strong>
+            </div>
+            <div class="col-4" style="font-size: 0.8vw">
+                <strong>Points</strong>
+            </div>
+            <div class="col-2"style="font-size: 0.8vw">
+                <strong>Club</strong>
+            </div>
+        </div>
+        @foreach (var player in Model)
+        {
+            <div class="row" style="border-bottom: #38003c 1px solid; border-bottom-color: #38003c; margin-top: 5px;">
+                <div class="col-6" style="font-size: 0.8vw">
+                    <strong>@player.Name.ToShortName()</strong>
+                </div>
+                <div class="col-4" style="font-size: 0.8vw">
+                    <strong>@player.Points.ToString("F0")</strong>
+                </div>
+                <div class="col-2">
+                    <img src="@player.SmallImgUrl" style="height: 1vw; margin-bottom: 2px;"/>
+                </div>
+            </div>
+        }
+    </div>

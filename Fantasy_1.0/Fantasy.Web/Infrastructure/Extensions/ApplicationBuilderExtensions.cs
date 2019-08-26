@@ -27,7 +27,7 @@ namespace Fantasy.Web.Infrastructure.Extensions
                     // 
                     //serviceScope.ServiceProvider.GetService<FantasyDbContext>().Database.Migrate();
 
-                      #region Administrator
+                    #region Administrator
                     var userManager = serviceScope.ServiceProvider.GetService<UserManager<FantasyUser>>();
                     var roleManager = serviceScope.ServiceProvider.GetService<RoleManager<IdentityRole>>();
                     // Allows a call of an async code in a sync context
@@ -35,7 +35,6 @@ namespace Fantasy.Web.Infrastructure.Extensions
                         {
                             //todo refactor
                             var adminName = AdministratorRole;
-                            //var manager = "Manager";
 
                             var roleExists = await roleManager.RoleExistsAsync(adminName);
                             if (!roleExists)
@@ -45,15 +44,6 @@ namespace Fantasy.Web.Infrastructure.Extensions
                                     Name = adminName
                                 });
                             }
-
-                            //roleExists = await roleManager.RoleExistsAsync(manager);
-                            //if (!roleExists)
-                            //{
-                            //    await roleManager.CreateAsync(new IdentityRole
-                            //    {
-                            //        Name = "Manager"
-                            //    });
-                            //}
 
                             var adminEmail = "admin@admin.com";
                             var username = "admin";
@@ -65,9 +55,7 @@ namespace Fantasy.Web.Infrastructure.Extensions
                                 {
                                     Email = adminEmail,
                                     UserName = username,
-                                    //FullName = username,
-                                    SquadName = username,
-                                    //FootballClubId = 1,
+                                    SquadName = "Cherno More",
                                 };
                                 await userManager.CreateAsync(adminUser, "123");
                                 await userManager.AddToRoleAsync(adminUser, adminName);
@@ -400,8 +388,6 @@ namespace Fantasy.Web.Infrastructure.Extensions
                         context.Add(new FootballPlayerPosition { Name = Forward }); context.SaveChanges();
                     }
                     #endregion
-
-                  
                 }
             }
 

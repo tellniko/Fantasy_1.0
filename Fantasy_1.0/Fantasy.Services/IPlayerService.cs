@@ -1,5 +1,4 @@
-﻿using Fantasy.Services.Administrator.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Fantasy.Services
@@ -23,10 +22,6 @@ namespace Fantasy.Services
         Task<TModel> GetByIdAsync<TModel>(int id);
 
         Task<TModel> GetStatisticsAsync<TModel>(int playerId, int gameweekId);
-
-        Task<bool> Edit(FootballPlayerServiceModel model);
-
-        bool Add(FootballPlayerServiceModel model);
 
         Task<bool> Exists(int id);
     }

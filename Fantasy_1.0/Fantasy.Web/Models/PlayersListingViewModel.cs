@@ -5,7 +5,7 @@ namespace Fantasy.Web.Models
 {
     public class PlayersListingViewModel : PageListingViewModel
     {
-        public IEnumerable<PlayerServiceModel> Players { get; set; }
+        public IEnumerable<FootballPlayerServiceModel> Players { get; set; }
 
         public string ActionName { get; set; }
     }

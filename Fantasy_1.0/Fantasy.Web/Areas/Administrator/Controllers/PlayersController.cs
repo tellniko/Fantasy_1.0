@@ -8,15 +8,16 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Fantasy.Services.Administrator;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
     public class PlayersController : AdminController
     {
-        private readonly IPlayerService players;
+        private readonly IFootballPlayerService players;
         private readonly FantasyDbContext db;
 
-        public PlayersController(IPlayerService players, FantasyDbContext db)
+        public PlayersController(IFootballPlayerService players, FantasyDbContext db)
         {
             this.players = players;
             this.db = db;
@@ -68,7 +69,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
                 return RedirectToAction(nameof(Edit), new { model });
             }
 
-            this.TempData.AddErrorMessage($"Successfully edited player {model.Player.InfoName} with id {model.Player.Id}.");
+            this.TempData.AddSuccessMessage($"Successfully edited player {model.Player.InfoName} with id {model.Player.Id}.");
 
 
             return RedirectToAction(nameof(Index));

@@ -53,8 +53,8 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         [HttpPost]
         public IActionResult ExportStatisticsJson(int gameweekId)
         {
-            this.TempData.AddErrorMessage("Temporary Disabled!");
-            return RedirectToAction(nameof(Index));
+            //this.TempData.AddErrorMessage("Temporary Disabled!");
+            //return RedirectToAction(nameof(Index));
 
             var result = this.exportServices.ExportStatistics(gameweekId);
 

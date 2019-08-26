@@ -34,10 +34,6 @@ namespace Fantasy.Data.Migrations
 
                     b.Property<bool>("EmailConfirmed");
 
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasMaxLength(50);
-
                     b.Property<bool>("LockoutEnabled");
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
@@ -57,6 +53,7 @@ namespace Fantasy.Data.Migrations
                     b.Property<string>("SecurityStamp");
 
                     b.Property<string>("SquadName")
+                        .IsRequired()
                         .HasMaxLength(50);
 
                     b.Property<bool>("TwoFactorEnabled");
@@ -234,6 +231,21 @@ namespace Fantasy.Data.Migrations
                     b.ToTable("FootballPlayerPositions");
                 });
 
+            modelBuilder.Entity("Fantasy.Data.Models.FootballPlayers.GameweekPoints", b =>
+                {
+                    b.Property<int>("FootbalPlayerId");
+
+                    b.Property<int>("GameweekId");
+
+                    b.Property<decimal>("Points");
+
+                    b.HasKey("FootbalPlayerId", "GameweekId");
+
+                    b.HasIndex("GameweekId");
+
+                    b.ToTable("GameweeksPoints");
+                });
+
             modelBuilder.Entity("Fantasy.Data.Models.Game.FantasyPlayer", b =>
                 {
                     b.Property<int>("Id")
@@ -251,6 +263,21 @@ namespace Fantasy.Data.Migrations
                     b.HasIndex("FootballPlayerId");
 
                     b.ToTable("FantasyPlayers");
+                });
+
+            modelBuilder.Entity("Fantasy.Data.Models.Game.GameweekScore", b =>
+                {
+                    b.Property<string>("FantasyUserId");
+
+                    b.Property<int>("GameweekId");
+
+                    b.Property<decimal>("Score");
+
+                    b.HasKey("FantasyUserId", "GameweekId");
+
+                    b.HasIndex("GameweekId");
+
+                    b.ToTable("GameweeksScores");
                 });
 
             modelBuilder.Entity("Fantasy.Data.Models.Game.GameweekStatus", b =>
@@ -583,6 +610,19 @@ namespace Fantasy.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
+            modelBuilder.Entity("Fantasy.Data.Models.FootballPlayers.GameweekPoints", b =>
+                {
+                    b.HasOne("Fantasy.Data.Models.FootballPlayers.FootballPlayer", "FootballPlayer")
+                        .WithMany("GameweekPoints")
+                        .HasForeignKey("FootbalPlayerId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Fantasy.Data.Models.Common.Gameweek", "Gameweek")
+                        .WithMany("GameweekPoints")
+                        .HasForeignKey("GameweekId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("Fantasy.Data.Models.Game.FantasyPlayer", b =>
                 {
                     b.HasOne("Fantasy.Data.Models.Common.FantasyUser", "FantasyUser")
@@ -592,6 +632,19 @@ namespace Fantasy.Data.Migrations
                     b.HasOne("Fantasy.Data.Models.FootballPlayers.FootballPlayer", "FootballPlayer")
                         .WithMany("FantasyUserPlayers")
                         .HasForeignKey("FootballPlayerId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Fantasy.Data.Models.Game.GameweekScore", b =>
+                {
+                    b.HasOne("Fantasy.Data.Models.Common.FantasyUser", "FantasyUser")
+                        .WithMany("GameweekScoreses")
+                        .HasForeignKey("FantasyUserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Fantasy.Data.Models.Common.Gameweek", "Gameweek")
+                        .WithMany("GameweekScoreses")
+                        .HasForeignKey("GameweekId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

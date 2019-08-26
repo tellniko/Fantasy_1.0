@@ -1,0 +1,33 @@
+﻿@model List<TopTenUserViewModel>
+
+@{
+    ViewData["Title"] = "Default";
+}
+<div>
+    <div style="background-color: #38003c; color: #ffffff; filter: drop-shadow(0px 5px 8px #38003c); margin-bottom: 5px;">&nbsp;TOP Squads</div>
+    <div class="row" style="color: #e90052">
+        <div class="col-6" style="font-size: 0.8vw">
+            <strong>User</strong>
+        </div>
+        <div class="col-4" style="font-size: 0.8vw">
+            <strong>Squad</strong>
+        </div>
+        <div class="col-2"style="font-size: 0.8vw">
+            <strong>Total</strong>
+        </div>
+    </div>
+    @foreach (var user in Model)
+    {
+        <div class="row" style="border-bottom: #38003c 1px solid; border-bottom-color: #38003c; margin-top: 5px;">
+            <div class="col-5" style="font-size: 0.8vw">
+                <strong>@user.Name</strong>
+            </div>
+            <div class="col-5" style="font-size: 0.8vw">
+                <strong>@user.Squad</strong>  
+            </div>
+            <div class="col-2" style="font-size: 0.8vw">
+                <strong>@user.Points.ToString("F0")</strong>
+            </div>
+        </div>
+    }
+</div>

@@ -1,1 +1,43 @@
-﻿
+﻿<br />
+<br />
+
+
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div class="row">
+            <div class="col-3">
+                @await Component.InvokeAsync("TopTenFootballPlayers", Goalkeeper)
+            </div>
+            <div class="col-3">
+                @await Component.InvokeAsync("TopTenFootballPlayers", Defender)
+            </div>
+
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-6">
+                    </div>
+                    <div class="col-6">
+                        @await Component.InvokeAsync("TopTenFantasyUsers")
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px">
+                <div class="col-3">
+                    @await Component.InvokeAsync("TopTenFootballPlayers", Midfielder)
+                </div>
+                <div class="col-3">
+                    @await Component.InvokeAsync("TopTenFootballPlayers", Forward)
+                </div>
+                <div class="col-6">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+
+
+

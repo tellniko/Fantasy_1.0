@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using Fantasy.Common.Attributes;
 using Fantasy.Data;
 using Fantasy.Data.Models.Common;
 using Fantasy.Data.Models.Statistics;
@@ -23,19 +24,45 @@ namespace SandBox
     {
         static void Main(string[] args)
         {
+            var stat = new DefenderStatisticsServiceModel
+            {
+                MatchAppearances = 1,
+                MatchWins = 1,
+            };
+            Console.WriteLine(typeof(short).Name);
 
-            var test = " 1  2  4";
-
-            var result = new Regex("^[0-9\\s]+$").Match(test).Success;
-
-            Console.WriteLine(result);
-
-
-            var list = test.Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries)
-                .Select(int.Parse)
+            var properties = stat
+                .GetType()
+                .GetProperties()
+                .Where(p => p.PropertyType.Name == typeof(short).Name)
                 .ToList();
 
+
+
+            foreach (var propertyInfo in properties)
+            {
+                Console.WriteLine(propertyInfo.PropertyType.Name
+                                  + "  " + propertyInfo.GetValue(stat)
+                                  + "   " + propertyInfo.GetCustomAttribute<PointsAttribute>().Units);
+            }
+           
+
+            //var matchApps = properties.FirstOrDefault(x => x.Name == "MatchAppearances")
+            //    ?.GetCustomAttribute<PointsAttribute>().Units;
+
+
+            //foreach (var property in properties)
+            //{
+            //    var value = (short) property.GetValue(stat);
+            //    var units = property.GetCustomAttribute<PointsAttribute>().Units;
+
+            //    var result = value * units;
+            //}
+
+
             Console.WriteLine();
+
+
 
 
         }

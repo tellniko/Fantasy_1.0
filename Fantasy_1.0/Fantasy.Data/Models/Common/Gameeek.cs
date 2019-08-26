@@ -3,6 +3,7 @@ using Fantasy.Data.Models.Statistics;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Fantasy.Data.Models.FootballPlayers;
 
 namespace Fantasy.Data.Models.Common
 {
@@ -33,5 +34,9 @@ namespace Fantasy.Data.Models.Common
         public List<DisciplineStatistics> DisciplineStatistics { get; set; } = new List<DisciplineStatistics>();
 
         public List<GameweekStatus> GameweekStatuses { get; set; } = new List<GameweekStatus>();
+
+        public List<GameweekPoints> GameweekPoints { get; set; } = new List<GameweekPoints>();
+
+        public List<GameweekScore> GameweekScoreses { get; set; } = new List<GameweekScore>();
     }
 }

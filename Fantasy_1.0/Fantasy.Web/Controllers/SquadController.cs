@@ -1,16 +1,14 @@
-﻿using Fantasy.Data.Models.Common;
+﻿using Fantasy.Common;
+using Fantasy.Data.Models.Common;
 using Fantasy.Services;
 using Fantasy.Services.Models;
-using Fantasy.Web.Infrastructure;
 using Fantasy.Web.Infrastructure.Extensions;
 using Fantasy.Web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Linq;
 using System.Threading.Tasks;
-using Fantasy.Common;
 
 namespace Fantasy.Web.Controllers
 {
@@ -24,37 +22,40 @@ namespace Fantasy.Web.Controllers
         private readonly ISquadService squad;
         private readonly IPlayerService players;
         private readonly IFixtureService fixtures;
+        private readonly IGameweekService gamweeks;
 
-        public SquadController(UserManager<FantasyUser> userManager, ISquadService squad, IPlayerService players, IFixtureService fixtures)
+        public SquadController(
+            UserManager<FantasyUser> userManager, 
+            ISquadService squad, 
+            IPlayerService players, 
+            IFixtureService fixtures, 
+            IGameweekService gamweeks)
         {
             this.userManager = userManager;
             this.squad = squad;
             this.players = players;
             this.fixtures = fixtures;
+            this.gamweeks = gamweeks;
         }
 
         public async Task<IActionResult> Index()
         {
-            //var testGameweeks = this.squad.SaveFirstTeam("", "");
-            
-
             var userId = this.userManager.GetUserId(User);
-            var test = await this.squad.GetCurrentSquad(userId, 4);
 
-            var squad = await this.squad.GetSquadAsync(userId);
+            var squadExists = await this.squad.SquadExists(userId);
 
-            if (squad.Count == 0)
+            if (!squadExists)
             {
                 return RedirectToAction(nameof(Create), new{ userId });
             }
 
+            var nextGameweek = await this.gamweeks.GetNext(DateTime.UtcNow);
 
-            //todo get current fixture!!!!!
-
-            var model = new SquadIndexViewModel
+            var model = new CurrentSquadViewModel
             {
-                Squad = await this.squad.GetCurrentSquad(userId, 4),
-                Fixtures = await this.fixtures.GetByIdAsync<FixtureServiceModel>(4)
+                Squad = await this.squad.GetCurrentSquad(userId, nextGameweek.Id),
+                Fixtures = await this.fixtures.GetByIdAsync<FixtureServiceModel>(nextGameweek.Id),
+                GameweekStartDate = nextGameweek.Start,
             };
 
             return View(model);
@@ -62,8 +63,6 @@ namespace Fantasy.Web.Controllers
 
         public IActionResult Manage()
         {
-            
-
             this.ViewBag.ActionGetSystem = nameof(GetSystem);
             this.ViewBag.ActionGetBench = nameof(GetBench);
             this.ViewBag.Controller = nameof(SquadController).ToFirstWord();
@@ -74,34 +73,22 @@ namespace Fantasy.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Manage(string ids)
         {
-            
             if (ids == null)
             {
                 return this.BadRequest();
             }
             var userId = this.userManager.GetUserId(User);
 
-            var result = await this.squad.ValidateFirstTeamAsync(ids, userId);
-            if (!result)
+            var validSquad = await this.squad.ValidateFirstTeamAsync(ids, userId);
+            if (!validSquad)
             {
                 return BadRequest();
             }
 
             await this.squad.SaveFirstTeam(ids, userId);
-
+            
             return RedirectToAction(nameof(Index));
         }
-
-
-        //public async Task<IActionResult> Index(string ids)
-        //{
-        //    var userId = this.userManager.GetUserId(User);
-
-        //    var result = await this.squad.ValidateFirstTeam(ids, userId);
-
-
-        //    return View();
-        //}
 
         public IActionResult Create(string userId)
         {
@@ -126,10 +113,9 @@ namespace Fantasy.Web.Controllers
 
             var result = await this.squad.CreateSquadAsync(model.GetPlayerIds(), userId);
 
-            Console.WriteLine();
             if (result == false)
             {
-                TempData.AddErrorMessage("Your squad have not been updated! Please try again.");
+                TempData.AddErrorMessage("Your squad have not been created! Please try again.");
 
                 return RedirectToAction(nameof(Create), new { userId });
             }
@@ -161,11 +147,9 @@ namespace Fantasy.Web.Controllers
             }
 
             return PartialView($"_PartialSystem{system}");
-
         }
 
-        public async Task<IActionResult> GetPartialPlayersAsync(
-            string clubId,
+        public async Task<IActionResult> GetPartialPlayersAsync(string clubId,
             string positionId,
             string playerName,
             string order,
@@ -174,7 +158,7 @@ namespace Fantasy.Web.Controllers
             var model = new PlayersListingViewModel
             {
                 Players = await this.players
-                    .GetAllWithPaginationAsync<PlayerServiceModel>(clubId, positionId, playerName, order, page, PlayersListingPageSize),
+                    .GetAllWithPaginationAsync<FootballPlayerServiceModel>(clubId, positionId, playerName, order, page, PlayersListingPageSize),
                 CurrentPage = page,
             };
 
@@ -182,6 +166,16 @@ namespace Fantasy.Web.Controllers
             this.ViewBag.Controller = nameof(SquadController).ToFirstWord();
 
             return PartialView("_PartialPlayersPagination", model);
+        }
+
+
+        public async Task<IActionResult> Test()
+        {
+            var userId = this.userManager.GetUserId(User);
+
+            await this.squad.Test(userId);
+
+            return View();
         }
     }
 }

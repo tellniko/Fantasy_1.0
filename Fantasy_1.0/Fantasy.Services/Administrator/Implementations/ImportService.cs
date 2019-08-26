@@ -28,6 +28,18 @@ namespace Fantasy.Services.Administrator.Implementations
                     File.ReadAllText("wwwroot/JsonFiles/footballPlayers.json"))
                 .ToList();
 
+            foreach (var footballPlayer in players)
+            {
+                for (int i = 1; i <= 38; i++)
+                {
+                    footballPlayer.GameweekPoints.Add(new GameweekPoints
+                    {
+                        Points = 0,
+                        GameweekId = i,
+                    });
+                }
+            }
+
             var infos = JsonConvert.DeserializeObject<List<FootballPlayerInfo>>(
                     File.ReadAllText("wwwroot/JsonFiles/footballPlayerInfos.json"))
                 .ToList();

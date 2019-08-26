@@ -4,15 +4,24 @@ using Fantasy.Data.Models.Statistics;
 using Fantasy.Services.Administrator.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using Fantasy.Common.Attributes;
+using Fantasy.Common.Mapping;
+using Fantasy.Data.Models.FootballPlayers;
+using Fantasy.Services.Models;
+using Fantasy.Services.Models.Contracts;
+using Microsoft.EntityFrameworkCore;
 
 namespace Fantasy.Services.Administrator.Implementations
 {
     using static DataConstants;
+    using static GlobalConstants;
 
     public class StatisticsService : IStatisticsService 
     {
@@ -24,7 +33,85 @@ namespace Fantasy.Services.Administrator.Implementations
         {
             this.db = db;
         }
-             
+
+        public async Task<TModel> GetStatistics<TModel>(int playerId, int gameweekId)
+        {
+            return new StatisticsServiceModel
+                {
+                    Goalkeeping = await  this.db.FindAsync<GoalkeepingStatistics>(playerId, gameweekId),
+                    Discipline = await this.db.FindAsync<DisciplineStatistics>(playerId, gameweekId),
+                    TeamPlay =  await this.db.FindAsync<TeamPlayStatistics>(playerId, gameweekId),
+                    Defence =  await this.db.FindAsync<DefenceStatistics>(playerId, gameweekId),
+                    Attack =  await this.db.FindAsync<AttackStatistics>(playerId, gameweekId),
+                    Match =  await this.db.FindAsync<MatchStatistics>(playerId, gameweekId),
+                }
+                .To<TModel>();
+        }
+
+        public async Task<string> UpdateFootballPlayersPoints(int gameweekId)
+        {
+            var players = await this.db.FootballPlayers
+                .Include(p => p.FootballPlayerPosition)
+                .Include(p => p.GameweekPoints)
+                .ToListAsync();
+
+            foreach (var player in players)
+            {
+                IHaveStatistics statistics;
+                var points = 0;
+
+                switch (player.FootballPlayerPosition.Name)
+                {
+                    case Goalkeeper:
+                        statistics = await this.GetStatistics<GoalkeeperStatisticsServiceModel>(player.Id, gameweekId);
+                        break;
+                    case Defender:
+                        statistics = await this.GetStatistics<DefenderStatisticsServiceModel>(player.Id, gameweekId);
+                        break;
+                    case Midfielder:
+                        statistics = await this.GetStatistics<MidfielderStatisticsServiceModel>(player.Id, gameweekId);
+                        break;
+                    case Forward:
+                        statistics = await this.GetStatistics<ForwardStatisticsServiceModel>(player.Id, gameweekId);
+                        break;
+                    default: return null;
+                }
+
+                statistics
+                    .GetType()
+                    .GetProperties()
+                    .Where(p => p.PropertyType == typeof(short))
+                    .ToList()
+                    .ForEach(p => points += (short)p.GetValue(statistics) * p.GetCustomAttribute<PointsAttribute>().Units);
+
+                player.GameweekPoints.First(x => x.GameweekId == gameweekId).Points = points;
+            }
+
+            var users = this.db.Users
+                .Where(u => u.Squad.Count != 0)
+                .Include(u => u.Squad)
+                .ThenInclude(fp => fp.GameweekStatuses)
+                .Include(u => u.GameweekScoreses)
+                .ToList();
+
+            var result = await this.db.SaveChangesAsync();
+
+            foreach (var user in users)
+            {
+                var score = user.Squad
+                    .Where(x => x.FantasyUser == user &&
+                                x.GameweekStatuses.First(y => y.GameweekId == gameweekId).IsBenched == false)
+                    .Sum(x => x.FootballPlayer.GameweekPoints.First(y => y.GameweekId == gameweekId).Points);
+
+                user.GameweekScoreses.First(x => x.GameweekId == gameweekId).Score = score;
+            }
+
+            result += await this.db.SaveChangesAsync();
+
+            return result.ToString();
+        }
+
+
         //todo refactor
         public string Seed(int gameweekId)
         {
@@ -44,28 +131,39 @@ namespace Fantasy.Services.Administrator.Implementations
                 .Select(p => p.Id)
                 .ToList();
 
-            if (gameweekId != 1)
-            {
-                this.db.RemoveRange(db.DefenceStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
-                this.db.RemoveRange(db.TeamPlayStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
-                this.db.RemoveRange(db.GoalkeepingStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
-                this.db.RemoveRange(db.MatchStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
-                this.db.RemoveRange(db.DisciplineStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
-                this.db.RemoveRange(db.AttackStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+            statisticsCollection = GetNewAllTimeStatisticsCollection(dbFootballPlayerIds);
+            stopwatch.Stop();
+            Console.WriteLine(stopwatch.Elapsed);
 
-                result = "Records removed: " + this.db.SaveChanges();
-                statisticsCollection = GetNewAllTimeStatisticsCollection(dbFootballPlayerIds);
-                this.db.AddRange(statisticsCollection);
-                result += " / New all time records added: " + this.db.SaveChanges();
+            if (statisticsCollection.Count != dbFootballPlayerIds.Count * 6)
+            {
+                return "Something went wrong! Please Try again later";
             }
+
+            this.db.RemoveRange(db.DefenceStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
+            this.db.RemoveRange(db.TeamPlayStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
+            this.db.RemoveRange(db.GoalkeepingStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
+            this.db.RemoveRange(db.MatchStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
+            this.db.RemoveRange(db.DisciplineStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
+            this.db.RemoveRange(db.AttackStatistics.Where(x => x.GameweekId == AllTimeStatisticsGameweekId));
+
+            result = "Records removed: " + this.db.SaveChanges();
+
+            this.db.AddRange(statisticsCollection);
+
+            result += " / New all time records added: " + this.db.SaveChanges();
             
             statisticsCollection = CreateNewGameweekStatistics(dbFootballPlayerIds, gameweekId);
+
             this.db.AddRange(statisticsCollection);
+
             result += " / New gameweek records added: " + this.db.SaveChanges();
 
             return result;
         }
-        
+
         private List<BaseStatistics> GetNewAllTimeStatisticsCollection(List<int> dbFootballPlayerIds)
         {
             var statisticsPropertyRegex = new Regex("<span class=\"stat\">([A-Za-z\\ ]+)   <span.+\\s+([0-9\\.\\,]+)");

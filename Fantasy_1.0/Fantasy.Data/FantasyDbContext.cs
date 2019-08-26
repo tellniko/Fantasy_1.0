@@ -28,8 +28,10 @@ namespace Fantasy.Data
         public DbSet<DisciplineStatistics> DisciplineStatistics { get; set; }
         public DbSet<MatchStatistics> MatchStatistics { get; set; }
         public DbSet<FantasyPlayer> FantasyPlayers { get; set; }
-       // public DbSet<FantasyPlayerStatus> Statuses { get; set; }
+        public DbSet<GameweekPoints> GameweeksPoints { get; set; }
         public DbSet<GameweekStatus> GameweeksStatuses { get; set; }
+        public DbSet<GameweekScore> GameweeksScores { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -53,6 +55,36 @@ namespace Fantasy.Data
                         .HasOne(e => e.FantasyPlayer)
                         .WithMany(e => e.GameweekStatuses)
                         .HasForeignKey(e => e.FantasyPlayerId);
+                });
+
+            builder
+                .Entity<GameweekPoints>(entity =>
+                {
+                    entity
+                        .HasKey(e => new { e.FootbalPlayerId, e.GameweekId });
+                    entity
+                        .HasOne(e => e.Gameweek)
+                        .WithMany(e => e.GameweekPoints)
+                        .HasForeignKey(e => e.GameweekId);
+                    entity
+                        .HasOne(e => e.FootballPlayer)
+                        .WithMany(e => e.GameweekPoints)
+                        .HasForeignKey(e => e.FootbalPlayerId);
+                });
+
+            builder
+                .Entity<GameweekScore>(entity =>
+                {
+                    entity
+                        .HasKey(e => new { UserId = e.FantasyUserId, e.GameweekId });
+                    entity
+                        .HasOne(e => e.Gameweek)
+                        .WithMany(e => e.GameweekScoreses)
+                        .HasForeignKey(e => e.GameweekId);
+                    entity
+                        .HasOne(e => e.FantasyUser)
+                        .WithMany(e => e.GameweekScoreses)
+                        .HasForeignKey(e => e.FantasyUserId);
                 });
 
             builder

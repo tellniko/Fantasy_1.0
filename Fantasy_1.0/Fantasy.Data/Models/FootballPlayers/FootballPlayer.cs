@@ -36,5 +36,19 @@ namespace Fantasy.Data.Models.FootballPlayers
         public List<MatchStatistics> MatchStatistics { get; set; } = new List<MatchStatistics>();
 
         public List<FantasyPlayer> FantasyUserPlayers { get; set; } = new List<FantasyPlayer>();
+
+        public List<GameweekPoints> GameweekPoints { get; set; } = new List<GameweekPoints>();
+    }
+
+
+    public class GameweekPoints
+    {
+        public decimal Points { get; set; }
+
+        public int FootbalPlayerId { get; set; }
+        public FootballPlayer FootballPlayer { get; set; }
+
+        public int GameweekId { get; set; }
+        public Gameweek Gameweek { get; set; }
     }
 }

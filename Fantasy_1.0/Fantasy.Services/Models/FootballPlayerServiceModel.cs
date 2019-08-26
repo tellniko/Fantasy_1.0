@@ -3,7 +3,7 @@ using Fantasy.Data.Models.FootballPlayers;
 
 namespace Fantasy.Services.Models
 {
-    public class PlayerServiceModel : IMapFrom<FootballPlayer>
+    public class FootballPlayerServiceModel : IMapFrom<FootballPlayer>
     {
         public int Id { get; set; }
 
