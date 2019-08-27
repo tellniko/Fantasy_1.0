@@ -1,11 +1,19 @@
-﻿using Fantasy.Data;
+﻿using System;
+using Fantasy.Data;
 using Fantasy.Services.Administrator;
 using Fantasy.Web.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using Fantasy.Common.Mapping;
+using Fantasy.Data.Models;
+using Fantasy.Data.Models.Statistics;
+using Fantasy.Services.Administrator.Models;
+using Fantasy.Services.Models;
+using Fantasy.Services.Models.Contracts;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
@@ -31,7 +39,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdatePoints(int gameweekId)
         {
-            var result = await this.statistics.UpdateFootballPlayersPoints(gameweekId);
+            var result = await this.statistics.UpdateFootballPlayersPointsAsync(gameweekId);
 
             if (result == null)
             {
@@ -76,6 +84,38 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> Edit(int playerId, int gameweekId)
+        {
+            var model =
+                await this.statistics.GetStatisticsAsync<FootballPlayerStatisticsServiceModel>(playerId, gameweekId);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(FootballPlayerStatisticsServiceModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var result = await this.statistics.EditPlayerStatisticsAsync(model);
+
+            if (result != 0)
+            {
+                TempData.AddSuccessMessage("Player has been edited successfully.");
+            }
+            else
+            {
+                TempData.AddErrorMessage("No changes have been made!");
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
 
         private List<SelectListItem> GetGameweeks()
         {

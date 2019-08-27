@@ -293,17 +293,17 @@
     $(document).ready(function() {
         $('#players').load('/@ViewBag.Controller/@ViewBag.Action');
 
-        $('#player').on('keyup', filter);
         $('#position').on('change', filter);
+        $('#player').on('keyup', filter);
         $('#club').on('change', filter);
         $('#order').on('change', filter);
 
         function filter() {
             $('#players')
                 .load('/@ViewBag.Controller/@ViewBag.Action' 
-                    + '?clubId=' + $('#club').val() 
-                    + '&positionId=' + $('#position').val() 
-                    + '&playerName=' + $('#player').val()
+                    + '?clubId=' +  $('#club').val()
+                    + '&positionId=' + $('#position').val()
+                    + '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_')
                     + '&order=' + $('#order').val());
         }
 

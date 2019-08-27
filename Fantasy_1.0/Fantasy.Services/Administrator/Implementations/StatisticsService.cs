@@ -1,7 +1,11 @@
 ﻿using Fantasy.Common;
+using Fantasy.Common.Attributes;
+using Fantasy.Common.Mapping;
 using Fantasy.Data;
 using Fantasy.Data.Models.Statistics;
-using Fantasy.Services.Administrator.Models;
+using Fantasy.Services.Models;
+using Fantasy.Services.Models.Contracts;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,12 +15,7 @@ using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Fantasy.Common.Attributes;
-using Fantasy.Common.Mapping;
-using Fantasy.Data.Models.FootballPlayers;
-using Fantasy.Services.Models;
-using Fantasy.Services.Models.Contracts;
-using Microsoft.EntityFrameworkCore;
+using Fantasy.Services.Administrator.Models;
 
 namespace Fantasy.Services.Administrator.Implementations
 {
@@ -34,7 +33,8 @@ namespace Fantasy.Services.Administrator.Implementations
             this.db = db;
         }
 
-        public async Task<TModel> GetStatistics<TModel>(int playerId, int gameweekId)
+
+        public async Task<TModel> GetStatisticsAsync<TModel>(int playerId, int gameweekId)
         {
             return new StatisticsServiceModel
                 {
@@ -47,8 +47,71 @@ namespace Fantasy.Services.Administrator.Implementations
                 }
                 .To<TModel>();
         }
+        //todo refactor Must!
+        public async Task<int> EditPlayerStatisticsAsync(FootballPlayerStatisticsServiceModel model)
+        {
+           var goalkeeping = await this.db.FindAsync<GoalkeepingStatistics>(model.MatchPlayerId, model.MatchGameweekId);
+           var discipline = await this.db.FindAsync<DisciplineStatistics>(model.MatchPlayerId, model.MatchGameweekId);
+           var teamPlay = await this.db.FindAsync<TeamPlayStatistics>(model.MatchPlayerId, model.MatchGameweekId);
+           var defence = await this.db.FindAsync<DefenceStatistics>(model.MatchPlayerId, model.MatchGameweekId);
+           var attack = await this.db.FindAsync<AttackStatistics>(model.MatchPlayerId, model.MatchGameweekId);
+           var match = await this.db.FindAsync<MatchStatistics>(model.MatchPlayerId, model.MatchGameweekId);
 
-        public async Task<string> UpdateFootballPlayersPoints(int gameweekId)
+           match.Appearances = model.MatchAppearances;
+           match.Losses = model.MatchLosses;
+           match.Wins = match.Wins;
+           
+           attack.BigChancesMissed = model.AttackBigChancesMissed;
+           attack.FreeKicksScored = model.AttackFreeKicksScored;
+           attack.Goals = model.AttackGoals;
+           attack.HitWoodwork = model.AttackHitWoodwork;
+           attack.PenaltiesScored = model.AttackPenaltiesScored;
+           attack.Shots = model.AttackPenaltiesScored;
+           attack.ShotsOnTarget = model.AttackShotsOnTarget;
+
+           defence.AerialBattlesLost = model.DefenceAerialBattlesLost;
+           defence.AerialBattlesWon = model.DefenceAerialBattlesWon;
+           defence.BlockedShots = model.DefenceBlockedShots;
+           defence.CleanSheets = model.DefenceCleanSheets;
+           defence.Clearances = model.DefenceClearances;
+           defence.DuelsLost = model.DefenceDuelsLost;
+           defence.DuelsWon = model.DefenceDuelsWon;
+           defence.ErrorsLeadingToGoal = model.DefenceErrorsLeadingToGoal;
+           defence.GoalsConceded = model.DefenceGoalsConceded;
+           defence.HeadedClearance = model.DefenceHeadedClearance;
+           defence.LastManTackles = model.DefenceLastManTackles;
+           defence.OwnGoals = model.DefenceOwnGoals;
+           defence.Recoveries = model.DefenceRecoveries;
+           defence.Tackles = model.DefenceTackles;
+           defence.SuccessfulFiftyFifties = model.DefenceSuccessfulFiftyFifties;
+           defence.Interceptions = model.DefenceInterceptions;
+
+           teamPlay.AccurateLongBalls = model.TeamPlayAccurateLongBalls;
+           teamPlay.Assists = model.TeamPlayAssists;
+           teamPlay.BigChancesCreated = model.TeamPlayBigChancesCreated;
+           teamPlay.Crosses = model.TeamPlayCrosses;
+           teamPlay.Passes = model.TeamPlayPasses;
+           teamPlay.ThroughBalls = model.TeamPlayThroughBalls;
+
+           discipline.Fouls = model.DisciplineFouls;
+           discipline.Offsides = model.DisciplineFouls;
+           discipline.RedCards = model.DisciplineRedCards;
+           discipline.YellowCards = model.DisciplineYellowCards;
+
+           goalkeeping.Catches = model.GoalkeepingCatches;
+           goalkeeping.GoalKicks = model.GoalkeepingGoalKicks;
+           goalkeeping.HighClaims = model.GoalkeepingHighClaims;
+           goalkeeping.PenaltiesSaved = model.GoalkeepingPenaltiesSaved;
+           goalkeeping.Saves = model.GoalkeepingSaves;
+           goalkeeping.SweeperClearances = model.GoalkeepingSweeperClearances;
+           goalkeeping.Punches = model.GoalkeepingPunches;
+
+           var result = await this.db.SaveChangesAsync();
+
+           return result;
+        }
+
+        public async Task<string> UpdateFootballPlayersPointsAsync(int gameweekId)
         {
             var players = await this.db.FootballPlayers
                 .Include(p => p.FootballPlayerPosition)
@@ -63,16 +126,16 @@ namespace Fantasy.Services.Administrator.Implementations
                 switch (player.FootballPlayerPosition.Name)
                 {
                     case Goalkeeper:
-                        statistics = await this.GetStatistics<GoalkeeperStatisticsServiceModel>(player.Id, gameweekId);
+                        statistics = await this.GetStatisticsAsync<GoalkeeperStatisticsServiceModel>(player.Id, gameweekId);
                         break;
                     case Defender:
-                        statistics = await this.GetStatistics<DefenderStatisticsServiceModel>(player.Id, gameweekId);
+                        statistics = await this.GetStatisticsAsync<DefenderStatisticsServiceModel>(player.Id, gameweekId);
                         break;
                     case Midfielder:
-                        statistics = await this.GetStatistics<MidfielderStatisticsServiceModel>(player.Id, gameweekId);
+                        statistics = await this.GetStatisticsAsync<MidfielderStatisticsServiceModel>(player.Id, gameweekId);
                         break;
                     case Forward:
-                        statistics = await this.GetStatistics<ForwardStatisticsServiceModel>(player.Id, gameweekId);
+                        statistics = await this.GetStatisticsAsync<ForwardStatisticsServiceModel>(player.Id, gameweekId);
                         break;
                     default: return null;
                 }
@@ -269,81 +332,85 @@ namespace Fantasy.Services.Administrator.Implementations
                 var goalkeepingAllTime = this.db.GoalkeepingStatistics.First(x => x.GameweekId == AllTimeStatisticsGameweekId && x.PlayerId == playerId);
                 var goalkeepingSum = this.db.GoalkeepingStatistics.Where(x => x.GameweekId != AllTimeStatisticsGameweekId && x.PlayerId == playerId).ToList();
 
+                short b = -4;
+                short c = 0;
+                var a = Math.Max(-b, c);
+
                 var defenceStatistics = new DefenceStatistics
                 {
-                    SuccessfulFiftyFifties = (short) (defenceAllTime.SuccessfulFiftyFifties - defenceSum.Sum(x => x.SuccessfulFiftyFifties)),
-                    ErrorsLeadingToGoal = (short) (defenceAllTime.ErrorsLeadingToGoal - defenceSum.Sum(x => x.ErrorsLeadingToGoal)),
-                    AerialBattlesLost = (short) (defenceAllTime.AerialBattlesLost - defenceSum.Sum(x => x.AerialBattlesLost)),
-                    AerialBattlesWon = (short) (defenceAllTime.AerialBattlesWon - defenceSum.Sum(x => x.AerialBattlesWon)),
-                    HeadedClearance = (short) (defenceAllTime.HeadedClearance - defenceSum.Sum(x => x.HeadedClearance)),
-                    LastManTackles = (short) (defenceAllTime.LastManTackles - defenceSum.Sum(x => x.LastManTackles)),
-                    Interceptions = (short) (defenceAllTime.Interceptions - defenceSum.Sum(x => x.Interceptions)),
-                    GoalsConceded = (short) (defenceAllTime.GoalsConceded - defenceSum.Sum(x => x.GoalsConceded)),
-                    BlockedShots = (short) (defenceAllTime.BlockedShots - defenceSum.Sum(x => x.BlockedShots)),
-                    CleanSheets = (short) (defenceAllTime.CleanSheets - defenceSum.Sum(x => x.CleanSheets)),
-                    Clearances = (short) (defenceAllTime.Clearances - defenceSum.Sum(x => x.Clearances)),
-                    Recoveries = (short) (defenceAllTime.Recoveries - defenceSum.Sum(x => x.Recoveries)),
-                    DuelsLost = (short) (defenceAllTime.DuelsLost - defenceSum.Sum(x => x.DuelsLost)),
-                    DuelsWon = (short) (defenceAllTime.DuelsWon - defenceSum.Sum(x => x.DuelsWon)),
-                    OwnGoals = (short) (defenceAllTime.OwnGoals - defenceSum.Sum(x => x.OwnGoals)),
-                    Tackles = (short) (defenceAllTime.Tackles - defenceSum.Sum(x => x.Tackles)),
+                    SuccessfulFiftyFifties = (short) Math.Max(defenceAllTime.SuccessfulFiftyFifties - defenceSum.Sum(x => x.SuccessfulFiftyFifties), 0),
+                    ErrorsLeadingToGoal = (short) Math.Max(defenceAllTime.ErrorsLeadingToGoal - defenceSum.Sum(x => x.ErrorsLeadingToGoal), 0),
+                    AerialBattlesLost = (short) Math.Max(defenceAllTime.AerialBattlesLost - defenceSum.Sum(x => x.AerialBattlesLost), 0),
+                    AerialBattlesWon = (short) Math.Max(defenceAllTime.AerialBattlesWon - defenceSum.Sum(x => x.AerialBattlesWon), 0),
+                    HeadedClearance = (short) Math.Max(defenceAllTime.HeadedClearance - defenceSum.Sum(x => x.HeadedClearance), 0),
+                    LastManTackles = (short) Math.Max(defenceAllTime.LastManTackles - defenceSum.Sum(x => x.LastManTackles), 0),
+                    Interceptions = (short) Math.Max(defenceAllTime.Interceptions - defenceSum.Sum(x => x.Interceptions), 0),
+                    GoalsConceded = (short) Math.Max(defenceAllTime.GoalsConceded - defenceSum.Sum(x => x.GoalsConceded), 0),
+                    BlockedShots = (short) Math.Max(defenceAllTime.BlockedShots - defenceSum.Sum(x => x.BlockedShots), 0),
+                    CleanSheets = (short) Math.Max(defenceAllTime.CleanSheets - defenceSum.Sum(x => x.CleanSheets), 0),
+                    Clearances = (short) Math.Max(defenceAllTime.Clearances - defenceSum.Sum(x => x.Clearances), 0),
+                    Recoveries = (short) Math.Max(defenceAllTime.Recoveries - defenceSum.Sum(x => x.Recoveries), 0),
+                    DuelsLost = (short) Math.Max(defenceAllTime.DuelsLost - defenceSum.Sum(x => x.DuelsLost), 0),
+                    DuelsWon = (short) Math.Max(defenceAllTime.DuelsWon - defenceSum.Sum(x => x.DuelsWon), 0),
+                    OwnGoals = (short) Math.Max(defenceAllTime.OwnGoals - defenceSum.Sum(x => x.OwnGoals), 0),
+                    Tackles = (short) Math.Max(defenceAllTime.Tackles - defenceSum.Sum(x => x.Tackles), 0),
                     PlayerId = playerId,
                     GameweekId = gameweekId,
                 };
 
                 var matchStatistics = new MatchStatistics
                 {
-                    Appearances = (short) (matchAllTime.Appearances - matchSum.Sum(x => x.Appearances)),
-                    Losses = (short) (matchAllTime.Losses - matchSum.Sum(x => x.Losses)),
-                    Wins = (short) (matchAllTime.Wins - matchSum.Sum(x => x.Wins)),
+                    Appearances = (short) Math.Max(matchAllTime.Appearances - matchSum.Sum(x => x.Appearances), 0),
+                    Losses = (short) Math.Max(matchAllTime.Losses - matchSum.Sum(x => x.Losses), 0),
+                    Wins = (short) Math.Max(matchAllTime.Wins - matchSum.Sum(x => x.Wins), 0),
                     PlayerId = playerId,
                     GameweekId = gameweekId,
                 };
 
                 var teamPlayStatistics = new TeamPlayStatistics
                 {
-                    AccurateLongBalls = (short) (teamPlayAllTime.AccurateLongBalls - teamPlaySum.Sum(x => x.AccurateLongBalls)),
-                    BigChancesCreated = (short) (teamPlayAllTime.BigChancesCreated - teamPlaySum.Sum(x => x.BigChancesCreated)),
-                    ThroughBalls = (short) (teamPlayAllTime.ThroughBalls - teamPlaySum.Sum(x => x.ThroughBalls)),
-                    Assists = (short) (teamPlayAllTime.Assists - teamPlaySum.Sum(x => x.Assists)),
-                    Crosses = (short)(teamPlayAllTime.Crosses - teamPlaySum.Sum(x => x.Crosses)),
-                    Passes = (short) (teamPlayAllTime.Passes - teamPlaySum.Sum(x => x.Passes)),
+                    AccurateLongBalls = (short) Math.Max(teamPlayAllTime.AccurateLongBalls - teamPlaySum.Sum(x => x.AccurateLongBalls), 0),
+                    BigChancesCreated = (short) Math.Max(teamPlayAllTime.BigChancesCreated - teamPlaySum.Sum(x => x.BigChancesCreated), 0),
+                    ThroughBalls = (short) Math.Max(teamPlayAllTime.ThroughBalls - teamPlaySum.Sum(x => x.ThroughBalls), 0),
+                    Assists = (short) Math.Max(teamPlayAllTime.Assists - teamPlaySum.Sum(x => x.Assists), 0),
+                    Crosses = (short) Math.Max(teamPlayAllTime.Crosses - teamPlaySum.Sum(x => x.Crosses), 0),
+                    Passes = (short) Math.Max(teamPlayAllTime.Passes - teamPlaySum.Sum(x => x.Passes), 0),
                     PlayerId = playerId,
                     GameweekId = gameweekId,
                 };
 
                 var attackStatistics = new AttackStatistics
                 {
-                    BigChancesMissed = (short) (attackAllTime.BigChancesMissed - attackSum.Sum(x => x.BigChancesMissed)),
-                    PenaltiesScored = (short) (attackAllTime.PenaltiesScored - attackSum.Sum(x => x.PenaltiesScored)),
-                    FreeKicksScored = (short) (attackAllTime.FreeKicksScored - attackSum.Sum(x => x.FreeKicksScored)),
-                    ShotsOnTarget = (short) (attackAllTime.ShotsOnTarget - attackSum.Sum(x => x.ShotsOnTarget)),
-                    HitWoodwork = (short) (attackAllTime.HitWoodwork - attackSum.Sum(x => x.HitWoodwork)),
-                    Goals = (short) (attackAllTime.Goals - attackSum.Sum(x => x.Goals)),
-                    Shots = (short) (attackAllTime.Shots - attackSum.Sum(x => x.Shots)),
+                    BigChancesMissed = (short) Math.Max(attackAllTime.BigChancesMissed - attackSum.Sum(x => x.BigChancesMissed), 0),
+                    PenaltiesScored = (short) Math.Max(attackAllTime.PenaltiesScored - attackSum.Sum(x => x.PenaltiesScored), 0),
+                    FreeKicksScored = (short) Math.Max(attackAllTime.FreeKicksScored - attackSum.Sum(x => x.FreeKicksScored), 0),
+                    ShotsOnTarget = (short) Math.Max(attackAllTime.ShotsOnTarget - attackSum.Sum(x => x.ShotsOnTarget), 0),
+                    HitWoodwork = (short) Math.Max(attackAllTime.HitWoodwork - attackSum.Sum(x => x.HitWoodwork), 0),
+                    Goals = (short) Math.Max(attackAllTime.Goals - attackSum.Sum(x => x.Goals), 0),
+                    Shots = (short) Math.Max(attackAllTime.Shots - attackSum.Sum(x => x.Shots), 0),
                     PlayerId = playerId,
                     GameweekId = gameweekId,
                 };
 
                 var disciplineStatistics = new DisciplineStatistics
                 {
-                    YellowCards = (short) (disciplineAllTime.YellowCards - disciplineSum.Sum(x => x.YellowCards)),
-                    RedCards = (short) (disciplineAllTime.RedCards - disciplineSum.Sum(x => x.RedCards)),
-                    Offsides = (short) (disciplineAllTime.Offsides - disciplineSum.Sum(x => x.Offsides)),
-                    Fouls = (short) (disciplineAllTime.Fouls - disciplineSum.Sum(x => x.Fouls)),
+                    YellowCards = (short) Math.Max(disciplineAllTime.YellowCards - disciplineSum.Sum(x => x.YellowCards), 0),
+                    RedCards = (short) Math.Max(disciplineAllTime.RedCards - disciplineSum.Sum(x => x.RedCards), 0),
+                    Offsides = (short) Math.Max(disciplineAllTime.Offsides - disciplineSum.Sum(x => x.Offsides), 0),
+                    Fouls = (short) Math.Max(disciplineAllTime.Fouls - disciplineSum.Sum(x => x.Fouls), 0),
                     PlayerId = playerId,
                     GameweekId = gameweekId,
                 };
 
                 var goalkeepingStatistics = new GoalkeepingStatistics
                 {
-                    SweeperClearances = (short) (goalkeepingAllTime.SweeperClearances - goalkeepingSum.Sum(x => x.SweeperClearances)),
-                    PenaltiesSaved = (short) (goalkeepingAllTime.PenaltiesSaved - goalkeepingSum.Sum(x => x.PenaltiesSaved)),
-                    HighClaims = (short) (goalkeepingAllTime.HighClaims - goalkeepingSum.Sum(x => x.HighClaims)),
-                    GoalKicks = (short) (goalkeepingAllTime.GoalKicks - goalkeepingSum.Sum(x => x.GoalKicks)),
-                    Punches = (short) (goalkeepingAllTime.Punches - goalkeepingSum.Sum(x => x.Punches)),
-                    Catches = (short) (goalkeepingAllTime.Catches - goalkeepingSum.Sum(x => x.Catches)),
-                    Saves = (short) (goalkeepingAllTime.Saves - goalkeepingSum.Sum(x => x.Saves)),
+                    SweeperClearances = (short) Math.Max(goalkeepingAllTime.SweeperClearances - goalkeepingSum.Sum(x => x.SweeperClearances), 0),
+                    PenaltiesSaved = (short) Math.Max(goalkeepingAllTime.PenaltiesSaved - goalkeepingSum.Sum(x => x.PenaltiesSaved), 0),
+                    HighClaims = (short) Math.Max(goalkeepingAllTime.HighClaims - goalkeepingSum.Sum(x => x.HighClaims), 0),
+                    GoalKicks = (short) Math.Max(goalkeepingAllTime.GoalKicks - goalkeepingSum.Sum(x => x.GoalKicks), 0),
+                    Punches = (short) Math.Max(goalkeepingAllTime.Punches - goalkeepingSum.Sum(x => x.Punches), 0),
+                    Catches = (short )Math.Max(goalkeepingAllTime.Catches - goalkeepingSum.Sum(x => x.Catches), 0),
+                    Saves = (short) Math.Max(goalkeepingAllTime.Saves - goalkeepingSum.Sum(x => x.Saves), 0),
                     PlayerId = playerId,
                     GameweekId = gameweekId,
                 };

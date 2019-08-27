@@ -183,7 +183,7 @@ namespace Fantasy.Web.Controllers
         }
 
 
-        public async Task<IActionResult> History()
+        public IActionResult History()
         {
 
             this.ViewBag.Action = nameof(GetPartialSquad);
@@ -233,7 +233,7 @@ namespace Fantasy.Web.Controllers
         }
 
 
-        public class HistotyViewModel
+        public class HistotyViewModel //todo move
         {
             public int Id { get; set; }
 

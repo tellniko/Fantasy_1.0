@@ -47,12 +47,12 @@ namespace Fantasy.Services.Administrator.Implementations
             return true;
         }
 
-        public int ExportStatistics(int gameweekId)
+        public bool? ExportStatistics(int gameweekId)
         {
             var gameweek = this.db.Gameweeks.Find(gameweekId);
             if (gameweek == null)
             {
-                return 0;
+                return null;
             }
 
             try
@@ -79,10 +79,10 @@ namespace Fantasy.Services.Administrator.Implementations
             }
             catch (Exception)
             {
-                return -1;
+                return false;
             }
 
-            return 1;
+            return true;
         }
     }
 }

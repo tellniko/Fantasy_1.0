@@ -9,6 +9,8 @@ namespace Fantasy.Services.Models
         ,IHaveDefenderDefenceStatistics
         ,IHaveDefenderTeamPlayStatistics
         ,IHaveDefenderAttackStatistics
+        ,IHaveOffcidesStatistics
+    //, IHaveLastManTacklesStatistics
     {
         [Points(Units = 20)]
         public short MatchAppearances { get; set; }

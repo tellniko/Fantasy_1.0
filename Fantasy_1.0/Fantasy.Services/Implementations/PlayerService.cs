@@ -2,7 +2,6 @@
 using Fantasy.Data;
 using Fantasy.Data.Models.FootballPlayers;
 using Fantasy.Data.Models.Statistics;
-using Fantasy.Services.Administrator.Models;
 using Fantasy.Services.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -22,42 +21,7 @@ namespace Fantasy.Services.Implementations
             this.db = db;
         }
 
-        // todo refactor
-        public async Task<IEnumerable<TModel>> GetAllAsync<TModel>(string club, string position, string playerName, string order)
-        {
-            Expression<Func<FootballPlayer, bool>> filterCriteria =
-                fp =>
-                    fp.FootballClub.Tag.Contains(club ?? string.Empty)
-                    && fp.FootballPlayerPosition.Name.Contains(position ?? string.Empty)
-                    && fp.Info.Name.Contains(playerName ?? string.Empty);
-
-            //todo refactor
-            Expression<Func<FootballPlayer, string>> name = fp => fp.Info.Name;
-            Expression<Func<FootballPlayer, decimal>> priceAscending = fp => fp.Price;
-            Expression<Func<FootballPlayer, decimal>> priceDescending = fp => -fp.Price;
-
-            var result = this.db.FootballPlayers
-                .Where(filterCriteria);
-
-            switch (order)
-            {
-                case "priceAscending":
-                    result = result.OrderBy(priceAscending);
-                    break;
-                case "priceDescending":
-                    result = result.OrderBy(priceDescending);
-                    break;
-                default:
-                    result = result.OrderBy(name);
-                    break;
-            }
-
-            return await result
-                .Take(100)
-                .To<TModel>()
-                .ToListAsync();
-        }
-
+      
         public async Task<IEnumerable<TModel>> GetAllWithPaginationAsync<TModel>(
             string club, 
             string position, 

@@ -8,6 +8,6 @@
         //todo refactor
         bool ExportFootballPlayerInfos();
 
-        int ExportStatistics(int gameweekId);
+        bool? ExportStatistics(int gameweekId);
     }
 }

@@ -4,80 +4,97 @@
 }
 
 
-    <form method="post">
-        <div asp-validation-summary="All" class="text-danger"></div>
-        <div class="row">
-            <div class="col-6">
-                <div class="form-group">
-                    <label>Id</label>
-                    <input readonly asp-for="@Model.Player.Id" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label>Name</label>
-                    <input asp-for="@Model.Player.InfoName" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label>Club</label>
-                    <select asp-for="@Model.Player.FootballClubId" asp-items="Model.Clubs" class="form-control"> </select>
-                </div>
-                <div class="form-group">
-                    <label>Position</label>
-                    <select asp-for="@Model.Player.FootballPlayerPositionId" asp-items="Model.Positions" class="form-control"> </select>
-                </div>
-                <div class="form-group">
-                    <label>Big Img Url</label>
-                    <input asp-for="@Model.Player.InfoBigImgUrl" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label>Small Img Url</label>
-                    <input asp-for="@Model.Player.InfoSmallImgUrl" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label>Price</label>
-                    <input asp-for="@Model.Player.Price" class="form-control" />
-                </div>
-                
-                <div class="form-group">
-                    <label>Is Injured</label>
-                    <input asp-for="@Model.Player.IsInjured" />
-                    <label>Is Playable</label>
-                    <input asp-for="@Model.Player.IsPlayable" />
-                </div>
+<form method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <label>Id</label>
+                <input readonly asp-for="@Model.Player.Id" class="form-control" />
             </div>
-            <div class="col-6">
-                <div class="form-group">
-                    <label>Shirt Number</label>
-                    <input asp-for="@Model.Player.InfoShirtNumber" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label>Country</label>
-                    <input asp-for="@Model.Player.InfoCountry" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label>Birth Place</label>
-                    <input asp-for="@Model.Player.InfoBirthPlace" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label>Birth Date</label>
-                    <input asp-for="@Model.Player.InfoBirthDate" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label>Join Date</label>
-                    <input asp-for="@Model.Player.InfoJoinDate" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label>Height</label>
-                    <input asp-for="@Model.Player.InfoHeight" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label>Weight</label>
-                    <input asp-for="@Model.Player.InfoWeight" class="form-control" />
-                </div>
+            <div class="form-group">
+                <label>Name</label>
+                <input asp-for="@Model.Player.InfoName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Club</label>
+                <select asp-for="@Model.Player.FootballClubId" asp-items="Model.Clubs" class="form-control"> </select>
+            </div>
+            <div class="form-group">
+                <label>Position</label>
+                <select asp-for="@Model.Player.FootballPlayerPositionId" asp-items="Model.Positions" class="form-control"> </select>
+            </div>
+            <div class="form-group">
+                <label>Big Img Url</label>
+                <input asp-for="@Model.Player.InfoBigImgUrl" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Small Img Url</label>
+                <input asp-for="@Model.Player.InfoSmallImgUrl" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Price</label>
+                <input asp-for="@Model.Player.Price" class="form-control" />
+            </div>
+                
+            <div class="form-group">
+                <label>Is Injured</label>
+                <input asp-for="@Model.Player.IsInjured" />
+                <label>Is Playable</label>
+                <input asp-for="@Model.Player.IsPlayable" />
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Edit</button>
-    </form>
+        <div class="col-6">
+            <div class="form-group">
+                <label>Shirt Number</label>
+                <input asp-for="@Model.Player.InfoShirtNumber" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Country</label>
+                <input asp-for="@Model.Player.InfoCountry" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Birth Place</label>
+                <input asp-for="@Model.Player.InfoBirthPlace" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Birth Date</label>
+                <input asp-for="@Model.Player.InfoBirthDate" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Join Date</label>
+                <input asp-for="@Model.Player.InfoJoinDate" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Height</label>
+                <input asp-for="@Model.Player.InfoHeight" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Weight</label>
+                <input asp-for="@Model.Player.InfoWeight" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Edit</button>
+</form>
+<div class="row">
+    <div class="col-6"></div>
+    <div class="col-6">
+        <form method="get">
+            <input name="playerId" hidden asp-for="Player.Id" />
+            <select name="gameweekId"  asp-items="Model.Gameweeks" class="form-control"></select>
+            <button asp-area="Administrator" asp-controller="Statistics" asp-action="Edit" 
+                    class="btn btn-primary btn-lg btn-block" style="margin-top: 5px"type="submit">Edit Gameweek Statistics</button>
+        </form>
+    </div>
+
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
 
 
-@*todo validation script*@
+
+
+
 

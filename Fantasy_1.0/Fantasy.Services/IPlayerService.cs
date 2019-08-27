@@ -5,12 +5,6 @@ namespace Fantasy.Services
 {
     public interface IPlayerService
     {
-        Task<IEnumerable<TModel>> GetAllAsync<TModel>(
-            string club,
-            string position,
-            string playerName,
-            string order);
-
         Task<IEnumerable<TModel>> GetAllWithPaginationAsync<TModel>(
             string club, 
             string position, 

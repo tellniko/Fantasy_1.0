@@ -1,0 +1,264 @@
+﻿@model FootballPlayerStatisticsServiceModel
+@{
+    ViewData["Title"] = "Edit Statistics";
+}
+<br/>
+<form method="post">
+<div asp-validation-summary="All" class="text-danger"></div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceTackles).ToNoFirstWord()</label>
+        <input asp-for="DefenceTackles" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceBlockedShots).ToNoFirstWord()</label>
+        <input asp-for="DefenceBlockedShots" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceInterceptions).ToNoFirstWord()</label>
+        <input asp-for="DefenceInterceptions" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceClearances).ToNoFirstWord()</label>
+        <input asp-for="DefenceClearances" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceHeadedClearance).ToNoFirstWord()</label>
+        <input asp-for="DefenceHeadedClearance" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceRecoveries).ToNoFirstWord()</label>
+        <input asp-for="DefenceRecoveries" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceDuelsWon).ToNoFirstWord()</label>
+        <input asp-for="DefenceDuelsWon" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceDuelsLost).ToNoFirstWord()</label>
+        <input asp-for="DefenceDuelsLost" class="form-control"/>
+    </div>
+    <div class="col-2"></div>
+</div>
+
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceSuccessfulFiftyFifties).ToNoFirstWord()</label>
+        <input asp-for="DefenceSuccessfulFiftyFifties" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceAerialBattlesWon).ToNoFirstWord()</label>
+        <input asp-for="DefenceAerialBattlesWon" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceAerialBattlesLost).ToNoFirstWord()</label>
+        <input asp-for="DefenceAerialBattlesLost" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceCleanSheets).ToNoFirstWord()</label>
+        <input asp-for="DefenceCleanSheets" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceGoalsConceded).ToNoFirstWord()</label>
+        <input asp-for="DefenceGoalsConceded" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceLastManTackles).ToNoFirstWord()</label>
+        <input asp-for="DefenceLastManTackles" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceOwnGoals).ToNoFirstWord()</label>
+        <input asp-for="DefenceOwnGoals" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DefenceErrorsLeadingToGoal).ToNoFirstWord()</label>
+        <input asp-for="DefenceErrorsLeadingToGoal" class="form-control"/>
+    </div>
+    <div class="col-2"></div>
+</div>
+<br/>
+<br/>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-1">
+        <label>@nameof(Model.AttackGoals).ToNoFirstWord()</label>
+        <input asp-for="AttackGoals" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.AttackPenaltiesScored).ToNoFirstWord()</label>
+        <input asp-for="AttackPenaltiesScored" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.AttackFreeKicksScored).ToNoFirstWord()</label>
+        <input asp-for="AttackFreeKicksScored" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.AttackShots).ToNoFirstWord()</label>
+        <input asp-for="AttackShots" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.AttackShotsOnTarget).ToNoFirstWord()</label>
+        <input asp-for="AttackShotsOnTarget" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.AttackHitWoodwork).ToNoFirstWord()</label>
+        <input asp-for="AttackHitWoodwork" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.AttackBigChancesMissed).ToNoFirstWord()</label>
+        <input asp-for="AttackBigChancesMissed" class="form-control"/>
+    </div>
+    <div class="col-1">
+
+    </div>
+</div>
+<br/>
+<br/>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-1">
+        <label>@nameof(Model.GoalkeepingSaves).ToNoFirstWord()</label>
+        <input asp-for="GoalkeepingSaves" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.GoalkeepingPenaltiesSaved).ToNoFirstWord()</label>
+        <input asp-for="GoalkeepingPenaltiesSaved" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.GoalkeepingPunches).ToNoFirstWord()</label>
+        <input asp-for="GoalkeepingPunches" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.GoalkeepingHighClaims).ToNoFirstWord()</label>
+        <input asp-for="GoalkeepingHighClaims" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.GoalkeepingCatches).ToNoFirstWord()</label>
+        <input asp-for="GoalkeepingCatches" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.GoalkeepingGoalKicks).ToNoFirstWord()</label>
+        <input asp-for="GoalkeepingGoalKicks" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.GoalkeepingSweeperClearances).ToNoFirstWord()</label>
+        <input asp-for="GoalkeepingSweeperClearances" class="form-control"/>
+    </div>
+    <div class="col-1">
+
+    </div>
+</div>
+<br/>
+<br/>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-1">
+        <label>@nameof(Model.TeamPlayAssists).ToNoFirstWord().ToNoFirstWord()</label>
+        <input asp-for="TeamPlayAssists" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.TeamPlayPasses).ToNoFirstWord().ToNoFirstWord()</label>
+        <input asp-for="TeamPlayPasses" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.TeamPlayAccurateLongBalls).ToNoFirstWord().ToNoFirstWord()</label>
+        <input asp-for="TeamPlayAccurateLongBalls" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.TeamPlayCrosses).ToNoFirstWord().ToNoFirstWord()</label>
+        <input asp-for="TeamPlayCrosses" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.TeamPlayThroughBalls).ToNoFirstWord().ToNoFirstWord()</label>
+        <input asp-for="TeamPlayThroughBalls" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.TeamPlayBigChancesCreated).ToNoFirstWord().ToNoFirstWord()</label>
+        <input asp-for="TeamPlayBigChancesCreated" class="form-control"/>
+    </div>
+    <div class="col-1">
+
+    </div>
+    <div class="col-1">
+
+    </div>
+</div>
+<br/><br/>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-1">
+        <label>@nameof(Model.DisciplineYellowCards).ToNoFirstWord()</label>
+        <input asp-for="DisciplineYellowCards" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DisciplineRedCards).ToNoFirstWord()</label>
+        <input asp-for="DisciplineRedCards" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DisciplineFouls).ToNoFirstWord()</label>
+        <input asp-for="DisciplineFouls" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.DisciplineOffsides).ToNoFirstWord()</label>
+        <input asp-for="DisciplineOffsides" class="form-control"/>
+    </div>
+    <div class="col-1">
+
+    </div>
+    <div class="col-1">
+
+    </div>
+    <div class="col-1">
+
+    </div>
+    <div class="col-1">
+
+    </div>
+</div>
+<br/>
+<br/>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-1">
+        <label>@nameof(Model.MatchAppearances).ToNoFirstWord()</label>
+        <input asp-for="MatchAppearances" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.MatchWins).ToNoFirstWord()</label>
+        <input asp-for="MatchWins" class="form-control"/>
+    </div>
+    <div class="col-1">
+        <label>@nameof(Model.MatchLosses).ToNoFirstWord()</label>
+        <input asp-for="MatchLosses" class="form-control"/>
+    </div>
+    <div class="col-1">
+    </div>
+    <div class="col-1">
+
+    </div>
+    <div class="col-1">
+        <input asp-for="MatchPlayerId" hidden/>
+    </div>
+    <div class="col-1">
+        <input asp-for="MatchGameweekId" hidden/>
+    </div>
+    <div class="col-1">
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+    <div class="col-2"></div>
+
+</div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
+<style>
+    label {
+        font-size: 0.8vw;
+    }
+</style>

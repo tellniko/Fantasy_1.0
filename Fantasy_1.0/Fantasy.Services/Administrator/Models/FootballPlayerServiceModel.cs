@@ -7,6 +7,8 @@ using Fantasy.Common;
 
 namespace Fantasy.Services.Administrator.Models
 {
+  
+
     public class FootballPlayerServiceModel : IMapFrom<FootballPlayer>, IMapTo<FootballPlayer>
     {
         public int Id { get; set; }
@@ -22,6 +24,9 @@ namespace Fantasy.Services.Administrator.Models
 
         public int FootballClubId{ get; set; }
 
+        [Required]
+        [MinLength(DataConstants.CommonNameMinLength)]
+        [MaxLength(DataConstants.CommonNameMaxLength)]
         public string InfoName { get; set; }
 
         [Required]

@@ -1,6 +1,7 @@
 ﻿using Fantasy.Services.Administrator.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
+using Fantasy.Services.Models.Contracts;
 
 namespace Fantasy.Web.Areas.Administrator.Models
 {
@@ -11,5 +12,7 @@ namespace Fantasy.Web.Areas.Administrator.Models
         public List<SelectListItem> Positions { get; set; }
 
         public FootballPlayerServiceModel Player { get; set; }
+
+        public List<SelectListItem> Gameweeks { get; set; }
     }
 }

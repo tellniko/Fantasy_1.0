@@ -47,23 +47,24 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         public IActionResult ExportStatisticsJson()
         {
             var model = this.GetGameweeks();
+
             return View(model);
         }
 
         [HttpPost]
         public IActionResult ExportStatisticsJson(int gameweekId)
         {
-            //this.TempData.AddErrorMessage("Temporary Disabled!");
-            //return RedirectToAction(nameof(Index));
+            this.TempData.AddErrorMessage("Temporary Disabled!");
+            return RedirectToAction(nameof(Index));
 
             var result = this.exportServices.ExportStatistics(gameweekId);
 
-            if (result == 0)
+            if (result == null)
             {
                 return BadRequest();
             }
 
-            if (result == -1)
+            if (result == false)
             {
                 this.TempData.AddErrorMessage("Files have not been exported!");
             }

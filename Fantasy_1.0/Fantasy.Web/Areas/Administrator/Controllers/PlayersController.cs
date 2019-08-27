@@ -36,7 +36,8 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             {
                 Clubs = this.GetClubs(),
                 Positions = this.GetPositions(),
-                Player = player
+                Player = player,
+                Gameweeks = this.GetGameweeks()
             };
 
             return View(model);
@@ -55,9 +56,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             if (!await this.players.Exists(model.Player.Id))
             {
-                this.TempData.AddErrorMessage("Player does not exists");
-
-                return RedirectToAction(nameof(Index));
+                return BadRequest();
             }
 
             var successfulResult = await this.players.Edit(model.Player);
@@ -101,7 +100,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             if (await this.players.Exists(model.Player.Id))
             {
-                this.TempData.AddErrorMessage("A player with the given id exists already! Try with id in range [1-1500]!");
+                this.TempData.AddErrorMessage("A player with the given id already exists! Try with id in range [1-1500]!");
                 model.Clubs = this.GetClubs();
                 model.Positions = this.GetPositions();
 

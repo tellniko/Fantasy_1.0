@@ -81,9 +81,6 @@
 ;            }
         });
         $('#next').click(function () {
-            console.log(@Model.Players.Count());
-            console.log(@Model.Players.Count());
-
             if (@Model.Players.Count() >= @PlayersListingPageSize) {
                 $('#players')
                     .load('/@ViewBag.Controller/@ViewBag.Action'
@@ -143,7 +140,7 @@
                         if ($('#' + idAfter + j).attr('src') === imgUrl) {
                             $('#message').empty();
                             $('#main').css('margin-top', '20px');
-                            $('#message').append('<h2 class="text-success animated 1 bounce text-center">You have this player already!</h2>');
+                            $('#message').append('<h2 class="text-success animated 1 bounce text-center">You already have this player!</h2>');
                             setTimeout(() => {$('#message').empty(); $('#main').css('margin-top', '60px');}, 6000);
                             return;
                         }

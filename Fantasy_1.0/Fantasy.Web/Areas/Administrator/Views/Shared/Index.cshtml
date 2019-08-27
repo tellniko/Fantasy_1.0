@@ -1,48 +1,44 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
+<br/>
 <div class="container">
     <br/>
     <div>
         <div class="row">
             <div class="col-6">
-                <a asp-area="Administrator" asp-controller="Exports" asp-action="ExportPlayersJson" class="btn btn-primary">Export Players Json</a>
-                <br /><br />
-
-                <a asp-area="Administrator" asp-controller="Exports" asp-action="ExportPlayerInfosJson" class="btn btn-primary">Export PlayerInfos Json</a>
-                <br /><br />
-
-                <a asp-area="Administrator" asp-controller="Exports" asp-action="ExportStatisticsJson" class="btn btn-primary">Export Statistics Json</a>
-                <br /><br />
+                <h1>Export From Database</h1>
+                <a asp-area="Administrator" asp-controller="Exports" asp-action="ExportPlayersJson" class="btn btn-primary btn-lg btn-block">Export Players Json</a>
+                <br />
+                <a asp-area="Administrator" asp-controller="Exports" asp-action="ExportPlayerInfosJson" class="btn btn-primary btn-lg btn-block">Export PlayerInfos Json</a>
+                <br />
+                <a asp-area="Administrator" asp-controller="Exports" asp-action="ExportStatisticsJson" class="btn btn-primary btn-lg btn-block">Export Statistics Json</a>
+                <br />
+                <h1>Edit Models</h1>
+                <a asp-area="Administrator" asp-controller="Fixtures" asp-action="Create" class="btn btn-primary btn-lg btn-block">Create Fixture</a>
+                <br />
+                <a asp-area="Administrator" asp-controller="Players" asp-action="Add" class="btn btn-primary btn-lg btn-block">Add New Player</a>
+                <br />
+                <a asp-area="Administrator" asp-controller="Gameweeks" asp-action="All" class="btn btn-primary btn-lg btn-block">Edit Gameweek</a>
+                <br />
+                <a asp-area="" asp-controller="Players" asp-action="Index" class="btn btn-primary btn-lg btn-block">Edit Football Player</a>
+                <br />
+                <a asp-area="" asp-controller="Players" asp-action="Index" class="btn btn-primary btn-lg btn-block">Edit Football Player Statistics</a>
+                <br/>
             </div>
 
             <div class="col-6">
-                <a asp-area="Administrator" asp-controller="Imports" asp-action="ImportPlayers" class="btn btn-primary">Import Players From Json File</a>
-                <br /><br />
+                <h1>Import From Json Files</h1>
+                <a asp-area="Administrator" asp-controller="Imports" asp-action="ImportPlayers" class="btn btn-primary btn-lg btn-block">Import Players From Json File</a>
+                <br/>
 
-                <a asp-area="Administrator" asp-controller="Imports" asp-action="ImportStatistics" class="btn btn-primary">Import Statistics From Json File</a>
-                <br /><br />
-
-                <a asp-area="Administrator" asp-controller="Statistics" asp-action="Seed" class="btn btn-primary">Seed Statistics</a>
-                <br /><br />
-
-                      <a asp-area="Administrator" asp-controller="Statistics" asp-action="UpdatePoints" class="btn btn-primary">Update Points</a>
-                <br /><br />
-
-            </div>
-        </div>
-        <br/><br/>
-        <div class="row">
-            <div class="col-6">
-                <a asp-area="Administrator" asp-controller="Fixtures" asp-action="Create" class="btn btn-primary">Create Fixture</a>
-                <br /><br />
-
-                <a asp-area="Administrator" asp-controller="Players" asp-action="Add" class="btn btn-primary">Add New Player</a>
-                <br /><br />
-            </div>
-            <div class="col-6">
-                <a asp-area="Administrator" asp-controller="Gameweeks" asp-action="All" class="btn btn-primary">View Gameweeks</a>
-                <br /><br />
+                <a asp-area="Administrator" asp-controller="Imports" asp-action="ImportStatistics" class="btn btn-primary btn-lg btn-block">Import Statistics From Json File</a>
+                <br/>
+                <h1>Update Database</h1>
+                <a asp-area="Administrator" asp-controller="Statistics" asp-action="Seed" class="btn btn-primary btn-lg btn-block">Seed Statistics</a>
+                <br/>
+                <a asp-area="Administrator" asp-controller="Statistics" asp-action="UpdatePoints" class="btn btn-primary btn-lg btn-block">Update Points</a>
+                <br/>
             </div>
         </div>
     </div>
