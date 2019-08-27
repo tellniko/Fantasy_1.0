@@ -2,31 +2,37 @@
 @{
     ViewData["Title"] = "Default";
 }
-    <div>
-        <div style="background-color: #38003c; color: #ffffff; filter: drop-shadow(0px 5px 8px #38003c); margin-bottom: 5px;">&nbsp;TOP 10 @(Model[0].Position)s</div>
-        <div class="row" style="color: #e90052">
-            <div class="col-6" style="font-size: 0.8vw">
-               <strong>Name</strong>
-            </div>
-            <div class="col-4" style="font-size: 0.8vw">
-                <strong>Points</strong>
-            </div>
-            <div class="col-2"style="font-size: 0.8vw">
-                <strong>Club</strong>
-            </div>
-        </div>
-        @foreach (var player in Model)
-        {
-            <div class="row" style="border-bottom: #38003c 1px solid; border-bottom-color: #38003c; margin-top: 5px;">
-                <div class="col-6" style="font-size: 0.8vw">
-                    <strong>@player.Name.ToShortName()</strong>
-                </div>
-                <div class="col-4" style="font-size: 0.8vw">
-                    <strong>@player.Points.ToString("F0")</strong>
-                </div>
-                <div class="col-2">
-                    <img src="@player.SmallImgUrl" style="height: 1vw; margin-bottom: 2px;"/>
-                </div>
-            </div>
-        }
-    </div>
+
+<div style="width: 30vw ;">
+    <canvas id="@Model[0].Position" style="filter: drop-shadow(10px 10px 12px #38003c);"></canvas>
+</div>
+
+<script charset="utf-8">
+
+    var ctx = document.getElementById('@Model[0].Position').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'horizontalBar',
+        data: {
+            labels: ['@Model[0].Name', '@Model[1].Name', '@Model[2].Name', '@Model[3].Name', '@Model[4].Name',
+                '@Model[5].Name','@Model[6].Name', '@Model[7].Name', '@Model[8].Name', '@Model[9].Name'],
+            datasets: [{
+                label: 'Top 10 @(Model[0].Position)s',
+                data: ['@Model[0].Points', '@Model[1].Points', '@Model[2].Points', '@Model[3].Points', '@Model[4].Points',
+                    '@Model[5].Points','@Model[6].Points', '@Model[7].Points', '@Model[8].Points', '@Model[9].Points'],
+                backgroundColor: [
+                    '#38003c',
+                    '#00ff85',
+                    '#e90052',
+                    '#ffffff',
+                    '#04f5ff',
+                    '#38003c',
+                    '#00ff85',
+                    '#e90052',
+                    '#ffffff',
+                    '#04f5ff',
+                ],
+                borderWidth: 2
+            }]
+        },
+    });
+</script>

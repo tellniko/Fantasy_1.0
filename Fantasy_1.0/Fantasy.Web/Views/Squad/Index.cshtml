@@ -9,8 +9,8 @@
     <div class="col-10">
         <div class="row">
             <div class="col-3">
-                <div class="row" style="background-color: #38003c; color: #ffffff">
-                    <h1> First Team</h1>
+                <div class="row" style="background-color: #38003c; color: #ffffff; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)">
+                    <div style="font-size: 2vw; ">&nbsp;<strong>First Team</strong></div>
                 </div>
                 @foreach (var player in Model.Squad.Where(p => !p.IsBenched)
                     .OrderBy(p => SortingExtension.SortByPosition(p.Position)).ThenBy(p => p.Name))
@@ -53,7 +53,7 @@
             <div class="col-1"></div>
             <div class="col-3">
                 <div class="row" style="background-color: #38003c; color: #ffffff">
-                    <h1> Bench</h1>
+                    <div style="font-size: 2vw; ">&nbsp;<strong>Bench</strong></div>
                 </div>
                 @foreach (var player in Model.Squad.Where(p => p.IsBenched)
                     .OrderBy(p => SortingExtension.SortByPosition(p.Position)).ThenBy(p => p.Name))
@@ -102,8 +102,10 @@
                         <a class="btn btn-primary" asp-action="Manage">Manage</a>
                     </div>
                     <input hidden value="@Model.GameweekStartDate" id="time"/>
+                    
+
                     <div class="col-6" id="countDown" style="font-size: 1vw; color: #e90052; font-weight: bold">
-                       
+                           
                     </div>
                 </div>
 
@@ -180,7 +182,6 @@
 
 <script>
     $(document).ready(function() {
-        console.log($('#time').val())
         let countDownDate = new Date($('#time').val()).getTime();
 
         let x = setInterval(function() {

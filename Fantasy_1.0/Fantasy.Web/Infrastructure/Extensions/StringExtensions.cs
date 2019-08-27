@@ -65,5 +65,23 @@ namespace Fantasy.Web.Infrastructure.Extensions
 
             return names[names.Length - 1];
         }
+
+        public static string ToFuckinNormalName(this string str)
+        {
+            return str.Replace("é", "e")
+                .Replace("ú", "u")
+                .Replace("ß", "b")
+                .Replace("ü", "u")
+                .Replace("ú", "u")
+                .Replace("ö", "o")
+                .Replace("Ç", "C")
+                .Replace("Ø", "O")
+                .Replace("ó", "o")
+                .Replace("ä", "a")
+                .Replace("á", "a")
+                .Replace("ï", "i")
+                .Replace("í", "i")
+                .Replace("ø", "o");
+        }
     }
 }

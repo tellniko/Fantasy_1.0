@@ -1,25 +1,21 @@
-﻿using System;
+﻿using Fantasy.Data;
+using Fantasy.Web.Infrastructure.Extensions;
+using Fantasy.Web.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Fantasy.Data;
-using Fantasy.Data.Models.Common;
-using Fantasy.Web.Models;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 
 namespace Fantasy.Web.ViewComponents
 {
     public class TopTenFootballPlayersViewComponent : ViewComponent
     {
         private readonly FantasyDbContext db;
-        private readonly UserManager<FantasyUser> userManager;
 
-        public TopTenFootballPlayersViewComponent(FantasyDbContext db, UserManager<FantasyUser> userManager)
+        public TopTenFootballPlayersViewComponent(FantasyDbContext db)
         {
             this.db = db;
-            this.userManager = userManager;
         }
 
         public async Task<IViewComponentResult> InvokeAsync(string position)
@@ -32,9 +28,7 @@ namespace Fantasy.Web.ViewComponents
                 .Select(fp => new TopTenFootballPlayerViewModel
                 {
                     Points = fp.GameweekPoints.Where(gwp => gwp.GameweekId != 40).Sum(gwp => gwp.Points),
-                    Name = fp.Info.Name,
-                    Id = fp.Id,
-                    SmallImgUrl = fp.FootballClub.BadgeImgUrl,
+                    Name = fp.Info.Name.ToFuckinNormalName().PadLeft(30,' '),
                     Position = position,
                 })
                 .OrderBy(fp => -fp.Points)

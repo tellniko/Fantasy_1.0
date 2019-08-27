@@ -38,7 +38,7 @@
                     <input hidden asp-for="PlayerId20" id="ff3" class="form" />
                     <input hidden asp-for="PlayerId21" id="ff4" class="form" />
                     <input hidden asp-for="PlayerId22" id="ff5" class="form" />
-                    <button type="submit" class="btn btn-primary btn-lg btn-block"style="margin-bottom: 5px;" id="ready" @*disabled*@>Save your squad</button> @*todo*@
+                    <button type="submit" class="btn btn-primary btn-lg btn-block"style="margin-bottom: 5px;" id="ready" disabled>Save your squad</button> @*todo disable*@
                 </form>
 
             <div class="row" style="background-color: #38003c; color: #e90052"> &nbsp;<strong>Goalkeepers</strong></div>
@@ -264,11 +264,13 @@
                         <label style="margin-top: 10px">Order By</label>
                     </div>
                     <div class="col-9">
+
                         <select class="form-control" id="order" style="filter: drop-shadow(0px 5px 8px #38003c)">
                             <option value="Name" Text="Name">Name</option>
                             <option value="priceAscending">Price Ascending</option>
                             <option value="priceDescending">Price Descending</option>
                         </select>
+
                     </div>
                 </div>
             </div>
@@ -279,9 +281,8 @@
             <div class="row" id="players" style="margin-top: 1.9vw">
                 
             </div>
+
         </div>
-
-
     </div>
         </div>
 <div class="col-1"></div>
@@ -322,7 +323,7 @@
                 $($($(this).parent()).children()[1]).text("-");
                 $('#' + this.id[0] + this.id).val('');
                 //todo disable
-               //$('#ready').attr("disabled", true);
+               $('#ready').attr("disabled", true);
             }
         });
     });

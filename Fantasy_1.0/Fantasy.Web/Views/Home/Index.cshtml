@@ -1,43 +1,167 @@
 ﻿<br />
 <br />
-
-
-
 <div class="row">
     <div class="col-1"></div>
     <div class="col-10">
         <div class="row">
-            <div class="col-3">
-                @await Component.InvokeAsync("TopTenFootballPlayers", Goalkeeper)
-            </div>
-            <div class="col-3">
-                @await Component.InvokeAsync("TopTenFootballPlayers", Defender)
-            </div>
-
             <div class="col-6">
                 <div class="row">
-                    <div class="col-6">
-                    </div>
-                    <div class="col-6">
-                        @await Component.InvokeAsync("TopTenFantasyUsers")
-                    </div>
+                    @await Component.InvokeAsync("TopTenFootballPlayers", Goalkeeper)
                 </div>
-            </div>
-            <div class="row" style="margin-top: 10px">
-                <div class="col-3">
+                <div class="row">
+                    @await Component.InvokeAsync("TopTenFootballPlayers", Defender)
+                </div>
+                <div class="row">
                     @await Component.InvokeAsync("TopTenFootballPlayers", Midfielder)
                 </div>
-                <div class="col-3">
+                <div class="row">
                     @await Component.InvokeAsync("TopTenFootballPlayers", Forward)
                 </div>
-                <div class="col-6">
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="bou.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t91.svg" />
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="ars.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t3.svg" />
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="avl.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t7.svg" />
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="bri.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t36.svg" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="bur.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t90.svg" />
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="che.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t8.svg" />
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="cpa.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t31.svg" />
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="eve.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t11.svg" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="lei.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t13.svg" />
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="liv.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t14.svg" />
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="mac.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t43.svg" />
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="mau.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t1.svg" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="new.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t4.svg"/>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="nor.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t45.svg" />
+                        </a>
+
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="she.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t49.svg" />
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="shu.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t20.svg" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="tot.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t6.svg" style="width: 3vw;" />
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="wat.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t57.svg" />
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="whu.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t21.svg"/>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a asp-controller="Home" asp-action="Club" asp-route-id="wol.jpg">
+                            <img src="https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t39.svg" />
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    @await Component.InvokeAsync("TopTenFantasyUsers")
                 </div>
             </div>
         </div>
     </div>
     <div class="col-1"></div>
 </div>
-
-
-
-
+<script>
+    $(document).ready(function() {
+        $('img').mouseover(function () {
+            $(this).addClass('animated rotateIn')
+        });
+        $('img').mouseout(function () {
+            $(this).removeClass('animated rotateIn')
+        });
+        $('img').on('error',function () {
+            $(this).unbind("error").attr("src",
+                "https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/Photo-Missing.png");
+        });
+    });
+</script>
+<style>
+    img {
+        margin-bottom: 2vw;
+        width: 5.5vw;
+        filter: drop-shadow(10px 10px 12px #38003c);
+        opacity: 0.6;
+    }
+</style>

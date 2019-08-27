@@ -1,29 +1,24 @@
 ﻿using Fantasy.Common;
-using Fantasy.Data;
-using Fantasy.Data.Models.Common;
 using Fantasy.Services;
 using Fantasy.Services.Models;
 using Fantasy.Web.Infrastructure.Extensions;
 using Fantasy.Web.Models;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using Fantasy.Data;
 
 namespace Fantasy.Web.Controllers
 {
     using static GlobalConstants;
+    using static DataConstants;
 
     public class PlayersController : Controller
     {
         private readonly IPlayerService players;
-        //todo remove
-        private readonly FantasyDbContext db;
-        private readonly UserManager<FantasyUser> userManager;
 
-        public PlayersController(IPlayerService players, FantasyDbContext db)
+        public PlayersController(IPlayerService players)
         {
             this.players = players;
-            this.db = db;
         }
 
         public IActionResult Index()
@@ -59,12 +54,19 @@ namespace Fantasy.Web.Controllers
             this.ViewBag.Action = nameof(GetPartialStatisticsAsync);
             this.ViewBag.Controller = nameof(PlayersController).ToFirstWord();
 
-            return View(await this.players.GetByIdAsync<FootballPlayerDetailsServiceModel>(playerId));
+            var model = await this.players.GetByIdAsync<FootballPlayerDetailsServiceModel>(playerId);
+
+            if (model == null)
+            {
+                return NotFound();
+            }
+
+            return View(model);
         }
 
-        public async Task<IActionResult> GetPartialStatisticsAsync(int playerId, string position, int gameweekId = 40)//todo check
+        public async Task<IActionResult> GetPartialStatisticsAsync(int playerId, string position, int gameweekId = AllTimeStatisticsGameweekId)//todo check
         {
-          switch (position)
+            switch (position)
             {
                 case Goalkeeper:
                     return PartialView("_PartialStatistics", 

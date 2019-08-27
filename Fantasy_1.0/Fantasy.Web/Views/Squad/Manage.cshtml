@@ -1,6 +1,6 @@
 ﻿@model string
 @{
-    ViewData["Title"] = "ManageSquad";
+    ViewData["Title"] = "Manage Squad";
 }
 <br />
 <div class="row">
@@ -32,7 +32,7 @@
                             <form method="post">
                                 <input hidden id="ids" name="ids" />
                                 <button type="submit" class="btn btn-primary"
-                                        style=" margin-top: 2%; margin-bottom: 2%" id="ready" @*disabled*@>
+                                        style=" margin-top: 2%; margin-bottom: 2%" id="save" disabled>
                                     Save
                                 </button>
                             </form>
@@ -60,6 +60,16 @@
             $('#bench').load('/@ViewBag.Controller/@ViewBag.ActionGetBench');
             $('#pitch')
                 .load('/@ViewBag.Controller/@ViewBag.ActionGetSystem/?system=' + $(this).val());
+        });
+
+        $(document).click(function() {
+            for (let pos of $('.FP')) {
+                $('#save').attr('disabled', false);
+                if ($(pos).attr('freePos') == 'yes') {
+                    $('#save').attr('disabled', true);
+                    break;
+                }
+            }
         });
     });
 </script>

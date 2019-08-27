@@ -43,10 +43,10 @@ namespace Fantasy.Services.Models
         [Points(Units = 5)]
         public short DefenceClearances { get; set; }
 
-        [Points(Units = 5)]
+        [Points(Units = 2)]
         public short DefenceHeadedClearance { get; set; }
 
-        [Points(Units = 5)]
+        [Points(Units = 2)]
         public short DefenceRecoveries { get; set; }
 
         [Points(Units = 2)]
@@ -55,7 +55,7 @@ namespace Fantasy.Services.Models
         [Points(Units = -5)]
         public short DefenceDuelsLost { get; set; }
 
-        [Points(Units = 10)]
+        [Points(Units = 5)]
         public short DefenceSuccessfulFiftyFifties { get; set; }
 
         [Points(Units = 5)]
@@ -73,16 +73,16 @@ namespace Fantasy.Services.Models
         [Points(Units = 1)]
         public short TeamPlayPasses { get; set; }
 
-        [Points(Units = 5)]
+        [Points(Units = 3)]
         public short TeamPlayAccurateLongBalls { get; set; }
 
-        [Points(Units = 20)]
+        [Points(Units = 15)]
         public short TeamPlayBigChancesCreated { get; set; }
 
         [Points(Units = 5)]
         public short TeamPlayCrosses { get; set; }
 
-        [Points(Units = 10)]
+        [Points(Units = 8)]
         public short TeamPlayThroughBalls { get; set; }
 
         [Points(Units = 80)]

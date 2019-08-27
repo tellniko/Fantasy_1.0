@@ -23,8 +23,10 @@
         public const int SquadMidfielderCount = 7;
         public const int SquadDefenderCount = 7;
         public const int SquadForwardCount = 5;
-        public const int PermittedPlayerFromSameClub = 4;
+        public const int PermittedPlayerFromSameClubCount = 4;
         public const decimal SquadBudget = 200;
+
+        public const int SeasonGamewwekCount = 38;
 
         public const int PlayersListingPageSize = 13;
     }

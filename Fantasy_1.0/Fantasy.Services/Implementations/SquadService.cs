@@ -18,7 +18,6 @@ namespace Fantasy.Services.Implementations
 
     public class SquadService : ISquadService
     {
-        private const int SeasonGamewwekCount = 38;
 
         private readonly FantasyDbContext db;
         private readonly UserManager<FantasyUser> userManager;
@@ -71,7 +70,7 @@ namespace Fantasy.Services.Implementations
                 }
 
                 footballClubs[player.FootballClubId]++;
-                if (footballClubs[player.FootballClubId] > PermittedPlayerFromSameClub)
+                if (footballClubs[player.FootballClubId] > PermittedPlayerFromSameClubCount)
                 {
                     return false;
                 }
@@ -145,6 +144,11 @@ namespace Fantasy.Services.Implementations
 
         public async Task<bool> ValidateFirstTeamAsync(string ids, string userId)
         {
+            if (ids == null)
+            {
+                return false;
+            }
+
             var validInput = new Regex("^[0-9\\s]+$").Match(ids).Success;
 
             //validate input

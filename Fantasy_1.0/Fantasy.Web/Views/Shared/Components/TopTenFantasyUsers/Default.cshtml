@@ -3,31 +3,28 @@
 @{
     ViewData["Title"] = "Default";
 }
-<div>
-    <div style="background-color: #38003c; color: #ffffff; filter: drop-shadow(0px 5px 8px #38003c); margin-bottom: 5px;">&nbsp;TOP Squads</div>
-    <div class="row" style="color: #e90052">
-        <div class="col-6" style="font-size: 0.8vw">
-            <strong>User</strong>
-        </div>
-        <div class="col-4" style="font-size: 0.8vw">
-            <strong>Squad</strong>
-        </div>
-        <div class="col-2"style="font-size: 0.8vw">
-            <strong>Total</strong>
-        </div>
-    </div>
-    @foreach (var user in Model)
-    {
-        <div class="row" style="border-bottom: #38003c 1px solid; border-bottom-color: #38003c; margin-top: 5px;">
-            <div class="col-5" style="font-size: 0.8vw">
-                <strong>@user.Name</strong>
-            </div>
-            <div class="col-5" style="font-size: 0.8vw">
-                <strong>@user.Squad</strong>  
-            </div>
-            <div class="col-2" style="font-size: 0.8vw">
-                <strong>@user.Points.ToString("F0")</strong>
-            </div>
-        </div>
-    }
+
+<div style="width: 35vw; height: 30vw ;">
+    <canvas id="myChart" style="filter: drop-shadow(10px 10px 12px #38003c)"></canvas>
 </div>
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['@Model[0].Name','@Model[1].Name', '@Model[2].Name', '@Model[3].Name', '@Model[4].Name'],
+            datasets: [{
+                label: 'Top 5 Users',
+                data: [Number(@Model[0].Points), Number(@Model[1].Points), Number(@Model[2].Points), Number(@Model[3].Points), Number(@Model[4].Points)],
+                backgroundColor: [
+                    '#38003c',
+                    '#00ff85',
+                    '#e90052',
+                    '#ffffff',
+                    '#04f5ff',
+                ]
+            }]
+        }
+    });
+</script>

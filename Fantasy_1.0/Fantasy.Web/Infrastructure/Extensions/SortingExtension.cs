@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Fantasy.Common;
+﻿using Fantasy.Common;
 
 namespace Fantasy.Web.Infrastructure.Extensions
 {
     using static GlobalConstants;
     public static class SortingExtension
     {
-        public static int SortByPosition(string test)
+        public static int SortByPosition(string position)
         {
-            switch (test)
+            switch (position)
             {
                 case Goalkeeper: return 1;
                 case Defender: return 2;

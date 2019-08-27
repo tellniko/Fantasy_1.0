@@ -1,13 +1,12 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using Fantasy.Data;
-using Fantasy.Data.Models.Common;
+﻿using Fantasy.Data;
 using Fantasy.Services.Administrator;
 using Fantasy.Services.Administrator.Models;
 using Fantasy.Web.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {

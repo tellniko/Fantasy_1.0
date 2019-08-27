@@ -58,23 +58,18 @@
     $(document).ready(function() {
         $('#players').load('/@ViewBag.Controller/@ViewBag.Action');
 
-        let position = $('#position');
-        let player = $('#player');
-        let club = $('#club');
-        let order = $('#order');
-
-        player.on('keyup', filter);
-        position.on('change', filter);
-        club.on('change', filter);
-        order.on('change', filter);
+        $('#position').on('change', filter);
+        $('#player').on('keyup', filter);
+        $('#club').on('change', filter);
+        $('#order').on('change', filter);
 
         function filter() {
             $('#players')
                 .load('/@ViewBag.Controller/@ViewBag.Action' 
-                    + '?clubId=' + club.val()
-                    + '&positionId=' + position.val()
-                    + '&playerName=' + player.val()
-                    + '&order=' + order.val());
+                    + '?clubId=' +  $('#club').val()
+                    + '&positionId=' + $('#position').val()
+                    + '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_')
+                    + '&order=' + $('#order').val());
         }
     });
 </script>

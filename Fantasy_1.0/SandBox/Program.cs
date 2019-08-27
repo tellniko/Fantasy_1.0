@@ -24,40 +24,9 @@ namespace SandBox
     {
         static void Main(string[] args)
         {
-            var stat = new DefenderStatisticsServiceModel
-            {
-                MatchAppearances = 1,
-                MatchWins = 1,
-            };
-            Console.WriteLine(typeof(short).Name);
+            var validInput = new Regex("^[0-9\\s]+$").Match(null).Success;
 
-            var properties = stat
-                .GetType()
-                .GetProperties()
-                .Where(p => p.PropertyType.Name == typeof(short).Name)
-                .ToList();
-
-
-
-            foreach (var propertyInfo in properties)
-            {
-                Console.WriteLine(propertyInfo.PropertyType.Name
-                                  + "  " + propertyInfo.GetValue(stat)
-                                  + "   " + propertyInfo.GetCustomAttribute<PointsAttribute>().Units);
-            }
-           
-
-            //var matchApps = properties.FirstOrDefault(x => x.Name == "MatchAppearances")
-            //    ?.GetCustomAttribute<PointsAttribute>().Units;
-
-
-            //foreach (var property in properties)
-            //{
-            //    var value = (short) property.GetValue(stat);
-            //    var units = property.GetCustomAttribute<PointsAttribute>().Units;
-
-            //    var result = value * units;
-            //}
+            Console.WriteLine(validInput);
 
 
             Console.WriteLine();

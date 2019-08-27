@@ -66,6 +66,9 @@ namespace Fantasy.Services.Implementations
             int page = 1, 
             int pageSize = 10)
         {
+
+            playerName = playerName?.Replace("_", " ");
+
             Expression<Func<FootballPlayer, bool>> filterCriteria =
                 fp =>
                     fp.FootballClub.Tag.Contains(club ?? string.Empty)
@@ -113,7 +116,7 @@ namespace Fantasy.Services.Implementations
         //todo statistics service
         public async Task<TModel> GetStatisticsAsync<TModel>(int playerId, int gameweekId)
         {
-            return new StatisticsServiceModel
+                return new StatisticsServiceModel
                 {
                     Goalkeeping = await this.db.FindAsync<GoalkeepingStatistics>(playerId, gameweekId),
                     Discipline = await this.db.FindAsync<DisciplineStatistics>(playerId, gameweekId),

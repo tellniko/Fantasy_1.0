@@ -1,6 +1,6 @@
 ﻿@model PlayersListingViewModel
 @{
-    ViewData["Title"] = "_PartialPlayers2";
+    ViewData["Title"] = "_PartialPlayers";
     var currentPage = Model.CurrentPage;
 }
     <div class="row" style="margin-top: 20px;">
@@ -165,24 +165,24 @@
                     $('#' + idAfter + i).attr('freeSlot', 'no');
                     let form = $('.form');
                     if (Number($('#budget').text()) >= 0) {
-                        //todo
-                        //$('#ready').attr("disabled", false);
+                        //todo disable
+                        $('#ready').attr("disabled", false);
                     }
 
                     for (let i = 0; i < form.length; i++) {
-                        if ($(form[i]).val() === '') {
-                            //todo
-                           // $('#ready').attr("disabled", true);
+                        if ($(form[i]).val() == 0) {
+                            //todo disable
+                            $('#ready').attr("disabled", true);
                             break;
                         }
                     }
                     break;
                 }
             }
-            //$(`#M${i}`).on('error',function () {
-            //    $(this).unbind("error").attr("src",
-            //        "https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/Photo-Missing.png");
-            //});
+            $('img').on('error',function () {
+                $(this).unbind("error").attr("src",
+                    "https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/Photo-Missing.png");
+            });
         });
     });
 </script>

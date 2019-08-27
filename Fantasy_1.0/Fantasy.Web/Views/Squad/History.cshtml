@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "History";
+}
+<div id="squad">
+
+</div>
+
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3">
+                @await Component.InvokeAsync("Gameweeks", false)
+            </div>
+            <div class="col-3">
+                <h3>Total:&nbsp;<span id="points"></span></h3>
+            </div>
+            <div class="col-3"></div>
+
+
+        </div>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#squad').load('/@ViewBag.Controller/@ViewBag.Action');
+
+        $('#gameweek').on('change',
+            function() {
+                $('#squad').load(`/@ViewBag.Controller/@ViewBag.Action?gameweekId=${$('#gameweek').val()}`);
+            });
+
+    });
+</script>
