@@ -1,10 +1,10 @@
 ﻿using Fantasy.Common.Mapping;
 using Fantasy.Data;
-using Fantasy.Data.Models.FootballPlayers;
 using Fantasy.Services.Administrator.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
+using Fantasy.Data.Models;
 
 namespace Fantasy.Services.Administrator.Implementations
 {

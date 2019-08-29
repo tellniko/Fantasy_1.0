@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Fantasy.Data.Models.Common;
+using Fantasy.Data.Models;
 
 namespace Fantasy.Services
 {

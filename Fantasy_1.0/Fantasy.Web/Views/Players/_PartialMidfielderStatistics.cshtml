@@ -1,0 +1,100 @@
+﻿@model MidfielderStatisticsServiceModel
+@{
+    ViewData["Title"] = "_PartialMidfielderStatistics";
+    var matchStatistics = typeof(IHaveMatchStatistics).GetProperties().Select(x => x.Name).ToList();
+    var disciplineStatistics = typeof(IHaveDisciplineStatistics).GetProperties().Select(x => x.Name).ToList();
+    var defenceStatistics = typeof(IHaveMidfielderDefenceStatistics).GetProperties().Select(x => x.Name).ToList();
+    var teamPlayStatistics = typeof(IHaveMidfielderTeamPlayStatistics).GetProperties().Select(x => x.Name).ToList();
+    var attackStatistics = typeof(IHaveMidfielderAttackStatistics).GetProperties().Select(x => x.Name).ToList();
+}
+
+<div>
+    <div class="row">
+        <div class="col-5" style="background-color: #ffffff;filter: drop-shadow(10px 10px 12px #38003c)">
+            <div class="row" style="background-color: #38003c; color: #ffffff;font-size: 1vw;"><strong>&nbsp; Attack</strong></div>
+            @foreach(var property in Model.GetType().GetProperties().Where(x => attackStatistics.Contains(x.Name)))
+            {
+                <div class="row infoRow">
+                    <div class="col-8 text-left animated bounceInUp" style="font-size: 1vw;">
+                        <strong>@property.Name.ToSentenceCase()</strong>
+                    </div>
+                    <div class="col-4 text-right animated bounceInUp" style="font-size: 1vw;">
+                        <strong>@property.GetValue(Model)</strong>
+                    </div>
+                </div>
+            }
+            <br />
+            <div class="row" style="background-color: #04f5ff; color: #38003c; font-size: 1vw;"><strong>&nbsp; Defence</strong></div>
+            @foreach (var property in Model.GetType().GetProperties().Where(x => defenceStatistics.Contains(x.Name)))
+            {
+                <div class="row infoRow">
+                    <div class="col-8 text-left animated bounceInUp" style="font-size: 1vw;">
+                        <strong>@property.Name.ToSentenceCase()</strong>
+                    </div>
+                    <div class="col-4 text-right animated bounceInUp" style="font-size: 1vw;">
+                        <strong>@property.GetValue(Model)</strong>
+                    </div>
+                </div>
+            }
+            <br />
+        </div>
+        <div class="col-2">
+        </div>
+        <div class="col-5" style="background-color: #ffffff;filter: drop-shadow(10px 10px 12px #38003c)">
+            <div class="row" style="background-color: #00ff85; color: #38003c;font-size: 1vw;"> <strong>&nbsp; Team Play</strong></div>
+            @foreach(var property in Model.GetType().GetProperties().Where(x => teamPlayStatistics.Contains(x.Name)))
+            {
+                <div class="row infoRow">
+                    <div class="col-8 text-left animated bounceInUp" style="font-size: 1vw;">
+                        <strong>@property.Name.ToSentenceCase()</strong>
+                    </div>
+                    <div class="col-4 text-right animated bounceInUp" style="font-size: 1vw;">
+                        <strong>@property.GetValue(Model)</strong>
+                    </div>
+                </div>
+            }
+            <br />
+            <div class="row" style="background-color: #e90052; color: #ffffff; font-size: 1vw;"><strong>&nbsp; Discipline</strong></div>
+            @foreach(var property in Model.GetType().GetProperties().Where(x => disciplineStatistics.Contains(x.Name)))
+            {
+                <div class="row infoRow">
+                    <div class="col-8 text-left animated bounceInUp" style="font-size: 1vw;">
+                        <strong>@property.Name.ToSentenceCase()</strong>
+                    </div>
+                    <div class="col-4 text-right animated bounceInUp" style="font-size: 1vw;">
+                        <strong>@property.GetValue(Model)</strong>
+                    </div>
+                </div>
+             }
+            <div class="row infoRow">
+                <div class="col-8 text-left animated bounceInUp" style="font-size: 1vw;">
+                    <strong>@nameof(Model.Offsides).ToSentenceCase()</strong>
+                </div>
+                <div class="col-4 text-right animated bounceInUp" style="font-size: 1vw;">
+                    <strong>@Model.Offsides</strong>
+                </div>
+            </div>
+            <br />
+            <div class="row" style="background-color: #ffff00; color: #38003c;font-size: 1vw;"><strong>&nbsp; Overall</strong></div>
+            @foreach(var property in Model.GetType().GetProperties().Where(x => matchStatistics.Contains(x.Name)))
+            {
+            <div class="row infoRow">
+                <div class="col-8 text-left animated bounceInUp" style="font-size: 1vw;">
+                    <strong>@property.Name.ToSentenceCase()</strong>
+                </div>
+                <div class="col-4 text-right animated bounceInUp" style="font-size: 1vw;">
+                    <strong>@property.GetValue(Model)</strong>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style rel="stylesheet">
+    .infoRow {
+        border-bottom: #38003c 1px solid;
+        margin-top: 10px;
+    }
+</style>
+

@@ -2,82 +2,68 @@
 using Fantasy.Services.Models;
 using Fantasy.Services.Models.Contracts;
 using System.ComponentModel.DataAnnotations;
+using Fantasy.Data.Models;
 
 namespace Fantasy.Services.Administrator.Models
 {
-    public class FootballPlayerStatisticsServiceModel : IMapFrom<StatisticsServiceModel>, IMapTo<StatisticsServiceModel>,
-            IHaveDefenderAttackStatistics,
-            IHaveDefenderDefenceStatistics,
-            IHaveDefenderTeamPlayStatistics,
-            IHaveGoalkeeperDefenceStatistics,
-            IHaveGoalkeeperTeamPlayStatistics,
-            IHaveGoalkeepingStatistics,
-            IHaveMidfielderAttackStatistics,
-            IHaveMidfielderDefenceStatistics,
-            IHaveMidfielderTeamPlayStatistics,
-            IHaveForwardAttackStatistics,
-            IHaveForwardDefenceStatistics,
-            IHaveForwardTeamPlayStatistics,
-            IHaveDisciplineStatistics,
-            IHaveMatchStatistics,
-            IHaveOffcidesStatistics
+    public class FootballPlayerStatisticsServiceModel : IMapFrom<GameweekStatistics>, IMapTo<GameweekStatistics>
     {
-        [Range(0, short.MaxValue)] public short AttackGoals { get; set; }
-        [Range(0, short.MaxValue)] public short AttackPenaltiesScored { get; set; }
-        [Range(0, short.MaxValue)] public short AttackFreeKicksScored { get; set; }
-        [Range(0, short.MaxValue)] public short AttackShots { get; set; }
-        [Range(0, short.MaxValue)] public short AttackShotsOnTarget { get; set; }
-        [Range(0, short.MaxValue)] public short AttackHitWoodwork { get; set; }
-        [Range(0, short.MaxValue)] public short AttackBigChancesMissed { get; set; }
+        [Range(0, short.MaxValue)] public short Goals { get; set; }
+        [Range(0, short.MaxValue)] public short PenaltiesScored { get; set; }
+        [Range(0, short.MaxValue)] public short FreeKicksScored { get; set; }
+        [Range(0, short.MaxValue)] public short Shots { get; set; }
+        [Range(0, short.MaxValue)] public short ShotsOnTarget { get; set; }
+        [Range(0, short.MaxValue)] public short HitWoodwork { get; set; }
+        [Range(0, short.MaxValue)] public short BigChancesMissed { get; set; }
 
 
-        [Range(0, short.MaxValue)] public short DefenceTackles { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceBlockedShots { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceInterceptions { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceClearances { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceHeadedClearance { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceRecoveries { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceDuelsWon { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceDuelsLost { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceSuccessfulFiftyFifties { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceAerialBattlesWon { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceAerialBattlesLost { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceCleanSheets { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceGoalsConceded { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceLastManTackles { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceOwnGoals { get; set; }
-        [Range(0, short.MaxValue)] public short DefenceErrorsLeadingToGoal { get; set; }
+        [Range(0, short.MaxValue)] public short Tackles { get; set; }
+        [Range(0, short.MaxValue)] public short BlockedShots { get; set; }
+        [Range(0, short.MaxValue)] public short Interceptions { get; set; }
+        [Range(0, short.MaxValue)] public short Clearances { get; set; }
+        [Range(0, short.MaxValue)] public short HeadedClearance { get; set; }
+        [Range(0, short.MaxValue)] public short Recoveries { get; set; }
+        [Range(0, short.MaxValue)] public short DuelsWon { get; set; }
+        [Range(0, short.MaxValue)] public short DuelsLost { get; set; }
+        [Range(0, short.MaxValue)] public short SuccessfulFiftyFifties { get; set; }
+        [Range(0, short.MaxValue)] public short AerialBattlesWon { get; set; }
+        [Range(0, short.MaxValue)] public short AerialBattlesLost { get; set; }
+        [Range(0, short.MaxValue)] public short CleanSheets { get; set; }
+        [Range(0, short.MaxValue)] public short GoalsConceded { get; set; }
+        [Range(0, short.MaxValue)] public short LastManTackles { get; set; }
+        [Range(0, short.MaxValue)] public short OwnGoals { get; set; }
+        [Range(0, short.MaxValue)] public short ErrorsLeadingToGoal { get; set; }
 
 
-        [Range(0, short.MaxValue)] public short DisciplineYellowCards { get; set; }
-        [Range(0, short.MaxValue)] public short DisciplineRedCards { get; set; }
-        [Range(0, short.MaxValue)] public short DisciplineFouls { get; set; }
-        [Range(0, short.MaxValue)] public short DisciplineOffsides { get; set; }
+        [Range(0, short.MaxValue)] public short YellowCards { get; set; }
+        [Range(0, short.MaxValue)] public short RedCards { get; set; }
+        [Range(0, short.MaxValue)] public short Fouls { get; set; }
+        [Range(0, short.MaxValue)] public short Offsides { get; set; }
 
 
-        [Range(0, short.MaxValue)] public short GoalkeepingSaves { get; set; }
-        [Range(0, short.MaxValue)] public short GoalkeepingPenaltiesSaved { get; set; }
-        [Range(0, short.MaxValue)] public short GoalkeepingPunches { get; set; }
-        [Range(0, short.MaxValue)] public short GoalkeepingHighClaims { get; set; }
-        [Range(0, short.MaxValue)] public short GoalkeepingCatches { get; set; }
-        [Range(0, short.MaxValue)] public short GoalkeepingSweeperClearances { get; set; }
-        [Range(0, short.MaxValue)] public short GoalkeepingGoalKicks { get; set; }
+        [Range(0, short.MaxValue)] public short Saves { get; set; }
+        [Range(0, short.MaxValue)] public short PenaltiesSaved { get; set; }
+        [Range(0, short.MaxValue)] public short Punches { get; set; }
+        [Range(0, short.MaxValue)] public short HighClaims { get; set; }
+        [Range(0, short.MaxValue)] public short Catches { get; set; }
+        [Range(0, short.MaxValue)] public short SweeperClearances { get; set; }
+        [Range(0, short.MaxValue)] public short GoalKicks { get; set; }
 
 
-        [Range(0, short.MaxValue)] public short TeamPlayAssists { get; set; }
-        [Range(0, short.MaxValue)] public short TeamPlayPasses { get; set; }
-        [Range(0, short.MaxValue)] public short TeamPlayBigChancesCreated { get; set; }
-        [Range(0, short.MaxValue)] public short TeamPlayCrosses { get; set; }
-        [Range(0, short.MaxValue)] public short TeamPlayThroughBalls { get; set; }
-        [Range(0, short.MaxValue)] public short TeamPlayAccurateLongBalls { get; set; }
+        [Range(0, short.MaxValue)] public short Assists { get; set; }
+        [Range(0, short.MaxValue)] public short Passes { get; set; }
+        [Range(0, short.MaxValue)] public short BigChancesCreated { get; set; }
+        [Range(0, short.MaxValue)] public short Crosses { get; set; }
+        [Range(0, short.MaxValue)] public short ThroughBalls { get; set; }
+        [Range(0, short.MaxValue)] public short AccurateLongBalls { get; set; }
 
 
-        [Range(0, short.MaxValue)] public short MatchAppearances { get; set; }
-        [Range(0, short.MaxValue)] public short MatchWins { get; set; }
-        [Range(0, short.MaxValue)] public short MatchLosses { get; set; }
+        [Range(0, short.MaxValue)] public short Appearances { get; set; }
+        [Range(0, short.MaxValue)] public short Wins { get; set; }
+        [Range(0, short.MaxValue)] public short Losses { get; set; }
 
-        public int MatchPlayerId { get; set; }
-        public int MatchGameweekId { get; set; }
+        public int PlayerId { get; set; }
+        public int GameweekId { get; set; }
 
     }
 }

@@ -2,18 +2,18 @@
 {
     public interface IHaveGoalkeepingStatistics
     {
-        short GoalkeepingSaves { get; set; }
+        short Saves { get; set; }
 
-        short GoalkeepingPenaltiesSaved { get; set; }
+        short PenaltiesSaved { get; set; }
 
-        short GoalkeepingPunches { get; set; }
+        short Punches { get; set; }
 
-        short GoalkeepingHighClaims { get; set; }
+        short HighClaims { get; set; }
 
-        short GoalkeepingCatches { get; set; }
+        short Catches { get; set; }
 
-        short GoalkeepingSweeperClearances { get; set; }
+        short SweeperClearances { get; set; }
 
-        short GoalkeepingGoalKicks { get; set; }
+        short GoalKicks { get; set; }
     }
 }

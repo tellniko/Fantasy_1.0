@@ -1,8 +1,6 @@
 ﻿using Fantasy.Common.Mapping;
 using Fantasy.Data;
-using Fantasy.Data.Models.FootballPlayers;
-using Fantasy.Data.Models.Statistics;
-using Fantasy.Services.Models;
+using Fantasy.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -20,7 +18,6 @@ namespace Fantasy.Services.Implementations
         {
             this.db = db;
         }
-
       
         public async Task<IEnumerable<TModel>> GetAllWithPaginationAsync<TModel>(
             string club, 
@@ -36,7 +33,7 @@ namespace Fantasy.Services.Implementations
             Expression<Func<FootballPlayer, bool>> filterCriteria =
                 fp =>
                     fp.FootballClub.Tag.Contains(club ?? string.Empty)
-                    && fp.FootballPlayerPosition.Name.Contains(position ?? string.Empty)
+                    && fp.Position.Name.Contains(position ?? string.Empty)
                     && fp.Info.Name.Contains(playerName ?? string.Empty);
 
             //TODO: refactor
@@ -76,22 +73,16 @@ namespace Fantasy.Services.Implementations
                 .FirstOrDefaultAsync();
         }
 
-
-        //todo statistics service
         public async Task<TModel> GetStatisticsAsync<TModel>(int playerId, int gameweekId)
         {
-                return new StatisticsServiceModel
-                {
-                    Goalkeeping = await this.db.FindAsync<GoalkeepingStatistics>(playerId, gameweekId),
-                    Discipline = await this.db.FindAsync<DisciplineStatistics>(playerId, gameweekId),
-                    TeamPlay = await this.db.FindAsync<TeamPlayStatistics>(playerId, gameweekId),
-                    Defence = await this.db.FindAsync<DefenceStatistics>(playerId, gameweekId),
-                    Attack = await this.db.FindAsync<AttackStatistics>(playerId, gameweekId),
-                    Match = await this.db.FindAsync<MatchStatistics>(playerId, gameweekId),
-                }
-                .To<TModel>();
+            var player = await this.db.FindAsync<FootballPlayer>(playerId);
+            var gameweek = await this.db.FindAsync<Gameweek>(gameweekId);
+
+            return await this.db.GameweekStatistics
+                .Where(x =>x.Gameweek == gameweek && x.FootballPlayer == player)
+                .To<TModel>()
+                .FirstOrDefaultAsync();
         }
-        
 
         public async Task<bool> Exists(int id)
         {

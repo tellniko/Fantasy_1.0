@@ -1,5 +1,4 @@
-﻿using Fantasy.Data.Models.Game;
-using Fantasy.Services.Models;
+﻿using Fantasy.Services.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -15,12 +14,12 @@ namespace Fantasy.Services
 
         Task<bool> ValidateFirstTeamAsync(string ids, string userId);
 
-        Task SaveFirstTeam(string ids, string userId);
+        Task SaveFirstTeamAsync(string ids, string userId);
 
         Task<List<FantasyPlayerServiceModel>> GetCurrentSquad(string userId, int gameweekId);
 
-        Task<bool> SquadExists(string userId);
+        Task<bool> SquadExistsAsync(string userId);
 
-        Task Test(string useId);
+        Task<List<HistorySquadServiceModel>> GetHistorySquad(string userId, int gamweekId);
     }
 }

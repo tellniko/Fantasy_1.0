@@ -16,12 +16,12 @@
                     </div>ssss  
                     <div class="col-6">
                         <div class="animated bounceInUp">
-                            <a asp-controller="Players" asp-action="Details" asp-route-playerId="@player.Id" asp-route-position="@player.FootballPlayerPositionName" target="_blank">
+                            <a asp-controller="Players" asp-action="Details" asp-route-playerId="@player.Id" asp-route-position="@player.PositionName" target="_blank">
                                 <div class="row">
                                     <span style="font-size: 15px">@(player.InfoName)</span>
                                 </div>
                                 <div class="row">
-                                    <span style="font-size: 12px; font-style: italic; color: black">@(player.FootballPlayerPositionName)</span>
+                                    <span style="font-size: 12px; font-style: italic; color: black">@(player.PositionName)</span>
                                 </div>
                             </a>
                         </div>

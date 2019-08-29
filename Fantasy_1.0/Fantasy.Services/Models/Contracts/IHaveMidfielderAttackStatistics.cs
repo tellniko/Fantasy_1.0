@@ -1,15 +1,19 @@
 ﻿namespace Fantasy.Services.Models.Contracts
 {
-    public interface IHaveMidfielderAttackStatistics : IHaveDefenderAttackStatistics
+    public interface IHaveMidfielderAttackStatistics 
     {
-        short AttackPenaltiesScored { get; set; }
+        short PenaltiesScored { get; set; }
 
-        short AttackFreeKicksScored { get; set; }
+        short FreeKicksScored { get; set; }
 
-        short AttackShots { get; set; }
+        short Shots { get; set; }
 
-        short AttackShotsOnTarget { get; set; }
+        short ShotsOnTarget { get; set; }
 
-        short AttackBigChancesMissed { get; set; }
+        short BigChancesMissed { get; set; }
+
+        short Goals { get; set; }
+
+        short HitWoodwork { get; set; }
     }
 }

@@ -1,6 +1,4 @@
 ﻿using Fantasy.Data;
-using Fantasy.Data.Models.Common;
-using Fantasy.Data.Models.FootballPlayers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Fantasy.Common;
+using Fantasy.Data.Models;
 
 namespace Fantasy.Web.Infrastructure.Extensions
 {

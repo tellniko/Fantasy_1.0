@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Fantasy.Data;
-using Fantasy.Data.Models.Common;
+using Fantasy.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Fantasy.Services.Implementations

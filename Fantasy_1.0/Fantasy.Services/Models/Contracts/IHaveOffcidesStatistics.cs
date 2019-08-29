@@ -2,6 +2,6 @@
 {
     public interface IHaveOffcidesStatistics
     {
-        short DisciplineOffsides { get; set; }
+        short Offsides { get; set; }
     }
 }

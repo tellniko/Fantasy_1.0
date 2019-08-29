@@ -1,5 +1,4 @@
 ﻿using Fantasy.Common;
-using Fantasy.Data.Models.Common;
 using Fantasy.Services;
 using Fantasy.Services.Models;
 using Fantasy.Web.Infrastructure.Extensions;
@@ -11,6 +10,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Fantasy.Data;
+using Fantasy.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Fantasy.Web.Controllers
@@ -52,7 +52,7 @@ namespace Fantasy.Web.Controllers
         {
             var userId = this.userManager.GetUserId(User);
 
-            var squadExists = await this.squad.SquadExists(userId);
+            var squadExists = await this.squad.SquadExistsAsync(userId);
 
             if (!squadExists)
             {
@@ -60,7 +60,7 @@ namespace Fantasy.Web.Controllers
             }
 
             var nextGameweek = await this.gamweeks.GetNext(DateTime.UtcNow);
-
+            //todo validate date start
             var model = new CurrentSquadViewModel
             {
                 Squad = await this.squad.GetCurrentSquad(userId, nextGameweek.Id),
@@ -98,14 +98,14 @@ namespace Fantasy.Web.Controllers
                 return this.View();
             }
 
-            await this.squad.SaveFirstTeam(ids, userId);
+            await this.squad.SaveFirstTeamAsync(ids, userId);
             
             return RedirectToAction(nameof(Index));
         }
 
         public IActionResult Create(string userId)
         {
-            this.ViewBag.Action = nameof(GetPartialPlayersAsync);
+            this.ViewBag.Action = nameof(GetPartialPlayers);
             this.ViewBag.Controller = nameof(SquadController).ToFirstWord();
 
             var model = new UserSquadFormModel();
@@ -163,7 +163,7 @@ namespace Fantasy.Web.Controllers
             return PartialView($"_PartialSystem{system}");
         }
 
-        public async Task<IActionResult> GetPartialPlayersAsync(string clubId,
+        public async Task<IActionResult> GetPartialPlayers(string clubId,
             string positionId,
             string playerName,
             string order,
@@ -176,7 +176,7 @@ namespace Fantasy.Web.Controllers
                 CurrentPage = page,
             };
 
-            this.ViewBag.Action = nameof(GetPartialPlayersAsync);
+            this.ViewBag.Action = nameof(GetPartialPlayers);
             this.ViewBag.Controller = nameof(SquadController).ToFirstWord();
 
             return PartialView("_PartialPlayersPagination", model);
@@ -186,66 +186,26 @@ namespace Fantasy.Web.Controllers
         public IActionResult History()
         {
 
-            this.ViewBag.Action = nameof(GetPartialSquad);
+            this.ViewBag.Action = nameof(GetPartialhistorySquad);
             this.ViewBag.Controller = nameof(SquadController).ToFirstWord();
 
             return View();
         }
 
-
-        public async Task<IActionResult> GetPartialSquad(int gameweekId = 1)
+        //todo in service
+        public async Task<IActionResult> GetPartialhistorySquad(int gameweekId = 1)
         {
 
             var userId = this.userManager.GetUserId(User);
 
+            var result = await this.squad.GetHistorySquad(userId, gameweekId);
 
-            var result = await this.db.FantasyPlayers
-                .Where(fp =>
-                    fp.FantasyUserId == userId &&
-                    fp.GameweekStatuses.First(s => s.GameweekId == gameweekId).IsBenched == false)
-                .Select(fp => new HistotyViewModel
-                {
-                    Name = fp.FootballPlayer.Info.Name,
-                    Points = fp.FootballPlayer.GameweekPoints.First(p => p.GameweekId == gameweekId).Points,
-                    ImgUrl = fp.FootballPlayer.Info.BigImgUrl,
-                    Id = fp.Id,
-                    Position = fp.FootballPlayer.FootballPlayerPosition.Name
-                })
-                .OrderBy(x => SortByPosition(x.Position))
-                .ToListAsync();
+            if (result == null)
+            {
+                return BadRequest();
+            }
 
-
-            var id = this.userManager.GetUserId(User);
-
-            this.ViewBag.UserId = this.userManager.GetUserId(User);
-
-
-            return PartialView("_PartialSquad", result);
-        }
-
-        public async Task<IActionResult> Test()
-        {
-            var userId = this.userManager.GetUserId(User);
-
-            await this.squad.Test(userId);
-
-            return View();
-        }
-
-
-        public class HistotyViewModel //todo move
-        {
-            public int Id { get; set; }
-
-            public string Name { get; set; }
-
-            public string ImgUrl { get; set; }
-
-            public decimal Points { get; set; }
-
-            public string Position { get; set; }
-
-
+            return PartialView("_PartialSquad", result.OrderBy(x => SortByPosition(x.Position)).ToList());
         }
     }
 }

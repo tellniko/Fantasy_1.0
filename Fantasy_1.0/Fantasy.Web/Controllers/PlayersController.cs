@@ -1,16 +1,16 @@
 ﻿using Fantasy.Common;
+using Fantasy.Data;
 using Fantasy.Services;
 using Fantasy.Services.Models;
 using Fantasy.Web.Infrastructure.Extensions;
 using Fantasy.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using Fantasy.Data;
 
 namespace Fantasy.Web.Controllers
 {
-    using static GlobalConstants;
     using static DataConstants;
+    using static GlobalConstants;
 
     public class PlayersController : Controller
     {
@@ -64,21 +64,22 @@ namespace Fantasy.Web.Controllers
             return View(model);
         }
 
-        public async Task<IActionResult> GetPartialStatisticsAsync(int playerId, string position, int gameweekId = AllTimeStatisticsGameweekId)//todo check
+        public async Task<IActionResult> GetPartialStatisticsAsync(int playerId, string position, int gameweekId = AllTimeStatisticsGameweekId)
         {
+
             switch (position)
             {
                 case Goalkeeper:
-                    return PartialView("_PartialStatistics", 
+                    return PartialView("_PartialGoalkeeperStatistics", 
                         await this.players.GetStatisticsAsync<GoalkeeperStatisticsServiceModel>(playerId, gameweekId));
                 case Defender:
-                    return PartialView("_PartialStatistics",
+                    return PartialView("_PartialDefenderStatistics",
                         await this.players.GetStatisticsAsync<DefenderStatisticsServiceModel>(playerId, gameweekId));
                 case Midfielder:
-                    return PartialView("_PartialStatistics", 
+                    return PartialView("_PartialMidfielderStatistics", 
                         await this.players.GetStatisticsAsync<MidfielderStatisticsServiceModel>(playerId, gameweekId));
                 case Forward:
-                    return PartialView("_PartialStatistics", 
+                    return PartialView("_PartialForwardStatistics", 
                         await this.players.GetStatisticsAsync<ForwardStatisticsServiceModel>(playerId, gameweekId));
                 default:
                     return BadRequest();

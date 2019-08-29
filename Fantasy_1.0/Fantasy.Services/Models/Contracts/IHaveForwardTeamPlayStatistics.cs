@@ -1,9 +1,13 @@
 ﻿namespace Fantasy.Services.Models.Contracts
 {
-    public interface IHaveForwardTeamPlayStatistics : IHaveCommonTeamPlayStatistics
+    public interface IHaveForwardTeamPlayStatistics 
     {
-        short TeamPlayBigChancesCreated { get; set; }
+        short BigChancesCreated { get; set; }
 
-        short TeamPlayCrosses { get; set; }
+        short Crosses { get; set; }
+
+        short Assists { get; set; }
+
+        short Passes { get; set; }
     }
 }

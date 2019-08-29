@@ -2,10 +2,10 @@
 {
     public interface IHaveDisciplineStatistics
     {
-        short DisciplineYellowCards { get; set; }
+        short YellowCards { get; set; }
 
-        short DisciplineRedCards { get; set; }
+        short RedCards { get; set; }
 
-        short DisciplineFouls { get; set; }
+        short Fouls { get; set; }
     }
 }

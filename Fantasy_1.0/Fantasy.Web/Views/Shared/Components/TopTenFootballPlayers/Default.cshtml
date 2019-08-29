@@ -1,14 +1,14 @@
 ﻿@model List<TopTenFootballPlayerViewModel>
 @{
     ViewData["Title"] = "Default";
-}
+   }
 
 <div style="width: 30vw ;">
     <canvas id="@Model[0].Position" style="filter: drop-shadow(10px 10px 12px #38003c);"></canvas>
 </div>
 
 <script charset="utf-8">
-
+    //todo validation
     var ctx = document.getElementById('@Model[0].Position').getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'horizontalBar',

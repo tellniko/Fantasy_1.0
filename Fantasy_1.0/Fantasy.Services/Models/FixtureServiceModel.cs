@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using Fantasy.Common.Mapping;
-using Fantasy.Data.Models.Common;
+using Fantasy.Data.Models;
 
 namespace Fantasy.Services.Models
 {

@@ -1,9 +1,9 @@
 ﻿using Fantasy.Common.Mapping;
 using Fantasy.Data;
-using Fantasy.Data.Models.FootballPlayers;
 using System;
 using System.ComponentModel.DataAnnotations;
 using Fantasy.Common;
+using Fantasy.Data.Models;
 
 namespace Fantasy.Services.Administrator.Models
 {

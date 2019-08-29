@@ -17,7 +17,7 @@
                     <div class="col-4">
                         <div class="playerInfoName animated bounceInLeft row">@Model.InfoName</div>
                         <div class="animated bounceInLeft row text-center playerInfoPosition" style="background-color: #38003c">
-                            <div class="col" id="pos">@Model.FootballPlayerPositionName</div>
+                            <div class="col" id="pos">@Model.PositionName</div>
                         </div>
                         <div class="playerInfoNumber animated bounceInLeft row">$ @Model.Price</div>
                     </div>
@@ -68,7 +68,7 @@
         <div class="row">
             <div class="col-5" style="background-color: #ffffff"></div>
             <div class="col-2">
-                @await Component.InvokeAsync("Gameweeks", true)
+                @await Component.InvokeAsync("Gameweeks", new {includeAll = true,  finished = true})
             </div>
             <div class="col-5" style="background-color: #ffffff"></div>
         </div>

@@ -2,14 +2,14 @@
 {
     public interface IHaveForwardDefenceStatistics
     {
-        short DefenceTackles { get; set; }
+        short Tackles { get; set; }
 
-        short DefenceBlockedShots { get; set; }
+        short BlockedShots { get; set; }
 
-        short DefenceInterceptions { get; set; }
+        short Interceptions { get; set; }
 
-        short DefenceClearances { get; set; }
+        short Clearances { get; set; }
 
-        short DefenceHeadedClearance { get; set; }
+        short HeadedClearance { get; set; }
     }
 }

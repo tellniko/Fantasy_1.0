@@ -28,7 +28,7 @@
     {
         <div class="row player" style="border-bottom: #38003c 1px solid; cursor: pointer" 
              id="@player.Id" 
-             position="@player.FootballPlayerPositionName" 
+             position="@player.PositionName" 
              price="@player.Price"
              imgUrl="@player.InfoBigImgUrl"
              name="@player.InfoName.ToShortName()"
@@ -41,7 +41,7 @@
 
             <div class="col-5 animated bounceInDown">
                 <p style="font-size: 0.8vw; margin-top: 0.7vw;">
-                    <strong style="background-color: #38003c; color: #ffffff">&nbsp;@player.FootballPlayerPositionName[0]&nbsp;</strong>
+                    <strong style="background-color: #38003c; color: #ffffff">&nbsp;@player.PositionName[0]&nbsp;</strong>
                     &nbsp;@player.InfoName.ToShortName()
                 </p>
             </div>

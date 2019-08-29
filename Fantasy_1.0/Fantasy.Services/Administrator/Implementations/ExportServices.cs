@@ -57,25 +57,12 @@ namespace Fantasy.Services.Administrator.Implementations
 
             try
             {
-                var attackStatistics = this.db.AttackStatistics.Where(s => s.Gameweek == gameweek).ToList();
-                var matchStatistics = this.db.MatchStatistics.Where(s => s.Gameweek == gameweek).ToList();
-                var defenceStatistics = this.db.DefenceStatistics.Where(s => s.Gameweek == gameweek).ToList();
-                var teamPlayStatistics = this.db.TeamPlayStatistics.Where(s => s.Gameweek == gameweek).ToList();
-                var disciplineStatistics = this.db.DisciplineStatistics.Where(s => s.Gameweek == gameweek).ToList();
-                var goalkeepingStatistics = this.db.GoalkeepingStatistics.Where(s => s.Gameweek == gameweek).ToList();
+                var statistics = this.db.GameweekStatistics.Where(s => s.Gameweek == gameweek).ToList();
 
-                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/attackStatGW{gameweek.Id}.json",
-                    JsonConvert.SerializeObject(attackStatistics));
-                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/matchStatGW{gameweek.Id}.json",
-                    JsonConvert.SerializeObject(matchStatistics));
-                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/defenceStatGW{gameweek.Id}.json",
-                    JsonConvert.SerializeObject(defenceStatistics));
-                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/teamPlayStatGW{gameweek.Id}.json",
-                    JsonConvert.SerializeObject(teamPlayStatistics));
-                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/disciplineStatGW{gameweek.Id}.json",
-                    JsonConvert.SerializeObject(disciplineStatistics));
-                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/goalkeepingStatGW{gameweek.Id}.json",
-                    JsonConvert.SerializeObject(goalkeepingStatistics));
+                var stat = JsonConvert.SerializeObject(statistics);
+
+                File.WriteAllText($"wwwroot/JsonFiles/GW{gameweek.Id}/GW{gameweek.Id}.json",
+                    JsonConvert.SerializeObject(statistics));
             }
             catch (Exception)
             {

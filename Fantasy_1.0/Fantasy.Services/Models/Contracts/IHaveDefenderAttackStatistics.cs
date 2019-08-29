@@ -2,8 +2,8 @@
 {
     public interface IHaveDefenderAttackStatistics
     {
-        short AttackGoals { get; set; }
+        short Goals { get; set; }
 
-        short AttackHitWoodwork { get; set; }
+        short HitWoodwork { get; set; }
     }
 }

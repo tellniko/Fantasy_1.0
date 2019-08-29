@@ -21,8 +21,8 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
         public IActionResult ExportPlayersJson()
         {
-            this.TempData.AddErrorMessage("Temporary Disabled!");
-            return RedirectToAction(nameof(Index));
+            //this.TempData.AddErrorMessage("Temporary Disabled!");
+            //return RedirectToAction(nameof(Index));
 
             this.exportServices.ExportFootballPlayers();
 
@@ -33,8 +33,8 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
         public IActionResult ExportPlayerInfosJson()
         {
-            this.TempData.AddErrorMessage("Temporary Disabled!");
-            return RedirectToAction(nameof(Index));
+            //this.TempData.AddErrorMessage("Temporary Disabled!");
+            //return RedirectToAction(nameof(Index));
 
             this.exportServices.ExportFootballPlayerInfos();
 
@@ -54,8 +54,8 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         [HttpPost]
         public IActionResult ExportStatisticsJson(int gameweekId)
         {
-            this.TempData.AddErrorMessage("Temporary Disabled!");
-            return RedirectToAction(nameof(Index));
+            //this.TempData.AddErrorMessage("Temporary Disabled!");
+            //return RedirectToAction(nameof(Index));
 
             var result = this.exportServices.ExportStatistics(gameweekId);
 

@@ -1,9 +1,12 @@
-﻿using Fantasy.Data;
+﻿using System;
+using Fantasy.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
+using Fantasy.Data.Models;
+using Remotion.Linq.Parsing.Structure.IntermediateModel;
 
 namespace Fantasy.Web.ViewComponents
 {
@@ -18,24 +21,40 @@ namespace Fantasy.Web.ViewComponents
             this.db = db;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync(bool all)
+        public async Task<IViewComponentResult> InvokeAsync(bool includeAll, bool finished)
         {
+
             var gameweeks = await this.db.Gameweeks
-                .Where(gw => gw.Id  != PreSeasonStatisticsGameweekId && gw.Id != AllTimeStatisticsGameweekId)
-                .OrderBy(gw => gw.Id)
+                .Where(gw =>
+                    gw.Id != PreSeasonStatisticsGameweekId && gw.Id != AllTimeStatisticsGameweekId) 
+                .OrderBy(gw => gw.Id).Select(gw => new
+                {
+                    gw.Name,
+                    gw.Id,
+                    gw.Finished
+                })
+                .ToListAsync();
+
+            if (finished)
+            {
+                gameweeks = gameweeks.Where(gw => gw.Finished).ToList();
+            }
+
+
+            var result = gameweeks
                 .Select(gw => new SelectListItem
                 {
                     Text = gw.Name,
                     Value = gw.Id.ToString()
                 })
-                .ToListAsync();
+                .ToList();
 
-            if (all)
+            if (includeAll)
             {
-                gameweeks.Insert(0, new SelectListItem("All Time", AllTimeStatisticsGameweekId.ToString()));
+                result.Insert(0, new SelectListItem("All Time", AllTimeStatisticsGameweekId.ToString()));
             }
 
-            return this.View(gameweeks);
+            return this.View(result);
         }
     }
 }

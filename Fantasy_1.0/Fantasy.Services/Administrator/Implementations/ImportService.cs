@@ -1,12 +1,11 @@
 ﻿using Fantasy.Data;
-using Fantasy.Data.Models.FootballPlayers;
-using Fantasy.Data.Models.Statistics;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Fantasy.Data.Models;
 
 namespace Fantasy.Services.Administrator.Implementations
 {
@@ -21,7 +20,6 @@ namespace Fantasy.Services.Administrator.Implementations
 
         public int ImportPlayers()
         {
-
             //todo constants
 
             var players = JsonConvert.DeserializeObject<List<FootballPlayer>>(
@@ -77,37 +75,21 @@ namespace Fantasy.Services.Administrator.Implementations
 
         public string ImportStatistics(int gameweekId)
         {
-            //return null;
-
-            if (this.db.MatchStatistics.Any(x => x.Gameweek.Id == gameweekId))
-            {
-                return "Statistics already seeded!";
-            }
-
-            var statistics = new List<BaseStatistics>();
+            var statistics = new List<GameweekStatistics>();
 
             try
             {
-                statistics.AddRange(JsonConvert.DeserializeObject<List<AttackStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/attackStatGW{gameweekId}.json")));
-                statistics.AddRange(JsonConvert.DeserializeObject<List<MatchStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/matchStatGW{gameweekId}.json")));
-                statistics.AddRange(JsonConvert.DeserializeObject<List<DefenceStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/defenceStatGW{gameweekId}.json")));
-                statistics.AddRange(JsonConvert.DeserializeObject<List<TeamPlayStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/teamPlayStatGW{gameweekId}.json")));
-                statistics.AddRange(JsonConvert.DeserializeObject<List<DisciplineStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/disciplineStatGW{gameweekId}.json")));
-                statistics.AddRange(JsonConvert.DeserializeObject<List<GoalkeepingStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/goalkeepingStatGW{gameweekId}.json")));
+                statistics.AddRange(JsonConvert.DeserializeObject<List<GameweekStatistics>>
+                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/statisticsGW{gameweekId}.json")));
+         
             }
             catch (Exception)
             {
-                return "There is a problem with the Json files!";
+                return null;
             }
 
-
             this.db.AddRange(statistics);
+
             var result = this.db.SaveChanges();
 
             if (result == 0)

@@ -1,5 +1,5 @@
-﻿using System.Threading.Tasks;
-using Fantasy.Services.Administrator.Models;
+﻿using Fantasy.Services.Administrator.Models;
+using System.Threading.Tasks;
 
 namespace Fantasy.Services.Administrator
 {
@@ -7,7 +7,7 @@ namespace Fantasy.Services.Administrator
     {
         string Seed(int gameweekId);
 
-        Task<string> UpdateFootballPlayersPointsAsync(int gameweekId);
+        Task<int> UpdateFootballPlayersPointsAsync(int gameweekId);
 
         Task<TModel> GetStatisticsAsync<TModel>(int playerId, int gameweekId);
 

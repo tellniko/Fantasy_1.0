@@ -10,7 +10,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Fantasy.Common.Mapping;
 using Fantasy.Data.Models;
-using Fantasy.Data.Models.Statistics;
 using Fantasy.Services.Administrator.Models;
 using Fantasy.Services.Models;
 using Fantasy.Services.Models.Contracts;
@@ -26,7 +25,6 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         {
             this.statistics = statistics;
             this.db = db;
-
         }
 
         public IActionResult UpdatePoints()
@@ -41,13 +39,18 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         {
             var result = await this.statistics.UpdateFootballPlayersPointsAsync(gameweekId);
 
-            if (result == null)
+            if (result == -1)
             {
-                this.TempData.AddErrorMessage("Something went wrong!");
+                this.TempData.AddErrorMessage("Statistics for this gameweek is not available!");
+            }
+            else if(result == 0)
+            {
+                this.TempData.AddErrorMessage("No updates have been made!");
             }
             else
             {
                 this.TempData.AddSuccessMessage($"{result} updates have been made.");
+
             }
 
             return RedirectToAction(nameof(Index));

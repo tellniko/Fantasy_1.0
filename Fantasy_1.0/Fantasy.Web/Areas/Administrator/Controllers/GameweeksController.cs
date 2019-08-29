@@ -74,8 +74,8 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
 
             var player = this.context.FootballPlayers
-                .Include(fp => fp.MatchStatistics)
-                .Where(x => x.MatchStatistics.FirstOrDefault(s => s.GameweekId == 1).Wins == 0)
+                .Include(fp => fp.GameweekStatistics)
+                .Where(x => x.GameweekStatistics.FirstOrDefault(s => s.GameweekId == 1).Wins == 0)
                 .FirstOrDefault();
                 
 

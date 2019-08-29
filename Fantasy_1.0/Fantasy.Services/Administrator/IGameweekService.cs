@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Fantasy.Data.Models.Common;
+using Fantasy.Data.Models;
 using Fantasy.Services.Administrator.Models;
 
 namespace Fantasy.Services.Administrator

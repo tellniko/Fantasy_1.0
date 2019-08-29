@@ -1,7 +1,5 @@
 ﻿using Fantasy.Common;
 using Fantasy.Data;
-using Fantasy.Data.Models.Common;
-using Fantasy.Data.Models.Game;
 using Fantasy.Services.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -10,11 +8,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Fantasy.Data.Models;
 
 
 namespace Fantasy.Services.Implementations
 {
     using static GlobalConstants;
+
 
     public class SquadService : ISquadService
     {
@@ -38,7 +38,7 @@ namespace Fantasy.Services.Implementations
                 .Select(fp => new FantasyPlayerServiceModel
                 {
                     Name = fp.FootballPlayer.Info.Name,
-                    Position = fp.FootballPlayer.FootballPlayerPosition.Name,
+                    Position = fp.FootballPlayer.Position.Name,
                     BigImgUrl = fp.FootballPlayer.Info.BigImgUrl,
                     Id = fp.Id
                 })
@@ -48,15 +48,15 @@ namespace Fantasy.Services.Implementations
         public async Task<bool> ValidateSquadAsync(List<int> playerIds)
         {
             var players = await this.db.FootballPlayers
-                .Include(fp => fp.FootballPlayerPosition)
+                .Include(fp => fp.Position)
                 .Where(fp => playerIds.Contains(fp.Id))
                 .ToListAsync();
 
             if (players.Count != SquadPlayersCount
-                || players.Count(fp => fp.FootballPlayerPosition.Name == Goalkeeper) != SquadGoalkeeperCount
-                || players.Count(fp => fp.FootballPlayerPosition.Name == Defender) != SquadDefenderCount
-                || players.Count(fp => fp.FootballPlayerPosition.Name == Midfielder) != SquadMidfielderCount
-                || players.Count(fp => fp.FootballPlayerPosition.Name == Forward) != SquadForwardCount)
+                || players.Count(fp => fp.Position.Name == Goalkeeper) != SquadGoalkeeperCount
+                || players.Count(fp => fp.Position.Name == Defender) != SquadDefenderCount
+                || players.Count(fp => fp.Position.Name == Midfielder) != SquadMidfielderCount
+                || players.Count(fp => fp.Position.Name == Forward) != SquadForwardCount)
             {
                 return false;
             }
@@ -195,7 +195,7 @@ namespace Fantasy.Services.Implementations
             return true;
         }
 
-        public async Task SaveFirstTeam(string ids, string userId)
+        public async Task SaveFirstTeamAsync(string ids, string userId)
         {
             var firstTeamIdsList = ids.Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
@@ -210,7 +210,7 @@ namespace Fantasy.Services.Implementations
 
             foreach (var player in squad)
             {
-                foreach (var status in player.GameweekStatuses.Where(gws => gws.Gameweek.Start > DateTime.UtcNow))
+                foreach (var status in player.GameweekStatuses.Where(gws => gws.Gameweek/*.Id > 0 && gws.Gameweek.Id < 3*/.Start > DateTime.UtcNow))
                 {
                     status.IsBenched = firstTeamIdsList.Contains(player.Id)
                         ? status.IsBenched = false
@@ -235,57 +235,41 @@ namespace Fantasy.Services.Implementations
                     Name = fp.FootballPlayer.Info.Name,
                     BigImgUrl = fp.FootballPlayer.Info.BigImgUrl,
                     FootballPlayerId = fp.FootballPlayer.Id,
-                    Position = fp.FootballPlayer.FootballPlayerPosition.Name,
+                    Position = fp.FootballPlayer.Position.Name,
                     BadgeUrl = fp.FootballPlayer.FootballClub.BadgeImgUrl
                 })
                 .ToListAsync();
         }
 
-        public async Task<bool> SquadExists(string userId)
+        public async Task<bool> SquadExistsAsync(string userId)
         {
             return await this.db.FantasyPlayers.Where(fp => fp.FantasyUserId == userId).CountAsync() != 0;
         }
 
-        public async Task Test(string userId)
+        public async Task<List<HistorySquadServiceModel>> GetHistorySquad(string userId, int gameweekId)
         {
-            var gameweekId = 1;
-
-
-            var gameweek = await this.db.Gameweeks.FirstOrDefaultAsync(gw => gw.Id == gameweekId);
-            var user = await this.userManager.FindByIdAsync(userId);
-
-            Console.WriteLine();
-
-            var test = this.db.FantasyPlayers
-                .Where(p => p.FantasyUser == user)
-                .SelectMany(p => p.FootballPlayer.GameweekPoints.Where(gwp => gwp.Gameweek == gameweek))
-                .Select(x => new
+            var result = await this.db.FantasyPlayers
+                .Where(fp =>
+                    fp.FantasyUserId == userId &&
+                    fp.GameweekStatuses.First(s => s.GameweekId == gameweekId).IsBenched == false)
+                .Select(fp => new HistorySquadServiceModel
                 {
-                    id = x.FootbalPlayerId,
-                    points = x.Points,
-                    gameweekId = x.GameweekId,
-                    fantasyplayerId = x.FootballPlayer.FantasyUserPlayers.Find(z => z.FootballPlayerId == x.FootbalPlayerId).Id
-
+                    Name = fp.FootballPlayer.Info.Name,
+                    Points = fp.FootballPlayer.GameweekPoints.First(p => p.GameweekId == gameweekId).Points,
+                    ImgUrl = fp.FootballPlayer.Info.BigImgUrl,
+                    Id = fp.Id,
+                    Position = fp.FootballPlayer.Position.Name
                 })
-                .ToList();
+                .ToListAsync();
 
-            Console.WriteLine();
-
-            var mySquad = this.db.FantasyPlayers
-                .Where(x => x.FantasyUser == user &&
-                            x.GameweekStatuses.First(y => y.Gameweek == gameweek).IsBenched == false)
-
-                .Sum(z => z.FootballPlayer.GameweekPoints.First(y => y.Gameweek == gameweek).Points);
-               
-
-
-            Console.WriteLine();
+            return result;
         }
+
         private bool ValidateSystem(List<int> idsList)
         {
             var firstTeamPositions = this.db.FantasyPlayers
                 .Where(fp => idsList.Contains(fp.Id))
-                .Select(fp => fp.FootballPlayer.FootballPlayerPosition.Name)
+                .Select(fp => fp.FootballPlayer.Position.Name)
                 .ToList();
 
             var goalkeepers = firstTeamPositions.Count(x => x == Goalkeeper);

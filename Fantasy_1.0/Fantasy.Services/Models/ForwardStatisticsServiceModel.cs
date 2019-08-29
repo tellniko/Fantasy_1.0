@@ -1,90 +1,85 @@
 ﻿using Fantasy.Common.Attributes;
 using Fantasy.Common.Mapping;
+using Fantasy.Data.Models;
 using Fantasy.Services.Models.Contracts;
 
 namespace Fantasy.Services.Models
 {
-    public class ForwardStatisticsServiceModel : IMapFrom<StatisticsServiceModel>
-        ,IHaveStatistics
+    public class ForwardStatisticsServiceModel : IMapFrom<GameweekStatistics>
         ,IHaveForwardDefenceStatistics
         ,IHaveForwardTeamPlayStatistics
         ,IHaveForwardAttackStatistics
         ,IHaveOffcidesStatistics
+        ,IHaveMatchStatistics
+        ,IHaveDisciplineStatistics
     {
         [Points(Units = 20)]
-        public short MatchAppearances { get; set; }
+        public short Appearances { get; set; }
 
         [Points(Units = 10)]
-        public short MatchWins { get; set; }
+        public short Wins { get; set; }
 
         [Points(Units = -10)]
-        public short MatchLosses { get; set; }
+        public short Losses { get; set; }
 
         [Points(Units = -20)]
-        public short DisciplineYellowCards { get; set; }
+        public short YellowCards { get; set; }
 
         [Points(Units = -50)]
-        public short DisciplineRedCards { get; set; }
+        public short RedCards { get; set; }
 
         [Points(Units = -5)]
-        public short DisciplineFouls { get; set; }
+        public short Fouls { get; set; }
 
         [Points(Units = -5)]
-        public short DisciplineOffsides { get; set; }
+        public short Offsides { get; set; }
 
         [Points(Units = 10)]
-        public short DefenceTackles { get; set; }
+        public short Tackles { get; set; }
 
         [Points(Units = 10)]
-        public short DefenceBlockedShots { get; set; }
+        public short BlockedShots { get; set; }
 
         [Points(Units = 5)]
-        public short DefenceInterceptions { get; set; }
+        public short Interceptions { get; set; }
 
         [Points(Units = 5)]
-        public short DefenceClearances { get; set; }
+        public short Clearances { get; set; }
 
         [Points(Units = 5)]
-        public short DefenceHeadedClearance { get; set; }
+        public short HeadedClearance { get; set; }
 
         [Points(Units = 40)]
-        public short TeamPlayAssists { get; set; }
+        public short Assists { get; set; }
 
         [Points(Units = 1)]
-        public short TeamPlayPasses { get; set; }
+        public short Passes { get; set; }
 
         [Points(Units = 15)]
-        public short TeamPlayBigChancesCreated { get; set; }
+        public short BigChancesCreated { get; set; }
 
         [Points(Units = 5)]
-        public short TeamPlayCrosses { get; set; }
+        public short Crosses { get; set; }
 
         [Points(Units = 70)]
-        public short AttackGoals { get; set; }
+        public short Goals { get; set; }
 
         [Points(Units = 10)]
-        public short AttackHitWoodwork { get; set; }
+        public short HitWoodwork { get; set; }
 
         [Points(Units = 10)]
-        public short AttackPenaltiesScored { get; set; }
+        public short PenaltiesScored { get; set; }
 
         [Points(Units = 20)]
-        public short AttackFreeKicksScored { get; set; }
+        public short FreeKicksScored { get; set; }
 
         [Points(Units = 3)]
-        public short AttackShots { get; set; }
+        public short Shots { get; set; }
 
         [Points(Units = 3)]
-        public short AttackShotsOnTarget { get; set; }
+        public short ShotsOnTarget { get; set; }
 
         [Points(Units = -20)]
-        public short AttackBigChancesMissed { get; set; }
-
-        public string Goalkeeping { get; }
-        public string Defence { get; }
-        public string Attack { get; }
-        public string TeamPlay { get; }
-        public string Discipline { get; }
-        public string Match { get; }
+        public short BigChancesMissed { get; set; }
     }
 }

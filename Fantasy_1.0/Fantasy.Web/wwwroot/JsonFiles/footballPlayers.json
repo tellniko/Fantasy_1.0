@@ -1313,8 +1313,8 @@
   },
   {
     "Id": 4717,
-    "FootballClubId": 2,
-    "FootballPlayerPositionId": 3,
+    "FootballClubId": 8,
+    "FootballPlayerPositionId": 4,
     "Price": 8.63,
     "IsPlayable": true,
     "IsInjured": false
@@ -2330,7 +2330,7 @@
   {
     "Id": 8983,
     "FootballClubId": 11,
-    "FootballPlayerPositionId": 3,
+    "FootballPlayerPositionId": 4,
     "Price": 4.69,
     "IsPlayable": true,
     "IsInjured": false
@@ -4242,7 +4242,7 @@
   {
     "Id": 19758,
     "FootballClubId": 20,
-    "FootballPlayerPositionId": 3,
+    "FootballPlayerPositionId": 4,
     "Price": 11.35,
     "IsPlayable": true,
     "IsInjured": false

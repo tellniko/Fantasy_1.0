@@ -2,7 +2,7 @@
 using System.Linq;
 using Fantasy.Common.Mapping;
 using Fantasy.Data;
-using Fantasy.Data.Models.Common;
+using Fantasy.Data.Models;
 using Fantasy.Services.Administrator.Models;
 
 namespace Fantasy.Services.Administrator.Implementations

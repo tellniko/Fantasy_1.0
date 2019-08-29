@@ -1,4 +1,4 @@
-﻿@model List<Fantasy.Web.Controllers.SquadController.HistotyViewModel>
+﻿@model List<HistorySquadServiceModel>
 @{
     ViewData["Title"] = "_PartialSquad";
 }
@@ -88,7 +88,6 @@
 
         let total = 0;
         for (let point of $('h1')) {
-            console.log($(point).text());
             total += Number($(point).text());
         }
 

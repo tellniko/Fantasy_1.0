@@ -1,6 +1,6 @@
 ﻿using Fantasy.Common.Mapping;
 using Fantasy.Data;
-using Fantasy.Data.Models.Common;
+using Fantasy.Data.Models;
 using Fantasy.Services;
 using Fantasy.Web.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Builder;

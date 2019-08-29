@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using Fantasy.Common.Mapping;
 using Fantasy.Data;
-using Fantasy.Data.Models.Common;
+using Fantasy.Data.Models;
 using Fantasy.Services.Administrator.Models;
 using Microsoft.EntityFrameworkCore;
 

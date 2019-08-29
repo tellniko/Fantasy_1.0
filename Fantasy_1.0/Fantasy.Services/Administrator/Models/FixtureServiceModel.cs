@@ -1,7 +1,7 @@
 ﻿using System;
 using AutoMapper;
 using Fantasy.Common.Mapping;
-using Fantasy.Data.Models.Common;
+using Fantasy.Data.Models;
 
 namespace Fantasy.Services.Administrator.Models
 {

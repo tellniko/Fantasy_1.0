@@ -2,12 +2,12 @@
 {
     public interface IHaveGoalkeeperDefenceStatistics
     {
-        short DefenceCleanSheets { get; set; }
+        short CleanSheets { get; set; }
 
-        short DefenceGoalsConceded { get; set; }
+        short GoalsConceded { get; set; }
 
-        short DefenceErrorsLeadingToGoal { get; set; }
+        short ErrorsLeadingToGoal { get; set; }
 
-        short DefenceOwnGoals { get; set; }
+        short OwnGoals { get; set; }
     }
 }

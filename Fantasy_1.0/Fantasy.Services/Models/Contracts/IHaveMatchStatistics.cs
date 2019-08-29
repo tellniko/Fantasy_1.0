@@ -2,10 +2,10 @@
 {
     public interface IHaveMatchStatistics
     {
-        short MatchAppearances { get; set; }
+        short Appearances { get; set; }
 
-        short MatchWins { get; set; }
+        short Wins { get; set; }
 
-        short MatchLosses { get; set; }
+        short Losses { get; set; }
     }
 }

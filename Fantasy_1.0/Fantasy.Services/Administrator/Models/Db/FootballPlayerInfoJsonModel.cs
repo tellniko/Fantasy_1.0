@@ -1,6 +1,6 @@
 ﻿using Fantasy.Common.Mapping;
-using Fantasy.Data.Models.FootballPlayers;
 using System;
+using Fantasy.Data.Models;
 
 namespace Fantasy.Services.Administrator.Models.Db
 {

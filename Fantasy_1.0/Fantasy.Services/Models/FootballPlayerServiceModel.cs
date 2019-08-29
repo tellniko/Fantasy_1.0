@@ -1,5 +1,5 @@
 ﻿using Fantasy.Common.Mapping;
-using Fantasy.Data.Models.FootballPlayers;
+using Fantasy.Data.Models;
 
 namespace Fantasy.Services.Models
 {
@@ -11,7 +11,7 @@ namespace Fantasy.Services.Models
 
         public decimal Price { get; set; }
 
-        public string FootballPlayerPositionName { get; set; }
+        public string PositionName { get; set; }
 
         public string InfoSmallImgUrl { get; set; }
 

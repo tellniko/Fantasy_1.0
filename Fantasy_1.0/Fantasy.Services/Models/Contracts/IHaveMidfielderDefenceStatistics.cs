@@ -1,17 +1,29 @@
 ﻿namespace Fantasy.Services.Models.Contracts
 {
-    public interface IHaveMidfielderDefenceStatistics : IHaveForwardDefenceStatistics
+    public interface IHaveMidfielderDefenceStatistics 
     {
-        short DefenceRecoveries { get; set; }
+        short Recoveries { get; set; }
 
-        short DefenceDuelsWon { get; set; }
+        short DuelsWon { get; set; }
 
-        short DefenceDuelsLost { get; set; }
+        short DuelsLost { get; set; }
 
-        short DefenceSuccessfulFiftyFifties { get; set; }
+        short SuccessfulFiftyFifties { get; set; }
 
-        short DefenceAerialBattlesWon { get; set; }
+        short AerialBattlesWon { get; set; }
 
-        short DefenceAerialBattlesLost { get; set; }
+        short AerialBattlesLost { get; set; }
+
+        short Tackles { get; set; }
+
+        short BlockedShots { get; set; }
+
+        short Interceptions { get; set; }
+
+        short Clearances { get; set; }
+
+        short HeadedClearance { get; set; }
+
+        short ErrorsLeadingToGoal { get; set; }
     }
 }

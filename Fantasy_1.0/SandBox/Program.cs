@@ -7,8 +7,6 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using Fantasy.Common.Attributes;
 using Fantasy.Data;
-using Fantasy.Data.Models.Common;
-using Fantasy.Data.Models.Statistics;
 using Fantasy.Services.Models;
 using Fantasy.Services.Models.Contracts;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -24,16 +22,19 @@ namespace SandBox
     {
         static void Main(string[] args)
         {
-            var validInput = new Regex("^[0-9\\s]+$").Match(null).Success;
+            var a = new List<IHaveMatchStatistics>();
+            IHaveMatchStatistics b = new DefenderStatisticsServiceModel();
 
-            Console.WriteLine(validInput);
-
-
-            Console.WriteLine();
-
+            a.Add(new DefenderStatisticsServiceModel());
+            a.Add(new GoalkeeperStatisticsServiceModel());
 
 
-
+            b
+                .GetType()
+                .GetProperties()
+                .Where(p => p.PropertyType == typeof(short))
+                .ToList()
+                .ForEach(x => Console.WriteLine(x.Name));
         }
     }
 }

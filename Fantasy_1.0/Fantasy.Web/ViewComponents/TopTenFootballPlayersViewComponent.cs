@@ -4,6 +4,7 @@ using Fantasy.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -24,7 +25,7 @@ namespace Fantasy.Web.ViewComponents
            Console.WriteLine();
 
             var topTen = await this.db.FootballPlayers
-                .Where(fp => fp.FootballPlayerPosition.Name == position)
+                .Where(fp => fp.Position.Name == position)
                 .Select(fp => new TopTenFootballPlayerViewModel
                 {
                     Points = fp.GameweekPoints.Where(gwp => gwp.GameweekId != 40).Sum(gwp => gwp.Points),

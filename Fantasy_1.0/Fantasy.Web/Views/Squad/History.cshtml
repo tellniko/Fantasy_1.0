@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-3"></div>
             <div class="col-3">
-                @await Component.InvokeAsync("Gameweeks", false)
+                @await Component.InvokeAsync("Gameweeks", new{ includeall = false, finished = true })
             </div>
             <div class="col-3">
                 <h3>Total:&nbsp;<span id="points"></span></h3>
@@ -27,7 +27,7 @@
 
 <script>
     $(document).ready(function () {
-        $('#squad').load('/@ViewBag.Controller/@ViewBag.Action');
+        $('#squad').load('/@ViewBag.Controller/@ViewBag.Action');    
 
         $('#gameweek').on('change',
             function() {
