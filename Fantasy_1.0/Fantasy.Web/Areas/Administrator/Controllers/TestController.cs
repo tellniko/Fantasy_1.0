@@ -25,32 +25,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
         public async Task<IActionResult> Test()
         {
-            var gw = new GameweekStatistics
-            {
-                GameweekId = 39,
-                PlayerId = 4852,
-                CleanSheets = 35,
-                GoalsConceded = 170,
-                YellowCards = 9,
-                RedCards = 2,
-                Fouls = 5,
-                Saves = 443,
-                PenaltiesScored = 5,
-                Punches = 51,
-                HighClaims = 145,
-                Catches = 52,
-                SweeperClearances = 101,
-                GoalKicks = 1197,
-                Appearances = 128,
-                Wins = 48,
-                Losses = 44,
-                Passes = 3210,
-                AccurateLongBalls = 1047
-                };
-
-             this.db.GameweekStatistics.Add(gw);
-             var result = this.db.SaveChanges();
-             this.TempData.AddSuccessMessage(result.ToString());
+     
 
 
             //var gameweek = await this.db.Gameweeks.FirstOrDefaultAsync(gw => gw.Id == gameweekId);

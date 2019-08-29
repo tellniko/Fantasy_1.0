@@ -1,9 +1,9 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
-using Fantasy.Data;
+﻿using Fantasy.Data;
 using Fantasy.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Fantasy.Web.ViewComponents
 {
@@ -29,7 +29,6 @@ namespace Fantasy.Web.ViewComponents
                 .OrderByDescending(u => u.Points)
                 .Take(10)
                 .ToListAsync();
-
 
             return this.View(topTen);
         }

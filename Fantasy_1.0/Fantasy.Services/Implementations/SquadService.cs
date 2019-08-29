@@ -210,7 +210,7 @@ namespace Fantasy.Services.Implementations
 
             foreach (var player in squad)
             {
-                foreach (var status in player.GameweekStatuses.Where(gws => gws.Gameweek/*.Id > 0 && gws.Gameweek.Id < 3*/.Start > DateTime.UtcNow))
+                foreach (var status in player.GameweekStatuses.Where(gws => gws.Gameweek/*.Id > 1 && gws.Gameweek.Id < 3*/.Start > DateTime.UtcNow))
                 {
                     status.IsBenched = firstTeamIdsList.Contains(player.Id)
                         ? status.IsBenched = false

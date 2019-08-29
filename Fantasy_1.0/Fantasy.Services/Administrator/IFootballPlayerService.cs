@@ -5,9 +5,9 @@ namespace Fantasy.Services.Administrator
 {
     public interface IFootballPlayerService
     {
-        Task<bool> Edit(FootballPlayerServiceModel model);
+        Task<bool> Edit(FootballPlayerFormModel model);
 
-        bool Add(FootballPlayerServiceModel model);
+        bool Add(FootballPlayerFormModel model);
 
         Task<TModel> GetByIdAsync<TModel>(int id);
 

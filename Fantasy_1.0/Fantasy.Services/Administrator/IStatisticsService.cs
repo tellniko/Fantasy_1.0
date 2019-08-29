@@ -11,6 +11,6 @@ namespace Fantasy.Services.Administrator
 
         Task<TModel> GetStatisticsAsync<TModel>(int playerId, int gameweekId);
 
-        Task<int> EditPlayerStatisticsAsync(FootballPlayerStatisticsServiceModel model);
+        Task<int> EditPlayerStatisticsAsync(FootballPlayerStatisticsFormModel model);
     }
 }

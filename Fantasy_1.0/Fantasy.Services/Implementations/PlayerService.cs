@@ -34,12 +34,14 @@ namespace Fantasy.Services.Implementations
                 fp =>
                     fp.FootballClub.Tag.Contains(club ?? string.Empty)
                     && fp.Position.Name.Contains(position ?? string.Empty)
-                    && fp.Info.Name.Contains(playerName ?? string.Empty);
+                    && fp.Info.Name.Contains(playerName ?? string.Empty)
+                    && fp.IsPlayable;
 
             //TODO: refactor
             Expression<Func<FootballPlayer, string>> name = fp => fp.Info.Name;
             Expression<Func<FootballPlayer, decimal>> priceAscending = fp => fp.Price;
             Expression<Func<FootballPlayer, decimal>> priceDescending = fp => -fp.Price;
+            Expression<Func<FootballPlayer, decimal>> totalPoints = fp => -fp.GameweekPoints.Sum(x => x.Points);
 
             var result = this.db.FootballPlayers
                 .Include(fp => fp.FootballClub)
@@ -52,6 +54,9 @@ namespace Fantasy.Services.Implementations
                     break;
                 case "priceDescending":
                     result = result.OrderBy(priceDescending);
+                    break;
+                case "totalPoints":
+                    result = result.OrderBy(totalPoints);
                     break;
                 default:
                     result = result.OrderBy(name);

@@ -1,12 +1,15 @@
 ﻿using Fantasy.Common.Mapping;
-using Fantasy.Services.Administrator;
 using Fantasy.Services.Administrator.Models;
+using Fantasy.Services.Implementations;
 using Fantasy.Web.Areas.Administrator.Models;
 using Fantasy.Web.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 using System.Linq;
+using Fantasy.Services;
+using IFixtureService = Fantasy.Services.Administrator.IFixtureService;
+using IGameweekService = Fantasy.Services.Administrator.IGameweekService;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
@@ -74,10 +77,10 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         {
             return this.footballClubs
                 .GetAll()
-                .Select(gw => new SelectListItem
+                .Select(x => new SelectListItem
                 {
-                    Text = gw.Name,
-                    Value = gw.Id.ToString()
+                    Text = x.Name,
+                    Value = x.Id.ToString()
                 })
                 .ToList();
         }

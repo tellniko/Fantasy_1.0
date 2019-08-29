@@ -28,6 +28,6 @@
 
         public const int SeasonGamewwekCount = 38;
 
-        public const int PlayersListingPageSize = 13;
+        public const int PlayersListingPageSize = 15;
     }
 }

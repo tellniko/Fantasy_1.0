@@ -9,91 +9,95 @@
     <div class="col-10">
         <div class="row">
             <div class="col-3">
-                <div class="row" style="background-color: #38003c; color: #ffffff; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)">
-                    <div style="font-size: 2vw; ">&nbsp;<strong>First Team</strong></div>
-                </div>
-                @foreach (var player in Model.Squad.Where(p => !p.IsBenched)
-                    .OrderBy(p => SortingExtension.SortByPosition(p.Position)).ThenBy(p => p.Name))
-                {
-                    <div class="row player" style="border-bottom: #38003c 1px solid;">
-
-                        <div class="col-2 animated bounceInUp">
-                            <img src="@player.BigImgUrl" onerror="src = '@DefaultPlayerSmallImageUrl'"
-                                 style="width: 2.5vw; margin-top: 5px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)" />
-                        </div>
-
-                        <div class="col-8 animated bounceInDown">
-                            <a asp-area="" asp-controller="Players" asp-action="Details" asp-route-playerId="@player.FootballPlayerId">
-                                <p style="font-size: 0.8vw; margin-top: 0.7vw;">
-                                    <strong style="background-color: #38003c; color: #ffffff">&nbsp;@player.Position[0]&nbsp;</strong>
-                                    &nbsp;@player.Name
-                                </p>
-                            </a>
-                        </div>
-                        <div class="col-2 animated bounceInUp">
-                            @if (@player.BadgeUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t6.svg")
-                            {
-                                <img src="@player.BadgeUrl"
-                                     style="width: 1.1vw; margin-top: 10px; margin-bottom: 5px; ; filter: drop-shadow(0px 5px 8px #38003c)" />
-                            }
-                            else if (@player.BadgeUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t14.svg")
-                            {
-                                <img src="@player.BadgeUrl"
-                                     style="width: 1.5vw; margin-top: 8px; margin-bottom: 10px; filter: drop-shadow(0px 5px 8px #38003c)" />
-                            }
-                            else
-                            {
-                                <img src="@player.BadgeUrl"
-                                     style="width: 1.5vw; margin-top: 15px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)" />
-                            }
-                        </div>
+                <div style="filter: drop-shadow(0px 5px 8px #38003c); background-color: #ffffff">
+                    <div class="row" style="background-color: #38003c; color: #ffffff">
+                        <div style="font-size: 2vw; ">&nbsp;<strong>First Team</strong></div>
                     </div>
-                }
+                    @foreach (var player in Model.Squad.Where(p => !p.IsBenched)
+                      .OrderBy(p => SortingExtension.SortByPosition(p.Position)).ThenBy(p => p.Name))
+                    {
+
+                        <div class="row player" style="border-bottom: #38003c 1px solid;">
+
+                            <div class="col-2 animated bounceInUp">
+                                <img src="@player.BigImgUrl" style="width: 2.5vw; margin-top: 5px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)" />
+                            </div>
+
+                            <div class="col-8 animated bounceInDown">
+                                <a asp-area="" asp-controller="Players" asp-action="Details" asp-route-playerId="@player.FootballPlayerId">
+                                    <p style="font-size: 0.8vw; margin-top: 0.7vw;">
+                                        <strong style="background-color: #38003c; color: #ffffff">&nbsp;@player.Position[0]&nbsp;</strong>
+                                        &nbsp;@player.Name.ToShortName()
+                                    </p>
+                                </a>
+                            </div>
+
+                            <div class="col-2 animated bounceInUp">
+                                @if (@player.BadgeUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t6.svg")
+                                {
+                                    <img src="@player.BadgeUrl"
+                                         style="width: 1.1vw; margin-top: 10px; margin-bottom: 5px; ; filter: drop-shadow(0px 5px 8px #38003c)" />
+                                }
+                                else if (@player.BadgeUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t14.svg")
+                                {
+                                    <img src="@player.BadgeUrl"
+                                         style="width: 1.5vw; margin-top: 8px; margin-bottom: 10px; filter: drop-shadow(0px 5px 8px #38003c)" />
+                                }
+                                else
+                                {
+                                    <img src="@player.BadgeUrl"
+                                         style="width: 1.5vw; margin-top: 15px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)" />
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
             </div>
             <div class="col-1"></div>
             <div class="col-3">
-                <div class="row" style="background-color: #38003c; color: #ffffff">
-                    <div style="font-size: 2vw; ">&nbsp;<strong>Bench</strong></div>
-                </div>
-                @foreach (var player in Model.Squad.Where(p => p.IsBenched)
-                    .OrderBy(p => SortingExtension.SortByPosition(p.Position)).ThenBy(p => p.Name))
-                {
-                        
-                    <div class="row player" style="border-bottom: #38003c 1px solid;">
-
-                        <div class="col-2 animated bounceInUp">
-                            <img src="@player.BigImgUrl" onerror="src = '@DefaultPlayerSmallImageUrl'"
-                                 style="width: 2.5vw; margin-top: 5px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)"/>
-                        </div>
-
-                        <div class="col-8 animated bounceInDown">
-                            <a asp-area="" asp-controller="Players" asp-action="Details" asp-route-playerId="@player.FootballPlayerId">
-                                <p style="font-size: 0.8vw; margin-top: 0.7vw;">
-                                    <strong style="background-color: #38003c; color: #ffffff">&nbsp;@player.Position[0]&nbsp;</strong>
-                                    &nbsp;@player.Name
-                                </p>
-                            </a>
-                        </div>
-
-                        <div class="col-2 animated bounceInUp">
-                            @if (@player.BadgeUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t6.svg")
-                            {
-                                <img src="@player.BadgeUrl"
-                                     style="width: 1.1vw; margin-top: 10px; margin-bottom: 5px; ; filter: drop-shadow(0px 5px 8px #38003c)"/>
-                            }
-                            else if (@player.BadgeUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t14.svg")
-                            {
-                                <img src="@player.BadgeUrl"
-                                     style="width: 1.5vw; margin-top: 8px; margin-bottom: 10px; filter: drop-shadow(0px 5px 8px #38003c)"/>
-                            }
-                            else
-                            {
-                                <img src="@player.BadgeUrl"
-                                     style="width: 1.5vw; margin-top: 15px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)"/>
-                            }
-                        </div>
+                <div style="filter: drop-shadow(0px 5px 8px #38003c); background-color: #ffffff">
+                    <div class="row" style="background-color: #38003c; color: #ffffff">
+                        <div style="font-size: 2vw; ">&nbsp;<strong>Bench</strong></div>
                     </div>
-                }
+                    @foreach (var player in Model.Squad.Where(p => p.IsBenched)
+                       .OrderBy(p => SortingExtension.SortByPosition(p.Position)).ThenBy(p => p.Name))
+                    {
+
+                        <div class="row player" style="border-bottom: #38003c 1px solid;">
+
+                            <div class="col-2 animated bounceInUp">
+                                <img src="@player.BigImgUrl" style="width: 2.5vw; margin-top: 5px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)" />
+                            </div>
+
+                            <div class="col-8 animated bounceInDown">
+                                <a asp-area="" asp-controller="Players" asp-action="Details" asp-route-playerId="@player.FootballPlayerId">
+                                    <p style="font-size: 0.8vw; margin-top: 0.7vw;">
+                                        <strong style="background-color: #38003c; color: #ffffff">&nbsp;@player.Position[0]&nbsp;</strong>
+                                        &nbsp;@player.Name.ToShortName()
+                                    </p>
+                                </a>
+                            </div>
+
+                            <div class="col-2 animated bounceInUp">
+                                @if (@player.BadgeUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t6.svg")
+                                {
+                                    <img src="@player.BadgeUrl"
+                                         style="width: 1.1vw; margin-top: 10px; margin-bottom: 5px; ; filter: drop-shadow(0px 5px 8px #38003c)" />
+                                }
+                                else if (@player.BadgeUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t14.svg")
+                                {
+                                    <img src="@player.BadgeUrl"
+                                         style="width: 1.5vw; margin-top: 8px; margin-bottom: 10px; filter: drop-shadow(0px 5px 8px #38003c)" />
+                                }
+                                else
+                                {
+                                    <img src="@player.BadgeUrl"
+                                         style="width: 1.5vw; margin-top: 15px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)" />
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
             </div>
             <div class="col-1"></div>
             <div class="col-4" id="fixtures">
@@ -103,75 +107,75 @@
                     </div>
                     <input hidden value="@Model.GameweekStartDate" id="time"/>
                     
-
                     <div class="col-6" id="countDown" style="font-size: 1vw; color: #e90052; font-weight: bold">
                            
                     </div>
                 </div>
-
                 <br/>
-                <div >
-                    @foreach (var fixture in Model.Fixtures.OrderBy(f => f.DateTimeStart))
-                    {
-                        <div class="row" style="border-bottom: #38003c 1px solid; padding-bottom: 5px; padding-top: 5px;">
+                <div>
+                    <div style="filter: drop-shadow(0px 5px 8px #38003c); background-color: #ffffff">
+                        @foreach (var fixture in Model.Fixtures.OrderBy(f => f.DateTimeStart))
+                        {
+                            <div class="row" style="border-bottom: #38003c 1px solid; padding-bottom: 5px; padding-top: 5px;">
 
-                            <div class="col-5 text-center">
-                                <div class="row">
-                                    <div class="col-6 animated ">
-                                        <div style="margin-top: 8px"><strong> @fixture.HomeTeamTag</strong></div>
+                                <div class="col-5 text-center">
+                                    <div class="row">
+                                        <div class="col-6 animated ">
+                                            <div style="margin-top: 8px"><strong> @fixture.HomeTeamTag</strong></div>
+                                        </div>
+                                        <div class="col-6">
+                                            @if (@fixture.HomeTeamBadgeImgUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t6.svg")
+                                            {
+                                                <img src="@fixture.HomeTeamBadgeImgUrl"
+                                                     style="width: 1.1vw; margin-top: 10px; margin-bottom: 5px; ; filter: drop-shadow(0px 5px 8px #38003c)" />
+                                            }
+                                            else if (@fixture.HomeTeamBadgeImgUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t14.svg")
+                                            {
+                                                <img src="@fixture.HomeTeamBadgeImgUrl"
+                                                     style="width: 1.5vw; margin-top: 8px; margin-bottom: 10px; filter: drop-shadow(0px 5px 8px #38003c)" />
+                                            }
+                                            else
+                                            {
+                                                <img src="@fixture.HomeTeamBadgeImgUrl"
+                                                     style="width: 1.5vw; margin-top: 15px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)" />
+                                            }
+                                        </div>
                                     </div>
-                                    <div class="col-6">
-                                        @if (@fixture.HomeTeamBadgeImgUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t6.svg")
-                                        {
-                                            <img src="@fixture.HomeTeamBadgeImgUrl"
-                                                 style="width: 1.1vw; margin-top: 10px; margin-bottom: 5px; ; filter: drop-shadow(0px 5px 8px #38003c)"/>
-                                        }
-                                        else if (@fixture.HomeTeamBadgeImgUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t14.svg")
-                                        {
-                                            <img src="@fixture.HomeTeamBadgeImgUrl"
-                                                 style="width: 1.5vw; margin-top: 8px; margin-bottom: 10px; filter: drop-shadow(0px 5px 8px #38003c)"/>
-                                        }
-                                        else
-                                        {
-                                            <img src="@fixture.HomeTeamBadgeImgUrl"
-                                                 style="width: 1.5vw; margin-top: 15px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)"/>
-                                        }
+                                </div>
+
+                                <div class="col-2 text-center">
+                                    <div style="border: #38003c 1px solid; margin-top: 8px; background-color: #38003c; color: #ffffff">
+                                        vs
+                                    </div>
+                                </div>
+
+                                <div class="col-5 text-center">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            @if (@fixture.AwayTeamBadgeImgUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t6.svg")
+                                            {
+                                                <img src="@fixture.AwayTeamBadgeImgUrl"
+                                                     style="width: 1.1vw; margin-top: 10px; margin-bottom: 5px; ; filter: drop-shadow(0px 5px 8px #38003c)" />
+                                            }
+                                            else if (@fixture.AwayTeamBadgeImgUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t14.svg")
+                                            {
+                                                <img src="@fixture.AwayTeamBadgeImgUrl"
+                                                     style="width: 1.5vw; margin-top: 8px; margin-bottom: 10px; filter: drop-shadow(0px 5px 8px #38003c)" />
+                                            }
+                                            else
+                                            {
+                                                <img src="@fixture.AwayTeamBadgeImgUrl"
+                                                     style="width: 1.5vw; margin-top: 15px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)" />
+                                            }
+                                        </div>
+                                        <div class="col-6 animated ">
+                                            <div style="margin-top: 8px;"><strong> @fixture.AwayTeamTag</strong></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-2 text-center">
-                                <div style="border: #38003c 1px solid; margin-top: 8px; background-color: #38003c; color: #ffffff">
-                                    vs
-                                </div>
-                            </div>
-
-                            <div class="col-5 text-center">
-                                <div class="row">
-                                    <div class="col-6">
-                                        @if (@fixture.AwayTeamBadgeImgUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t6.svg")
-                                        {
-                                            <img src="@fixture.AwayTeamBadgeImgUrl"
-                                                 style="width: 1.1vw; margin-top: 10px; margin-bottom: 5px; ; filter: drop-shadow(0px 5px 8px #38003c)"/>
-                                        }
-                                        else if (@fixture.AwayTeamBadgeImgUrl == "https://premierleague-static-files.s3.amazonaws.com/premierleague/badges/t14.svg")
-                                        {
-                                            <img src="@fixture.AwayTeamBadgeImgUrl"
-                                                 style="width: 1.5vw; margin-top: 8px; margin-bottom: 10px; filter: drop-shadow(0px 5px 8px #38003c)"/>
-                                        }
-                                        else
-                                        {
-                                            <img src="@fixture.AwayTeamBadgeImgUrl"
-                                                 style="width: 1.5vw; margin-top: 15px; margin-bottom: 5px; filter: drop-shadow(0px 5px 8px #38003c)"/>
-                                        }
-                                    </div>
-                                    <div class="col-6 animated ">
-                                        <div style="margin-top: 8px;"><strong> @fixture.AwayTeamTag</strong></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    }
+                        }
+                    </div>
                 </div>
 
             </div>
@@ -199,5 +203,10 @@
             $('#countDown').addClass('animated shake');
 
         }, 1000);
+
+        $('img').on('error',function () {
+            $(this).unbind("error").attr("src",
+                "https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/40x40/Photo-Missing.png");
+        });
     });
 </script>

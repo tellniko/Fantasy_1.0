@@ -1,12 +1,10 @@
 ﻿using Fantasy.Common.Mapping;
-using Fantasy.Services.Models;
-using Fantasy.Services.Models.Contracts;
-using System.ComponentModel.DataAnnotations;
 using Fantasy.Data.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Fantasy.Services.Administrator.Models
 {
-    public class FootballPlayerStatisticsServiceModel : IMapFrom<GameweekStatistics>, IMapTo<GameweekStatistics>
+    public class FootballPlayerStatisticsFormModel : IMapFrom<GameweekStatistics>, IMapTo<GameweekStatistics>
     {
         [Range(0, short.MaxValue)] public short Goals { get; set; }
         [Range(0, short.MaxValue)] public short PenaltiesScored { get; set; }

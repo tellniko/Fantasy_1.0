@@ -2,8 +2,8 @@
 @{
     ViewData["Title"] = "_PartialBench";
 }
-<div class="row" style="background-color: #38003c; color: #ffffff; margin-top: 50px;"> &nbsp;<strong>Goalkeepers</strong></div>
-<div class="row" style="background-color: #e90052;">
+<div class="row" style="background-color: #38003c; color: #e90052; margin-top: 50px;"> &nbsp;<strong>Goalkeepers</strong></div>
+<div class="row" >
     @foreach (var player in Model
      .Where(x => x.Position == Goalkeeper)
      .OrderBy(x => x.Name).ToList())
@@ -15,8 +15,8 @@
     }
     <div class="col-3"></div>
 </div>
-<div class="row" style="background-color: #38003c; color: #ffffff; margin-top: 5px;"> &nbsp;<strong>Defenders</strong></div>
-<div class="row" style="background-color: #00ff85;">
+<div class="row" style="background-color: #38003c; color: #00ff85; margin-top: 5px;"> &nbsp;<strong>Defenders</strong></div>
+<div class="row" >
     @foreach (var player in Model
      .Where(x => x.Position == Defender)
      .OrderBy(x => x.Name).Take(4).ToList())
@@ -27,7 +27,7 @@
         </div>
     }
 </div>
-<div class="row" style="background-color: #00ff85;">
+<div class="row" >
     @foreach (var player in Model
      .Where(x => x.Position == Defender)
      .OrderBy(x => x.Name).Skip(4).ToList())
@@ -39,8 +39,8 @@
     }
     <div class="col-3"></div>
 </div>
-<div class="row" style="background-color: #38003c; color: #ffffff; margin-top: 5px;"> &nbsp;<strong>Midfielders</strong></div>
-<div class="row" style="background-color: #04f5ff;">
+<div class="row" style="background-color: #38003c; color: #04f5ff; margin-top: 5px;"> &nbsp;<strong>Midfielders</strong></div>
+<div class="row" ">
     @foreach (var player in Model
      .Where(x => x.Position == Midfielder)
      .OrderBy(x => x.Name).Take(4).ToList())
@@ -51,7 +51,7 @@
     </div>
     }
 </div>
-<div class="row" style="background-color: #04f5ff;">
+<div class="row" >
     @foreach (var player in Model
      .Where(x => x.Position == Midfielder)
      .OrderBy(x => x.Name).Skip(4).ToList())
@@ -63,8 +63,8 @@
     }
     <div class="col-3"></div>
 </div>
-<div class="row" style="background-color: #38003c; color: #ffffff; margin-top: 5px;"> &nbsp;<strong>Forwards</strong></div>
-<div class="row"  style="background-color: #ffff00;">
+<div class="row" style="background-color: #38003c; color: #ffff00; margin-top: 5px;"> &nbsp;<strong>Forwards</strong></div>
+<div class="row"  ">
     @foreach (var player in Model
      .Where(x => x.Position == Forward)
      .OrderBy(x => x.Name).Take(4).ToList())
@@ -75,7 +75,7 @@
     </div>
     }
 </div>
-<div class="row"  style="background-color: #ffff00;">
+<div class="row" ">
     @foreach (var player in Model
     .Where(x => x.Position == Forward)
     .OrderBy(x => x.Name).Skip(4).Take(4).ToList())

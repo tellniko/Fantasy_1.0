@@ -9,7 +9,7 @@ namespace Fantasy.Services.Administrator.Models
 {
   
 
-    public class FootballPlayerServiceModel : IMapFrom<FootballPlayer>, IMapTo<FootballPlayer>
+    public class FootballPlayerFormModel : IMapFrom<FootballPlayer>, IMapTo<FootballPlayer>
     {
         public int Id { get; set; }
 

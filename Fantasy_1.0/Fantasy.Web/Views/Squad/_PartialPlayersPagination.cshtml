@@ -3,26 +3,27 @@
     ViewData["Title"] = "_PartialPlayers";
     var currentPage = Model.CurrentPage;
 }
-    <div class="row" style="margin-top: 20px;">
-        <div class="col-5"></div>
-        <div class="col-2 text-center">
-            <ul class="pagination">
-                <li class="page-item">
-                    <div id="previous" class="page-link" style="cursor: pointer" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        <span class="sr-only">Previous</span>
-                    </div>
-                </li>
-                <li class="page-item">
-                    <div id="next" class="page-link" style="cursor: pointer" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only">Next</span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="col-5"></div>
+<div class="row" style="margin-top: -0.4vw;">
+    <div class="col-5"></div>
+    <div class="col-2 text-center">
+        <ul class="pagination">
+            <li class="page-item">
+                <div id="previous" class="page-link" style="cursor: pointer" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </div>
+            </li>
+            <li class="page-item">
+                <div id="next" class="page-link" style="cursor: pointer" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </div>
+            </li>
+        </ul>
     </div>
+    <div class="col-5"></div>
+</div>
+
 <div class="row">
     @foreach (var player in Model.Players)
     {
@@ -40,9 +41,9 @@
             </div>
 
             <div class="col-5 animated bounceInDown">
-                <p style="font-size: 0.8vw; margin-top: 0.7vw;">
+                <p style="font-size: 0.6vw; margin-top: 0.7vw;">
                     <strong style="background-color: #38003c; color: #ffffff">&nbsp;@player.PositionName[0]&nbsp;</strong>
-                    &nbsp;@player.InfoName.ToShortName()
+                    &nbsp;@player.InfoName.ToLastName()
                 </p>
             </div>
 
@@ -93,11 +94,11 @@
         });
 
         $('div .player').click(function() {
-
             let price = $(this).attr('price');
             let position = $(this).attr('position');
             let id = $(this).attr('id');
             let imgUrl = $(this).attr('imgUrl');
+            console.log(imgUrl);
             let name = $(this).attr('name');
             let footballClubId = $(this).attr('footballClubId');
 
@@ -121,7 +122,7 @@
                     $('#message').empty();
                     $('#main').css('margin-top', '20px');
                     $('#message').append('<h2 class="text-success animated 1 bounce text-center">You can not have more than 4 players from the same club!</h2>');
-                    setTimeout(() => {$('#message').empty(); $('#main').css('margin-top', '55px');}, 6000);
+                    setTimeout(() => {$('#message').empty(); $('#main').css('margin-top', '20px');}, 6000);
                     return;
                 }
                 
@@ -131,7 +132,7 @@
                             $('#message').empty();
                             $('#main').css('margin-top', '20px');
                             $('#message').append('<h2 class="text-success animated 1 bounce text-center">Remove one of your players first!</h2>');
-                            setTimeout(() => {$('#message').empty(); $('#main').css('margin-top', '55px');}, 6000);
+                            setTimeout(() => {$('#message').empty(); $('#main').css('margin-top', '20px');}, 6000);
 
                         }
                         continue;
@@ -141,7 +142,7 @@
                             $('#message').empty();
                             $('#main').css('margin-top', '20px');
                             $('#message').append('<h2 class="text-success animated 1 bounce text-center">You already have this player!</h2>');
-                            setTimeout(() => {$('#message').empty(); $('#main').css('margin-top', '60px');}, 6000);
+                            setTimeout(() => {$('#message').empty(); $('#main').css('margin-top', '20px');}, 6000);
                             return;
                         }
                     }
@@ -176,10 +177,10 @@
                     break;
                 }
             }
-            $('img').on('error',function () {
-                $(this).unbind("error").attr("src",
-                    "https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/Photo-Missing.png");
-            });
+            //$('img').on('error',function () {
+            //    $(this).unbind("error").attr("src",
+            //        "https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/Photo-Missing.png");
+            //});
         });
     });
 </script>

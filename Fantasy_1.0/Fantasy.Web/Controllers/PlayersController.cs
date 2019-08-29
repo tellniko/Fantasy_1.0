@@ -66,7 +66,6 @@ namespace Fantasy.Web.Controllers
 
         public async Task<IActionResult> GetPartialStatisticsAsync(int playerId, string position, int gameweekId = AllTimeStatisticsGameweekId)
         {
-
             switch (position)
             {
                 case Goalkeeper:

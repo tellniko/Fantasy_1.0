@@ -1,5 +1,5 @@
 ﻿using Fantasy.Data;
-using Fantasy.Services;
+using Fantasy.Services.Administrator;
 using Fantasy.Services.Administrator.Models;
 using Fantasy.Web.Areas.Administrator.Models;
 using Fantasy.Web.Infrastructure.Extensions;
@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Fantasy.Services.Administrator;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
@@ -25,7 +24,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
-            var player = await this.players.GetByIdAsync<FootballPlayerServiceModel>(id);
+            var player = await this.players.GetByIdAsync<FootballPlayerFormModel>(id);
 
             if (player == null)
             {

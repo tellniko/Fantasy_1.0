@@ -1,12 +1,7 @@
-﻿using Fantasy.Data;
-using Fantasy.Services.Administrator;
+﻿using Fantasy.Services.Administrator;
 using Fantasy.Services.Administrator.Models;
 using Fantasy.Web.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
@@ -14,14 +9,11 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
     {
         private readonly IGameweekService gameweeks;
         private readonly IFixtureService fixtures;
-        private readonly FantasyDbContext context;
 
-
-        public GameweeksController(IGameweekService gameweeks, IFixtureService fixtures, FantasyDbContext context)
+        public GameweeksController(IGameweekService gameweeks, IFixtureService fixtures)
         {
             this.gameweeks = gameweeks;
             this.fixtures = fixtures;
-            this.context = context;
         }
 
         public IActionResult All()
@@ -66,20 +58,20 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             return RedirectToAction(nameof(All));
         }
 
-        public async Task<IActionResult> Gameweek()
-        {
-            //var gw = await this.gameweeks.GetByStart(DateTime.UtcNow.AddDays(12));
-            var gw = await this.gameweeks.GetByStart(DateTime.UtcNow.Subtract(new TimeSpan(5,0,0,0)));
+        //public async Task<IActionResult> Gameweek()
+        //{
+        //    //var gw = await this.gameweeks.GetByStart(DateTime.UtcNow.AddDays(12));
+        //    var gw = await this.gameweeks.GetByStart(DateTime.UtcNow.Subtract(new TimeSpan(5,0,0,0)));
 
 
 
-            var player = this.context.FootballPlayers
-                .Include(fp => fp.GameweekStatistics)
-                .Where(x => x.GameweekStatistics.FirstOrDefault(s => s.GameweekId == 1).Wins == 0)
-                .FirstOrDefault();
+        //    var player = this.context.FootballPlayers
+        //        .Include(fp => fp.GameweekStatistics)
+        //        .Where(x => x.GameweekStatistics.FirstOrDefault(s => s.GameweekId == 1).Wins == 0)
+        //        .FirstOrDefault();
                 
 
-            return View(gw);
-        }
+        //    return View(gw);
+        //}
     }
 }

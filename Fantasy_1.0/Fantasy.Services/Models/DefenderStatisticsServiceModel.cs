@@ -35,9 +35,9 @@ namespace Fantasy.Services.Models
 
         [Points(Units = -50)] public short OwnGoals { get; set; }
 
-        [Points(Units = 5)] public short Tackles { get; set; }
+        [Points(Units = 3)] public short Tackles { get; set; }
 
-        [Points(Units = 10)] public short BlockedShots { get; set; }
+        [Points(Units = 5)] public short BlockedShots { get; set; }
 
         [Points(Units = 5)] public short Interceptions { get; set; }
 
@@ -47,11 +47,11 @@ namespace Fantasy.Services.Models
 
         [Points(Units = 3)] public short Recoveries { get; set; }
 
-        [Points(Units = 3)] public short DuelsWon { get; set; }
+        [Points(Units = 2)] public short DuelsWon { get; set; }
 
         [Points(Units = -3)] public short DuelsLost { get; set; }
 
-        [Points(Units = 10)] public short SuccessfulFiftyFifties { get; set; }
+        [Points(Units = 8)] public short SuccessfulFiftyFifties { get; set; }
 
         [Points(Units = 3)] public short AerialBattlesWon { get; set; }
 

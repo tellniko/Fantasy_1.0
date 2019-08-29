@@ -28,8 +28,6 @@ namespace Fantasy.Web.Controllers
             var model = await this.fixtures.GetByIdAsync<FixtureServiceModel>(gameweekId);
 
             return PartialView("_PartialGameweekFixtures", model);
-
-            //return PartialView("_PartialPlayers", await this.players.GetAllAsync<PlayerServiceModel>(clubId, positionId, playerName, order));
         }
     }
 }

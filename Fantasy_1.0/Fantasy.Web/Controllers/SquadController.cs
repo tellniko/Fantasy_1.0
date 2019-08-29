@@ -1,4 +1,5 @@
 ﻿using Fantasy.Common;
+using Fantasy.Data.Models;
 using Fantasy.Services;
 using Fantasy.Services.Models;
 using Fantasy.Web.Infrastructure.Extensions;
@@ -9,9 +10,6 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Fantasy.Data;
-using Fantasy.Data.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace Fantasy.Web.Controllers
 {
@@ -30,22 +28,18 @@ namespace Fantasy.Web.Controllers
         private readonly IFixtureService fixtures;
         private readonly IGameweekService gamweeks;
 
-        //todo remove
-        private readonly FantasyDbContext db;
-
         public SquadController(
             UserManager<FantasyUser> userManager, 
             ISquadService squad, 
             IPlayerService players, 
             IFixtureService fixtures, 
-            IGameweekService gamweeks, FantasyDbContext db)
+            IGameweekService gamweeks)
         {
             this.userManager = userManager;
             this.squad = squad;
             this.players = players;
             this.fixtures = fixtures;
             this.gamweeks = gamweeks;
-            this.db = db;
         }
 
         public async Task<IActionResult> Index()
@@ -192,10 +186,8 @@ namespace Fantasy.Web.Controllers
             return View();
         }
 
-        //todo in service
         public async Task<IActionResult> GetPartialhistorySquad(int gameweekId = 1)
         {
-
             var userId = this.userManager.GetUserId(User);
 
             var result = await this.squad.GetHistorySquad(userId, gameweekId);

@@ -1,23 +1,50 @@
-﻿using Fantasy.Data;
-using Fantasy.Services;
-using Fantasy.Web.Infrastructure.Extensions;
-using Fantasy.Web.Models;
+﻿using Fantasy.Services.Implementations;
+using Fantasy.Services.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Fantasy.Services;
 
 namespace Fantasy.Web.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly IFootballClubService clubs;
+
+        public HomeController(IFootballClubService clubs)
         {
-            return View();
+            this.clubs = clubs;
         }
 
-        public IActionResult Club(string id)
+        public async Task<IActionResult> Index()
         {
-            this.TempData.AddSuccessMessage("Coming soon...");
+            var model = await this.clubs.GetAll<FootballClubServiceModel>();
 
-            return View(new ClubViewModel{Img = id});
+            return View(model);
+        }
+
+        public IActionResult Club(int id)
+        {
+            var club = this.clubs.GetDetails(id);
+            if (club == null)
+            {
+                return NotFound();
+            }
+
+            return View(club);
+        }
+
+        public IActionResult Rules()
+        {
+            var model = new List<object>
+            {
+                new GoalkeeperStatisticsServiceModel(),
+                new DefenderStatisticsServiceModel(),
+                new MidfielderStatisticsServiceModel(),
+                new ForwardStatisticsServiceModel(),
+            };
+
+            return View(model);
         }
 
        

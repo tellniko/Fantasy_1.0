@@ -1,12 +1,82 @@
-﻿@model ClubViewModel
+﻿@model FootballClubDetailsServiceModel
 @{
     ViewData["Title"] = "Club";
 }
+<div class="row">
+<div class="col-1"></div>
+<div class="col-10">
+    <div class="row">
+        <div class="col-6" style="margin-top: 2%">
+            <div class="row" style="margin-top: 1%" id="1">
+                @foreach (var player in Model.Squad.Where(x => x.PositionName == Goalkeeper))
+                {
+                    <div style="border-radius: 100%; background-color: #ffffff; margin-right: 5px; margin-top: 5px;" class="animated fadeIn delay-1s">
+                        <a asp-controller="Players" asp-action="Details" asp-route-playerId="@player.Id">
+                            <img src="@player.InfoSmallImgUrl" style="height: 3vw; filter: drop-shadow(10px 10px 12px #38003c); margin-left: 5px; border-radius: 100%;" 
+                                 title="@player.InfoShirtNumber &#013 @player.PositionName &#013 @player.InfoName"/>
+                        </a>
+                    </div>
+                }
+            </div>
+            <div class="row" style="margin-top: 1%" id="2">
+                @foreach (var player in Model.Squad.Where(x => x.PositionName == Defender))
+                {
+                    <div style="border-radius: 100%; background-color: #ffffff; margin-right: 5px;margin-top: 5px;" class="animated fadeIn delay-1s">
+                        <a asp-controller="Players" asp-action="Details" asp-route-playerId="@player.Id">
+                            <img src="@player.InfoSmallImgUrl" style="height: 3vw; filter: drop-shadow(10px 10px 12px #38003c); margin-left: 5px; border-radius: 100%;" 
+                                 title="@player.InfoShirtNumber &#013 @player.PositionName &#013 @player.InfoName"/>
+                        </a>
+                    </div>
+                }
+            </div>
+            <div class="row" style="margin-top: 1%" id="3">
+                @foreach (var player in Model.Squad.Where(x => x.PositionName == Midfielder))
+                {
+                    <div style="border-radius: 100%; background-color: #ffffff; margin-right: 5px;margin-top: 5px;" class="animated fadeIn delay-1s">
+                        <a asp-controller="Players" asp-action="Details" asp-route-playerId="@player.Id">
+                            <img src="@player.InfoSmallImgUrl" style="height: 3vw; filter: drop-shadow(10px 10px 12px #38003c); margin-left: 5px; border-radius: 100%;" 
+                                 title="@player.InfoShirtNumber &#013 @player.PositionName &#013 @player.InfoName"/>
+                        </a>
+                    </div>
+                }
+            </div><div class="row" style="margin-top: 1%" id="4">
+                @foreach (var player in Model.Squad.Where(x => x.PositionName == Forward))
+                {
+                    <div style="border-radius: 100%; background-color: #ffffff; margin-right: 5px;margin-top: 5px;" class="animated fadeIn delay-1s">
+                        <a asp-controller="Players" asp-action="Details" asp-route-playerId="@player.Id">
+                            <img src="@player.InfoSmallImgUrl" style="height: 3vw; filter: drop-shadow(10px 10px 12px #38003c); margin-left: 5px; border-radius: 100%;" 
+                                 title="@player.InfoShirtNumber &#013 @player.PositionName &#013 @player.InfoName"/>
+                        </a>
+                    </div>
+                }
+            </div>
+                  <div class="row animated fadeIn delay-1s" style="color: #ffffff; filter: drop-shadow(1px 1px 1px black); margin-top: 5%">
+                      Lorem ipsum dolor sit amet, urna sed cras nulla euismod ipsum at, sed adipiscing nulla, porttitor vestibulum interdum mi porttitor, sit nec tempor. Viverra purus at praesent lectus nascetur quisque, viverra posuere sem sit eros pellentesque, turpis et maecenas non nunc eu, sit arcu sed ipsum. Ac luctus est dui nulla faucibus, sit vel malesuada in, eu itaque sit dictum adipiscing mauris libero, viverra elementum sem turpis facilisis ut nulla. Quam placerat aliquam at consequatur lorem auctor, auctor massa tincidunt commodo pede arcu, leo cras, pede nisl. Sodales mi nulla vestibulum, vel leo velit integer nobis, nibh nisl vitae lacus leo placerat nulla. Pellentesque quisque amet. Nisl adipiscing id urna justo diam dolor. Molestie malesuada turpis commodo class faucibus dis, amet venenatis luctus, interdum ut quis pede in, eleifend et arcu eu mus. Odio enim a dictumst. Vitae et neque vitae suscipit mollis, quam quisque consectetuer sit diam orci, fusce proin dapibus hendrerit condimentum iaculis amet. Justo diam ligula, quis ullamcorper varius lectus mollis mauris, feugiat sed.
+                  </div>
+        </div>
+        <div class="col-6">
+            <div style="margin-top: 4%">
+                <img src="@Model.BadgeImgUrl" style="height: 40vw;  filter: drop-shadow(10px 10px 12px #38003c)" class="animated tada" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-1"></div>
+    </div>
 
+
+<script>
+    $(document).ready(function() {
+        $('img').on('error',
+            function() {
+                $(this).unbind("error").attr("src",
+                    "https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/Photo-Missing.png");
+            });
+    });
+</script>
 <style rel="stylesheet">
-
     body {
-        background: url(/images/stadiums/@Model.Img) no-repeat center center fixed;
+        background: url(/images/stadiums/@(Model.Tag).jpg) no-repeat center center fixed;
         /*-webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;*/

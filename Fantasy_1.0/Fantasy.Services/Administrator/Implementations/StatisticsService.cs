@@ -42,10 +42,11 @@ namespace Fantasy.Services.Administrator.Implementations
                 .To<TModel>().FirstOrDefault();
         }
         //todo refactor 
-        public async Task<int> EditPlayerStatisticsAsync(FootballPlayerStatisticsServiceModel model)
+        public async Task<int> EditPlayerStatisticsAsync(FootballPlayerStatisticsFormModel model)
         {
 
             var gameweekStat = await this.db.FindAsync<GameweekStatistics>(model.PlayerId, model.GameweekId);
+
             if (gameweekStat == null)
             {
                 return 0;

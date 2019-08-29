@@ -1,18 +1,12 @@
-﻿using System;
-using Fantasy.Data;
+﻿using Fantasy.Data;
 using Fantasy.Services.Administrator;
+using Fantasy.Services.Administrator.Models;
 using Fantasy.Web.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using Fantasy.Common.Mapping;
-using Fantasy.Data.Models;
-using Fantasy.Services.Administrator.Models;
-using Fantasy.Services.Models;
-using Fantasy.Services.Models.Contracts;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
@@ -73,7 +67,6 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
                 return BadRequest();
             }
 
-
             var result = this.statistics.Seed(gameweek.Id);
 
             if (result == null)
@@ -91,13 +84,13 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         public async Task<IActionResult> Edit(int playerId, int gameweekId)
         {
             var model =
-                await this.statistics.GetStatisticsAsync<FootballPlayerStatisticsServiceModel>(playerId, gameweekId);
+                await this.statistics.GetStatisticsAsync<FootballPlayerStatisticsFormModel>(playerId, gameweekId);
 
             return View(model);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(FootballPlayerStatisticsServiceModel model)
+        public async Task<IActionResult> Edit(FootballPlayerStatisticsFormModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -117,8 +110,6 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
-
 
         private List<SelectListItem> GetGameweeks()
         {

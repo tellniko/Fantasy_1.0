@@ -18,7 +18,7 @@ namespace Fantasy.Services.Administrator.Implementations
         }
 
         //todo refactor
-        public bool Add(FootballPlayerServiceModel model)
+        public bool Add(FootballPlayerFormModel model)
         {
             var result = 0;
 
@@ -62,7 +62,7 @@ namespace Fantasy.Services.Administrator.Implementations
         }
 
         //todo refactor
-        public async Task<bool> Edit(FootballPlayerServiceModel model)
+        public async Task<bool> Edit(FootballPlayerFormModel model)
         {
             var player = await this.db.FootballPlayers
                 .Where(fp => fp.Id == model.Id)

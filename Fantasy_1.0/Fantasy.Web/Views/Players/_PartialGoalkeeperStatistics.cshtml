@@ -9,7 +9,7 @@
 }
 <div>
     <div class="row">
-        <div class="col-5" style="background-color: #ffffff;filter: drop-shadow(10px 10px 12px #38003c)">
+        <div class="col-5" style="background-color: #ffffff; filter: drop-shadow(10px 10px 12px #38003c)">
             <div class="row" style="background-color: #38003c; color: #ffffff;font-size: 1vw;"><strong>&nbsp; Goalkeeping</strong></div>
             @foreach (var property in Model.GetType().GetProperties().Where(x => goalkeepingStatistics.Contains(x.Name)))
             {

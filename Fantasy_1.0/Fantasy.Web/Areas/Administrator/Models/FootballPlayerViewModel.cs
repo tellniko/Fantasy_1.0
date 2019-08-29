@@ -11,7 +11,7 @@ namespace Fantasy.Web.Areas.Administrator.Models
 
         public List<SelectListItem> Positions { get; set; }
 
-        public FootballPlayerServiceModel Player { get; set; }
+        public FootballPlayerFormModel Player { get; set; }
 
         public List<SelectListItem> Gameweeks { get; set; }
     }

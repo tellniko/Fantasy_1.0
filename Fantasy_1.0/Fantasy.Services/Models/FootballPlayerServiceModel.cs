@@ -20,5 +20,7 @@ namespace Fantasy.Services.Models
         public string FootballClubBadgeImgUrl { get; set; }
 
         public int FootballClubId { get; set; }
+
+        public byte? InfoShirtNumber { get; set; }
     }
 }
