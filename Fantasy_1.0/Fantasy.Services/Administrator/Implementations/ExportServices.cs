@@ -1,6 +1,4 @@
-﻿using Fantasy.Common.Mapping;
-using Fantasy.Data;
-using Fantasy.Services.Administrator.Models.Db;
+﻿using Fantasy.Data;
 using Newtonsoft.Json;
 using System;
 using System.IO;
@@ -22,7 +20,7 @@ namespace Fantasy.Services.Administrator.Implementations
             try
             {
                 File.WriteAllText("wwwroot/JsonFiles/footballPlayers.json", JsonConvert.SerializeObject(
-                    this.db.FootballPlayers.To<FootballPlayerJsonModel>().ToList()));
+                    this.db.FootballPlayers.ToList()));
             }
             catch (Exception)
             {
@@ -37,7 +35,7 @@ namespace Fantasy.Services.Administrator.Implementations
             try
             {
                 File.WriteAllText("wwwroot/JsonFiles/footballPlayerInfos.json", JsonConvert.SerializeObject(
-                    this.db.FootballPlayerInfos.To<FootballPlayerInfoJsonModel>().ToList()));
+                    this.db.FootballPlayerInfos.ToList()));
             }
             catch (Exception)
             {

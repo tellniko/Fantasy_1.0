@@ -12,7 +12,6 @@ namespace Fantasy.Services.Models
         ,IHaveDisciplineStatistics
         ,IHaveMatchStatistics
         ,IHaveOffcidesStatistics
-
     {
         [Points(Units = 20)] public short Appearances { get; set; }
 

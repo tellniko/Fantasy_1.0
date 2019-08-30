@@ -1,15 +1,13 @@
 ﻿using AutoMapper;
 using Fantasy.Common.Mapping;
-using System;
 using Fantasy.Data.Models;
+using System;
 
 namespace Fantasy.Services.Models
 {
     public class FootballPlayerDetailsServiceModel : FootballPlayerServiceModel, IHaveCustomMappings
     {
         public bool IsInjured { get; set; }
-
-        public byte? InfoShirtNumber { get; set; }
 
         public byte? InfoHeight { get; set; }
 

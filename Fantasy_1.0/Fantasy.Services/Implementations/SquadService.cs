@@ -1,5 +1,6 @@
 ﻿using Fantasy.Common;
 using Fantasy.Data;
+using Fantasy.Data.Models;
 using Fantasy.Services.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -8,17 +9,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Fantasy.Data.Models;
 
 
 namespace Fantasy.Services.Implementations
 {
     using static GlobalConstants;
 
-
     public class SquadService : ISquadService
     {
-
         private readonly FantasyDbContext db;
         private readonly UserManager<FantasyUser> userManager;
 
@@ -52,6 +50,7 @@ namespace Fantasy.Services.Implementations
                 .Where(fp => playerIds.Contains(fp.Id))
                 .ToListAsync();
 
+            // validate positions count
             if (players.Count != SquadPlayersCount
                 || players.Count(fp => fp.Position.Name == Goalkeeper) != SquadGoalkeeperCount
                 || players.Count(fp => fp.Position.Name == Defender) != SquadDefenderCount
@@ -61,6 +60,7 @@ namespace Fantasy.Services.Implementations
                 return false;
             }
 
+            // validate players from same club count
             var footballClubs = new Dictionary<int,int>();
             foreach (var player in players)
             {
@@ -76,6 +76,7 @@ namespace Fantasy.Services.Implementations
                 }
             }
 
+            // validate budget
             if (players.Sum(fp => fp.Price) > SquadBudget)
             {
                 return false;

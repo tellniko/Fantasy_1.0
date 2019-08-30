@@ -86,6 +86,14 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             var model =
                 await this.statistics.GetStatisticsAsync<FootballPlayerStatisticsFormModel>(playerId, gameweekId);
 
+            if (model == null)
+            {
+                this.TempData.AddErrorMessage("There is no statistics for this gameweek!");
+
+                return RedirectToAction(nameof(Index));
+            }
+
+
             return View(model);
         }
 

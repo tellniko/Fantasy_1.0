@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using Fantasy.Common.Mapping;
+﻿using Fantasy.Common.Mapping;
 using Fantasy.Data.Models;
+using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Fantasy.Services.Administrator.Models
 {

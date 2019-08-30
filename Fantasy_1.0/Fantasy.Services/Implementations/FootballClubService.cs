@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Fantasy.Services.Administrator.Models;
 
 namespace Fantasy.Services.Implementations
 {
@@ -49,11 +50,6 @@ namespace Fantasy.Services.Implementations
                     }).ToList()
                 })
                 .FirstOrDefault();
-        }
-
-        public List<FootballClubServiceModel> GetAll()
-        {
-            return this.db.FootballClubs.To<FootballClubServiceModel>().ToList();
         }
     }
 }

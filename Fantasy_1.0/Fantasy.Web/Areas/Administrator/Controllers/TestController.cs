@@ -25,7 +25,9 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
         public async Task<IActionResult> Test()
         {
-     
+            var a = this.db.FootballPlayers.Where(x => x.IsPlayable).ToList().Count;
+
+            Console.WriteLine();
 
 
             //var gameweek = await this.db.Gameweeks.FirstOrDefaultAsync(gw => gw.Id == gameweekId);

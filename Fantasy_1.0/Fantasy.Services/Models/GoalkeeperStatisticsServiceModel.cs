@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using Fantasy.Common.Attributes;
+﻿using Fantasy.Common.Attributes;
 using Fantasy.Common.Mapping;
 using Fantasy.Data.Models;
 using Fantasy.Services.Models.Contracts;

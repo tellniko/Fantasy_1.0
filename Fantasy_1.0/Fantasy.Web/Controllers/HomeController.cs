@@ -1,9 +1,8 @@
-﻿using Fantasy.Services.Implementations;
+﻿using Fantasy.Services;
 using Fantasy.Services.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Fantasy.Services;
 
 namespace Fantasy.Web.Controllers
 {

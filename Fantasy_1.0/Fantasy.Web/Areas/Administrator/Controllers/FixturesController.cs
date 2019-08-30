@@ -1,15 +1,14 @@
 ﻿using Fantasy.Common.Mapping;
+using Fantasy.Services;
 using Fantasy.Services.Administrator.Models;
-using Fantasy.Services.Implementations;
 using Fantasy.Web.Areas.Administrator.Models;
 using Fantasy.Web.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 using System.Linq;
-using Fantasy.Services;
-using IFixtureService = Fantasy.Services.Administrator.IFixtureService;
-using IGameweekService = Fantasy.Services.Administrator.IGameweekService;
+using System.Threading.Tasks;
+
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
@@ -26,12 +25,12 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             this.fixtures = fixtures;
         }
 
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
             
             var model = new FixtureFormModel
             {
-                FootballClubs = this.GetFootballClubs(),
+                FootballClubs = await this.GetFootballClubs(),
                 Gameweeks = this.GetGameweeks(),
             };
 
@@ -39,11 +38,11 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(FixtureFormModel model)
+        public async Task<IActionResult> Create(FixtureFormModel model)
         {
             if (!ModelState.IsValid || model.AwayTeamId == model.HomeTeamId)
             {
-                model.FootballClubs = this.GetFootballClubs();
+                model.FootballClubs = await this.GetFootballClubs();
                 model.Gameweeks = this.GetGameweeks();
                 this.TempData.AddErrorMessage("Error");
                 return View(model);
@@ -73,11 +72,12 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
                 .ToList();
         }
 
-        private IEnumerable<SelectListItem> GetFootballClubs()
+        private async Task<IEnumerable<SelectListItem>> GetFootballClubs()
         {
-            return this.footballClubs
-                .GetAll()
-                .Select(x => new SelectListItem
+            var clubs =  await this.footballClubs
+                .GetAll< FootballClubDropDownModel>();
+                
+                return clubs.Select(x => new SelectListItem
                 {
                     Text = x.Name,
                     Value = x.Id.ToString()

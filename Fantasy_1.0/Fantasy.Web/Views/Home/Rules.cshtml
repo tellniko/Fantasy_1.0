@@ -1,0 +1,37 @@
+﻿@model List<object>
+@{
+    ViewData["Title"] = "Rules";
+}
+<br />
+<br />
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div class="row">
+                @foreach (var type in Model)
+                {
+                    <div class="col-3">
+                        <div class="row">
+                            <h3>@type.GetType().Name.ToFirstWord()</h3>
+                            <div class="col-1"></div>
+                            <div class="col-10" style="background-color: #ffffff; filter: drop-shadow(10px 10px 12px #38003c);">
+                                @foreach (var prop in type.GetType().GetProperties())
+                                {
+                                    <div class="row" style="border-bottom: solid 1px #38003c; margin-top: 3px; margin-bottom: 3px;">
+                                        <div class="col-8" style="font-size: 0.6vw;">
+                                            @prop.Name.ToSentenceCase()
+                                        </div>
+                                        <div class="col-4" style="font-size: 0.6vw; text-align: right">
+                                            @(prop.GetCustomAttribute<PointsAttribute>().Units) Points
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    <div class="col-1"></div>
+</div>

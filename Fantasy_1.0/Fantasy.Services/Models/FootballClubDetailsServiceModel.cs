@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Fantasy.Data.Models;
 
 namespace Fantasy.Services.Models
 {

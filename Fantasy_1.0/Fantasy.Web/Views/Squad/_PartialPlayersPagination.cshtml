@@ -76,7 +76,7 @@
                     .load('/@ViewBag.Controller/@ViewBag.Action'
                         + '?clubId=' + $('#club').val() 
                         + '&positionId=' + $('#position').val()
-                        + '&playerName=' + $('#player').val()
+                        + '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_')
                         + '&order=' + $('#order').val()
                         + '&page=' + (@currentPage - 1))
 ;            }
@@ -87,7 +87,7 @@
                     .load('/@ViewBag.Controller/@ViewBag.Action'
                         + '?clubId=' + $('#club').val() 
                         + '&positionId=' + $('#position').val()
-                        + '&playerName=' + $('#player').val()
+                        + '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_')
                         + '&order=' + $('#order').val()
                         + '&page=' + (@currentPage + 1));
             }

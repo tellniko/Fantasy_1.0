@@ -44,7 +44,6 @@ namespace Fantasy.Services.Administrator.Implementations
         //todo refactor 
         public async Task<int> EditPlayerStatisticsAsync(FootballPlayerStatisticsFormModel model)
         {
-
             var gameweekStat = await this.db.FindAsync<GameweekStatistics>(model.PlayerId, model.GameweekId);
 
             if (gameweekStat == null)
@@ -176,10 +175,7 @@ namespace Fantasy.Services.Administrator.Implementations
                     .Sum(x => x.FootballPlayer.GameweekPoints.First(y => y.GameweekId == gameweekId).Points);
 
 
-                   Console.WriteLine(score);
                 user.GameweekScoreses.First(x => x.GameweekId == gameweekId).Score = score;
-
-                Console.WriteLine();
             }
 
             result += await this.db.SaveChangesAsync();
@@ -204,7 +200,6 @@ namespace Fantasy.Services.Administrator.Implementations
 
             //todo update group of players only !!!
             var dbFootballPlayerIds = this.db.FootballPlayers
-                // .Where(x => x.FootballClub.Id == 10)
                 .Select(p => p.Id)
                 .ToList();
 

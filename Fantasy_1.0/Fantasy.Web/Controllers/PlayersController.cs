@@ -14,9 +14,9 @@ namespace Fantasy.Web.Controllers
 
     public class PlayersController : Controller
     {
-        private readonly IPlayerService players;
+        private readonly IFootballPlayerService players;
 
-        public PlayersController(IPlayerService players)
+        public PlayersController(IFootballPlayerService players)
         {
             this.players = players;
         }
@@ -66,6 +66,8 @@ namespace Fantasy.Web.Controllers
 
         public async Task<IActionResult> GetPartialStatisticsAsync(int playerId, string position, int gameweekId = AllTimeStatisticsGameweekId)
         {
+
+
             switch (position)
             {
                 case Goalkeeper:

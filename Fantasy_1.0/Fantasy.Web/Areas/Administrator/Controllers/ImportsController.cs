@@ -26,7 +26,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             if (result == -1)
             {
-                this.TempData.AddErrorMessage("The players have been imported already!");
+                this.TempData.AddErrorMessage("The players has been already imported!");
             }
             else if (result == 0)
             {
@@ -34,7 +34,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             }
             else
             {
-                this.TempData.AddSuccessMessage($"{result} players have been imported!");
+                this.TempData.AddSuccessMessage($"{result} players has been imported!");
             }
 
             return RedirectToAction(nameof(Index));

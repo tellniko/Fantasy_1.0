@@ -71,24 +71,26 @@
 </div>
 <script>
     $(document).ready(function() {
-        $('#previous').click(function() {
+        $('#previous').click(function () {
+         
             if (@currentPage !== 1) {
                 $('#players')
                     .load('/@ViewBag.Controller/@ViewBag.Action' +
                         '?clubId=' + $('#club').val() +
                         '&positionId=' + $('#position').val() +
-                        '&playerName=' + $('#player').val() +
+                        '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_') +
                         '&order=' + $('#order').val() +
                         '&page=' + (@currentPage - 1));
             }
         });
-        $('#next').click(function() {
+        $('#next').click(function () {
             if (@Model.Players.Count() >= @PlayersListingPageSize) {
+             
                 $('#players')
                     .load('/@ViewBag.Controller/@ViewBag.Action' +
                         '?clubId=' + $('#club').val() +
                         '&positionId=' + $('#position').val() +
-                        '&playerName=' + $('#player').val() +
+                        '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_') +
                         '&order=' + $('#order').val() +
                         '&page=' + (@currentPage + 1));
             }

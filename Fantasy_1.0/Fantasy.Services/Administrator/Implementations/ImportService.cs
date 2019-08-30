@@ -1,11 +1,11 @@
 ﻿using Fantasy.Data;
+using Fantasy.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Fantasy.Data.Models;
 
 namespace Fantasy.Services.Administrator.Implementations
 {
@@ -34,6 +34,14 @@ namespace Fantasy.Services.Administrator.Implementations
                     {
                         Points = 0,
                         GameweekId = i,
+                    });
+                }
+
+                for (int i = 1; i < 40; i++)
+                {
+                    footballPlayer.GameweekStatistics.Add(new GameweekStatistics
+                    {
+                        GameweekId = i
                     });
                 }
             }
@@ -79,8 +87,11 @@ namespace Fantasy.Services.Administrator.Implementations
 
             try
             {
+                var gameweekStatistics = this.db.GameweekStatistics.Where(x => x.GameweekId == gameweekId).ToList();
+                this.db.RemoveRange(gameweekStatistics);
+
                 statistics.AddRange(JsonConvert.DeserializeObject<List<GameweekStatistics>>
-                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/statisticsGW{gameweekId}.json")));
+                    (File.ReadAllText($"wwwroot/JsonFiles/GW{gameweekId}/GW{gameweekId}.json")));
          
             }
             catch (Exception)

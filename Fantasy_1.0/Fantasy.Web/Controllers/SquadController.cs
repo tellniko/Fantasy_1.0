@@ -24,14 +24,14 @@ namespace Fantasy.Web.Controllers
 
         private readonly UserManager<FantasyUser> userManager;
         private readonly ISquadService squad;
-        private readonly IPlayerService players;
+        private readonly IFootballPlayerService players;
         private readonly IFixtureService fixtures;
         private readonly IGameweekService gamweeks;
 
         public SquadController(
             UserManager<FantasyUser> userManager, 
             ISquadService squad, 
-            IPlayerService players, 
+            IFootballPlayerService players, 
             IFixtureService fixtures, 
             IGameweekService gamweeks)
         {
@@ -177,16 +177,16 @@ namespace Fantasy.Web.Controllers
         }
 
 
-        public IActionResult History()
+        public IActionResult GameweekHistory()
         {
 
-            this.ViewBag.Action = nameof(GetPartialhistorySquad);
+            this.ViewBag.Action = nameof(GetPartialGameweekHistorySquad);
             this.ViewBag.Controller = nameof(SquadController).ToFirstWord();
 
             return View();
         }
 
-        public async Task<IActionResult> GetPartialhistorySquad(int gameweekId = 1)
+        public async Task<IActionResult> GetPartialGameweekHistorySquad(int gameweekId = 1)
         {
             var userId = this.userManager.GetUserId(User);
 

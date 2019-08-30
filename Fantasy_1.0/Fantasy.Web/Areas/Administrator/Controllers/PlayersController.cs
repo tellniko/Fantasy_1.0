@@ -1,5 +1,6 @@
-﻿using Fantasy.Data;
-using Fantasy.Services.Administrator;
+﻿using Fantasy.Common;
+using Fantasy.Data;
+using Fantasy.Services;
 using Fantasy.Services.Administrator.Models;
 using Fantasy.Web.Areas.Administrator.Models;
 using Fantasy.Web.Infrastructure.Extensions;
@@ -11,15 +12,19 @@ using System.Threading.Tasks;
 
 namespace Fantasy.Web.Areas.Administrator.Controllers
 {
+    using static  GlobalConstants;
+
     public class PlayersController : AdminController
     {
         private readonly IFootballPlayerService players;
+        private IFootballClubService clubs;
         private readonly FantasyDbContext db;
 
-        public PlayersController(IFootballPlayerService players, FantasyDbContext db)
+        public PlayersController(IFootballPlayerService players, FantasyDbContext db, IFootballClubService clubs)
         {
             this.players = players;
             this.db = db;
+            this.clubs = clubs;
         }
 
         public async Task<IActionResult> Edit(int id)
@@ -33,7 +38,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             var model = new FootballPlayerViewModel
             {
-                Clubs = this.GetClubs(),
+                Clubs = await this.GetClubs(),
                 Positions = this.GetPositions(),
                 Player = player,
                 Gameweeks = this.GetGameweeks()
@@ -47,7 +52,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         {
             if (!ModelState.IsValid)
             {
-                model.Clubs = this.GetClubs();
+                model.Clubs = await this.GetClubs();
                 model.Positions = this.GetPositions();
 
                 return View(model);
@@ -73,12 +78,17 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public IActionResult Add()
+        public async Task<IActionResult> Add()
         {
             var model = new FootballPlayerViewModel
             {
-                Clubs = this.GetClubs(),
+                Clubs =  await this.GetClubs(),
                 Positions = this.GetPositions(),
+                Player = new FootballPlayerFormModel
+                {
+                    InfoBigImgUrl = DefaultPlayerBigImageUrl,
+                    InfoSmallImgUrl = DefaultPlayerSmallImageUrl
+                }
             };
 
             return View(model);
@@ -91,7 +101,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
         {
             if (!ModelState.IsValid)
             {
-                model.Clubs = this.GetClubs();
+                model.Clubs = await this.GetClubs();
                 model.Positions = this.GetPositions();
 
                 return View(model);
@@ -100,7 +110,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             if (await this.players.Exists(model.Player.Id))
             {
                 this.TempData.AddErrorMessage("A player with the given id already exists! Try with id in range [1-1500]!");
-                model.Clubs = this.GetClubs();
+                model.Clubs = await this.GetClubs();
                 model.Positions = this.GetPositions();
 
                 return View(model);
@@ -119,9 +129,11 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private List<SelectListItem> GetClubs()
+        private async Task<List<SelectListItem>> GetClubs()
         {
-            return this.db.FootballClubs
+            var all = await this.clubs.GetAll<FootballClubDropDownModel>();
+
+                return all
                 .Select(fc => new SelectListItem
                 {
                     Text = fc.Name,

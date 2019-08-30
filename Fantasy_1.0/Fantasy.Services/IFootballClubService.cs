@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using Fantasy.Services.Administrator.Models;
 using Fantasy.Services.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Fantasy.Services
 {
@@ -9,7 +10,5 @@ namespace Fantasy.Services
         Task<List<TModel>> GetAll<TModel>();
 
         FootballClubDetailsServiceModel GetDetails(int id);
-
-        List<FootballClubServiceModel> GetAll();
     }
 }
