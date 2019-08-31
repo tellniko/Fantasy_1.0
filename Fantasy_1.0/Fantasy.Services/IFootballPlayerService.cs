@@ -2,6 +2,7 @@
 using Fantasy.Services.Administrator.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Fantasy.Services.Models;
 
 namespace Fantasy.Services
 {
@@ -11,7 +12,7 @@ namespace Fantasy.Services
     {
         Task<bool> Edit(FootballPlayerFormModel model);
 
-        bool Add(FootballPlayerFormModel model);
+        int Add(FootballPlayerFormModel model);
 
         Task<TModel> GetByIdAsync<TModel>(int id);
 
@@ -24,6 +25,14 @@ namespace Fantasy.Services
             string order,
             int page = 1,
             int pageSize = PlayersListingPageSize);
+
+        //Task<List<FootballPlayerShortServiceModel>> GetAllWithPaginationAsync(
+        //    string club,
+        //    string position,
+        //    string playerName,
+        //    string order,
+        //    int page = 1,
+        //    int pageSize = PlayersListingPageSize);
 
         Task<TModel> GetStatisticsAsync<TModel>(int playerId, int gameweekId);
     }

@@ -3,58 +3,58 @@
     ViewData["Title"] = "_PartialPlayers2";
     var currentPage = Model.CurrentPage;
 }
-<div class="row">
-    <table class="table table-hover" id="listedPlayersContainer">
-        <thead>
-        </thead>
-        <tbody>
+<br />
+@*<div>*@
+    <div class="row" style="filter: drop-shadow(0px 5px 8px #38003c); background-color: #ffffff;">
+        <div class="row" style="margin-top: 0.5vw; margin-bottom: 0.5vw; border-bottom: #38003c 1px solid"></div>
         @foreach (var player in Model.Players)
         {
-            <tr>
-                <td>
-                    <div class="row" id="@player.Id">
-                        <div class="col-2">
-                            <img id="@player.Id" src="@player.InfoSmallImgUrl"
-                                 onerror="src = '@DefaultPlayerBigImageUrl';"
-                                 height="45px" class="animated bounceInDown" style="filter: drop-shadow(0px 5px 8px #38003c)"/>
-                        </div>
-                        <div class="col-6">
-                            <div class="animated bounceInUp">
-                                <div class="row">
-                                    <a asp-controller="Players" asp-action="Details" asp-route-playerId="@player.Id"
-                                       asp-route-position="@player.PositionName" target="_blank">
-                                        <span style="font-size: 15px">@(player.InfoName)</span>
-                                    </a>
-                                    @if (User.IsInRole(AdministratorRole))
-                                    {
-                                        <a class="btn btn-sm btn-primary" asp-area="Administrator" asp-controller="Players"
-                                           asp-action="Edit" asp-route-id="@player.Id" style="margin-left: 10px">Edit</a>
-                                    }
-                                </div>
-                                <div class="row">
-                                    <span style="font-size: 12px; font-style: italic; color: black">@(player.PositionName)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2 text-center">
-                            <img src="@player.FootballClubBadgeImgUrl" style="filter: drop-shadow(0px 5px 8px #38003c); height: 40px;" class="animated bounceInDown"/>
-                        </div>
-                        <div class="col-2">
-                            <p class="animated bounceInUp"><strong>@player.Price.ToPrice()</strong></p>
-                        </div>
+            <div class="row" style="margin-top: 0.5vw; margin-bottom: 0.5vw; border-bottom: #38003c 1px solid">
+
+                <div class="col-2 text-center">
+                    <img src="@player.InfoSmallImgUrl" style="height: 3vw; margin-bottom: 0.9vw; filter: drop-shadow(0px 5px 8px #38003c)" class="animated bounceInUp"/>
+                </div>
+
+                <div class="col-3" style="font-size: 1vw">
+                    <a asp-controller="Players" asp-action="Details" asp-route-playerId="@player.Id"asp-route-position="@player.PositionName" target="_blank">
+                        <div class="animated bounceInDown">@(player.InfoName)</div>
+                    </a>
+                </div>
+
+                <div class="col-3" style="font-style: italic; color: #38003c">
+                    <div class="animated bounceInUp">@player.PositionName</div>
+                    @if (User.IsInRole(AdministratorRole))
+                    {
+                        <a class="btn btn-sm btn-primary" asp-area="Administrator" asp-controller="Players"
+                           asp-action="Edit" asp-route-id="@player.Id" style="margin-left: 10px">Edit</a>
+                    }
+                </div>
+
+                <div class="col-1" >
+                    <div class="animated bounceInDown">
+                        <div class="row" style="font-size: 1vw"> <strong> @player.Points.ToString("F0")</strong></div>
+                        <div class="row" style="font-size: 0.5vw">points</div>
                     </div>
-                </td>
-            </tr>
+                </div>
+
+                <div class="col-1"style="font-size: 1vw; color: #e90052">
+                    <div class="animated bounceInUp"> <strong> $@player.Price</strong></div>
+                </div>
+
+                <div class="col-2 text-center">
+                        <img src="@player.FootballClubBadgeImgUrl" style="height: 3vw; filter: drop-shadow(0px 5px 8px #38003c)" class="animated bounceInDown"/>
+                </div>
+
+            </div>
         }
-        </tbody>
-    </table>
 </div>
-<div class="row">
+
+<div class="row" style="margin-top: 20px">
     <div class="col-5"></div>
     <div class="col-2 text-center">
         <ul class="pagination">
             <li class="page-item">
-                <div id="previous" class="page-link" aria-label="Previous"  style="cursor: pointer">
+                <div id="previous" class="page-link" aria-label="Previous" style="cursor: pointer">
                     <span aria-hidden="true">&laquo;</span>
                     <span class="sr-only">Previous</span>
                 </div>
@@ -72,30 +72,29 @@
 <script>
     $(document).ready(function() {
         $('#previous').click(function () {
-         
+
             if (@currentPage !== 1) {
                 $('#players')
                     .load('/@ViewBag.Controller/@ViewBag.Action' +
                         '?clubId=' + $('#club').val() +
                         '&positionId=' + $('#position').val() +
-                        '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_') +
+                        '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_').toLowerCase() +
                         '&order=' + $('#order').val() +
                         '&page=' + (@currentPage - 1));
             }
         });
         $('#next').click(function () {
             if (@Model.Players.Count() >= @PlayersListingPageSize) {
-             
+
                 $('#players')
                     .load('/@ViewBag.Controller/@ViewBag.Action' +
                         '?clubId=' + $('#club').val() +
                         '&positionId=' + $('#position').val() +
-                        '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_') +
+                        '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_').toLowerCase() +
                         '&order=' + $('#order').val() +
                         '&page=' + (@currentPage + 1));
             }
         });
     });
 </script>
-
 

@@ -28,6 +28,11 @@ namespace Fantasy.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder
+                .Entity<FootballClub>()
+                .HasIndex(fc => fc.Tag)
+                .IsUnique();
+
+            builder
                 .Entity<FootballPlayer>()
                 .HasOne(fp => fp.Info)
                 .WithOne(fpi => fpi.FootballPlayer)

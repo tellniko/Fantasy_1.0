@@ -1,4 +1,5 @@
-﻿using Fantasy.Data;
+﻿using System;
+using Fantasy.Data;
 using Fantasy.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -27,8 +28,28 @@ namespace Fantasy.Web.ViewComponents
                     Points = u.GameweekScoreses.Sum(x => x.Score)
                 })
                 .OrderByDescending(u => u.Points)
-                .Take(10)
+                .Take(5)
                 .ToListAsync();
+
+
+            var count = topTen.Count;
+
+            if (count != 5)
+            {
+                for (int i = 0; i < 5 - count; i++)
+                {
+                    Console.WriteLine(i);
+
+                    topTen.Add(new TopTenUserViewModel
+                    {
+                        Name = "N/A",
+                        Squad = "N/A",
+                        Points = 0,
+                    });
+                }
+            }
+
+
 
             return this.View(topTen);
         }

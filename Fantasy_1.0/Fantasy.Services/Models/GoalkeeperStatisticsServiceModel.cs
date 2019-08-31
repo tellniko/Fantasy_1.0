@@ -46,9 +46,9 @@ namespace Fantasy.Services.Models
 
         [Points(Units = -50)] public short OwnGoals { get; set; }
 
-        [Points(Units = 150)] public short Goals { get; set; }
+        [Points(Units = 300)] public short Goals { get; set; }
 
-        [Points(Units = 50)] public short Assists { get; set; }
+        [Points(Units = 100)] public short Assists { get; set; }
 
         [Points(Units = 1)] public short Passes { get; set; }
 

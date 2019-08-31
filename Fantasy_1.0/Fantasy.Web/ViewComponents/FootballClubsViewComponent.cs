@@ -29,7 +29,7 @@ namespace Fantasy.Web.ViewComponents
 
             if (includeAll)
             {
-                clubs.Insert(0, new SelectListItem("All", string.Empty));
+                clubs.Insert(0, new SelectListItem("All Clubs", string.Empty));
             }
 
             return this.View(clubs);

@@ -21,14 +21,14 @@
             </div>
             <div class="col-6">
                 <div class="row">
-                    <input title="Name" class="form-control" id="player" style="filter: drop-shadow(0px 5px 8px #38003c);"/>
+                    <input placeholder="Search By Name..." title="Name" class="form-control" id="player" style="filter: drop-shadow(0px 5px 8px #38003c);"/>
                 </div>
                 <br/>
                 <div class="row" title="Order by">
                     <select class="form-control" id="order" style="filter: drop-shadow(0px 5px 8px #38003c)">
-                        <option value="Name" Text="Name">Name</option>
-                        <option value="priceAscending">Price Ascending</option>
-                        <option value="priceDescending">Price Descending</option>
+                        <option value="Name" Text="Name">Order By Name</option>
+                        <option value="priceAscending">Order By Price Ascending</option>
+                        <option value="priceDescending">Order By Price Descending</option>
                     </select>
                 </div>
             </div>
@@ -290,7 +290,7 @@
                 .load('/@ViewBag.Controller/@ViewBag.Action'
                     + '?clubId=' +  $('#club').val()
                     + '&positionId=' + $('#position').val()
-                    + '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_')
+                    + '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_').toLowerCase()
                     + '&order=' + $('#order').val());
         }
 

@@ -18,21 +18,17 @@ namespace Fantasy.Services.Implementations
     public class SquadService : ISquadService
     {
         private readonly FantasyDbContext db;
-        private readonly UserManager<FantasyUser> userManager;
 
-        public SquadService(FantasyDbContext db, UserManager<FantasyUser> userManager)
+        public SquadService(FantasyDbContext db)
         {
             this.db = db;
-            this.userManager = userManager;
         }
 
         //todo refactor
-        public async Task<List<FantasyPlayerServiceModel>> GetSquadAsync(string id)
+        public async Task<List<FantasyPlayerServiceModel>> GetSquadAsync(string userId)
         {
-            var user = await this.userManager.FindByIdAsync(id);
-
             return await this.db.FantasyPlayers
-                .Where(fp => fp.FantasyUser == user)
+                .Where(fp => fp.FantasyUserId == userId)
                 .Select(fp => new FantasyPlayerServiceModel
                 {
                     Name = fp.FootballPlayer.Info.Name,
@@ -51,14 +47,12 @@ namespace Fantasy.Services.Implementations
                 .ToListAsync();
 
             // validate positions count
-            if (players.Count != SquadPlayersCount
-                || players.Count(fp => fp.Position.Name == Goalkeeper) != SquadGoalkeeperCount
-                || players.Count(fp => fp.Position.Name == Defender) != SquadDefenderCount
-                || players.Count(fp => fp.Position.Name == Midfielder) != SquadMidfielderCount
-                || players.Count(fp => fp.Position.Name == Forward) != SquadForwardCount)
-            {
-                return false;
-            }
+            if(players.Count != SquadPlayersCount) return false;
+            if(players.Count(fp => fp.Position.Name == Goalkeeper) != SquadGoalkeeperCount) return false;
+            if(players.Count(fp => fp.Position.Name == Defender) != SquadDefenderCount) return false;
+            if(players.Count(fp => fp.Position.Name == Midfielder) != SquadMidfielderCount) return false;
+            if(players.Count(fp => fp.Position.Name == Forward) != SquadForwardCount) return false;
+        
 
             // validate players from same club count
             var footballClubs = new Dictionary<int,int>();
@@ -85,13 +79,13 @@ namespace Fantasy.Services.Implementations
             return true;
         }
 
-        public async Task<bool?> CreateSquadAsync(List<int> playerIds, string userId)
+        public async Task<int> CreateSquadAsync(List<int> playerIds, string userId)
         {
-            var fantasyUser = await this.userManager.FindByIdAsync(userId);
-            if (fantasyUser == null)
-            {
-                return null;
-            }
+            //var fantasyUser = await this.userManager.FindByIdAsync(userId);
+            //if (fantasyUser == null)
+            //{
+            //    return null;
+            //}
             var squad = new List<FantasyPlayer>();
             var scores = new List<GameweekScore>();
 
@@ -102,7 +96,7 @@ namespace Fantasy.Services.Implementations
                 var fantasyPlayer = new FantasyPlayer
                 {
                     FootballPlayerId = playerId,
-                    FantasyUser = fantasyUser,
+                    FantasyUserId = userId,
                     GameweekStatuses = new List<GameweekStatus>(),
                 };
 
@@ -124,7 +118,7 @@ namespace Fantasy.Services.Implementations
                 var score = new GameweekScore
                 {
                     Gameweek = gameweek,
-                    FantasyUser = fantasyUser,
+                    FantasyUserId = userId,
                     Score = 0
                 };
                 scores.Add(score);
@@ -135,12 +129,7 @@ namespace Fantasy.Services.Implementations
 
             var result = await this.db.SaveChangesAsync();
 
-            if (result == 0)
-            {
-                return false;
-            }
-
-            return true;
+            return result;
         }
 
         public async Task<bool> ValidateFirstTeamAsync(string ids, string userId)
@@ -174,7 +163,7 @@ namespace Fantasy.Services.Implementations
                 .Select(fp => fp.Id)
                 .ToListAsync();
 
-            // validate ids
+            //validate ids
             foreach (var fantasyPlayerId in idsList)
             {
                 if (!userSquadIds.Contains(fantasyPlayerId))
@@ -190,8 +179,6 @@ namespace Fantasy.Services.Implementations
             {
                 return false;
             }
-
-            Console.WriteLine();
 
             return true;
         }
@@ -225,10 +212,10 @@ namespace Fantasy.Services.Implementations
         public async Task<List<FantasyPlayerServiceModel>> GetCurrentSquad(string userId, int gameweekId)
         {
             var gameweek = await this.db.Gameweeks.FirstOrDefaultAsync(gw => gw.Id == gameweekId);
-            var user = await this.userManager.FindByIdAsync(userId);
+            //var user = await this.userManager.FindByIdAsync(userId);
 
             return await this.db.FantasyPlayers
-                .Where(fp => fp.FantasyUser == user)
+                .Where(fp => fp.FantasyUserId == userId)
                 .Select(fp => new FantasyPlayerServiceModel
                 {
                     Id = fp.Id,

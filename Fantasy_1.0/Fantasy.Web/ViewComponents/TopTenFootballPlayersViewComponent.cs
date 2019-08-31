@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Fantasy.Web.ViewComponents
 {
+    using static DataConstants;
     public class TopTenFootballPlayersViewComponent : ViewComponent
     {
         private readonly FantasyDbContext db;
@@ -27,7 +28,7 @@ namespace Fantasy.Web.ViewComponents
                 .Where(fp => fp.Position.Name == position && fp.IsPlayable)
                 .Select(fp => new TopTenFootballPlayerViewModel
                 {
-                    Points = fp.GameweekPoints.Where(gwp => gwp.GameweekId != 40).Sum(gwp => gwp.Points),
+                    Points = fp.GameweekPoints.Where(gwp => gwp.GameweekId != AllTimeStatisticsGameweekId && gwp.GameweekId != PreSeasonStatisticsGameweekId).Sum(gwp => gwp.Points),
                     Name = fp.Info.Name.ToFuckinNormalName().PadLeft(30,' '),
                     Position = position,
                 })

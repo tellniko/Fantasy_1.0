@@ -10,7 +10,7 @@ namespace Fantasy.Services
 
         Task<bool> ValidateSquadAsync(List<int> playerIds);
 
-        Task<bool?> CreateSquadAsync(List<int> playerIds, string userId);
+        Task<int> CreateSquadAsync(List<int> playerIds, string userId);
 
         Task<bool> ValidateFirstTeamAsync(string ids, string userId);
 

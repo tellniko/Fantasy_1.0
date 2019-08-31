@@ -4,14 +4,16 @@ using Fantasy.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Fantasy.Data.Migrations
 {
     [DbContext(typeof(FantasyDbContext))]
-    partial class FantasyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190830105644_gameweekRmoveNullableStart")]
+    partial class gameweekRmoveNullableStart
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -148,9 +150,6 @@ namespace Fantasy.Data.Migrations
                         .IsRequired();
 
                     b.HasKey("Id");
-
-                    b.HasIndex("Tag")
-                        .IsUnique();
 
                     b.ToTable("FootballClubs");
                 });

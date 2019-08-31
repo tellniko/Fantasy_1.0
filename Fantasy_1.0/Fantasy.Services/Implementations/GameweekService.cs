@@ -35,7 +35,7 @@ namespace Fantasy.Services.Implementations
             return gameweek;
         }
 
-        public async Task<Gameweek> GetNext(DateTime? date)
+        public async Task<Gameweek> GetNext(DateTime date)
         {
             var gameweek = await this.db.Gameweeks
                 .OrderBy(gw => gw.Start)
@@ -80,6 +80,7 @@ namespace Fantasy.Services.Implementations
             return true;
         }
 
+        //todo
         public async Task<Gameweek> GetByStart(DateTime start)
         {
             var a = await this.db.Gameweeks

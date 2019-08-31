@@ -71,7 +71,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             if (result == null)
             {
-                this.TempData.AddErrorMessage($"Statistics for {gameweek.Name} has been updated already!");
+                this.TempData.AddErrorMessage($"Statistics for {gameweek.Name} has already been updated!");
             }
             else
             {
@@ -88,7 +88,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             if (model == null)
             {
-                this.TempData.AddErrorMessage("There is no statistics for this gameweek!");
+                this.TempData.AddErrorMessage("There is no statistics found for this gameweek!");
 
                 return RedirectToAction(nameof(Index));
             }
@@ -109,7 +109,7 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
 
             if (result != 0)
             {
-                TempData.AddSuccessMessage("Player has been edited successfully.");
+                TempData.AddSuccessMessage("The player's information has been edited successfully.");
             }
             else
             {

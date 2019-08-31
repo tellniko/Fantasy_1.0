@@ -1,16 +1,18 @@
-﻿using Fantasy.Common.Mapping;
+﻿using Fantasy.Common;
+using Fantasy.Common.Mapping;
 using Fantasy.Data;
 using Fantasy.Data.Models;
+using Fantasy.Services.Administrator.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Fantasy.Services.Administrator.Models;
 
 namespace Fantasy.Services.Implementations
 {
+    using static GlobalConstants;
     public class FootballPlayerService : IFootballPlayerService
     {
         private readonly FantasyDbContext db;
@@ -26,16 +28,15 @@ namespace Fantasy.Services.Implementations
             string playerName, 
             string order, 
             int page = 1, 
-            int pageSize = 10)
+            int pageSize = PlayersListingPageSize)
         {
-
             playerName = playerName?.Replace("_", " ");
 
             Expression<Func<FootballPlayer, bool>> filterCriteria =
                 fp =>
                     fp.FootballClub.Tag.Contains(club ?? string.Empty)
                     && fp.Position.Name.Contains(position ?? string.Empty)
-                    && fp.Info.Name.Contains(playerName ?? string.Empty)
+                    && fp.Info.Name.ToLower().Contains(playerName ?? string.Empty)
                     && fp.IsPlayable;
 
             //TODO: refactor
@@ -46,6 +47,7 @@ namespace Fantasy.Services.Implementations
 
             var result = this.db.FootballPlayers
                 .Include(fp => fp.FootballClub)
+                .Include(fp => fp.GameweekPoints)
                 .Where(filterCriteria);
 
             switch (order)
@@ -56,11 +58,11 @@ namespace Fantasy.Services.Implementations
                 case "priceDescending":
                     result = result.OrderBy(priceDescending);
                     break;
-                case "totalPoints":
-                    result = result.OrderBy(totalPoints);
+                case "name":
+                    result = result = result.OrderBy(name);
                     break;
                 default:
-                    result = result.OrderBy(name);
+                    result = result.OrderBy(totalPoints);
                     break;
             }
 
@@ -70,6 +72,7 @@ namespace Fantasy.Services.Implementations
                 .To<TModel>()
                 .ToListAsync();
         }
+
 
         public async Task<TModel> GetByIdAsync<TModel>(int id)
         {
@@ -95,7 +98,7 @@ namespace Fantasy.Services.Implementations
             return await this.db.FootballPlayers.FindAsync(id) != null;
         }
 
-        public bool Add(FootballPlayerFormModel model)
+        public int Add(FootballPlayerFormModel model)
         {
             var result = 0;
 
@@ -147,12 +150,7 @@ namespace Fantasy.Services.Implementations
                 db.Database.CloseConnection();
             }
 
-            if (result == 0)
-            {
-                return false;
-            }
-
-            return true;
+            return result;
         }
 
         //todo refactor

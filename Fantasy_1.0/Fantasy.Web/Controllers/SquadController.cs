@@ -45,6 +45,10 @@ namespace Fantasy.Web.Controllers
         public async Task<IActionResult> Index()
         {
             var userId = this.userManager.GetUserId(User);
+            if (userId == null)
+            {
+                return BadRequest();
+            }
 
             var squadExists = await this.squad.SquadExistsAsync(userId);
 
@@ -78,6 +82,10 @@ namespace Fantasy.Web.Controllers
         public async Task<IActionResult> Manage(string ids)
         {
             var userId = this.userManager.GetUserId(User);
+            if (userId == null)
+            {
+                return BadRequest();
+            }
 
             var validSquad = await this.squad.ValidateFirstTeamAsync(ids, userId);
 
@@ -111,6 +119,10 @@ namespace Fantasy.Web.Controllers
         public async Task<IActionResult> Create(UserSquadFormModel model)
         {
             var userId = this.userManager.GetUserId(User);
+            if (userId == null)
+            {
+                return BadRequest();
+            }
 
             var validationResult = await this.squad.ValidateSquadAsync(model.GetPlayerIds());
 
@@ -121,16 +133,11 @@ namespace Fantasy.Web.Controllers
 
             var result = await this.squad.CreateSquadAsync(model.GetPlayerIds(), userId);
 
-            if (result == false)
+            if (result == 0)
             {
                 this.TempData.AddErrorMessage(ErrorMessage);
 
                 return RedirectToAction(nameof(Create), new { userId });
-            }
-
-            if (result == null)
-            {
-                return BadRequest();
             }
 
             this.TempData.AddSuccessMessage(SuccessMessage);

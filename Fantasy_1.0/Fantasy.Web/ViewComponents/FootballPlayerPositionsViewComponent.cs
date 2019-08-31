@@ -1,11 +1,10 @@
 ﻿using Fantasy.Data;
+using Fantasy.Web.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
-using Fantasy.Web.Infrastructure;
-using Fantasy.Web.Infrastructure.Extensions;
 
 namespace Fantasy.Web.ViewComponents
 {
@@ -33,7 +32,7 @@ namespace Fantasy.Web.ViewComponents
 
             if (includeAll)
             {
-                positions.Insert(0, new SelectListItem("All", string.Empty));
+                positions.Insert(0, new SelectListItem("All Positions", string.Empty));
             }
 
             return this.View(positions);

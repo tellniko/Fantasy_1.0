@@ -23,13 +23,13 @@ namespace Fantasy.Web.Controllers
 
         public IActionResult Index()
         {
-            this.ViewBag.Action = nameof(GetPartialPlayersAsync);
+            this.ViewBag.Action = nameof(All);
             this.ViewBag.Controller = nameof(PlayersController).ToFirstWord();
 
             return View();
         }
 
-        public async Task<IActionResult> GetPartialPlayersAsync(
+        public async Task<IActionResult> All(
             string clubId, 
             string positionId, 
             string playerName, 
@@ -39,11 +39,11 @@ namespace Fantasy.Web.Controllers
             var model = new PlayersListingViewModel
             {
                 Players = await this.players
-                    .GetAllWithPaginationAsync<FootballPlayerServiceModel>(clubId, positionId, playerName, order, page, PlayersListingPageSize),
+                    .GetAllWithPaginationAsync<FootballPlayerServiceModel>(clubId, positionId, playerName, order, page),
                 CurrentPage = page,
             };
 
-            this.ViewBag.Action = nameof(GetPartialPlayersAsync);
+            this.ViewBag.Action = nameof(All);
             this.ViewBag.Controller = nameof(PlayersController).ToFirstWord();
 
             return PartialView("_PartialPlayersPagination", model);
@@ -51,7 +51,7 @@ namespace Fantasy.Web.Controllers
 
         public async Task<IActionResult> Details(int playerId)
         {
-            this.ViewBag.Action = nameof(GetPartialStatisticsAsync);
+            this.ViewBag.Action = nameof(Statistics);
             this.ViewBag.Controller = nameof(PlayersController).ToFirstWord();
 
             var model = await this.players.GetByIdAsync<FootballPlayerDetailsServiceModel>(playerId);
@@ -64,7 +64,7 @@ namespace Fantasy.Web.Controllers
             return View(model);
         }
 
-        public async Task<IActionResult> GetPartialStatisticsAsync(int playerId, string position, int gameweekId = AllTimeStatisticsGameweekId)
+        public async Task<IActionResult> Statistics(int playerId, string position, int gameweekId = AllTimeStatisticsGameweekId)
         {
 
 

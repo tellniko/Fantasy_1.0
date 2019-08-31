@@ -12,7 +12,7 @@ namespace Fantasy.Services
 
         Task<Gameweek> GetLast(DateTime? date);
 
-        Task<Gameweek> GetNext(DateTime? date);
+        Task<Gameweek> GetNext(DateTime date);
 
         List<TModel> GetAll<TModel>();
 

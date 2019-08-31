@@ -12,7 +12,7 @@ namespace Fantasy.Data.Models
 
         public bool Finished { get; set; } = false;
 
-        public DateTime? Start { get; set; }
+        public DateTime Start { get; set; }
 
         public List<Fixture> Fixtures { get; set; } = new List<Fixture>();
 

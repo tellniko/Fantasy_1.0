@@ -5,16 +5,18 @@
 }
 
 <div style="width: 38.2vw; height: 19vw; filter: drop-shadow(0px 5px 8px #38003c); background-color: #ffffff">
-    <canvas id="myChart" style="filter: drop-shadow(10px 10px 12px #38003c)"></canvas>
+    <canvas id="myChart" @*style="filter: drop-shadow(2px 2px 6px #38003c)"*@></canvas>
 </div>
 
 <script>
+    console.log(@Model[0].Points);
     //todo validation
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['@Model[0].Name','@Model[1].Name', '@Model[2].Name', '@Model[3].Name', '@Model[4].Name'],
+            labels: ['@Model[0].Name - @Model[0].Squad', '@Model[1].Name - @Model[1].Squad',
+                '@Model[2].Name - @Model[2].Squad', '@Model[3].Name - @Model[3].Squad', '@Model[4].Name - @Model[4].Squad'],
             datasets: [{
                 label: 'Top 5 Users',
                 data: [Number(@Model[0].Points), Number(@Model[1].Points), Number(@Model[2].Points), Number(@Model[3].Points), Number(@Model[4].Points)],
@@ -24,7 +26,9 @@
                     '#e90052',
                     '#ffffff',
                     '#04f5ff',
-                ]
+                ],
+                borderWidth: 4
+
             }]
         }
     });

@@ -57,7 +57,7 @@ namespace Fantasy.Services.Models
 
         [Points(Units = -3)] public short AerialBattlesLost { get; set; }
 
-        [Points(Units = 50)] public short Assists { get; set; }
+        [Points(Units = 80)] public short Assists { get; set; }
 
         [Points(Units = 1)] public short Passes { get; set; }
 
@@ -69,7 +69,7 @@ namespace Fantasy.Services.Models
 
         [Points(Units = 10)] public short ThroughBalls { get; set; }
 
-        [Points(Units = 100)] public short Goals { get; set; }
+        [Points(Units = 200)] public short Goals { get; set; }
 
         [Points(Units = 10)] public short HitWoodwork { get; set; }
     }

@@ -1,18 +1,19 @@
-﻿using Fantasy.Data;
+﻿using Fantasy.Common;
+using Fantasy.Data;
+using Fantasy.Data.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Fantasy.Common;
-using Fantasy.Data.Models;
 
 namespace Fantasy.Web.Infrastructure.Extensions
 {
-    using static GlobalConstants;
     using static DataConstants;
+    using static GlobalConstants;
 
     public static class ApplicationBuilderExtensions
     {
@@ -300,6 +301,7 @@ namespace Fantasy.Web.Infrastructure.Extensions
                             {
                                 Id = i,
                                 Name = nameof(Gameweek) + " " + i,
+                                Start = DateTime.UtcNow
                             };
 
                             gameweeks.Add(gameweek);

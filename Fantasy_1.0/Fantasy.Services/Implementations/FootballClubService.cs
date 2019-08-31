@@ -26,6 +26,7 @@ namespace Fantasy.Services.Implementations
                 .ToListAsync();
         }
 
+       
         public FootballClubDetailsServiceModel GetDetails(int id)
         {
             return  this.db.FootballClubs

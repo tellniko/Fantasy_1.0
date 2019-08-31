@@ -2,16 +2,17 @@
     ViewData["Title"] = "Fixtures";
 }
 
-<br/><br/>
+<br/>
      <div class="container">
          <div class="row">
-             <div class="col-4"></div>
-             <div class="col-4">
-                 @await Component.InvokeAsync("Gameweeks", false)
+             <div class="col-3"></div>
+             <div class="col-6">
+                 @await Component.InvokeAsync("Gameweeks", new {includeStart = true})
              </div>
-             <div class="col-4"></div>
+             <div class="col-3"></div>
          </div>
-         <div class="row" id="fixtures">
+         <br/>
+         <div class="row" id="fixtures" style="background-color: #ffffff; filter: drop-shadow(10px 10px 12px #38003c);">
 
          </div>
      </div>

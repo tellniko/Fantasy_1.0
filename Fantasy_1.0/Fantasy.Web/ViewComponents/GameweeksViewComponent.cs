@@ -21,18 +21,13 @@ namespace Fantasy.Web.ViewComponents
             this.db = db;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync(bool includeAll, bool finished)
+        public async Task<IViewComponentResult> InvokeAsync(bool includeAll, bool finished, bool includeStart)
         {
 
             var gameweeks = await this.db.Gameweeks
                 .Where(gw =>
                     gw.Id != PreSeasonStatisticsGameweekId && gw.Id != AllTimeStatisticsGameweekId) 
-                .OrderBy(gw => gw.Id).Select(gw => new
-                {
-                    gw.Name,
-                    gw.Id,
-                    gw.Finished
-                })
+                .OrderBy(gw => gw.Id)
                 .ToListAsync();
 
             if (finished)
@@ -44,7 +39,7 @@ namespace Fantasy.Web.ViewComponents
             var result = gameweeks
                 .Select(gw => new SelectListItem
                 {
-                    Text = gw.Name,
+                    Text = includeStart ? gw.Name + " - Starts at " + gw.Start.ToString("D") : gw.Name,
                     Value = gw.Id.ToString()
                 })
                 .ToList();

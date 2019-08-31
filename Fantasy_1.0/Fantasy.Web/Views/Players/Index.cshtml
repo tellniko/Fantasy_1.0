@@ -1,61 +1,46 @@
 ﻿@{
     ViewData["Title"] = "Players";
 }
-<br/><br/>
-<div class="container">
-    <div class="row">
-        <div class="col-4">
-            <div class="col" style="margin-top: -15px">
-                <div class="row" style="margin-top: 5px">
-                    <div class="row" style="background-color: #38003c">
-                        <div class="row" style="color: #ffffff">
-                            &nbsp; Club
-                        </div>
+<br />
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <div class="row">
+            <div class="row">
+                <div class="col-6">
+                    <div class="row" title="Position">
+                        @await Component.InvokeAsync("FootballPlayerPositions", true)
                     </div>
-                    <br/><br/>
-                      @await Component.InvokeAsync("FootballClubs", new {includeAll = true, useShortNames = false})
+                    <br />
+                    <div class="row" title="Club">
+                        @await Component.InvokeAsync("FootballClubs", new { includeAll = true, useShortnames = true })
+                    </div>
                 </div>
-                <div class="row" style="margin-top: 5px">
-                    <div class="row" style="background-color: #38003c">
-                        <div class="row" style="color: #ffffff">
-                           &nbsp; Position
-                        </div>
+                <div class="col-6">
+                    <div class="row">
+                        <input placeholder="Search By Name..." title="Name" class="form-control" id="player" style="filter: drop-shadow(0px 5px 8px #38003c);" />
                     </div>
-                    <br/><br/>
-                    @await Component.InvokeAsync("FootballPlayerPositions", true)
-                </div>
-                <div class="row" style="margin-top: 5px">
-                    <div class="row" style="background-color: #38003c">
-                        <div class="row" style="color: #ffffff">
-                            &nbsp; Name
-                        </div>
+                    <br />
+                    <div class="row" title="Order by">
+                        <select class="form-control" id="order" style="filter: drop-shadow(0px 5px 8px #38003c)">
+                            <option value="Name" Text="Name">Order By Name</option>
+                            <option value="priceAscending">Order By Price Ascending</option>
+                            <option value="priceDescending">Order By Price Descending</option>
+                            <option value="totalPoints">Order By Total Points</option>
+                        </select>
                     </div>
-                    <br/><br/>
-
-                    <input class="form-control" id="player" style="filter: drop-shadow(0px 5px 8px #38003c)"/>
-                </div>
-                <div class="row" style="margin-top: 5px">
-                    <div class="row" style="background-color: #38003c">
-                        <div class="row" style="color: #ffffff">
-                            &nbsp; Order By
-                        </div>
-                    </div>
-                    <br/><br/>
-                         <select class="form-control" id="order" style="filter: drop-shadow(0px 5px 8px #38003c)">
-                             <option value="Name" Text="Name">Name</option>
-                             <option value="priceAscending">Price Ascending</option>
-                             <option value="priceDescending">Price Descending</option>
-                             <option value="totalPoints">Total Points</option>
-                         </select>
                 </div>
             </div>
+            <div class="row" id="players" style="margin-top: 2vw">
+            </div>
         </div>
-        <div class="col-8" id="players">
-        </div>
+       
     </div>
+   
+    <div class="col-3"></div>
 </div>
 
-<script>
+    <script>
     $(document).ready(function() {
         $('#players').load('/@ViewBag.Controller/@ViewBag.Action');
 
@@ -66,11 +51,69 @@
 
         function filter() {
             $('#players')
-                .load('/@ViewBag.Controller/@ViewBag.Action' 
+                .load('/@ViewBag.Controller/@ViewBag.Action'
                     + '?clubId=' +  $('#club').val()
                     + '&positionId=' + $('#position').val()
-                    + '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_')
+                    + '&playerName=' + $('#player').val().replace(new RegExp(' ', 'g'), '_').toLowerCase()
                     + '&order=' + $('#order').val());
         }
     });
-</script>
+    </script>
+
+
+
+
+
+    @*<br /><br />
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="col" style="margin-top: -15px">
+                        <div class="row" style="margin-top: 5px">
+                            <div class="row" style="background-color: #38003c">
+                                <div class="row" style="color: #ffffff">
+                                    &nbsp; Club
+                                </div>
+                            </div>
+                            <br /><br />
+                            @await Component.InvokeAsync("FootballClubs", new { includeAll = true, useShortNames = false })
+                        </div>
+                        <div class="row" style="margin-top: 5px">
+                            <div class="row" style="background-color: #38003c">
+                                <div class="row" style="color: #ffffff">
+                                    &nbsp; Position
+                                </div>
+                            </div>
+                            <br /><br />
+                            @await Component.InvokeAsync("FootballPlayerPositions", true)
+                        </div>
+                        <div class="row" style="margin-top: 5px">
+                            <div class="row" style="background-color: #38003c">
+                                <div class="row" style="color: #ffffff">
+                                    &nbsp; Name
+                                </div>
+                            </div>
+                            <br /><br />
+
+                            <input class="form-control" id="player" style="filter: drop-shadow(0px 5px 8px #38003c)" />
+                        </div>
+                        <div class="row" style="margin-top: 5px">
+                            <div class="row" style="background-color: #38003c">
+                                <div class="row" style="color: #ffffff">
+                                    &nbsp; Order By
+                                </div>
+                            </div>
+                            <br /><br />
+                            <select class="form-control" id="order" style="filter: drop-shadow(0px 5px 8px #38003c)">
+                                <option value="Name" Text="Name">Name</option>
+                                <option value="priceAscending">Price Ascending</option>
+                                <option value="priceDescending">Price Descending</option>
+                                <option value="totalPoints">Total Points</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8" id="players">
+                </div>
+            </div>
+        </div>*@

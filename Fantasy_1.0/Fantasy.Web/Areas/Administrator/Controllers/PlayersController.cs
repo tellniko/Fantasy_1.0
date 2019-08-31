@@ -119,12 +119,12 @@ namespace Fantasy.Web.Areas.Administrator.Controllers
             //todo refactor
             var result = this.players.Add(model.Player);
 
-            if (!result)
+            if (result == 0)
             {
-                this.TempData.AddErrorMessage("Error");
+                this.TempData.AddErrorMessage("The player has not been added to the database!");
             }
 
-            this.TempData.AddSuccessMessage("Success");
+            this.TempData.AddSuccessMessage("The player has been successfully added to the database.");
 
             return RedirectToAction(nameof(Index));
         }
